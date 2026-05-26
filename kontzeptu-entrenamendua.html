@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hautaproba Historia: 5 kontzeptu, esaldi bat</title>
+  <style>
+    :root {
+      --bg:#f8fafc;
+      --hero:#0f172a;
+      --hero2:#1e3a8a;
+      --paper:#ffffff;
+      --ink:#0f172a;
+      --muted:#64748b;
+      --line:#e2e8f0;
+      --accent:#2563eb;
+      --accent2:#f59e0b;
+      --soft:#eff6ff;
+      --soft2:#fff7ed;
+      --ok:#15803d;
+      --bad:#b91c1c;
+      --shadow:0 18px 45px rgba(15,23,42,.12);
+      --radius:20px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      background:
+        radial-gradient(circle at 10% 0%,rgba(37,99,235,.10),transparent 32%),
+        radial-gradient(circle at 90% 15%,rgba(245,158,11,.16),transparent 30%),
+        var(--bg);
+      color:var(--ink);
+      line-height:1.6;
+    }
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:10;
+      backdrop-filter:blur(14px);
+      background:rgba(15,23,42,.88);
+      border-bottom:1px solid rgba(255,255,255,.10);
+    }
+    .nav-inner{
+      width:min(1120px,calc(100% - 32px));
+      margin:0 auto;
+      min-height:64px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+    }
+    .brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:900;text-decoration:none;letter-spacing:-.02em}
+    .brand-mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:950}
+    .nav-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+    .nav-links a{color:#cbd5e1;text-decoration:none;font-size:.92rem;font-weight:700;padding:8px 10px;border-radius:999px}
+    .nav-links a:hover{background:rgba(255,255,255,.10);color:#fff}
+
+    header{
+      padding:72px 22px 86px;
+      text-align:center;
+      background:
+        linear-gradient(135deg,rgba(15,23,42,.98),rgba(30,58,138,.92)),
+        radial-gradient(circle at 20% 20%,rgba(245,158,11,.28),transparent 30%);
+      color:#fff;
+    }
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 13px;
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:999px;
+      background:rgba(255,255,255,.10);
+      color:#fef3c7;
+      font-weight:900;
+      font-size:.84rem;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+    }
+    h1{margin:18px auto 12px;max-width:980px;font-size:clamp(2.3rem,6vw,5rem);line-height:.95;letter-spacing:-.06em}
+    .subtitle{max-width:850px;margin:0 auto;color:#cbd5e1;font-size:clamp(1.05rem,2vw,1.28rem)}
+
+    .hero-actions{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .hero-actions a{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:900}
+    .primary-btn{background:#fff;color:var(--hero)}
+    .secondary-btn{border:1px solid rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.08)}
+
+    main{width:min(1120px,calc(100% - 32px));margin:-48px auto 80px}
+    section,.hero-card{margin:24px 0;padding:28px;border-radius:var(--radius);background:rgba(255,255,255,.96);border:1px solid var(--line);box-shadow:0 10px 28px rgba(15,23,42,.06)}
+    .hero-card{box-shadow:var(--shadow)}
+    .rule{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:stretch}
+    .big-idea{padding:28px;border-radius:18px;background:linear-gradient(135deg,var(--hero),var(--hero2));color:#fff;min-height:240px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+    .big-idea:after{content:"";position:absolute;right:-60px;top:-60px;width:180px;height:180px;border-radius:50%;background:rgba(245,158,11,.22)}
+    .big-idea h2{margin:0 0 12px;font-size:clamp(1.55rem,3vw,2.45rem);line-height:1.04;letter-spacing:-.04em;position:relative}
+    .big-idea p{margin:0;font-size:1.06rem;color:#cbd5e1;position:relative}
+    .quick-check{padding:22px;border-radius:18px;background:var(--soft);border:1px solid #bfdbfe}
+
+    section h2{margin:0 0 10px;font-size:clamp(1.45rem,3vw,2.2rem);line-height:1.1;letter-spacing:-.04em;display:flex;align-items:center;gap:10px}
+    section h2:before{content:"";width:9px;height:32px;border-radius:999px;background:linear-gradient(180deg,var(--accent),var(--accent2));display:inline-block;flex:none}
+    .section-intro{max-width:880px;color:var(--muted);margin-top:0}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid.two{grid-template-columns:repeat(2,1fr)}
+    .grid.four{grid-template-columns:repeat(4,1fr)}
+    .card{padding:20px;border-radius:18px;background:var(--paper);border:1px solid var(--line);box-shadow:0 8px 22px rgba(15,23,42,.045)}
+    .card h3{margin-top:0;letter-spacing:-.02em}
+    .mode-a{border-top:7px solid var(--accent)}
+    .mode-b{border-top:7px solid var(--accent2)}
+    .step-number{width:36px;height:36px;display:inline-flex;justify-content:center;align-items:center;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);color:#fff;font-weight:950;margin-bottom:12px;box-shadow:0 8px 18px rgba(37,99,235,.24)}
+    .step-number.orange{background:linear-gradient(135deg,var(--accent2),#f97316)}
+
+    .example{margin:14px 0 0;padding:16px;border-left:5px solid var(--accent2);background:#fff7ed;border-radius:12px;border-top:1px solid #fed7aa;border-right:1px solid #fed7aa;border-bottom:1px solid #fed7aa}
+    .bad{border-left-color:var(--bad);background:#fef2f2;border-top-color:#fecaca;border-right-color:#fecaca;border-bottom-color:#fecaca}
+    .good{border-left-color:var(--ok);background:#f0fdf4;border-top-color:#bbf7d0;border-right-color:#bbf7d0;border-bottom-color:#bbf7d0}
+    .label{display:inline-block;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;font-weight:900;color:var(--muted);margin-bottom:6px}
+    .warning{padding:18px;border-radius:16px;background:#fffbeb;border:1px solid #fde68a;margin-top:18px;color:#713f12}
+
+    .copy-wrap{position:relative;margin-top:16px}
+    pre{white-space:pre-wrap;word-break:break-word;background:#0f172a;color:#e5e7eb;padding:24px;border-radius:18px;border:1px solid #1e293b;font-size:.95rem;line-height:1.58;overflow:auto;box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+    .copy-btn{position:absolute;right:12px;top:12px;border:0;border-radius:999px;padding:9px 14px;background:var(--accent2);color:#111827;font-weight:950;cursor:pointer;box-shadow:0 8px 18px rgba(245,158,11,.24)}
+
+    .rubric{width:100%;border-collapse:collapse;overflow:hidden;border-radius:16px;background:var(--paper);border:1px solid var(--line)}
+    .rubric th,.rubric td{padding:14px;border-bottom:1px solid var(--line);vertical-align:top}
+    .rubric th{background:var(--hero);color:#fff;text-align:left}
+    .rubric tr:last-child td{border-bottom:0}
+    .score{font-weight:950;color:var(--accent);font-size:1.25rem}
+    .teacher-note{margin-top:16px;padding:18px;border-radius:16px;background:var(--soft);border:1px solid #bfdbfe;color:#1e3a8a}
+    footer{text-align:center;color:var(--muted);padding:28px}
+
+    @media(max-width:950px){.grid.four{grid-template-columns:repeat(2,1fr)}.nav-inner{align-items:flex-start;flex-direction:column;padding:12px 0}.nav-links{justify-content:flex-start}}
+    @media(max-width:850px){.rule,.grid,.grid.two,.grid.four{grid-template-columns:1fr}header{padding-top:46px}section,.hero-card{padding:20px}.rubric{font-size:.9rem}.copy-btn{position:static;margin-bottom:8px}main{margin-top:-32px}}
+    @media print{.topbar,.hero-actions,.copy-btn{display:none}body{background:#fff}header{background:#fff;color:#111;padding:20px}.subtitle{color:#444}main{margin:0 auto}section,.hero-card{box-shadow:none;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <nav class="topbar" aria-label="Nabigazio nagusia">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">H</span><span>Historia BTX2 · IA entrenamendua</span></a>
+      <div class="nav-links">
+        <a href="index.html#gaiak">Gaiak</a>
+        <a href="index.html#tresnak">Tresnak</a>
+        <a href="#nola">Nola egin</a>
+        <a href="#prompt">Prompta</a>
+        <a href="#ebaluazioa">Ebaluazioa</a>
+        <a href="#adibidea">Adibidea</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <span class="eyebrow">Espainiako Historia · Hautaproba entrenamendua</span>
+    <h1>5 kontzeptu, esaldi historiko bakarra</h1>
+    <p class="subtitle">IAk 5 kontzeptuak proposatuko ditu, baina lehen esaldia ikasleak egin behar du. Ondoren bakarrik etorriko da zuzenketa.</p>
+    <div class="hero-actions">
+      <a class="primary-btn" href="#prompt">Kopiatu prompta</a>
+      <a class="secondary-btn" href="#nola">Ikusi pausoak</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero-card rule">
+      <div class="big-idea">
+        <h2>Ariketa ez da bost hitz sartzea. Ariketa da bost kontzepturekin logika historikoa eraikitzea.</h2>
+        <p>Lehenik gaia. Gero 5 kontzeptu. Gero ikaslearen esaldia. Azkenik, zuzenketa laburra eta zorrotza.</p>
+      </div>
+      <div class="quick-check">
+        <h3>Lanaren muina</h3>
+        <ul>
+          <li>IAk <strong>ez du azalduko</strong> kontzeptuen muina hasieran.</li>
+          <li>Ikasleak <strong>esaldi bakarra</strong> idatziko du 5 kontzeptuak erabiliz.</li>
+          <li>IAk ondoren ebaluatuko du: kontzeptuak, erabilera, zentzua eta hobekuntza.</li>
+        </ul>
+        <div class="example bad"><span class="label">Ez da nahikoa</span><br>Industrializazioa, Bizkaia, immigrazioa, langile-mugimendua eta sozialismoa garrantzitsuak izan ziren.</div>
+        <div class="example good"><span class="label">Hobe</span><br>Bizkaiko industrializazioak immigrazioa eta langile-mugimenduaren hazkundea bultzatu zituen, eta horrek sozialismoaren hedapena indartu zuen.</div>
+      </div>
+    </div>
+
+    <section id="nola">
+      <h2>Nola egin lana</h2>
+      <p class="section-intro">Ikasleak prompt bakarra kopiatu eta IArekin elkarrizketa labur bat egingo du. Prozesua lau urratsetan:</p>
+      <div class="grid four">
+        <div class="card"><span class="step-number">1</span><h3>Prompta kopiatu</h3><p>Ikasleak beheko prompta IA batean itsatsiko du.</p></div>
+        <div class="card"><span class="step-number">2</span><h3>Gaia eman</h3><p>IAk galdetuko dio zein gai landu behar den. Ikasleak gaia idatziko du.</p></div>
+        <div class="card"><span class="step-number">3</span><h3>5 kontzeptu jaso</h3><p>IAk 5 kontzeptu proposatuko ditu, azalpenik eta baloraziorik gabe.</p></div>
+        <div class="card"><span class="step-number">4</span><h3>Esaldia idatzi</h3><p>Ikasleak 5 kontzeptuekin esaldi bakarra sortuko du. Ondoren, IAk zuzenduko du.</p></div>
+      </div>
+      <div class="warning"><strong>Arau nagusia:</strong> IA ez da erantzuna emateko erabiltzen, baizik eta ikaslearen lehen saiakera zuzentzeko. Lehen esaldia ikasleak egin behar du beti.</div>
+    </section>
+
+    <section id="prompt">
+      <h2>Prompt itxia · IA batean kopiatzeko</h2>
+      <p class="section-intro">Hau da ikasleek erabili behar duten prompt nagusia. Ez da beste azalpenik gehitu behar hasieran.</p>
+      <div class="copy-wrap">
+        <button class="copy-btn" onclick="copyText('promptNagusia')">Kopiatu</button>
+        <pre id="promptNagusia">Asumitu 2. Batxilergoko Historia irakasle bikain baten rola. Ikasle batekin arituko zara eta prompt honetan dagoen prozedura zorrotz jarraituko duzu:
+
+1. Galdetu zein den landu beharreko gaia.
+
+2. Jaso ondoren, gaiarekin harremana duten 5 kontzeptu historiko proposatuko dizkiozu ikasleari, beste ezer esan edo baloratu gabe.
+
+3. Ikasleak 5 kontzeptu horiekin logika historikoa duen esaldi bat idatziko dizu bueltan. 5 kontzeptuak esaldi bakarrean erabili behar ditu.
+
+4. Irakurriko duzu eta ebaluatuko duzu:
+   a) 5 kontzeptuak dauden ala ez.
+   b) Ondo erabilita dauden ala ez.
+   c) Esaldiak zentzua duen ala ez.
+   d) Hobekuntzarako 2 arlo.
+
+Izango zara zuzena, sintetikoa eta profesionala.</pre>
+      </div>
+    </section>
+
+
+    <section>
+      <h2>Irakaslearen erabilera gomendatua</h2>
+      <div class="grid two">
+        <div class="card mode-a"><h3>Entrenamendurako</h3><p>Astean behin, etxean edo klaseko azken 10 minutuetan. Ikasleak prompta erabiltzen du, gaia sartzen du, 5 kontzeptuak jasotzen ditu eta esaldia egiten du.</p></div>
+        <div class="card mode-b"><h3>Hautaproba simulatzeko</h3><p>Noizean behin, irakasleak berak ematen ditu 5 kontzeptuak. Orduan IA ez da kontzeptuak aukeratzeko erabiltzen, zuzenketa edo autoebaluaziorako bakarrik.</p></div>
+      </div>
+      <div class="teacher-note"><strong>Gomendioa:</strong> prompt bakarrarekin nahikoa da entrenamendurako. Klasean, aukeratu 4 edo 5 adibide anonimo eta aztertu: zein da zerrenda hutsa eta zein da benetako esaldi historikoa?</div>
+    </section>
+
+    <section id="ebaluazioa">
+      <h2>Ebaluazio azkarra</h2>
+      <table class="rubric">
+        <thead><tr><th>Puntuazioa</th><th>Zer esan nahi du?</th></tr></thead>
+        <tbody>
+          <tr><td class="score">0</td><td>Kontzeptuak falta dira, erabilera okerra da edo esaldiak ez du zentzurik.</td></tr>
+          <tr><td class="score">1</td><td>5 kontzeptuak agertzen dira, baina pilatuta daude. Ez dago harreman historiko argirik.</td></tr>
+          <tr><td class="score">2</td><td>Kontzeptuak nahiko ondo lotuta daude, baina testuingurua edo kausa-ondorioa sinple geratzen da.</td></tr>
+          <tr><td class="score">3</td><td>Esaldi historiko ona da: 5 kontzeptuak zehaztasunez lotzen ditu eta prozesu historiko argia azaltzen du.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="adibidea">
+      <h2>Adibide laburra</h2>
+      <div class="card">
+        <p><strong>Gaia:</strong> Euskal Herriko industrializazioa eta gizarte pluralaren sorrera.</p>
+        <p><strong>IAk proposatutako 5 kontzeptuak:</strong> industrializazioa · Bizkaia · meatzaritza · immigrazioa · langile-mugimendua</p>
+        <div class="example bad"><span class="label">Lehen bertsio ahula</span><br>Industrializazioa, Bizkaia, meatzaritza, immigrazioa eta langile-mugimendua oso garrantzitsuak izan ziren.</div>
+        <div class="example"><span class="label">Zuzenketa posiblea</span><br>5 kontzeptuak agertzen dira, baina esaldia zerrenda hutsa da. Kontzeptuak ez daude logika historiko baten bidez lotuta. Hobetu beharreko bi arlo: kausa-ondorioa argitzea eta Bizkaiko industrializazioa meatzaritzarekin lotzea.</div>
+        <div class="example good"><span class="label">Bigarren bertsio hobea</span><br>Bizkaiko industrializazioa meatzaritzaren hazkundearekin lotu zen, eta horrek immigrazioa zein langile-mugimenduaren indartzea bultzatu zituen.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Saihestu beharreko esaldi hutsak</h2>
+      <div class="grid two">
+        <div class="card"><h3>Ahulak</h3><ul><li>“oso garrantzitsua izan zen”</li><li>“gauza asko aldatu ziren”</li><li>“arazoak sortu ziren”</li><li>“eragin handia izan zuen”</li></ul></div>
+        <div class="card"><h3>Hobeak</h3><ul><li>“bultzatu zuen”</li><li>“ahalbidetu zuen”</li><li>“sendotu zuen”</li><li>“krisian jarri zuen”</li><li>“gatazka areagotu zuen”</li></ul></div>
+      </div>
+    </section>
+
+    <footer>Material didaktikoa · Espainiako Historia · 2. Batxilergoa</footer>
+  </main>
+
+  <script>
+    function copyText(id){
+      const text=document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(()=>{
+        const buttons=document.querySelectorAll('.copy-btn');
+        buttons.forEach(btn=>{
+          if(btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(id)){
+            const original=btn.textContent;
+            btn.textContent='Kopiatuta';
+            setTimeout(()=>btn.textContent=original,1200);
+          }
+        });
+      });
+    }
+  </script>
+</body>
+</html>
