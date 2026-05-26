@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://btx2-eus.github.io/historia-btx2/sitemap.xml

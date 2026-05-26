@@ -2,6 +2,8 @@
 site:
   title: "Espainiako Historia · 2. Batxilergoa · 1808–2011"
   description: "Espainiako Historia, 2. Batxilergoa: 10 gaiak, denbora-lerro interaktiboa eta kontzeptuen glosarioa. Egilea: Luken San Sebastián Alkorta. CC BY-SA 4.0."
+  base_url: "https://btx2-eus.github.io/historia-btx2"
+  locale: "eu_ES"
   brand:
     label: "Historia BTX2"
     sublabel: "Espainiako Historia · 2. Batxilergoa"
