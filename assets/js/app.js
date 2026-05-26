@@ -109,6 +109,60 @@
     });
   }
 
+  /* ---------- Flashcards ---------- */
+  var fc = document.querySelector('.flashcards');
+  if (fc) {
+    var deck = [];
+    document.querySelectorAll('.gloss-item').forEach(function (el) {
+      var dt = el.querySelector('dt'), dd = el.querySelector('dd');
+      if (dt && dd) deck.push({ type: 'Kontzeptua', q: dt.textContent.trim(), a: dd.textContent.trim() });
+    });
+    document.querySelectorAll('.keydates li').forEach(function (li) {
+      var y = li.querySelector('.kd-year'), t = li.querySelector('.kd-text');
+      if (y && t) deck.push({ type: 'Funtsezko data', q: y.textContent.trim(), a: t.textContent.trim() });
+    });
+    if (deck.length) {
+      var idx = 0;
+      var card = fc.querySelector('.fc-card');
+      var elTag = fc.querySelector('.fc-tag');
+      var elQ = fc.querySelector('.fc-q');
+      var elA = fc.querySelector('.fc-a');
+      var counter = fc.querySelector('.fc-counter');
+      function fcRender() {
+        var c = deck[idx];
+        elTag.textContent = c.type;
+        elQ.textContent = c.q;
+        elA.textContent = c.a;
+        counter.textContent = (idx + 1) + ' / ' + deck.length;
+        card.classList.remove('flipped');
+      }
+      function fcNext() { idx = (idx + 1) % deck.length; fcRender(); }
+      function fcPrev() { idx = (idx - 1 + deck.length) % deck.length; fcRender(); }
+      function fcShuffle() {
+        for (var i = deck.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var tmp = deck[i]; deck[i] = deck[j]; deck[j] = tmp;
+        }
+        idx = 0; fcRender();
+      }
+      card.addEventListener('click', function () { card.classList.toggle('flipped'); });
+      card.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.classList.toggle('flipped'); }
+        else if (e.key === 'ArrowRight') { e.preventDefault(); fcNext(); }
+        else if (e.key === 'ArrowLeft') { e.preventDefault(); fcPrev(); }
+      });
+      var btnNext = fc.querySelector('.fc-next');
+      var btnPrev = fc.querySelector('.fc-prev');
+      var btnShuf = fc.querySelector('.fc-shuffle');
+      if (btnNext) btnNext.addEventListener('click', fcNext);
+      if (btnPrev) btnPrev.addEventListener('click', fcPrev);
+      if (btnShuf) btnShuf.addEventListener('click', fcShuffle);
+      fcRender();
+    } else {
+      fc.style.display = 'none';
+    }
+  }
+
   /* ---------- Footer year ---------- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
