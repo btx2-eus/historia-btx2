@@ -315,6 +315,24 @@ ul { padding-left: 1.1em; }
 }
 .callout .callout-title { font-family: var(--font-display); font-weight: 700; color: var(--accent-ink); margin-bottom: .3rem; }
 
+/* Per-tema interactive timeline (inserted in content area) */
+.tema-tl-section {
+  margin: 0 0 2.6rem;
+  padding: 1rem 1.2rem .4rem;
+  background: var(--accent-tint);
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+  border-radius: var(--radius);
+}
+.tema-tl-head {
+  font-family: var(--font-display); font-weight: 700; color: var(--accent-ink);
+  font-size: .95rem; letter-spacing: .04em; text-transform: uppercase;
+  display: flex; align-items: center; gap: .4rem; margin-bottom: .2rem;
+}
+.tema-tl-section .timeline { padding: 1.4rem .1rem .4rem; }
+.tema-tl-section .tl-item { width: 150px; }
+.tema-tl-section .tl-year { font-size: 1rem; }
+.tema-tl-section .tl-label { font-size: .78rem; }
+
 /* Glossary term tooltip */
 .term {
   border-bottom: 2px dotted var(--accent); color: var(--accent-ink); font-weight: 600; cursor: help; position: relative;
