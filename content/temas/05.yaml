@@ -1,0 +1,172 @@
+meta:
+  num: 5
+  slug: gerra-zibila
+  title: Gerra Zibila
+  years: 1936 – 1939
+  pdf: 05-gerra-zibila.pdf
+  iturri_pdf: 05-iturri.pdf
+intro: |-
+  Gerra Zibila XX. mendeko Espainiako gatazka politiko eta sozialik sakonena izan zen. Ez zen bat-bateko talka: Errestaurazioaren narriaduratik eta II. Errepublikako polarizaziotik zetorren. <strong>1936ko uztailaren 17–18ko <span class="term" data-def="Armadaren sektore batek legezko gobernuaren aurka indarrez egindako matxinada. 1936ko altxamenduak II. Errepublika eraistea zuen helburu.">altxamendu militarrak</span></strong> porrot partziala izan zuen, eta herrialdea bi bandotan zatitu zuen. Faxismoaren eta antifaxismoaren arteko talkaren erdigune bilakatu zen: II. Mundu Gerraren «entsegu-zelaia».
+timeline:
+- year: 1936·07·17
+  label: Altxamendua
+  target: g5-1
+  desc: 'Altxamendu militarra: gerraren hasiera.'
+- year: 1936·10
+  label: Franco Jeneralisimo
+  target: g5-1
+  desc: Franco Estatuko Buru eta Jeneralisimo.
+- year: 1936·10·01
+  label: Euskal Estatutua
+  target: g5-3
+  desc: Euskal Estatutua eta Euzko Jaurlaritza (Agirre).
+- year: 1936·11
+  label: Madril defendatu
+  target: g5-4
+  desc: 'Madrilen defentsa: «¡No pasarán!».'
+- year: 1937·03·31
+  label: Durango bonbardatua
+  target: g5-4
+  desc: Durangoko bonbardaketa (Condor Legioa).
+- year: 1937·04·26
+  label: Gernika
+  target: g5-4
+  desc: 'Gernikako bonbardaketa: mundu-ikur.'
+- year: 1937·06·19
+  label: Bilbo erori
+  target: g5-4
+  desc: Burdin Hesia hautsi eta Bilbo erori.
+- year: 1937·10
+  label: Iparraldea galdu
+  target: g5-4
+  desc: 'Iparraldea galdu: Santander eta Asturias.'
+- year: 1938·07–11
+  label: Ebroko gudua
+  target: g5-4
+  desc: 'Ebroko gudua: Errepublikaren azken indarra.'
+- year: 1939·01·26
+  label: Bartzelona erori
+  target: g5-4
+  desc: Bartzelona erori; erbeste masiboa Frantziara.
+- year: 1939·04·01
+  label: Gerra amaitu
+  target: g5-4
+  desc: 'Gerra amaitu: Francoren garaipena.'
+keydates:
+- year: 1936·07
+  text: 'Uztailak 17–18: altxamendu militarra; gerra hasten da.'
+- year: 1936·10
+  text: Franco Jeneralisimo; Euskal Estatutua eta Euzko Jaurlaritza (Agirre).
+- year: 1936·11
+  text: 'Madrilen defentsa: «¡No pasarán!».'
+- year: 1937·04
+  text: Durango eta Gernikako bonbardaketak (Condor Legioa).
+- year: 1937·06
+  text: Burdin Hesia hautsi eta Bilbo erori.
+- year: 1937·10
+  text: Iparraldea galdu (Santander, Asturias).
+- year: '1938'
+  text: 'Ebroko gudua (uztaila–azaroa): Errepublikaren azken indarra.'
+- year: 1939·01
+  text: Bartzelona erori; erbeste masiboa Frantziara.
+- year: 1939·04
+  text: 'Apirilak 1: gerra amaitu; Francoren garaipena.'
+sections:
+- id: g5-1
+  number: '5.1'
+  title: Altxamendu militarra eta gobernuaren erantzuna
+  body: |-
+    <p>Mola, Sanjurjo, Franco, Queipo de Llano eta beste militar batzuek antolatutako konspirazioak ez zituen hiri nagusiak (Madril, Bartzelona, Valentzia, Bilbo) kontrolatu, eta herrialdea bi eremutan banatu zen. Matxinatuen aldean, Francok aginte gorena lortu zuen urrian (Estatuko Buru eta Jeneralisimo), botere zentralizatua bermatuz.</p><p>Errepublikan, ordea, egonkortasuna zaila izan zen: <span class="term" data-def="Estatuak ordena publikoa eta administrazioaren funtzionamendua bermatzeko gaitasuna galtzea. Errepublikaren eremuan, 1936ko lehen hilabeteetan, milizien eta komiteen boterea handitu zuen.">Estatuaren kolapsoak</span> milizien boterea handitu zuen. Largo Caballeroren gobernu antifaxistak (PSOE, PCE, CNT) miliziak <span class="term" data-def="Errepublikak milizia politiko eta sindikalak armada erregular batean integratzeko sortu zuen egitura militarra.">Armada Popularrean</span> integratzen saiatu zen, baina barne-zatiketak (CNT, UGT, PCE, POUM) defentsa zaildu zuen.</p>
+- id: g5-2
+  number: '5.2'
+  title: Nazioarteko testuingurua
+  body: |-
+    <p>Gerra Europako tentsio ideologikoaren parte bihurtu zen. Matxinatuek <strong>Alemania naziaren</strong> (Condor Legioa) eta <strong>Italia faxistaren</strong> laguntza militar eraginkorra jaso zuten hasieratik. Errepublikak, berriz, <span class="term" data-def="Britainia Handiak eta Frantziak bultzatutako politika, teorian bi aldeei laguntza ez emateko. Praktikan Errepublika kaltetu zuen, Alemaniak eta Italiak araua urratu baitzuten.">Ez-Interbentzio politika</span> jasan zuen.</p><p>Sobietar Batasunak armak bidali zituen (Nazioaren urrearekin ordainduak) eta <strong>Brigada Internazionalek</strong> esku hartu zuten, baina laguntza desorekatua izan zen. Demokrazia liberalek beren pasibotasuna agertu zuten. Historialari askok gerra <span class="term" data-def="Barne-gatazka batek kanpoko potentzien esku-hartzearen ondorioz nazioarteko dimentsioa hartzea. Alemaniak eta Italiak matxinatuei lagundu zieten; URSSek eta Brigadek Errepublikari.">II. Mundu Gerraren atari</span> gisa interpretatu dute.</p>
+- id: g5-3
+  number: '5.3'
+  title: Euskal Estatutua
+  body: |-
+    <p>Foruen abolizioak (1876) autogobernuaren eztabaida berritu zuen. Lizarrako proiektua (1931) izaera konfesionalagatik blokeatu zen, eta gobernu erradikal-cedistak ez zuen aurrera eraman. 1936ko altxamenduan Nafarroa matxinatuen esku geratu zen, eta autonomia hiru probintziatara mugatu zen.</p><p>Gerra-testuinguruak autonomia bizkortu zuen: <strong>1936ko urrian Euskal Estatutu laiko eta demokratikoa</strong> onartu zen, eta <strong>Euzko Jaurlaritza</strong> sortu, <strong>Jose Antonio Agirre</strong> lehendakariarekin (EAJ, PSOE, PCE, ANV). Autogobernu zabala garatu zuen: Ertzaintza, Euzko Gudarostea, ekonomia eta diru-papera propioa.</p><div class="callout"><div class="callout-title">«Euskal Oasia»</div>Beste eremu errepublikano askotan ez bezala, Euskal Herriak ordena publikoa eta tolerantzia erlijiosoa mantendu zituen (Elizaren aurkako indarkeria ia ezerez). 1937ko ekainean Bilbo erori zen; Santoñako errendizioa porrot egin ondoren, Agirrek Jaurlaritzaren zilegitasuna erbestean defendatu zuen.</div>
+- id: g5-4
+  number: '5.4'
+  title: Gerraren bilakaera
+  body: |-
+    <ul>
+    <li><strong>1936 · Madrilen defentsa:</strong> matxinatuek ezin izan zuten hiriburua hartu; «¡No pasarán!» erresistentziaren sinbolo bihurtu zen. Gerra luze eta ideologizatua izango zen.</li>
+    <li><strong>1937 · Iparraldeko kanpaina:</strong> Gipuzkoa 1936an erori zen (Irun, Donostia); 1937an <span class="term" data-def="Helburu militarrez gain, hiriak edo populazio zibilaren morala suntsitzeko aire-erasoa. Durango eta Gernikako bonbardaketak.">bonbardaketa estrategikoek</span> (Durango, Gernika) atzeguardia beldurtu zuten. <span class="term" data-def="Bilbo defendatzeko eraikitako defentsa-sistema militarra. 1937ko ekainean hautsi zuten.">Burdin Hesia</span> hautsi eta Bilbo erori zen (ekainak 19); urrirako Iparraldea galdua zen.</li>
+    <li><strong>1938 · Ebroko gudua:</strong> matxinatuak Mediterraneora iritsi ondoren, Errepublikak Ebroko ofentsiba abiatu zuen (uztaila). Galera izugarriekin, Errepublikaren azken gaitasun militarra agortu zuen.</li>
+    <li><strong>1939 · Amaiera:</strong> Bartzelona erori zen (urtarrilak 26), erbeste masiboarekin. Casadoren barne-kolpearen ondoren, Madril erori zen, eta <strong>apirilaren 1ean</strong> Francok gerra amaitutzat eman zuen.</li>
+    </ul>
+- id: g5-5
+  number: '5.5'
+  title: Erretagoardiako indarkeria
+  body: |-
+    <p>Gerra ez zen fronteetakoa bakarrik izan: <span class="term" data-def="Frontearen atzeko lurraldea, non gerraren ondorio politiko eta sozialak bizi diren. Hilketen, jazarpenen eta beldurraren espazioa.">erretagoardia</span> ere gatazkaren eremu odoltsuena izan zen. Bi aldeetan egon zen basakeria, baina <strong>izaera oso desberdinarekin</strong>:</p><ul>
+    <li><strong>Matxinatuen eremua (<span class="term" data-def="Matxinatuen eremuan egindako errepresio sistematiko eta planifikatua, aurkari politikoak ezabatzeko. Botere autoritario berriaren eraikuntzari lotua.">terrore zuria</span>):</strong> errepresio sistematikoa eta planifikatua, gizartea «garbitzeko» borondatearekin; gerraostean ere luzatu zen (130.000–150.000 biktima). Eliza hierarkiak gerra <span class="term" data-def="Erlijioaren defentsaren izenean aurkezten den borroka. Frankismoak gerra «gurutzada» gisa aurkeztu zuen.">«gurutzada»</span> gisa aurkeztu zuen.</li>
+    <li><strong>Errepublikaren eremua (<span class="term" data-def="Errepublikaren eremuan, batez ere 1936ko lehen hilabeteetan, gertatutako indarkeria iraultzaile eta antiklerikala. Estatuaren kolapsoari lotua.">terrore gorria</span>):</strong> Estatuaren kolapsoaren eta milizien ondorio, batez ere lehen hilabeteetan (adib. Paracuellos). 1937tik aurrera gobernuak kontrolatu zuen (50.000–60.000 biktima).</li>
+    </ul><p>Euskadin, ordena instituzionalak indarkeria antiklerikala mugatu zuen; frankistek, ordea, euskal apaizak ere fusilatu zituzten. Gerraren eta gerraostearen ondorio demografikoak izugarriak izan ziren: ~500.000 hildako (gerra, errepresioa, gosea), eta 1939an ~450.000 lagunen erbestea.</p>
+glossary:
+- term: Altxamendu militarra
+  def: |-
+    Armadaren sektore batek legezko gobernuaren aurka indarrez egindako matxinada. 1936ko uztailak 17–18.
+- term: Armada Popularra
+  def: |-
+    Errepublikak milizia politiko eta sindikalak armada erregular batean integratzeko sortu zuen egitura.
+- term: Autonomia
+  def: |-
+    Lurralde batek estatuaren barruan bere erakunde propioak eta autogobernua izatea. Euzko Jaurlaritza (1936).
+- term: Bonbardaketa estrategikoa
+  def: |-
+    Hiriak edo populazio zibilaren morala suntsitzeko aire-erasoa. Durango eta Gernika.
+- term: Burdin Hesia
+  def: Bilbo defendatzeko eraikitako defentsa-sistema. 1937ko ekainean hautsi zuten.
+- term: Diktadura
+  def: |-
+    Boterea pertsona/talde baten esku kontzentratzen duen sistema autoritarioa. Francoren garaipenak ia 40 urteko diktadura ekarri zuen.
+- term: Erbestea
+  def: |-
+    Arrazoi politikoengatik herrialdea uztera behartuta joatea. 1939an ehunka mila errepublikano Frantziara.
+- term: Errepresioa
+  def: |-
+    Botereak oposizioa zigortzeko erabiltzen duen indarkeria. Frankisten eremuan sistematikoagoa eta luzeagoa.
+- term: Erretagoardia
+  def: |-
+    Frontearen atzeko lurraldea; hilketen, jazarpenen, gosearen eta beldurraren espazioa.
+- term: Estatu-kolpea
+  def: |-
+    Boterea legez kanpo eta indarrez eskuratzeko saiakera. 1936ko altxamendua legezko gobernuaren aurkakoa.
+- term: Estatuaren kolapsoa
+  def: |-
+    Estatuak ordena publikoa eta administrazioa bermatzeko gaitasuna galtzea. Errepublikaren eremuan, 1936an.
+- term: Euskal Oasia
+  def: |-
+    Errepublikaren aldeko euskal eremuko egoera berezia: ordena publikoa eta tolerantzia erlijiosoa.
+- term: Faxismoa
+  def: |-
+    Ideologia autoritario, ultranazionalista eta antidemokratikoa. Alemania naziak eta Italia faxistak matxinatuen alde.
+- term: Frontea
+  def: Bi armaden arteko borroka-eremua. Madril, Iparraldea, Aragoi, Ebro, Katalunia.
+- term: Gerraren nazioartekotzea
+  def: Barne-gatazkak kanpoko potentzien esku-hartzez nazioarteko dimentsioa hartzea.
+- term: Gurutzada
+  def: |-
+    Erlijioaren defentsaren izenean aurkezten den borroka. Frankismoak gerra «gurutzada» gisa legitimatu zuen.
+- term: Ez-Interbentzioa
+  def: |-
+    Britainia eta Frantziaren politika, teorian laguntzarik ez emateko. Praktikan Errepublika kaltetu zuen.
+- term: Indarkeria politikoa
+  def: Helburu politikoak lortzeko edo gizartea beldurtzeko erabiltzen den indarkeria.
+- term: Milizia
+  def: |-
+    Alderdi, sindikatu edo talde politiko batek antolatutako indar armatu irregularra.
+- term: Militarizazioa
+  def: Egitura zibil edo irregularrak aginte militar baten menpe jartzeko prozesua.
+- term: Propaganda
+  def: |-
+    Herria mobilizatzeko edo aurkaria deslegitimatzeko komunikazio politikoa. Bi aldeek erabili zuten.
+- term: Terrore gorria
+  def: |-
+    Errepublikaren eremuan, batez ere 1936an, gertatutako indarkeria iraultzaile eta antiklerikala.
+- term: Terrore zuria
+  def: |-
+    Matxinatuen eremuko errepresio sistematiko eta planifikatua, gerraostean luzatua.

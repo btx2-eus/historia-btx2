@@ -1,0 +1,165 @@
+meta:
+  num: 10
+  slug: xxi-mendea
+  title: XXI. mendea
+  years: 1996 – 2011
+  source_note: "Gai honen jatorrizko apunterik ez zegoen Drive karpetan. Atal hau ezagutza historiko orokorrean oinarrituta idatzi da, gainerako gaien egitura bera erabiliz. \nBerrikusi eta zure materialarekin osatu/ordeztu\n, beste gaietan bezala."
+intro: |-
+  XXI. mendearen lehen hamarbost urteek (1996–2011) Espainiako demokrazia helduaren bi ziklo erakusten dituzte: <strong>Aznarren PPren gobernuak</strong> (1996–2004) eta <strong>Zapateroren PSOEren gobernuak</strong> (2004–2011). Aldi honetan, alternantzia politikoa normalizatu zen, Espainia <span class="term" data-def="Europar Batasuneko txanpon bakarra. Espainian 2002an ezarri zen, pezeta ordezkatuz.">euroan</span> sartu zen (2002), eta erreforma sozial sakonak gauzatu ziren; baina terrorismoak, lurralde-auziak eta <strong>2008ko krisi ekonomikoak</strong> garaia markatu zuten.
+timeline:
+- year: '1996'
+  label: Aznar (PP)
+  target: g10-1
+  desc: 'Aznar (PP) gobernura: alternantzia.'
+- year: '1997'
+  label: M. Á. Blanco
+  target: g10-2
+  desc: Miguel Ángel Blancoren hilketa eta mobilizazio masiboa.
+- year: '1998'
+  label: Lizarra-Garazi
+  target: g10-2
+  desc: Lizarra-Garaziko Ituna; ETAren su-etena (urtebete).
+- year: '2000'
+  label: Gehiengo osoa
+  target: g10-1
+  desc: Aznar gehiengo osoz.
+- year: 2002·01
+  label: Euroa
+  target: g10-1
+  desc: Euroa ezarri zen pezetaren ordez.
+- year: 2002·11
+  label: Prestige
+  target: g10-1
+  desc: Prestige petrolio-ontziaren hondamendia.
+- year: '2003'
+  label: Irak · Ibarretxe
+  target: g10-3
+  desc: Irakeko gerrarako babesa eta Ibarretxe Plana.
+- year: 2004·03·11
+  label: 11-M
+  target: g10-2
+  desc: '11-M: Madrilgo trenetako atentatuak (192 hildako).'
+- year: 2004·03·14
+  label: Zapatero (PSOE)
+  target: g10-4
+  desc: Zapatero (PSOE) gobernura.
+- year: '2005'
+  label: Ezkontza berdina
+  target: g10-4
+  desc: Ezkontza berdintasuna legeztatu zen.
+- year: '2006'
+  label: Mendekotasun · Estatutua
+  target: g10-4
+  desc: Mendekotasun Legea eta Kataluniako Estatutu berria.
+- year: '2007'
+  label: Memoria Historikoa
+  target: g10-4
+  desc: Memoria Historikoaren Legea.
+- year: '2008'
+  label: Krisi globala
+  target: g10-5
+  desc: Krisi ekonomiko globala; higiezinen burbuilaren leherketa.
+- year: '2011'
+  label: ETA amaitu · Rajoy
+  target: g10-5
+  desc: ETAren behin betiko su-etena; Rajoyren PP gobernura.
+keydates:
+- year: '1996'
+  text: Aznar (PP) gobernura; alternantzia.
+- year: '1997'
+  text: Miguel Ángel Blancoren hilketa; mobilizazio masiboa.
+- year: '1998'
+  text: Lizarra-Garaziko Ituna; ETAren su-etena.
+- year: '2002'
+  text: Euroaren ezarpena; Prestige hondamendia.
+- year: '2003'
+  text: Irakeko gerra; Ibarretxe Plana.
+- year: '2004'
+  text: 11-M atentatuak; Zapatero (PSOE) gobernura.
+- year: '2005'
+  text: Ezkontza berdintasuna legeztatua.
+- year: '2007'
+  text: Memoria Historikoaren Legea.
+- year: '2008'
+  text: Krisi ekonomiko globala.
+- year: '2011'
+  text: ETAren behin betiko su-etena; PP (Rajoy).
+sections:
+- id: g10-1
+  number: '10.1'
+  title: Aznarren gobernuak (1996–2004)
+  body: |-
+    <p>1996ko hauteskundeetan <strong>Jose Maria Aznarren PPk</strong> irabazi zuen; lehen legealdian (1996–2000) nazionalismo katalanaren eta euskaldunaren (CiU, EAJ) babesa behar izan zuen. Politika ekonomiko liberala bultzatu zuen: pribatizazioak, defizita kontrolatu eta <span class="term" data-def="Maastrichteko Itunak ezarritako baldintzak (defizita, inflazioa, zorra) txanpon bakarrean sartzeko betebeharrak.">euro-konbergentziaren irizpideak</span> betetzea. 2000ko hauteskundeetan gehiengo osoz irabazi zuen.</p><p>Bigarren legealdia (2000–2004) gatazkatsuagoa izan zen: <strong>Irakeko gerrarako</strong> (2003) babesa, iritzi publikoaren gehiengoaren aurka, eta <strong>Prestige</strong> petrolio-ontziaren hondamendia (2002). Aldi berean, hazkunde ekonomikoa eta higiezinen <em>boom</em>-a gertatu ziren.</p>
+- id: g10-2
+  number: '10.2'
+  title: Terrorismoa eta 11-M
+  body: |-
+    <p>1997an, <strong>Miguel Ángel Blanco</strong> PPko zinegotziaren bahiketak eta hilketak <span class="term" data-def="Terrorismoaren aurkako kale-mobilizazio masiboa, 1997an Miguel Ángel Blancoren hilketaren ondoren. Gizarte zibilaren erantzun erabakigarria.">mobilizazio sozial masiboa</span> eragin zuen ETAren aurka. 1998an <span class="term" data-def="1998ko akordioa, nazionalismo eta ezker abertzalearen artean; ETAren su-etenarekin batera. Urtebete geroago hautsi zen.">Lizarra-Garaziko Itunaren</span> testuinguruan ETAk su-etena iragarri zuen, baina 2000n indarkeria berrartu zuen.</p><p><strong>2004ko martxoaren 11n (11-M)</strong>, Madrilgo trenetan jihadismo islamistak egindako atentatuek 192 lagun hil zituzten — Espainiako historiako atentaturik larriena. Gobernuak hasieran ETAri egotzi zion egiletza; informazioaren kudeaketak hauteskundeen aurreko egunetan eragin handia izan zuen.</p>
+- id: g10-3
+  number: '10.3'
+  title: Euskal auzia eta Ibarretxe Plana
+  body: |-
+    <p>Euskal Autonomia Erkidegoan, <strong>Juan Jose Ibarretxe</strong> lehendakariak (EAJ) <span class="term" data-def="2003–2005eko proposamena, Euskadirentzat Espainiarekiko «elkartze askeko» estatus politiko berria planteatzen zuena, autodeterminazio eskubidean oinarrituta.">Ibarretxe Plana</span> bultzatu zuen (2003–2005): Euskadirentzat estatus politiko berri bat, «elkartze askean» oinarritua. Eusko Legebiltzarrak onartu zuen, baina Espainiako Kongresuak baztertu zuen 2005ean.</p><p>Garai honetan, terrorismoaren amaierarako bidea ireki zen pixkanaka, gizarte-presioaren, polizia-lankidetzaren eta isolamendu politikoaren ondorioz.</p>
+- id: g10-4
+  number: '10.4'
+  title: Zapateroren gobernuak eta erreforma sozialak
+  body: |-
+    <p>11-Mren ondorengo hauteskundeetan <strong>Jose Luis Rodríguez Zapateroren PSOEk</strong> irabazi zuen (2004). Lehen legealdian (2004–2008) erreforma sozial sakonak gauzatu zituen:</p><ul>
+    <li><strong>Ezkontza berdintasuna (2005):</strong> sexu bereko pertsonen arteko ezkontza legeztatu zen.</li>
+    <li><strong>Mendekotasun Legea (2006):</strong> ongizate-estatuaren laugarren zutabea.</li>
+    <li><strong><span class="term" data-def="2007ko legea: Gerra Zibilaren eta frankismoaren biktimen aitortza, frankismoaren sinboloak kentzea eta memoria berreskuratzea.">Memoria Historikoaren Legea</span> (2007).</strong></li>
+    <li><strong>Estatutu-erreformak:</strong> Kataluniako Estatutu berria (2006) eta beste batzuk.</li>
+    </ul><p>Aldi berean, immigrazioa nabarmen hazi zen eta gizartea anitzago bihurtu zen.</p>
+- id: g10-5
+  number: '10.5'
+  title: 2008ko krisia eta ETAren amaiera
+  body: |-
+    <p>Zapateroren bigarren legealdia (2008–2011) <strong>2008ko krisi ekonomiko globalak</strong> markatu zuen: higiezinen burbuilaren leherketak, finantza-krisiak eta langabezia masiboak (gazteen artean bereziki) Espainia gogor jo zuten. Murrizketa-politikek eta <span class="term" data-def="Botere ekonomikoaren eta enpleguaren beherakada sakona. 2008ko finantza-krisiak eta higiezinen burbuilaren leherketak Espainia gogor jo zuten.">krisi sozialak</span> deskontentua piztu zuten (15-M mugimendua, 2011).</p><p>Esparru politikoan, <strong>2011n ETAk indarkeriaren behin betiko amaiera</strong> iragarri zuen, hamarkadetako terrorismoari amaiera emanez. Urte berean, krisiaren testuinguruan, PPk (Rajoy) gehiengo osoz irabazi zuen, beste ziklo bat hasiz.</p><div class="callout"><div class="callout-title">Balorazioa</div>1996–2011 aldiak Espainiako demokraziaren heldutasuna (alternantzia, erreforma sozialak, Europako integrazioa) eta haren ahuleziak (terrorismoa, lurralde-tentsioak, eredu ekonomikoaren hauskortasuna) erakusten ditu. 2008ko krisiak hurrengo hamarkadako eraldaketa politikoaren oinarriak jarri zituen.</div>
+glossary:
+- term: Alternantzia
+  def: |-
+    Boterea hauteskundeen bidez alderdi batetik bestera modu baketsuan igarotzea (PP↔PSOE).
+- term: Euroa
+  def: |-
+    Europar Batasuneko txanpon bakarra. Espainian 2002an ezarri zen, pezeta ordezkatuz.
+- term: Euro-konbergentzia
+  def: |-
+    Maastrichteko irizpideak (defizita, inflazioa, zorra) txanpon bakarrean sartzeko betebeharrak.
+- term: 11-M (2004)
+  def: |-
+    Madrilgo trenetako atentatu jihadistak: 192 hildako. Espainiako historiako larriena; hauteskundeetan eragin handia.
+- term: Miguel Ángel Blanco (1997)
+  def: |-
+    PPko zinegotzia, ETAk bahitu eta hil zuena. Haren hilketak mobilizazio sozial masiboa eragin zuen.
+- term: Lizarra-Garaziko Ituna (1998)
+  def: |-
+    Nazionalismoaren eta ezker abertzalearen arteko akordioa, ETAren su-etenarekin. Urtebetera hautsi zen.
+- term: Ibarretxe Plana
+  def: |-
+    2003–2005eko proposamena: Euskadirentzat «elkartze askeko» estatus berria, autodeterminazioan oinarritua. Kongresuak baztertu zuen.
+- term: Ezkontza berdintasuna (2005)
+  def: Sexu bereko pertsonen arteko ezkontza legeztatzea; eskubide zibilen hedapena.
+- term: Mendekotasun Legea (2006)
+  def: |-
+    Autonomia pertsonalerako eta mendekotasunaren arretarako legea; ongizate-estatuaren laugarren zutabea.
+- term: Memoria Historikoaren Legea (2007)
+  def: |-
+    Gerra Zibilaren eta frankismoaren biktimen aitortza eta frankismoaren sinboloak kentzea.
+- term: Estatutu-erreformak
+  def: |-
+    2000ko hamarkadako autonomia-estatutuen berrikuspenak (Katalunia 2006, besteak beste).
+- term: Higiezinen burbuila
+  def: |-
+    Eraikuntzaren eta etxebizitza-prezioen gehiegizko hazkundea; 2008an leher egin zuen, krisia eraginez.
+- term: 2008ko krisi ekonomikoa
+  def: |-
+    Finantza-krisi globala eta higiezinen burbuilaren leherketa; langabezia masiboa eta murrizketak.
+- term: 15-M (2011)
+  def: Krisiaren aurkako mugimendu soziala, sistema politiko eta ekonomikoaren kritika.
+- term: ETAren su-etena (2011)
+  def: 2011n ETAk indarkeria armatuaren behin betiko amaiera iragarri zuen.
+- term: Irakeko gerra (2003)
+  def: |-
+    Aznarren gobernuak AEBekin batera babestu zuen esku-hartzea, iritzi publikoaren gehiengoaren aurka.
+- term: Immigrazioa
+  def: 2000ko hamarkadan nabarmen hazi zen; gizartea anitzago eta plurala bihurtu zuen.

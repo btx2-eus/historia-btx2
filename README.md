@@ -46,18 +46,48 @@ python3 -m http.server 8000
 
 Edo `index.html` zuzenean ireki dezakezu nabigatzailearekin.
 
-## Edukia eguneratzeko
+## Edukia eguneratzeko (build sistema)
 
-1. Gai baten edukia aldatzeko: editatu `temas/NN-…html`.
-2. Glosarioa: editatu `<dl class="glossary-grid">` ataleko `<dt>` / `<dd>` parak (flashcardak automatikoki sortuko dira berriz).
-3. Funtsezko datak: editatu `<ul class="keydates">` zerrenda.
-4. Aldaketa egin ostean:
-   ```bash
-   git add -A && git commit -m "..." && git push
-   ```
-5. GitHub Pages-ek automatikoki publikatzen du 1–3 minututan.
+Web orriaren HTML guztiak **sortzen dira** YAML edukietatik eta Jinja2 plantilletatik. Hala, aldaketa orok puntu bakar batean egin behar dira.
 
-> **Oharra:** CSS edo JS aldatzen badira, igo `?v=N` zenbakia HTML-en estekan (`styles.css?v=N`, `app.js?v=N`), ikasleen arakatzaileek azken bertsioa karga dezaten.
+### Edukia aldatzeko
+
+1. **Gai baten edukia** aldatzeko: editatu `content/temas/NN.yaml` (atalak, glosarioa, datak, denbora-lerroa, e.a.).
+2. **Egitura, nabigazioa edo orri-diseinua** aldatzeko: editatu `templates/tema.html.j2` edo `templates/index.html.j2`.
+3. **Gune-konfigurazioa** (logo-testua, copyright, etab.): editatu `content/site.yaml`.
+
+### Eraikitzeko
+
+```bash
+pip install pyyaml jinja2 beautifulsoup4   # behin bakarrik
+python3 build.py                          # HTMLak berriz sortzen ditu
+```
+
+Honek `index.html` eta `temas/*.html` berridazten ditu.
+
+### Sortutakoa argitaratzeko
+
+```bash
+git add -A && git commit -m "..." && git push
+```
+
+GitHub Pages-ek automatikoki publikatzen du 1–3 minututan.
+
+> **Oharra:** CSS edo JS aldatzen badira, igo `site.cache_version` `content/site.yaml`-en eta exekutatu `python3 build.py` berriro.
+
+### Egitura tekniko
+
+```
+content/
+  site.yaml              # Gune-konfigurazioa, gai-zerrenda, era-koloreak
+  temas/01.yaml … 10.yaml  # Gai bakoitzaren edukia
+templates/
+  index.html.j2          # Hasierako orriaren plantilla
+  tema.html.j2           # Gaien plantilla
+scripts/
+  parse_existing.py      # Existitzen den HTMLetik YAMLa atera (parseatzailea, behin bakarrik erabili behar dena migraziorako)
+build.py                 # Eraikitzailea
+```
 
 ## Edukia
 

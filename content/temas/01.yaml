@@ -1,0 +1,251 @@
+meta:
+  num: 1
+  slug: antzinako-erregimena
+  title: Antzinako Erregimenaren krisia eta Estatu liberalaren eraikuntza
+  years: 1808 – 1876
+  pdf: 01-antzinako-erregimena.pdf
+  iturri_pdf: 01-iturri.pdf
+intro: |-
+  XVIII. mendearen bigarren erdian, mundua aldatuko zuten ideia berriak sortu ziren. <span class="term" data-def="Arrazoia, hezkuntza eta askatasuna defendatzen zituen XVIII. mendeko mugimendua. Liberalismoaren oinarri ideologikoa.">Ilustrazioak</span> arrazoia, hezkuntza eta askatasuna jarri zituen gizartearen oinarri gisa, eta <span class="term" data-def="Gizarte estamentala, monarkia absolutua eta nekazaritzan oinarritutako ekonomia. XVIII. mende bukaeran krisian sartu zen.">Antzinako Erregimena</span> —monarkia absolutua, gizarte estamentala eta nekazaritza-ekonomia— zalantzan jarri zen. AEBen independentzia (1776) eta <span class="term" data-def="Frantzian absolutismoaren eta pribilegioen aurkako iraultza (1789). Liberalismoaren, berdintasunaren eta subiranotasun nazionalaren oinarriak zabaldu zituen.">Frantziako Iraultzak</span> (1789) modernitate politikoaren bidea ireki zuten, eta burgesia gizarte-klase berri gisa sendotzen hasi zen.
+timeline:
+- year: '1808'
+  label: Independentzia Gerra
+  target: g1-1
+  desc: Frantses inbasioa, Baionako Abdikazioak eta Maiatzaren 2ko altxamendua.
+- year: '1812'
+  label: «La Pepa»
+  target: g1-2
+  desc: 'Cadizko Konstituzioa («La Pepa»): Espainiako lehena.'
+- year: '1814'
+  label: Absolutismoa berrezarri
+  target: g1-3
+  desc: Fernando VII.a itzuli eta absolutismoa berrezarri.
+- year: '1820'
+  label: Hirurteko Liberala
+  target: g1-3
+  desc: 'Riegoren altxamendua: Hirurteko Liberala (1820–1823).'
+- year: '1833'
+  label: Lehen Karlistada
+  target: g1-3
+  desc: Lehen Karlistada eta probintzien antolaketa.
+- year: '1837'
+  label: Konst. progresista
+  target: g1-3
+  desc: Konstituzio progresista, Cadizko espirituarekin.
+- year: '1845'
+  label: Konst. moderatua
+  target: g1-3
+  desc: Konstituzio moderatua, subiranotasun partekatuarekin.
+- year: '1868'
+  label: «La Gloriosa»
+  target: g1-4
+  desc: '«La Gloriosa»: Isabel II.a kanporatua.'
+- year: '1869'
+  label: Konst. demokratikoa
+  target: g1-4
+  desc: Konstituzio demokratikoa eta gizonen sufragio unibertsala.
+- year: '1873'
+  label: Lehen Errepublika
+  target: g1-4
+  desc: Lehen Errepublika; urte bakarrean lau presidente.
+- year: '1876'
+  label: Foruen abolizioa
+  target: g1-5
+  desc: Foruen abolizioa eta Berrezarkuntza.
+- year: '1878'
+  label: Kontzertu Ekonomikoa
+  target: g1-5
+  desc: 'Kontzertu Ekonomikoa: zerga-autonomia partziala.'
+keydates:
+- year: '1808'
+  text: Frantses inbasioa, Baionako Abdikazioak eta Maiatzaren 2ko altxamendua.
+- year: '1812'
+  text: Cadizko Konstituzioa («La Pepa»), Espainiako lehena.
+- year: '1814'
+  text: Fernando VII.a itzuli eta absolutismoa berrezarri.
+- year: '1820'
+  text: 'Riegoren altxamendua: Hirurteko Liberala.'
+- year: '1833'
+  text: Lehen Karlistada eta probintzien antolaketa.
+- year: '1837'
+  text: Konstituzio progresista.
+- year: '1845'
+  text: Konstituzio moderatua.
+- year: '1868'
+  text: '«La Gloriosa»: Isabel II.a kanporatua.'
+- year: '1869'
+  text: Konstituzio demokratikoa.
+- year: '1873'
+  text: Lehen Errepublika.
+- year: '1876'
+  text: Foruen abolizioa eta Berrezarkuntza.
+- year: '1878'
+  text: Kontzertu Ekonomikoa.
+sections:
+- id: g1-1
+  number: '1.1'
+  title: 'Independentzia Gerra eta Jose I.aren Gobernua: frantsestuak'
+  body: |-
+    <p>Frantziako Iraultzak sortutako ezegonkortasunaren testuinguruan, Napoleon Bonapartek boterea hartu eta Inperioa ezarri zuen. 1808an Frantziak Espainia inbaditu eta 1814ra arte menpean eduki zuen. Independentzia Gerra ez zen soilik inbasioaren aurkako borroka izan: Antzinako Erregimenaren oinarriak zalantzan jarri zituen eta Estatu liberalaren eraikuntza prozesua martxan jarri zuen.</p><h3><span class="h-num">1.1.1</span> Frantziako inbasioa eta Baionako Abdikazioak (1808)</h3><p>Espainiako monarkia egoera ahulean zegoen: Karlos IV.ak ez zuen herritarren konfiantza, eta haren ministro nagusia, Manuel Godoy, gatazka politikoen erdian zegoen. 1807an, <strong>Fontainebleauko Ituna</strong> sinatu zuten Frantziak eta Espainiak Portugal inbaditzeko, baina Napoleonen benetako asmoa Espainia menderatzea zen.</p><p>1808ko martxoan <strong>Aranjuezeko matxinada</strong> piztu zen: Godoy atxilotu zuten eta Karlos IV.a abdikatzera behartu, Fernando VII.aren mesedetan. Apirilean, Napoleonek bi erregeak Baionara deitu zituen, eta presio politikoaren bidez biak abdikatzera behartu zituen (<span class="term" data-def="Napoleonek Fernando VII.a eta Karlos IV.a abdikatzera behartu zituen (1808), eta Jose I.a izendatu zuen errege.">Baionako Abdikazioak</span>). Napoleonek bere anaia <span class="term" data-def="Napoleonen anaia. Espainiako errege izan zen 1808–1813 artean, frantsesen babesarekin.">Jose Bonaparte</span> izendatu zuen Espainiako errege.</p><h3><span class="h-num">1.1.2</span> Jose I.aren gobernua eta Baionako Estatutua (1808)</h3><p>1808ko ekainean, Napoleonek <span class="term" data-def="Jose I.ak ezarritako testua (1808): konstituzio itxura zuen, baina ez zen demokratikoa ezta herritarren ordezkariek onartutakoa ere.">Baionako Estatutua</span> aldarrikatu zuen. Konstituzio itxura izan arren, ez zen benetako konstituzioa: ez zuen subiranotasun nazionalik aitortzen, eta inposatutako agiri bat zen. Zenbait ideia liberal jasotzen zituen (inprenta askatasuna, zergen berdintasuna, habeas corpus-aren printzipioa), baina ia ez ziren praktikara eraman.</p><p>Jose I.aren gobernuan zenbait espainiar ilustratuk eta burokratak hartu zuten parte: <span class="term" data-def="Frantsesen alde egin zuten espainiar ilustratuak eta funtzionarioak. Jose I.aren gobernuan parte hartu zuten, eta askok erbestea hartu behar izan zuten.">frantsestuak</span>. Batzuek Espainia modernizatzeko aukera ikusi zuten; gerra amaitzean, ordea, askok traidoretzat hartu zituzten.</p><h3><span class="h-num">1.1.3</span> Gerra pizten da: Madrilgo altxamendua (1808-05-02)</h3><p>1808ko maiatzaren 2an, Madrilgo herritarrek altxamendua hasi zuten frantsesen aurka. Murat jeneralaren tropek gogor erantzun zuten, eta hurrengo egunean fusilamendu masiboak burutu zituzten —Francisco de Goyaren margolanetan betiko irudikatuak—. Hainbat hiritan Junta probintzialak osatu ziren botere hutsunea betetzeko, eta horiek koordinatzeko <span class="term" data-def="Inbasioaren aurka botere politiko eta militar nazionala koordinatu zuen erakundea, erregearen ausentzian.">Junta Zentral Gorena</span> sortu zen.</p><h3><span class="h-num">1.1.4</span> Gerraren faseak (1808–1814)</h3><ul>
+    <li><strong>Lehen fasea (1808):</strong> inbasioa eta erresistentzia. Uztailean, <strong>Bailengo guduan</strong> Espainiak Frantziaren aurkako lehen garaipen handia lortu zuen, eta Jose I.ak Madril utzi behar izan zuen.</li>
+    <li><strong>Bigarren fasea (1809–1812):</strong> Napoleonen interbentzioa. 150.000 soldadurekin lurralde ia osoa okupatu zuen, baina ez zuen kontrol eraginkorrik lortu. <strong>Gerrillak</strong> eta Britainia Handiko <strong>Wellington</strong> jeneralaren armada funtsezko bihurtu ziren. Cadiz izan zen okupatu gabeko hiri nagusia.</li>
+    <li><strong>Hirugarren fasea (1812–1814):</strong> frantsesen atzerakada. Napoleonek tropak Errusiara eraman zituen; aliatuek garaipen erabakigarriak lortu zituzten (Arapiles, Gasteiz 1813). 1814an frantsesek alde egin zuten eta Fernando VII.a tronura itzuli zen.</li>
+    </ul><h3><span class="h-num">1.1.5</span> Euskal Herrian: okupazioa, erresistentzia eta foruen auzia</h3><p>Frantses tropak azkar sartu ziren lurraldean, eta tokiko elite batzuen hasierako kolaborazioa jaso zuten, foruak babesteko itxaropenarekin. Hala ere, zentralizazio administratiboa ezarri nahian, foru-erakunde historikoak indargabetu zituzten. Horrek tokiko erresistentzia bizkortu zuen eta foruen defentsaren inguruko sentiberatasuna indartu. 1813an, tropa anglo-portugesek <strong>Donostia</strong> setiatu eta suntsitu egin zuten, frantsesen eskuetatik askatu ondoren.</p><h3><span class="h-num">1.1.6</span> Gerraren ondorioak</h3><p>Suntsiketa izugarria izan zen (500.000 hildako baino gehiago, azpiegituren hondamena, gosetea). Espainiaren nazioarteko ospea jaitsi zen, bigarren mailako potentzia bilakatuz. Aldi berean:</p><ul>
+    <li>Nazio-sentimendua nabarmen areagotu zen, etsaiaren aurka.</li>
+    <li>Liberalismoaren ideiak azkar zabaldu ziren, absolutismoaren zilegitasuna kolokan jarriz.</li>
+    <li>Liberalen eta kontserbadoreen arteko lehia hasi zen, XIX. mende osokoa.</li>
+    <li>Burgesiaren gorakada geldiezina bilakatu zen, gizarte estamentala ezin zen berregin.</li>
+    <li>Amerikako kolonien independentzia prozesuak piztu ziren (1898ra arte).</li>
+    </ul>
+- id: g1-2
+  number: '1.2'
+  title: Cadizko Gorteen lan iraultzailea eta 1812ko Konstituzioa
+  body: |-
+    <p>Gerra garaian, lurralde zabala frantsesen menpe egon zen bitartean, Cadizek askatasuna mantendu zuen, erresistentziaren eta legitimitate politikoaren erdigune bilakatuz. 1810ean, Junta Zentral Gorenak <span class="term" data-def="1810–1814 artean Cadizen bildutako ordezkariek osatutako gorteak. Espainiako lehen konstituzioa (1812) onartu zuten.">Cadizko Gorteak</span> deitu zituen.</p><h3><span class="h-num">1.2.1</span> Testuingurua eta Gorteen osaera</h3><p>Fernando VII.a Frantzian preso zegoela, Cadizko Gorteek subiranotasunaren ordezkaritza hartu zuten. Hiru joera nagusi bereizi ziren:</p><ul>
+    <li><strong>Liberalak:</strong> subiranotasun nazionala, botere banaketa eta konstituzio bidezko estatua.</li>
+    <li><strong>Moderatuak:</strong> erreformismo ilustratua, monarkiaren egitura nagusiak mantenduz.</li>
+    <li><strong>Absolutistak:</strong> Antzinako Erregimena babesten zuten.</li>
+    </ul><p>Gerra-egoerak eta Cadizen izaera liberalak Gorteek erritmo bizian eta joera liberalean lan egitea ahalbidetu zuten. Amerikako probintziek ere ordezkaritza izan zuten.</p><h3><span class="h-num">1.2.3</span> 1812ko Konstituzioa: «La Pepa»</h3><p>1812ko martxoaren 19an, Gorteek <span class="term" data-def="1812ko Konstituzioa, «La Pepa». Espainiako lehen konstituzioa eta bere garaian Europako liberalenetakoa.">Espainiako historiako lehen konstituzioa</span> onartu zuten. Oinarri nagusiak:</p><ul>
+    <li><span class="term" data-def="Boterea herriaren edo nazioaren esku dago, ez erregearena. Gorteen bidez gauzatzen da.">Subiranotasun nazionala</span>: boterea herriarena.</li>
+    <li>Botere banaketa: legegilea (Gorteak), betearazlea (erregea), judiziala (epaileak).</li>
+    <li>Gizonezkoen sufragio unibertsala.</li>
+    <li>Eskubide zibilak: inprenta askatasuna, legearen aurreko berdintasuna, jabetza pribatua.</li>
+    <li>Monarkia konstituzionala: erregearen boterea mugatua.</li>
+    <li>Eliza katolikoa erlijio ofiziala, baina Inkisizioa desegin zen.</li>
+    </ul><h3><span class="h-num">1.2.4</span> Eragina eta mugak</h3><p>Gorteek lege ugari onartu zituzten (desamortizazioak, jaurerriak ezabatzea), baina aplikazioa mugatua izan zen, lurraldea frantsesen esku baitzegoen. Fernando VII.a 1814an itzuli zenean, Konstituzioa bertan behera utzi eta absolutismoa berrezarri zuen. Hala ere, 1812ko Konstituzioa mugarri historikoa izan zen: lehen aldiz Estatu liberal baten oinarriak ezarri ziren, eta ondorengo belaunaldietan eragin sakona izan zuen.</p><div class="callout"><div class="callout-title">Laburbilduz</div>Cadizko Gorteak eta 1812ko Konstituzioa Antzinako Erregimenaren krisiari emandako lehen erantzun politiko koherentea izan ziren, eta hurrengo urteetako gatazkaren oinarria jarri zuten: <em>absolutismoa ala liberalismoa, tradizioa ala eraldaketa</em>.</div>
+- id: g1-3
+  number: '1.3'
+  title: 'Liberalismoaren garaipena: Estatuaren egituraren eraikuntza'
+  body: |-
+    <p>1814an Fernando VII.a itzuli eta Cadizko Konstituzioa bertan behera utzi zuen, absolutismoa berrezarriz. Hala ere, Espainia ez zen lehengoa. <span class="term" data-def="Subiranotasun nazionala, eskubide zibilak, konstituzioa eta ekonomia askearen defentsan oinarritutako ideologia.">Liberalismoaren</span> eta absolutismoaren arteko borrokak XIX. mende osoa markatu zuen.</p><h3><span class="h-num">1.3.1</span> Fase nagusiak</h3><ul>
+    <li><strong>1814–1833 · Fernando VII.aren agintaldia:</strong> absolutismoaren errepresioa. 1820an <strong>Riegoren altxamenduak</strong> Hirurteko Liberalari (1820–1823) hasiera eman zion, baina Frantziako tropek («San Luisen Ehun Mila Semeak») absolutismoa berrezarri zuten.</li>
+    <li><strong>1833–1840 · Isabel II.a eta Lehen Karlistada:</strong> Fernando VII.a hil ondoren, Isabel II.a izendatu zuten oinordeko, baina Karlos Maria Isidrok aurka egin zuen. <span class="term" data-def="Absolutisten eta liberalen arteko gerra zibilak. Lehen Karlistaldia (1833–1840) Euskal Herrian foruen defentsarekin bat egin zuen.">Karlistadak</span> hasi ziren: karlistek absolutismoa, Eliza eta foruak defendatzen zituzten; isabeldarrek (liberalek) Estatu zentralista eta konstituzionala. Isabeldarrek irabazi zuten.</li>
+    </ul><h3><span class="h-num">1.3.2 – 1.3.3</span> Estatu liberalaren eraikuntza</h3><p>Liberalismoa nagusitu zenean, erronka nagusia Estatu zentralizatu, modernizatu eta kontrolatu bat eraikitzea izan zen. Espainia probintzietan antolatu zen (1833), gobernadore zibilen menpe. Funtsezko erakundeak sortu ziren: <span class="term" data-def="Estatuak sortutako indar armatua (1844). Ordena publikoa bermatzea zuen helburu, batez ere landa eremuetan.">Guardia Zibila</span> (1844), zigor kode bateratua (1848), hezkuntzaren kontrola (1857) eta Kode zibila (1889).</p><p>Ekonomian, <span class="term" data-def="Estatuak Elizaren eta herriaren jabetzak saldu zituen jabetza pribatua sustatzeko. Nekazarien egoera okertu eta latifundismoa areagotu zuen.">desamortizazioek</span> (Mendizabal 1836, Madoz 1855) Elizaren eta herriaren ondasunak saldu zituzten. Baina aberastasuna ez zen banatu: jabetza are gehiago kontzentratu zen. Kapitalismoaren hastapenak (trenbidea, bankuak, burtsak) lurralde eta klase gutxi batzuetara mugatu ziren.</p><h3><span class="h-num">1.3.4</span> Liberalismoaren kontraesanak</h3><p>Liberalismoak askatasuna aldarrikatu bazuen ere, praktikan elite politiko eta ekonomikoen menpe gelditu zen: sufragioa oso mugatua zen, eskubideak ez ziren beti bermatzen eta ustelkeria zabaldua zegoen. Bi korronte nagusi finkatu ziren:</p><ul>
+    <li><strong>Moderatuak:</strong> zentralismoa, Elizaren papera eta aldaketa geldoak.</li>
+    <li><strong>Progresistak:</strong> udal autonomia, sufragio zabalagoa eta Elizaren boterearen murrizketa.</li>
+    </ul><p>Hiru testu erabili ziren etapa honetan: 1834ko Errege Estatutua (oso moderatua), <strong>1837ko Konstituzioa</strong> (progresista, Cadizko espirituari eutsiz) eta <strong>1845eko Konstituzioa</strong> (moderatua, subiranotasun partekatuarekin).</p><h3><span class="h-num">1.3.5</span> Sistemaren agortzea</h3><p>1850eko hamarkadatik aurrera, ustelkeriak, hauteskunde faltsuek eta Isabel II.aren autoritarismoak sistemaren zilegitasuna higatu zuten. 1868an, <span class="term" data-def="Isabel II.aren aurkako altxamendu militarra (1868). Monarkia amaitu eta Seiurteko Demokratikoari bide eman zion.">«La Gloriosa»</span> iraultzak Isabel II.a tronutik kendu eta Seiurteko Demokratikoari bide eman zion.</p>
+- id: g1-4
+  number: '1.4'
+  title: Seiurteko Demokratikoa
+  body: |-
+    <p><span class="term" data-def="Isabel II.a kendu eta erregimen demokratikoagoa ezartzeko saiakera (1868–1874): 1869ko Konstituzioa, Amadeoren monarkia eta Lehen Errepublika barne.">Seiurteko Demokratikoa</span> Espainian benetako demokrazia bat ezartzeko lehen saiakera izan zen, arrakasta gehiegirik gabe.</p><h3><span class="h-num">1.4.1 – 1.4.2</span> La Gloriosa eta 1869ko Konstituzioa</h3><p>1868ko irailean, Prim eta Serrano jeneralek gidatutako altxamenduak Isabel II.a erbesteratu zuen. <strong>1869ko Konstituzioa</strong> Espainiako demokratikoenetako bat izan zen: subiranotasun nazionala, <span class="term" data-def="Gizonezko heldu guztiek boto eskubidea dute, errenta edo jabetza kontuan hartu gabe. Espainian lehen aldiz 1869an ezarri zen.">gizonen sufragio unibertsala</span> eta eskubide zibilen zerrenda zabala (adierazpen, inprenta eta erlijio askatasuna).</p><h3><span class="h-num">1.4.3</span> Errege bila: Amadeo I.a (1871–1873)</h3><p>Erregimen berriak monarkiari eutsi nahi izan zion, eta <strong>Amadeo I.a Savoiakoa</strong> izendatu zuten. Baina ez zuen babes sozialik, ez zen tradizio historikoarekin konektatzen, eta gatazka ziklo batean zegoen (Karlistaldi berria, Kubako gerra). Prim jeneralaren hilketak (1870) bere babesle nagusia kendu zion, eta 1873an abdikatu zuen.</p><h3><span class="h-num">1.4.4 – 1.4.5</span> Lehen Errepublika eta ondorioak</h3><p><span class="term" data-def="Espainiako lehen errepublika (1873–1874). Barne tentsioek eta egonkortasun faltak porrotera eraman zuten urtebete eskasean.">Lehen Errepublika</span> oso zatituta jaio zen (zentralistak vs. federalak), eta gatazka larriek jo zuten: kantoien altxamendua, II. Karlistada eta Kubako gerra. Urte bakarrean lau presidente izan ziren. 1874an, Martínez Campos jeneralaren estatu kolpeak Alfonso XII.a tronura ekarri zuen, Borboien monarkia lehengoratuz.</p><div class="callout"><div class="callout-title">Ondorioa</div>Porrota izan arren, Seiurtekoak demokrazia, errepublika eta federalismoaren ideiak errotu zituen, eta sufragio unibertsala lehen aldiz aplikatu zuen.</div>
+- id: g1-5
+  number: '1.5'
+  title: Foru-auzia
+  body: |-
+    <p>Estatu liberalaren eraikuntzak <span class="term" data-def="Boterea erdigunean biltzen duen sistema politiko eta administratiboa. Tokiko autonomiak baztertzen ditu.">zentralizazioan</span> oinarritu zuen boterearen antolaketa. <span class="term" data-def="Euskal lurraldeetako lege, ohitura eta erakunde propioak. Autogobernua eta zerga-salbuespenak ematen zituzten.">Foruak</span> Antzinako Erregimenaren pribilejiotzat hartu zituen liberalismoak, eta desagerrarazi nahi izan zituen. Euskal Herrian eta Nafarroan, ordea, foruak ez ziren pribilegio huts, autonomia historikoaren eta identitate kolektiboaren adierazgarri baizik.</p><h3><span class="h-num">1.5.1</span> Zer ziren foruak?</h3><p>Erdi Aroko jatorria zuten lege eta ohitura propioak ziren. Euskal lurraldeetan (Bizkaia, Gipuzkoa, Araba eta Nafarroa) eskaintzen zituzten:</p><ul>
+    <li>Zerga eta soldadutza salbuespenak.</li>
+    <li>Justizia eta administrazio antolaketa propioa.</li>
+    <li>Erabakiak hartzeko tokiko erakunde autonomoak (<span class="term" data-def="Euskal lurraldeetako foru-erakunde historikoak; tokiko erabakigune eta legegile nagusiak.">Batzar Nagusiak</span>, Diputazioak).</li>
+    </ul><h3><span class="h-num">1.5.2 – 1.5.3</span> Gatazka eta 1876ko abolizioa</h3><p>Karlistaldietan, foruen aldarrikapena nagusietako bat izan zen. Liberalek gatazka horren ondoren foruak zigortzeko aitzakia erabili zuten: Nafarroan 1841eko «Lege Hitzartua», eta euskal probintzietan 1839ko foruen erreforma. <strong>Hirugarren Gerra Karlista</strong> (1872–1876) amaitu ondoren, Cánovas del Castilloren gobernuak <strong>1876ko uztailaren 21ean Euskal Foruak abolitzeko legea</strong> onartu zuen. Salbuespen bakarra <span class="term" data-def="Euskal lurraldeei zerga-autonomia partziala ematen dien sistema (1878). Estatuari kupo bat ordaintzen diote, baina inbertsio politika propioa egin dezakete. Gaur egun ere indarrean dago.">Kontzertu Ekonomikoa</span> izan zen (1878), zerga-autonomia partziala mantenduz.</p><h3><span class="h-num">1.5.4 – 1.5.5</span> Ondorioak gizartean eta politikan</h3><p>Foruen abolizioa eraso larritzat hartu zen Euskal Herrian, eta epe luzeko erreakzio politiko-kulturalak sortu zituen:</p><ul>
+    <li><strong>Tradizionalismoaren berpiztea:</strong> fedea, foruak eta monarkia tradizionala uztartzen zituen diskurtsoa.</li>
+    <li><strong>Euskal nazionalismoaren hastapenak:</strong> Sabino Aranak euskal nazioaren ideia artikulatu zuen, foruak oinarri historiko gisa erabiliz.</li>
+    <li><strong>Autonomia politikoaren eskaera:</strong> talde aurrerakoiek autogobernu modernoaren aldeko borrokaren abiapuntu gisa interpretatu zuten.</li>
+    </ul><p>Horrela, foru-auziak zentralismoaren eta aniztasun historiko-lurraldearen arteko gatazka zabaldu zuen, eta horren ondorioek XX. mendeko gatazka politikoak baldintzatu zituzten, gaur arte.</p>
+glossary:
+- term: Abertzaletasuna / Nazionalismoa
+  def: |-
+    Nazio baten nortasuna eta autodeterminazio eskubidea aldarrikatzen duen ideologia. Euskal Herrian XIX. mende amaieran sortu zen, foruen galera eta zentralismoaren aurrean.
+- term: Amadeo I.a
+  def: |-
+    Saboya leinuko printzea. Espainiako errege (1871–1873) Seiurteko Demokratikoan; sostengu faltagatik abdikatu zuen.
+- term: Antzinako Erregimena
+  def: |-
+    Gizarte estamentala, monarkia absolutua eta nekazaritzan oinarritutako ekonomia. XVIII. mende bukaeran krisian sartu zen.
+- term: Baionako Abdikazioak (1808)
+  def: |-
+    Napoleonek Fernando VII.a eta Karlos IV.a abdikatzera behartu zituen, eta Jose I.a izendatu errege.
+- term: Baionako Estatutua (1808)
+  def: |-
+    Jose I.ak ezarritako testua: konstituzio itxura zuen, baina ez zen demokratikoa ezta herritarrek onartua ere.
+- term: Batzar Nagusiak
+  def: |-
+    Euskal lurraldeetako foru-erakunde historikoak; tokiko erabakigune eta legegile nagusiak.
+- term: Cadizko Gorteak
+  def: |-
+    1810–1814 artean bildutako ordezkariek osatutako gorteak. Espainiako lehen konstituzioa (1812) onartu zuten.
+- term: Desamortizazioa
+  def: |-
+    Estatuak Elizaren eta herriaren jabetzak saldu zituen jabetza pribatua sustatzeko. Nekazarien egoera okertu eta latifundismoa areagotu zuen.
+- term: Diputazioak
+  def: Probintzia mailako gobernuak. XIX. mendean gobernadore zibilen menpe egon ziren.
+- term: Errejentzia
+  def: |-
+    Erregea adingabea edo absente dagoenean haren izenean gobernatzen duen agintea (Maria Cristina eta Espartero, 1833–1843).
+- term: Errepublika
+  def: |-
+    Estatua erregerik gabe antolatzen den sistema. Herritarrek hautatutako ordezkariek gobernatzen dute.
+- term: Estatu zentralista
+  def: |-
+    Boterea Madrilen edo erdigunean biltzen da; probintziek ez dute autonomia politikorik.
+- term: Fernando VII.a
+  def: |-
+    Espainiako erregea. Absolutismoa berrezarri zuen 1814an eta liberalismoaren aurka jardun zuen.
+- term: Frantsestuak
+  def: |-
+    Frantsesen alde egin zuten espainiar ilustratuak eta funtzionarioak. Askok erbestea hartu behar izan zuten.
+- term: Frantziar Iraultza (1789)
+  def: |-
+    Absolutismoaren eta pribilegioen aurkako iraultza. Liberalismoaren, berdintasunaren eta subiranotasun nazionalaren oinarriak zabaldu zituen.
+- term: Foruak
+  def: |-
+    Euskal lurraldeetako lege, ohitura eta erakunde propioak. Autogobernua eta zerga-salbuespenak ematen zituzten.
+- term: Gobernadore zibilak
+  def: |-
+    Estatu zentralaren ordezkari nagusiak probintzietan. 1833tik aurrera sistematizatu ziren.
+- term: Guardia Zibila (1844)
+  def: |-
+    Estatuak sortutako indar armatua. Ordena publikoa bermatzea zuen helburu, batez ere landa eremuetan.
+- term: Habeas corpus
+  def: |-
+    Pertsonen askatasuna babesteko printzipio juridikoa: inor ezin da nahierara atxilotu, epaile baten aurrean aurkeztu behar da.
+- term: Ilustrazioa
+  def: |-
+    Arrazoia, hezkuntza eta askatasuna defendatzen zituen XVIII. mendeko mugimendua. Liberalismoaren oinarri ideologikoa.
+- term: Jose I.a
+  def: |-
+    Napoleonen anaia. Espainiako errege izan zen 1808–1813 artean, frantsesen babesarekin.
+- term: Karlistadak
+  def: |-
+    Absolutisten eta liberalen arteko gerra zibilak. Lehen Karlistaldia (1833–1840) Euskal Herrian foruen defentsarekin bat egin zuen.
+- term: Konstituzioa
+  def: |-
+    Estatuaren oinarrizko legea. Botereen banaketa, erakundeen egitura eta herritarren eskubideak arautzen ditu.
+- term: Kontzertu Ekonomikoa (1878)
+  def: |-
+    Euskal lurraldeei zerga-autonomia partziala ematen dien sistema. Kupo bat ordaintzen diote estatuari. Gaur egun ere indarrean.
+- term: La Gloriosa (1868)
+  def: |-
+    Isabel II.aren aurkako altxamendu militarra. Monarkia amaitu eta Seiurteko Demokratikoari bide eman zion.
+- term: Lehen Errepublika (1873–1874)
+  def: |-
+    Espainiako lehen errepublika. Barne tentsioek eta egonkortasun faltak porrotera eraman zuten.
+- term: Liberalismoa
+  def: |-
+    Subiranotasun nazionala, eskubide zibilak, konstituzioa eta ekonomia askearen defentsan oinarritutako ideologia.
+- term: Moderantismoa
+  def: |-
+    Liberalismoaren adar kontserbadoreena. Subiranotasun partekatua eta sufragio zentsitarioa defendatzen zituen.
+- term: Napoleon Bonaparte
+  def: |-
+    Frantziako enperadorea. Europa konkistatu zuen eta Espainian interbentzio zuzena egin zuen 1808tik aurrera.
+- term: Nazio-kontzientzia
+  def: |-
+    Lurralde batek bere izaera politiko eta kulturala modu kolektiboan sentitzea. XIX. mendean indartu zen.
+- term: Seiurteko Demokratikoa (1868–1874)
+  def: |-
+    Isabel II.a kendu eta erregimen demokratikoagoa ezartzeko saiakera: 1869ko Konstituzioa, Amadeo eta Lehen Errepublika.
+- term: Subiranotasun nazionala
+  def: Boterea herriaren edo nazioaren esku dago. Gorteen bidez gauzatzen da.
+- term: Subiranotasun partekatua
+  def: |-
+    Boterea Gorteen eta erregearen artean banatzen da. Konstituzio moderatuetan agertzen da (1845).
+- term: Sufragio unibertsala (gizonezkoena)
+  def: |-
+    Gizonezko heldu guztiek boto eskubidea dute, errenta kontuan hartu gabe. Espainian lehen aldiz 1869an.
+- term: Sufragio zentsitarioa
+  def: |-
+    Botoa emateko baldintza ekonomikoak ezartzen dira (errenta, jabetza). Herritarren zati handi bat kanpoan geratzen da.
+- term: Zentralismoa
+  def: |-
+    Boterea erdigunean biltzen duen sistema politiko eta administratiboa. Tokiko autonomiak baztertzen ditu.

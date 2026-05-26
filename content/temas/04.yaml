@@ -1,0 +1,177 @@
+meta:
+  num: 4
+  slug: bigarren-errepublika
+  title: II. Errepublika
+  years: 1931 – 1936
+  pdf: 04-bigarren-errepublika.pdf
+  iturri_pdf: 04-iturri.pdf
+intro: |-
+  1931ko apirilaren 14an <strong>Bigarren Errepublika</strong> aldarrikatu zen, gizartearen itxaropen artean. Proiektu handi batekin jaio zen: sistema demokratizatzea, eskubide zibilak zabaltzea, hezkuntza laikoa indartzea, emakumeen botoa aitortzea, armada eta Eliza mugatzea, eta lur-jabetzaren arazoari aurre egitea. Hori zen haren indarra, baina baita ahulezia ere: <span class="term" data-def="Sistema politiko, sozial edo ekonomikoa legearen bidez aldatzeko prozesua.">erreformek</span> interes sakonak ukitzen zituzten, eta oposizio gogorra sortu zuten. 1931–1936 modernizazioaren eta gatazkaren arteko talka izan zen.
+timeline:
+- year: '1930'
+  label: Donostiako Ituna
+  target: g4-1
+  desc: Donostiako Ituna eta Jaca-ko altxamendua.
+- year: 1931·04
+  label: Errepublika
+  target: g4-1
+  desc: Errepublika aldarrikatu zen apirilaren 14an.
+- year: 1931·12
+  label: Konstituzioa
+  target: g4-3
+  desc: '1931ko Konstituzioa: demokratikoa, soziala eta laikoa.'
+- year: '1932'
+  label: Erreformak
+  target: g4-2
+  desc: Erreforma Agrarioa, Kataluniako Estatutua eta Sanjurjada.
+- year: 1933·01
+  label: Casas Viejas
+  target: g4-2
+  desc: 'Casas Viejas: nekazari anarkisten errepresioa.'
+- year: 1933·11
+  label: Eskuina irabazi
+  target: g4-4
+  desc: Eskuinaren garaipena (CEDA); emakumeen lehen botoa.
+- year: '1934'
+  label: Urriko Iraultza
+  target: g4-4
+  desc: Urriko Iraultza Asturiasen eta Companysen aldarrikapena.
+- year: '1935'
+  label: Ustelkeria
+  target: g4-4
+  desc: 'Ustelkeria: Estraperlo eta Nombela aferak.'
+- year: 1936·02
+  label: Fronte Popularra
+  target: g4-5
+  desc: Fronte Popularraren garaipena.
+- year: 1936·07·13
+  label: Calvo Sotelo
+  target: g4-5
+  desc: Calvo Soteloren hilketa.
+- year: 1936·07·17
+  label: Estatu kolpea
+  target: g4-5
+  desc: 'Estatu kolpea: Gerra Zibilaren hasiera.'
+keydates:
+- year: '1930'
+  text: Donostiako Ituna; Jaca-ko altxamendua.
+- year: '1931'
+  text: 'Apirilak 14: Errepublika. Abenduak 9: Konstituzioa.'
+- year: '1932'
+  text: Erreforma Agrarioa, Kataluniako Estatutua eta Sanjurjada.
+- year: '1933'
+  text: Casas Viejas; azaroan eskuinaren garaipena (emakumeen lehen botoa).
+- year: '1934'
+  text: Urriko Iraultza (Asturias) eta Companysen aldarrikapena.
+- year: '1935'
+  text: 'Ustelkeria: Estraperlo eta Nombela aferak.'
+- year: 1936·02
+  text: Fronte Popularraren garaipena.
+- year: 1936·07
+  text: Calvo Soteloren hilketa eta estatu kolpea (uztailak 17).
+sections:
+- id: g4-1
+  number: '4.1'
+  title: Monarkiaren behin betiko krisia
+  body: |-
+    <p>1923ko Primo de Riveraren diktadurak, Alfonso XIII.aren onespenarekin, monarkiaren prestigioa hondoratu zuen. 1929ko krisi ekonomikoaren eta diktaduraren porrotaren ondoren, oposizioa helburu komun batean bildu zen <strong>Donostiako Itunean (1930)</strong>: errepublikanoek (Alcalá-Zamora, Lerroux), sozialistek (Prieto) eta ezker katalanistak (Companys) monarkia amaitzea adostu zuten.</p><p>Jaca-ko altxamendua (1930) porrot egin bazuen ere, <strong>1931ko apirilaren 12ko udal hauteskundeek</strong> herriaren aldaketa-nahia gorpuztu zuten: errepublikanoek hiri nagusietan irabazi zuten, Alfonso XIII.ak erbestea hartu zuen, eta apirilaren 14an <span class="term" data-def="Estatu-forma non estatuburua ez den erregea eta boterea ez den oinordetzaz transmititzen.">Errepublika</span> aldarrikatu zen.</p>
+- id: g4-2
+  number: '4.2'
+  title: Biurteko errepublikar-sozialista (1931–1933)
+  body: |-
+    <p>Manuel Azaña buru, gobernuak erreforma multzo zabala jarri zuen martxan:</p><ul>
+    <li><strong><span class="term" data-def="Lur-jabetzaren banaketa aldatzeko politika: latifundioak mugatu eta nekazariei lurra ematea. Aplikazioa motela eta mugatua izan zen.">Erreforma agrarioa</span>:</strong> 1932ko Legeak jabetza handiak desjabetzeko; baina aplikazioa motela eta mugatua izan zen, desilusioa eraginez.</li>
+    <li><strong>Erreforma militarra:</strong> armada murriztu, leialtasun-zina eskatu; militar kontserbadoreen haserrea piztu zuen.</li>
+    <li><strong>Hezkuntza erreforma:</strong> bi urtetan 13.000 eskola publiko, <span class="term" data-def="Estatuak erlijio jakin batekin identifikatu behar ez duela dioen printzipioa. Eliza eta Estatua bereiztea, hezkuntza erlijioaren kontrolpetik ateraz.">laikotasunean</span> oinarrituta; Elizaren aurkako tentsioa areagotu zuen.</li>
+    <li><strong>Lan-erreformak:</strong> lanaldiak mugatu, eskubideak indartu; CNTren oposizio erradikala handitzen zen.</li>
+    </ul><p>1933ko urtarrilean, <strong>Casas Viejas</strong>-eko sarraskiak (Guardia Zibilak nekazari anarkistak hil zituen) Azañaren dimisioa ekarri zuen. Azaroko hauteskundeetan —emakumeek lehen aldiz botoa eman zutenak— eskuinak (CEDA, Gil-Robles) eta erradikalek (Lerroux) irabazi zuten.</p>
+- id: g4-3
+  number: '4.3'
+  title: 1931ko Konstituzioa
+  body: |-
+    <p>1931ko abenduaren 9an onartu zen Espainiako historiako <span class="term" data-def="Estatu baten oinarrizko legea: erakundeen antolaketa, botereen banaketa eta herritarren eskubideak jasotzen ditu.">Konstituzio</span> demokratiko, sozial eta laiko aurreratuenetakoa:</p><ul>
+    <li>Errepublika demokratiko eta parlamentarioa; «lanaren eta justizia sozialaren Errepublika».</li>
+    <li><span class="term" data-def="Herritar heldu guztiek botoa emateko eskubidea, sexua edo klasea kontuan hartu gabe. Emakumeen botoa 1931an onartu, 1933an aplikatu zen.">Sufragio unibertsala</span>, lehen aldiz emakumeentzat ere.</li>
+    <li>Estatu laikoa: Eliza eta Estatuaren banaketa, jesuiten ordena desegin.</li>
+    <li>Eskubide zibil eta sozial zabalak; <span class="term" data-def="Lurralde batek estatuaren barruan bere erakunde propioak eta autogobernua izatea. Katalunia 1932, Euskal Herria 1936.">autonomien</span> aitorpena (Katalunia 1932).</li>
+    </ul><p>Aurrerakoia izan arren, ez zuen adostasunik sortu: eskuinak (Eliza, monarkikoak, eliteak) mehatxutzat hartu zuen, eta ezker erradikalak «gutxiegi» zela. 1932ko <strong>Sanjurjada</strong> (Sanjurjoren kolpe-saiakera) etorkizuneko altxamenduaren aurrekaria izan zen.</p>
+- id: g4-4
+  number: '4.4'
+  title: Biurteko erradikal-cedista (1933–1936)
+  body: |-
+    <p>Lerrouxen Alderdi Erradikalak gobernatu zuen, CEDAren babesarekin. <span class="term" data-def="Aurretik egindako erreformak geldiarazi, mugatu edo desegiteko politika. 1933tik aurrera lehen biurtekoko erreformak eten ziren.">Kontrarreforma</span> politika ezarri zuten: erreforma agrarioa gelditu, Elizari eskubideak itzuli eta hezkuntza laikoa ahuldu.</p><p>1934ko urrian CEDA gobernuan sartzeak <strong>Urriko Iraultza</strong> piztu zuen: Asturiasen meatzariek lurraldea hartu zuten bi astez (Franco buru zuen armadak gogor zapaldu zuen, ~1.500 hildako), eta Katalunian Companysek Kataluniako Estatua aldarrikatu zuen. 1935ean, <strong>Estraperlo</strong> eta <strong>Nombela</strong> ustelkeria-aferek gobernua hondoratu zuten, eta 1936ko otsailerako hauteskundeak deitu ziren.</p>
+- id: g4-5
+  number: '4.5'
+  title: Fronte Popularraren etapa (1936)
+  body: |-
+    <p>Ezkerra <span class="term" data-def="1936ko hauteskundeetarako ezkerreko koalizio zabala: errepublikano aurrerakoiak, sozialistak, komunistak eta ezker nazionalistak.">Fronte Popularrean</span> batu zen (errepublikanoak, sozialistak, komunistak, ezker nazionalistak) eta otsailean irabazi zuen. Gobernuak amnistia eman eta erreformak berraktibatu zituen, baina giroa muturreraino <span class="term" data-def="Gizartean jarrerak mutur kontrajarrietara urruntzeko prozesua. Ezkerra eta eskuina gero eta urrunago, akordioa ezinezko bihurtuz.">polarizatu</span> zen.</p><p><span class="term" data-def="Helburu politikoak lortzeko erabiltzen den indarkeria: kale-borroka, atentatuak, errepresioa. 1936ko udaberrian eguneroko bihurtu zen.">Indarkeria politikoa</span> areagotu zen (Falange eta ezkerreko miliziak). Militarrek (Mola, Franco, Queipo de Llano) konspiratu zuten. José <strong>Calvo Soteloren hilketak</strong> (uztailak 13) kolpea azkartu zuen: <strong>uztailaren 17an</strong> Afrikako armada matxinatu zen.</p><div class="callout"><div class="callout-title">Balorazio orokorra</div>Errepublikaren amaiera ez zen prozesu natural baten ondorio izan: armadaren sektore batek, eskuin antierrepublikarraren babesarekin, legezko gobernuaren aurkako <span class="term" data-def="Boterea legez kanpo eta indarrez eskuratzeko saiakera, normalean armadaren parte-hartzearekin.">estatu-kolpea</span> abiarazi zuen. 1936ko uztaila Gerra Zibilaren (1936–39) eta ondorengo diktaduraren ataria izan zen.</div>
+glossary:
+- term: Antiklerikalismoa
+  def: |-
+    Elizaren botere politiko, sozial edo ekonomikoaren aurkako jarrera. II. Errepublikan indar handia izan zuen ezkerrean.
+- term: Autonomia
+  def: |-
+    Lurralde batek estatuaren barruan bere erakunde propioak eta autogobernua izatea. Katalunia (1932) eta Euskal Herria (1936).
+- term: CEDA
+  def: |-
+    Confederación Española de Derechas Autónomas (Gil-Robles). Eskuin katoliko nagusia 1933tik.
+- term: Demokrazia
+  def: |-
+    Herritarren parte-hartzean, hauteskunde libreetan eta eskubide zibiletan oinarritutako sistema. II. Errepublika lehen esperientzia demokratiko modernoetako bat.
+- term: Deszentralizazioa
+  def: |-
+    Botere politiko-administratiboaren zati bat estatu zentraletik lurralde-erakundeetara eramatea.
+- term: Donostiako Ituna (1930)
+  def: |-
+    Oposizio errepublikano, sozialista eta katalanistaren akordioa monarkia amaitu eta Errepublika ezartzeko.
+- term: Erradikalizazioa
+  def: |-
+    Jarrera politikoak muturrera eramateko prozesua. Ezker iraultzailean eta eskuin antierrepublikanoan ikusi zen.
+- term: Erreforma agrarioa
+  def: |-
+    Lur-jabetzaren banaketa aldatzeko politika: latifundioak mugatu eta nekazariei lurra ematea. Aplikazioa motela izan zen.
+- term: Erreformismoa
+  def: |-
+    Aldaketa sozial eta politikoak erakunde demokratikoen eta legeen bidez egitearen aldeko jarrera.
+- term: Errepublika
+  def: |-
+    Estatu-forma non estatuburua ez den erregea eta boterea ez den oinordetzaz transmititzen.
+- term: Eskubide sozialak
+  def: |-
+    Bizi-baldintza duinak bermatzera bideratutako eskubideak: lana, hezkuntza, babes soziala, pentsioak.
+- term: Eskubide zibilak
+  def: |-
+    Oinarrizko askatasunak: adierazpena, prentsa, elkartzea, erlijioa eta legearen aurreko berdintasuna.
+- term: Estatu-kolpea
+  def: |-
+    Boterea legez kanpo eta indarrez eskuratzeko saiakera. 1936ko uztaileko altxamendua legezko gobernuaren aurkakoa.
+- term: Falange Española
+  def: |-
+    José Antonio Primo de Riverak sortutako alderdi faxista; kale-borroka antolatu zuen.
+- term: Fronte Popularra
+  def: |-
+    1936ko ezkerreko koalizio zabala (errepublikanoak, sozialistak, komunistak, ezker nazionalistak). Otsailean irabazi zuen.
+- term: Indarkeria politikoa
+  def: |-
+    Helburu politikoak lortzeko erabiltzen den indarkeria: kale-borroka, atentatuak, errepresioa.
+- term: Konstituzioa (1931)
+  def: |-
+    Estatuaren oinarrizko legea; demokratiko, sozial eta laikoa. II. Errepublikaren oinarri juridiko-politikoa.
+- term: Kontrarreforma
+  def: |-
+    Aurreko erreformak geldiarazi, mugatu edo desegiteko politika. Biurteko erradikal-cedista.
+- term: Laikotasuna
+  def: Estatuak erlijio jakin batekin identifikatu behar ez duela dioen printzipioa.
+- term: Latifundioa
+  def: Lur-eremu oso handia, jabe gutxi batzuen esku. Hegoaldean arazo sozial larria.
+- term: Polarizazioa
+  def: |-
+    Jarrerak mutur kontrajarrietara urruntzeko prozesua. Ezker eta eskuinaren arteko akordioa ezinezko bihurtu zuen.
+- term: Sekularizazioa
+  def: Gizartean eta erakundeetan erlijioaren eragina murrizteko prozesua.
+- term: Sufragio unibertsala
+  def: |-
+    Herritar heldu guztiek botoa ematea. Emakumeen botoa 1931an onartu, 1933an aplikatu zen.
+- term: Urriko Iraultza (1934)
+  def: |-
+    CEDA gobernuan sartzearen aurkako altxamendua, Asturiasen bereziki; gogor zapaldua.

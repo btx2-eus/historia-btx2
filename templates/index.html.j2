@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css?v={{ site.cache_version }}" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235b2be0'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EH%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Edukira saltatu</a>
+  <div class="progress-bar" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">H</span><span>{{ site.brand.label }}<small>{{ site.brand.sublabel }}</small></span></a>
+      <button class="nav-toggle" aria-label="Menua" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="#denbora-lerroa">Denbora-lerroa</a>
+        <a href="#gaiak">Gaiak</a>
+        <a href="#tresnak">Tresnak</a>
+        <a class="cta" href="temas/01-{{ temas[0].slug }}.html">Hasi ikasten →</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="main" tabindex="-1">
+    <div class="container">
+      <span class="hero-eyebrow">★ 2. Batxilergoa · EBAU/USaP prestakuntza</span>
+      <h1>Espainiako <span class="grad-text">Historia</span></h1>
+      <p class="lead">1808-2011</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="temas/01-{{ temas[0].slug }}.html">Hasi 1. gaiarekin →</a>
+        <a class="btn btn-ghost" href="#denbora-lerroa"> Ikusi denbora-lerroa</a>
+        <a class="btn btn-ghost" href="pdf/{{ site.apunteak_pdf }}" download>⬇ Apunteak (PDF)</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>{{ temas | length }}</strong><span>Gai osoak</span></div>
+        <div class="stat"><strong>1808–2011</strong><span>200 urte baino gehiago</span></div>
+        <div class="stat"><strong>35+</strong><span>Funtsezko kontzeptu</span></div>
+      </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path fill="#ffffff" d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,40 L1440,70 L0,70 Z"></path></svg>
+    </div>
+  </section>
+
+  <section class="section" id="denbora-lerroa">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Denbora-lerroa</span>
+        <h2>Mugarriak, 1808tik 2011ra</h2>
+        <p>Sakatu mugarri batean dagokion gaira joateko. Lerratu alboetara gertaera gehiago ikusteko.</p>
+      </div>
+      <div class="timeline reveal" role="list">
+        {%- for m in home_timeline %}
+        {%- set t = temas[m.target_tema - 1] %}
+        <a class="tl-item" role="listitem" style="--dot:var(--era-{{ m.era }}-{{ 'b' if (loop.index0 % 2 == 1) else 'a' }})" href="temas/{{ '%02d' | format(t.num) }}-{{ t.slug }}.html{% if m.fragment %}#{{ m.fragment }}{% endif %}"><span class="tl-dot"></span><span class="tl-year">{{ m.year }}</span><span class="tl-label">{{ m.label }}</span></a>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="gaiak">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Programa</span>
+        <h2>EBAU/USaP-eko {{ temas | length }} gaiak</h2>
+        <p>Gai bakoitzak bere kolorea du garaiaren arabera. {{ temas | length }} gaiak osorik prest daude, edukiarekin, funtsezko datekin eta glosarioarekin.</p>
+      </div>
+      <div class="cards-grid">
+        {%- for t in temas %}
+        <a class="tema-card reveal" {% if loop.index0 % 3 == 1 %}data-delay="1" {% elif loop.index0 % 3 == 2 %}data-delay="2" {% endif %}style="--ca:var(--era-{{ t.era }}-a);--cb:var(--era-{{ t.era }}-b)" href="temas/{{ '%02d' | format(t.num) }}-{{ t.slug }}.html">
+          <div class="card-top"><div class="num">{{ t.num }}</div><div><div class="years">{{ t.years }}</div><h3>{{ t.title }}</h3></div></div>
+          <div class="card-body"><p>{{ t.short }}</p></div>
+          <div class="card-foot"><span>Ikasi gaia</span><span class="arrow">→</span></div>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tresnak">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Tresnak</span>
+        <h2>Ikasteko lagungarriak</h2>
+        <p>EBAU/USaP azterketa errazago gainditzeko diseinatutako baliabideak.</p>
+      </div>
+      <div class="features">
+        <div class="feature reveal"><div class="ficon">🕓</div><h3>Denbora-lerro interaktiboa</h3><p>Mugarri historiko nagusiak begi-kolpe batean, bakoitza bere gaira lotuta.</p></div>
+        <div class="feature reveal" data-delay="1"><div class="ficon">📖</div><h3>Kontzeptuen glosarioa</h3><p>Funtsezko 35 termino baino gehiago, definizioarekin testu barruan sakatuz.</p></div>
+        <div class="feature reveal" data-delay="2"><div class="ficon">📌</div><h3>Funtsezko datak</h3><p>Gai bakoitzeko data garrantzitsuenak alboko panel batean, errepasorako.</p></div>
+        <div class="feature reveal" data-delay="3"><div class="ficon">🧭</div><h3>Nabigazio argia</h3><p>Aurkibide dinamikoa, irakurketa-aurrerapena eta diseinu garbia.</p></div>
+        <div class="feature reveal"><div class="ficon">⬇️</div><h3>PDF deskargagarriak</h3><p>Gai bakoitza eta apunte guztien bilduma osoa PDF formatuan, deskargatu eta inprimatzeko.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">H</span><span>{{ site.brand.label }}<small>{{ site.footer_brand_sublabel }}</small></span></a>
+      <nav class="foot-links">
+        <a href="#denbora-lerroa">Denbora-lerroa</a>
+        <a href="#gaiak">Gaiak</a>
+        <a href="#tresnak">Tresnak</a>
+        <a href="temas/01-{{ temas[0].slug }}.html">1. gaia</a>
+      </nav>
+      <div class="foot-bottom">
+        <span>Espainiako Historia · 2. Batxilergoa · EBAU/USaP</span>
+        <span>© <span data-year>{{ current_year }}</span> · {{ site.copyright }}</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Gora itzuli">↑</button>
+  <script src="assets/js/app.js?v={{ site.cache_version }}"></script>
+</body>
+</html>

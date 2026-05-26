@@ -1,0 +1,193 @@
+meta:
+  num: 8
+  slug: trantsizioa
+  title: Trantsizioa
+  years: 1975 – 1982
+  pdf: 08-trantsizioa.pdf
+  iturri_pdf: 08-iturri.pdf
+intro: |-
+  1975ean Franco hil zenean, diktadura amaitu zen, baina haren botere-egitura, beldur kulturala eta interes-sareak ez ziren berez desegin. Trantsizioa ez zen ate bat irekitzea izan, «korridore estu bat zeharkatzea» baizik: askatasuna negoziatzen zen bitartean, <strong>kolpe-beldurra ere negoziatzen zen</strong>. Aurrerapauso erraldoia (alderdiak legalizatu, hauteskundeak, Konstituzioa, autonomiak) eta jarraitutasuna (aparatu frankistak egokitu egin ziren) batera gertatu ziren.
+timeline:
+- year: 1975·11·20
+  label: Franco hil
+  target: g8-1
+  desc: Francoren heriotza.
+- year: 1975·11·22
+  label: Juan Carlos errege
+  target: g8-1
+  desc: Juan Carlos I.a errege izendatua.
+- year: 1976·07
+  label: Suárez gobernuburu
+  target: g8-1
+  desc: Suárez gobernuburu izendatua.
+- year: 1976·11
+  label: Erreforma Legea
+  target: g8-1
+  desc: 'Erreforma Politikoaren Legea: frankismoak bere burua desmuntatzen.'
+- year: 1977·04
+  label: PCE legalizatua
+  target: g8-1
+  desc: 'PCE legalizatua: une arriskutsu eta erabakigarria.'
+- year: 1977·06·15
+  label: Lehen hauteskundeak
+  target: g8-2
+  desc: Frankismo ondorengo lehen hauteskunde orokorrak; UCD irabazle.
+- year: 1977·10
+  label: Moncloa · Amnistia
+  target: g8-5
+  desc: Moncloako Itunak eta Amnistiaren Legea.
+- year: 1978·12·06
+  label: Konstituzioa
+  target: g8-3
+  desc: Konstituzioa onartua erreferendumean.
+- year: 1979·10·25
+  label: Gernikako Estatutua
+  target: g8-3
+  desc: 'Gernikako Estatutua: EAEren autonomia.'
+- year: '1980'
+  label: Eusko Jaurlaritza
+  target: g8-3
+  desc: 'Lehen Eusko Jaurlaritza: Garaikoetxea lehendakari.'
+- year: 1981·02·23
+  label: 23-F
+  target: g8-6
+  desc: '23-F: estatu-kolpe saiakera (Tejero, Milans del Bosch).'
+- year: '1982'
+  label: PSOE irabazle
+  target: g8-6
+  desc: 'PSOEren garaipena: alternantzia eta ziklo baten itxiera.'
+keydates:
+- year: '1975'
+  text: Franco hil; Juan Carlos I.a errege.
+- year: '1976'
+  text: Suárez gobernuburu; Erreforma Politikoaren Legea.
+- year: '1977'
+  text: PCE legalizatua; hauteskunde orokorrak; Moncloako Itunak; Amnistia Legea.
+- year: '1978'
+  text: Konstituzioa (abenduak 6).
+- year: '1979'
+  text: Gernikako Estatutua (urriak 25).
+- year: '1980'
+  text: Lehen Eusko Jaurlaritza (Garaikoetxea).
+- year: '1981'
+  text: '23-F: estatu-kolpe saiakera.'
+- year: '1982'
+  text: 'PSOEren garaipena: ziklo baten itxiera.'
+sections:
+- id: g8-1
+  number: '8.1'
+  title: Erreforma politikoa eta oposizioa
+  body: |-
+    <p>Franco hil eta bi egunera, <strong>Juan Carlos I.a</strong> errege izendatu zuten. Arias Navarroren motelkeriaren ondoren, erregeak <strong>Adolfo Suárez</strong> izendatu zuen gobernuburu (1976). Suárezek, frankismoaren barrutik, «legez lege» demokraziarako bidea diseinatu zuen: <strong><span class="term" data-def="Diktaduraren instituzioak eta legalitatea erabiliz, legeen bidez, demokraziarantz egindako aldaketa. Suárezen estrategiaren oinarria.">erreforma politikoa</span></strong>.</p><p>Tresna erabakigarria <strong>Erreforma Politikoaren Legea (1976)</strong> izan zen: frankismoaren Gorteek beren burua desmuntatzeko legea onartu zuten, erreferendumez berretsia. Oposizioak (PSOE, PCE, sindikatuak, nazionalismoak) askatasunak, <span class="term" data-def="Delitu edo zigor politikoak barkatzeko neurri juridikoa. 1977ko Amnistiaren Legeak aurrera egiteko bidea ireki zuen.">amnistia</span> eta hauteskunde libreak aldarrikatu zituen, batez ere kaletik. Mugarri arriskutsua: 1977ko apirilean <strong>PCE legalizatu</strong> zen, eta urrian Amnistiaren Legea onartu.</p>
+- id: g8-2
+  number: '8.2'
+  title: Hauteskunde orokorrak eta autonomikoak
+  body: |-
+    <p>Prozesua <span class="term" data-def="Indar politiko desberdinen arteko akordio zabala, gatazkak saihestu eta sistema egonkortzeko. Konstituzioa eta Moncloako Itunak adosteko funtsezkoa.">kontsentsuaren</span> logikak markatu zuen. <strong>1977ko ekainaren 15ean</strong> egin ziren frankismo ondorengo lehen hauteskunde orokorrak: Suárezek (UCD) irabazi zuen, PSOE (Felipe González) oposizio nagusi gisa, eta PCE (Carrillo) integrazioaren alde. Sistemak <span class="term" data-def="Eserlekuak banatzeko formula proportzionala. Probintzia barrutiekin batera, alderdi handiei mesede egiteko joera du, gobernagarritasuna bilatuz.">D'Hondt metodoa</span> erabili zuen, gobernagarritasuna bilatzeko.</p><p>1979ko hauteskundeetatik aurrera <span class="term" data-def="Trantsizioaren lehen ilusioen ondorengo frustrazio soziala: krisi ekonomikoa, langabezia eta indarkeriak itxaropenak zapuztu zituzten.">desenkantoa</span> zabaldu zen (krisia, langabezia, indarkeria). Konstituzioak bi autonomia-bide ezarri zituen: 143. artikulua (arrunta) eta 151. artikulua (azkarra, Katalunia eta Euskal Herriarentzat).</p>
+- id: g8-3
+  number: '8.3'
+  title: 1978ko Konstituzioa eta 1979ko Gernikako Estatutua
+  body: |-
+    <p><span class="term" data-def="Estatu baten oinarrizko legea: erakundeak, eskubideak, botereen banaketa eta lurralde-eredua. 1978koak Espainia estatu sozial eta demokratiko gisa definitu zuen.">1978ko Konstituzioa</span> kontsentsuz idatzi zen (UCD, PSOE, PCE). Ardatz nagusiak:</p><ul>
+    <li>Espainia «estatu sozial eta demokratiko» gisa; subiranotasun popularra.</li>
+    <li>Eskubide eta askatasunen sistema zabala.</li>
+    <li><span class="term" data-def="Erregea estatu-buru da, baina botere politikoa parlamentuaren eta gobernu demokratikoaren bidez gauzatzen da. Juan Carlos I.a estatu-buru.">Monarkia parlamentarioa</span>.</li>
+    <li><span class="term" data-def="1978ko Konstituzioaren lurralde-eredua: autonomia erkidegoei erakunde propioak eta eskumenak, baina estatuaren batasuna mantenduz.">Autonomien estatua</span>.</li>
+    </ul><p>Herritarrek berretsi zuten 1978ko abenduaren 6an. Euskal Herrian, ordea, EAJren abstentzio-deiak irakurketa berezia ekarri zuen. Hori dela eta, garrantzi handikoa da <strong>1979ko Gernikako Estatutua</strong>: Euskal Autonomia Erkidegoaren autogobernua zehaztu zuen (Eusko Legebiltzarra eta Jaurlaritza). 1980an lehen Eusko Jaurlaritza eratu zen, <strong>Garaikoetxea</strong> (EAJ) lehendakari.</p>
+- id: g8-4
+  number: '8.4'
+  title: 'Berunezko urteak: terrorismoa eta biolentzia politikoa'
+  body: |-
+    <p>«Adostasunaren garaia» irudia zati bat baino ez da: 1975–1982 artean indarkeria oso presente egon zen, norabide anitzekoa:</p><ul>
+    <li><strong>ETA eta GRAPO:</strong> jarduera armatua; 1980an ETAk ia 100 hildako eragin zituen (gehien).</li>
+    <li><strong>Eskuin muturra:</strong> Atochako sarraskia (1977), Montejurra (1976), prozesua desegonkortzeko.</li>
+    <li><strong>Estatu-indarkeria:</strong> poliziaren gehiegikeriak (Gasteiz 1976, bost hildako; Sanferminak 1978).</li>
+    </ul><p>Berunezko giro horrek alderdiak <span class="term" data-def="Erregimen zaharreko pertsona, erakunde eta praktika batzuk sistema berrira egokituta mantentzea. Administrazio, epailetza, polizia eta armada frankistaren zati handia ez zen desegin.">jarraitutasunaren</span> eta kolpe-arriskuaren testuinguruan kontsentsura bultzatu zituen.</p>
+- id: g8-5
+  number: '8.5'
+  title: Krisi ekonomikoa eta gizarte-gatazkak
+  body: |-
+    <p>1973ko eta 1979ko petrolio-krisiek inflazioa, langabezia eta industria-krisia eragin zituzten. Demokrazia eraikitzea testuinguru ekonomiko gogor batean gertatu zen. Erantzun gisa sinatu ziren <strong><span class="term" data-def="1977an gobernuak eta alderdi nagusiek sinatutako akordio politiko-ekonomikoak, krisiari aurre egiteko eta egonkortasuna bermatzeko. Langileentzat sakrifizioak ere ekarri zituzten.">Moncloako Itunak</span></strong> (1977).</p><p>Langile-mugimenduak (CCOO, UGT) eta mugimendu sozial berriek (auzo-elkarteak, emakumeen mugimendua, ekologismoa) protagonismo handia izan zuten: demokrazia «kalean ere» egiten zen. Hala ere, krisiak eta indarkeriak <strong>UCDren higadura</strong> azkartu zuten.</p>
+- id: g8-6
+  number: '8.6'
+  title: 1981eko estatu-kolpe saiakera (23-F)
+  body: |-
+    <p>UCDren desegitearen eta Suárezen dimisioaren testuinguruan, <strong>1981eko otsailaren 23an</strong>, Tejero teniente koronelak eta bere gizonek Kongresua hartu zuten. Milans del Boschek tankeak atera zituen Valentzian, eta Armada jeneralaren inguruan «irtenbide» autoritario baten ideia mugitu zen.</p><p><span class="term" data-def="Boterea legez kanpo eta indarrez eskuratzeko saiakera. 23-Fk erakutsi zuen demokrazia hauskorra zela eta aparatu frankisten inertziak ez zirela desagertu.">Estatu-kolpea</span> ez zen aurrera atera: Juan Carlos I.aren telebistako esku-hartzeak konstituzio-ordena babestu zuen, eta armadaren goi-agintearen zati handiak ez zuen bat egin. Ondorioak: demokraziaren hauskortasuna agerian, monarkiaren papera indartua, eta «egonkortasunaren» diskurtsoa sendotua. <strong>1982ko PSOEren garaipenak</strong> ziklo bat itxi zuen, alternantzia normalizatuz.</p>
+glossary:
+- term: Amnistia
+  def: |-
+    Delitu edo zigor politikoak barkatzeko neurri juridikoa. 1977ko Legeak aurrera egiteko bidea ireki zuen.
+- term: Autonomia
+  def: |-
+    Lurralde batek estatuaren barruan bere erakunde propioak eta autogobernua izatea. Gernikako Estatutuak (1979) garatu zuen EAEn.
+- term: Autonomien estatua
+  def: |-
+    1978ko Konstituzioaren lurralde-eredua: erkidegoei eskumenak, baina estatuaren batasuna mantenduz.
+- term: Bunkerra
+  def: |-
+    Frankismoaren sektore immobilista, aldaketa demokratikoaren aurka eta ordena frankista mantentzearen alde.
+- term: Demokrazia parlamentarioa
+  def: |-
+    Hauteskunde libreetan oinarritutako sistema, non gobernuak parlamentuaren konfiantza behar duen.
+- term: Desenkantoa
+  def: |-
+    Trantsizioaren lehen ilusioen ondorengo frustrazioa: krisiak, langabeziak eta indarkeriak itxaropenak zapuztu zituzten.
+- term: D'Hondt sistema
+  def: |-
+    Eserlekuak banatzeko formula proportzionala; probintzia barrutiekin, alderdi handiei mesede egiteko joera.
+- term: Erreforma politikoa
+  def: |-
+    Diktaduraren legalitatea erabiliz, legeen bidez demokraziarantz egindako aldaketa. Suárezen estrategia.
+- term: Erreforma Politikoaren Legea (1976)
+  def: |-
+    Frankismoaren Gorteek hauteskunde libreetarako bidea irekitzeko onartu zuten legea. Lehen giltza juridiko-politikoa.
+- term: Estatu-kolpea
+  def: Boterea legez kanpo eta indarrez eskuratzeko saiakera. 23-F (1981) erakusgarri.
+- term: Gernikako Estatutua (1979)
+  def: |-
+    Euskal Autonomia Erkidegoaren autonomia-estatutua: Eusko Legebiltzarra, Jaurlaritza eta eskumenak.
+- term: Gobernagarritasuna
+  def: |-
+    Sistema politiko batek erabakiak hartu eta egonkortasuna mantentzeko gaitasuna. Trantsizioaren obsesio nagusietakoa.
+- term: Hauteskunde orokorrak
+  def: |-
+    Parlamentuko ordezkariak aukeratzeko hauteskundeak. 1977koak frankismo ondorengo lehen demokratikoak.
+- term: Indarkeria politikoa
+  def: |-
+    Helburu politikoak lortzeko indarkeria: ETA, GRAPO, eskuin muturra eta polizia-gehiegikeriak.
+- term: Jarraitutasuna
+  def: |-
+    Erregimen zaharreko pertsona, erakunde eta praktikak sistema berrira egokituta mantentzea.
+- term: Konstituzioa (1978)
+  def: |-
+    Estatuaren oinarrizko legea: estatu sozial eta demokratikoa, monarkia parlamentarioa eta autonomien estatua.
+- term: Kontsentsua
+  def: |-
+    Indar politikoen arteko akordio zabala, gatazkak saihestu eta sistema egonkortzeko. Gai sakon batzuk bigarren planoan utzi zituen.
+- term: Krisi ekonomikoa
+  def: |-
+    1973ko eta 1979ko petrolio-krisiek eragindako inflazioa, langabezia eta industria-krisia.
+- term: Legalizazioa
+  def: |-
+    Debekatutako alderdi eta sindikatuak legez onartzea. PCEren legalizazioa (1977) bereziki arriskutsua izan zen.
+- term: Monarkia parlamentarioa
+  def: |-
+    Erregea estatu-buru, baina botere politikoa parlamentuaren eta gobernuaren bidez. Juan Carlos I.a.
+- term: Moncloako Itunak (1977)
+  def: |-
+    Gobernuaren eta alderdien akordioak krisiari aurre egiteko; langileentzat sakrifizioak ere ekarri zituzten.
+- term: Oposizio demokratikoa
+  def: |-
+    Askatasunen, amnistiaren eta hauteskunde libreen alde jardun zuten alderdi, sindikatu eta mugimenduak.
+- term: Subiranotasun popularra
+  def: |-
+    Botere politikoaren iturria herritarren borondatea dela dioen printzipioa. 1978ko Konstituzioak herriarengan kokatu zuen.
+- term: Terrorismoa
+  def: |-
+    Helburu politikoak lortzeko indarkeria sistematikoa eta beldur soziala. ETA eta GRAPO.
+- term: Trantsizioa
+  def: |-
+    Frankismotik demokrazia parlamentariora igarotzeko prozesua (1975–1982): erreforma, kontsentsua, krisia eta indarkeria.
+- term: 23-F (1981)
+  def: |-
+    Otsailaren 23ko estatu-kolpe saiakera (Tejero, Milans del Bosch). Juan Carlos I.aren esku-hartzeak desaktibatu zuen.

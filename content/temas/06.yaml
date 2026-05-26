@@ -1,0 +1,170 @@
+meta:
+  num: 6
+  slug: frankismoa-i
+  title: 'Diktadura frankista I: Gerraostea eta autarkia'
+  years: 1939 – 1959
+  pdf: 06-frankismoa-i.pdf
+  iturri_pdf: 06-iturri.pdf
+intro: |-
+  1939ko apirilaren 1ean Gerra Zibila amaitu zenean, ez zen «normaltasuna» itzuli. Garaileek Estatu osoa bereganatu eta garaituen aurka gerra ideologiko, juridiko eta sozial bat abiatu zuten. Frankismoa garaipen militarrean oinarritutako <span class="term" data-def="Boterea pertsona edo talde baten esku kontzentratzen duen sistema, askatasun politikoak eta oposizioa ezabatuz. Frankismoa pertsonalista, militarra, nazional-katolikoa, zentralista eta antikomunista izan zen.">diktadura</span> izan zen: gizartea «garbitu» eta berrantolatu nahi zuena. Gosea, eskasia, errepresioa eta beldurra ez ziren gerraren albo-ondorioak: kontrol sozialerako kontzienteki erabilitako tresnak izan ziren.
+timeline:
+- year: '1939'
+  label: Erantzukizun Politikoen Legea
+  target: g6-2
+  desc: Gerra amaitu; Erantzukizun Politikoen Legea.
+- year: '1940'
+  label: Masoneria/Komunismoaren Legea
+  target: g6-2
+  desc: Masoneria eta Komunismoaren Aurkako Legea.
+- year: '1941'
+  label: INI
+  target: g6-3
+  desc: 'INI sortzen da: Estatuaren interbentzioa industrian.'
+- year: '1942'
+  label: Gorteak Eratzeko Legea
+  target: g6-1
+  desc: 'Gorteak Eratzeko Legea: ordezkaritza korporatiboa.'
+- year: '1944'
+  label: 'Maquis: Vall d''Aran'
+  target: g6-4
+  desc: Vall d'Araneko maquis-saiakera (PCE).
+- year: '1945'
+  label: Isolamendua
+  target: g6-5
+  desc: Espainolen Forua eta nazioarteko isolamendua hasten da.
+- year: '1947'
+  label: Ondorengotzaren Legea
+  target: g6-1
+  desc: 'Ondorengotzaren Legea: Espainia «erresuma».'
+- year: '1952'
+  label: Errazionamenduaren amaiera
+  target: g6-3
+  desc: Errazionamenduaren amaiera.
+- year: '1953'
+  label: Konkordatua · AEB
+  target: g6-5
+  desc: Konkordatua Vatikanoarekin eta Madrilgo Itunak AEBekin.
+- year: '1955'
+  label: NBE
+  target: g6-5
+  desc: Espainia NBEan onartua.
+- year: '1959'
+  label: Egonkortze Plana · ETA
+  target: g6-3
+  desc: Egonkortze Plana; ETA sortzen da.
+keydates:
+- year: '1939'
+  text: Gerra amaiera; Erantzukizun Politikoen Legea.
+- year: '1940'
+  text: Masoneria eta Komunismoaren Aurkako Legea.
+- year: '1941'
+  text: INI sortzen da (Instituto Nacional de Industria).
+- year: '1944'
+  text: Vall d'Araneko gerrillaren saiakera (maquis).
+- year: '1947'
+  text: 'Ondorengotzaren Legea: Espainia «erresuma».'
+- year: '1952'
+  text: Errazionamenduaren amaiera.
+- year: '1953'
+  text: Vatikanoarekin Konkordatua eta AEBekin Madrilgo Itunak.
+- year: '1955'
+  text: Espainia NBEan onartua.
+- year: '1959'
+  text: Egonkortze Plana; ETA sortzen da.
+sections:
+- id: g6-1
+  number: '6.1'
+  title: Oinarri instituzional eta ideologikoa
+  body: |-
+    <p>Sistemaren erdigunea Francoren figura zen: botere guztia pertsona bakarrean (<span class="term" data-def="Botere politiko osoa buruzagi bakar baten inguruan antolatzen duen eredua. Franco «Caudillo» gisa: Estatu buru, armadaren buru eta azken erabakitzaile.">caudillismoa</span>), Estatu burua, armadaren agintea eta gobernuaren norabidea. Osagarriak:</p><ul>
+    <li><strong>Alderdi bakarra:</strong> Mugimendu Nazionala (FET-JONS), gizartea moldatzeko (Frente de Juventudes, Sección Femenina, <span class="term" data-def="Sindikatu Bertikala (OSE): langileak eta enpresariak egitura berean «batuak», baina Estatuak gidatua. Klase-borroka ukatzen zuen.">Sindikatu Bertikala / OSE</span>).</li>
+    <li><strong>Armada eta Eliza:</strong> ordenaren bermea eta legitimazio morala (<span class="term" data-def="Espainiaren identitatea katolizismoarekin lotzen duen ideologia: moral publikoa, hezkuntza, familia-eredua eta genero-rolak Elizak markatuak.">nazional-katolizismoa</span>).</li>
+    <li><strong><span class="term" data-def="Konstituziorik gabe, erregimenari legitimazio-itxura emateko lege-multzoa: Lanaren Forua (1938), Espainolen Forua (1945), Ondorengotzaren Legea (1947)...">Funtsezko Legeak</span>:</strong> konstituziorik gabeko «pseudo-konstituzionalismoa», Gorteak ordezkaritza korporatiboarekin (<span class="term" data-def="Frankismoak demokrazia liberalaren ordezko gisa aurkeztu zuen eredua: ordezkaritza alderdien bidez ez, baizik familia, udala eta sindikatuaren bidez.">demokrazia organikoa</span>).</li>
+    </ul><p>Ideologiaren osagaiak: antiliberalismoa, antikomunismoa, espainiar ultranazionalismo zentralista, nazional-katolizismoa, eta hasieran falangismoa (II. Mundu Gerraren ondoren leundua).</p>
+- id: g6-2
+  number: '6.2'
+  title: Gerraosteko gizartea eta errepresioa
+  body: |-
+    <p>1939tik aurrera Espainia bitan banatu zen: <strong>garaileen Espainia eta garaituen Espainia</strong>. Banaketak ondorio zuzenak zituen: nork zuen enplegua, nork jasaten zuen jazarpena. Errepresioak hainbat funtzio bete zituen: zigortzea, beldurra zabaltzea, <span class="term" data-def="Administraziotik, hezkuntzatik edo lanpostuetatik pertsona susmagarriak kanporatzeko garbiketa politikoa. Errepublikarekin lotutako milaka zigortu zituzten.">depurazio</span> politikoa eta gizartearen berrantolaketa ideologikoa.</p><p>Lege-sareak errepresioa «legaldu» zuen: <strong>Erantzukizun Politikoen Legea (1939)</strong> eta <strong>Masoneria eta Komunismoaren Aurkako Legea (1940)</strong>. ~450.000–500.000 lagunek erbestea hartu zuten. Salaketaren eta zelataren kulturak kontrol soziala biderkatu zuen. Dimentsio kulturala ere izan zuen: euskara eta katalana jazarriak, sinbolo abertzaleak debekatuak, «Espainia bakarra» inposatuz.</p>
+- id: g6-3
+  number: '6.3'
+  title: Autarkia ekonomikoa eta gosea
+  body: |-
+    <p><span class="term" data-def="Estatu batek kanpoarekiko mendekotasuna murriztu eta ekonomia barrurantz antolatzeko politika. Praktikan eskasia, produktibitate baxua eta gosea luzatu zituen.">Autarkia</span> izan zen lehen frankismoaren ekonomia-politika: inportazioak mugatu, Estatuaren kontrola handitu eta «independentzia ekonomikoa» aldarrikatu. Praktikan, ekoizpen urria, prezio altuak eta eskasia orokorra.</p><ul>
+    <li><strong><span class="term" data-def="Txartel bidez oinarrizko elikagaiak banatzeko sistema (ogia, olioa, azukrea). 1952ra arte iraun zuen.">Errazionamendua</span>:</strong> txartelen bidezko banaketa, 1952ra arte.</li>
+    <li><strong><span class="term" data-def="Merkatu beltza: produktuak ezkutuan eta prezio altuetan saltzea. Desberdintasun sozialak areagotu zituen.">Estraperloa</span>:</strong> merkatu beltza, desberdintasunak areagotuz.</li>
+    <li><strong>INI (1941):</strong> Estatuaren interbentzioa industria estrategikoan, baina emaitza mugatuekin.</li>
+    </ul><p>1940ko hamarkada «gosearen urteak» izan ziren. 1950etik aurrera, Gerra Hotzaren testuinguruan, isolamendua arindu zen, eta <strong>1959ko <span class="term" data-def="1959ko plana: ekonomia liberalizatu, inflazioa murriztu eta kanpo-inbertsioa erraztu. Autarkiaren amaiera eta desarrollismoaren atea.">Egonkortze Planak</span></strong> autarkiaren zikloa hautsi zuen.</p>
+- id: g6-4
+  number: '6.4'
+  title: Oposizioa eta erresistentzia
+  body: |-
+    <p>Errepresioak oposizio antolatua ia ezinezko bihurtu zuen. Hiru bide nagusi:</p><ul>
+    <li><strong>Erbestea:</strong> alderdiek (PSOE, PCE, CNT) eta erbesteko Gobernu Errepublikarrak legitimotasuna mantendu zuten. Euskal kasuan, <strong>Eusko Jaurlaritzak</strong> (Agirre lehendakari) euskal identitatea eta autogobernuaren ideia bizirik atxiki zituen.</li>
+    <li><strong><span class="term" data-def="1940ko hamarkadako gerrilla antifrankista. 1944ko Vall d'Araneko saiakera; 50eko hamarkadan indarra galdu zuen.">Maquis</span> (gerrilla):</strong> 1940ko hamarkadan, 1944ko Vall d'Araneko saiakera; gero gainbehera.</li>
+    <li><strong>Klandestinitatea eta oposizio soziala:</strong> PCE; 1951ko Bartzelonako tranbien greba, 1956ko ikasle-protestak Madrilen. 1959an ETA sortu zen.</li>
+    </ul>
+- id: g6-5
+  number: '6.5'
+  title: 'Nazioarteko politika: isolamendutik integraziora'
+  body: |-
+    <p>II. Mundu Gerran Franco «ez-beligerante» izan zen, Ardatzarekiko hurbiltasunarekin (Dibisio Urdina). Faxismoen porrotaren ondoren, 1945–1950 artean Espainiak <strong>isolamendua</strong> jasan zuen.</p><p><span class="term" data-def="Komunismoaren aurkako jarrera. Gerra Hotzean frankismoari nazioarteko balioa eman zion, Mendebaldearentzat «erabilgarri» bihurtuz.">Antikomunismoak</span> eta kokapen estrategikoak panorama irauli zuten Gerra Hotzarekin: <strong>1953ko</strong> Vatikanoarekiko Konkordatuak eta AEBekiko Madrilgo Itunek (base militarrak ↔ laguntza) erregimena egonkortu zuten. <strong>1955ean</strong> NBEan onartu zuten. Integrazio pragmatiko honek 1959ko Egonkortze Planari atea ireki zion.</p>
+glossary:
+- term: Autarkia
+  def: |-
+    Estatu batek kanpoarekiko mendekotasuna murriztu eta ekonomia barrurantz antolatzeko politika. Praktikan eskasia eta gosea luzatu zituen.
+- term: Caudillismoa
+  def: |-
+    Botere politiko osoa buruzagi bakar baten inguruan antolatzea. Franco «Caudillo»: izaera pertsonalista.
+- term: Demokrazia organikoa
+  def: |-
+    Demokrazia liberalaren ordezko gisa aurkeztutako eredua: ordezkaritza familia, udala eta sindikatuaren bidez. Praktikan, sistema kontrolatua.
+- term: Depurazioa
+  def: |-
+    Administraziotik, hezkuntzatik edo lanpostuetatik pertsona susmagarriak kanporatzeko garbiketa politikoa.
+- term: Diktadura (pertsonalista)
+  def: |-
+    Boterea pertsona baten esku kontzentratzen duen sistema autoritarioa. Frankismoa: militarra, nazional-katolikoa, zentralista, antikomunista.
+- term: Dibisio Urdina
+  def: |-
+    Franco-k Alemania naziaren alde URSSera bidalitako boluntario-unitatea; Ardatzarekiko hurbiltasunaren adierazle.
+- term: Egonkortze Plana (1959)
+  def: |-
+    Ekonomia liberalizatzeko plana: inflazioa murriztu eta kanpo-inbertsioa erraztu. Autarkiaren amaiera.
+- term: Erantzukizun Politikoen Legea (1939)
+  def: Iraganeko jarrera errepublikarrak zigortzeko eta ondasunak konfiskatzeko legea.
+- term: Errazionamendua
+  def: Txartel bidez oinarrizko elikagaiak banatzeko sistema. 1952ra arte iraun zuen.
+- term: Estraperloa
+  def: |-
+    Merkatu beltza: produktuak ezkutuan eta prezio altuetan. Desberdintasunak areagotu zituen.
+- term: Funtsezko Legeak
+  def: |-
+    Konstituziorik gabeko lege-multzoa, legitimazio-itxura emateko (Lanaren Forua, Espainolen Forua, Ondorengotzaren Legea...).
+- term: INI (1941)
+  def: |-
+    Instituto Nacional de Industria: Estatuaren esku-hartzea industria estrategikoan.
+- term: Konkordatua (1953)
+  def: |-
+    Vatikanoarekiko akordioa; erregimenari legitimitate sinbolikoa eta nazional-katolizismoari indarra eman zion.
+- term: Madrilgo Itunak (1953)
+  def: |-
+    AEBekiko akordioak: base militarrak laguntza ekonomiko eta diplomatikoaren truke.
+- term: Maquis
+  def: |-
+    1940ko hamarkadako gerrilla antifrankista. 1944ko Vall d'Araneko saiakera; gero gainbehera.
+- term: Mugimendu Nazionala (FET-JONS)
+  def: |-
+    Alderdi bakarra; gizartea kontrolatzeko egitura (gazteria, emakumeak, lan-mundua).
+- term: Nazional-katolizismoa
+  def: |-
+    Espainiaren identitatea katolizismoarekin lotzen duen ideologia: moral publikoa, hezkuntza eta genero-rolak Elizak markatuak.
+- term: Sindikatu Bertikala (OSE)
+  def: |-
+    Langileak eta enpresariak egitura berean «batuak», Estatuak gidatuak. Klase-borroka ukatzen zuen.
+- term: Antikomunismoa
+  def: |-
+    Komunismoaren aurkako jarrera. Gerra Hotzean frankismoari nazioarteko balioa eman zion.
+- term: Sección Femenina
+  def: |-
+    Emakumeen heziketa obedientzian, katolizismoan eta amatasunaren idealean oinarritzeko erakundea.

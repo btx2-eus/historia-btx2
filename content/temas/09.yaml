@@ -1,0 +1,184 @@
+meta:
+  num: 9
+  slug: monarkia-parlamentarioa
+  title: Monarkia parlamentarioaren sendotzea
+  years: 1982 – 1996
+  pdf: 09-monarkia-parlamentarioa.pdf
+intro: |-
+  1982–1996 aldian Espainiako <span class="term" data-def="Erregea estatu-buru den sistema, baina botere politikoa parlamentuaren eta gobernu demokratikoaren bidez gauzatzen da. Aldi honetan sendotu zen.">monarkia parlamentarioa</span> sendotu zen, baina sendotze hori ez zen garbia, lasaia edo lineala izan: <strong>modernizazio gatazkatsua</strong> izan zen. 1982ko PSOEren garaipen zabalak egonkortasuna ekarri zuen; aurrerapenak (EEEan sartzea 1986, ongizate-estatua, 1992ko ekitaldiak) eta itzalak (industria-krisia, terrorismoa, GAL, ustelkeria) batera gertatu ziren. 1996ko alternantziak demokraziaren heldutasuna erakutsi zuen.
+timeline:
+- year: '1982'
+  label: PSOE · NATO
+  target: g9-5
+  desc: PSOEren garaipen zabala; NATOn sartzea.
+- year: '1983'
+  label: GAL
+  target: g9-3
+  desc: 'GAL hasten da: gerra zikina 1987ra arte.'
+- year: '1985'
+  label: LODE · abortua
+  target: g9-1
+  desc: LODE eta abortuaren despenalizazioa (kasu jakinak).
+- year: 1986·01
+  label: EEEan sartzen da
+  target: g9-5
+  desc: Espainia EEEan sartzen da.
+- year: 1986·03
+  label: NATO erreferenduma
+  target: g9-5
+  desc: 'NATO erreferenduma: «bai» Espainian, «ez» Euskadin eta Katalunian.'
+- year: '1986'
+  label: Osasun Lege
+  target: g9-1
+  desc: 'Osasun Lege Orokorra: osasun unibertsala.'
+- year: '1987'
+  label: Hipercor · Zaragoza
+  target: g9-3
+  desc: Hipercor (Bartzelona) eta Zaragozako atentatuak (ETA).
+- year: 1988·11
+  label: Ajuria Enea
+  target: g9-4
+  desc: 'Ajuria Eneko Ituna: ETAren aurkako batasun politikoa.'
+- year: 1988·12·14
+  label: 14-D greba
+  target: g9-1
+  desc: 14-D greba orokorra (UGT+CCOO).
+- year: '1990'
+  label: LOGSE
+  target: g9-1
+  desc: 'LOGSE: hezkuntza-sistemaren erreforma sakona.'
+- year: '1992'
+  label: JJOO · Expo · Maastricht
+  target: g9-5
+  desc: Bartzelonako JJOO, Sevillako Expo, AVE eta Maastricht.
+- year: '1993'
+  label: Krisi · CiU babesa
+  target: g9-1
+  desc: Krisi ekonomikoa; PSOEk gehiengo osoa galtzen du.
+- year: '1996'
+  label: Alternantzia
+  target: g9-1
+  desc: 'PPren garaipena (Aznar): alternantzia demokratikoa.'
+keydates:
+- year: '1982'
+  text: PSOEren garaipen zabala; NATOn sartzea.
+- year: '1985'
+  text: LODE; abortua despenalizatua (kasu jakinak).
+- year: '1986'
+  text: EEEan sartzea; NATO erreferenduma; Osasun Lege Orokorra.
+- year: '1987'
+  text: Hipercor eta Zaragozako atentatuak (ETA).
+- year: '1988'
+  text: Ajuria Eneko Ituna; 14-D greba orokorra.
+- year: 1983–87
+  text: 'GAL: gerra zikina.'
+- year: '1992'
+  text: Bartzelonako JJOO, Sevillako Expo, AVE; Maastricht.
+- year: '1993'
+  text: Krisi ekonomikoa; PSOEk gehiengo osoa galdu.
+- year: '1996'
+  text: 'PPren garaipena (Aznar): alternantzia.'
+sections:
+- id: g9-1
+  number: '9.1'
+  title: Modernizazio sozioekonomikoaren prozesua
+  body: |-
+    <p>Krisi ekonomiko gogor batetik abiatuta, Felipe Gonzálezen gobernuak (1982tik) <span class="term" data-def="Ekonomia, gizartea, administrazioa eta eguneroko bizimodua eraldatzeko prozesua. Espainia Europako demokrazia liberalera hurbildu zen, kostu sozial handiekin.">modernizazioa</span> helburu estrategiko gisa hartu zuen. Politika ekonomiko zorrotzak (inflazioa kontrolatu, enpresa ez-lehiakorrak itxi) eta <span class="term" data-def="Krisian zeuden industria-sektoreak ixteko, murrizteko edo berrantolatzeko politika. Langabezia eta gatazka soziala ekarri zituen.">industria-birmoldaketa</span> ezarri zituen.</p><p>Aldi berean, <span class="term" data-def="Herritarrei osasuna, hezkuntza, pentsioak eta gizarte-zerbitzuak bermatzeko estatuaren babes-sistema.">ongizate-estatua</span> zabaldu zen: 1986ko Osasun Lege Orokorra (osasun unibertsala), LODE (1985) eta LOGSE (1990) hezkuntzan. Gizarte-aldaketak: dibortzioa (1981), abortuaren despenalizazioa (1985), emakumeen autonomia, sekularizazioa eta <em>Movida</em> kultura. 1985eko eta <strong>1988ko 14-D greba orokorrek</strong> gobernuaren eta langile-mugimenduaren arteko tentsioa erakutsi zuten. 1992a modernizazioaren erakusleihoa izan zen, baina 1993ko krisiak (langabezia ~%24) eta heroinaren dramak garaiaren itzalak agertu zituzten.</p>
+- id: g9-2
+  number: '9.2'
+  title: Industria-bermoldaketa Euskal Autonomia Erkidegoan
+  body: |-
+    <p>Euskal industria astuna (siderurgia, ontzigintza, meatzaritza) krisi sakonean murgildu zen, bereziki <strong>Bizkaian eta Ezkerraldean</strong>. Euskalduna ontziolaren gatazka, Altos Hornos de Vizcayaren gainbehera eta meatzaritzaren itxiera garaiaren ikur bihurtu ziren. Ez zen modernizazio tekniko hutsa izan: <span class="term" data-def="Industria-jardueraren pisua galtzea, lantegiak ixtea eta industria-kultura baten gainbehera. Ezkerraldean bereziki gogorra.">desindustrializazioak</span> gizarte-haustura ekarri zuen (langabezia, drogak, auzoen degradazioa).</p><p>Eusko Jaurlaritzak, Kontzertu Ekonomikoaren tresnekin, <span class="term" data-def="Industria zaharren ordez sektore modernoago eta lehiakorragoak garatzeko prozesua: teknologia-parkeak, makina-erreminta, automozioa.">berrindustrializazio</span>-politikak bultzatu zituen. Industria mota berrituago batera egokitzen saiatu zen (Mondragon Korporazioa, teknologia-parkeak), eta gerorako «Bilbo efektuaren» oinarriak jarri ziren. Hala ere, kostua oso handia izan zen: modernizazioaren prezioa ez zuten guztiek berdin ordaindu.</p>
+- id: g9-3
+  number: '9.3'
+  title: Biolentzia terroristaren jarraipena
+  body: |-
+    <p>Demokrazia eta autogobernua egonik ere, ETAk hiltzen jarraitu zuen. ETA politiko-militarrak armak utzi zituen (Euskadiko Ezkerra), baina <strong>ETA militarrak</strong> ez zuen marko demokratiko-autonomikoa onartu. Jada ez zen diktaduraren aurkako borroka: <span class="term" data-def="Helburu politikoak lortzeko indarkeria sistematikoa eta beldur soziala. ETAren atentatuek, estortsioak («zerga iraultzailea») eta mehatxuek demokraziaren kalitatea kolpatu zuten.">terrorismoak</span> demokraziaren, autogobernuaren eta herritarren askatasunaren aurka jardun zuen.</p><ul>
+    <li><strong>1986:</strong> Yoyesen hilketa (disidentzia zigortzea).</li>
+    <li><strong>1987:</strong> Hipercor (Bartzelona, 21 hildako) eta Zaragozako kuartela (11 hildako, haurrak barne): zibilen aurkako terrorismo masiboa.</li>
+    <li><strong>1989:</strong> Aljeriako elkarrizketak (porrota).</li>
+    <li><strong>1995:</strong> Gregorio Ordóñez (PP) hil: politikarien aurkako jazarpena.</li>
+    </ul><div class="callout"><div class="callout-title">GAL: gerra zikina</div>1983–1987 artean, <span class="term" data-def="Grupos Antiterroristas de Liberación: talde parapolizial terrorista, segurtasun-aparatuaren sektoreekin lotua. ETAren aurkako gerra zikina, zuzenbide-estatuaren printzipioak urratuz.">GALek</span> 27 pertsona hil zituen. ETAk <span class="term" data-def="Botere publiko guztiak legearen menpe dauden sistema, eskubideak eta berme juridikoak errespetatuz.">zuzenbide-estatua</span> kanpotik kolpatzen zuen; GALek, berriz, barrutik urratu zituen haren printzipioak, demokraziaren zilegitasun morala kaltetuz.</div>
+- id: g9-4
+  number: '9.4'
+  title: Indar polizialak, erakundeak eta gizartea terrorismoaren aurrean
+  body: |-
+    <p>Erantzunak hiru maila izan zituen:</p><ul>
+    <li><strong>Poliziala:</strong> Ertzaintzaren garapena (autogobernuaren adierazle) eta Espainiaren eta Frantziaren arteko lankidetza gero eta estuagoa.</li>
+    <li><strong>Instituzionala:</strong> <span class="term" data-def="1988an Euskadiko alderdi demokratiko nagusiek ETAren aurka sinatutako akordioa: ETA politikoki isolatzea eta indarkeriari zilegitasuna kentzea.">Ajuria Eneko Ituna (1988)</span>, alderdi demokratikoen batasuna (Herri Batasunak ez zuen sinatu).</li>
+    <li><strong>Soziala:</strong> biktimen aitortza eta bakearen aldeko mugimenduak (<em>Gesto por la Paz</em>), beldurraren aurkako kontzientzia zibikoa.</li>
+    </ul><p>Hiru maila horiek ETAren zilegitasun soziala eta politikoa ahultzen joan ziren, baina GALen gerra zikinak erakutsi zuen demokraziak ezin dituela bere printzipioak urratu bere burua defendatzeko.</p>
+- id: g9-5
+  number: '9.5'
+  title: Espainia Europa eraikitzeko prozesuan
+  body: |-
+    <p><strong>1986ko urtarrilaren 1ean Espainia <span class="term" data-def="Europako Ekonomia Erkidegoa, gero Europar Batasunaren oinarria. Espainiaren sarrerak demokraziaren nazioarteko homologazioa eta modernizazio-presioa ekarri zituen.">EEEan</span> sartu zen</strong>: diktaduraren isolamendutik atera eta Mendebaldeko demokrazia liberalen artean kokatu zen. Aukerak (merkatu zabala, Europako funtsak, azpiegiturak) eta presioak (lehiakortasuna, industria-birmoldaketa) ekarri zituen.</p><p>1992ko Maastrichteko Itunak Europar Batasunerako eta txanpon bakarrerako bidea ireki zuen, politika ekonomikoa diziplinatuz. NATOren auzia ere garrantzitsua izan zen: 1986ko erreferendumean «bai» nagusitu zen Espainian (baina Euskal Herrian eta Katalunian «ez»). Azkenik, <strong>1996ko hauteskundeek <span class="term" data-def="Boterea hauteskundeen bidez alderdi batetik bestera modu baketsuan igarotzea. 1996an PPk irabazi eta PSOE oposiziora igaro zen.">alternantzia demokratikoa</span></strong> ekarri zuten (Aznar, PP), sistemaren heldutasuna erakutsiz.</p>
+glossary:
+- term: Alternantzia demokratikoa
+  def: |-
+    Boterea hauteskundeen bidez alderdi batetik bestera modu baketsuan igarotzea. 1996an PPk irabazi, PSOE oposiziora.
+- term: Ajuria Eneko Ituna (1988)
+  def: |-
+    Euskadiko alderdi demokratikoek ETAren aurka sinatutako akordioa: indarkeria politikoki isolatzea.
+- term: Autogobernua
+  def: |-
+    Lurralde batek bere erakunde propioen bidez eskumenak kudeatzeko gaitasuna. EAEn Jaurlaritza, Legebiltzarra eta Ertzaintza sendotu ziren.
+- term: Berrindustrializazioa
+  def: |-
+    Industria zaharren ordez sektore modernoago eta lehiakorragoak garatzea: teknologia-parkeak, makina-erreminta, automozioa.
+- term: Biktimen aitortza
+  def: |-
+    Terrorismoaren biktimei ikusgarritasuna, memoria eta babes instituzionala ematea. 1990eko hamarkadan indartu zen.
+- term: Desindustrializazioa
+  def: |-
+    Industria-jardueraren pisua galtzea eta industria-kultura baten gainbehera. Ezkerraldean bereziki gogorra.
+- term: Ertzaintza
+  def: |-
+    EAEko polizia autonomikoa. Gernikako Estatutuaren ondoren garatua; autogobernuaren sendotzearen adierazle.
+- term: Europako Ekonomia Erkidegoa (EEE)
+  def: |-
+    Europako integrazio ekonomikorako erakundea. Espainia 1986an sartu zen: homologazioa eta modernizazio-presioa.
+- term: GAL
+  def: |-
+    Grupos Antiterroristas de Liberación: talde parapolizial terrorista (1983–87), ETAren aurkako gerra zikina; zuzenbide-estatua urratu zuen.
+- term: Gizarte zibila
+  def: |-
+    Estatutik eta alderdietatik kanpoko herritar, elkarte eta mugimenduen espazioa. <em>Gesto por la Paz</em> bezalako ekimenak.
+- term: Industria-birmoldaketa
+  def: |-
+    Krisian zeuden sektoreak ixteko edo berrantolatzeko politika. Ontzigintzan eta siderurgian eragin handia.
+- term: Langabezia estrukturala
+  def: |-
+    Ekonomiaren egitura-aldaketek sortzen duten langabezia iraunkorra. Industria zaharreko langileei bereziki eragin zien.
+- term: Lan-prekarietatea
+  def: |-
+    Lan-baldintza ezegonkorrak, aldi baterako kontratuak eta babes urria. 1994ko lan-erreformarekin lotua.
+- term: Modernizazio sozioekonomikoa
+  def: Ekonomia, gizartea eta bizimodua eraldatzeko prozesua, kostu sozial handiekin.
+- term: Monarkia parlamentarioa
+  def: |-
+    Erregea estatu-buru, baina boterea parlamentuaren eta gobernuaren bidez. Aldi honetan sendotu zen.
+- term: NATO
+  def: |-
+    Ipar Atlantikoko Tratatuaren Erakundea. Espainia 1982an sartu zen; 1986ko erreferendumean «bai» (Euskadin eta Katalunian «ez»).
+- term: Ongizate-estatua
+  def: |-
+    Osasuna, hezkuntza, pentsioak eta gizarte-zerbitzuak bermatzeko babes-sistema. 1980ko hamarkadan zabaldua.
+- term: Polizia-lankidetza
+  def: |-
+    Estatuen segurtasun-indarren arteko koordinazioa. ETAren aurkako borrokan, Espainia-Frantzia lankidetza gakoa.
+- term: Sekularizazioa
+  def: |-
+    Erlijioaren eragina gizartean eta bizitza pribatuan murriztea. Familia-ereduak aldatu ziren.
+- term: Terrorismoa
+  def: |-
+    Helburu politikoak lortzeko indarkeria sistematikoa eta beldurra. ETAk hildakoak, estortsioa eta kontrol soziala eragin zituen.
+- term: Trantsizio ondorengo demokrazia
+  def: |-
+    Frankismoaren ondorengo sistema demokratikoaren lehen fase egonkortua (1982–1996).
+- term: Ustelkeria
+  def: |-
+    Botere publikoaren erabilera okerra interes pribaturako (Filesa, Roldán...). PSOEren higadura azkartu zuen 1990eko hamarkadan.
+- term: Zuzenbide-estatua
+  def: |-
+    Botere publiko guztiak legearen menpe dauden sistema. GALek erakutsi zuen demokraziak ezin dituela bere printzipioak urratu.

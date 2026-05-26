@@ -1,0 +1,197 @@
+meta:
+  num: 7
+  slug: frankismoa-ii
+  title: 'Diktadura frankista II: Desarrollismo industriala'
+  years: 1959 – 1975
+  pdf: 07-frankismoa-ii.pdf
+  iturri_pdf: 07-iturri.pdf
+intro: |-
+  Frankismoaren bigarren etapa (1959–1975) <span class="term" data-def="1959ko Egonkortze Planaren ondoren etorritako hazkunde ekonomiko azkarra: industrializazioa, atzerriko kapitala, turismoa eta kontsumoaren hedapena. Autoritarioa eta desorekatua izan zen.">desarrollismoaren</span> garaia izan zen: 1959ko Egonkortze Planaren ondoren, Espainia nazioarteko kapitalismoan txertatu zen, eta «mirari ekonomikoa» gertatu zen. Baina <strong>modernizazio ekonomikoa ez zen modernizazio politikoarekin etorri</strong>: frankismoak garapena legitimazio gisa erabili zuen, baina askatasunak ukatu eta errepresioz mantendu zuen ordena. «Hazkundea bai, askatasunik gabe».
+timeline:
+- year: '1959'
+  label: Egonkortze Plana
+  target: g7-1
+  desc: 'Egonkortze Plana: desarrollismoaren abiapuntua.'
+- year: '1963'
+  label: TOP
+  target: g7-5
+  desc: Tribunal de Orden Público (TOP).
+- year: '1966'
+  label: Prentsa Legea
+  target: g7-5
+  desc: Prentsa eta Inprenta Legea (Fraga).
+- year: '1967'
+  label: Lege Organikoa
+  target: g7-2
+  desc: 'Estatuaren Lege Organikoa: instituzionalizazioa.'
+- year: '1969'
+  label: Juan Carlos izendatu
+  target: g7-2
+  desc: Juan Carlos «a título de Rey» izendatua.
+- year: '1970'
+  label: Burgosko Prozesua
+  target: g7-5
+  desc: Burgosko Prozesua eta Peligrosidad Social Legea.
+- year: 1973·06
+  label: Carrero presidente
+  target: g7-2
+  desc: Carrero Blanco Gobernuko Presidente.
+- year: 1973·12
+  label: Carrero hil
+  target: g7-4
+  desc: Carrero Blancoren hilketa (ETA); petrolio-krisia.
+- year: '1974'
+  label: Arias Navarro
+  target: g7-4
+  desc: Arias Navarro; Portugalen Krabelinen Iraultza.
+- year: 1975·09·27
+  label: Azken fusilamenduak
+  target: g7-5
+  desc: 'Azken fusilamenduak: ETAko 2 eta FRAPeko 3.'
+- year: 1975·11·20
+  label: Franco hil
+  target: g7-4
+  desc: 'Francoren heriotza: frankismoaren amaiera.'
+keydates:
+- year: '1959'
+  text: 'Egonkortze Plana: desarrollismoaren abiapuntua.'
+- year: '1963'
+  text: Tribunal de Orden Público (TOP).
+- year: '1967'
+  text: Estatuaren Lege Organikoa.
+- year: '1969'
+  text: Juan Carlos «a título de Rey» izendatua.
+- year: '1970'
+  text: Burgosko Prozesua; Peligrosidad Social Legea.
+- year: '1973'
+  text: Petrolio-krisia; Carrero Blancoren hilketa.
+- year: '1974'
+  text: Arias Navarro; Portugalen Krabelinen Iraultza.
+- year: 1975·09
+  text: Azken fusilamenduak (ETA 2, FRAP 3).
+- year: 1975·11
+  text: Francoren heriotza; Juan Carlos I.a errege.
+sections:
+- id: g7-1
+  number: '7.1'
+  title: Garapen ekonomikoa eta gizarte-eraldaketa
+  body: |-
+    <p>Autarkiaren porrotaren ondoren, <strong>1959ko Egonkortze Planak</strong> eta ondorengo <strong>Garapen Planek</strong> ekonomia ireki zuten. Norabide-aldaketaren aurpegia <span class="term" data-def="Ekonomian eta administrazioan trebatutako kargudunak, askotan Opus Dei inguruko sareetatik. Helburua erregimena eraginkorrago kudeatzea, ez demokratizatzea.">teknokraten</span> gorakada izan zen (askotan Opus Dei inguruan). Hiru faktorek elikatu zuten hazkundea:</p><ul>
+    <li>Atzerriko kapitala eta teknologia-transferentzia.</li>
+    <li>Turismoaren boom-a (dibisa-iturri erabakigarria).</li>
+    <li>Emigrazioa (Europara) eta haien diru-bidalketak.</li>
+    </ul><p>Gizartea errotik eraldatu zen: barne-migrazio masiboa eta urbanizazio azkarra, lan-munduaren eraldaketa, eta <strong>kontsumo-gizartea</strong> (autoa, telebista, etxetresnak). Estatuak ere pisua izan zuen (INI: SEAT, Endesa…). Baina garapena <strong>desorekatua</strong> izan zen: lurralde-desberdintasunak, prekarietatea eta eskubide sozialen ukapena.</p>
+- id: g7-2
+  number: '7.2'
+  title: Eliteak eta euskarri instituzionala
+  body: |-
+    <p>Ekonomia modernizatu arren, botere-egitura ez zen demokratizatu. Frankismoa eliteen koalizio bat zen, Francoren inguruan lotua: armada, Mugimendu Nazionalaren aparatua, Elizaren sektoreak, teknokratak eta elite ekonomikoak. Instituzioek <span class="term" data-def="Demokrazia liberalaren ordezko gisa aurkeztutako eredua: ordezkaritza familia, udala eta sindikatuaren bidez, ez alderdien bidez.">demokrazia organikoaren</span> itxura zuten, baina kontrol errealarekin.</p><p>Frankismo berantiarrean, <span class="term" data-def="Erregimenak bere boterea lege eta erakundeen bidez egonkortzeko prozesua. Helburua «Franco gabeko frankismoa» prestatzea.">instituzionalizazioa</span> bultzatu zen: <strong>Oinarrizko Legeak</strong>, 1967ko Estatuaren Lege Organikoa, eta 1969an <strong>Juan Carlosen</strong> izendapena «a título de Rey» (jarraipen-plana). <strong>Carrero Blanco</strong> (1973ko Gobernuko Presidentea) jarraipenaren giltzarria zen; haren hilketak (1973) plan hori astindu zuen.</p>
+- id: g7-3
+  number: '7.3'
+  title: Babesa, indiferentzia eta oposizioa
+  body: |-
+    <p>Gizarteak hiru modutara erantzun zuen: <strong>babesa</strong> (garaileak, antikomunismoa, hobekuntza materiala), <strong>indiferentzia/egokitzapena</strong> (beldurra, nekea, «politikarik gabe hobeto») eta <strong>oposizioa</strong>, gero eta zabalagoa:</p><ul>
+    <li><strong>Langile mugimendua:</strong> Comisiones Obreras (CCOO) eta grebak; oposizio sozialik indartsuena.</li>
+    <li><strong>Ikasle mugimendua:</strong> unibertsitatea kontrolaren aurkako espazio bihurtu zen.</li>
+    <li><strong>Oposizio politikoa:</strong> PCE (indartsua) eta PSOE, erbestetik eta klandestinitatetik.</li>
+    <li><strong>Nazionalismo periferikoak:</strong> <span class="term" data-def="1959an sortutako euskal erakunde nazionalista, hasieran identitatea eta autogobernua aldarrikatzeko. 1960ko hamarkadan erradikalizatu eta bide armatua hartu zuen (Burgosko Prozesua 1970, Carrero Blanco 1973).">ETA</span> eta Burgosko Prozesua (1970).</li>
+    <li><strong>Elizaren zati bat:</strong> langile-pastorala eta apaiz gazteak erregimenetik urruntzen hasi ziren.</li>
+    </ul>
+- id: g7-4
+  number: '7.4'
+  title: Frankismo berantiarraren krisia
+  body: |-
+    <p>Krisiak hiru dimentsio izan zituen: <strong>ekonomikoa</strong> (1973ko petrolio-krisia: inflazioa, langabezia), <strong>politiko-instituzionala</strong> (Carrero Blancoren hilketa, Francoren zahartzea, «<span class="term" data-def="Frankismoaren barruko sektore immobilista eta gogorra, aldaketa oro arriskutsutzat hartzen zuena.">bunkerraren</span>» eta <span class="term" data-def="Frankismoaren barruan erreforma mugatu eta kontrolatuak egitearen aldeko jarrera, demokrazia osorik gabe.">aperturismoaren</span> arteko borroka) eta <strong>soziala</strong> (kaleko oposizioa eta indarkeria politikoa).</p><p>Arias Navarroren «irekiera» mugatua izan zen. Portugalgo Krabelinen Iraultzak (1974) eta Greziako demokratizazioak frankismoa are bakartu zuten. Erregimenak errepresioa lehenetsi zuen: <strong>1975eko azken fusilamenduek</strong> (ETA 2, FRAP 3) nazioarteko gaitzespen handia eragin zuten. <strong>1975eko azaroaren 20an</strong> Franco hil zen.</p>
+- id: g7-5
+  number: '7.5'
+  title: Errepresio politiko eta soziala
+  body: |-
+    <p>Errepresioa legalitate-itxuraz jantzi zen: <strong>1959ko Ordena Publikoaren Legeak</strong> <span class="term" data-def="Estatuak ordena publikoa arriskuan dagoela argudiatuz eskubideak murrizteko ezartzen duen egoera berezia.">salbuespen-egoerak</span> ahalbidetu zituen; <strong>1963ko Tribunal de Orden Público (TOP)</strong> delitu politikoak epaitzeko; eta 1966ko Prentsa Legeak zentsura. Aparatu errepresiboaren bihotza <span class="term" data-def="Brigada Político-Social: frankismoaren polizia politiko nagusia. Atxiloketak, infiltrazioa eta tortura-salaketak.">Brigada Político-Social (BPS)</span> izan zen.</p><p>Errepresio sozialak gizarte-eredu bat inposatu zuen (1970eko Peligrosidad y Rehabilitación Social Legea, «desbideratutzat» jotako jokabideen aurka). Azken faseak (1974–75) errepresioaren gogortzea ekarri zuen (Puig Antich 1974, azken fusilamenduak 1975). Frankismoa ez zen erreforma adostu batez amaitu, baizik Francoren heriotzarekin, Trantsizioari atea irekiz.</p>
+glossary:
+- term: Aperturismoa
+  def: |-
+    Frankismoaren barruan erreforma mugatu eta kontrolatuak egitearen aldeko jarrera. «Bunker» immobilistarekin talka egin zuen.
+- term: Atzerriko kapitala
+  def: |-
+    Kanpoko enpresa edo inbertitzaileek herrialdean egiten duten inbertsioa. Desarrollismoan funtsezkoa, baina menpekotasuna ere areagotu zuen.
+- term: Azken fusilamenduak (1975)
+  def: |-
+    Irailaren 27an ETAko bi eta FRAPeko hiru kide fusilatu zituzten. Nazioarteko gaitzespena eta erregimenaren azken krisiaren sinboloa.
+- term: Babes soziala
+  def: |-
+    Gizartearen zati batek erregimenari ematen dion atxikimendua. Garaileen memorian, antikomunismoan eta hobekuntza materialean oinarritua.
+- term: Barne-migrazioa
+  def: |-
+    Landa-eremuetatik industria-guneetara (Katalunia, Madril, Euskal Herria) egindako biztanleria-mugimendua. Urbanizazioa ekarri zuen.
+- term: Brigada Político-Social (BPS)
+  def: |-
+    Frankismoaren polizia politiko nagusia: zaintza, atxiloketak, infiltrazioa eta tortura-salaketak.
+- term: Bunkerra
+  def: |-
+    Frankismoaren sektore immobilista eta gogorra; aldaketa oro mehatxutzat hartzen zuena.
+- term: Burgosko Prozesua (1970)
+  def: |-
+    ETAko kideen aurkako epaiketa militarra. Heriotza-zigorrek protesta handia eragin zuten eta konmutatu egin ziren.
+- term: Carrero Blanco
+  def: |-
+    Francoren konfiantzazko gizona, jarraipenaren giltzarria. 1973an Gobernuko Presidente; ETAk hil zuen urte berean.
+- term: Desarrollismoa
+  def: |-
+    1959tik aurrera frankismoak bultzatutako hazkunde ekonomiko azkarra: industria, turismoa, kapitala eta kontsumoa. Autoritarioa eta desorekatua.
+- term: Egonkortze Plana (1959)
+  def: |-
+    Autarkia gainditu eta ekonomia irekitzeko neurriak: inflazioa kontrolatu, pezeta egokitu, kanpo-kapitala erakarri.
+- term: Egokitzapena
+  def: |-
+    Diktaduraren barruan bizirauteko jarrera praktikoa, frankista aktibo izan gabe eta oposizioan sartu gabe.
+- term: ETA
+  def: |-
+    1959an sortutako euskal erakunde nazionalista; 1960ko hamarkadan erradikalizatu eta bide armatua hartu zuen.
+- term: Frankismo berantiarra
+  def: |-
+    Frankismoaren azken etapa (1960ko amaieratik 1975era): modernizazioa askatasunik gabe, oposizioaren hazkundea eta azken krisia.
+- term: Garapen Planak
+  def: |-
+    1960ko hamarkadako plangintza ekonomikoak: industria-poloak eta azpiegiturak; lurralde-desorekak ere areagotu zituzten.
+- term: INI
+  def: |-
+    Instituto Nacional de Industria: Estatuaren tresna industria estrategikoak bultzatzeko (energia, siderurgia, automobilgintza).
+- term: Instituzionalizazioa
+  def: |-
+    Erregimenak boterea lege eta erakundeen bidez egonkortzea. «Franco gabeko frankismoa» prestatzeko.
+- term: Klase ertain berriak
+  def: |-
+    Garapenaren eta zerbitzuen hazkundeak sortutako gizarte-taldeak; kontsumo-eredu berriak.
+- term: Kontsumo-gizartea
+  def: |-
+    Ondasunen kontsumoa eguneroko bizitzaren osagai nagusi bihurtzen den eredua (autoa, telebista, oporrak).
+- term: Krisi ekonomikoa (1973)
+  def: |-
+    Petrolio-krisiak Espainiako ekonomia ahuldu zuen: inflazioa, langabezia. Frankismoaren ahultzea azkartu zuen.
+- term: Langile-mugimendua
+  def: |-
+    Langileen eskubideak defendatzeko mobilizazioa. CCOO eta grebak frankismoaren aurkako oposizio sozial nagusietako bat.
+- term: Nazionalismo periferikoak
+  def: |-
+    Nazio-identitate, hizkuntza eta autogobernua defendatzen dituzten mugimenduak (Katalunia, Euskal Herria).
+- term: Oinarrizko Legeak
+  def: |-
+    Konstituziorik gabe erregimenaren egitura juridikoa antolatzeko lege-multzoa (1967ko Lege Organikoa, besteak beste).
+- term: Ordena Publikoaren Legea (1959)
+  def: |-
+    Protestak eta grebak kontrolatzeko legea; salbuespen-egoerak ezartzeko aukera ematen zuen.
+- term: Salbuespen-egoera
+  def: |-
+    Eskubideak murrizteko eta kontrola gogortzeko ezarritako egoera berezia. Euskal Herrian behin baino gehiagotan.
+- term: Teknokratak
+  def: |-
+    Ekonomia eta administrazioa modu pragmatikoan kudeatu zuten eliteak (Opus Dei inguruan). Ez demokratizatu, eraginkorrago egin nahi.
+- term: Tribunal de Orden Público (TOP)
+  def: |-
+    1963ko auzitegi berezia, delitu politikoak epaitzeko; oposizioa zigortzeko tresna.
+- term: Turismoaren boom-a
+  def: |-
+    1960ko hamarkadako turista-hazkunde azkarra; dibisa-iturri nagusia eta gizarte-aldaketen eragilea.
+- term: Urbanizazioa
+  def: |-
+    Biztanleria hirietan kontzentratzeko prozesua; askotan planifikazio eskasarekin (periferia desordenatuak).

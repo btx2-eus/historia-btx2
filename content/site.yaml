@@ -1,0 +1,55 @@
+# Site-wide configuration. Used by build.py to render index.html and tema pages.
+site:
+  title: "Espainiako Historia · 2. Batxilergoa · 1808–2011"
+  description: "Espainiako Historia, 2. Batxilergoa. EBAU/USaP azterketarako 10 gaiak, denbora-lerro interaktiboa eta kontzeptuen glosarioa."
+  brand:
+    label: "Historia BTX2"
+    sublabel: "EBAU / USaP prestakuntza"
+  footer_brand_sublabel: "La Salle Donostia"
+  copyright: "Ikasmaterial pedagogikoa"
+  cache_version: 5      # bump when CSS/JS changes
+  apunteak_pdf: "historia-btx2-apunteak-osoa.pdf"
+
+# Era colors (CSS vars set per-tema)
+eras:
+  1:  { a: "#ef4444", b: "#f97316", accent: "#d63a2f", accent2: "#f97316", ink: "#9a2a1f", tint: "#fdecea", icon_color: "ef4444" }
+  2:  { a: "#f59e0b", b: "#eab308", accent: "#d97706", accent2: "#eab308", ink: "#92400e", tint: "#fef3c7", icon_color: "f59e0b" }
+  3:  { a: "#10b981", b: "#14b8a6", accent: "#0d9488", accent2: "#14b8a6", ink: "#115e59", tint: "#cdf5ee", icon_color: "10b981" }
+  4:  { a: "#8b5cf6", b: "#6366f1", accent: "#7c3aed", accent2: "#6366f1", ink: "#5b21b6", tint: "#ede9fe", icon_color: "8b5cf6" }
+  5:  { a: "#b91c1c", b: "#7f1d1d", accent: "#b91c1c", accent2: "#dc2626", ink: "#7f1d1d", tint: "#fee2e2", icon_color: "b91c1c" }
+  6:  { a: "#475569", b: "#64748b", accent: "#475569", accent2: "#64748b", ink: "#1e293b", tint: "#e9eef4", icon_color: "475569" }
+  7:  { a: "#fb7185", b: "#f43f5e", accent: "#e11d48", accent2: "#f43f5e", ink: "#9f1239", tint: "#ffe4e6", icon_color: "fb7185" }
+  8:  { a: "#3b82f6", b: "#06b6d4", accent: "#2563eb", accent2: "#06b6d4", ink: "#1e40af", tint: "#dbeafe", icon_color: "3b82f6" }
+  9:  { a: "#059669", b: "#0ea5e9", accent: "#059669", accent2: "#0ea5e9", ink: "#065f46", tint: "#d1fae5", icon_color: "059669" }
+  10: { a: "#0ea5e9", b: "#22d3ee", accent: "#0891b2", accent2: "#22d3ee", ink: "#155e75", tint: "#cffafe", icon_color: "0ea5e9" }
+
+# Ordered list of all temas (drives navigation, cards, etc.)
+temas:
+  - { num: 1,  slug: "antzinako-erregimena",       title: "Antzinako Erregimenaren krisia eta Estatu liberalaren eraikuntza", years: "1808 – 1876", short: "Independentzia Gerra, Cadizko Konstituzioa, liberalismoaren garaipena, Seiurteko Demokratikoa eta foru-auzia.", era: 1 }
+  - { num: 2,  slug: "berrezarkuntza",             title: "Berrezarkuntzaren sistema",                                          years: "1876 – 1930", short: "Cánovasen sistema, txandakatze politikoa, kazikismoa, 98ko krisia eta erregimenaren gainbehera.", era: 2 }
+  - { num: 3,  slug: "euskal-industrializazioa",   title: "Euskal Herriko industrializazioa eta gizarte pluralaren sorrera",   years: "1875 – 1930", short: "Industria-iraultza, langile mugimendua, nazionalismoaren sorrera eta gizarte berriaren eraketa.", era: 3 }
+  - { num: 4,  slug: "bigarren-errepublika",       title: "II. Errepublika",                                                    years: "1931 – 1936", short: "Erreforma garaia, bienio ezberdinak, tentsio sozialak eta erradikalizazio politikoa.", era: 4 }
+  - { num: 5,  slug: "gerra-zibila",               title: "Gerra Zibila",                                                       years: "1936 – 1939", short: "Altxamendua, bi Espainiak, nazioarteko inplikazioa, gerraren bilakaera eta ondorioak.", era: 5 }
+  - { num: 6,  slug: "frankismoa-i",               title: "Diktadura frankista I: Gerraostea eta autarkia",                     years: "1939 – 1959", short: "Errepresioa, nazioarteko isolamendua eta ekonomia autarkikoaren porrota.", era: 6 }
+  - { num: 7,  slug: "frankismoa-ii",              title: "Diktadura frankista II: Desarrollismo industriala",                  years: "1959 – 1975", short: "Egonkortze Plana, hazkunde ekonomikoa, gizarte aldaketak eta oposizioaren indartzea.", era: 7 }
+  - { num: 8,  slug: "trantsizioa",                title: "Trantsizioa",                                                        years: "1975 – 1982", short: "Diktaduratik demokraziara: 1978ko Konstituzioa eta autonomien estatuaren eraketa.", era: 8 }
+  - { num: 9,  slug: "monarkia-parlamentarioa",    title: "Monarkia parlamentarioaren sendotzea",                               years: "1982 – 1996", short: "PSOEren gobernuak, EEEan sartzea eta estatuaren modernizazioa.", era: 9 }
+  - { num: 10, slug: "xxi-mendea",                 title: "XXI. mendea",                                                        years: "1996 – 2011", short: "Aznar eta Zapateroren gobernuak, garapen ekonomikoa eta krisiaren hasiera.", era: 10 }
+
+# Home-page main timeline (cross-tema milestones)
+home_timeline:
+  - { year: "1808",  label: "Independentzia Gerra",          era: 1, target_tema: 1,  fragment: "g1-1" }
+  - { year: "1812",  label: "«La Pepa» Konstituzioa",        era: 1, target_tema: 1,  fragment: "g1-2" }
+  - { year: "1833",  label: "Lehen Karlistada",              era: 1, target_tema: 1,  fragment: "g1-3" }
+  - { year: "1868",  label: "«La Gloriosa»",                 era: 1, target_tema: 1,  fragment: "g1-4" }
+  - { year: "1876",  label: "Berrezarkuntza · Foruen abolizioa", era: 2, target_tema: 2 }
+  - { year: "1898",  label: "98ko Krisia",                   era: 2, target_tema: 2 }
+  - { year: "1923",  label: "Primo de Riveraren diktadura",  era: 2, target_tema: 2 }
+  - { year: "1931",  label: "II. Errepublika",               era: 4, target_tema: 4 }
+  - { year: "1936",  label: "Gerra Zibila",                  era: 5, target_tema: 5 }
+  - { year: "1939",  label: "Frankismoa hasten da",          era: 6, target_tema: 6 }
+  - { year: "1959",  label: "Egonkortze Plana",              era: 7, target_tema: 7 }
+  - { year: "1975",  label: "Francoren heriotza",            era: 8, target_tema: 8 }
+  - { year: "1978",  label: "1978ko Konstituzioa",           era: 8, target_tema: 8 }
+  - { year: "1986",  label: "EEEan sartzea",                 era: 9, target_tema: 9 }
+  - { year: "2002",  label: "Euroaren ezarpena",             era: 10, target_tema: 10 }

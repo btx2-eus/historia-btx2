@@ -1,0 +1,215 @@
+meta:
+  num: 2
+  slug: berrezarkuntza
+  title: Berrezarkuntzaren sistema
+  years: 1876 – 1930
+  pdf: 02-berrezarkuntza.pdf
+  iturri_pdf: 02-iturri.pdf
+intro: |-
+  1874ko Sagunton emandako estatu kolpeak Lehen Errepublikaren kaosa amaitu eta Borboiak berrezarri zituen Alfonso XII.arekin. <strong>Antonio Cánovas del Castillo</strong> izan zen «sistema kanobistaren» arkitektoa: Erresuma Batuko bipartidismoan inspiratutako eredu liberal-kontserbadorea, egonkortasuna eta ordena soziala lehenesten zituena demokraziaren gainetik. Itxura parlamentarioa zuen, baina <span class="term" data-def="Botoa emateko baldintza ekonomikoak ezartzen zituen sistema. Gizartearen zati handia hauteskundeetatik kanpo uzten zuen.">sufragio zentsitarioan</span>, hauteskunde-iruzurrean (<span class="term" data-def="Tokiko boteredunen («kazikeen») bidez botoak kontrolatzeko sistema. Hauteskunde iruzurraren oinarria zen.">kazikismoan</span>) eta eliteen kontrolean oinarritua.
+timeline:
+- year: '1874'
+  label: Berrezarpena
+  target: g2-1
+  desc: 'Martínez Camposen kolpea: Alfonso XII.a eta Borboien berrezarpena.'
+- year: '1876'
+  label: 1876ko Konstituzioa
+  target: g2-1
+  desc: Konstituzioa, III. Karlistadaren amaiera eta foruen abolizioa.
+- year: '1879'
+  label: PSOE sortzen da
+  target: g2-1
+  desc: PSOE sortzen da (Pablo Iglesias).
+- year: '1888'
+  label: UGT
+  target: g2-1
+  desc: UGT sindikatua sortzen da.
+- year: '1895'
+  label: EAJ-PNV · Kuba
+  target: g2-1
+  desc: EAJ-PNV (Sabino Arana); Kubako Independentzia Gerra.
+- year: '1898'
+  label: 98ko Hondamendia
+  target: g2-2
+  desc: '98ko Hondamendia: Kuba, Puerto Rico eta Filipinak galdu.'
+- year: '1901'
+  label: Lliga Regionalista
+  target: g2-1
+  desc: Lliga Regionalista (katalanismo politikoa).
+- year: '1909'
+  label: Aste Tragikoa
+  target: g2-3
+  desc: 'Bartzelonako Aste Tragikoa: errepresio odoltsua.'
+- year: '1910'
+  label: CNT
+  target: g2-1
+  desc: CNT sindikatu anarkista sortzen da.
+- year: '1917'
+  label: Hiru krisialdia
+  target: g2-4
+  desc: 'Krisialdia: militarra, politikoa eta soziala.'
+- year: '1921'
+  label: Annual
+  target: g2-4
+  desc: 'Annualeko hondamendia (Maroko): 10.000 hildako.'
+- year: '1923'
+  label: Primo de Rivera
+  target: g2-5
+  desc: Primo de Riveraren estatu kolpea.
+- year: '1930'
+  label: Diktadura amaitu
+  target: g2-5
+  desc: Diktaduraren amaiera; monarkiaren krisia.
+keydates:
+- year: '1874'
+  text: 'Martínez Camposen kolpea: Alfonso XII.a eta Borboien berrezarpena.'
+- year: '1876'
+  text: Konstituzioa, III. Karlistadaren amaiera eta foruen abolizioa.
+- year: '1879'
+  text: PSOE sortzen da (Pablo Iglesias); 1888an UGT.
+- year: '1895'
+  text: EAJ-PNV (Sabino Arana) eta Kubako Independentzia Gerra.
+- year: '1898'
+  text: '98ko Hondamendia: Kuba, Puerto Rico eta Filipinak galdu.'
+- year: '1901'
+  text: Lliga Regionalista (katalanismo politikoa).
+- year: '1909'
+  text: Bartzelonako Aste Tragikoa.
+- year: '1910'
+  text: CNT sindikatu anarkista sortzen da.
+- year: '1917'
+  text: 'Krisialdia: militarra, politikoa eta soziala.'
+- year: '1921'
+  text: Annualeko hondamendia (Maroko).
+- year: '1923'
+  text: Primo de Riveraren estatu kolpea.
+- year: '1930'
+  text: Diktaduraren amaiera; monarkiaren krisia.
+sections:
+- id: g2-1
+  number: '2.1'
+  title: Sistemaren oinarriak, indarrak eta oposizioa
+  body: |-
+    <p>Sistemaren oinarri juridikoa <strong>1876ko Konstituzioa</strong> izan zen: <span class="term" data-def="Boterea erregearen eta Gorteen artean banatzen da. Konstituzio kontserbadoreetan agertzen da.">subiranotasun partekatua</span> (erregeak ahalmen handia), bi ganberako sistema (Senatua eta Diputatuen Kongresua) eta katolizismoa erlijio ofizial gisa.</p><h3><span class="h-num">2.1.1–2.1.4</span> Kazikismoa eta txandakatzea</h3><p>Hauteskundeetako emaitza aldez aurretik adosten zen bi alderdien artean, eta gobernadore zibilen eta tokiko kazikeen bidez «antolatzen» zen botoa (<em>encasillado</em>). <span class="term" data-def="Errestaurazioan ezarritako mekanismoa: bi alderdi nagusiek boterea txandaka hartzen zuten hauteskunde kontrolatuez baliatuta.">Txandakatze-sistemak</span> bi alderdi nagusi zituen:</p><ul>
+    <li><strong>Alderdi Kontserbadorea</strong> (Cánovas): zentralismoa, ordena eta gizarte-kontrola; elite tradizionala eta lur-jabeak.</li>
+    <li><strong>Alderdi Liberala</strong> (Sagasta): liberalismo progresista moderatua; 1890ean gizonezkoen sufragio unibertsala ezarri zuen, baina kazikismoan ados zegoen.</li>
+    </ul><h3><span class="h-num">2.1.5</span> Oposizioaren sorrera</h3><p>Sistematik baztertutako sektoreek oposizioa indartu zuten:</p><ul>
+    <li><strong>Errepublikanoak:</strong> demokrazia, sufragio unibertsala eta kazikismoaren amaiera.</li>
+    <li><strong>Karlistak:</strong> monarkia tradizional eta katolikoa, foruen defentsa; indartsu Euskal Herrian eta Nafarroan.</li>
+    <li><strong>Langile mugimendua:</strong> <span class="term" data-def="Langileen eskubide politiko eta sozialak defendatzen dituen ideologia. Espainian PSOE (1879) eta UGT (1888) izan ziren erakunde nagusiak.">sozialismoa</span> (PSOE 1879, UGT 1888) eta <span class="term" data-def="Estatuaren eta autoritate ororen aurkako ideologia. Espainian CNT sindikatuaren bidez antolatu zen, batez ere Katalunian eta Andaluzian.">anarkismoa</span> (CNT 1910, ekintza zuzena).</li>
+    <li><strong>Nazionalismo periferikoak:</strong> <span class="term" data-def="Espainiako Estatutik bereizten ziren identitate propioen (Katalunia, Euskal Herria...) defentsa. XIX. amaieran sortu ziren, foruen galerarekin lotuta.">nazionalismoak</span> — euskal nazionalismoa (Sabino Arana, EAJ-PNV 1895) eta katalanismoa (Lliga Regionalista 1901, Prat de la Riba, Cambó).</li>
+    <li><strong>Erregenerazionismoa:</strong> <span class="term" data-def="1898ko krisiaren ondoren sortutako pentsamendua, Espainia moralki, sozialki eta politikoki berritzeko beharra defendatzen zuena (Joaquín Costa).">Joaquín Costaren mugimendu intelektuala</span> («Europaizatzea eta desoligarkizatzea»).</li>
+    </ul>
+- id: g2-2
+  number: '2.2'
+  title: Politika koloniala eta 98ko Hondamendia
+  body: |-
+    <p>XIX. mende amaieran, Espainiak Kuba, Puerto Rico eta Filipinak baino ez zituen mantentzen. Politika zentralistak eta ustiapen ekonomikoak nazionalismo lokalak piztu zituen.</p><ul>
+    <li><strong>Kuba:</strong> Hamar Urteetako Gerra (1868–1878, Zanjongo Ituna), eta 1895eko Independentzia Gerra (José Martí). Espainiak Weyler jenerala bidali zuen, kontzentrazio-esparruekin eta nazioarteko gaitzespenarekin.</li>
+    <li><strong>Filipinak:</strong> 1896ko altxamendu nazionalista.</li>
+    <li><strong>AEBen esku-hartzea:</strong> <em>USS Maine</em> ontziaren eztanda (1898) aitzakia gisa; hiru hilabetean Espainiak erabateko porrota jasan zuen.</li>
+    </ul><div class="callout"><div class="callout-title">98ko Hondamendia</div>Parisko Itunarekin (1898) Kuba, Puerto Rico eta Filipinak galdu ziren. Ondorioak: identitate-krisi nazionala, krisi ekonomikoa, sistemaren zilegitasun-galera, erregenerazionismoaren sorrera eta nazionalismo periferikoen sendotzea.</div>
+- id: g2-3
+  number: '2.3'
+  title: Ekonomia, gizartea eta Auzi Soziala
+  body: |-
+    <p><span class="term" data-def="Manufaktura eta industria-jardueraren hedapena, batez ere Katalunian (ehungintza) eta Euskal Herrian (siderurgia). Langile klasearen sorrera ekarri zuen.">Industrializazioa</span> Katalunian eta Euskal Herrian garatu zen, baina modu desorekatuan: gainerakoa nekazaritza atzeratuan eta hegoaldeko <span class="term" data-def="Lur sail handien pilaketa jabe gutxi batzuen esku. Espainiako hegoaldean ohikoa eta nekazari pobreen zapalkuntzaren iturri.">latifundismoan</span> oinarritua.</p><p>Langile klasearen bizi-baldintza prekarioek <strong>«Auzi Soziala»</strong> piztu zuten: lanaldi luzeak, soldata txikiak, eskubiderik eza. Bi gertaera erabakigarri:</p><ul>
+    <li><strong>1909 · Bartzelonako Aste Tragikoa:</strong> Marokora soldaduak bidaltzearen aurkako greba, eliza-aurkako matxinada bihurtua. Errepresio odoltsua eta Ferrer Guardiaren fusilamendua.</li>
+    <li><strong>1917ko krisialdia:</strong> testuinguru ekonomiko zailean, UGT eta CNTren greba orokorra; armadak gogor zapaldu zuen.</li>
+    </ul>
+- id: g2-4
+  number: '2.4'
+  title: Sistemaren azken krisia
+  body: |-
+    <p>98ko porrotak, txandakatzearen artifizialtasunak eta ustelkeriak sistema higatu zuten. <strong>1917ko</strong> hiru krisiek (militarra — Defentsa Juntak; politikoa — Parlamentarioen Asanblada; soziala — greba orokorra) sistema kolokan jarri zuten.</p><p><strong>Annualeko hondamendia (1921):</strong> Marokon, Abd-el-Krimen matxinadak 10.000 soldadu espainiarren heriotza ekarri zuen. «Expediente Picasso»-k armadaren eta gobernuaren ustelkeria salatu zuen, eta Alfonso XIII.aren papera ere zalantzan jarri zuen. Honek militarismoaren gorakada bultzatu zuen.</p>
+- id: g2-5
+  number: '2.5'
+  title: Primo de Riveraren diktadura (1923–1930)
+  body: |-
+    <p>1923ko irailaren 13an, Miguel Primo de Riverak, Alfonso XIII.aren babesarekin, estatu kolpea eman zuen Bartzelonan. Espainiako lehen diktadura militar modernoa zen.</p><ul>
+    <li><strong>Direktorio Militarra (1923–1925):</strong> Gorteak desegin, Konstituzioa bertan behera; ordena publikoa eta «Aberriaren osotasuna» (nazionalismoen aurka).</li>
+    <li><strong>Direktorio Zibila (1925–1930):</strong> Alhucemasko garaipenaren ostean (Rifeko gerra). Obra publikoak, monopolioak (CAMPSA), <span class="term" data-def="Langileen eta enpresarien arteko gatazkak saihesteko klaseak elkarrekin antolatzeko sistema (sindikatu bertikalak). Primo de Riverak saiatu zuen.">korporatibismoa</span> eta <span class="term" data-def="Herrialde batek bere baliabideekin ekonomia propioa garatzeko helburua, kanpo-merkataritzarik gabe.">autarkiarako</span> joera. Alderdi bakarra: Unión Patriótica. Euskararen eta katalanaren jazarpena.</li>
+    <li><strong>Porrota (1929–1930):</strong> babes soziala higatu, 1929ko krisi ekonomikoa, eta dimisioa 1930ean.</li>
+    </ul><div class="callout"><div class="callout-title">Ondorioa</div>Diktadurak ez zion Errestaurazioaren krisiari irtenbiderik eman, eta Alfonso XIII.a harekin identifikatzeak monarkiaren zilegitasuna kaltetu zuen. Honek atea ireki zion Bigarren Errepublikari (1931). Errestaurazioa ez zen herriaren eskariz amaitu, bere inertziaz kolapsatu baizik.</div>
+glossary:
+- term: Anarkismoa
+  def: |-
+    Estatuaren eta autoritate ororen aurkako ideologia, gizabanakoaren askatasun osoa defendatzen duena. CNT sindikatuaren bidez antolatu zen (Katalunia, Andaluzia).
+- term: Antiklerikalismoa
+  def: |-
+    Elizaren botere politiko eta sozialaren aurkako jarrera. Errepublikanoek, sozialistek eta anarkistek bultzatua.
+- term: Autarkia
+  def: |-
+    Herrialde batek bere baliabideekin ekonomia propioa garatzeko helburua, kanpo-merkataritzarik gabe.
+- term: Bipartidismoa
+  def: |-
+    Bi alderdi nagusiren (Kontserbadoreak eta Liberalak) arteko boterearen txandaketa, aurrez adostua. Ez zegoen benetako lehiarik.
+- term: Kazikismoa
+  def: |-
+    Tokiko boteredunen («kazikeen») sistema: botoak kontrolatuz egonkortasuna bermatzen zen. Hauteskunde iruzurraren oinarria.
+- term: Defentsa Juntak
+  def: |-
+    XX. mende hasieran militarrek sortutako taldeak, armadaren hierarkia eta soldatak defendatzeko. 1917ko krisian garrantzi politikoa izan zuten.
+- term: Erregenerazionismoa
+  def: |-
+    1898ko krisiaren ondoren sortutako mugimendua, Espainia moralki, sozialki eta politikoki berritzeko beharra defendatzen zuena (Joaquín Costa).
+- term: Errestaurazioa
+  def: |-
+    1874an Alfonso XII.aren itzulerarekin hasitako sistema politikoa. Cánovasek diseinatua; helburua egonkortasun politikoa eta ordena soziala.
+- term: Federalismoa
+  def: |-
+    Estatuaren antolamendua, non erkidegoek autonomia maila handia duten. 1873ko Errepublikan garatu zen.
+- term: Industrializazioa
+  def: |-
+    Industria-jardueraren hedapena, batez ere Katalunian eta Euskal Herrian. Langile klasearen sorrera eta Auzi Soziala ekarri zituen.
+- term: Kolonialismoa
+  def: |-
+    Espainiak Kuban, Puerto Ricon eta Filipinetan mantendu zuen dominazio politiko eta ekonomikoa. 1898an galdu zituen.
+- term: Kontserbadurismoa
+  def: |-
+    Tradizioaren, monarkiaren eta Elizaren defentsan oinarritutako ideologia. Errestaurazioko zutabe nagusietako bat.
+- term: Korporatibismoa
+  def: |-
+    Langileen eta enpresarien arteko gatazkak saihesteko klaseak elkarrekin antolatzeko sistema. Primo de Riverak bultzatu zuen.
+- term: Latifundismoa
+  def: |-
+    Lur sail handien pilaketa jabe gutxi batzuen esku. Espainiako hegoaldean ohikoa; nekazari pobreen zapalkuntza-iturria.
+- term: Liberalismoa
+  def: |-
+    Estatuaren kontrola mugatu, eskubideak zabaldu eta legearen aurreko berdintasuna defendatzen duen ideologia. Kontserbadorea (Cánovas) eta aurrerakoia (Sagasta).
+- term: Militarismoa
+  def: |-
+    Armada politikan sartzeko joera. Espainian tradizio luzekoa; Errestaurazioaren amaieran gero eta agerikoagoa.
+- term: Monopolioa
+  def: |-
+    Enpresa batek sektore ekonomiko oso baten kontrola lortzen duenean (adib. tabakoaren monopolioa estatuaren esku).
+- term: Nazionalismoa (periferikoak)
+  def: |-
+    Espainiako Estatutik bereizten ziren identitate propioen (Katalunia, Euskal Herria...) defentsa. XIX. amaieran, foruen galerarekin lotuak.
+- term: Oposizio politikoa
+  def: |-
+    Sistemaren aurkako indarrak: errepublikanoak, karlistak, langile mugimenduak eta nazionalistak. Eragina pixkanaka handitu zen.
+- term: Progresismoa
+  def: |-
+    Liberalismoaren adar aurrerakoiena: sufragio unibertsala, hezkuntza laikoa eta erreforma sozialak.
+- term: Proletariotza
+  def: |-
+    Industria garaiko langile klasea, jabetzarik gabekoa. Langile mugimenduaren eta sindikalismoaren oinarri soziala.
+- term: Sindikalismoa
+  def: |-
+    Langileen interesak defendatzen zituzten erakundeak (UGT, CNT) eta euren borroka sozial-ekonomikoa. Grebak eta mobilizazioak.
+- term: Sozialismoa
+  def: |-
+    Langileen eskubide politiko eta sozialak defendatzen dituen ideologia. Espainian PSOE (1879) eta UGT (1888).
+- term: Sufragio zentsitarioa
+  def: |-
+    Botoa emateko baldintza ekonomikoak ezartzen zituen sistema. Gizartearen zati handi bat kanpoan uzten zuen.
+- term: Txandakatze sistema
+  def: |-
+    Errestaurazioko mekanismoa: bi alderdi nagusiek boterea txandaka hartzen zuten, hauteskunde kontrolatuez baliatuta.
+- term: 98ko Hondamendia
+  def: |-
+    1898ko porrota AEBen aurka: azken kolonien galera. Identitate-, ekonomia- eta sistema-krisia ekarri zuen.
+- term: Annualeko hondamendia (1921)
+  def: |-
+    Marokon, Abd-el-Krimen matxinadak 10.000 soldaduren heriotza ekarri zuen. Sistemaren ospea hondoratu zuen.
