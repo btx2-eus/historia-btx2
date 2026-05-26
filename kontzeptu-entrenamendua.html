@@ -3,199 +3,643 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hautaproba Historia: 5 kontzeptu, esaldi bat</title>
+  <title>IA kontzeptu entrenamendua · Historia BTX2</title>
+  <meta name="description" content="Espainiako Historiako hautaprobarako kontzeptu historikoen IA entrenamendua: 5 kontzeptu, esaldi historiko bakarra." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg:#f8fafc;
-      --hero:#0f172a;
-      --hero2:#1e3a8a;
-      --paper:#ffffff;
-      --ink:#0f172a;
-      --muted:#64748b;
-      --line:#e2e8f0;
-      --accent:#2563eb;
-      --accent2:#f59e0b;
-      --soft:#eff6ff;
-      --soft2:#fff7ed;
-      --ok:#15803d;
-      --bad:#b91c1c;
-      --shadow:0 18px 45px rgba(15,23,42,.12);
-      --radius:20px;
+      --c-indigo: #5b2be0;
+      --c-violet: #8b5cf6;
+      --c-blue: #2563eb;
+      --c-coral: #ff5d73;
+      --c-amber: #ffb020;
+      --c-pink: #ff4dd6;
+      --ink: #14122b;
+      --ink-soft: #3a3759;
+      --muted: #6b6890;
+      --line: #e9e6f5;
+      --bg: #ffffff;
+      --bg-soft: #f7f5ff;
+      --bg-card: #ffffff;
+      --accent: #6d28d9;
+      --accent-2: #c026d3;
+      --accent-ink: #4c1d95;
+      --accent-tint: #f3eafe;
+      --ok: #15803d;
+      --bad: #b91c1c;
+      --warn: #b45309;
+      --font-display: "Space Grotesk", "Trebuchet MS", system-ui, sans-serif;
+      --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --radius-sm: 10px;
+      --radius: 18px;
+      --radius-lg: 28px;
+      --shadow-sm: 0 2px 8px rgba(20, 18, 43, .06);
+      --shadow: 0 14px 40px -14px rgba(20, 18, 43, .28);
+      --shadow-lg: 0 30px 70px -24px rgba(60, 30, 120, .45);
+      --maxw: 1180px;
+      --nav-h: 68px;
     }
 
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      background:
-        radial-gradient(circle at 10% 0%,rgba(37,99,235,.10),transparent 32%),
-        radial-gradient(circle at 90% 15%,rgba(245,158,11,.16),transparent 30%),
-        var(--bg);
-      color:var(--ink);
-      line-height:1.6;
+    *, *::before, *::after { box-sizing: border-box; }
+    * { margin: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 16px); }
+    body {
+      font-family: var(--font-body);
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3 { font-family: var(--font-display); line-height: 1.12; font-weight: 700; letter-spacing: -0.02em; }
+    p { color: var(--muted); }
+    ul { padding-left: 1.1em; }
+    .container { width: min(100% - 2.4rem, var(--maxw)); margin-inline: auto; }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 12px;
+      z-index: 9999;
+      background: var(--ink);
+      color: #fff;
+      padding: .7rem 1.1rem;
+      border-radius: 0 0 10px 10px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      transition: top .18s;
+    }
+    .skip-link:focus { top: 0; outline: 3px solid var(--c-amber); outline-offset: 2px; }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      z-index: 1000;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 12px var(--accent-2);
     }
 
-    .topbar{
-      position:sticky;
-      top:0;
-      z-index:10;
-      backdrop-filter:blur(14px);
-      background:rgba(15,23,42,.88);
-      border-bottom:1px solid rgba(255,255,255,.10);
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 900;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      backdrop-filter: saturate(180%) blur(14px);
+      background: rgba(255, 255, 255, .88);
+      border-bottom: 1px solid var(--line);
     }
-    .nav-inner{
-      width:min(1120px,calc(100% - 32px));
-      margin:0 auto;
-      min-height:64px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:18px;
+    .nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
     }
-    .brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:900;text-decoration:none;letter-spacing:-.02em}
-    .brand-mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:950}
-    .nav-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
-    .nav-links a{color:#cbd5e1;text-decoration:none;font-size:.92rem;font-weight:700;padding:8px 10px;border-radius:999px}
-    .nav-links a:hover{background:rgba(255,255,255,.10);color:#fff}
-
-    header{
-      padding:72px 22px 86px;
-      text-align:center;
-      background:
-        linear-gradient(135deg,rgba(15,23,42,.98),rgba(30,58,138,.92)),
-        radial-gradient(circle at 20% 20%,rgba(245,158,11,.28),transparent 30%);
-      color:#fff;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
     }
-    .eyebrow{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:8px 13px;
-      border:1px solid rgba(255,255,255,.22);
-      border-radius:999px;
-      background:rgba(255,255,255,.10);
-      color:#fef3c7;
-      font-weight:900;
-      font-size:.84rem;
-      letter-spacing:.04em;
-      text-transform:uppercase;
+    .brand .logo {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      background: linear-gradient(135deg, var(--c-indigo), var(--c-coral));
+      color: #fff;
+      font-size: 1.1rem;
+      box-shadow: var(--shadow-sm);
     }
-    h1{margin:18px auto 12px;max-width:980px;font-size:clamp(2.3rem,6vw,5rem);line-height:.95;letter-spacing:-.06em}
-    .subtitle{max-width:850px;margin:0 auto;color:#cbd5e1;font-size:clamp(1.05rem,2vw,1.28rem)}
+    .brand small {
+      display: block;
+      font-family: var(--font-body);
+      font-size: .72rem;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: .3rem;
+    }
+    .nav-links a {
+      padding: .5rem .85rem;
+      border-radius: 999px;
+      color: var(--ink-soft);
+      font-size: .92rem;
+      font-weight: 700;
+      transition: background .2s, color .2s;
+    }
+    .nav-links a:hover { background: var(--bg-soft); color: var(--ink); }
+    .nav-links a.cta {
+      background: linear-gradient(135deg, var(--c-indigo), var(--c-violet));
+      color: #fff;
+      box-shadow: var(--shadow-sm);
+    }
+    .nav-toggle {
+      display: none;
+      border: 0;
+      background: none;
+      cursor: pointer;
+      padding: .4rem;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      margin: 5px 0;
+      border-radius: 2px;
+      background: var(--ink);
+    }
 
-    .hero-actions{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-    .hero-actions a{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:900}
-    .primary-btn{background:#fff;color:var(--hero)}
-    .secondary-btn{border:1px solid rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.08)}
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      min-height: 46px;
+      padding: .85rem 1.5rem;
+      border: 0;
+      border-radius: 999px;
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .15s, box-shadow .2s, filter .2s, background .2s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--c-indigo), var(--c-coral));
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+    .btn-primary:hover { transform: translateY(-2px); filter: brightness(1.05); }
+    .btn-ghost {
+      border: 1.5px solid rgba(255,255,255,.5);
+      background: rgba(255,255,255,.14);
+      color: #fff;
+    }
+    .btn-ghost:hover { transform: translateY(-2px); background: rgba(255,255,255,.24); }
 
-    main{width:min(1120px,calc(100% - 32px));margin:-48px auto 80px}
-    section,.hero-card{margin:24px 0;padding:28px;border-radius:var(--radius);background:rgba(255,255,255,.96);border:1px solid var(--line);box-shadow:0 10px 28px rgba(15,23,42,.06)}
-    .hero-card{box-shadow:var(--shadow)}
-    .rule{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:stretch}
-    .big-idea{padding:28px;border-radius:18px;background:linear-gradient(135deg,var(--hero),var(--hero2));color:#fff;min-height:240px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
-    .big-idea:after{content:"";position:absolute;right:-60px;top:-60px;width:180px;height:180px;border-radius:50%;background:rgba(245,158,11,.22)}
-    .big-idea h2{margin:0 0 12px;font-size:clamp(1.55rem,3vw,2.45rem);line-height:1.04;letter-spacing:-.04em;position:relative}
-    .big-idea p{margin:0;font-size:1.06rem;color:#cbd5e1;position:relative}
-    .quick-check{padding:22px;border-radius:18px;background:var(--soft);border:1px solid #bfdbfe}
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(3.6rem, 9vw, 7rem) 0 clamp(4.6rem, 10vw, 8rem);
+      color: #fff;
+      background: linear-gradient(135deg, #3a0ca3 0%, #5b2be0 38%, #b5179e 78%, #ff5d73 100%);
+    }
+    .hero .container { position: relative; z-index: 1; }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      margin-bottom: 1.3rem;
+      padding: .4rem .9rem;
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 999px;
+      background: rgba(255,255,255,.16);
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 12ch;
+      margin-bottom: 1.1rem;
+      font-size: clamp(2.65rem, 7vw, 5.4rem);
+    }
+    .hero h1 .grad-text {
+      background: linear-gradient(90deg, #ffd166, #ff8fab);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero p.lead {
+      max-width: 58ch;
+      margin-bottom: 2rem;
+      color: rgba(255,255,255,.92);
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .9rem; }
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.2rem;
+      margin-top: 3rem;
+    }
+    .hero-stats .stat strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 2rem;
+      line-height: 1;
+    }
+    .hero-stats .stat span {
+      color: rgba(255,255,255,.82);
+      font-size: .85rem;
+    }
+    .hero-wave {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      line-height: 0;
+    }
+    .hero-wave svg { display: block; width: 100%; height: 70px; }
 
-    section h2{margin:0 0 10px;font-size:clamp(1.45rem,3vw,2.2rem);line-height:1.1;letter-spacing:-.04em;display:flex;align-items:center;gap:10px}
-    section h2:before{content:"";width:9px;height:32px;border-radius:999px;background:linear-gradient(180deg,var(--accent),var(--accent2));display:inline-block;flex:none}
-    .section-intro{max-width:880px;color:var(--muted);margin-top:0}
+    .section { padding: clamp(3.2rem, 7vw, 5.4rem) 0; }
+    .section.alt { background: var(--bg-soft); }
+    .section-head {
+      max-width: 58ch;
+      margin: 0 auto clamp(2rem, 5vw, 3rem);
+      text-align: center;
+    }
+    .section-head .kicker {
+      display: inline-block;
+      margin-bottom: .9rem;
+      padding: .3rem .8rem;
+      border-radius: 999px;
+      background: var(--accent-tint);
+      color: var(--accent);
+      font-family: var(--font-display);
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 {
+      margin-bottom: .8rem;
+      font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+    }
+    .section-head p { font-size: 1.05rem; }
 
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .grid.two{grid-template-columns:repeat(2,1fr)}
-    .grid.four{grid-template-columns:repeat(4,1fr)}
-    .card{padding:20px;border-radius:18px;background:var(--paper);border:1px solid var(--line);box-shadow:0 8px 22px rgba(15,23,42,.045)}
-    .card h3{margin-top:0;letter-spacing:-.02em}
-    .mode-a{border-top:7px solid var(--accent)}
-    .mode-b{border-top:7px solid var(--accent2)}
-    .step-number{width:36px;height:36px;display:inline-flex;justify-content:center;align-items:center;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);color:#fff;font-weight:950;margin-bottom:12px;box-shadow:0 8px 18px rgba(37,99,235,.24)}
-    .step-number.orange{background:linear-gradient(135deg,var(--accent2),#f97316)}
+    .intro-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(290px, .95fr);
+      gap: 1.4rem;
+      align-items: stretch;
+    }
+    .statement {
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(1.6rem, 4vw, 2.3rem);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, var(--ink), #322a78);
+      color: #fff;
+      box-shadow: var(--shadow-lg);
+    }
+    .statement h2 {
+      max-width: 18ch;
+      margin-bottom: .9rem;
+      font-size: clamp(1.7rem, 4vw, 2.7rem);
+    }
+    .statement p { color: rgba(255,255,255,.78); font-size: 1.05rem; }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      box-shadow: var(--shadow-sm);
+      padding: 1.5rem;
+    }
+    .panel h3 { margin-bottom: .6rem; font-size: 1.25rem; }
+    .panel li + li { margin-top: .45rem; }
 
-    .example{margin:14px 0 0;padding:16px;border-left:5px solid var(--accent2);background:#fff7ed;border-radius:12px;border-top:1px solid #fed7aa;border-right:1px solid #fed7aa;border-bottom:1px solid #fed7aa}
-    .bad{border-left-color:var(--bad);background:#fef2f2;border-top-color:#fecaca;border-right-color:#fecaca;border-bottom-color:#fecaca}
-    .good{border-left-color:var(--ok);background:#f0fdf4;border-top-color:#bbf7d0;border-right-color:#bbf7d0;border-bottom-color:#bbf7d0}
-    .label{display:inline-block;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;font-weight:900;color:var(--muted);margin-bottom:6px}
-    .warning{padding:18px;border-radius:16px;background:#fffbeb;border:1px solid #fde68a;margin-top:18px;color:#713f12}
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.2rem;
+    }
+    .step-card,
+    .mode-card,
+    .phrase-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      box-shadow: var(--shadow-sm);
+      padding: 1.45rem;
+    }
+    .step-number {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 1rem;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--c-indigo), var(--c-violet));
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      box-shadow: var(--shadow-sm);
+    }
+    .step-card h3,
+    .mode-card h3,
+    .phrase-card h3 { margin-bottom: .45rem; font-size: 1.16rem; }
 
-    .copy-wrap{position:relative;margin-top:16px}
-    pre{white-space:pre-wrap;word-break:break-word;background:#0f172a;color:#e5e7eb;padding:24px;border-radius:18px;border:1px solid #1e293b;font-size:.95rem;line-height:1.58;overflow:auto;box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
-    .copy-btn{position:absolute;right:12px;top:12px;border:0;border-radius:999px;padding:9px 14px;background:var(--accent2);color:#111827;font-weight:950;cursor:pointer;box-shadow:0 8px 18px rgba(245,158,11,.24)}
+    .notice {
+      margin-top: 1.2rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid #fde68a;
+      border-radius: var(--radius);
+      background: #fffbeb;
+      color: #713f12;
+      font-weight: 650;
+    }
+    .notice strong { color: #713f12; }
 
-    .rubric{width:100%;border-collapse:collapse;overflow:hidden;border-radius:16px;background:var(--paper);border:1px solid var(--line)}
-    .rubric th,.rubric td{padding:14px;border-bottom:1px solid var(--line);vertical-align:top}
-    .rubric th{background:var(--hero);color:#fff;text-align:left}
-    .rubric tr:last-child td{border-bottom:0}
-    .score{font-weight:950;color:var(--accent);font-size:1.25rem}
-    .teacher-note{margin-top:16px;padding:18px;border-radius:16px;background:var(--soft);border:1px solid #bfdbfe;color:#1e3a8a}
-    footer{text-align:center;color:var(--muted);padding:28px}
+    .prompt-panel {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      background: #100f24;
+      box-shadow: var(--shadow-lg);
+    }
+    .prompt-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 1.1rem;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      color: #fff;
+      font-weight: 700;
+    }
+    .copy-btn {
+      border: 0;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--c-amber), var(--c-coral));
+      color: #1f1434;
+      font-family: var(--font-display);
+      font-weight: 700;
+      padding: .58rem 1rem;
+      cursor: pointer;
+    }
+    pre {
+      overflow: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      padding: 1.4rem;
+      color: #e9e6ff;
+      font-size: .95rem;
+      line-height: 1.58;
+    }
 
-    @media(max-width:950px){.grid.four{grid-template-columns:repeat(2,1fr)}.nav-inner{align-items:flex-start;flex-direction:column;padding:12px 0}.nav-links{justify-content:flex-start}}
-    @media(max-width:850px){.rule,.grid,.grid.two,.grid.four{grid-template-columns:1fr}header{padding-top:46px}section,.hero-card{padding:20px}.rubric{font-size:.9rem}.copy-btn{position:static;margin-bottom:8px}main{margin-top:-32px}}
-    @media print{.topbar,.hero-actions,.copy-btn{display:none}body{background:#fff}header{background:#fff;color:#111;padding:20px}.subtitle{color:#444}main{margin:0 auto}section,.hero-card{box-shadow:none;break-inside:avoid}}
+    .mode-card { position: relative; overflow: hidden; }
+    .mode-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--c-indigo), var(--c-coral));
+    }
+    .teacher-note {
+      margin-top: 1.2rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid #c7d2fe;
+      border-radius: var(--radius);
+      background: #eef2ff;
+      color: #312e81;
+    }
+
+    .rubric {
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      border-collapse: separate;
+      border-spacing: 0;
+      background: var(--bg-card);
+      box-shadow: var(--shadow-sm);
+    }
+    .rubric th,
+    .rubric td {
+      padding: .95rem 1rem;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+    .rubric th {
+      background: linear-gradient(135deg, var(--c-indigo), var(--c-violet));
+      color: #fff;
+      font-family: var(--font-display);
+    }
+    .rubric tr:last-child td { border-bottom: 0; }
+    .score {
+      color: var(--accent);
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+
+    .example-stack {
+      display: grid;
+      gap: .9rem;
+      margin-top: 1.1rem;
+    }
+    .example {
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--c-amber);
+      border-radius: 14px;
+      background: #fff7ed;
+      padding: 1rem;
+    }
+    .example.bad {
+      border-left-color: var(--bad);
+      background: #fef2f2;
+      border-color: #fecaca;
+    }
+    .example.good {
+      border-left-color: var(--ok);
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+    }
+    .label {
+      display: inline-block;
+      margin-bottom: .25rem;
+      color: var(--muted);
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .phrase-list {
+      display: grid;
+      gap: .55rem;
+      padding-left: 0;
+      list-style: none;
+    }
+    .phrase-list li {
+      padding: .7rem .8rem;
+      border-radius: 12px;
+      background: var(--bg-soft);
+      color: var(--ink-soft);
+      font-weight: 650;
+    }
+    .page-footer {
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .btn:focus-visible,
+    .nav-links a:focus-visible,
+    .copy-btn:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--accent) 60%, transparent);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 880px) {
+      .nav { height: auto; min-height: var(--nav-h); }
+      .nav .container { flex-wrap: wrap; padding-block: .55rem; }
+      .nav-toggle { display: block; margin-left: auto; }
+      .nav-links {
+        display: none;
+        width: 100%;
+        align-items: stretch;
+        padding: .4rem 0 .6rem;
+      }
+      .nav-links.open { display: grid; }
+      .nav-links a { padding: .75rem .85rem; }
+      .intro-grid { grid-template-columns: 1fr; }
+      .hero h1 { max-width: 10ch; }
+      .hero-stats { gap: 1.3rem; }
+      .rubric { font-size: .92rem; }
+    }
+
+    @media (max-width: 560px) {
+      .container { width: min(100% - 1.4rem, var(--maxw)); }
+      .brand { font-size: .98rem; }
+      .brand .logo { width: 34px; height: 34px; }
+      .hero { padding-top: 2.8rem; }
+      .hero-actions .btn { width: 100%; }
+      .prompt-toolbar { align-items: stretch; flex-direction: column; }
+      .copy-btn { width: 100%; }
+      .rubric th,
+      .rubric td { padding: .78rem; }
+    }
+
+    @media print {
+      .nav,
+      .hero-actions,
+      .copy-btn,
+      .progress-bar { display: none; }
+      .hero { padding: 2rem 0; color: #111; background: #fff; }
+      .hero-wave { display: none; }
+      .section { padding: 1.2rem 0; }
+      .panel,
+      .step-card,
+      .mode-card,
+      .phrase-card,
+      .prompt-panel { box-shadow: none; break-inside: avoid; }
+      pre { color: #111; background: #fff; }
+    }
   </style>
 </head>
 <body>
-  <nav class="topbar" aria-label="Nabigazio nagusia">
-    <div class="nav-inner">
-      <a class="brand" href="index.html"><span class="brand-mark">H</span><span>Historia BTX2 · IA entrenamendua</span></a>
-      <div class="nav-links">
+  <a class="skip-link" href="#main">Edukira saltatu</a>
+  <div class="progress-bar" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">H</span><span>Historia BTX2<small>EBAU / USaP prestakuntza</small></span></a>
+      <button class="nav-toggle" aria-label="Menua" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="index.html#denbora-lerroa">Denbora-lerroa</a>
         <a href="index.html#gaiak">Gaiak</a>
         <a href="index.html#tresnak">Tresnak</a>
-        <a href="#nola">Nola egin</a>
         <a href="#prompt">Prompta</a>
-        <a href="#ebaluazioa">Ebaluazioa</a>
-        <a href="#adibidea">Adibidea</a>
-      </div>
-    </div>
-  </nav>
-
-  <header>
-    <span class="eyebrow">Espainiako Historia · Hautaproba entrenamendua</span>
-    <h1>5 kontzeptu, esaldi historiko bakarra</h1>
-    <p class="subtitle">IAk 5 kontzeptuak proposatuko ditu, baina lehen esaldia ikasleak egin behar du. Ondoren bakarrik etorriko da zuzenketa.</p>
-    <div class="hero-actions">
-      <a class="primary-btn" href="#prompt">Kopiatu prompta</a>
-      <a class="secondary-btn" href="#nola">Ikusi pausoak</a>
+        <a class="cta" href="#nola">Hasi ikasten →</a>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <div class="hero-card rule">
-      <div class="big-idea">
-        <h2>Ariketa ez da bost hitz sartzea. Ariketa da bost kontzepturekin logika historikoa eraikitzea.</h2>
-        <p>Lehenik gaia. Gero 5 kontzeptu. Gero ikaslearen esaldia. Azkenik, zuzenketa laburra eta zorrotza.</p>
+  <section class="hero" id="main" tabindex="-1">
+    <div class="container">
+      <span class="hero-eyebrow">★ 2. Batxilergoa · EBAU/USaP prestakuntza</span>
+      <h1>IA kontzeptu <span class="grad-text">entrenamendua</span></h1>
+      <p class="lead">5 kontzeptu historiko hartu, esaldi bakarrean lotu eta logika historikoa eraikitzeko ariketa gidatua.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#prompt">Kopiatu prompta →</a>
+        <a class="btn btn-ghost" href="#nola">Ikusi pausoak</a>
+        <a class="btn btn-ghost" href="index.html#tresnak">← Tresnetara</a>
       </div>
-      <div class="quick-check">
+      <div class="hero-stats">
+        <div class="stat"><strong>5</strong><span>Kontzeptu</span></div>
+        <div class="stat"><strong>1</strong><span>Esaldi historiko</span></div>
+        <div class="stat"><strong>3</strong><span>Ebaluazio maila ona</span></div>
+      </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path fill="#ffffff" d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,40 L1440,70 L0,70 Z"></path></svg>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container intro-grid">
+      <div class="statement">
+        <h2>Ez da bost hitz sartzea. Logika historikoa eraikitzea da.</h2>
+        <p>Lehenik gaia, gero 5 kontzeptu, ondoren ikaslearen esaldia eta azkenik zuzenketa laburra eta zorrotza.</p>
+      </div>
+      <div class="panel">
         <h3>Lanaren muina</h3>
         <ul>
           <li>IAk <strong>ez du azalduko</strong> kontzeptuen muina hasieran.</li>
           <li>Ikasleak <strong>esaldi bakarra</strong> idatziko du 5 kontzeptuak erabiliz.</li>
           <li>IAk ondoren ebaluatuko du: kontzeptuak, erabilera, zentzua eta hobekuntza.</li>
         </ul>
-        <div class="example bad"><span class="label">Ez da nahikoa</span><br>Industrializazioa, Bizkaia, immigrazioa, langile-mugimendua eta sozialismoa garrantzitsuak izan ziren.</div>
-        <div class="example good"><span class="label">Hobe</span><br>Bizkaiko industrializazioak immigrazioa eta langile-mugimenduaren hazkundea bultzatu zituen, eta horrek sozialismoaren hedapena indartu zuen.</div>
+        <div class="example-stack">
+          <div class="example bad"><span class="label">Ez da nahikoa</span><br>Industrializazioa, Bizkaia, immigrazioa, langile-mugimendua eta sozialismoa garrantzitsuak izan ziren.</div>
+          <div class="example good"><span class="label">Hobe</span><br>Bizkaiko industrializazioak immigrazioa eta langile-mugimenduaren hazkundea bultzatu zituen, eta horrek sozialismoaren hedapena indartu zuen.</div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <section id="nola">
-      <h2>Nola egin lana</h2>
-      <p class="section-intro">Ikasleak prompt bakarra kopiatu eta IArekin elkarrizketa labur bat egingo du. Prozesua lau urratsetan:</p>
-      <div class="grid four">
-        <div class="card"><span class="step-number">1</span><h3>Prompta kopiatu</h3><p>Ikasleak beheko prompta IA batean itsatsiko du.</p></div>
-        <div class="card"><span class="step-number">2</span><h3>Gaia eman</h3><p>IAk galdetuko dio zein gai landu behar den. Ikasleak gaia idatziko du.</p></div>
-        <div class="card"><span class="step-number">3</span><h3>5 kontzeptu jaso</h3><p>IAk 5 kontzeptu proposatuko ditu, azalpenik eta baloraziorik gabe.</p></div>
-        <div class="card"><span class="step-number">4</span><h3>Esaldia idatzi</h3><p>Ikasleak 5 kontzeptuekin esaldi bakarra sortuko du. Ondoren, IAk zuzenduko du.</p></div>
+  <section class="section alt" id="nola">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Prozedura</span>
+        <h2>Nola egin lana</h2>
+        <p>Ikasleak prompt bakarra kopiatu eta IArekin elkarrizketa labur bat egingo du. Prozesua lau urratsetan:</p>
       </div>
-      <div class="warning"><strong>Arau nagusia:</strong> IA ez da erantzuna emateko erabiltzen, baizik eta ikaslearen lehen saiakera zuzentzeko. Lehen esaldia ikasleak egin behar du beti.</div>
-    </section>
+      <div class="cards-grid">
+        <div class="step-card"><span class="step-number">1</span><h3>Prompta kopiatu</h3><p>Ikasleak beheko prompta IA batean itsatsiko du.</p></div>
+        <div class="step-card"><span class="step-number">2</span><h3>Gaia eman</h3><p>IAk galdetuko dio zein gai landu behar den. Ikasleak gaia idatziko du.</p></div>
+        <div class="step-card"><span class="step-number">3</span><h3>5 kontzeptu jaso</h3><p>IAk 5 kontzeptu proposatuko ditu, azalpenik eta baloraziorik gabe.</p></div>
+        <div class="step-card"><span class="step-number">4</span><h3>Esaldia idatzi</h3><p>Ikasleak 5 kontzeptuekin esaldi bakarra sortuko du. Ondoren, IAk zuzenduko du.</p></div>
+      </div>
+      <div class="notice"><strong>Arau nagusia:</strong> IA ez da erantzuna emateko erabiltzen, baizik eta ikaslearen lehen saiakera zuzentzeko. Lehen esaldia ikasleak egin behar du beti.</div>
+    </div>
+  </section>
 
-    <section id="prompt">
-      <h2>Prompt itxia · IA batean kopiatzeko</h2>
-      <p class="section-intro">Hau da ikasleek erabili behar duten prompt nagusia. Ez da beste azalpenik gehitu behar hasieran.</p>
-      <div class="copy-wrap">
-        <button class="copy-btn" onclick="copyText('promptNagusia')">Kopiatu</button>
+  <section class="section" id="prompt">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Prompt itxia</span>
+        <h2>IA batean kopiatzeko</h2>
+        <p>Hau da ikasleek erabili behar duten prompt nagusia. Ez da beste azalpenik gehitu behar hasieran.</p>
+      </div>
+      <div class="prompt-panel">
+        <div class="prompt-toolbar">
+          <span>Hautaproba kontzeptu entrenamendua</span>
+          <button class="copy-btn" type="button" data-copy="promptNagusia">Kopiatu</button>
+        </div>
         <pre id="promptNagusia">Asumitu 2. Batxilergoko Historia irakasle bikain baten rola. Ikasle batekin arituko zara eta prompt honetan dagoen prozedura zorrotz jarraituko duzu:
 
 1. Galdetu zein den landu beharreko gaia.
@@ -212,20 +656,31 @@
 
 Izango zara zuzena, sintetikoa eta profesionala.</pre>
       </div>
-    </section>
+    </div>
+  </section>
 
-
-    <section>
-      <h2>Irakaslearen erabilera gomendatua</h2>
-      <div class="grid two">
-        <div class="card mode-a"><h3>Entrenamendurako</h3><p>Astean behin, etxean edo klaseko azken 10 minutuetan. Ikasleak prompta erabiltzen du, gaia sartzen du, 5 kontzeptuak jasotzen ditu eta esaldia egiten du.</p></div>
-        <div class="card mode-b"><h3>Hautaproba simulatzeko</h3><p>Noizean behin, irakasleak berak ematen ditu 5 kontzeptuak. Orduan IA ez da kontzeptuak aukeratzeko erabiltzen, zuzenketa edo autoebaluaziorako bakarrik.</p></div>
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Irakaslearentzat</span>
+        <h2>Erabilera gomendatua</h2>
+        <p>Ariketa txiki baina errepikagarri gisa erabiltzeko pentsatuta dago, kontzeptuak buruz ikastetik harremanak eraikitzera pasatzeko.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="mode-card"><h3>Entrenamendurako</h3><p>Astean behin, etxean edo klaseko azken 10 minutuetan. Ikasleak prompta erabiltzen du, gaia sartzen du, 5 kontzeptuak jasotzen ditu eta esaldia egiten du.</p></div>
+        <div class="mode-card"><h3>Hautaproba simulatzeko</h3><p>Noizean behin, irakasleak berak ematen ditu 5 kontzeptuak. Orduan IA ez da kontzeptuak aukeratzeko erabiltzen, zuzenketa edo autoebaluaziorako bakarrik.</p></div>
       </div>
       <div class="teacher-note"><strong>Gomendioa:</strong> prompt bakarrarekin nahikoa da entrenamendurako. Klasean, aukeratu 4 edo 5 adibide anonimo eta aztertu: zein da zerrenda hutsa eta zein da benetako esaldi historikoa?</div>
-    </section>
+    </div>
+  </section>
 
-    <section id="ebaluazioa">
-      <h2>Ebaluazio azkarra</h2>
+  <section class="section" id="ebaluazioa">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Ebaluazioa</span>
+        <h2>Ebaluazio azkarra</h2>
+        <p>Ikasleak ez du soilik kontzeptuak aipatu behar; kontzeptuen arteko harreman historikoa eraiki behar du.</p>
+      </div>
       <table class="rubric">
         <thead><tr><th>Puntuazioa</th><th>Zer esan nahi du?</th></tr></thead>
         <tbody>
@@ -235,44 +690,98 @@ Izango zara zuzena, sintetikoa eta profesionala.</pre>
           <tr><td class="score">3</td><td>Esaldi historiko ona da: 5 kontzeptuak zehaztasunez lotzen ditu eta prozesu historiko argia azaltzen du.</td></tr>
         </tbody>
       </table>
-    </section>
+    </div>
+  </section>
 
-    <section id="adibidea">
-      <h2>Adibide laburra</h2>
-      <div class="card">
+  <section class="section alt" id="adibidea">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Adibidea</span>
+        <h2>Adibide laburra</h2>
+        <p>Helburua ez da kontzeptuen zerrenda egitea, baizik eta zerrenda hori prozesu historiko baten barruan kokatzea.</p>
+      </div>
+      <div class="panel">
         <p><strong>Gaia:</strong> Euskal Herriko industrializazioa eta gizarte pluralaren sorrera.</p>
         <p><strong>IAk proposatutako 5 kontzeptuak:</strong> industrializazioa · Bizkaia · meatzaritza · immigrazioa · langile-mugimendua</p>
-        <div class="example bad"><span class="label">Lehen bertsio ahula</span><br>Industrializazioa, Bizkaia, meatzaritza, immigrazioa eta langile-mugimendua oso garrantzitsuak izan ziren.</div>
-        <div class="example"><span class="label">Zuzenketa posiblea</span><br>5 kontzeptuak agertzen dira, baina esaldia zerrenda hutsa da. Kontzeptuak ez daude logika historiko baten bidez lotuta. Hobetu beharreko bi arlo: kausa-ondorioa argitzea eta Bizkaiko industrializazioa meatzaritzarekin lotzea.</div>
-        <div class="example good"><span class="label">Bigarren bertsio hobea</span><br>Bizkaiko industrializazioa meatzaritzaren hazkundearekin lotu zen, eta horrek immigrazioa zein langile-mugimenduaren indartzea bultzatu zituen.</div>
+        <div class="example-stack">
+          <div class="example bad"><span class="label">Lehen bertsio ahula</span><br>Industrializazioa, Bizkaia, meatzaritza, immigrazioa eta langile-mugimendua oso garrantzitsuak izan ziren.</div>
+          <div class="example"><span class="label">Zuzenketa posiblea</span><br>5 kontzeptuak agertzen dira, baina esaldia zerrenda hutsa da. Kontzeptuak ez daude logika historiko baten bidez lotuta. Hobetu beharreko bi arlo: kausa-ondorioa argitzea eta Bizkaiko industrializazioa meatzaritzarekin lotzea.</div>
+          <div class="example good"><span class="label">Bigarren bertsio hobea</span><br>Bizkaiko industrializazioa meatzaritzaren hazkundearekin lotu zen, eta horrek immigrazioa zein langile-mugimenduaren indartzea bultzatu zituen.</div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Saihestu beharreko esaldi hutsak</h2>
-      <div class="grid two">
-        <div class="card"><h3>Ahulak</h3><ul><li>“oso garrantzitsua izan zen”</li><li>“gauza asko aldatu ziren”</li><li>“arazoak sortu ziren”</li><li>“eragin handia izan zuen”</li></ul></div>
-        <div class="card"><h3>Hobeak</h3><ul><li>“bultzatu zuen”</li><li>“ahalbidetu zuen”</li><li>“sendotu zuen”</li><li>“krisian jarri zuen”</li><li>“gatazka areagotu zuen”</li></ul></div>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Idazketa</span>
+        <h2>Saihestu beharreko esaldi hutsak</h2>
+        <p>Aditz zehatzek kontzeptuen arteko lotura historikoa argiago erakusten dute.</p>
       </div>
-    </section>
+      <div class="cards-grid">
+        <div class="phrase-card">
+          <h3>Ahulak</h3>
+          <ul class="phrase-list">
+            <li>oso garrantzitsua izan zen</li>
+            <li>gauza asko aldatu ziren</li>
+            <li>arazoak sortu ziren</li>
+            <li>eragin handia izan zuen</li>
+          </ul>
+        </div>
+        <div class="phrase-card">
+          <h3>Hobeak</h3>
+          <ul class="phrase-list">
+            <li>bultzatu zuen</li>
+            <li>ahalbidetu zuen</li>
+            <li>sendotu zuen</li>
+            <li>krisian jarri zuen</li>
+            <li>gatazka areagotu zuen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>Material didaktikoa · Espainiako Historia · 2. Batxilergoa</footer>
-  </main>
+  <footer class="page-footer">
+    <div class="container">Material didaktikoa · Espainiako Historia · 2. Batxilergoa</div>
+  </footer>
 
   <script>
-    function copyText(id){
-      const text=document.getElementById(id).innerText;
-      navigator.clipboard.writeText(text).then(()=>{
-        const buttons=document.querySelectorAll('.copy-btn');
-        buttons.forEach(btn=>{
-          if(btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(id)){
-            const original=btn.textContent;
-            btn.textContent='Kopiatuta';
-            setTimeout(()=>btn.textContent=original,1200);
-          }
-        });
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle?.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.querySelectorAll('[data-copy]').forEach((button) => {
+      button.addEventListener('click', async () => {
+        const target = document.getElementById(button.dataset.copy);
+        if (!target) return;
+        const original = button.textContent;
+        try {
+          await navigator.clipboard.writeText(target.innerText);
+          button.textContent = 'Kopiatuta';
+        } catch {
+          button.textContent = 'Ezin izan da kopiatu';
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
       });
-    }
+    });
+
+    const progress = document.querySelector('.progress-bar');
+    const updateProgress = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const ratio = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progress.style.width = `${ratio}%`;
+    };
+    updateProgress();
+    window.addEventListener('scroll', updateProgress, { passive: true });
   </script>
 </body>
 </html>
