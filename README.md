@@ -106,9 +106,12 @@ build.py                 # Eraikitzailea
 
 ## Egilea eta lizentzia
 
-- **Egilea:** La Salle Donostia · Historia BTX2 mintegia
-- **Lizentzia:** [CC BY-NC-SA 4.0](LICENSE) — Aitortza, Ez-komertziala, Bizkide-bizkide.
-  - ✓ Banatu eta egokitu daiteke libreki.
-  - ✓ Aitortza eman behar zaio jatorrizko egileari.
-  - ✗ Erabilera komertziala ez da onartzen.
+- **Egilea:** Luken San Sebastián Alkorta
+- **Lizentzia:** [CC BY-SA 4.0](LICENSE) — Aitortza, Bizkide-bizkide.
+  - ✓ Edozeinek erabili, banatu eta egokitu dezake libreki, baita helburu komertzialetarako ere.
+  - ✓ Aitortza eman behar zaio jatorrizko egileari (Luken San Sebastián Alkorta).
   - ↺ Eratorritako lanak lizentzia berdinarekin partekatu behar dira.
+
+### Aitortza-eredua
+
+> Luken San Sebastián Alkorta — *Espainiako Historia, 2. Batxilergoa (1808–2011)* — CC BY-SA 4.0 — https://btx2-eus.github.io/historia-btx2/

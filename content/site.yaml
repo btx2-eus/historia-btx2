@@ -1,13 +1,16 @@
 # Site-wide configuration. Used by build.py to render index.html and tema pages.
 site:
   title: "Espainiako Historia · 2. Batxilergoa · 1808–2011"
-  description: "Espainiako Historia, 2. Batxilergoa. EBAU/USaP azterketarako 10 gaiak, denbora-lerro interaktiboa eta kontzeptuen glosarioa."
+  description: "Espainiako Historia, 2. Batxilergoa: 10 gaiak, denbora-lerro interaktiboa eta kontzeptuen glosarioa. Egilea: Luken San Sebastián Alkorta. CC BY-SA 4.0."
   brand:
     label: "Historia BTX2"
-    sublabel: "EBAU / USaP prestakuntza"
-  footer_brand_sublabel: "La Salle Donostia"
-  copyright: "Ikasmaterial pedagogikoa"
-  cache_version: 5      # bump when CSS/JS changes
+    sublabel: "Espainiako Historia · 2. Batxilergoa"
+  footer_brand_sublabel: "Luken San Sebastián Alkorta"
+  author: "Luken San Sebastián Alkorta"
+  license: "CC BY-SA 4.0"
+  license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
+  copyright: 'Luken San Sebastián Alkorta · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>'
+  cache_version: 6      # bump when CSS/JS changes
   apunteak_pdf: "historia-btx2-apunteak-osoa.pdf"
 
 # Era colors (CSS vars set per-tema)

@@ -1,13 +1,13 @@
-Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 
-Copyright (c) 2026 La Salle Donostia — Historia BTX2 mintegia
+Copyright (c) 2026 Luken San Sebastián Alkorta
 
 This work — including all materials, texts, and source code in this
 repository — is licensed under the Creative Commons
-Attribution-NonCommercial-ShareAlike 4.0 International License.
+Attribution-ShareAlike 4.0 International License.
 
 To view a copy of this license, visit:
-  https://creativecommons.org/licenses/by-nc-sa/4.0/
+  https://creativecommons.org/licenses/by-sa/4.0/
 
 Or send a letter to:
   Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
@@ -17,15 +17,16 @@ SUMMARY (this is a human-readable summary of, and not a substitute for, the
 full license text linked above):
 
 You are free to:
-  - Share — copy and redistribute the material in any medium or format.
-  - Adapt — remix, transform, and build upon the material.
+  - Share — copy and redistribute the material in any medium or format,
+    for any purpose, even commercially.
+  - Adapt — remix, transform, and build upon the material, for any purpose,
+    even commercially.
 
 Under the following terms:
-  - Attribution — You must give appropriate credit, provide a link to the
-    license, and indicate if changes were made. You may do so in any
-    reasonable manner, but not in any way that suggests the licensor
-    endorses you or your use.
-  - NonCommercial — You may not use the material for commercial purposes.
+  - Attribution — You must give appropriate credit to the original author
+    (Luken San Sebastián Alkorta), provide a link to the license, and
+    indicate if changes were made. You may do so in any reasonable manner,
+    but not in any way that suggests the licensor endorses you or your use.
   - ShareAlike — If you remix, transform, or build upon the material, you
     must distribute your contributions under the same license as the
     original.
@@ -36,4 +37,10 @@ permits.
 
 ================================================================================
 
-SPDX-License-Identifier: CC-BY-NC-SA-4.0
+How to attribute:
+
+  Luken San Sebastián Alkorta — "Espainiako Historia, 2. Batxilergoa
+  (1808–2011)" — CC BY-SA 4.0 —
+  https://btx2-eus.github.io/historia-btx2/
+
+SPDX-License-Identifier: CC-BY-SA-4.0
