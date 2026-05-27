@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Konexioak eta prozesuak · 9. Gaia: Monarkia parlamentarioa (1982–1996) | Historia BTX2</title>
+  <link rel="stylesheet" href="../assets/css/styles.css?v=6">
+  <style>
+    :root {
+      --accent:     #059669;
+      --accent-2:   #047857;
+      --accent-ink: #064e3b;
+      --accent-tint:#f0fdf4;
+    }
+
+    body { background: #f0fdf8; }
+
+    /* ── hero ── */
+    .kx-hero {
+      background: linear-gradient(135deg, var(--accent) 0%, #064e3b 100%);
+      color:#fff; padding:2.5rem 1.5rem 2rem; text-align:center;
+    }
+    .kx-hero .badge {
+      display:inline-block; background:rgba(255,255,255,.2);
+      border-radius:2rem; padding:.25rem .9rem;
+      font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
+      margin-bottom:.75rem;
+    }
+    .kx-hero h1 { font-size:clamp(1.4rem,3vw,2rem); margin:0 0 .4rem; }
+    .kx-hero p  { opacity:.88; font-size:.97rem; margin:0; }
+    .back-btn {
+      display:inline-flex; align-items:center; gap:.4rem;
+      background:rgba(255,255,255,.2); color:#fff;
+      border:1px solid rgba(255,255,255,.35); border-radius:.5rem;
+      padding:.4rem .9rem; font-size:.82rem; text-decoration:none;
+      margin-top:1.1rem; transition:background .2s;
+    }
+    .back-btn:hover { background:rgba(255,255,255,.35); }
+
+    /* ── section wrapper ── */
+    .kx-section { max-width:900px; margin:2rem auto; padding:0 1rem; }
+    .kx-section h2 {
+      font-size:1.15rem; color:var(--accent-ink);
+      border-left:4px solid var(--accent); padding-left:.75rem;
+      margin:0 0 1.25rem;
+    }
+    .kx-section .desc { font-size:.88rem; color:#6b7280; margin:-.75rem 0 1.25rem .2rem; }
+
+    /* ── process chain ── */
+    .proc-chain { display:flex; flex-direction:column; gap:0; }
+    .pc-step { display:grid; grid-template-columns:3.5rem 1fr; gap:0 1rem; position:relative; }
+    .pc-step::before {
+      content:''; position:absolute; left:1.65rem; top:3.2rem;
+      bottom:-1px; width:2px;
+      background:linear-gradient(to bottom,var(--accent),var(--accent-2));
+    }
+    .pc-step:last-child::before { display:none; }
+    .pc-dot {
+      width:3.2rem; height:3.2rem; border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; display:flex; align-items:center; justify-content:center;
+      font-weight:700; font-size:.78rem; flex-shrink:0;
+      box-shadow:0 2px 8px rgba(5,150,105,.35); z-index:1; margin-top:.15rem;
+    }
+    .pc-body {
+      background:#fff; border-radius:.75rem; padding:1rem 1.1rem;
+      margin-bottom:1rem; box-shadow:0 1px 6px rgba(5,150,105,.1);
+      border-left:3px solid var(--accent-tint);
+    }
+    .pc-body strong { color:var(--accent-ink); display:block; margin-bottom:.2rem; }
+    .pc-body p { margin:0; font-size:.9rem; color:#4b5563; }
+    .pc-badge {
+      display:inline-block; border-radius:1rem; padding:.15rem .6rem;
+      font-size:.73rem; font-weight:600; margin-left:.4rem;
+    }
+    .pb-psoe  { background:#dbeafe; color:#1e40af; }
+    .pb-ong   { background:#dcfce7; color:#166534; }
+    .pb-gat   { background:#fef3c7; color:#92400e; }
+    .pb-ind   { background:#fee2e2; color:#7f1d1d; }
+    .pb-eur   { background:#e0f2fe; color:#0c4a6e; }
+    .pb-alt   { background:#f3e8ff; color:#6b21a8; }
+
+    /* ── comparison tables ── */
+    .comp-table { width:100%; border-collapse:collapse; background:#fff;
+      border-radius:.75rem; overflow:hidden;
+      box-shadow:0 1px 8px rgba(5,150,105,.1); font-size:.88rem; }
+    .comp-table th {
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; padding:.65rem .9rem; text-align:left; font-size:.82rem;
+    }
+    .comp-table td { padding:.6rem .9rem; border-bottom:1px solid #d1fae5; vertical-align:top; }
+    .comp-table tr:last-child td { border-bottom:none; }
+    .comp-table tr:nth-child(even) td { background:#f0fdf4; }
+    .comp-table .row-label { font-weight:600; color:var(--accent-ink); width:22%; }
+    .sh-aurr  { background:linear-gradient(135deg,#059669,#047857) !important; }
+    .sh-itzal { background:linear-gradient(135deg,#dc2626,#991b1b) !important; }
+    .sh-eus   { background:linear-gradient(135deg,#d97706,#b45309) !important; }
+    .tag-ong  { display:inline-block; background:#dcfce7; color:#166534; border-radius:.4rem; padding:.05rem .4rem; font-size:.75rem; }
+    .tag-bad  { display:inline-block; background:#fee2e2; color:#991b1b; border-radius:.4rem; padding:.05rem .4rem; font-size:.75rem; }
+
+    /* ── cause-effect chain ── */
+    .cchain { display:flex; flex-direction:column; align-items:center; gap:0; }
+    .cc-node {
+      width:100%; max-width:580px; background:#fff; border-radius:.75rem;
+      padding:.9rem 1.1rem; box-shadow:0 1px 6px rgba(5,150,105,.12);
+      border-left:4px solid var(--accent);
+    }
+    .cc-node strong { color:var(--accent-ink); display:block; margin-bottom:.2rem; }
+    .cc-node p { margin:0; font-size:.88rem; color:#4b5563; }
+    .cc-arrow { font-size:1.4rem; color:var(--accent); line-height:1; margin:.4rem 0; text-align:center; }
+
+    /* ── connection map ── */
+    .cmap-wrap { display:grid; grid-template-columns:1fr; gap:1rem; }
+    .cmap-center {
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; border-radius:.75rem; padding:1.1rem;
+      text-align:center; box-shadow:0 2px 10px rgba(5,150,105,.3);
+    }
+    .cmap-center strong { font-size:1.05rem; display:block; }
+    .cmap-center span   { font-size:.85rem; opacity:.88; }
+    .cmap-grid { display:grid; grid-template-columns:1fr 1fr; gap:.85rem; }
+    .cmap-node {
+      background:#fff; border-radius:.7rem; padding:.9rem;
+      box-shadow:0 1px 6px rgba(5,150,105,.1);
+      border-top:3px solid var(--accent);
+    }
+    .cmap-node h4 { margin:0 0 .3rem; font-size:.88rem; color:var(--accent-ink); }
+    .cmap-node p  { margin:0; font-size:.82rem; color:#6b7280; }
+    .cn-eeu  { border-top-color:#0ea5e9; }
+    .cn-nat  { border-top-color:#6366f1; }
+    .cn-92   { border-top-color:#f59e0b; }
+    .cn-maa  { border-top-color:#8b5cf6; }
+    .cn-alt  { border-top-color:#dc2626; }
+    .cn-kost { border-top-color:#374151; }
+
+    /* ── synthesis ── */
+    .sintesi {
+      background:linear-gradient(135deg,var(--accent-tint),#d1fae5);
+      border:1px solid #6ee7b7; border-radius:.75rem;
+      padding:1.25rem 1.4rem;
+    }
+    .sintesi h3 { margin:0 0 .75rem; color:var(--accent-ink); font-size:1rem; }
+    .sintesi ul { margin:0; padding-left:1.3rem; }
+    .sintesi li { margin-bottom:.5rem; font-size:.9rem; color:#374151; }
+    .sintesi li:last-child { margin-bottom:0; }
+
+    /* ── footer ── */
+    .kx-footer { text-align:center; padding:2rem 1rem; font-size:.8rem; color:#9ca3af; }
+    .kx-footer a { color:var(--accent); text-decoration:none; }
+
+    @media (max-width:540px) { .cmap-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<header class="kx-hero">
+  <div class="badge">9. Gaia · 1982–1996</div>
+  <h1>Monarkia parlamentarioa: konexioak eta prozesuak</h1>
+  <p>Modernizazio gatazkatsua, industria-krisia, terrorismoa eta Europako integrazioa</p>
+  <a class="back-btn" href="09-monarkia-parlamentarioa.html">← Gaira itzuli</a>
+</header>
+
+<!-- ═══════════════════════════════════════
+     1 · Prozesu-katea
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>1. Monarkia parlamentarioaren sendotzea: prozesu-katea (1982–1996)</h2>
+  <p class="desc">Hamar urrats PSOEren garaipen historikotik PPren alternantziara.</p>
+
+  <div class="proc-chain">
+
+    <div class="pc-step">
+      <div class="pc-dot">1982</div>
+      <div class="pc-body">
+        <strong>PSOEren garaipen zabala — alternantzia demokratikoa <span class="pc-badge pb-alt">alternantzia</span></strong>
+        <p>Felipe González 202 eserlekurekin: lehen alternantzia demokratiko benetakoa. Trantsizioak egonkortasuna lortu zuen egiazki. Aldi berean, Espainia NATOn sartu zen UCDren azken erabaki kontraesan batez.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1983·85</div>
+      <div class="pc-body">
+        <strong>GAL eta ongizate-estatuaren lehen urratsak <span class="pc-badge pb-ind">gerra zikina</span></strong>
+        <p>1983–1987 GALek 27 hildako: gobernuaren eta segurtasun-aparatuaren inguruko talde terrorista. Aldi berean, LODE (1985) eta abortua despenalizatu: ongizate-estatua eta gizarte-aldaketa aurrera. Kontraesanaren hasiera.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1986·01</div>
+      <div class="pc-body">
+        <strong>EEEan sartzea — homologazio demokratikoa eta ekonomikoa <span class="pc-badge pb-eur">Europa</span></strong>
+        <p>Urtarrilaren 1ean Espainia eta Portugal Europako Ekonomia Erkidegoan sartu. Merkatu zabala, funtsak, legitimazio demokratikoa — baina industria-birmoldaketa azkartze eta lehiakortasun-presioa ere bai. Bi aurpegiko sarrera.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1986·03</div>
+      <div class="pc-body">
+        <strong>NATO erreferenduma — jarreraren aldaketa <span class="pc-badge pb-eur">nazioartekoa</span></strong>
+        <p>PSOE oposizioan: «OTAN de entrada no». Gobernuan: «bai» (Mendebaldeko fidagarritasuna). Espainian nagusi; Euskal Herrian eta Katalunian «ez». Kanpo-politikan itzulia nabarmena; barne-tentsio soziala.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1986·87</div>
+      <div class="pc-body">
+        <strong>Osasun Lege Orokorra eta Hipercor — aurrerapen eta tragedia batera <span class="pc-badge pb-ong">gizartea</span></strong>
+        <p>1986ko Osasun Lege Orokorra: osasun unibertsala herritartasunari lotua. 1987an ETAren Hipercor (21 hildako) eta Zaragozako kuartela (11 hildako, haurrak barne): terrorismoak gailurra jo zuen dimentsio berri batean — zibil eta familia-hildakoak.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1988</div>
+      <div class="pc-body">
+        <strong>14-D greba orokorra eta Ajuria Eneko Ituna <span class="pc-badge pb-gat">gatazka</span></strong>
+        <p>Abenduaren 14an UGT+CCOO greba orokorra: ezkerreko gobernuak langile-arropa baztertu zuela. Ajuria Eneko Ituna (alderdi demokratikoak ETAren aurka) urte berean. Bi dimentsiotan tentsio maximoa: soziala eta terrorismoaren aurkakoa.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1990</div>
+      <div class="pc-body">
+        <strong>LOGSE — hezkuntza-sistemaren eraldaketa <span class="pc-badge pb-ong">ongizatea</span></strong>
+        <p>Derrigorrezko hezkuntza 16 urtera arte; Bigarren Hezkuntzaren berrantolaketa; lanbide-heziketaren eguneratzea. Ongizate-estatuaren eraikuntza-prozesuaren gailurretako bat, ondoren debaterik ugarien sortuko zuena.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1992</div>
+      <div class="pc-body">
+        <strong>Bartzelonako JJOO, Sevillako Expo, Maastricht — Espainia modernoa <span class="pc-badge pb-eur">proiekzioa</span></strong>
+        <p>Bartzelonako Olinpiar Jokoek, Sevillako Expoak eta Madril-Sevilla AVEak Espainia moderno eta europarra proiektatu zuten. Maastrichteko Itunak txanpon bakar eta herritartasun europarraren bidea ireki zuen.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1993</div>
+      <div class="pc-body">
+        <strong>Krisia, ustelkeria eta gehiengo galerak — higadura <span class="pc-badge pb-ind">higadura</span></strong>
+        <p>Krisi ekonomikoa (~%24 langabezia); PSOEk gehiengo osoa galdu, CiU eta EAJren babesa behar. Juan Guerra, Filesa, Roldán ustelkeria-eskandaluak. GALaren kontuak auzitegietara iritsi. Gobernuaren zilegitasun-krisiak azkartu ziren.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1996</div>
+      <div class="pc-body">
+        <strong>PPren garaipena — alternantzia demokratikoa berretsi <span class="pc-badge pb-alt">heldutasuna</span></strong>
+        <p>José María Aznarrek irabazi; PSOE oposiziora. Alternantzia normala: demokraziaren heldutasun instituzionala. Bigarren aldiz gobernua modu baketsuan aldatu zen — 1982ren osagarria eta zilegitasun-berrespena.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     2 · Modernizazioaren aurrerapenak vs. itzalak
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>2. Modernizazioaren aurrerapenak eta itzalak: kontraesanen taula</h2>
+  <p class="desc">1982–1996 aldia ez zen arrakasta lineala: lorpen handiak eta kostu sozial sakonak batera agertu ziren.</p>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="row-label">Alorra</th>
+        <th class="sh-aurr">✅ Aurrerapenak</th>
+        <th class="sh-itzal">❌ Itzalak / Kostuak</th>
+        <th class="sh-eus">🟠 EAErako berezitasunak</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="row-label">Ekonomia</td>
+        <td>EEEan sartzea; BPGaren hazkundea; azpiegiturak (AVE, autobideak); Europako funtsak.</td>
+        <td>Industria-birmoldaketa: langabezia %24ra (1993); industria tradizionalaren galera; desindustrializazioa.</td>
+        <td>Ezkerraldeko siderurgia eta ontzigintza ixten; Altos Hornos eta Euskalduna; langabezia handia.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Gizarte ongizatea</td>
+        <td><span class="tag-ong">osasuna</span> Osasun unibertsal (1986); <span class="tag-ong">hezkuntza</span> LODE, LOGSE; pentsioak. Sekularizazioa eta askatasun pertsonala (<em>Movida</em>).</td>
+        <td>Heroinaren epidemia auzune krituetan; gazteen bazterketa; desoreka geografikoak. Lan-prekarietatea.</td>
+        <td>Heroina Bilboko auzune industrialetan; gazteen langabezia eta auzoaren degradazioa.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Segurtasuna / terrorismoa</td>
+        <td>Ertzaintza garatu; Ajuria Eneko Ituna (1988); Espainia-Frantzia lankidetza; gizarte-mobilizazioa (Gesto).</td>
+        <td><span class="tag-bad">GAL</span> gerra zikina (1983–87): zuzenbide-estatua hautsi. ETAren atentatuak jarraitu (Hipercor, Zaragoza).</td>
+        <td>ETAren tiraoen erdigune nagusia; Ajuria Enea Donostian; Ertzaintzaren garapenak autonomiaren gorpuztea ekarri.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Kanpo-politika</td>
+        <td>EEEan sartzea; NATOn egonkortzea; 1992ko nazioarteko proiekzioa; Maastricht.</td>
+        <td>NATO jarrera-aldaketa sozialki traumatikoa. EEEaren presioak sektore tradizionalen zaharkitzea azkartu.</td>
+        <td>NATO erreferendumean eta EEEko negoziazioetan Euskal Herriko sentsibilitate berezia.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Demokrazia / erakundeak</td>
+        <td>Bi alternantzia (1982, 1996): heldutasun demokratikoa. Autonomia-erkidegoen finkatze. Konstituzioa egonkortu.</td>
+        <td>Ustelkeria-eskandaluak (Juan Guerra, Filesa, Roldán, GAL); gobernuaren higadura; konfiantza-galera.</td>
+        <td>EAJren eta PSEren gobernantza; Jaurlaritzaren profilaren sendotze progresiboa.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═══════════════════════════════════════
+     3 · Industria-birmoldaketaren kausa-katea
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>3. Euskal industria-birmoldaketaren kausa-katea</h2>
+  <p class="desc">Nola eragin zuen industria-krisiak gizartean, eta zergatik «Bilbo efektua» ez zen ebaluazio-magiaz agertu.</p>
+
+  <div class="cchain">
+
+    <div class="cc-node">
+      <strong>⚙️ Industria astunaren krisia (1970eko hamarkadatik)</strong>
+      <p>Petrolio-krisiek, nazioarteko lehiak eta teknologia zaharkituak Bizkaiko siderurgia, ontzigintza eta meatzaritza ahuldu zituzten. EEEan sartzeak presioa areagotu: babes-tarifak kendu, lehiakortasuna eskatu.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>🏭 Euskalduna eta Altos Hornos — lantegiak itxi, auzo osoak kolpatu</strong>
+      <p>Euskalduna ontziola (Bilbo) langile-borroka sinbolikoa bihurtu zen: ez soilik lanpostua, industria-kultura eta identitate kolektiboa jokatzen ziren. Altos Hornos de Vizcaya siderurgiaren amaieraren ikur. Ixteak masiboak, azkarrak eta sozialkoki suntsitzaileak.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>📉 Desindustrializazioa — Ezkerraldeko paisaia</strong>
+      <p>Langabeziak %25era jo zuen Bizkaian; auzoak hustuz joan ziren; zerbitzu-sare komunitarioak apurtu; prestakuntza eskasa zuten langileek lan berrietan lekua aurkitzeko zailtasun izugarriak.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>💉 Heroinaren epidemia — gizarte-ondorioa</strong>
+      <p>Ziurgabetasuna, langabezia eta etorkizun faltak heroinaren hedapena bultzatu zuten batez ere 20-30 urteko gazteen artean. Bilbo, Barakaldo, Sestao. Milaka hildako eta eraginpeko familia; ondorioak gaur arte iraun.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>🏛️ Eusko Jaurlaritzaren erantzuna — berrindustrializazioa eta Kontzertu Ekonomikoa</strong>
+      <p>Kontzertu Ekonomikoaren ahalmen fiskalarekin, Jaurlaritzak sektore berriak bultzatu zituen: teknologia-parkeak (Zamudio), makina-erreminta, automozioa, zerbitzu aurreratuak, Mondragon Korporazioa. Industria berri baten oinarriak ezarri.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>🌟 «Bilbo efektua» — hiri-birmoldaketa (1990eko hamarkada)</strong>
+      <p>Guggenheim Museoa (1997), Abandoibarra berritze, Metro-lina: Bilbo industria-hirietatik kultura- eta zerbitzu-hiri eredugarrira. Baina ez guztientzat: sektore igoeretatik kanpo geratutako langile-klaseak itzalekin bizi.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     4 · ETA, gizartea eta Estatua: erantzunaren mapa
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>4. ETA, gizartea eta Estatua: erantzunaren konexio-mapa</h2>
+  <p class="desc">Terrorismoaren aurrean sei indar ezberdinak: nor nola erantzun zuen, eta zer ondorio ekarri zuen.</p>
+
+  <div class="cmap-wrap">
+    <div class="cmap-center">
+      <strong>💥 Terrorismoaren testuingurua Espainian (1982–1996)</strong>
+      <span>ETA, GAL, gizartea eta demokraziaren kalitatearen froga</span>
+    </div>
+    <div class="cmap-grid">
+      <div class="cmap-node cn-kost">
+        <h4>🔴 ETA militarra</h4>
+        <p>Demokrazia eta autogobernua ukatu; borroka armatua jarraitu. Hipercor (1987, 21 hildako), Zaragoza (1987), Yoyes (1986), Ordóñez (1995). Gizartearen zati zabalen babesa galtzen joan zen heinean, zibil-eraso bakoitzarekin.</p>
+      </div>
+      <div class="cmap-node cn-eeu">
+        <h4>⚫ GAL (1983–87)</h4>
+        <p>Gobernuaren inguruko talde parapolizial iluna: 27 hildako. Lasa eta Zabala, Segundo Marey. Estatuak bere printzipioak urratu: zuzenbide-estatuaren kontraesan nagusia. Auzitegiek Vera eta Barrionuevo zigortu.</p>
+      </div>
+      <div class="cmap-node cn-92">
+        <h4>🟡 Ertzaintza</h4>
+        <p>EAEko polizia autonomikoa: autogobernuaren gorpuzte sinbolikoa eta funtzionala. Espainia-Frantzia lankidetzarekin ETAren atzeguardia ahultzeko tresna. 1990eko hamarkadan gero eta operatiboki inportanteagoa.</p>
+      </div>
+      <div class="cmap-node cn-nat">
+        <h4>🔵 Ajuria Eneko Ituna (1988)</h4>
+        <p>EAJ, PSE-PSOE, AP eta gainerako alderdi demokratikoak elkarren aurka jarri ziren ETAren aurkako fronte komuna osatzeko. Herri Batasunak uko egin. ETAren isolamendu politikoa prozesu luzea, baina beharrezkoa.</p>
+      </div>
+      <div class="cmap-node cn-maa">
+        <h4>🟣 Gesto por la Paz</h4>
+        <p>Mobilizazio zibila: atentatu bakoitzaren ondoren isilik kontzentratzea. Biktimei ikusgarritasuna eman; indarkeria moral eta sozialki legezkatu gabe uzten lagundu. Herritarren erantzukizunaren adierazle.</p>
+      </div>
+      <div class="cmap-node cn-alt">
+        <h4>📖 Froga demokratikoa</h4>
+        <p>Demokrazia terrorismoaren aurrean: benetako froga ez zen soilik ETA ahultzea, baizik printzipioak mantentzea. GALek erakutsi zuen ETAren aurka borrokan ere zuzenbide-estatua hautsi daitekeela — eta hausteak garestia duela.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     5 · Europako integrazioaren konexio-mapa
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>5. Europako integrazioaren prozesuaren konexio-mapa</h2>
+  <p class="desc">EEEan sartzeak ez zekarren soilik merkatu-zabalpena: Espainiaren identitate demokratikoaren berrespena eta modernizazio-presioa ere bai.</p>
+
+  <div class="cmap-wrap">
+    <div class="cmap-center">
+      <strong>🌍 Espainia eta Europa (1982–1996)</strong>
+      <span>Sarrera, proiekzioa, Maastricht eta alternantzia demokratikoa</span>
+    </div>
+    <div class="cmap-grid">
+      <div class="cmap-node cn-eeu">
+        <h4>🔵 EEEan sartzea (1986-01-01)</h4>
+        <p>Urtarrilaren 1ean Espainia eta Portugal EEEan sartu. Aukerak: merkatu zabala, funtsak, legitimazio demokratikoa. Presioak: industria-birmoldaketa, lehiakortasuna, politika ekonomikoaren diziplina.</p>
+      </div>
+      <div class="cmap-node cn-nat">
+        <h4>🟣 NATO erreferenduma (1986-03)</h4>
+        <p>PSOEren jarrera-aldaketa ikusgarria. Espainiak «bai» esan zuen Mendebaldeko aliantzan jarraitzeari, baina hainbat baldintzekin (ez egitura militarrean erabat). Euskal Herrian eta Katalunian «ez» nagusi.</p>
+      </div>
+      <div class="cmap-node cn-92">
+        <h4>🟡 1992ko ekitaldiak — Espainia moderno</h4>
+        <p>Bartzelonako Olinpiar Jokoek, Sevillako Expoak eta AVEak Espainiari nazioarteko ikusgarritasun handia eman zioten. Proiektu demokratikoaren lorpen sinbolikoa; baina ondoren 1993ko krisi ekonomikoak itzala jarri.</p>
+      </div>
+      <div class="cmap-node cn-maa">
+        <h4>🔵 Maastrichteko Ituna (1992)</h4>
+        <p>Europako integrazio politikoaren urrats handia: herritartasun europarra, txanpon bakarreko bidea (euro), diziplina fiskal eskatuta. Espainiak egokitu behar: defizit kontrolatu, inflazioa mugatu. Ondorioak nazioarteko mailara.</p>
+      </div>
+      <div class="cmap-node cn-alt">
+        <h4>🔴 1996ko alternantzia — heldutasuna</h4>
+        <p>PPren garaipen txikia: José María Aznar. PSOE oposiziora, fiskalki ahitu. Demokraziaren heldutasun instituzionala: bigarren aldiz gobernua baketsu eta legezkoki aldatu zen. 1982ko alternantziaren osagarria.</p>
+      </div>
+      <div class="cmap-node cn-kost">
+        <h4>⚫ Integrazioaren kontraesanak</h4>
+        <p>Europa ez zen emaitza lineala: industria-birmoldaketa azkartze, nekazaritza- eta arrantza-sektorearen presioak, politika ekonomikoaren mugak. Europarekiko hurbiltzea modernizazioaren froga eta motorra, baina kostuak ziren.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     Sintesia
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <div class="sintesi">
+    <h3>🔗 Sintesia: 1982–1996 aldia ulertzeko gako-ideiak</h3>
+    <ul>
+      <li><strong>Modernizazio gatazkatsua:</strong> Espainia eraldatu zen — osasuna, hezkuntza, Europan sartu —, baina kostuak ez ziren berdin banatzen: industria-krisiak eta langabeziak modu desberdinean jo zituen klase lan-gilea eta sektore jakin batzuetan bizi zirenak.</li>
+      <li><strong>Demokratizazio-lorpena vs. zuzenbide-estatuaren hautsea:</strong> PSOE gobernuak demokrazia sendotu zuen, baina GALek erakutsi zuen boterea duten alderdiek zuzenbide-estatua urratu dezaketela — eta horren ondorioak gerora igaro ziren.</li>
+      <li><strong>Euskal bereizitasuna:</strong> Industria-krisia, terrorismoa, Ajuria Eneko Ituna, Ertzaintza eta Kontzertu Ekonomikoaren erabilera industria-politikaren zerbitzuan — EAEk aldi honetako historia Espainiakoarekin partekatzen du, baina bere propio duen irakurketarekin.</li>
+      <li><strong>Europa — aukera eta presioa:</strong> EEEan sartzea ez zen soilik ekonomia irekitzea; modernizazioaren motorra eta legitimazio demokratikoaren bermea izan zen — eta industria tradizionalaren azeleratu-galera ere bai.</li>
+      <li><strong>Alternantzia biko demokratikoa (1982–1996):</strong> PSOEren eta PPren garaipenetan demokraziaren heldutasun instituzionala berretsi zen: boterea legezkoki aldatzeko gaitasuna, sistema demokratikoaren bizi-seinale sendoena.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="kx-footer">
+  <p><a href="09-monarkia-parlamentarioa.html">← 9. Gaia</a> · Historia BTX2 · La Salle Donostia</p>
+</footer>
+
+</body>
+</html>
