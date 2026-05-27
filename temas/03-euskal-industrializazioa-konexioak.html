@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3. Gaia · Konexioak eta prozesuak · Historia BTX2</title>
+  <meta name="description" content="Euskal Herriko industrializazioa (1875-1930): prozesu-kateak, lurralde-ereduak, sindikatuen alderaketa, ideologien konexio-mapa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=6" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2310b981'/%3E%3Ctext x='50' y='72' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3E3%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --ca: var(--era-3-a); --cb: var(--era-3-b);
+      --accent: #059669; --accent-2: #14b8a6;
+      --accent-ink: #064e3b; --accent-tint: #ecfdf5;
+    }
+
+    /* ── Process chain (horizontal scroll) ─────────────────── */
+    .proc-chain { display:flex; align-items:stretch; gap:.55rem; overflow-x:auto; padding:1rem .2rem 1.3rem; scroll-snap-type:x proximity; }
+    .proc-chain::-webkit-scrollbar { height:8px; }
+    .proc-chain::-webkit-scrollbar-thumb { background:var(--line); border-radius:999px; }
+    .proc-step {
+      flex:0 0 220px; background:var(--bg-card); border:1px solid var(--line);
+      border-radius:var(--radius); padding:1rem 1.1rem; scroll-snap-align:start;
+      display:flex; flex-direction:column; gap:.35rem; box-shadow:var(--shadow-sm);
+      transition:transform .2s,box-shadow .2s,border-color .2s;
+    }
+    .proc-step:hover { transform:translateY(-3px); box-shadow:var(--shadow); border-color:var(--accent); }
+    .proc-step .ps-year  { font-family:var(--font-display); font-weight:700; color:var(--accent); font-size:1.35rem; line-height:1; }
+    .proc-step .ps-title { font-family:var(--font-display); font-weight:700; font-size:.98rem; line-height:1.25; color:var(--ink); }
+    .proc-step .ps-desc  { font-size:.84rem; color:var(--muted); line-height:1.45; }
+    .proc-step .ps-badge {
+      display:inline-block; font-size:.7rem; font-family:var(--font-display); font-weight:700;
+      letter-spacing:.06em; text-transform:uppercase; padding:.1rem .5rem;
+      border-radius:999px; margin-bottom:.15rem; align-self:flex-start;
+    }
+    .ps-badge.goraldia { background:#d1fae5; color:#065f46; }
+    .ps-badge.krisia   { background:#fee2e2; color:#7f1d1d; }
+    .ps-badge.lege     { background:#e0f2fe; color:#0c4a6e; }
+    .ps-badge.kapital  { background:#fef9c3; color:#78350f; }
+    .proc-arrow { align-self:center; flex:0 0 auto; color:var(--accent); font-size:1.6rem; font-weight:700; }
+
+    /* ── Multi-column comparison table ─────────────────────── */
+    .comp3 { display:grid; grid-template-columns:160px 1fr 1fr 1fr; gap:0; margin:1.5rem 0; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-sm); border:1px solid var(--line); }
+    .comp3 > div { padding:.8rem 1rem; border-bottom:1px solid var(--line); font-size:.88rem; line-height:1.5; }
+    .comp3 > div:nth-last-child(-n+4) { border-bottom:0; }
+    .comp3 .ch  { font-family:var(--font-display); font-weight:700; color:#fff; font-size:.95rem; }
+    .comp3 .ch0 { background:var(--accent-ink); }
+    .comp3 .ch1 { background:linear-gradient(135deg,#1d4ed8,#2563eb); }
+    .comp3 .ch2 { background:linear-gradient(135deg,#7c3aed,#9333ea); }
+    .comp3 .ch3 { background:linear-gradient(135deg,#059669,#10b981); }
+    .comp3 .cl  { font-family:var(--font-display); font-weight:700; color:var(--accent-ink); background:var(--accent-tint); font-size:.85rem; }
+    .comp3 .cc  { background:var(--bg-card); color:var(--ink-soft); }
+    .comp3 .cc.alt { background:#f8fafc; }
+
+    /* Sindikatuen konparaketa (3 col) */
+    .comp-sind { display:grid; grid-template-columns:160px 1fr 1fr 1fr; gap:0; margin:1.5rem 0; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-sm); border:1px solid var(--line); }
+    .comp-sind > div { padding:.8rem 1rem; border-bottom:1px solid var(--line); font-size:.88rem; line-height:1.5; }
+    .comp-sind > div:nth-last-child(-n+4) { border-bottom:0; }
+    .comp-sind .sh  { font-family:var(--font-display); font-weight:700; color:#fff; font-size:.95rem; }
+    .comp-sind .sh0 { background:var(--accent-ink); }
+    .comp-sind .sh1 { background:linear-gradient(135deg,#b45309,#d97706); } /* UGT - orange */
+    .comp-sind .sh2 { background:linear-gradient(135deg,#7c3aed,#9333ea); } /* CNT - purple */
+    .comp-sind .sh3 { background:linear-gradient(135deg,#0369a1,#0ea5e9); } /* ELA - blue */
+    .comp-sind .sl  { font-family:var(--font-display); font-weight:700; color:var(--accent-ink); background:var(--accent-tint); font-size:.85rem; }
+    .comp-sind .sc  { background:var(--bg-card); color:var(--ink-soft); }
+    .comp-sind .sc.alt { background:#f8fafc; }
+    .comp-sind .sc.shared { background:#fffbeb; font-style:italic; }
+
+    /* ── Vertical cause chain ───────────────────────────────── */
+    .cchain { display:flex; flex-direction:column; gap:0; margin:1.4rem 0; max-width:760px; margin-inline:auto; }
+    .cchain-node {
+      background:var(--bg-card); border:1px solid var(--line); border-radius:var(--radius);
+      padding:1.1rem 1.4rem; box-shadow:var(--shadow-sm);
+      display:grid; grid-template-columns:88px 1fr; gap:1.1rem; align-items:start;
+      transition:transform .2s,box-shadow .2s,border-color .2s;
+    }
+    .cchain-node:hover { transform:translateX(4px); box-shadow:var(--shadow); border-color:var(--accent); }
+    .cchain-node .cn-year {
+      font-family:var(--font-display); font-weight:700; font-size:1.4rem;
+      color:#fff; background:linear-gradient(135deg,var(--ca),var(--cb));
+      padding:.55rem .35rem; border-radius:12px; text-align:center; line-height:1.2;
+    }
+    .cchain-node h4 { font-family:var(--font-display); font-size:1.05rem; margin:0 0 .35rem; color:var(--accent-ink); }
+    .cchain-node p  { font-size:.91rem; color:var(--ink-soft); margin:0 0 .35rem; line-height:1.55; }
+    .cchain-node .cn-effect { background:var(--accent-tint); padding:.4rem .65rem; border-radius:8px; font-size:.86rem; color:var(--accent-ink); font-weight:600; margin-top:.3rem; display:inline-block; }
+    .cchain-arrow { align-self:center; height:28px; width:2px; background:var(--accent); margin-left:44px; position:relative; }
+    .cchain-arrow::after { content:"▼"; position:absolute; bottom:-3px; left:50%; transform:translateX(-50%); color:var(--accent); font-size:.9rem; }
+
+    /* ── Concept map (central + radiating) ─────────────────── */
+    .cmap-center {
+      max-width:340px; margin:0 auto 1rem;
+      background:linear-gradient(135deg,var(--ca),var(--cb)); color:#fff;
+      padding:1.2rem 1.4rem; border-radius:var(--radius); text-align:center;
+      box-shadow:var(--shadow);
+    }
+    .cmap-center .cc-year  { font-family:var(--font-display); font-size:1.5rem; font-weight:700; line-height:1; }
+    .cmap-center .cc-event { font-family:var(--font-display); font-size:1rem; font-weight:700; margin-top:.3rem; }
+    .cmap-center .cc-sub   { font-size:.8rem; opacity:.9; margin-top:.2rem; }
+    .cmap-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:.9rem; }
+    .cmap-node {
+      background:var(--bg-card); border:1px solid var(--line); border-radius:var(--radius);
+      padding:1rem 1.1rem; box-shadow:var(--shadow-sm);
+      border-left:4px solid var(--accent);
+      transition:transform .2s,box-shadow .2s;
+    }
+    .cmap-node:hover { transform:translateY(-3px); box-shadow:var(--shadow); }
+    .cmap-node h4 { font-family:var(--font-display); color:var(--accent-ink); font-size:.95rem; margin:0 0 .3rem; }
+    .cmap-node p  { font-size:.84rem; color:var(--muted); margin:0; line-height:1.5; }
+    .cmap-node .cm-tag {
+      display:inline-block; font-family:var(--font-display); font-weight:700; font-size:.68rem;
+      text-transform:uppercase; letter-spacing:.07em; padding:.1rem .5rem;
+      border-radius:999px; background:var(--accent-tint); color:var(--accent-ink); margin-bottom:.4rem;
+    }
+
+    /* ── Section headings ───────────────────────────────────── */
+    .konexio-section { margin-bottom:2.6rem; }
+    .konexio-section h2 {
+      font-size:clamp(1.35rem,3vw,1.75rem); margin-bottom:.5rem;
+      padding-bottom:.5rem; border-bottom:3px solid var(--accent-tint);
+      display:flex; align-items:baseline; gap:.6rem;
+    }
+    .konexio-section h2 .ks-num {
+      font-size:.88rem; font-weight:700; color:#fff;
+      background:linear-gradient(135deg,var(--ca),var(--cb));
+      padding:.13rem .6rem; border-radius:8px;
+    }
+    .konexio-section > p.intro { color:var(--muted); margin-bottom:1rem; font-size:.97rem; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Edukira saltatu</a>
+  <div class="progress-bar" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="../index.html"><span class="logo">H</span><span>Historia BTX2<small>Espainiako Historia · 2. Batxilergoa</small></span></a>
+      <button class="nav-toggle" aria-label="Menua" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="../index.html#denbora-lerroa">Denbora-lerroa</a>
+        <a href="../index.html#gaiak">Gaiak</a>
+        <a href="03-euskal-industrializazioa.html">3. Gaia</a>
+        <a class="cta" href="../index.html">← Hasiera</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="tema-hero" id="main" tabindex="-1">
+    <div class="container">
+      <div class="crumbs">
+        <a href="../index.html">Hasiera</a> <span>›</span>
+        <a href="../index.html#gaiak">Gaiak</a> <span>›</span>
+        <a href="03-euskal-industrializazioa.html">3. Gaia</a> <span>›</span>
+        <span>Konexioak eta prozesuak</span>
+      </div>
+      <div class="gaia-num">3. Gaia · 🗺️ Konexioak eta prozesuak</div>
+      <h1>Industrializazioa eta gizarte plurala, prozesuetan</h1>
+      <div class="hero-meta">
+        <span class="years-pill">📅 1875 – 1930</span>
+        <a class="dl-btn" href="03-euskal-industrializazioa.html">📖 Itzuli gaira</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container" style="padding-top:2.5rem; padding-bottom:4rem; max-width:1080px;">
+
+    <p style="font-size:1.05rem; color:var(--ink-soft); margin-bottom:2rem;">
+      Gai honetako <strong>prozesu-kateak</strong>, <strong>lurralde-ereduak</strong>, <strong>sindikatuen alderaketa</strong> eta <strong>ideologien konexio-mapa</strong>. Industrializazioak eta foru-galerak nola eraiki zuten gizarte plural eta gatazkatsu bat, bisualki.
+    </p>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEKZIO 1 · Industrializazioaren prozesu-katea Bizkaian
+         ═══════════════════════════════════════════════════════ -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">1</span> Bizkaiko industrializazioaren prozesu-katea (1876–1930)</h2>
+      <p class="intro">Urrats bakoitzak hurrengoa ekarri zuen: foruen abolizioaren egonkortasunetik siderurgia-erraldoi baten eta klase-gizartearen sorreraraino. Kolore-etiketak fase ekonomikoa adierazten du.</p>
+      <div class="proc-chain" role="list">
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1876</span>
+          <span class="ps-badge goraldia">Testuingurua</span>
+          <span class="ps-title">Foruen abolizioa · Kontzertu Ekonomikoa (1878)</span>
+          <span class="ps-desc">Egonkortasun politikoa eta autonomia fiskal praktikoa. Diputazioek zerga-bilketa kontrolatu zuten, azpiegitura-inbertsio propioa ahalbidetuz.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1876–90</span>
+          <span class="ps-badge kapital">Kapital atzerritarra</span>
+          <span class="ps-title">Burdin-mea esportazioa · Orconera (1873)</span>
+          <span class="ps-desc">Somorrostro-Meatzaldeko burdin-mea Erresuma Batuara. Kapital britainiar eta espainol nahasiak finantzatu zuen. Diru-sarrera handiak, baina irabaziak kanpora.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1880–90</span>
+          <span class="ps-badge goraldia">Lehen siderurgia</span>
+          <span class="ps-title">Labe garai modernoak · Bilboko bankuak</span>
+          <span class="ps-desc">"San Francisco" labe garaia (1880, Sestao). Banco de Bilbao eta Banco de Vizcaya industriari kreditu luzea eman zioten. Bilboko Burtsa (1890) akzioak biltzeko.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1902</span>
+          <span class="ps-badge goraldia">Industria heldua</span>
+          <span class="ps-title">Altos Hornos de Vizcaya (AHV)</span>
+          <span class="ps-desc">Hiru enpresa nagusiren bateratzea. Espainiako industria-enpresa handiena. Burdina ateratzetik altzairua eta ontziak eraiki arteko kate integratua.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1914–18</span>
+          <span class="ps-badge goraldia">I. Mundu Gerra</span>
+          <span class="ps-title">Neutraltasunak eskaera lehertu zuen</span>
+          <span class="ps-desc">Altzairu, ontzi, paper eta makineria eskaerak izugarri hazi ziren. AHV-ren irabaziak biderkatu. Fortuna handiak: Sota, Olaso, Aznar familiak.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1919–20</span>
+          <span class="ps-badge krisia">Gerraosteko krisia</span>
+          <span class="ps-title">Eskaera jaitsi · plantillak moztu</span>
+          <span class="ps-desc">Gerra amaitu → kanpo-eskaera erori. Stockak handitu, soldatak jaitsi, langabezi-uhinak. Konparaketa aberats/pobreen artean: gatazka soziala piztu.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1923–30</span>
+          <span class="ps-badge lege">Diktadura</span>
+          <span class="ps-title">Primo de Riveraren azpiegiturak</span>
+          <span class="ps-desc">Errepideak, urtegiak, elektrifikazioa, arantzel protekzionistak. Industria-jarduera egonkortu, baina barne-merkatu txikia mantendu. 1929ko krisia etortzear.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEKZIO 2 · Lurralde-ereduak alderatuta
+         ═══════════════════════════════════════════════════════ -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">2</span> Lurralde-ereduak alderatuta: triangelu osagarria</h2>
+      <p class="intro">Industrializazioa ez zen modu berean garatu Euskal Herrian. Lau lurraldeak osagarri ziren ekonomikoki, baina desoreka demografiko eta sozial handiak sortu zituzten.</p>
+      <div class="comp3" role="table" aria-label="Lurralde-ereduak alderatuta">
+        <div class="ch ch0">Aldagaia</div>
+        <div class="ch ch1">🏭 Bizkaia</div>
+        <div class="ch ch2">⚙️ Gipuzkoa</div>
+        <div class="ch ch3">🌾 Araba / Nafarroa</div>
+
+        <div class="cl">Industria mota</div>
+        <div class="cc">Industria astuna integratua: meatzaritza → siderurgia → ontzigintza.</div>
+        <div class="cc">ETE espezializatuak: armagintza, makina-erreminta, papergintza, tren-materiala.</div>
+        <div class="cc alt">Agroindustria, logistika, industria arina (irin-errotak, kontserbak, ardoa).</div>
+
+        <div class="cl">Enpresa eredua</div>
+        <div class="cc">Enpresa erraldoiak (AHV). Integrazio bertikala. Kapital-intentsibo.</div>
+        <div class="cc">Familia-enpresa txiki-ertainak. Espezializazio teknikoa. Langile kualifikatuak.</div>
+        <div class="cc alt">Enpresa txikiak. Nekazaritza-industria nahastu. Merkataritza-gunea.</div>
+
+        <div class="cl">Kapital iturria</div>
+        <div class="cc">Atzerriko kapitala (britainiarra) + Bilboko bankuak (Banco de Bilbao, Banco de Vizcaya).</div>
+        <div class="cc">Tokiko kapital familia-enpresetan + Banco Guipuzcoano (1899) + aurrezki-kutxak.</div>
+        <div class="cc alt">Kapital txikia, errentagarritasun ertaina. Dibertsifikazio mugatua.</div>
+
+        <div class="cl">Energia iturria</div>
+        <div class="cc">Ikatza (Asturiastik ekarria, garraio-kostu handia) + labe garaiak.</div>
+        <div class="cc">Hidroelektrizitatea goiz txertatu: tailer espezializatuak posible egin zituen.</div>
+        <div class="cc alt">Energia arina. Haize-errotak, ibaiko energiak, erregai lokala.</div>
+
+        <div class="cl">Immigrazioa</div>
+        <div class="cc">Immigrazio masibo handia (Gaztela, Galizia, Errioxa). Bilbo: 62.000 → 304.000 biz. (1877–1930).</div>
+        <div class="cc">Immigrazio ertainagoa, hein batean tokiko herri-industriarekin xurgatu.</div>
+        <div class="cc alt">Immigrazio txikia. Nekazaritzak biztanleria egonkor mantendu zuen.</div>
+
+        <div class="cl">Sindikalismoa</div>
+        <div class="cc">PSOE-UGT indartsua auzo proletarioetan. EAJ-PNV burgesia katolikoan.</div>
+        <div class="cc">CNT presentzia Pasaian eta Eibarren. ELA-STV bailaretan. Orekatuagoa.</div>
+        <div class="cc alt">Karlismoa eta integrismoa nagusi landa-eremuetan. Alderdi dinastikoak hirietan.</div>
+
+        <div class="cl">Adibide nagusiak</div>
+        <div class="cc">AHV (1902), Orconera (1873), Euskalduna, La Naval, Banco de Bilbao.</div>
+        <div class="cc">CAF Beasain (1917), Papelera Española Errenteria (1901), Unión Cerrajera (1906).</div>
+        <div class="cc alt">Tudelako kontserbak, Castejón-Iruñea tren-ardatza, Gasteizko biltegiratze-zentroak.</div>
+      </div>
+      <div class="callout" style="border-color:var(--accent);background:var(--accent-tint);margin-top:.8rem">
+        <div class="callout-title" style="color:var(--accent-ink)">⚠️ Bi ereduen gako-kontrastea</div>
+        Bizkaia eta Gipuzkoaren arteko alderik nabariena: <strong>Bizkaia = fabrika erraldoiak + altzairua + immigrazio masiboak + klase-gatazka gogorra</strong>. <strong>Gipuzkoa = tailer txikiak + jakintza teknikoa + gizarte egonkorragoa + sindikalismo oreka­tuagoa</strong>. Industria-ereduak gizarte-ereduak ere zehaztu zituen.
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEKZIO 3 · Hiru sindikatuen alderaketa
+         ═══════════════════════════════════════════════════════ -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">3</span> Hiru sindikatuen alderaketa: UGT · CNT · ELA-STV</h2>
+      <p class="intro">Langile-mugimendua ez zen bateratu. Hiru sindikatu nagusiek erabat ezberdineko filosofia, antolaketa eta jarduera-eredua zuten — eta horrek batzuetan koordinazioa zailtzen zuen, batzuetan ezinezkoa egiten.</p>
+      <div class="comp-sind" role="table" aria-label="Hiru sindikatuen alderaketa">
+        <div class="sh sh0">Aldagaia</div>
+        <div class="sh sh1">🔴 UGT (1888)</div>
+        <div class="sh sh2">⚫ CNT (1910)</div>
+        <div class="sh sh3">🔵 ELA-STV (1911)</div>
+
+        <div class="sl">Oinarri filosofikoa</div>
+        <div class="sc">Marxismo moderatua (gradualismoa): sufragio bidezko erreforma soziala.</div>
+        <div class="sc">Anarkismo/anarkosindikalismoa: estatua suntsitu, autogestioa ezarri.</div>
+        <div class="sc alt">Doktrina sozial-kristaua (Rerum Novarum, 1891): klaseen elkarlana, jabetza pribatua.</div>
+
+        <div class="sl">Helburua</div>
+        <div class="sc">Lan-erreformak legeen bidez: 8 ordu, gizarte-segurantza, soldata duinak.</div>
+        <div class="sc">Kapitalismoa eta estatua ezabatzea. Langileen autogestioa, ez erreforma partzialak.</div>
+        <div class="sc alt">Langile-baldintza hobeak, baina gatazkaren ordez adostasunaren bidez.</div>
+
+        <div class="sl">Antolaketa-egitura</div>
+        <div class="sc">Sindikatu sektorekakoak (meatzariak, altzairu-langileak…). Hierarkia formala. Batzar nazionalak.</div>
+        <div class="sc">Sindikatu bakarra: lanbide guztiak elkarte berean. Asanblada-egitura horizontala.</div>
+        <div class="sc alt">Sindikatu bertikala ez, baina bai sare-egitura. Auzoko mutualitateak eta kooperatibak.</div>
+
+        <div class="sl">Jarduera-tresnak</div>
+        <div class="sc">Greba antolatua (eskaera-zerrenda + negoziazio-batzordea), itun kolektiboak, hauteskundeak.</div>
+        <div class="sc">Akzio zuzena: greba, boikota, sabotaia, piketeak. Ez negoziazioa, presio zuzena baizik.</div>
+        <div class="sc alt">Bitartekaritza, adiskidetze-prozesua, mutualitateak, kooperatibak, hezkuntza-zentroak.</div>
+
+        <div class="sl">Antolaketa-guneak</div>
+        <div class="sc">Casa del Pueblo (Herriko Etxea): hezkuntza, mutualitate, kultura eta sindikatu-bulegoa bateratua.</div>
+        <div class="sc">Talde horizontalak, ez egoitza finkoak. Klandestinitatean moldagarria.</div>
+        <div class="sc alt">Parrokia-inguruko sare katolikoa. Elizaren eraikinetan eta bailaretako taldeetan.</div>
+
+        <div class="sl">Presentzia nagusia EH-n</div>
+        <div class="sc">Bizkaiko meatzaritza, siderurgia eta ontzigintza. Indalecio Prieto lidergo nagusia.</div>
+        <div class="sc">Gipuzkoako Pasaia portua, Eibarko metalgintza, Bizkaiko tailer batzuk.</div>
+        <div class="sc alt">Gipuzkoako bailaretan, langile katoliko-abertzaleen artean. EAJtik hurbil.</div>
+
+        <div class="sl">Diktaduraren aurrean (1923–30)</div>
+        <div class="sc">Batzorde Paritarioetan parte hartu. Negoziazio-eremu instituzionala mantendu zuen.</div>
+        <div class="sc">Batzordeak arbuiatu. Klandestinitatean jardun. Ahultua baina bizirik.</div>
+        <div class="sc alt">Batzorde Paritarioetan parte hartu. Sare katoliko-abertzaleak bizirik mantendu.</div>
+
+        <div class="sl">Abertzaletasunarekin harremana</div>
+        <div class="sc">Tentsio gogorra: abertzaletasuna burgesiaren tresna zela uste zuten. Anti-nazionalista.</div>
+        <div class="sc">Arbuio: ez nazioa, ez Eliza. Nazioarteko langileria bakarrik errealitate.</div>
+        <div class="sc alt">Lotura estua EAJ-PNVrekin. Aranismo + katolizismo + sindikalismoa: hirukote praktikoa.</div>
+      </div>
+      <div class="callout" style="border-color:var(--accent);background:var(--accent-tint);margin-top:.8rem">
+        <div class="callout-title" style="color:var(--accent-ink)">⚡ 1917ko greba orokorra: bakarra elkarrekin</div>
+        UGT eta CNTk elkarrekin deitu zuten 1917ko abuztuaren greba orokorra — inflazioaren aurkako defentsa eta sistema politikoaren demokratizazioa eskatuz. ELA-STVk ez zuen parte hartu. Gobernuak bortizki zapaldu zuen eta buruzagiak atxilotu zituzten. Bilakaerak frogatzen du: hiru sindikatu nagusiak ados jartzea behar-beharrezkoa, eta oso zaila, zen.
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEKZIO 4 · Gizartearen eraldaketaren kausa-katea
+         ═══════════════════════════════════════════════════════ -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">4</span> Gizartearen eraldaketaren kausa-katea (1876–1930)</h2>
+      <p class="intro">Industrializazioa ez zen soilik ekonomia-aldaketa bat. Kate bat zen: prozesu bakoitzak hurrengoa ekarri zuen, eta denera gizarte berri, plural eta gatazkatsu bat sortu zen.</p>
+      <div class="cchain" role="list">
+
+        <div class="cchain-node" role="listitem">
+          <div class="cn-year">1876–90</div>
+          <div>
+            <h4>Industrializazioa bizkortzen</h4>
+            <p>Meatzaritzak eta siderurgiak diru-sarrera handiak ekarri zituzten. Burdin-mea esportatu → kapital atzerritarra → labe garaiak → finantza-sareak. Bilbo eta Nerbioi-Ibaizabal Espainiako bihotz industrial bilakatu ziren.</p>
+            <span class="cn-effect">↓ eragina: lan-eskari izugarria → immigrazioa beharrezkoa</span>
+          </div>
+        </div>
+        <div class="cchain-arrow" aria-hidden="true"></div>
+
+        <div class="cchain-node" role="listitem">
+          <div class="cn-year">1880–1910</div>
+          <div>
+            <h4>Immigrazio masiboak</h4>
+            <p>Gaztela, Galizia, Errioxa, Asturiastik milaka langile iritsi ziren. Bilboko biztanleria 62.000 (1877) → 304.000 (1930). Etorkinak langile-klase berriaren nukleoa bihurtu ziren.</p>
+            <span class="cn-effect">↓ eragina: auzo proletario trinkoen sorrera</span>
+          </div>
+        </div>
+        <div class="cchain-arrow" aria-hidden="true"></div>
+
+        <div class="cchain-node" role="listitem">
+          <div class="cn-year">1880–1920</div>
+          <div>
+            <h4>Auzo proletarioak eta lan-baldintza gogorrak</h4>
+            <p>Ezkerraldea (Lutxana, Sestao, Portugalet, Barakaldo): pisu-pilaketak, zerbitzu eskasak, tuberkulosia. 10–12 orduko lanaldiak, istripu-arriskua, soldata txikiak, kontratu prekarioak. Paternalismo enpresariala kontrolerako.</p>
+            <span class="cn-effect">↓ eragina: autodefentsa-sare kolektiboak ezinbesteko bihurtu</span>
+          </div>
+        </div>
+        <div class="cchain-arrow" aria-hidden="true"></div>
+
+        <div class="cchain-node" role="listitem">
+          <div class="cn-year">1888–1911</div>
+          <div>
+            <h4>Sindikalismoa eta mutualitateak sortzen</h4>
+            <p>UGT (1888), Casa del Pueblo sareak, mutualitateak (gaixotasun-laguntzak), aurrezki-kutxak, ateneoak. CNT (1910), ELA-STV (1911). Hiru bide ezberdinetan antolatuz, gizarte zibilaren oinarria eraikitzen.</p>
+            <span class="cn-effect">↓ eragina: greba-ziklo koordinatuak posible bihurtu</span>
+          </div>
+        </div>
+        <div class="cchain-arrow" aria-hidden="true"></div>
+
+        <div class="cchain-node" role="listitem">
+          <div class="cn-year">1890–1919</div>
+          <div>
+            <h4>Greba-zikloak eta legedi soziala</h4>
+            <p>1890-92ko meatzarien grebak → lehen hobekuntzak. 1903ko greba zabala Bilbon. 1917ko greba orokorra (UGT+CNT) → errepresio bortitza. 1919: 8 orduko lanaldia (errege dekretuz) eta Retiro Obrero. Presio eta errepresioak elkarrekin legedi soziala bultzatu zuten.</p>
+            <span class="cn-effect">↓ eragina: klase-errealitatea eta ideologia berriak aldi berean sendotzen</span>
+          </div>
+        </div>
+        <div class="cchain-arrow" aria-hidden="true"></div>
+
+        <div class="cchain-node" role="listitem">
+          <div class="cn-year">1876–1930</div>
+          <div>
+            <h4>Ideologia berriak: gizarte plurala finkatzen</h4>
+            <p>EAJ-PNV (1895), PSOE-UGT, CNT, ELA-STV, karlismoa: bostek aldi berean lehiatu eta elkar elikatu zuten. Auzo berean bizi, taberna eta lantegi berean lan egin, baina mundu-ikuskera ezberdinetan. Gizarte plural eta gatazkatsu bat, 1936ra arte tentsioan.</p>
+            <span class="cn-effect">✓ emaitza: euskal gizarte modernoaren oinarri egitura ezarri zen</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEKZIO 5 · Ideologien konexio-mapa
+         ═══════════════════════════════════════════════════════ -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">5</span> Ideologien konexio-mapa: zergatik agertu zen aniztasun hori?</h2>
+      <p class="intro">1876ko aldaketa sakonak (foruen abolizioa + industrializazioa + immigrazioa) erantzun ezberdinak piztu zituen gizarteko sektore bakoitzean. Nodo bakoitzak erantzun zion aldaketa horri modu propioan.</p>
+
+      <div class="cmap-center">
+        <div class="cc-year">1876–1895</div>
+        <div class="cc-event">Euskal Herriko aldaketa sakona</div>
+        <div class="cc-sub">Foruen abolizioa · Industrializazioa · Immigrazioa</div>
+      </div>
+
+      <div class="cmap-grid">
+        <div class="cmap-node">
+          <div class="cm-tag">Burgesia txiki-ertaina katolikoa</div>
+          <h4>🔴 EAJ-PNV (1895) — Abertzaletasuna</h4>
+          <p>Foru-galera = nazio galera. Immigrazioa = hizkuntza eta fedearen mehatxua. Sabino Aranaren erantzuna: nazio-defentsa, euskara, fede katolikoa, Euzkadi. Batzokien sarean errotua.</p>
+        </div>
+
+        <div class="cmap-node">
+          <div class="cm-tag">Proletarioa · Auzo industrialak</div>
+          <h4>🟠 PSOE-UGT (1879/1888) — Sozialismoa</h4>
+          <p>Industrializazioa = klase-esplotazioa. Erantzuna: langileen batasun internazionala, erreforma sozial gradualak, sufragio unibertsala. Klase-borroka, ez nazio-borroka. Casa del Puebloetan errotua.</p>
+        </div>
+
+        <div class="cmap-node">
+          <div class="cm-tag">Langile erradikala · Portua · Tailerrak</div>
+          <h4>⚫ CNT (1910) — Anarkismoa</h4>
+          <p>Estatua, Eliza eta kapitalismoa zapalkuntza-tresnak dira, suntsitu behar direnak. Erantzuna: akzio zuzena, autogestioa, sindikatu bakarra. Pasaia eta Eibarren indartsuena.</p>
+        </div>
+
+        <div class="cmap-node">
+          <div class="cm-tag">Langile katoliko-abertzalea</div>
+          <h4>🔵 ELA-STV (1911) — Sindikalismo katolikoa</h4>
+          <p>Rerum Novarum: ne klase-borroka, ez estatu-suntsiketa; jabetza pribatua + erantzukizun soziala. Erantzuna: mutualitateak, bitartekaritza, adostasunezko negoziazioa. EAJren langile-hegala.</p>
+        </div>
+
+        <div class="cmap-node">
+          <div class="cm-tag">Landa-eremuak · Nafarroa · Araba</div>
+          <h4>⚜️ Karlismoa + Integrismoa — Tradizionalismoa</h4>
+          <p>Industrializazioa eta modernitatea mehatxua dira. Erantzuna: monarkia katoliko-tradizionala, foruak (baina marko erlijioso-tradizionalean), anti-liberalismoa. 1876 ondoren mugimendu politiko bilakatu zen.</p>
+        </div>
+
+        <div class="cmap-node">
+          <div class="cm-tag">Emaitza: gizarte-egitura</div>
+          <h4>🌐 Gizarte plural eta lehiakorra</h4>
+          <p>Bost indar hauek aldi berean: auzo berean bizi, lantegi berean lan egin, baina mundu-ikuskera guztiz ezberdinetan. 1917ko greba = aliantza puntual bakarra. 1936an: leherketa muturrera.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SINTESIA
+         ═══════════════════════════════════════════════════════ -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">✓</span> Sintesia: 5 ideia giltzarri</h2>
+      <div class="callout" style="border-color:var(--accent);background:var(--accent-tint);">
+        <div class="callout-title" style="color:var(--accent-ink)">Gai honetako prozesu nagusien laburpena</div>
+        <ol style="margin:.7rem 0 0;padding-left:1.3rem;line-height:2.1;">
+          <li>Euskal Herriko industrializazioa ez zen prozesu bakarra: <strong>lau lurralde, lau eredu ezberdin</strong> — Bizkaia (industria astuna), Gipuzkoa (ETE espezializatuak), Araba (logistika), Nafarroa (agroindustria). Osagarri eta aldi berean desorekatuak.</li>
+          <li>Industrializazioak <strong>kate bat eraiki zuen</strong>: meatzaritza → kapital → bankuak → immigrazioa → auzo proletarioak → sindikatuak → ideologiak. Ezin da kate bat ulertzen aurrekoa ulertu gabe.</li>
+          <li>Hiru sindikatuek <strong>hiru filosofia guztiz ezberdineko</strong> lana egin zuten langile berberentzako: UGT (erreforma gradual instituzionala), CNT (akzio zuzen erradikala), ELA-STV (adostasun katoliko-abertzalea). Elkarrekin koordinatzea salbuespena zen, ez araua.</li>
+          <li>1876ko foru-abolizioak <strong>bi erantzun sortu zituen paradoxikoki</strong>: batetik Kontzertu Ekonomikoa (autonomia fiskal praktikoa, industrializazioaren oinarri), bestetik nazio-sentimendu berezia (EAJ-PNV-ren sorreraren oinarri). Berdin kausa, emaitza guztiz ezberdinak.</li>
+          <li>Gizarte plural honek <strong>1936ko gateazka ezinezkoa egin zuen</strong>: sozialismo internazionalista, abertzaletasun katolikoa, anarkismo iraultzailea, sindikalismo kristaua eta tradizionalismo karlista — bost indar, bakoitza bere munduan. Aliantza koalizio zabal bat eraikitzeko gaitasunik ez zen egon.</li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a class="pager-btn prev" href="03-euskal-industrializazioa.html">← 3. Gaia: eduki osoa</a>
+      <a class="pager-btn next" href="../index.html">Hasierara →</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="../index.html"><span class="logo">H</span><span>Historia BTX2</span></a>
+          <p>Espainiako Historia · 2. Batxilergoa</p>
+        </div>
+        <div class="footer-copy">
+          <p>© 2025 <strong>Luken San Sebastián Alkorta</strong> · La Salle Donostia</p>
+          <p><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.eu" target="_blank" rel="noopener">CC BY-SA 4.0</a> — Aske erabil dezakezu iturria aipatuz eta baldintza berdinetan partekatuz.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js?v=6"></script>
+</body>
+</html>
