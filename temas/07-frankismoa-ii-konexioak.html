@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Konexioak eta prozesuak · 7. Gaia: Frankismoa II (1959–1975) | Historia BTX2</title>
+  <link rel="stylesheet" href="../assets/css/styles.css?v=6">
+  <style>
+    :root {
+      --accent:     #f43f5e;
+      --accent-2:   #e11d48;
+      --accent-ink: #881337;
+      --accent-tint:#fff1f2;
+    }
+
+    body { background: #fff8f9; }
+
+    /* ── hero ── */
+    .kx-hero {
+      background: linear-gradient(135deg, var(--accent) 0%, #9f1239 100%);
+      color:#fff; padding:2.5rem 1.5rem 2rem; text-align:center;
+    }
+    .kx-hero .badge {
+      display:inline-block; background:rgba(255,255,255,.2);
+      border-radius:2rem; padding:.25rem .9rem;
+      font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
+      margin-bottom:.75rem;
+    }
+    .kx-hero h1 { font-size:clamp(1.4rem,3vw,2rem); margin:0 0 .4rem; }
+    .kx-hero p  { opacity:.88; font-size:.97rem; margin:0; }
+    .back-btn {
+      display:inline-flex; align-items:center; gap:.4rem;
+      background:rgba(255,255,255,.2); color:#fff;
+      border:1px solid rgba(255,255,255,.35); border-radius:.5rem;
+      padding:.4rem .9rem; font-size:.82rem; text-decoration:none;
+      margin-top:1.1rem; transition:background .2s;
+    }
+    .back-btn:hover { background:rgba(255,255,255,.35); }
+
+    /* ── section wrapper ── */
+    .kx-section { max-width:900px; margin:2rem auto; padding:0 1rem; }
+    .kx-section h2 {
+      font-size:1.15rem; color:var(--accent-ink);
+      border-left:4px solid var(--accent); padding-left:.75rem;
+      margin:0 0 1.25rem;
+    }
+    .kx-section .desc { font-size:.88rem; color:#6b7280; margin:-.75rem 0 1.25rem .2rem; }
+
+    /* ── process chain ── */
+    .proc-chain { display:flex; flex-direction:column; gap:0; }
+    .pc-step { display:grid; grid-template-columns:3.5rem 1fr; gap:0 1rem; position:relative; }
+    .pc-step::before {
+      content:''; position:absolute; left:1.65rem; top:3.2rem;
+      bottom:-1px; width:2px;
+      background:linear-gradient(to bottom,var(--accent),var(--accent-2));
+    }
+    .pc-step:last-child::before { display:none; }
+    .pc-dot {
+      width:3.2rem; height:3.2rem; border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; display:flex; align-items:center; justify-content:center;
+      font-weight:700; font-size:.78rem; flex-shrink:0;
+      box-shadow:0 2px 8px rgba(244,63,94,.35); z-index:1; margin-top:.15rem;
+    }
+    .pc-body {
+      background:#fff; border-radius:.75rem; padding:1rem 1.1rem;
+      margin-bottom:1rem; box-shadow:0 1px 6px rgba(244,63,94,.1);
+      border-left:3px solid var(--accent-tint);
+    }
+    .pc-body strong { color:var(--accent-ink); display:block; margin-bottom:.2rem; }
+    .pc-body p { margin:0; font-size:.9rem; color:#4b5563; }
+    .pc-badge {
+      display:inline-block; border-radius:1rem; padding:.15rem .6rem;
+      font-size:.73rem; font-weight:600; margin-left:.4rem;
+    }
+    .pb-ekon   { background:#dcfce7; color:#166534; }
+    .pb-inst   { background:#e0e7ff; color:#3730a3; }
+    .pb-rep    { background:#fee2e2; color:#7f1d1d; }
+    .pb-kris   { background:#fef3c7; color:#92400e; }
+    .pb-opoz   { background:#f3e8ff; color:#6b21a8; }
+
+    /* ── comparison tables ── */
+    .comp-table { width:100%; border-collapse:collapse; background:#fff;
+      border-radius:.75rem; overflow:hidden;
+      box-shadow:0 1px 8px rgba(244,63,94,.1); font-size:.88rem; }
+    .comp-table th {
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; padding:.65rem .9rem; text-align:left; font-size:.82rem;
+    }
+    .comp-table td { padding:.6rem .9rem; border-bottom:1px solid #fce7e7; vertical-align:top; }
+    .comp-table tr:last-child td { border-bottom:none; }
+    .comp-table tr:nth-child(even) td { background:#fff8f9; }
+    .comp-table .row-label { font-weight:600; color:var(--accent-ink); width:22%; }
+    .sh-bab  { background:linear-gradient(135deg,#1d4ed8,#3b82f6) !important; }
+    .sh-ind  { background:linear-gradient(135deg,#374151,#6b7280) !important; }
+    .sh-opoz { background:linear-gradient(135deg,#7c3aed,#8b5cf6) !important; }
+    .tag-pos { display:inline-block; background:#dcfce7; color:#166534; border-radius:.4rem; padding:.05rem .4rem; font-size:.75rem; }
+    .tag-neg { display:inline-block; background:#fee2e2; color:#991b1b; border-radius:.4rem; padding:.05rem .4rem; font-size:.75rem; }
+
+    /* ── cause-effect chain ── */
+    .cchain { display:flex; flex-direction:column; align-items:center; gap:0; }
+    .cc-node {
+      width:100%; max-width:580px; background:#fff; border-radius:.75rem;
+      padding:.9rem 1.1rem; box-shadow:0 1px 6px rgba(244,63,94,.12);
+      border-left:4px solid var(--accent);
+    }
+    .cc-node strong { color:var(--accent-ink); display:block; margin-bottom:.2rem; }
+    .cc-node p { margin:0; font-size:.88rem; color:#4b5563; }
+    .cc-arrow { font-size:1.4rem; color:var(--accent); line-height:1; margin:.4rem 0; text-align:center; }
+
+    /* ── connection map ── */
+    .cmap-wrap { display:grid; grid-template-columns:1fr; gap:1rem; }
+    .cmap-center {
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; border-radius:.75rem; padding:1.1rem;
+      text-align:center; box-shadow:0 2px 10px rgba(244,63,94,.3);
+    }
+    .cmap-center strong { font-size:1.05rem; display:block; }
+    .cmap-center span   { font-size:.85rem; opacity:.88; }
+    .cmap-grid { display:grid; grid-template-columns:1fr 1fr; gap:.85rem; }
+    .cmap-node {
+      background:#fff; border-radius:.7rem; padding:.9rem;
+      box-shadow:0 1px 6px rgba(244,63,94,.1);
+      border-top:3px solid var(--accent);
+    }
+    .cmap-node h4 { margin:0 0 .3rem; font-size:.88rem; color:var(--accent-ink); }
+    .cmap-node p  { margin:0; font-size:.82rem; color:#6b7280; }
+    .cn-lang  { border-top-color:#1d4ed8; }
+    .cn-ikast { border-top-color:#7c3aed; }
+    .cn-pce   { border-top-color:#dc2626; }
+    .cn-eta   { border-top-color:#15803d; }
+    .cn-eliza { border-top-color:#b45309; }
+    .cn-naz   { border-top-color:#0369a1; }
+
+    /* ── synthesis ── */
+    .sintesi {
+      background:linear-gradient(135deg,var(--accent-tint),#fce7e7);
+      border:1px solid #fca5a5; border-radius:.75rem;
+      padding:1.25rem 1.4rem;
+    }
+    .sintesi h3 { margin:0 0 .75rem; color:var(--accent-ink); font-size:1rem; }
+    .sintesi ul { margin:0; padding-left:1.3rem; }
+    .sintesi li { margin-bottom:.5rem; font-size:.9rem; color:#374151; }
+    .sintesi li:last-child { margin-bottom:0; }
+
+    /* ── footer ── */
+    .kx-footer { text-align:center; padding:2rem 1rem; font-size:.8rem; color:#9ca3af; }
+    .kx-footer a { color:var(--accent); text-decoration:none; }
+
+    @media (max-width:540px) { .cmap-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<header class="kx-hero">
+  <div class="badge">7. Gaia · 1959–1975</div>
+  <h1>Frankismoa II: konexioak eta prozesuak</h1>
+  <p>Desarrollismotik krisira, babesa eta oposiziotik errepresio berantiarrera eta Trantsizioaren atarira</p>
+  <a class="back-btn" href="07-frankismoa-ii.html">← Gaira itzuli</a>
+</header>
+
+<!-- ═══════════════════════════════════════
+     1 · Prozesu-katea
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>1. Desarrollismotik frankismoaren bukaerara: prozesu-katea (1959–1975)</h2>
+  <p class="desc">Zortzi urrats autarkiaren porrotetik Francoren heriotzara.</p>
+
+  <div class="proc-chain">
+
+    <div class="pc-step">
+      <div class="pc-dot">1959</div>
+      <div class="pc-body">
+        <strong>Egonkortze Plana — desarrollismoaren abiapuntua <span class="pc-badge pb-ekon">ekonomia</span></strong>
+        <p>Autarkiaren porrota gainditu: inflazioa kontrolatu, pezeta egokitu, kanpoko kapitala erakarri. Teknokraten (Opus Dei) gobernua. FMI eta OECEren laguntzarekin. Espainia nazioarteko kapitalismoan txertatu zen.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1960ak</div>
+      <div class="pc-body">
+        <strong>«Mirari ekonomikoa» — industria, turismoa, kontsumoa <span class="pc-badge pb-ekon">hazkundea</span></strong>
+        <p>Atzerriko kapitala, turisten boom-a eta emigranteen bidalketak: hazkunde azkarra. Urbanizazioa, klase ertain berriak, autoa eta telebista. Estatuak INI bidez industria estrategikoa gidatu (SEAT, Endesa, Iberia). «Hazkundea bai, askatasunik gabe».</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1963–67</div>
+      <div class="pc-body">
+        <strong>Lege-errepresioa eta instituzionalizazioa <span class="pc-badge pb-inst">instituzio</span></strong>
+        <p>TOP (1963): delitu politikoak epaitzeko auzitegia. Prentsa Legea (Fraga, 1966): zentsura berrantolatu. 1967ko Estatuaren Lege Organikoa: botere-arkitektura finkatu eta errelebu-mekanismoak zehaztu.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1969</div>
+      <div class="pc-body">
+        <strong>Juan Carlos izendatu «a título de Rey» <span class="pc-badge pb-inst">jarraipen-plana</span></strong>
+        <p>Frankok Juan Carlos aukeratu ondorengo (ez Don Juan). Erregimenaren barruan hezitakoa, «kontrolagarriagoa». Monarkia frankistaren jarraipenerako lotuta egon zedin. Baina plan hori ez zen bete uste bezala.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1970</div>
+      <div class="pc-body">
+        <strong>Burgosko Prozesua — errepresioa nazioartean agerian <span class="pc-badge pb-rep">errepresioa</span></strong>
+        <p>ETAko 16 kideren aurkako epaiketa militarra; sei heriotza-zigor. Nazioarteko protestak eta barneko mobilizazioak heriotza-zigorrak konmutatzen lortu. Errepresioa «mezu» politiko bihurtzen denean nazioartea aktibatu eta barne-legitimazioa higatu.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1973</div>
+      <div class="pc-body">
+        <strong>Petrolio-krisia + Carreroren hilketa — frankismo berantiarraren krisi bikoitza <span class="pc-badge pb-kris">krisia</span></strong>
+        <p>1973ko petrolio-krisiak ekonomia kolpatu zuen: inflazioa, langabezia. Aldi berean ETAk Carrero Blanco Gobernuko Presidente hil zuen abenduean. Jarraipenaren plan nagusia apurtu eta erregimena barrutik gehiago zatitu: «bunkerraren» eta aperturismoaren arteko gatazka.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1974</div>
+      <div class="pc-body">
+        <strong>Arias Navarro eta «irekiera» mugatua — Portugalen Krabelinen Iraultza <span class="pc-badge pb-kris">isolamendua</span></strong>
+        <p>Arias Navarroren «irekiera» diskurtso (otsailaren 12ko espiritua) baina neurri oso mugatuak. Puig Antich garrote vil-en bidez hil. Portugalen aprileko Krabelinen Iraultzak eta Greziako demokratizazioak frankismoa gehiago bakartu zuten.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1975</div>
+      <div class="pc-body">
+        <strong>Azken fusilamenduak eta Francoren heriotza — Trantsizioaren ataria <span class="pc-badge pb-opoz">amaiera</span></strong>
+        <p>Irailaren 27: ETAko 2 eta FRAPeko 3 fusilatu. Nazioarteko gaitzespen zabala. Azaroaren 20: Franco hil. 22an Juan Carlos I.a errege proklamatu. Frankismoa ez zen erreforma adostu batez amaitu: heriotzarekin. Trantsizioa hasi.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     2 · Gizartearen erantzun-triangelua
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>2. Babesa, indiferentzia eta oposizioa: gizartearen triangelua</h2>
+  <p class="desc">Frankismoak ez zuen babes unibertsal bakarra; gizartearen hiru jarrera elkarren ondoan bizi ziren, eta pertsonak denboran posizioaz alda zezakeen.</p>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="row-label">Alderdia</th>
+        <th class="sh-bab">✅ Babesa</th>
+        <th class="sh-ind">🔘 Indiferentzia / Egokitzapena</th>
+        <th class="sh-opoz">🟣 Oposizioa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="row-label">Nork</td>
+        <td>Garaileak, militarrak, Elizako hierarkia, jabetza-sareak, enpresariak, klase ertain kontserbadorea.</td>
+        <td>Gizartearen zati handi bat: beldurrez, nekez edo pragmatismoz isil zeudela.</td>
+        <td>Langileak, ikasleak, nazionalismo periferikoak, prentsa kritikoa, Elizaren sektore bat.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Arrazoiak</td>
+        <td><span class="tag-pos">pro</span> Garaileen memoria; antikomunismoa; hobekuntza materiala; interesak finkatuak.</td>
+        <td>Gerra Zibilaren trauma; errepresioaren beldurra; eguneroko hobekuntza; «politikarik gabe hobeto» sentipena.</td>
+        <td><span class="tag-neg">kontra</span> Askatasun-eskubideen ukazioa; lan-baldintza txarrak; kultura eta hizkuntza-zapalkuntza.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Jarrera praktikoa</td>
+        <td>Erregimena aktiboa: kargu publikoak hartu, gune kontserbadoreetako sareak mantendu.</td>
+        <td>«Ez sartzea»: eguneroko bizitza lehenetsi, oposizioa saihestea. Erregimenaren egonkortasunaren oinarri sozial isila.</td>
+        <td>Ezkutuko antolaketa, grebak, manifestazioak, sare klandestinoak, kulturaren bidez erresistentzia.</td>
+      </tr>
+      <tr>
+        <td class="row-label">60ko hamarkada</td>
+        <td>Babes pragmatikoa gehitu: hazkunde ekonomikoa «frankismoa funtzionatzen du» argudio gisa.</td>
+        <td>Kontsumo-gizartearen hedapenak isiltasuna indartu: autoa, telebista, «ongizatea» nahikoa.</td>
+        <td>Oposizioa gero eta antolatuago: CCOO, ikasle-mobilizazioak, ETA, PCE klandestino.</td>
+      </tr>
+      <tr>
+        <td class="row-label">70eko hamarkada</td>
+        <td>Babes erlatibo: elite ekonomiko batzuek ikusten zuten «aldaketa kontrolatua» egokiagoa zela etorkizunerako.</td>
+        <td>Indiferentzia murrizten ari zen: krisi ekonomikoak eta errepresioak jende gehiago aktibatu.</td>
+        <td>Oposizioa gehiago hedatu: Eliza sektore bat, abokatuak, kultura-mundua, auzo-elkarteak ere.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═══════════════════════════════════════
+     3 · Oposizioaren mapa
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>3. Frankismoaren aurkako oposizioaren konexio-mapa</h2>
+  <p class="desc">Frankismoaren aurkako oposizioa ez zen bloke bakarra: sei indar nagusik estrategia eta logika desberdinarekin jardun zuten.</p>
+
+  <div class="cmap-wrap">
+    <div class="cmap-center">
+      <strong>🔴 Frankismoaren aurkako oposizioa (1960–1975)</strong>
+      <span>Anitza, gero eta antolatuagoa eta sozialagoa; ez alderdi-politikora mugatua</span>
+    </div>
+    <div class="cmap-grid">
+      <div class="cmap-node cn-lang">
+        <h4>⚙️ Langile mugimendua (CCOO)</h4>
+        <p>Comisiones Obreras: fabrika-barruko «legalitatea» aprobetxatu, grebak eta negoziazio. Oposizio sozialik indartsuena. Asturias, Euskal Herria, Katalunia, Madril.</p>
+      </div>
+      <div class="cmap-node cn-ikast">
+        <h4>🎓 Ikasle mugimendua</h4>
+        <p>Unibertsitatea kontrol frankistaren aurkako espazio bihurtu. Asambleak, manifestazioak, grebak. Hezkuntzaren hedapenarekin indartu.</p>
+      </div>
+      <div class="cmap-node cn-pce">
+        <h4>📕 Oposizio politikoa (PCE, PSOE)</h4>
+        <p>PCE: langile mugimenduan sustraitua, erbestetik eta klandestinitatetik. PSOE: berregituratzen. Helburu: diktadura amaitu eta askatasunak lortu.</p>
+      </div>
+      <div class="cmap-node cn-eta">
+        <h4>🟢 ETA eta nazionalismo periferikoak</h4>
+        <p>1959an sortua; 1960ko hamarkadan bide armatua hartu. Burgosko Prozesua (1970), Carrero Blanco (1973). Ez oposizio osoaren sinonimo, baina errepresioa gogortu eta polarizazioa handitu.</p>
+      </div>
+      <div class="cmap-node cn-eliza">
+        <h4>✝️ Elizaren sektore kritikoa</h4>
+        <p>60ko hamarkadatik: langile-pastorala, apaiz gazteak, kristau progresistak. Eskubide sozialak eta askatasun politikoak defendatzen. Erregimenaren legitimitate moralari arrakala egin zion.</p>
+      </div>
+      <div class="cmap-node cn-naz">
+        <h4>🏴 Kultura eta prentsa kritikoa</h4>
+        <p>Idazleak, kazetariak, zinema-egileek, abokatuek sistema zalantzan jarri. Zentsuraren mugetan baina ahalik eta zabalena. Gizartearen modernizazioak bultzatua.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     4 · Frankismo berantiarraren krisiaren kausa-katea
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>4. Frankismo berantiarraren krisiaren kausa-katea (1973–1975)</h2>
+  <p class="desc">Nola ekarri zituzten pilatutako kontraesan ekonomiko, politiko eta sozialek frankismoaren amaierara.</p>
+
+  <div class="cchain">
+
+    <div class="cc-node">
+      <strong>🔴 1973ko petrolio-krisia</strong>
+      <p>Energia garestitu, ekoizpen-kostuak handitu, langabeziaren mehatxua. Desarrollismoak sortutako «ongizatearen promesa» higatzen hasi. Gatazka soziala: grebak, soldaten defentsa.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>💥 Carrero Blancoren hilketa (1973ko abendua)</strong>
+      <p>ETAren atentatua. Jarraipenaren plan politiko nagusia kolokan. Frankismoa barrutik zatitu: «bunkerraren» eta aperturismoaren arteko borroka ageriagoa. Arias Navarro izendatu ordezkatzeko.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>🔸 Apertura mugatua eta frustrazioaren hazkundea (1974)</strong>
+      <p>«Otsailaren 12ko espiritua»: irekiera diskurtso baina neurri oso mugatuak. Aparatu frankistak ez zuen benetako pluralismorik onartu. Puig Antich garrote vil-en bidez hil. Nazioarteko isolamendua handitu.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>🌍 Ingurune nazioarteko aldaketa (1974)</strong>
+      <p>Portugalen Krabelinen Iraultza (apirila 1974): diktadura erori zuen. Grezian ere demokratizazio prozesua hasi. Frankismoa Mendebaldeko Europako «azken diktadura» gisa are nabarmenago. Europako Erkidego Ekonomikoan sartzeko ezintasuna agerian.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>🔴 Azken fusilamenduak (1975eko iraila)</strong>
+      <p>ETAko 2 eta FRAPeko 3 fusilatu. Nazioarteko gaitzespen izugarria: hiriburutan protestak. Erregimenak «segurtasuna» lehenetsi; prezioa nazioarteko eta barneko deslegitimazioa. Krisi politikoaren testuinguruan, mezu katebegirik okerra.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>⚫ Francoren heriotza (1975eko azaroaren 20a)</strong>
+      <p>Frankismoa ez zen erreforma adostu batez amaitu; heriotzarekin baizik. Sistema ahulduta, zatituta eta legitimazioan higatuta. Jarraipenerako sortutako egitura batzuk (monarkia bera) aldaketarako bide bihurtu ziren.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>✅ Trantsizioa hasiera (1975 amaieratik)</strong>
+      <p>Juan Carlos I.a errege (azaroaren 22a). Diktaduratik demokraziarako prozesu zaila: gatazka, negoziazio eta erreforma bidez. Hurrengo gaiaren ataria.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     5 · Desarrollismoaren paradoxaren alderaketa
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>5. Desarrollismoaren paradoxa: modernizazio ekonomikoa VS. egonkortasun politikoa</h2>
+  <p class="desc">Hazkunde ekonomikoak gizartea aldatu, baina askatasun politikoak gabe. Kontraesanaren bi aurpegiak.</p>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="row-label">Alderdia</th>
+        <th class="sh-bab">📈 Modernizazio ekonomiko-soziala</th>
+        <th class="sh-opoz">🔒 Egonkortasun politiko autoritarioa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="row-label">Ekonomia</td>
+        <td><span class="tag-pos">hazkundea</span> Industrializazioa, turismoa, atzerriko kapitala, kontsumoa. Espainia Europako ekonomian txertatu.</td>
+        <td><span class="tag-neg">menpekotasuna</span> Kanpoko kapitalaren menpekotasuna handitu. Lurralde-desorekak. Sindikatu eta greba-eskubiderik gabe.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Gizartea</td>
+        <td><span class="tag-pos">aldaketa</span> Urbanizazioa, klase ertain berriak, hezkuntzaren hedapena, emakumeen presentzia handitu.</td>
+        <td><span class="tag-neg">kontrola</span> Moral nazional-katolikoa mantendu. Emakumeen eskubideak mugatuta. «Desbideratuen» kontrola (Peligrosidad Social Legea).</td>
+      </tr>
+      <tr>
+        <td class="row-label">Politika</td>
+        <td><span class="tag-pos">presioa</span> Gizarteak askatasun-eskubideak gero eta gehiago aldarrikatu. Oposizioa antolatuago.</td>
+        <td><span class="tag-neg">ukazioa</span> Alderdi politikoak debekatuak. Prentsa-zentsura. TOP eta BPS. Salbuespen-egoerak. Demokrazia organikoa bakarrik.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Nazioartekoa</td>
+        <td><span class="tag-pos">integrazioa</span> Europarekin merkataritza-harreman handiagoak. Turismo bidezko kultura-trukaketea. NBE eta nazioarteko erakundeetan.</td>
+        <td><span class="tag-neg">anomalia</span> Europako Erkidego Ekonomikotik kanpo (demokrazia-baldintza ez betetzearren). Gero eta diktadura-anomalia nabarmenagoa.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Frankismoaren legitimazioa</td>
+        <td><span class="tag-pos">hazkundea</span> «Hazkundea bai»: ekonomiaren hobekuntza legitimazio-iturri. Sektore batzuek egonkortasuna balioztatu.</td>
+        <td><span class="tag-neg">higadura</span> «Askatasunik gabe»: gizarte modernoagoak kontraesan hori gero eta gutxiago onartu. Legitimazio-higadura epe ertainera.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═══════════════════════════════════════
+     Sintesia
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <div class="sintesi">
+    <h3>🔗 Sintesia: desarrollismoa ulertzeko gako-ideiak</h3>
+    <ul>
+      <li><strong>Modernizazioaren paradoxa:</strong> Frankismoak hazkundea erabili zuen erregimena sendotzeko, baina hazkunde berak sortu zituen erregimena deuseztatzeko oinarriak: gizarte heziago, urbanoago eta konektatuago batek askatasun-nahia handitu zuen.</li>
+      <li><strong>Babesa, indiferentzia eta oposizioa batera:</strong> Frankismoaren iraupena ez zen soilik errepresioaren ondorioa. Gizartearen zati baten babes aktibo eta beste zati baten isiltasunak ere erregimenaren egonkortasunean lagundu zuten.</li>
+      <li><strong>Eliteen koalizioa, ez ideologia bakarra:</strong> Frankismo berantiarra armada, teknokratak, Eliza eta elite ekonomikoen oreka zen; ez talde bakar baten programa. Carreroren hilketak oreka hori kolokan jarri zuen.</li>
+      <li><strong>1973ko bira-puntua:</strong> Petrolio-krisia eta Carreroren hilketa aldi berean gertatu ziren; bi krisi ekonomiko eta politikoaren uztartzeak frankismo berantiarren ahultzea izugarri azkartu zuen.</li>
+      <li><strong>Trantsizioa ez zen «doakoa»:</strong> 1975ean frankismoa ahulduta, zatituta eta deslegitimaturik iritsi zen. Aldaketarako presioa barrutik eta kanpotik zetorren, eta «jarraipenerako» prestaturiko tresna batzuk (monarkia) aldaketarako bide bihurtu ziren.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="kx-footer">
+  <p>Historia · BTX2 · La Salle Donostia &nbsp;|&nbsp;
+    <a href="07-frankismoa-ii.html">← 7. Gaia</a> &nbsp;·&nbsp;
+    <a href="../index.html">Hasiera</a>
+  </p>
+</footer>
+
+</body>
+</html>
