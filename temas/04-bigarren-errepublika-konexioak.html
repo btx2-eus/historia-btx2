@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Konexioak eta prozesuak · 4. Gaia: II. Errepublika | Historia BTX2</title>
+  <link rel="stylesheet" href="../assets/css/styles.css?v=6">
+  <style>
+    :root {
+      --accent:     #7c3aed;
+      --accent-2:   #6366f1;
+      --accent-ink: #3b0764;
+      --accent-tint:#f5f3ff;
+    }
+
+    /* ── page shell ── */
+    body { background: #f8f7ff; }
+
+    .kx-hero {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+      color: #fff; padding: 2.5rem 1.5rem 2rem; text-align: center;
+    }
+    .kx-hero .badge {
+      display: inline-block; background: rgba(255,255,255,.25);
+      border-radius: 2rem; padding: .25rem .9rem; font-size: .78rem;
+      letter-spacing: .08em; text-transform: uppercase; margin-bottom: .75rem;
+    }
+    .kx-hero h1 { font-size: clamp(1.4rem,3vw,2rem); margin: 0 0 .4rem; }
+    .kx-hero p  { opacity: .88; font-size: .97rem; margin: 0; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: .4rem;
+      background: rgba(255,255,255,.2); color: #fff;
+      border: 1px solid rgba(255,255,255,.35); border-radius: .5rem;
+      padding: .4rem .9rem; font-size: .82rem; text-decoration: none;
+      margin-top: 1.1rem; transition: background .2s;
+    }
+    .back-btn:hover { background: rgba(255,255,255,.35); }
+
+    /* ── section wrapper ── */
+    .kx-section {
+      max-width: 900px; margin: 2rem auto; padding: 0 1rem;
+    }
+    .kx-section h2 {
+      font-size: 1.15rem; color: var(--accent-ink);
+      border-left: 4px solid var(--accent); padding-left: .75rem;
+      margin: 0 0 1.25rem;
+    }
+    .kx-section .desc {
+      font-size: .88rem; color: #6b7280; margin: -.75rem 0 1.25rem .2rem;
+    }
+
+    /* ── process chain ── */
+    .proc-chain { display: flex; flex-direction: column; gap: 0; }
+    .pc-step {
+      display: grid; grid-template-columns: 3.5rem 1fr;
+      gap: 0 1rem; position: relative;
+    }
+    .pc-step::before {
+      content: ''; position: absolute; left: 1.65rem; top: 3.2rem;
+      bottom: -1px; width: 2px;
+      background: linear-gradient(to bottom, var(--accent), var(--accent-2));
+    }
+    .pc-step:last-child::before { display: none; }
+    .pc-dot {
+      width: 3.2rem; height: 3.2rem; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff; display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: .82rem; flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(124,58,237,.35); z-index: 1;
+      margin-top: .15rem;
+    }
+    .pc-body {
+      background: #fff; border-radius: .75rem; padding: 1rem 1.1rem;
+      margin-bottom: 1rem; box-shadow: 0 1px 6px rgba(124,58,237,.1);
+      border-left: 3px solid var(--accent-tint);
+    }
+    .pc-body strong { color: var(--accent-ink); display: block; margin-bottom: .2rem; }
+    .pc-body p { margin: 0; font-size: .9rem; color: #4b5563; }
+    .pc-badge {
+      display: inline-block; border-radius: 1rem; padding: .15rem .6rem;
+      font-size: .73rem; font-weight: 600; margin-left: .4rem;
+    }
+    .pb-crisis   { background: #fee2e2; color: #991b1b; }
+    .pb-aldaketa { background: #ede9fe; color: #5b21b6; }
+    .pb-lege     { background: #dbeafe; color: #1e40af; }
+    .pb-gerra    { background: #fef9c3; color: #854d0e; }
+    .pb-erreforma { background: #d1fae5; color: #065f46; }
+    .pb-kolpe    { background: #fce7f3; color: #9d174d; }
+
+    /* ── comparison tables ── */
+    .comp-table { width: 100%; border-collapse: collapse; background: #fff;
+      border-radius: .75rem; overflow: hidden;
+      box-shadow: 0 1px 8px rgba(124,58,237,.1); font-size: .88rem; }
+    .comp-table th {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff; padding: .65rem .9rem; text-align: left; font-size: .82rem;
+    }
+    .comp-table td { padding: .6rem .9rem; border-bottom: 1px solid #f3f4f6; vertical-align: top; }
+    .comp-table tr:last-child td { border-bottom: none; }
+    .comp-table tr:nth-child(even) td { background: #faf9ff; }
+    .comp-table .row-label { font-weight: 600; color: var(--accent-ink); width: 22%; }
+    /* side-by-side header colors */
+    .sh-rep  { background: linear-gradient(135deg, #059669, #10b981) !important; }
+    .sh-cont { background: linear-gradient(135deg, #b45309, #d97706) !important; }
+    .sh-fp   { background: linear-gradient(135deg, #7c3aed, #6366f1) !important; }
+
+    /* ── cause-effect chain ── */
+    .cchain {
+      display: flex; flex-direction: column; align-items: center; gap: 0;
+    }
+    .cc-node {
+      width: 100%; max-width: 580px; background: #fff; border-radius: .75rem;
+      padding: .9rem 1.1rem; box-shadow: 0 1px 6px rgba(124,58,237,.12);
+      border-left: 4px solid var(--accent); position: relative;
+    }
+    .cc-node strong { color: var(--accent-ink); display: block; margin-bottom: .2rem; }
+    .cc-node p { margin: 0; font-size: .88rem; color: #4b5563; }
+    .cc-arrow {
+      font-size: 1.4rem; color: var(--accent); line-height: 1;
+      margin: .4rem 0; text-align: center;
+    }
+
+    /* ── connection map ── */
+    .cmap-wrap { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+    .cmap-center {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff; border-radius: .75rem; padding: 1.1rem;
+      text-align: center; box-shadow: 0 2px 10px rgba(124,58,237,.3);
+    }
+    .cmap-center strong { font-size: 1.05rem; display: block; }
+    .cmap-center span { font-size: .85rem; opacity: .88; }
+    .cmap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .85rem; }
+    .cmap-node {
+      background: #fff; border-radius: .7rem; padding: .9rem;
+      box-shadow: 0 1px 6px rgba(124,58,237,.1);
+      border-top: 3px solid var(--accent);
+    }
+    .cmap-node h4 {
+      margin: 0 0 .3rem; font-size: .88rem; color: var(--accent-ink);
+    }
+    .cmap-node p { margin: 0; font-size: .82rem; color: #6b7280; }
+
+    /* node accent colors */
+    .cn-erd  { border-top-color: #7c3aed; }
+    .cn-rep  { border-top-color: #059669; }
+    .cn-soc  { border-top-color: #dc2626; }
+    .cn-cnt  { border-top-color: #1d4ed8; }
+    .cn-esk  { border-top-color: #b45309; }
+    .cn-arm  { border-top-color: #374151; }
+
+    /* ── synthesis box ── */
+    .sintesi {
+      background: linear-gradient(135deg, var(--accent-tint), #e0e7ff);
+      border: 1px solid #c4b5fd; border-radius: .75rem;
+      padding: 1.25rem 1.4rem;
+    }
+    .sintesi h3 { margin: 0 0 .75rem; color: var(--accent-ink); font-size: 1rem; }
+    .sintesi ul { margin: 0; padding-left: 1.3rem; }
+    .sintesi li { margin-bottom: .5rem; font-size: .9rem; color: #374151; }
+    .sintesi li:last-child { margin-bottom: 0; }
+
+    /* ── footer ── */
+    .kx-footer {
+      text-align: center; padding: 2rem 1rem;
+      font-size: .8rem; color: #9ca3af;
+    }
+    .kx-footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 540px) {
+      .cmap-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="kx-hero">
+  <div class="badge">4. Gaia · 1931–1936</div>
+  <h1>II. Errepublika: konexioak eta prozesuak</h1>
+  <p>Monarkiaren erorketatik Gerra Zibilera, bi biurtekoak, Konstituzioa eta krisi politikoaren kausa-katea</p>
+  <a class="back-btn" href="04-bigarren-errepublika.html">← Gaira itzuli</a>
+</header>
+
+<!-- ═══════════════════════════════════════════
+     ATALA 1: Prozesu-katea monarkiatik Gerra Zibilera
+     ═══════════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>1. Monarkiaren erorketatik Gerra Zibilera: prozesu-katea (1923–1936)</h2>
+  <p class="desc">Diktaduratik errepublika demokratikora, eta Gerra Zibilera doan gertaera-segida nagusiak.</p>
+
+  <div class="proc-chain">
+
+    <div class="pc-step">
+      <div class="pc-dot">1923</div>
+      <div class="pc-body">
+        <strong>Primo de Riveraren diktadura <span class="pc-badge pb-crisis">krisia</span></strong>
+        <p>Alfonso XIII.aren onespenarekin estatu-kolpea. Konstituzioaren etete, alderdi politikoen debekua, zentsura. 1929ko Depresio Handiak ahuldu eta 1930ean dimititu behartu zen.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1930</div>
+      <div class="pc-body">
+        <strong>Donostiako Ituna <span class="pc-badge pb-aldaketa">aldaketa</span></strong>
+        <p>Errepublikanoak, sozialistak eta nazionalista katalanak Donostian bildu ziren. Helburua: monarkia amaitu eta errepublika demokratiko bat ezartzea. Jaca-ko altxamendua (abenduak, porrot egin baina sinbolikoa).</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1931</div>
+      <div class="pc-body">
+        <strong>Errepublikaren aldarrikapena <span class="pc-badge pb-aldaketa">aldaketa</span></strong>
+        <p>Apirilaren 12ko udal hauteskundeetan errepublikanoek hiri nagusietan irabazi. Alfonso XIII.ak erbestea hartu. Apirilaren 14an II. Errepublika aldarrikatu zen. Abenduan 1931ko Konstituzioa onartu.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1931–33</div>
+      <div class="pc-body">
+        <strong>Biurteko errepublikar-sozialista <span class="pc-badge pb-erreforma">erreformak</span></strong>
+        <p>Azañak 5 erreforma nagusi (agrarioa, militarra, hezkuntza, lana, Elizaren mugapena). 13.000 eskola publiko. Kataluniako Estatutua (1932). Erreformen erresistentzia eta Casas Viejas-eko tragedia azeleratu zuten krisira jotzea.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1933–36</div>
+      <div class="pc-body">
+        <strong>Biurteko erradikal-cedista <span class="pc-badge pb-crisis">kontrarreforma</span></strong>
+        <p>CEDA eta Lerrouxen koalizioa. Erreformak geldiarazi. 1934ko Urriko Iraultza Asturiasen (Franco eta armadak zapaldu, ~1.500 hildako). 1935eko Estraperlo eta Nombela ustelkeria-aferrak gobernua hondoratu.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1936</div>
+      <div class="pc-body">
+        <strong>Fronte Popularra eta indarkeria politikoa <span class="pc-badge pb-lege">otsaila</span></strong>
+        <p>Fronte Popularrak otsailean irabazi. Gobernuak erreformak berraktibatu nahi, baina ezkerreko muturreko sektoreen lurren okupazioak eta Falangeren kale-borroka polarizazioa areagotu. Calvo Soteloren hilketa (uztailak 13) kolpea azkartu.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">Uzt. 17</div>
+      <div class="pc-body">
+        <strong>Estatu-kolpea eta Gerra Zibila <span class="pc-badge pb-gerra">1936–1939</span></strong>
+        <p>Afrikako armada Melillan eta Ceutan matxinatu zen. Kolpeak ez zuen berehala arrakasta osoa lortu eta Espainia bi zatitan banatu zen: Errepublikaren aldekoak vs. kolpistak. Hiru urteko Gerra Zibila (1936–39) eta ondoren ia 40 urteko diktadura.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ATALA 2: Bi biurtekoak alderatuta
+     ═══════════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>2. Bi biurtekoak alderatuta</h2>
+  <p class="desc">Lehen biurteko erreformatzailearen eta bigarren biurteko kontrarreformatzailearen arteko alderaketa sistematikoa.</p>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="row-label">Alderdia</th>
+        <th class="sh-rep">I. Biurtekoa (1931–1933)<br><small>Errepublikar-sozialista</small></th>
+        <th class="sh-cont">II. Biurtekoa (1933–1936)<br><small>Erradikal-cedista</small></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="row-label">Gobernua</td>
+        <td>Manuel Azaña buru; errepublikanoak eta sozialistak (PSOE-UGT).</td>
+        <td>Alejandro Lerroux (Alderdi Erradikala) buru; CEDAren kanpoko sostengua (gero gobernu-kideak).</td>
+      </tr>
+      <tr>
+        <td class="row-label">Erreformen norabidea</td>
+        <td>Erreforma sakon: agrarioa, militarra, hezkuntza, lana, sekularizazioa.</td>
+        <td>Kontrarreforma: aurreko erreformak geldiarazi edo desegin.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Lur-politika</td>
+        <td>1932ko Erreforma Agrarioa: latifundioak desjabetzeko legea (aplikazioa motela).</td>
+        <td>Lurren banaketa guztiz gelditu; desjabetutako lurrak jabetza pribatura itzuli.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Armada</td>
+        <td>Murrizketa, leialtasun-zina, Akademia Militar Nagusia itxi.</td>
+        <td>Erreformak bertan behera utzi; militar kontserbadoreei protagonismoa itzuli.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Hezkuntza</td>
+        <td>13.000 eskola publiko berri, irakasleen prestakuntza, hezkuntza laikoa.</td>
+        <td>Eskola hedapena eten; ikastetxe erlijiosoak berriro ireki; hezkuntza laikoa ahuldu.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Eliza</td>
+        <td>Banaketa Eliza-Estatu; jesuiten ordena desegin; erlijio-irakaskuntza mugatua.</td>
+        <td>Elizari eskubideak itzuli; erlijio-irakaskuntza hezkuntza publikoan zabaldu.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Gatazka nagusia</td>
+        <td>Casas Viejas (1933): nekazari anarkisten errepresioa; Azañaren dimisioa.</td>
+        <td>Urriko Iraultza (1934): Asturias eta Katalunia; Estraperlo eta Nombela aferak (1935).</td>
+      </tr>
+      <tr>
+        <td class="row-label">Amaiera</td>
+        <td>1933ko azaroko hauteskundeetan eskuinak irabazi; emakumeen lehen botoa.</td>
+        <td>1935eko ustelkeria-eskandalu ondoren Gorteak desegin; 1936ko otsailean FP garaile.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ATALA 3: 1931ko Konstituzioaren oposizioaren mapa
+     ═══════════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>3. 1931ko Konstituzioaren aurkako oposizioa</h2>
+  <p class="desc">Konstituzioa aurrerakoia zen, baina sektore ugarirengan oposizio gogor piztu zuen; bakoitzak arrazoi desberdinak zituen.</p>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th>Sektorea</th>
+        <th>Oposizioaren arrazoi nagusia</th>
+        <th>Adierazpidea</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Eliza eta sektore katolikoak</strong></td>
+        <td>Eliza-Estatu banaketa, jesuiten ordena debekatu, eskola laikoak. Pio XI.ak bera agertu zen aurka.</td>
+        <td>Prentsa katolikoak diskurtso antierrepublikarra. CEDAren sorrera (1933). Elizen aurkako indarkeria pizteko arriskua.</td>
+      </tr>
+      <tr>
+        <td><strong>Monarkikoak eta karlismo tradizionala</strong></td>
+        <td>Errepublika monarkiaren erorketaren sinboloa; uste zuten Espainiaren batasuna, fedea eta ordena soziala arriskuan zirela.</td>
+        <td>1932ko Sanjurjada (kolpe-saiakera porrotua). 1936ko konspirazioa. Karlistek matxinada armaturako prestaketa.</td>
+      </tr>
+      <tr>
+        <td><strong>Elite ekonomikoak</strong></td>
+        <td>Erreforma agrarioa jabetzak mehatxatzen zituela; Estatuaren esku-hartze handiagoa beldur.</td>
+        <td>Kapitalaren ihesa. Inbertsioen paralizazioa. Prentsaren eta alderdien bidezko diskurtso antierrepublikarra finantzatu.</td>
+      </tr>
+      <tr>
+        <td><strong>CNT/FAI (ezker muturreko anarkistak)</strong></td>
+        <td>Konstituzioa «burgesa» eta «itzurikeriazkoa»: ez zuen sistema kapitalista desegin, erreformak goitik zetozela.</td>
+        <td>Greba orokorrak. Lurren okupazioak. Casas Viejas (1933). Abstentzioa 1933ko hauteskundeetan (ezker porrotaren karia).</td>
+      </tr>
+      <tr>
+        <td><strong>Armada eta militar kontserbadoreak</strong></td>
+        <td>Erreforma militarrak (Akademia itxi, murrizketa, leialtasun-zina). Konstituzioa «Espainia zatitzen» ari zela (autonomia, sekularizazio).</td>
+        <td>1932ko Sanjurjada. 1936ko konspirazio militarra (Mola, Franco, Queipo). Uztailak 17ko altxamendua.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ATALA 4: Errepublikaren ezegonkortasunaren kausa-katea
+     ═══════════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>4. Errepublikaren ezegonkortasunaren kausa-katea</h2>
+  <p class="desc">Zein faktore nagusik ekarri zuten II. Errepublikaren amaiera eta Gerra Zibilaren hastea?</p>
+
+  <div class="cchain">
+
+    <div class="cc-node">
+      <strong>⬡ 1929ko Depresio Handia</strong>
+      <p>Krisi ekonomiko mundiala Espainiako langile eta nekazarien bizibaldintzak okertu zituen. Langabeziak eta miseria handitu ziren; erreformen premia areagotu zen, baina baliabide publikoak mugatuak ziren.</p>
+    </div>
+    <div class="cc-arrow">↓</div>
+
+    <div class="cc-node">
+      <strong>⬡ Erreformen erresistentzia eta porrota</strong>
+      <p>Lur-jabeek, Elizak eta militar kontserbadoreek erreformen aurka egin zuten sistematikoki. Aplikazioa motela eta mugatua izan zen; ezkerreko erradikalek ere (CNT) gobernua «gutxiegi» zela salatu zuten. Desilusioa orokortu zen.</p>
+    </div>
+    <div class="cc-arrow">↓</div>
+
+    <div class="cc-node">
+      <strong>⬡ Polarizazio ideologikoa</strong>
+      <p>Ezker eta eskuinaren arteko distantzia gehituz joan zen. Lehen biurtekoko batasun-gunea apurtu zen; indar politikoak elkarrizketa albo batera utzi eta aurkariak suntsitu nahi zituzten. 1934ko biurteko kontrarreformatzaileak tentsioa muturrera eraman zuen.</p>
+    </div>
+    <div class="cc-arrow">↓</div>
+
+    <div class="cc-node">
+      <strong>⬡ Indarkeria politikoaren gorakada</strong>
+      <p>Falangeren kale-borroka, CNTren grebak eta matxinadak (Casas Viejas, Urriko Iraultza), errepresio militarra Asturiasen (~1.500 hildako). 1936ko udaberrian tiroketa eta hilketak eguneroko bihurtu ziren.</p>
+    </div>
+    <div class="cc-arrow">↓</div>
+
+    <div class="cc-node">
+      <strong>⬡ Konspirazio militarra</strong>
+      <p>Ofizial kontserbadoreek (Mola, Franco, Queipo) sistematikoki antolatu zuten altxamendua. Calvo Soteloren hilketa (uztailak 13) kolpea azkartu zuen. Gobernuak ez zuen egoera kontrolatzeko kapazitaterik.</p>
+    </div>
+    <div class="cc-arrow">↓</div>
+
+    <div class="cc-node">
+      <strong>⬡ Uztailak 17: Estatu-kolpea → Gerra Zibila</strong>
+      <p>Afrikako armada matxinatu zen. Errepublikaren amaiera ez zen prozesu natural baten ondorio hutsa: legezko gobernuaren aurkako estatu-kolpe batek bidera eraman zuen Espainia hiru urteko Gerra Zibilera eta ia 40 urteko diktadurara.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ATALA 5: Indar politikoen konexio-mapa
+     ═══════════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>5. Indar politikoen konexio-mapa</h2>
+  <p class="desc">II. Errepublikako indar politiko nagusiak eta haien kokapena, alde eta espektro politikoaren arabera.</p>
+
+  <div class="cmap-wrap">
+    <div class="cmap-center">
+      <strong>II. Errepublika (1931–1936)</strong>
+      <span>Sistema demokratiko-konstituzionala — indar guztien eremua</span>
+    </div>
+
+    <div class="cmap-grid">
+      <div class="cmap-node cn-erd">
+        <h4>🟣 Errepublikanoak (Azaña, Alcalá-Zamora)</h4>
+        <p>Sistema errepublikar eta demokratikoaren aldekoak. Erreformen bidez modernizazioa. Manuel Azaña lehen biurtekoko figura nagusia. Fronte Popularreko kide 1936an.</p>
+      </div>
+
+      <div class="cmap-node cn-soc">
+        <h4>🔴 PSOE–UGT (Prieto, Largo Caballero)</h4>
+        <p>Alderdi Sozialista eta sindikatu langilea. Lehen biurtekoan gobernukide. 1933tik oposizioa. Urriko Iraultza (1934) sustatu. Fronte Popularreko kide.</p>
+      </div>
+
+      <div class="cmap-node cn-cnt">
+        <h4>🔵 CNT–FAI (anarkistak)</h4>
+        <p>Sindikatu eta erakunde anarkistako masa-mugimendua. Errepublikaren aurka —«burgesa» zela zioten—. Greba orokorrak eta matxinadak (Casas Viejas). Hauteskundeetan abstentzioa.</p>
+      </div>
+
+      <div class="cmap-node cn-esk">
+        <h4>🟠 CEDA (Gil-Robles)</h4>
+        <p>Eskuin katoliko nagusia. 1933tik Lerrouxen gobernuaren sostengua. 1934ko urrian gobernuan sartu. Errepublikarekiko anbiguotasuna; 1936ko porrotaren ondoren eskuin autoritarioarengana hurbildu.</p>
+      </div>
+
+      <div class="cmap-node cn-arm">
+        <h4>⚫ Karlismoa eta monarkikoak</h4>
+        <p>Errepublikaren aurkako sektore tradizionalistak. Erregearen itzulera eta ordena sozial tradizionala aldarrikatu. 1932ko Sanjurjada. 1936ko konspirazioan aktiboak.</p>
+      </div>
+
+      <div class="cmap-node cn-erd" style="border-top-color:#9333ea">
+        <h4>🟤 Falange Española (J. A. Primo de Rivera)</h4>
+        <p>1933an sortutako alderdi faxista. Kale-borroka antolatu zuen 1936ko udaberrian. Txikia baina bisuala; polarizazioa areagotu zuen. 1937an karlisteekin baturik Francoren erregimena osatu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SINTESIA
+     ═══════════════════════════════════════════ -->
+<section class="kx-section">
+  <div class="sintesi">
+    <h3>🧩 Sintesia: 5 ideia giltzarri</h3>
+    <ul>
+      <li><strong>Modernizazio ausarta, baina desorekatua:</strong> II. Errepublika Espainiako historiako esperientzia demokratiko ausartenetako bat izan zen; baina erreformak oposizio handia piztu zuen, eta baliabide eta denbora falta zirela ere, aplikazioa motela eta mugatua gertatu zen.</li>
+      <li><strong>Oposizio anitz eta osagarria:</strong> Elizak, lur-jabeen eliteek, militar kontserbadoreek, anarkistek eta eskuin autoritarioak — bakoitzak bere arrazoiekin — demokraziaren oinarriak ahuldu zituzten. Ezker eta eskuinak ez zuten adostasunik bilatu.</li>
+      <li><strong>1931ko Konstituzioa giltzarri:</strong> Aurrerakoiena zen, baina adostasun nahikorik sortu ezin izanez, alde guztiek mehatxutzat hartutako testu bihurtu zen. Hori Errepublikaren tragediaren muinean zegoen.</li>
+      <li><strong>Polarizazioa eta indarkeria politikoa erabakigarriak:</strong> 1936ko udaberrian gizartea bi muturretan zatituta zegoen; kale-borrokak, lurren okupazioak eta konspirazio militarrak erakusten zuten elkarrizketa ezinezko bihurtu zela.</li>
+      <li><strong>Kolpeak ez zuen arrakasta osoa momentuan:</strong> Uztailak 17ko matxinadak ez zuen gobernua berehala suntsitu; milizien eta erakundeen erresistentziak Espainia bi zatitan banatu zuen, eta 3 urteko Gerra Zibil odoltsuari bidea ireki zion.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="kx-footer">
+  <p>Historia · 2. Batxilergoa · La Salle Donostia &nbsp;·&nbsp;
+  <a href="../index.html">Hasiera</a> &nbsp;·&nbsp;
+  <a href="04-bigarren-errepublika.html">4. Gaia</a></p>
+  <p style="margin-top:.3rem">© 2025 Luken San Sebastián Alkorta · CC BY-SA 4.0</p>
+</footer>
+
+</body>
+</html>
