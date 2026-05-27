@@ -48,18 +48,20 @@
 
     /* ── process chain ── */
     .proc-chain { display:flex; flex-direction:column; gap:0; }
-    .pc-step { display:grid; grid-template-columns:3.5rem 1fr; gap:0 1rem; position:relative; }
+    .pc-step { display:grid; grid-template-columns:5.6rem 1fr; gap:0 1rem; position:relative; }
     .pc-step::before {
-      content:''; position:absolute; left:1.65rem; top:3.2rem;
+      content:''; position:absolute; left:2.75rem; top:3.25rem;
       bottom:-1px; width:2px;
       background:linear-gradient(to bottom,var(--accent),var(--accent-2));
     }
     .pc-step:last-child::before { display:none; }
     .pc-dot {
-      width:3.2rem; height:3.2rem; border-radius:50%;
+      min-width:3.2rem; width:max-content; max-width:5.2rem; height:3.2rem;
+      border-radius:999px; box-sizing:border-box; padding:.35rem .5rem;
       background:linear-gradient(135deg,var(--accent),var(--accent-2));
       color:#fff; display:flex; align-items:center; justify-content:center;
-      font-weight:700; font-size:.78rem; flex-shrink:0;
+      font-weight:700; font-size:.72rem; line-height:1.05; text-align:center;
+      overflow-wrap:anywhere; letter-spacing:0; justify-self:center; align-self:start; flex-shrink:0;
       box-shadow:0 2px 8px rgba(71,85,105,.35); z-index:1; margin-top:.15rem;
     }
     .pc-body {
