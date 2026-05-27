@@ -1,9 +1,11 @@
 # Site-wide configuration. Used by build.py to render index.html and tema pages.
 site:
-  title: "Espainiako Historia · 2. Batxilergoa · 1808–2011"
-  description: "Espainiako Historia, 2. Batxilergoa: 10 gaiak, denbora-lerro interaktiboa eta kontzeptuen glosarioa. Egilea: Luken San Sebastián Alkorta. CC BY-SA 4.0."
+  title: "Espainiako Historia 2. Batxilergoa | EBAU materialak euskaraz"
+  description: "Espainiako Historia ikasteko 2. Batxilergorako webgunea: 10 gaiak, apunteak PDFan, denbora-lerroa, glosarioa eta EBAU/PAU/USE prestatzeko tresnak euskaraz."
   base_url: "https://btx2-eus.github.io/historia-btx2"
   locale: "eu_ES"
+  og_title: "Espainiako Historia 2. Batxilergoa"
+  og_description: "EBAU/PAU/USE prestatzeko gaiak, PDFak, denbora-lerroa, glosarioa eta ikasteko tresnak euskaraz."
   brand:
     label: "Historia BTX2"
     sublabel: "Espainiako Historia · 2. Batxilergoa"

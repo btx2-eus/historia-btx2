@@ -9,12 +9,12 @@
   <meta property="og:locale" content="{{ site.locale }}" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="{{ site.brand.label }}" />
-  <meta property="og:title" content="{{ site.title }}" />
-  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:title" content="{{ site.og_title | default(site.title, true) }}" />
+  <meta property="og:description" content="{{ site.og_description | default(site.description, true) }}" />
   <meta property="og:url" content="{{ site.base_url }}/" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="{{ site.title }}" />
-  <meta name="twitter:description" content="{{ site.description }}" />
+  <meta name="twitter:title" content="{{ site.og_title | default(site.title, true) }}" />
+  <meta name="twitter:description" content="{{ site.og_description | default(site.description, true) }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -40,9 +40,9 @@
 
   <section class="hero" id="main" tabindex="-1">
     <div class="container">
-      <span class="hero-eyebrow">★ Espainiako Historia · 2. Batxilergoa</span>
+      <span class="hero-eyebrow">★ 2. BTX · EBAU/PAU/USE</span>
       <h1>Espainiako <span class="grad-text">Historia</span></h1>
-      <p class="lead">1808-2011</p>
+      <p class="lead">2. Batxilergoko Espainiako Historia lantzeko eta EBAU/PAU/USE prestatzeko materialak euskaraz: gaiak, PDFak, denbora-lerroa, glosarioa eta errepasorako tresnak.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="temas/01-{{ temas[0].slug }}.html">Hasi 1. gaiarekin →</a>
         <a class="btn btn-ghost" href="#denbora-lerroa"> Ikusi denbora-lerroa</a>
@@ -74,7 +74,7 @@
     <div class="container">
       <div class="section-head reveal">
         <span class="kicker">Programa</span>
-        <h2>Historiako {{ temas | length }} gaiak</h2>
+        <h2>Espainiako Historiako {{ temas | length }} gaiak</h2>
         <p>Gaiak laburbilduta daude: oinarrizko azalpena dira, irakaslearen azalpenekin osatu beharrekoak.</p>
       </div>
       <div class="cards-grid">
@@ -97,11 +97,11 @@
         <p>Azterketak errazago gainditzeko eta gaiak hobeto ulertzeko diseinatutako baliabideak.</p>
       </div>
       <div class="features">
-        <a class="feature reveal" href="#denbora-lerroa"><div class="ficon">🕓</div><h3>Denbora-lerro interaktiboa</h3><p>Mugarri historiko nagusiak begi-kolpe batean, bakoitza bere gaira lotuta.</p></a>
-        <a class="feature reveal" data-delay="1" href="https://historiaebaukontzeptuhistorikoak.netlify.app/" target="_blank" rel="noopener"><div class="ficon">📖</div><h3>Kontzeptuen glosarioa</h3><p>Kontzeptu historiko nagusiak bilatzeko eta errepasatzeko glosario irekia.</p></a>
+        <a class="feature reveal" href="#denbora-lerroa"><div class="ficon">🕓</div><h3>Denbora-lerro interaktiboa</h3><p>1808-2011 bitarteko mugarri nagusiak, bakoitza bere gaira lotuta.</p></a>
+        <a class="feature reveal" data-delay="1" href="https://historiaebaukontzeptuhistorikoak.netlify.app/" target="_blank" rel="noopener"><div class="ficon">📖</div><h3>Kontzeptuen glosarioa</h3><p>Kontzeptu historiko nagusiak bilatzeko eta errepasatzeko baliabide irekia.</p></a>
         <a class="feature reveal" data-delay="2" href="kontzeptu-entrenamendua.html"><div class="ficon">🧠</div><h3>IA kontzeptu entrenamendua</h3><p>5 kontzeptu historiko esaldi bakarrean lotzeko ariketa gidatua, hautaprobarako pentsatua.</p></a>
-        <a class="feature reveal" data-delay="3" href="pau-egitura.html"><div class="ficon">📝</div><h3>PAU azterketaren egitura</h3><p>A, B eta C atalak, puntuazioa eta B/C galderen ebaluazio-irizpideak begi-kolpe batean.</p></a>
-        <a class="feature reveal" href="pdf/{{ site.apunteak_pdf }}" download><div class="ficon">⬇️</div><h3>PDF deskargagarriak</h3><p>Apunte guztien bilduma osoa PDF formatuan, deskargatu eta inprimatzeko.</p></a>
+        <a class="feature reveal" data-delay="3" href="pau-egitura.html"><div class="ficon">📝</div><h3>PAU/EBAU azterketaren egitura</h3><p>A, B eta C atalak, puntuazioa eta B/C galderen ebaluazio-irizpideak begi-kolpe batean.</p></a>
+        <a class="feature reveal" href="pdf/{{ site.apunteak_pdf }}" download><div class="ficon">⬇️</div><h3>PDF deskargagarriak</h3><p>Apunteen bilduma osoa PDF formatuan, deskargatzeko eta inprimatzeko.</p></a>
       </div>
     </div>
   </section>
