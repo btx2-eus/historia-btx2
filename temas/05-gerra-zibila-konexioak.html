@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Konexioak eta prozesuak · 5. Gaia: Gerra Zibila | Historia BTX2</title>
+  <link rel="stylesheet" href="../assets/css/styles.css?v=6">
+  <style>
+    :root {
+      --accent:     #b91c1c;
+      --accent-2:   #991b1b;
+      --accent-ink: #450a0a;
+      --accent-tint:#fef2f2;
+    }
+
+    body { background: #fff8f8; }
+
+    /* ── hero ── */
+    .kx-hero {
+      background: linear-gradient(135deg, var(--accent) 0%, #7f1d1d 100%);
+      color:#fff; padding:2.5rem 1.5rem 2rem; text-align:center;
+    }
+    .kx-hero .badge {
+      display:inline-block; background:rgba(255,255,255,.2);
+      border-radius:2rem; padding:.25rem .9rem;
+      font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
+      margin-bottom:.75rem;
+    }
+    .kx-hero h1 { font-size:clamp(1.4rem,3vw,2rem); margin:0 0 .4rem; }
+    .kx-hero p  { opacity:.88; font-size:.97rem; margin:0; }
+    .back-btn {
+      display:inline-flex; align-items:center; gap:.4rem;
+      background:rgba(255,255,255,.2); color:#fff;
+      border:1px solid rgba(255,255,255,.35); border-radius:.5rem;
+      padding:.4rem .9rem; font-size:.82rem; text-decoration:none;
+      margin-top:1.1rem; transition:background .2s;
+    }
+    .back-btn:hover { background:rgba(255,255,255,.35); }
+
+    /* ── section wrapper ── */
+    .kx-section { max-width:900px; margin:2rem auto; padding:0 1rem; }
+    .kx-section h2 {
+      font-size:1.15rem; color:var(--accent-ink);
+      border-left:4px solid var(--accent); padding-left:.75rem;
+      margin:0 0 1.25rem;
+    }
+    .kx-section .desc { font-size:.88rem; color:#6b7280; margin:-.75rem 0 1.25rem .2rem; }
+
+    /* ── process chain ── */
+    .proc-chain { display:flex; flex-direction:column; gap:0; }
+    .pc-step { display:grid; grid-template-columns:3.5rem 1fr; gap:0 1rem; position:relative; }
+    .pc-step::before {
+      content:''; position:absolute; left:1.65rem; top:3.2rem;
+      bottom:-1px; width:2px;
+      background:linear-gradient(to bottom,var(--accent),var(--accent-2));
+    }
+    .pc-step:last-child::before { display:none; }
+    .pc-dot {
+      width:3.2rem; height:3.2rem; border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; display:flex; align-items:center; justify-content:center;
+      font-weight:700; font-size:.78rem; flex-shrink:0;
+      box-shadow:0 2px 8px rgba(185,28,28,.35); z-index:1; margin-top:.15rem;
+    }
+    .pc-body {
+      background:#fff; border-radius:.75rem; padding:1rem 1.1rem;
+      margin-bottom:1rem; box-shadow:0 1px 6px rgba(185,28,28,.1);
+      border-left:3px solid var(--accent-tint);
+    }
+    .pc-body strong { color:var(--accent-ink); display:block; margin-bottom:.2rem; }
+    .pc-body p { margin:0; font-size:.9rem; color:#4b5563; }
+    .pc-badge {
+      display:inline-block; border-radius:1rem; padding:.15rem .6rem;
+      font-size:.73rem; font-weight:600; margin-left:.4rem;
+    }
+    .pb-kolpe   { background:#fee2e2; color:#7f1d1d; }
+    .pb-defentsa{ background:#dbeafe; color:#1e40af; }
+    .pb-front   { background:#d1fae5; color:#065f46; }
+    .pb-galera  { background:#fef3c7; color:#92400e; }
+    .pb-amaiera { background:#f3e8ff; color:#6b21a8; }
+
+    /* ── comparison tables ── */
+    .comp-table { width:100%; border-collapse:collapse; background:#fff;
+      border-radius:.75rem; overflow:hidden;
+      box-shadow:0 1px 8px rgba(185,28,28,.1); font-size:.88rem; }
+    .comp-table th {
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; padding:.65rem .9rem; text-align:left; font-size:.82rem;
+    }
+    .comp-table td { padding:.6rem .9rem; border-bottom:1px solid #fee2e2; vertical-align:top; }
+    .comp-table tr:last-child td { border-bottom:none; }
+    .comp-table tr:nth-child(even) td { background:#fff8f8; }
+    .comp-table .row-label { font-weight:600; color:var(--accent-ink); width:22%; }
+    .sh-rep   { background:linear-gradient(135deg,#1d4ed8,#3b82f6) !important; }
+    .sh-naz   { background:linear-gradient(135deg,#7f1d1d,#b91c1c) !important; }
+    .sh-ger   { background:linear-gradient(135deg,#374151,#6b7280) !important; }
+    .sh-urss  { background:linear-gradient(135deg,#991b1b,#dc2626) !important; }
+    .sh-brit  { background:linear-gradient(135deg,#1e3a8a,#2563eb) !important; }
+
+    /* ── cause-effect chain ── */
+    .cchain { display:flex; flex-direction:column; align-items:center; gap:0; }
+    .cc-node {
+      width:100%; max-width:580px; background:#fff; border-radius:.75rem;
+      padding:.9rem 1.1rem; box-shadow:0 1px 6px rgba(185,28,28,.12);
+      border-left:4px solid var(--accent);
+    }
+    .cc-node strong { color:var(--accent-ink); display:block; margin-bottom:.2rem; }
+    .cc-node p { margin:0; font-size:.88rem; color:#4b5563; }
+    .cc-arrow { font-size:1.4rem; color:var(--accent); line-height:1; margin:.4rem 0; text-align:center; }
+
+    /* ── connection map ── */
+    .cmap-wrap { display:grid; grid-template-columns:1fr; gap:1rem; }
+    .cmap-center {
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; border-radius:.75rem; padding:1.1rem;
+      text-align:center; box-shadow:0 2px 10px rgba(185,28,28,.3);
+    }
+    .cmap-center strong { font-size:1.05rem; display:block; }
+    .cmap-center span   { font-size:.85rem; opacity:.88; }
+    .cmap-grid { display:grid; grid-template-columns:1fr 1fr; gap:.85rem; }
+    .cmap-node {
+      background:#fff; border-radius:.7rem; padding:.9rem;
+      box-shadow:0 1px 6px rgba(185,28,28,.1);
+      border-top:3px solid var(--accent);
+    }
+    .cmap-node h4 { margin:0 0 .3rem; font-size:.88rem; color:var(--accent-ink); }
+    .cmap-node p  { margin:0; font-size:.82rem; color:#6b7280; }
+    .cn-ber  { border-top-color:#374151; }
+    .cn-erb  { border-top-color:#1d4ed8; }
+    .cn-bil  { border-top-color:#7c3aed; }
+    .cn-dem  { border-top-color:#b91c1c; }
+    .cn-mem  { border-top-color:#059669; }
+    .cn-euz  { border-top-color:#d97706; }
+
+    /* ── synthesis ── */
+    .sintesi {
+      background:linear-gradient(135deg,var(--accent-tint),#fce7e7);
+      border:1px solid #fca5a5; border-radius:.75rem;
+      padding:1.25rem 1.4rem;
+    }
+    .sintesi h3 { margin:0 0 .75rem; color:var(--accent-ink); font-size:1rem; }
+    .sintesi ul { margin:0; padding-left:1.3rem; }
+    .sintesi li { margin-bottom:.5rem; font-size:.9rem; color:#374151; }
+    .sintesi li:last-child { margin-bottom:0; }
+
+    /* ── footer ── */
+    .kx-footer { text-align:center; padding:2rem 1rem; font-size:.8rem; color:#9ca3af; }
+    .kx-footer a { color:var(--accent); text-decoration:none; }
+
+    @media (max-width:540px) { .cmap-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<header class="kx-hero">
+  <div class="badge">5. Gaia · 1936–1939</div>
+  <h1>Gerra Zibila: konexioak eta prozesuak</h1>
+  <p>Altxamendutik garaipenera, bi bandoak, nazioarteko jokalekua eta erretagoardiako indarkeria</p>
+  <a class="back-btn" href="05-gerra-zibila.html">← Gaira itzuli</a>
+</header>
+
+<!-- ═══════════════════════════════════════
+     1 · Prozesu-katea
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>1. Altxamendutik garaipenera: gerraren prozesu-katea (1936–1939)</h2>
+  <p class="desc">Zazpi urrats nagusiak uztaileko kolpetik Francoren garaipenera.</p>
+
+  <div class="proc-chain">
+
+    <div class="pc-step">
+      <div class="pc-dot">Uzt. 17</div>
+      <div class="pc-body">
+        <strong>Altxamendu militarra — porrot partziala <span class="pc-badge pb-kolpe">kolpea</span></strong>
+        <p>Mola, Franco, Queipo eta beste militarrek konspirazioa gauzatu zuten. Hiri nagusiak (Madril, Bartzelona, Valentzia, Bilbo) ez zituzten hartu; herrialdea bi eremutan banatu zen. Hasierako kolpe azkarra gerra zibil luze bihurtu zen.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">Ira. 36</div>
+      <div class="pc-body">
+        <strong>Banden egituraketa <span class="pc-badge pb-kolpe">antolaketa</span></strong>
+        <p>Matxinatuek: Franco Jeneralisimo eta Estatuko Buru (urria). Errepublikak: Largo Caballeroren gobernu antifaxista (PSOE, PCE, CNT). Euzko Jaurlaritza (urria, Agirre). Armada Popularra sortzen hasita milizia irregularretatik.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">Az. 36</div>
+      <div class="pc-body">
+        <strong>Madrilen defentsa — «¡No pasarán!» <span class="pc-badge pb-defentsa">defentsa</span></strong>
+        <p>Gobernua Valentziara lekualdatu zen, baina hirian Defentsa Batzordea eta herri-miliziek erresistentzia antolatu zuten. Sobietar Batasunaren lehen laguntza militarra eta Brigada Internazionalak Madril salbatzen lagundu zuten. Gerra luze izango zen.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1937</div>
+      <div class="pc-body">
+        <strong>Iparraldeko kanpaina — Gernika, Bilbo erori <span class="pc-badge pb-galera">galera</span></strong>
+        <p>Gipuzkoa 1936ko irailean erori zen. 1937ko apirilean Gernikako bonbardaketa (Condor Legioa), mundu-ikur. Burdin Hesia hautsi eta Bilbo ekainaren 19an erori. Urrian Iparraldeko frontea desagertu. Errepublikak industria-oinarri nagusia galdu zuen.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1937b</div>
+      <div class="pc-body">
+        <strong>Errepublikaren barne-zatiketa — Negrínen gobernua <span class="pc-badge pb-kolpe">krisia</span></strong>
+        <p>Maiatzeko Bartzelonako gertakarietan komunisten, anarkisten (CNT) eta POUMen arteko borroka piztu zen. Largo Caballero ahuldu eta Juan Negrín gobernuburu izendatu zuten. Zentralizazioa eta erresistentzia luzearen estrategia.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1938</div>
+      <div class="pc-body">
+        <strong>Ebroko gudua — Errepublikaren azken indarra <span class="pc-badge pb-galera">galera</span></strong>
+        <p>Aragoiko ofentsibaren ondoren matxinatuek Mediterraneora iritsi, Errepublika bi zatitan banatuaz. Ebroko ofentsiba (uztaila–azaroa): arrakasta taktikoak hasieran, baina galera izugarriak. Errepublikaren azken gaitasun militarra agortu zen.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1939</div>
+      <div class="pc-body">
+        <strong>Bartzelona, Madril — Francoren garaipena <span class="pc-badge pb-amaiera">amaiera</span></strong>
+        <p>Bartzelona urtarrilak 26an erori; ~450.000 errefuxiatu Frantziara. Britainia eta Frantziak Francoren gobernua aitortu. Casadoren barne-kolpea Madrilen (martxoa): negoziaziorik ez, errendizio baldintzagabea. Apirilak 1: gerra amaitutzat.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     2 · Bi bandoak alderatuta
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>2. Bi bandoak alderatuta</h2>
+  <p class="desc">Errepublika eta indar nazionalen (frankisten) abantaila eta ahulezia nagusiak.</p>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="row-label">Alderdia</th>
+        <th class="sh-rep">🔵 Errepublika</th>
+        <th class="sh-naz">🔴 Indar Nazionalak (frankistak)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="row-label">Agintea</td>
+        <td>Gobernu errepublikarra (Giral → Largo Caballero → Negrín). Barne-zatiketa handia: PSOE, PCE, CNT, POUM.</td>
+        <td>Franco Jeneralisimo eta Estatuko Buru (urria 1936tik). Botere zentralizatua; militarrak, karlistak, falangistak eta Eliza.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Armada</td>
+        <td>Armada Popularra: milizia irregularrak pixkanaka integratuz. Hasierako antolaketa-arazoak eta barne-liskarrak.</td>
+        <td>Armada erregularra + Afrikako tropak (Legión eta Regulares). Osaera profesional eta homogeneoagoa.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Laguntza nazioartekoa</td>
+        <td>URSS (armak + aholkariak, urre-erreserbarekin ordainduak). Brigada Internazionalak (~40.000 boluntario). Ez-Interbentzio politikak kaltetua.</td>
+        <td>Alemaniako Condor Legioa (hegazkinak, bonbak, pilotuak). Italia: ~100.000 soldadu + Aviazione Legionaria. Sistematikoa, jarraitua eta teknologikoki aurreratua.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Baliabide ekonomikoak</td>
+        <td>Biztanleria handiagoa. Hiri eta industria-gune nagusiak hasieran (Madril, Bartzelona, Bilbo). Urre-erreserba nazionala (URSS-era bidalita 1936an).</td>
+        <td>Landa-eremu zabala eta janaria. Asturiasen ikatza, Bizkaiko industria 1937tik. Atzerriko inbertsio eta kreditua errazago.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Barne egonkortasuna</td>
+        <td>Zailago: alderdi eta sindikatuen arteko desadostasunak. 1937ko Bartzelonako liskarrak. Botere-zatiketa lehen hilabeteetan.</td>
+        <td>Hobeto: Franco buru zentralizatua. 1937an karlistak eta falangistak baturik (FET y de las JONS). Errepresioak oposizioa isilarazi.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Erlijio-jarrera</td>
+        <td>Laikoa eta antiiklerikala. 1936ko lehen hilabeteetan elizen aurkako indarkeria («terrore gorria»).</td>
+        <td>Elizaren babes osoa. Gerra «gurutzada» gisa aurkeztu. Hierarkia katolikoak frankismoa legitimatu zuen.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Gerraren emaitza</td>
+        <td>Galera (1939ko apirila). Ehunka mila hildako, 450.000 errefuxiatu eta ia 40 urteko diktadura.</td>
+        <td>Garaipena (1939ko apirila). Diktadura autoritario, errepresibo eta antiliberala ezarri zuten.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═══════════════════════════════════════
+     3 · Nazioarteko laguntzaren alderaketa
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>3. Nazioarteko laguntzaren alderaketa</h2>
+  <p class="desc">Nork lagundu zuen nori, eta zein neurritan? Desoreka erabakigarria izan zen.</p>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th>Potentzia / erakundea</th>
+        <th>Zer bando lagundu zuen</th>
+        <th>Zer lagundu zuen</th>
+        <th>Zergatik</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>🇩🇪 Alemania nazioa</strong></td>
+        <td>Frankistak (Nazionalak)</td>
+        <td>Condor Legioa: hegazkinak, pilotuak, bonbak, entrenamendua. Arma eta taktika berriak probatu (Gernika). Logistika eta lehengaiak.</td>
+        <td>Erregimen faxisten interesak babestea. Arma berrien entsegu-zelaiana. Mendebaldeko demokrazien pasibotasuna neurtu.</td>
+      </tr>
+      <tr>
+        <td><strong>🇮🇹 Italia faxista</strong></td>
+        <td>Frankistak (Nazionalak)</td>
+        <td>Aviazione Legionaria. ~100.000 soldadu. Ontziak eta itsas blokeo laguntza.</td>
+        <td>Mussolini Mediterraneoan nagusitasun estrategikoa lortu nahi. Erregimen faxisten elkartasuna.</td>
+      </tr>
+      <tr>
+        <td><strong>🇷🇺 Sobietar Batasuna</strong></td>
+        <td>Errepublika</td>
+        <td>Armak eta aholkulari militarrak. Nazioaren urre-erreserbarekin ordainduak (Nazioaren Urrea). PCEren eragina areagotu.</td>
+        <td>Faxismoaren aurrerapena geldiarazi. Errepublika mendekotasun politikoan sartu.</td>
+      </tr>
+      <tr>
+        <td><strong>🌍 Brigada Internazionalak</strong></td>
+        <td>Errepublika</td>
+        <td>~40.000 boluntario mundutik: sozialistak, komunistak, anarkistak, demokratak. Madrilen defentsan parte hartze handia.</td>
+        <td>Konpromiso antifaxista eta politikoa; nazioarteko solidaritatea.</td>
+      </tr>
+      <tr>
+        <td><strong>🇬🇧🇫🇷 Britainia + Frantzia</strong></td>
+        <td>Ez-Interbentzio politika</td>
+        <td>Laguntza EZEREZ ofizialean. Ez-Interbentzio komitea sortu — Alemaniak eta Italiak araua urratu.</td>
+        <td>Gerra Europan hedatzearen beldurra. Iraultza komunistaren beldur gehiago zuten faxismoaren aldean. Pasibotasun estrategikoa.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═══════════════════════════════════════
+     4 · Erretagoardiako indarkeria: kausa-katea
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>4. Erretagoardiako indarkeria: kausa-katea</h2>
+  <p class="desc">Nola garatu zen bi eremuetako indarkeria eta zer ondorio ekarri zituen?</p>
+
+  <div class="cchain">
+
+    <div class="cc-node">
+      <strong>⬡ Altxamendua eta Estatuaren kolapsoa (1936ko uztaila)</strong>
+      <p>Armadaren matxinadak errepublikaren segurtasun-indarren egitura hautsi zuen. Gobernuak ez zuen lehen asteetan ordena publikoa modu eraginkorrean kontrolatzeko gaitasunik: botere-hutsunea.</p>
+    </div>
+    <div class="cc-arrow">↓</div>
+
+    <div class="cc-node">
+      <strong>⬡ Bi eremutako logika desberdinak</strong>
+      <p><strong>Errepublika:</strong> miliziek, komite iraultzaileek eta tokiko talde armatuek indar handia hartu zuten. Mendekua, antiklerikalismoa eta iraultza sozialaren logika nahastu ziren. «Terrore gorria» (50.000–60.000 biktima, batez ere 1936an).<br>
+      <strong>Frankistak:</strong> Molaren aginduetatik bertatik terrorearen erabilera estrategia politiko eta militar gisa planifikatua zen. «Terrore zuria»: sistematikoa, planifikatua, iraunkorra.</p>
+    </div>
+    <div class="cc-arrow">↓</div>
+
+    <div class="cc-node">
+      <strong>⬡ Errepublikako gobernuak kontrolatzeko saiakerak</strong>
+      <p>1937tik aurrera Negrín eta aurreko gobernuek miliziak militarizatu, justizia erregularra berrezarri eta komiteen boterea mugatu nahi izan zuten. Legez-kanpoko indarkeria nabarmen gutxitu zen 1937tik aurrera errepublikar eremuan.</p>
+    </div>
+    <div class="cc-arrow">↓</div>
+
+    <div class="cc-node">
+      <strong>⬡ Frankisten errepresio planifikatua: gerraostean luzatu</strong>
+      <p>Frankisten eremuan, ordea, errepresioa ez zen 1939ko apirilean amaitu: gerra-kontseiluak, heriotza-zigorrak, espetxeak, kontzentrazio-esparruak, lan-batailoiak eta depurazio profesionalak erregimen berriaren oinarri bihurtu ziren. 130.000–150.000 biktima.</p>
+    </div>
+    <div class="cc-arrow">↓</div>
+
+    <div class="cc-node">
+      <strong>⬡ Euskadiren berezitasuna: «Euskal Oasia»</strong>
+      <p>Euzko Jaurlaritzak ordena publikoa eta tolerantzia erlijiosoa mantendu zituen. EAJren izaera katolikoak Elizaren aurkako indarkeria mugatu zuen. Hala ere, frankistek euskal lurraldeak hartuz gero, apaizak barne, errepresio gogorra ezarri zuten.</p>
+    </div>
+    <div class="cc-arrow">↓</div>
+
+    <div class="cc-node">
+      <strong>⬡ Ondorio demografiko eta sozial izugarriak</strong>
+      <p>~500.000 hildako (frontek, errepresioa, gosea, gaixotasunak). ~450.000 errefuxiatu 1939an. «Gerraren haurrak». Gerraosteko Espainia: espetxeak, beldurra, depurazioak, gosea. Frankismoak ez zuen adiskidetzea bilatu: garaipena errepresioaren bidez sendotu zuen.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     5 · Ondorioen konexio-mapa
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>5. Gerraren ondorioen konexio-mapa</h2>
+  <p class="desc">Gerra Zibilaren emaitzak eta ondorioak hainbat esparrutan.</p>
+
+  <div class="cmap-wrap">
+    <div class="cmap-center">
+      <strong>Francoren garaipena — 1939ko apirilak 1</strong>
+      <span>Hiru urteko Gerra Zibilaren amaiera · Frankismoaren hasiera</span>
+    </div>
+
+    <div class="cmap-grid">
+      <div class="cmap-node cn-dem">
+        <h4>🔴 Diktadura (1939–1975)</h4>
+        <p>Ia 40 urteko erregimen autoritario, errepresibo eta antiliberala. Alderdi politikoak, sindikatuak eta prentsa askatasuna debekatua. Franco estatuburu hil arte.</p>
+      </div>
+
+      <div class="cmap-node cn-ber">
+        <h4>⚫ Errepresioa eta isiltasuna</h4>
+        <p>Gerra-kontseiluak, espetxeak, lan-batailoiak eta depurazioak urte luzez jarraitu zuten. Galtzaileen familiek beldur eta bazterketarekin bizi behar. Memoria historikoa ezabatzen saiatu ziren.</p>
+      </div>
+
+      <div class="cmap-node cn-erb">
+        <h4>🔵 Erbestea eta diaspora</h4>
+        <p>~450.000 errefuxiatu: Frantzia, Mexiko, URSS, Latinoamerika. Euskal Gobernua erbestean jarraitu zuen (Agirre eta ondorengoak). «Gerraren haurrak».</p>
+      </div>
+
+      <div class="cmap-node cn-euz">
+        <h4>🟡 Euskal autogobernua: memory eta itzulera</h4>
+        <p>1936ko Estatutua eta Euzko Jaurlaritza erbestean mantendu ziren. Frankismoak foru-berezitasunak ezeztatu. 1979an Gernikako Estatutua: 1936koaren oinordeko historikoa.</p>
+      </div>
+
+      <div class="cmap-node cn-bil">
+        <h4>🟣 II. Mundu Gerraren ataria</h4>
+        <p>Gernika eta bonbardaketa estrategikoak hurrengo gerraren taktiken entsegu-zelaian. Faxismoaren eta antifaxismoaren talka lehenagotik. 1939an gerra orokorra piztu zen.</p>
+      </div>
+
+      <div class="cmap-node cn-mem">
+        <h4>🟢 Memoria historikoa</h4>
+        <p>Frankismoak 40 urtez hildakoak ezkutatu zituen. Trantsizioan «ahanztura-ituna». 2007ko Memoria Historikoaren Legea eta gaur egungo eztabaida: hobi komunak, biktimen aitortza.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SINTESIA
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <div class="sintesi">
+    <h3>🧩 Sintesia: 5 ideia giltzarri</h3>
+    <ul>
+      <li><strong>Polarizazioaren emaitza:</strong> Gerra Zibila ez zen kolpe militar baten ondorio hutsa; II. Errepublikan (1931–1936) metatutako tentsio politiko, sozial eta ideologikoaren leherketak eragindako ondorioa zen. Elkarrizketa eta akordioa ezinezko bihurtu ziren.</li>
+      <li><strong>Nazioarteko desoreka erabakigarria:</strong> Alemaniako eta Italiako laguntza militar sistematikoak eta jarraitua frankistei abantaila erabakigarria eman zien; Errepublikak, berriz, Ez-Interbentzio politikaren ondorioz isolatuta, laguntza mugatua eta baldintzatua jaso zuen.</li>
+      <li><strong>Bi indarkeria-mota, baina ez berdinak:</strong> Bi aldeetan egon zen basakeria, baina matxinatuen eremuko errepresioa sistematikoa, planifikatua eta gerraostean luzatua izan zen; errepublikar eremuan, berriz, lehen hilabeetakoa Estatuaren kolapsoari eta milizien botereari lotua, eta gero gobernuak kontrolatzeko saiakerak egin zituen.</li>
+      <li><strong>Euskal berezitasuna:</strong> Euzko Jaurlaritzak «Euskal Oasia» sortu zuen — ordena publikoa, tolerantzia erlijiosoa eta autogobernu zabala — eta erbestean jarraitu zuen frankismoaren 40 urteetan, euskal autogobernuaren zilegitasun historikoa mantenduz.</li>
+      <li><strong>Iraupena eta ondorioak:</strong> Gerra 1939an amaitu zen, baina haren ondorioak — ia 40 urteko diktadura, errepresioa, erbestea, isiltasuna eta memoria historikoa — Espainiako eta Euskal Herriko gizarteak hamarkadaz markatu zituzten, gaur egungo eztabaidetan oraindik oihartzuna dutenak.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="kx-footer">
+  <p>Historia · 2. Batxilergoa · La Salle Donostia &nbsp;·&nbsp;
+  <a href="../index.html">Hasiera</a> &nbsp;·&nbsp;
+  <a href="05-gerra-zibila.html">5. Gaia</a></p>
+  <p style="margin-top:.3rem">© 2025 Luken San Sebastián Alkorta · CC BY-SA 4.0</p>
+</footer>
+
+</body>
+</html>
