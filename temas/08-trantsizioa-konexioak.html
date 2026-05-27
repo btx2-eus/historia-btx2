@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Konexioak eta prozesuak · 8. Gaia: Trantsizioa (1975–1982) | Historia BTX2</title>
+  <link rel="stylesheet" href="../assets/css/styles.css?v=6">
+  <style>
+    :root {
+      --accent:     #3b82f6;
+      --accent-2:   #2563eb;
+      --accent-ink: #1e3a8a;
+      --accent-tint:#eff6ff;
+    }
+
+    body { background: #f0f7ff; }
+
+    /* ── hero ── */
+    .kx-hero {
+      background: linear-gradient(135deg, var(--accent) 0%, #1e3a8a 100%);
+      color:#fff; padding:2.5rem 1.5rem 2rem; text-align:center;
+    }
+    .kx-hero .badge {
+      display:inline-block; background:rgba(255,255,255,.2);
+      border-radius:2rem; padding:.25rem .9rem;
+      font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
+      margin-bottom:.75rem;
+    }
+    .kx-hero h1 { font-size:clamp(1.4rem,3vw,2rem); margin:0 0 .4rem; }
+    .kx-hero p  { opacity:.88; font-size:.97rem; margin:0; }
+    .back-btn {
+      display:inline-flex; align-items:center; gap:.4rem;
+      background:rgba(255,255,255,.2); color:#fff;
+      border:1px solid rgba(255,255,255,.35); border-radius:.5rem;
+      padding:.4rem .9rem; font-size:.82rem; text-decoration:none;
+      margin-top:1.1rem; transition:background .2s;
+    }
+    .back-btn:hover { background:rgba(255,255,255,.35); }
+
+    /* ── section wrapper ── */
+    .kx-section { max-width:900px; margin:2rem auto; padding:0 1rem; }
+    .kx-section h2 {
+      font-size:1.15rem; color:var(--accent-ink);
+      border-left:4px solid var(--accent); padding-left:.75rem;
+      margin:0 0 1.25rem;
+    }
+    .kx-section .desc { font-size:.88rem; color:#6b7280; margin:-.75rem 0 1.25rem .2rem; }
+
+    /* ── process chain ── */
+    .proc-chain { display:flex; flex-direction:column; gap:0; }
+    .pc-step { display:grid; grid-template-columns:3.5rem 1fr; gap:0 1rem; position:relative; }
+    .pc-step::before {
+      content:''; position:absolute; left:1.65rem; top:3.2rem;
+      bottom:-1px; width:2px;
+      background:linear-gradient(to bottom,var(--accent),var(--accent-2));
+    }
+    .pc-step:last-child::before { display:none; }
+    .pc-dot {
+      width:3.2rem; height:3.2rem; border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; display:flex; align-items:center; justify-content:center;
+      font-weight:700; font-size:.78rem; flex-shrink:0;
+      box-shadow:0 2px 8px rgba(59,130,246,.35); z-index:1; margin-top:.15rem;
+    }
+    .pc-body {
+      background:#fff; border-radius:.75rem; padding:1rem 1.1rem;
+      margin-bottom:1rem; box-shadow:0 1px 6px rgba(59,130,246,.1);
+      border-left:3px solid var(--accent-tint);
+    }
+    .pc-body strong { color:var(--accent-ink); display:block; margin-bottom:.2rem; }
+    .pc-body p { margin:0; font-size:.9rem; color:#4b5563; }
+    .pc-badge {
+      display:inline-block; border-radius:1rem; padding:.15rem .6rem;
+      font-size:.73rem; font-weight:600; margin-left:.4rem;
+    }
+    .pb-erab   { background:#dbeafe; color:#1e40af; }
+    .pb-kont   { background:#dcfce7; color:#166534; }
+    .pb-ind    { background:#fee2e2; color:#7f1d1d; }
+    .pb-kris   { background:#fef3c7; color:#92400e; }
+    .pb-inst   { background:#f3e8ff; color:#6b21a8; }
+    .pb-dem    { background:#e0f2fe; color:#0c4a6e; }
+
+    /* ── comparison tables ── */
+    .comp-table { width:100%; border-collapse:collapse; background:#fff;
+      border-radius:.75rem; overflow:hidden;
+      box-shadow:0 1px 8px rgba(59,130,246,.1); font-size:.88rem; }
+    .comp-table th {
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; padding:.65rem .9rem; text-align:left; font-size:.82rem;
+    }
+    .comp-table td { padding:.6rem .9rem; border-bottom:1px solid #dbeafe; vertical-align:top; }
+    .comp-table tr:last-child td { border-bottom:none; }
+    .comp-table tr:nth-child(even) td { background:#f0f7ff; }
+    .comp-table .row-label { font-weight:600; color:var(--accent-ink); width:22%; }
+    .sh-suarez { background:linear-gradient(135deg,#f97316,#ea580c) !important; }
+    .sh-opoz   { background:linear-gradient(135deg,#dc2626,#991b1b) !important; }
+    .sh-konst  { background:linear-gradient(135deg,#7c3aed,#6d28d9) !important; }
+    .tag-ong   { display:inline-block; background:#dcfce7; color:#166534; border-radius:.4rem; padding:.05rem .4rem; font-size:.75rem; }
+    .tag-bad   { display:inline-block; background:#fee2e2; color:#991b1b; border-radius:.4rem; padding:.05rem .4rem; font-size:.75rem; }
+
+    /* ── cause-effect chain ── */
+    .cchain { display:flex; flex-direction:column; align-items:center; gap:0; }
+    .cc-node {
+      width:100%; max-width:580px; background:#fff; border-radius:.75rem;
+      padding:.9rem 1.1rem; box-shadow:0 1px 6px rgba(59,130,246,.12);
+      border-left:4px solid var(--accent);
+    }
+    .cc-node strong { color:var(--accent-ink); display:block; margin-bottom:.2rem; }
+    .cc-node p { margin:0; font-size:.88rem; color:#4b5563; }
+    .cc-arrow { font-size:1.4rem; color:var(--accent); line-height:1; margin:.4rem 0; text-align:center; }
+
+    /* ── connection map ── */
+    .cmap-wrap { display:grid; grid-template-columns:1fr; gap:1rem; }
+    .cmap-center {
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; border-radius:.75rem; padding:1.1rem;
+      text-align:center; box-shadow:0 2px 10px rgba(59,130,246,.3);
+    }
+    .cmap-center strong { font-size:1.05rem; display:block; }
+    .cmap-center span   { font-size:.85rem; opacity:.88; }
+    .cmap-grid { display:grid; grid-template-columns:1fr 1fr; gap:.85rem; }
+    .cmap-node {
+      background:#fff; border-radius:.7rem; padding:.9rem;
+      box-shadow:0 1px 6px rgba(59,130,246,.1);
+      border-top:3px solid var(--accent);
+    }
+    .cmap-node h4 { margin:0 0 .3rem; font-size:.88rem; color:var(--accent-ink); }
+    .cmap-node p  { margin:0; font-size:.82rem; color:#6b7280; }
+    .cn-franc  { border-top-color:#374151; }
+    .cn-suarez { border-top-color:#f97316; }
+    .cn-psoe   { border-top-color:#dc2626; }
+    .cn-pce    { border-top-color:#991b1b; }
+    .cn-eta    { border-top-color:#15803d; }
+    .cn-eaj    { border-top-color:#b45309; }
+
+    /* ── synthesis ── */
+    .sintesi {
+      background:linear-gradient(135deg,var(--accent-tint),#dbeafe);
+      border:1px solid #93c5fd; border-radius:.75rem;
+      padding:1.25rem 1.4rem;
+    }
+    .sintesi h3 { margin:0 0 .75rem; color:var(--accent-ink); font-size:1rem; }
+    .sintesi ul { margin:0; padding-left:1.3rem; }
+    .sintesi li { margin-bottom:.5rem; font-size:.9rem; color:#374151; }
+    .sintesi li:last-child { margin-bottom:0; }
+
+    /* ── footer ── */
+    .kx-footer { text-align:center; padding:2rem 1rem; font-size:.8rem; color:#9ca3af; }
+    .kx-footer a { color:var(--accent); text-decoration:none; }
+
+    @media (max-width:540px) { .cmap-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<header class="kx-hero">
+  <div class="badge">8. Gaia · 1975–1982</div>
+  <h1>Trantsizioa: konexioak eta prozesuak</h1>
+  <p>Frankismotik demokraziara korridore estuaren bidez: erreforma, kontsentsua, indarkeria eta autonomiak</p>
+  <a class="back-btn" href="08-trantsizioa.html">← Gaira itzuli</a>
+</header>
+
+<!-- ═══════════════════════════════════════
+     1 · Prozesu-katea
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>1. Frankismotik demokraziara: prozesu-katea (1975–1982)</h2>
+  <p class="desc">Zortzi urrats Francoren heriotzatik PSOEren garaipena arte.</p>
+
+  <div class="proc-chain">
+
+    <div class="pc-step">
+      <div class="pc-dot">1975</div>
+      <div class="pc-body">
+        <strong>Francoren heriotza eta Juan Carlos I.a errege <span class="pc-badge pb-inst">hasiera</span></strong>
+        <p>Azaroaren 20an Franco hil; 22an Juan Carlos I.a errege izendatua Gorte Frankistetan. Frankismoaren instituzioak eta aparatua osorik bizirik. Arias Navarrok gobernua motel eta zalantzati gidatu; ez du oposizioa asetu.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1976·07</div>
+      <div class="pc-body">
+        <strong>Suárez gobernuburu — erreforma politikoaren bidea <span class="pc-badge pb-erab">erreforma</span></strong>
+        <p>Erregeak Adolfo Suárez izendatu; frankismoaren barrutik hezia baina misio argiarekin: «legez lege» demokraziarantz. Paradoxa: diktadurak eraikitako legalitate eta instituzioak erabiliz demokraziara iritsi.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1976·11</div>
+      <div class="pc-body">
+        <strong>Erreforma Politikoaren Legea — frankismoak bere burua desmuntatu <span class="pc-badge pb-erab">lege-gakoa</span></strong>
+        <p>Frankismoaren Gorteek hauteskunde libreetarako bidea irekitzen zuen legea onartu (azaroa); abenduaren 15eko erreferendumean berretsia. Prokuradore askok «irtenbide kontrolatu» bat hobetsi zuten kolapsoa saihesteko.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1977·04</div>
+      <div class="pc-body">
+        <strong>PCE legalizatu — joko-zelaia zabaldu <span class="pc-badge pb-kont">kontsentsua</span></strong>
+        <p>Apirilaren 9an PCE legalizatu; une arriskutsu eta erabakigarria. Benetazko hauteskunderik gabe PCErik ezinezkoa zen, baina estatu kolpea bul zezakeen. Urrian Amnistiaren Legea ere onartua.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1977·06·15</div>
+      <div class="pc-body">
+        <strong>Lehen hauteskunde orokorrak — demokraziaren lehen balioztatze soziala <span class="pc-badge pb-dem">demokrazia</span></strong>
+        <p>UCD (Suárez) irabazle; PSOE (González) oposizio nagusi; PCE (Carrillo) integrazio-bidean. D'Hondt eta probintzia-barrutiaz: gobernagarritasuna bilatu, zatiketa handiegia saihesteko.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1977·10</div>
+      <div class="pc-body">
+        <strong>Moncloako Itunak eta Amnistia Legea — kontsentsuaren prezioa <span class="pc-badge pb-kris">krisia</span></strong>
+        <p>Gobernuak eta alderdi nagusiek krisi ekonomikoari aurre egiteko akordioa: inflazioa jaitsi, egonkortasuna bermatu. Langileentzat neurri gogorrak. Amnistia Legea: aurrera egiteko aukera baina iraganaren erantzukizunak bigarren planoan.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1978·12·06</div>
+      <div class="pc-body">
+        <strong>Konstituzioa — demokraziaren oinarria <span class="pc-badge pb-inst">instituzio</span></strong>
+        <p>Kontsentsuz idatzia (UCD, PSOE, PCE): estatu sozial eta demokratikoa, monarkia parlamentarioa, autonomien estatua. Erreferendumez berretsia. Euskal Herrian abstentzioa handia (EAJ); irakurketa politiko berezia.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1979·10</div>
+      <div class="pc-body">
+        <strong>Gernikako Estatutua eta lehen Eusko Jaurlaritza <span class="pc-badge pb-dem">autonomia</span></strong>
+        <p>Urriaren 25eko erreferendumean herritarrek berretsi; 1980an lehen Eusko Jaurlaritza, Garaikoetxea (EAJ) lehendakari. EAEren autogobernua promesatik egitera. UCDren higadura eta desenkantoa zabaltzen hasita.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1981·02·23</div>
+      <div class="pc-body">
+        <strong>23-F: estatu-kolpe saiakera — demokraziaren hauskortasuna agerian <span class="pc-badge pb-ind">arriskua</span></strong>
+        <p>Tejero Kongresua hartu; Milans del Bosch tankeak Valentzian. Armada jeneralaren «irtenbide politikoa». Juan Carlos I.aren telebistako agerraldia kolpea desaktibatu zuen. Ondorioak: monarkia sendotu, «egonkortasuna» diskurtsoa piztu.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1982</div>
+      <div class="pc-body">
+        <strong>PSOEren garaipena — ziklo baten itxiera <span class="pc-badge pb-dem">alternantzia</span></strong>
+        <p>Alternantzia politiko normalizatua: oposiziotik gobernura hauteskunde bidez. Trantsizioa egonkortu zen egiazki. Demokrazia ez zen soilik Konstituzioa; alternantzia normalizatu arte ez zen sendotu.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     2 · Indarleen alderaketa
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>2. Indar politikoen alderaketa: erreforma eta oposizioa</h2>
+  <p class="desc">Nork zer nahi zuen, eta nola lortu edo galdu zuen Trantsizioaren negoziazio-prozesuan.</p>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="row-label">Alderdia</th>
+        <th class="sh-suarez">🟠 UCD / Erreformistak (Suárez)</th>
+        <th class="sh-opoz">🔴 Oposizio demokratikoa (PSOE, PCE)</th>
+        <th class="sh-konst">🟣 Frankismoa / Bunkerra</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="row-label">Helburua</td>
+        <td>Demokrazia kontrolatua: frankismoaren barrutik, «legez lege», kolpea eta kaosa saihestuz.</td>
+        <td>Haustura demokratikoa; amnistia, askatasunak, hauteskunde libreak ahalik eta lasterren.</td>
+        <td>Aldaketarik ez edo ahalik eta gutxien; ordena frankista mantentzea.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Indarra</td>
+        <td><span class="tag-ong">egitura</span> Estatuaren aparatua kontrolatzen zuten; legetasuna euren esku.</td>
+        <td><span class="tag-ong">kale</span> Gizartearen mobilizazioa, grebak, legitimazio morala.</td>
+        <td><span class="tag-ong">mehatxua</span> Armadaren eta aparatuen inertzia; kolpe-beldurra tresna gisa.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Lorpenak</td>
+        <td>Trantsizioa gidatu; Konstituzioa eta monarkia berretsi; Moncloako Itunak.</td>
+        <td>Legalizazioa, amnistia, hauteskunde librea, Konstituzioa (barruan). Gernikako Estatutua.</td>
+        <td>Frankismoko aparatu asko egokitu eta mantendu. Kontu eskaerarik ez.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Galpenak / mugen</td>
+        <td>UCDren higadura 1979tik aurrera. 23-F ostean ahuldu. 1982an PSOE irabazi.</td>
+        <td>Memoria historikoa eta frankismoaren erantzukizunak bigarren planoan. «Kontsentsuaren prezioa».</td>
+        <td>Botere-monopolioa galdu. Demokrazia nahi ez arren, hori onartu behar izan zuten azkenean.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═══════════════════════════════════════
+     3 · 23-Fren kausa-katea
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>3. 23-Fren kausa-katea: zergatik kolpe-saiakera bat demokrazia-garaian?</h2>
+  <p class="desc">Pilatutako tentsioen kate logikoa Tejeroren atentatutik demokraziaren egonkortzera.</p>
+
+  <div class="cchain">
+
+    <div class="cc-node">
+      <strong>📉 Krisi ekonomikoa gogortu (1979–81)</strong>
+      <p>Langabezia eta inflazioa igo. «Desenkantoa» hedatu: demokrazia iritsi arren, eguneroko baldintzak ez hobetu. UCDren babes soziala higatu.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>💥 ETAren indarkeria azeleratu (1980an ia 100 hildako)</strong>
+      <p>Segurtasun-krisi iraunkorra; estatuak erantzun politiko eta polizial bat eskatzen zuen atentatu bakoitzeko. Gizartearen zati batean «ordena» eta «segurtasun» eskaria handitu.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>🔴 UCDren barne-zatiketa eta Suárezen dimisioa (1981-01)</strong>
+      <p>Suárez gero eta bakartuago; koalizio zabalaren barne-lerroak urratuta. Dimisioa eman eta Calvo-Sotelo ordezkatzeko inbestidura saioa antolatu zen — hori bera kolpearen egunean.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>⚔️ Armadaren sektore batzuetan frankismoko «ordena» diskurtsoa bizirik</strong>
+      <p>Frankismoan hezitako jeneralak eta ofizialak; «batasuna» eta «ordena» mehatxupean sentitzen zuten. Giro horretan kolpearen «legitimitate» ideia eratu zen.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>🏛️ 23-F: Kongresua hartu (1981-02-23)</strong>
+      <p>Tejero eta gizon armatuak inbestidura saioa eten; Milans del Bosch tankeak Valentzian. Armada jeneralaren «gobernu salbazio nazional» plana. Bahiketa gauerdirainoko tentsioa.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>👑 Juan Carlos I.aren esku-hartzea — kolpea desaktibatu</strong>
+      <p>Gauean telebistan agertu; konstituzio-ordena babestu eta kolpearen aurka argi. Armadaren goi-aginteen zati handiak ez bat egin. Kolpea desegin gauerdirako.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>✅ Demokraziaren sendotzea eta 1982ko alternantzia</strong>
+      <p>23-F ondoren instituzioak sendotu; monarkiaren legitimazioa hazi. 1982an PSOEren garaipenak alternantzia normalizatu zuen, Trantsizioa egonkortuz behin betiko.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     4 · Konstituzio eta Estatutuaren alderaketa
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>4. 1978ko Konstituzioa eta 1979ko Gernikako Estatutua: alderaketa</h2>
+  <p class="desc">Bi dokumentu giltzarrien funtzioa, edukia eta Euskal Herrirako esanahia.</p>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="row-label">Alderdia</th>
+        <th class="sh-suarez">📜 1978ko Konstituzioa</th>
+        <th class="sh-opoz">📗 1979ko Gernikako Estatutua</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="row-label">Zer da</td>
+        <td>Estatuaren oinarrizko legea; demokraziaren «markoa».</td>
+        <td>Euskal Autonomia Erkidegoaren autonomia-estatutua; markoaren «edukia» EAErako.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Nork idatzi</td>
+        <td>Konstituzio-batzordea (UCD, PSOE, PCE, AP, CiU): «zazpi politikariak».</td>
+        <td>EAJk, PSOEk, PCEk eta beste indar politikoek negoziatu; erreferendumez berretsi.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Ardatz nagusiak</td>
+        <td>Estatu sozial eta demokratikoa; monarkia parlamentarioa; eskubideak; autonomien estatua.</td>
+        <td>Eusko Legebiltzarra; Eusko Jaurlaritza; zerga-sistema propioa; ertzaintza; hezkuntza.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Onartze-data</td>
+        <td>1978ko abenduaren 6a — erreferenduma (Espainia osoa).</td>
+        <td>1979ko urriaren 25a — erreferenduma (EAE soilik).</td>
+      </tr>
+      <tr>
+        <td class="row-label">Euskal Herrian onarpena</td>
+        <td>EAJren abstentzioa eta ezker abertzalearena; abstentzio handia. Boto baliodunen artean baietza nagusi.</td>
+        <td>Boto baliodunen artean oso nagusi. Parte-hartzea ez zen unibertsala, baina onarpena sendoa.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Ondorioa</td>
+        <td>Frankismoaren oinarri juridikoa apurtu; demokraziaren egitura ezarri.</td>
+        <td>Autogobernua promesatik errealitatera: 1980ko lehen Eusko Jaurlaritza (Garaikoetxea).</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═══════════════════════════════════════
+     5 · Indarkeria politikoaren konexio-mapa
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>5. Indarkeria politikoaren konexio-mapa: indar anitzak, ondorio bakarrak</h2>
+  <p class="desc">Trantsizioa «baketsua» ez zen. Sei indar ezberdinak biolentzia politikoa elikatu eta prozesu demokratikoa baldintzatu zuten.</p>
+
+  <div class="cmap-wrap">
+    <div class="cmap-center">
+      <strong>⚡ Indarkeria politikoa Trantsizioan (1975–1982)</strong>
+      <span>Norabide anitzeko biolentzia; gizartea eta erabakiak baldintzatu zituen</span>
+    </div>
+    <div class="cmap-grid">
+      <div class="cmap-node cn-eta">
+        <h4>🟢 ETA (eta GRAPO)</h4>
+        <p>Jarduera armatu jarraitua. 1980an ia 100 hildako — gehien inoiz. Segurtasun-krisi iraunkorra. Gizartea polarizatu: batzuentzat demokraziaren aurkako eraso, beste batzuentzat gatazka politikoa.</p>
+      </div>
+      <div class="cmap-node cn-franc">
+        <h4>⚫ Eskuin muturra</h4>
+        <p>Atochako sarraskia (1977-01-24): abokatu laboralistak hil, prozesua desegonkortzeko. Montejurra (1976): karlisten bilkuran tiroketa, 2 hildako. Ultraeskuinaren biolentzia demokrazia geldiarazteko.</p>
+      </div>
+      <div class="cmap-node cn-suarez">
+        <h4>🔶 Estatu-indarkeria</h4>
+        <p>Gasteiz 1976-03-03: langile greban 5 hildako. Sanferminak 1978: hildakoa eta zauritu ugari. Frankismoaren segurtasun-kultura jarraitutasunarekin; poliziaren gehiegikeriak.</p>
+      </div>
+      <div class="cmap-node cn-psoe">
+        <h4>🔴 Ondorioa: kontsentsua beharrezkoago</h4>
+        <p>Berunezko giroak alderdi nagusiak kontsentsuaren bidea indartzera bultzatu zuen; prozesua lehertzeko arriskua oso erreala zelako.</p>
+      </div>
+      <div class="cmap-node cn-pce">
+        <h4>📕 Ondorioa: desenkantoa</h4>
+        <p>1979tik aurrera demokrazia iritsi arren segurtasun eza, krisia eta tentsioa jarraitu zuten. «Ilusioaren» eta «errealitatearen» arteko talka.</p>
+      </div>
+      <div class="cmap-node cn-eaj">
+        <h4>⚖️ Ondorioa: 23-F kolpe-saiakera</h4>
+        <p>Indarkeria politikoak «argudioa» eman zion armadako sektoreari: «gero eta okerrago doa, irtenbide gogorragoa behar da». Kolpearen testuinguruko elementu nagusietako bat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     Sintesia
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <div class="sintesi">
+    <h3>🔗 Sintesia: Trantsizioa ulertzeko gako-ideiak</h3>
+    <ul>
+      <li><strong>«Korridore estua»:</strong> Trantsizioa ez zen demokraziaren «sorrera naturala»: alde banatako presio eta mehatxuen artean negoziatu zen — kaleko presioa, kolpe-beldurra, krisi ekonomikoa eta indarkeria politikoa batera.</li>
+      <li><strong>Goitik eta behetik batera:</strong> Erreformak «goitik» diseinatu ziren (Suárez, monarkia), baina «behetik» bultzatu (mobilizazioak, grebak, oposizioaren legitimazio morala). Biak ezinbestekoak ziren.</li>
+      <li><strong>Kontsentsuaren prezioa:</strong> Konstituzioa, Moncloako Itunak eta alternantzia adosteko, gai sakon batzuk bigarren planoan utzi ziren: frankismoaren erantzukizunak, memoria historikoa, aparatuen depurazioa. Gaur egungo eztabaidaren iturria.</li>
+      <li><strong>23-F: hauskortasuna agerian:</strong> Trantsizioa ez zen «atzeraezina» 1981era arte. Kolpe-saiakerak erakutsi zuen demokrazia oraindik eraiki behar zela, eta bere sendotzea 1982ko alternantzia normalizazioarekin iritsi zen.</li>
+      <li><strong>Euskal Herriaren bereizkitasuna:</strong> Konstituzioa eta Gernikako Estatutua modu desberdinez bizi ziren; EAEren autogobernua bidezidor propio bat egin zuen, frankismoaren aurkako oposizioan eta identitate nazionalaren indarrean oinarrituta.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="kx-footer">
+  <p>Historia · BTX2 · La Salle Donostia &nbsp;|&nbsp;
+    <a href="08-trantsizioa.html">← 8. Gaia</a> &nbsp;·&nbsp;
+    <a href="../index.html">Hasiera</a>
+  </p>
+</footer>
+
+</body>
+</html>
