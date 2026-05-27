@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Konexioak eta prozesuak · 6. Gaia: Frankismoa I (1939–1959) | Historia BTX2</title>
+  <link rel="stylesheet" href="../assets/css/styles.css?v=6">
+  <style>
+    :root {
+      --accent:     #475569;
+      --accent-2:   #334155;
+      --accent-ink: #0f172a;
+      --accent-tint:#f8fafc;
+    }
+
+    body { background: #f8fafc; }
+
+    /* ── hero ── */
+    .kx-hero {
+      background: linear-gradient(135deg, var(--accent) 0%, #1e293b 100%);
+      color:#fff; padding:2.5rem 1.5rem 2rem; text-align:center;
+    }
+    .kx-hero .badge {
+      display:inline-block; background:rgba(255,255,255,.2);
+      border-radius:2rem; padding:.25rem .9rem;
+      font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
+      margin-bottom:.75rem;
+    }
+    .kx-hero h1 { font-size:clamp(1.4rem,3vw,2rem); margin:0 0 .4rem; }
+    .kx-hero p  { opacity:.88; font-size:.97rem; margin:0; }
+    .back-btn {
+      display:inline-flex; align-items:center; gap:.4rem;
+      background:rgba(255,255,255,.2); color:#fff;
+      border:1px solid rgba(255,255,255,.35); border-radius:.5rem;
+      padding:.4rem .9rem; font-size:.82rem; text-decoration:none;
+      margin-top:1.1rem; transition:background .2s;
+    }
+    .back-btn:hover { background:rgba(255,255,255,.35); }
+
+    /* ── section wrapper ── */
+    .kx-section { max-width:900px; margin:2rem auto; padding:0 1rem; }
+    .kx-section h2 {
+      font-size:1.15rem; color:var(--accent-ink);
+      border-left:4px solid var(--accent); padding-left:.75rem;
+      margin:0 0 1.25rem;
+    }
+    .kx-section .desc { font-size:.88rem; color:#6b7280; margin:-.75rem 0 1.25rem .2rem; }
+
+    /* ── process chain ── */
+    .proc-chain { display:flex; flex-direction:column; gap:0; }
+    .pc-step { display:grid; grid-template-columns:3.5rem 1fr; gap:0 1rem; position:relative; }
+    .pc-step::before {
+      content:''; position:absolute; left:1.65rem; top:3.2rem;
+      bottom:-1px; width:2px;
+      background:linear-gradient(to bottom,var(--accent),var(--accent-2));
+    }
+    .pc-step:last-child::before { display:none; }
+    .pc-dot {
+      width:3.2rem; height:3.2rem; border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; display:flex; align-items:center; justify-content:center;
+      font-weight:700; font-size:.78rem; flex-shrink:0;
+      box-shadow:0 2px 8px rgba(71,85,105,.35); z-index:1; margin-top:.15rem;
+    }
+    .pc-body {
+      background:#fff; border-radius:.75rem; padding:1rem 1.1rem;
+      margin-bottom:1rem; box-shadow:0 1px 6px rgba(71,85,105,.1);
+      border-left:3px solid var(--accent-tint);
+    }
+    .pc-body strong { color:var(--accent-ink); display:block; margin-bottom:.2rem; }
+    .pc-body p { margin:0; font-size:.9rem; color:#4b5563; }
+    .pc-badge {
+      display:inline-block; border-radius:1rem; padding:.15rem .6rem;
+      font-size:.73rem; font-weight:600; margin-left:.4rem;
+    }
+    .pb-rep    { background:#fee2e2; color:#7f1d1d; }
+    .pb-erai   { background:#e0e7ff; color:#3730a3; }
+    .pb-autark { background:#fef3c7; color:#92400e; }
+    .pb-nazart { background:#dcfce7; color:#166534; }
+    .pb-lehen  { background:#f3e8ff; color:#6b21a8; }
+    .pb-egon   { background:#e0f2fe; color:#0c4a6e; }
+
+    /* ── comparison tables ── */
+    .comp-table { width:100%; border-collapse:collapse; background:#fff;
+      border-radius:.75rem; overflow:hidden;
+      box-shadow:0 1px 8px rgba(71,85,105,.1); font-size:.88rem; }
+    .comp-table th {
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; padding:.65rem .9rem; text-align:left; font-size:.82rem;
+    }
+    .comp-table td { padding:.6rem .9rem; border-bottom:1px solid #e2e8f0; vertical-align:top; }
+    .comp-table tr:last-child td { border-bottom:none; }
+    .comp-table tr:nth-child(even) td { background:#f8fafc; }
+    .comp-table .row-label { font-weight:600; color:var(--accent-ink); width:22%; }
+    .sh-gar   { background:linear-gradient(135deg,#475569,#334155) !important; }
+    .sh-gar2  { background:linear-gradient(135deg,#1e293b,#0f172a) !important; }
+    .tag-ong  { display:inline-block; background:#dcfce7; color:#166534; border-radius:.4rem; padding:.05rem .4rem; font-size:.75rem; margin-right:.2rem; }
+    .tag-bad  { display:inline-block; background:#fee2e2; color:#991b1b; border-radius:.4rem; padding:.05rem .4rem; font-size:.75rem; margin-right:.2rem; }
+
+    /* ── cause-effect chain ── */
+    .cchain { display:flex; flex-direction:column; align-items:center; gap:0; }
+    .cc-node {
+      width:100%; max-width:580px; background:#fff; border-radius:.75rem;
+      padding:.9rem 1.1rem; box-shadow:0 1px 6px rgba(71,85,105,.12);
+      border-left:4px solid var(--accent);
+    }
+    .cc-node strong { color:var(--accent-ink); display:block; margin-bottom:.2rem; }
+    .cc-node p { margin:0; font-size:.88rem; color:#4b5563; }
+    .cc-arrow { font-size:1.4rem; color:var(--accent); line-height:1; margin:.4rem 0; text-align:center; }
+
+    /* ── connection map ── */
+    .cmap-wrap { display:grid; grid-template-columns:1fr; gap:1rem; }
+    .cmap-center {
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff; border-radius:.75rem; padding:1.1rem;
+      text-align:center; box-shadow:0 2px 10px rgba(71,85,105,.3);
+    }
+    .cmap-center strong { font-size:1.05rem; display:block; }
+    .cmap-center span   { font-size:.85rem; opacity:.88; }
+    .cmap-grid { display:grid; grid-template-columns:1fr 1fr; gap:.85rem; }
+    .cmap-node {
+      background:#fff; border-radius:.7rem; padding:.9rem;
+      box-shadow:0 1px 6px rgba(71,85,105,.1);
+      border-top:3px solid var(--accent);
+    }
+    .cmap-node h4 { margin:0 0 .3rem; font-size:.88rem; color:var(--accent-ink); }
+    .cmap-node p  { margin:0; font-size:.82rem; color:#6b7280; }
+    .cn-diburd  { border-top-color:#b45309; }
+    .cn-konkor  { border-top-color:#1d4ed8; }
+    .cn-aeb     { border-top-color:#1e40af; }
+    .cn-nbe     { border-top-color:#0369a1; }
+    .cn-egon    { border-top-color:#059669; }
+    .cn-ghotza  { border-top-color:#6d28d9; }
+
+    /* ── pillar cards ── */
+    .pillar-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:.85rem; }
+    .pillar-card {
+      background:#fff; border-radius:.75rem; padding:1rem;
+      box-shadow:0 1px 6px rgba(71,85,105,.1);
+      border-top:4px solid var(--accent);
+      text-align:center;
+    }
+    .pillar-card .pill-icon { font-size:1.8rem; display:block; margin-bottom:.4rem; }
+    .pillar-card h4 { margin:0 0 .35rem; font-size:.88rem; color:var(--accent-ink); }
+    .pillar-card p  { margin:0; font-size:.8rem; color:#6b7280; }
+    .pc-mil   { border-top-color:#334155; }
+    .pc-cath  { border-top-color:#b45309; }
+    .pc-caud  { border-top-color:#1e3a8a; }
+    .pc-naz   { border-top-color:#7f1d1d; }
+    .pc-anticom { border-top-color:#065f46; }
+
+    /* ── synthesis ── */
+    .sintesi {
+      background:linear-gradient(135deg,var(--accent-tint),#e2e8f0);
+      border:1px solid #cbd5e1; border-radius:.75rem;
+      padding:1.25rem 1.4rem;
+    }
+    .sintesi h3 { margin:0 0 .75rem; color:var(--accent-ink); font-size:1rem; }
+    .sintesi ul { margin:0; padding-left:1.3rem; }
+    .sintesi li { margin-bottom:.5rem; font-size:.9rem; color:#374151; }
+    .sintesi li:last-child { margin-bottom:0; }
+
+    /* ── footer ── */
+    .kx-footer { text-align:center; padding:2rem 1rem; font-size:.8rem; color:#9ca3af; }
+    .kx-footer a { color:var(--accent); text-decoration:none; }
+
+    @media (max-width:540px) { .cmap-grid { grid-template-columns:1fr; } .pillar-grid { grid-template-columns:1fr 1fr; } }
+  </style>
+</head>
+<body>
+
+<header class="kx-hero">
+  <div class="badge">6. Gaia · 1939–1959</div>
+  <h1>Diktadura frankista I: konexioak eta prozesuak</h1>
+  <p>Errepresiotik autarkiara, isolamendutik integrazioraino: frankismoaren lehen bi hamarkadak</p>
+  <a class="back-btn" href="06-frankismoa-i.html">← Gaira itzuli</a>
+</header>
+
+<!-- ═══════════════════════════════════════
+     1 · Prozesu-katea
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>1. Frankismoaren eraikuntza: prozesu-katea (1939–1959)</h2>
+  <p class="desc">Zortzi urrats frankismoaren eraikuntza eta bilakaera azaltzeko.</p>
+
+  <div class="proc-chain">
+
+    <div class="pc-step">
+      <div class="pc-dot">1939</div>
+      <div class="pc-body">
+        <strong>Gerra amaitu — errepresio masibo hasiera <span class="pc-badge pb-rep">errepresioa</span></strong>
+        <p>Apirilak 1, Francoren garaipena aitortu. Berehalako errepresioa: kontzentrazio-esparroak, tribunalak, fusilamenduak. 300.000–500.000 preso politiko; ~35.000–50.000 exekutatu lehen urtetan. Gorroto politika eguneroko botere-tresna bihurtu.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1939b</div>
+      <div class="pc-body">
+        <strong>Frankismoaren oinarri instituzionalak eraiki <span class="pc-badge pb-erai">eraikuntza</span></strong>
+        <p>Caudilloa: Estatuko Buru, Gobernu Buru, Armadako Agintari Gorena eta FET y de las JONSen buru. Botere banaketa deuseztatua. Familia politikoak (militarrak, Eliza, Falange, karlismoaren zati bat) oreka sakonean. Sindikatu Bertikala eta Mugimendu Nazionala estatuaren egitura gisa.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1939–45</div>
+      <div class="pc-body">
+        <strong>II. Mundu Gerra — gerturatze ardatzetarra eta aldi bateko neutraltasuna <span class="pc-badge pb-nazart">nazioartea</span></strong>
+        <p>1940an «ez-gerralari» egoera aldarrikatu; Dibisio Urdina (1941–43) Sobietar Batasunaren aurka, Alemaniarekiko konpromiso gisa baina aliantza formal gabe. Ardatzen porrotaren aurrean, neutraltasun-diskurtsora itzuli.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1940–51</div>
+      <div class="pc-body">
+        <strong>Autarkia eta gosea — ekonomia autosufiziente porrotatua <span class="pc-badge pb-autark">autarkia</span></strong>
+        <p>Import-ordezkapen politika, estatu-kontrola eta interbentzionismo ekonomiko maximoa. Errazinamendua 1939–1952; gosearen urteak («el hambre»); BPGa 1935eko maila baino baxuago 1950 arte. Estraperloaren merkatu beltza egitura paralelo bihurtu.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1945–50</div>
+      <div class="pc-body">
+        <strong>Nazioarteko isolamendu diplomatikoa <span class="pc-badge pb-nazart">nazioartea</span></strong>
+        <p>NBEk Espainia baztertu (1946). Potsdam adierazpenak eta mendebaldeko demokrazien kondena. Embajadoreak atzera deitu. Espainia Europar planen (Marshall Plana) kanpoan geratu. Frankismoa «azken faxismoa» bezala mundu-eszenan.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1950–53</div>
+      <div class="pc-body">
+        <strong>Gerra Hotza — Ameriketako integrazioa hasi <span class="pc-badge pb-lehen">lehen haustura</span></strong>
+        <p>Koreako Gerrak testuingurua aldatu. AEBk Espainiari garrantzi estrategikoa eman. 1953: Konkordatua Vatikanoarekin eta Madrilgo Itunak AEBekin (base militarrak kredituaren truke). NBErako sarrera 1955. Isolamendua amaitu.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1957–59</div>
+      <div class="pc-body">
+        <strong>Egonkortze Plana — deszentralizazio ekonomikoaren hasiera <span class="pc-badge pb-egon">egonkortza</span></strong>
+        <p>Teknocraten (Opus Dei) sarrera gobernuan. 1957: inflazio-, truke- eta ordainketa-balantza krisi larria. 1959ko Egonkortze Plana: liberalizazioa, moneta debalbazioa, inbertsio atzerritarra irekita. Desarrollismoaren ataria zabaldu.</p>
+      </div>
+    </div>
+
+    <div class="pc-step">
+      <div class="pc-dot">1959</div>
+      <div class="pc-body">
+        <strong>ETA sortu — oposizioak forma berria hartu <span class="pc-badge pb-rep">oposizioa</span></strong>
+        <p>Gazteria abertzale batek ETA (Euskadi Ta Askatasuna) sortu. Erakundea ekintza zuzeneko abertzaletasun iraultzailean oinarrituta, PCEren eta anarkisten belaunaldi zaharrarekiko haustura adieraziz. Etorkizuneko erresistentziaren ikur bilakatu.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     2 · Frankismoaren bost oinarriak
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>2. Frankismoaren bost oinarri ideologikoak</h2>
+  <p class="desc">Frankismoa bost zutabetan sostengatzen zen; bakoitzak funtzio espezifiko bat zuen erregimena legitimatzeko eta mantentzeko.</p>
+
+  <div class="pillar-grid">
+    <div class="pillar-card pc-mil">
+      <span class="pill-icon">⚔️</span>
+      <h4>Militarismoa</h4>
+      <p>Armada frankismoaren sortzaile eta zaintzaile. Frankoren boterearen oinarri. Ofizialak gobernuan, diplomazian eta administrazioan.</p>
+    </div>
+    <div class="pillar-card pc-cath">
+      <span class="pill-icon">✝️</span>
+      <h4>Nazional-katolizismoa</h4>
+      <p>Eliza Katolikoak errejimena legitimatu zuen; frankismoa «Gurutzada» gisa. Hezkuntza, familia eta moral publikoa kontrolatu.</p>
+    </div>
+    <div class="pillar-card pc-caud">
+      <span class="pill-icon">👑</span>
+      <h4>Caudillismoa</h4>
+      <p>Francori buruzagitza pertsonala eta sakrala. «Por la gracia de Dios». Boto-eskubiderik ez; legitimazioa gerratik eta misiotik.</p>
+    </div>
+    <div class="pillar-card pc-naz">
+      <span class="pill-icon">🏛️</span>
+      <h4>Nazionalismo Zentralista</h4>
+      <p>Espainia batasun hezurreztatua. Autonomia eta hizkuntza eskualdekoak debekatu. Gaztelera bakarrik onartu erakunde publikoetan.</p>
+    </div>
+    <div class="pillar-card pc-anticom">
+      <span class="pill-icon">🚫</span>
+      <h4>Antikomunismoa eta Antiliberalismoa</h4>
+      <p>Gerra Hotzaren testuinguruan legitimazioa internazional bezala. Partidu eta sindikatuak debekatu. Prentsa zentsura eta Adierazpen Askatasuna ezabatu.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     3 · Garaileak eta garaituak
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>3. Garaileak eta garaituak: bi Espainia frankismopean</h2>
+  <p class="desc">Gerra-ondorengo gizarteak bi mundu guztiz ezberdin bizi zituen: frankisten Espainia eta menderatuena.</p>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th class="row-label">Alderdia</th>
+        <th class="sh-gar">✅ Garaileak</th>
+        <th class="sh-gar2">❌ Garaituak</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="row-label">Nork osatzen zituen</td>
+        <td>Militarrak, Elizako hierarkia, jauntxoak, enpresariak, falangistak, karlistak, klase ertain kontserbadorea.</td>
+        <td>Errepublikako soldaduak, ezkertiarrak, sindikatuko kideak, erlijio-gutxiengoak, abertzale katalanak/euskaldunak/galiziarrak.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Lana eta ogasuna</td>
+        <td><span class="tag-ong">onura</span> Kargu publikoak eta enplegua lehentasunez. Depuraziorik gabe.</td>
+        <td><span class="tag-bad">kaltea</span> Enplegutik kanporatuak, ondasunak konfiskatuak. Erlijio-ezkontza baliogabetu.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Askatasun politikoa</td>
+        <td><span class="tag-ong">onura</span> Errejimenarekiko fideltasuna sari: kargu, babesa, karrera.</td>
+        <td><span class="tag-bad">kaltea</span> Preso politikoa, erbestea, tortura, fusilamenduak (1939–45 bereziki).</td>
+      </tr>
+      <tr>
+        <td class="row-label">Hizkuntza eta kultura</td>
+        <td><span class="tag-ong">onura</span> Gaztelera bakarra esparru ofizialetan. Kultura frankista sustatua.</td>
+        <td><span class="tag-bad">kaltea</span> Euskara, katalana, galegoa publikoki debekatuak. Geroago etxean baimentzea soilik.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Hezkuntza eta ideologia</td>
+        <td><span class="tag-ong">onura</span> Eliza-eskola eta Falangeren pentsaera nagusitu. FET y de las JONSen formakuntza derrigorrezkoa gaztearentzat.</td>
+        <td><span class="tag-bad">kaltea</span> Laiko eta errepublikako irakasle guztiak depuratu; ikastola eta hezkuntza abertzalea itxi.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Emakumea</td>
+        <td><span class="tag-ong">Sección Femenina</span> Emakumea etxeko rolean bideratu; Sección Femeninak hezteko programa.</td>
+        <td><span class="tag-bad">kaltea</span> Emakume errepublikanoak: "lisencia marital" ezarrita; Errepublikaren garaian lortutako eskubideak ezabatu.</td>
+      </tr>
+      <tr>
+        <td class="row-label">Erbestea</td>
+        <td>—</td>
+        <td><span class="tag-bad">kaltea</span> ~450.000 errefuxiatu 1939an, gehienak Frantzian, Mexikon eta URSS-en. Eusko Jaurlaritza erbestean jarraitu.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═══════════════════════════════════════
+     4 · Autarkiaren kausa-katea
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>4. Autarkiatik Egonkoltze Planera: kausa-katea</h2>
+  <p class="desc">Frankismoaren ekonomia-politikaren ondorioak katean: gerra-ondoriotik krisi larria eta haustura-apurura.</p>
+
+  <div class="cchain">
+
+    <div class="cc-node">
+      <strong>🔴 Gerra Zibila (1936–1939)</strong>
+      <p>Azpiegiturak suntsituta, industria eta nekazaritza kaltetuta, kapital ihesa. Giza eta material-kostua izugarria.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>📦 Autarkia ezarri (1939–1951)</strong>
+      <p>Import-ordezkapen politika: Espainia «autosufiziente» bihurtu nahi, atzerriko ondasunik ez. Estatu kontrola guztian: prezioa, ekoizpena, banaketa. Nazional-sindikalismoa praktikan.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>🌾 Gosearen urteak eta errazinamendua (1939–1952)</strong>
+      <p>Elikadura-kartila derrigorrezko. Gosea eta desnutrizioa hirietan eta landa-eremuan. BPGa 1935eko maila baino baxuago 1950 arte. Heriotza-tasa jaio aurreko maila itzuli.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>🖤 Estraperloaren merkatu beltza</strong>
+      <p>Errazinamendua saihestu: salgai ilegalen merkatu paralelo izugarria. Kontrabandoa egitura ekonomiko bihurtu; klase ertaina eta elite politikoak korrupzio-sarean. «Enchufismoa» eta klientelismoa zabalduta.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>🏭 INI sortu (1941) eta industrializazio gidatua</strong>
+      <p>Instituto Nacional de Industria: estatu-enpresa astun eta errentagaitzak (SEAT, ENDESA, IBERIA, ENSIDESA). Inbertsio publikoa bai baina efizientzia eskasa; atzerriko teknologiarik gabe.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>📉 1957–1958ko krisi ekonomikoa</strong>
+      <p>Inflazio galerazi, truke-erreserba hustu, ordainketa-balantza defizit estrukturala. Ekonomia kolapsoaren atarian. FMIk eta OECEk erreforma eskatu.</p>
+    </div>
+    <div class="cc-arrow">▼</div>
+
+    <div class="cc-node">
+      <strong>✅ 1959ko Egonkoltze Plana (Plan de Estabilización)</strong>
+      <p>Teknocraten (Opus Dei) proposamena: peseta debaluazioa, inbertsio atzerritarra baimendu, prezioen kontrola arintze. Garestasun soziala, langabezia igoera, baina hazkundearen ataria zabaldu. Desarrollismoaren abiapuntua.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     5 · Nazioarteko politikaren konexio-mapa
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <h2>5. Isolamendutik integrazioraino: nazioarteko politikaren konexio-mapa</h2>
+  <p class="desc">Frankismoak nazioarteko esparruan bizi zuen bilakaera: arbuiatua izatetik aitortua izatera.</p>
+
+  <div class="cmap-wrap">
+    <div class="cmap-center">
+      <strong>🌍 Frankismoa eta nazioarteko ordena (1939–1959)</strong>
+      <span>Bilakaera: aliantzatik isolamendura eta Gerra Hotzaren bidez integrazioraino</span>
+    </div>
+    <div class="cmap-grid">
+      <div class="cmap-node cn-diburd">
+        <h4>⚔️ Dibisio Urdina (1941–1943)</h4>
+        <p>~47.000 boluntario Ekialdeko Frontean Sobietar Batasunaren aurka. Alemanikiko konpromiso ez-formal; Truman Doktrinaren ostean azkenean erretiratu.</p>
+      </div>
+      <div class="cmap-node cn-ghotza">
+        <h4>🧊 Isolamendua (1945–1950)</h4>
+        <p>NBEk Espainia baztertu (1946); mendebaldeko enbaxadore guztiek atzera egin. Frantziako mugak itxi (1946–48). Marshall Plana barik. «Azken faxismoa» mundu librean.</p>
+      </div>
+      <div class="cmap-node cn-konkor">
+        <h4>✝️ Konkordatua Vatikanoarekin (1953)</h4>
+        <p>Elizak frankismoa legitimatu; errejimenak pribilejio ekonomiko eta sozialak eman Elizari. Nazional-katolizismoaren formalizazio diplomatikoa.</p>
+      </div>
+      <div class="cmap-node cn-aeb">
+        <h4>🇺🇸 Madrilgo Itunak AEBekin (1953)</h4>
+        <p>4 base militar AEBrentzat truke ekonomiko, militar eta diplomatikoa. Gerra Hotza: Espainia Europar komunismoaren aurkako babesle gisa. Normalizazioaren lehen pausoa.</p>
+      </div>
+      <div class="cmap-node cn-nbe">
+        <h4>🌐 NBEn sarrera (1955)</h4>
+        <p>Isolamendu diplomatikoaren amaiera formala. Espainia nazioarteko erakundeetan: UNESCO (1952), FAO (1950), FMI (1958). Presio internazionala normalizaziorako bide bihurtu.</p>
+      </div>
+      <div class="cmap-node cn-egon">
+        <h4>📈 Egonkoltze Plana (1959)</h4>
+        <p>FMI eta OECEren laguntzarekin. Espainia merkatu internazionalera irekitzen hasi. Kapital atzerritarra sartu; turismoa garatzeko oinarria. Frankismoa bizirik irauteko «modernizazioaren» apustua.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     Sintesia
+     ═══════════════════════════════════════ -->
+<section class="kx-section">
+  <div class="sintesi">
+    <h3>🔗 Sintesia: frankismoaren lehen bi hamarkadak ulertzeko gako-ideiak</h3>
+    <ul>
+      <li><strong>Eraikuntza pertsonala:</strong> Frankismoa ez zen sistema aurredefinitua; Francok egoera bakoitzera egokitu zuen boterea, familia politikoen arteko oreka mantenduz (militarrak, Eliza, Falange, teknocraten artean).</li>
+      <li><strong>Errepresioa botere-tresna:</strong> 1939ko garaipenaren osteko errepresioa ez zen behin-behinekoa; sistema aldatzeko borondaterik ez egoteko mekanismo sistematikoa zen. «Garaileak» eta «garaituak» bereizketa gizarte osoari aplikatu zitzaion.</li>
+      <li><strong>Autarkia eta porrot ekonomikoa:</strong> Autarkia aukera ideologikotzat aurkeztu bazen ere, ekonomia-errealitatea izugarria zen. Gosearen urteak eta estraperloa egitura ekonomikoaren parte bihurtu ziren.</li>
+      <li><strong>Gerra Hotza salbatzaile:</strong> 1945eko isolamenduak frankismoaren bukaera ekar zezakeen; Gerra Hotzak (komunismoaren aurkako posizioa) nazioarteko legitimazioa eman zion errejimena irauteko.</li>
+      <li><strong>1959ko inflexio-puntua:</strong> Egonkoltze Plana frankismoaren bigarren aldirako zubi. Errejimena ekonomikoki modernizatu zen, baina politikoki aldatu gabe, kontraesanean sartuz hurrengo hamarkadetan.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="kx-footer">
+  <p>Historia · BTX2 · La Salle Donostia &nbsp;|&nbsp;
+    <a href="06-frankismoa-i.html">← 6. Gaia</a> &nbsp;·&nbsp;
+    <a href="../index.html">Hasiera</a>
+  </p>
+</footer>
+
+</body>
+</html>
