@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1. Gaia · Konexioak eta prozesuak · Historia BTX2</title>
+  <meta name="description" content="Antzinako Erregimenaren krisia eta Estatu liberalaren eraikuntza (1808-1876): kausa-ondorio kateak, konstituzioen eboluzioa, alderdien konparaketa eta konexio-mapak." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=6" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23ef4444'/%3E%3Ctext x='50' y='72' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3E1%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root { --ca: var(--era-1-a); --cb: var(--era-1-b); --accent: #dc2626; --accent-2: #f97316; --accent-ink: #7f1d1d; --accent-tint: #fef2f2; }
+
+    /* --- Process chain (horizontal scroll) --- */
+    .proc-chain { display: flex; align-items: stretch; gap: .55rem; overflow-x: auto; padding: 1rem .2rem 1.3rem; scroll-snap-type: x proximity; }
+    .proc-chain::-webkit-scrollbar { height: 8px; }
+    .proc-chain::-webkit-scrollbar-thumb { background: var(--line); border-radius: 999px; }
+    .proc-step {
+      flex: 0 0 220px; background: var(--bg-card); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 1rem 1.1rem; scroll-snap-align: start;
+      display: flex; flex-direction: column; gap: .35rem; box-shadow: var(--shadow-sm);
+      position: relative; transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+    .proc-step:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--accent); }
+    .proc-step .ps-year { font-family: var(--font-display); font-weight: 700; color: var(--accent); font-size: 1.4rem; line-height: 1; }
+    .proc-step .ps-title { font-family: var(--font-display); font-weight: 700; font-size: 1rem; line-height: 1.25; color: var(--ink); }
+    .proc-step .ps-desc { font-size: .85rem; color: var(--muted); line-height: 1.45; }
+    .proc-step .ps-badge {
+      display: inline-block; font-size: .72rem; font-family: var(--font-display); font-weight: 700;
+      letter-spacing: .06em; text-transform: uppercase; padding: .12rem .55rem;
+      border-radius: 999px; margin-bottom: .2rem; align-self: flex-start;
+    }
+    .ps-badge.liberal  { background: #dbeafe; color: #1e3a8a; }
+    .ps-badge.absolutu { background: #f3e8ff; color: #6b21a8; }
+    .ps-badge.moderatu { background: #fce7f3; color: #9d174d; }
+    .ps-badge.progre   { background: #d1fae5; color: #065f46; }
+    .ps-badge.demokr   { background: #e0f2fe; color: #0c4a6e; }
+    .ps-badge.inposa   { background: #f1f5f9; color: #475569; }
+    .ps-badge.kont     { background: #fef3c7; color: #92400e; }
+    .proc-arrow { align-self: center; flex: 0 0 auto; color: var(--accent); font-size: 1.6rem; font-weight: 700; font-family: var(--font-display); }
+
+    /* --- Comparison table (3-column grid) --- */
+    .comp { display: grid; grid-template-columns: 200px 1fr 1fr; gap: 0; margin: 1.5rem 0; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--line); }
+    .comp > div { padding: .85rem 1.1rem; border-bottom: 1px solid var(--line); }
+    .comp > div:nth-last-child(-n+3) { border-bottom: 0; }
+    .comp .comp-header { font-family: var(--font-display); font-weight: 700; color: #fff; font-size: 1rem; }
+    .comp .comp-h1 { background: linear-gradient(135deg, #7c3aed, #9333ea); }
+    .comp .comp-h2 { background: linear-gradient(135deg, #1d4ed8, #2563eb); }
+    .comp .comp-h0 { background: var(--accent-ink); }
+    .comp .comp-label { font-family: var(--font-display); font-weight: 700; color: var(--accent-ink); background: var(--accent-tint); font-size: .92rem; }
+    .comp .comp-cell { background: var(--bg-card); font-size: .92rem; color: var(--ink-soft); line-height: 1.5; }
+    .comp .comp-cell.warn { background: #fffbeb; }
+    /* Two-column comparison */
+    .comp2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 1.5rem 0; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--line); }
+    .comp2 > div { padding: .85rem 1.1rem; border-bottom: 1px solid var(--line); }
+    .comp2 > div:last-child, .comp2 > div:nth-last-child(2) { border-bottom: 0; }
+    .comp2 .comp-header { font-family: var(--font-display); font-weight: 700; color: #fff; font-size: 1rem; }
+    .comp2 .comp-h1 { background: linear-gradient(135deg, #7c3aed, #9333ea); }
+    .comp2 .comp-h2 { background: linear-gradient(135deg, #059669, #10b981); }
+    .comp2 .comp-cell { background: var(--bg-card); font-size: .92rem; color: var(--ink-soft); line-height: 1.5; }
+
+    /* --- Vertical cause chain --- */
+    .cchain { display: flex; flex-direction: column; gap: 0; margin: 1.4rem 0; max-width: 760px; margin-inline: auto; }
+    .cchain-node {
+      background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 1.1rem 1.4rem; box-shadow: var(--shadow-sm);
+      display: grid; grid-template-columns: 88px 1fr; gap: 1.1rem; align-items: start;
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+    .cchain-node:hover { transform: translateX(4px); box-shadow: var(--shadow); border-color: var(--accent); }
+    .cchain-node .cn-year {
+      font-family: var(--font-display); font-weight: 700; font-size: 1.5rem;
+      color: #fff; background: linear-gradient(135deg, var(--ca), var(--cb));
+      padding: .55rem .35rem; border-radius: 12px; text-align: center; line-height: 1.1;
+    }
+    .cchain-node h4 { font-family: var(--font-display); font-size: 1.08rem; margin: 0 0 .35rem; color: var(--accent-ink); }
+    .cchain-node p { font-size: .92rem; color: var(--ink-soft); margin: 0 0 .35rem; line-height: 1.55; }
+    .cchain-node .cn-effect { background: var(--accent-tint); padding: .45rem .7rem; border-radius: 8px; font-size: .88rem; color: var(--accent-ink); font-weight: 600; margin-top: .3rem; display: inline-block; }
+    .cchain-arrow {
+      align-self: center; height: 28px; width: 2px; background: var(--accent);
+      margin-left: 44px; position: relative;
+    }
+    .cchain-arrow::after { content: "▼"; position: absolute; bottom: -3px; left: 50%; transform: translateX(-50%); color: var(--accent); font-size: .9rem; }
+
+    /* --- Cause tree (root + leaves) --- */
+    .tree { margin: 1.4rem 0; }
+    .tree-root {
+      max-width: 380px; margin: 0 auto 0;
+      background: linear-gradient(135deg, var(--ca), var(--cb)); color: #fff;
+      padding: 1.1rem 1.4rem; border-radius: var(--radius); text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .tree-root .tr-year { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; line-height: 1; }
+    .tree-root .tr-event { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; margin-top: .3rem; }
+    .tree-trunk { width: 2px; height: 42px; background: var(--accent); margin: 0 auto; position: relative; }
+    .tree-trunk::after { content: "▼"; position: absolute; bottom: -2px; left: 50%; transform: translateX(-50%); color: var(--accent); font-size: .9rem; }
+    .tree-leaves { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 0; }
+    .tree-leaf {
+      background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 1rem 1.1rem; position: relative; box-shadow: var(--shadow-sm);
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+    .tree-leaf:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--accent); }
+    .tree-leaf::before { content: ""; position: absolute; top: -20px; left: 50%; width: 2px; height: 20px; background: var(--accent); transform: translateX(-50%); }
+    .tree-leaf h4 { font-family: var(--font-display); color: var(--accent-ink); font-size: 1rem; margin: 0 0 .35rem; }
+    .tree-leaf p { font-size: .88rem; color: var(--muted); margin: 0; line-height: 1.5; }
+
+    /* --- Concept map (central + radiating) --- */
+    .cmap { margin: 1.4rem 0; }
+    .cmap-center {
+      max-width: 320px; margin: 0 auto 1rem;
+      background: linear-gradient(135deg, var(--ca), var(--cb)); color: #fff;
+      padding: 1.2rem 1.4rem; border-radius: var(--radius); text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .cmap-center .cc-year { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; line-height: 1; }
+    .cmap-center .cc-event { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; margin-top: .3rem; }
+    .cmap-center .cc-sub { font-size: .82rem; opacity: .9; margin-top: .25rem; }
+    .cmap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .9rem; }
+    .cmap-node {
+      background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 1rem 1.1rem; box-shadow: var(--shadow-sm);
+      border-left: 4px solid var(--accent);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .cmap-node:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+    .cmap-node h4 { font-family: var(--font-display); color: var(--accent-ink); font-size: .98rem; margin: 0 0 .35rem; }
+    .cmap-node p { font-size: .85rem; color: var(--muted); margin: 0; line-height: 1.5; }
+    .cmap-node .cm-tag {
+      display: inline-block; font-family: var(--font-display); font-weight: 700; font-size: .7rem;
+      text-transform: uppercase; letter-spacing: .08em; padding: .12rem .55rem;
+      border-radius: 999px; background: var(--accent-tint); color: var(--accent-ink); margin-bottom: .45rem;
+    }
+
+    /* Section headers */
+    .konexio-section { margin-bottom: 2.6rem; }
+    .konexio-section h2 {
+      font-size: clamp(1.4rem, 3.2vw, 1.8rem); margin-bottom: .5rem;
+      padding-bottom: .5rem; border-bottom: 3px solid var(--accent-tint);
+      display: flex; align-items: baseline; gap: .6rem;
+    }
+    .konexio-section h2 .ks-num {
+      font-size: .9rem; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, var(--ca), var(--cb));
+      padding: .15rem .65rem; border-radius: 8px;
+    }
+    .konexio-section > p.intro { color: var(--muted); margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Edukira saltatu</a>
+  <div class="progress-bar" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="../index.html"><span class="logo">H</span><span>Historia BTX2<small>Espainiako Historia · 2. Batxilergoa</small></span></a>
+      <button class="nav-toggle" aria-label="Menua" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="../index.html#denbora-lerroa">Denbora-lerroa</a>
+        <a href="../index.html#gaiak">Gaiak</a>
+        <a href="01-antzinako-erregimena.html">1. Gaia</a>
+        <a class="cta" href="../index.html">← Hasiera</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="tema-hero" id="main" tabindex="-1">
+    <div class="container">
+      <div class="crumbs">
+        <a href="../index.html">Hasiera</a> <span>›</span>
+        <a href="../index.html#gaiak">Gaiak</a> <span>›</span>
+        <a href="01-antzinako-erregimena.html">1. Gaia</a> <span>›</span>
+        <span>Konexioak eta prozesuak</span>
+      </div>
+      <div class="gaia-num">1. Gaia · 🗺️ Konexioak eta prozesuak</div>
+      <h1>Antzinako Erregimenaren krisia, prozesuetan</h1>
+      <div class="hero-meta">
+        <span class="years-pill">📅 1808 – 1876</span>
+        <a class="dl-btn" href="01-antzinako-erregimena.html">📖 Itzuli gaira</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container" style="padding-top: 2.5rem; padding-bottom: 4rem; max-width: 1080px;">
+
+    <p style="font-size:1.05rem; color: var(--ink-soft); margin-bottom: 2rem;">
+      Gai honetako <strong>kausa-ondorio kateak</strong>, <strong>konstituzio-eboluzioa</strong>, <strong>alderdien konparaketak</strong> eta <strong>konexio-mapak</strong>. Prozesuak bisualki antolatuta daude, loturak eta ondorioak argiago ikusteko.
+    </p>
+
+    <!-- ================================================================
+         SEKZIO 1: Independentzia Gerratik Konstituziora: prozesu-katea
+         ================================================================ -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">1</span> Independentzia Gerratik «La Pepara»: prozesu-katea</h2>
+      <p class="intro">1807ko Fontainebleau-ko Iturnatik 1812ko Konstituziora arteko urrats bakoitzak hurrengoa ekarri zuen. Katea ulertuta gero, argi ikusten da zergatik Cadizko Gorteak «iraultzaileak» ziren beren garaian.</p>
+      <div class="proc-chain" role="list">
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1807</span>
+          <span class="ps-title">Fontainebleau-ko Ituna</span>
+          <span class="ps-desc">Espainia eta Frantziak Portugal inbaditzeko itun sekretuak Napoleoni atea ireki zion Espainiara.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1808</span>
+          <span class="ps-title">Aranjuezeko matxinada · Baionako Abdikazioak</span>
+          <span class="ps-desc">Godoy kendu, Karlos IV.a abdikatu. Napoleonek biak Baionara deitu eta Jose I.a errege izendatu zuen.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1808-05-02</span>
+          <span class="ps-title">Madrilgo altxamendua</span>
+          <span class="ps-desc">Herritarren matxinada hasiera eman zion Independentzia Gerrari. Junta probintzialak sortu ziren botere-hutsunea betetzeko.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1808</span>
+          <span class="ps-title">Junta Zentral Gorena</span>
+          <span class="ps-desc">Junta probintzialak koordinatzeko sortu zen. Erregea ez zegoen: herriaren izenean gobernatzeko legitimitatearen arazoa planteatu zen.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1810</span>
+          <span class="ps-title">Cadizko Gorteak</span>
+          <span class="ps-desc">Junta Gorenak Gorteak deitu zituen. Cadiz zen Frantziatik libre zegoen hiri nagusia. Liberal, moderatu eta absolutisten hiru korronte nagusi.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1812</span>
+          <span class="ps-badge liberal">Liberala</span>
+          <span class="ps-title">«La Pepa» Konstituzioa</span>
+          <span class="ps-desc">Espainiako lehen konstituzioa: subiranotasun nazionala, botere banaketa, sufragio unibertsal maskulinoa, Inkisizioaren deuseztapena.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SEKZIO 2: Konstituzioen eboluzioa (1808–1876)
+         ================================================================ -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">2</span> Konstituzioen eboluzioa (1808–1876): liberalismoa eta absolutismoaren arteko pendulua</h2>
+      <p class="intro">XIX. mendeko konstituzio-historia ez da lerro zuzen bat: pendulu baten moduan kulunkatzen da liberalismo eta absolutismo/kontserbadurismo artean. Kolore-etiketa bakoitzak joera politikoa adierazten du.</p>
+      <div class="proc-chain" role="list">
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1808</span>
+          <span class="ps-badge inposa">Inposatua</span>
+          <span class="ps-title">Baionako Estatutua</span>
+          <span class="ps-desc">Napoleonek emandako testua. Konstituzio itxura, baina ez zen demokratikoa: herritarrek ez zuten onartu. Zenbait ideia liberal jasotzen zituen.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1812</span>
+          <span class="ps-badge liberal">Liberala</span>
+          <span class="ps-title">«La Pepa»</span>
+          <span class="ps-desc">Subiranotasun nazionala, botere banaketa, sufragio unibertsala (gizonezkoena), Inkisizioaren deuseztapena. Europako liberalenetakoa.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1814</span>
+          <span class="ps-badge absolutu">Absolutismoa</span>
+          <span class="ps-title">Fernando VII.a berrezarri</span>
+          <span class="ps-desc">«La Pepa» bertan behera utzi. Liberalen errepresioa. Hirurteko Liberala (1820-1823) saiakera, baina «San Luisen Ehun Mila Semeak» absolutismoa berrezarri.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1834</span>
+          <span class="ps-badge moderatu">Moderatua</span>
+          <span class="ps-title">Errege Estatutua</span>
+          <span class="ps-desc">Ez da benetako konstituzioa: erregeak emandakoa, bi ganbera, sufragio oso mugatua. Maria Cristina errejentziaren konpromiso txikia liberalismoari.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1837</span>
+          <span class="ps-badge progre">Progresista</span>
+          <span class="ps-title">Konstituzioa (1837)</span>
+          <span class="ps-desc">Cadizko espirituari eutsi: subiranotasun nazionala, bi ganbera, sufragio zentsitarioa baina zabalagoa. Liberalismoa berpiztu, Lehen Karlistaldian bitartean.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1845</span>
+          <span class="ps-badge moderatu">Moderatua</span>
+          <span class="ps-title">Konstituzioa (1845)</span>
+          <span class="ps-desc">Subiranotasun partekatua (erregea + Gorteak), Eliza pribilegiatu, sufragio oso mugatua. Narváezen garaia. Moderatuen hegemonia.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1869</span>
+          <span class="ps-badge demokr">Demokratikoa</span>
+          <span class="ps-title">Konstituzioa (1869)</span>
+          <span class="ps-desc">«La Gloriosa»ren ondorioa. Subiranotasun nazionala, sufragio unibertsala (gizonezkoena), erlijio askatasuna. Espainiako demokratikoena arte.</span>
+        </div>
+        <div class="proc-arrow" aria-hidden="true">→</div>
+
+        <div class="proc-step" role="listitem">
+          <span class="ps-year">1876</span>
+          <span class="ps-badge kont">Kontserbadorea</span>
+          <span class="ps-title">Konstituzioa (1876)</span>
+          <span class="ps-desc">Berrezarkuntzaren oinarri juridikoa. Subiranotasun partekatua, bi ganbera, Eliza ofiziala. 1876-1931 artean indarrean.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SEKZIO 3: Alderdien eta korronte politikoen konparaketa
+         ================================================================ -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">3</span> Korronte politikoen konparaketa</h2>
+      <p class="intro">XIX. mendeko gatazkak ulertzeko, bi mailako konparaketa egin behar da: lehenik absolutistak-liberalen artekoa (mende hasierako gatazka nagusia), gero liberalismoaren barruko bi adarren artekoa.</p>
+
+      <h3 style="font-family:var(--font-display);margin:1.2rem 0 .5rem;font-size:1.1rem;color:var(--accent-ink)">3.1 · Absolutistak vs. Liberalak (1808–1840)</h3>
+      <div class="comp" role="table" aria-label="Absolutistak eta liberalen konparaketa">
+        <div class="comp-header comp-h0">Gaia</div>
+        <div class="comp-header comp-h1">⚜️ Absolutistak</div>
+        <div class="comp-header comp-h2">📜 Liberalak</div>
+
+        <div class="comp-label">Botere iturria</div>
+        <div class="comp-cell">Jainkoa eta tradizioa. Erregearen boterea mugarik gabe.</div>
+        <div class="comp-cell">Subiranotasun nazionala. Boterea herritik dator; konstituzioak mugatzen du.</div>
+
+        <div class="comp-label">Erakunde nagusia</div>
+        <div class="comp-cell">Monarkia absolutua. Gorteak aholku-emaile soil.</div>
+        <div class="comp-cell">Monarkia konstituzionala. Gorteak botere legegile gisa.</div>
+
+        <div class="comp-label">Gizartea</div>
+        <div class="comp-cell">Gizarte estamentala: nobleak, kleroa, herria. Pribilegioak heredatuak.</div>
+        <div class="comp-cell">Legearen aurreko berdintasuna. Pribilejio estamentalen deuseztapena.</div>
+
+        <div class="comp-label">Ekonomia</div>
+        <div class="comp-cell">Erdi aroko zergak, gremio-sistema, Elizaren jabetzak. Merkataritzaren muga ugari.</div>
+        <div class="comp-cell">Jabetza pribatua, merkatu askea, desamortizazioak, trenbidea.</div>
+
+        <div class="comp-label">Eliza</div>
+        <div class="comp-cell">Elizaren botere osoa: hezkuntza, jabetzak, Inkisizioa.</div>
+        <div class="comp-cell">Eliza estatupean; Inkisizioa deseginda; hezkuntza laikoa.</div>
+
+        <div class="comp-label">Eredua</div>
+        <div class="comp-cell">Karlistadak: foruak + erlijioa + monarkia absolutua.</div>
+        <div class="comp-cell">Cadizko Konstituzioa (1812), isabeldar gobernuak.</div>
+      </div>
+
+      <h3 style="font-family:var(--font-display);margin:1.8rem 0 .5rem;font-size:1.1rem;color:var(--accent-ink)">3.2 · Moderatuak vs. Progresistak (liberalismoaren barruan, 1833–1868)</h3>
+      <div class="comp2" role="table" aria-label="Moderatuen eta progresisten konparaketa">
+        <div class="comp-header comp-h1">🏛️ Moderatuak</div>
+        <div class="comp-header comp-h2">🌿 Progresistak</div>
+
+        <div class="comp-cell"><strong>Sufragioa:</strong> oso mugatua (jabetza, errenta); goiko klaseentzat bakarrik.</div>
+        <div class="comp-cell"><strong>Sufragioa:</strong> zabalagoa; gizonezkoen sufragio unibertsalera jotzen.</div>
+
+        <div class="comp-cell"><strong>Boterearen banaketa:</strong> subiranotasun partekatua (erregea + Gorteak). Erregeak ahalmen handia.</div>
+        <div class="comp-cell"><strong>Boterearen banaketa:</strong> subiranotasun nazionala. Gorteak nagusi; erregea mugatuago.</div>
+
+        <div class="comp-cell"><strong>Eliza:</strong> Elizaren pribilegioak mantentzen; desamortizazioen aurka.</div>
+        <div class="comp-cell"><strong>Eliza:</strong> desamortizazioak bultzatzen (Mendizabal 1836, Madoz 1855); Elizaren jabetzak saltzea.</div>
+
+        <div class="comp-cell"><strong>Udal-antolaketa:</strong> zentralismoa. Alkate eta gobernadore zibilak Madrildik izendatuak.</div>
+        <div class="comp-cell"><strong>Udal-antolaketa:</strong> udal-autonomia zabalagoa; tokiko hauteskundeak.</div>
+
+        <div class="comp-cell"><strong>Aldartea:</strong> aldaketa geldoak; burgesia eta noblezian oinarritua.</div>
+        <div class="comp-cell"><strong>Aldartea:</strong> aldaketa bizkorrak; klase erdi eta langile berrietan babesa bilatzen.</div>
+
+        <div class="comp-cell"><strong>Konst. nagusia:</strong> 1845ekoa (subiranotasun partekatua).</div>
+        <div class="comp-cell"><strong>Konst. nagusia:</strong> 1837koa eta 1869koa (subiranotasun nazionala).</div>
+      </div>
+
+      <div class="callout" style="border-color:var(--accent);background:var(--accent-tint);margin-top:1rem">
+        <div class="callout-title" style="color:var(--accent-ink)">⚠️ Bi korronte biek onartzen zutena</div>
+        Bi korronte liberalek ados zeuden <strong>Antzinako Erregimena ezabatzean</strong>: jabetza pribatua, merkatu librea, gizarte estamentalen amaiera eta konstituzioan oinarritutako monarkia. Gatazka etengabea zegoen <em>zein liberalismo-eredu</em> zen egokiena, ez liberalismoa bera zalantzan.
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SEKZIO 4: Seiurteko Demokratikoaren krisi-katea (1868–1874)
+         ================================================================ -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">4</span> Seiurteko Demokratikoaren krisi-katea (1868–1874)</h2>
+      <p class="intro">Zergatik porrot egin zuen Espainiako lehen saiakera demokratikoak? Katea urrats bakoitzean sakondu zen, eta bakoitzaren porrota hurrengoa ekarri zuen.</p>
+      <div class="cchain" role="list">
+
+        <div class="cchain-node" role="listitem">
+          <div class="cn-year">1868</div>
+          <div>
+            <h4>«La Gloriosa» — Isabel II.a kanporatua</h4>
+            <p>Prim eta Serranok gidatutako altxamendua. Koalizio zabalak (progresistak, demokratak, errepublikarrak) Isabel II.a bota zuen. Arrakastaren arrazoia: aliantza zabala.</p>
+            <span class="cn-effect">⚡ Arazo: koalizioa batu zuena etsaia zen, ez programa komun bat</span>
+          </div>
+        </div>
+        <div class="cchain-arrow" aria-hidden="true"></div>
+
+        <div class="cchain-node" role="listitem">
+          <div class="cn-year">1869</div>
+          <div>
+            <h4>1869ko Konstituzioa — Espainiako demokratikoena</h4>
+            <p>Subiranotasun nazionala, gizonezkoen sufragio unibertsala, erlijio askatasuna, eskubide zibil zabalak. Monarkia aukeratu zen (ez errepublika); errege bila hasi ziren.</p>
+            <span class="cn-effect">⚡ Arazo: zein errege? Europako gorteen tentsioa; Prim zen lotsa-lotura</span>
+          </div>
+        </div>
+        <div class="cchain-arrow" aria-hidden="true"></div>
+
+        <div class="cchain-node" role="listitem">
+          <div class="cn-year">1871–73</div>
+          <div>
+            <h4>Amadeo I.a — Onartua ez den erregea</h4>
+            <p>Italiar printze demokrata. Prim hil zuten koronatzeko bezperan (1870). Gero: karlisten altxamendua, Kubako gerra, langile grebak, Elizaren aurkakotasuna, nobleziak arbuiatua. Ezin gobernatu.</p>
+            <span class="cn-effect">⚡ Arazo: ez zuen sostengu-oinarririk; babesle nagusia (Prim) hila</span>
+          </div>
+        </div>
+        <div class="cchain-arrow" aria-hidden="true"></div>
+
+        <div class="cchain-node" role="listitem">
+          <div class="cn-year">1873</div>
+          <div>
+            <h4>Lehen Errepublika — Lau presidente urte bakarrean</h4>
+            <p>Figueras, Pi i Margall, Salmerón, Castelar. Barne zatiketa: zentralistak vs. federalak. Kantonien altxamendua (Cartagena, Alcoy), III. Karlistada, Kubako gerra. Ezin egonkortu.</p>
+            <span class="cn-effect">⚡ Arazo: ezkerreko babes soziala falta, eta ezkerra bera zatituta</span>
+          </div>
+        </div>
+        <div class="cchain-arrow" aria-hidden="true"></div>
+
+        <div class="cchain-node" role="listitem">
+          <div class="cn-year">1874</div>
+          <div>
+            <h4>Berrezarkuntza — Martínez Camposen kolpea</h4>
+            <p>Sagunton emandako kolpe militarrak Alfonso XII.a tronura ekarri zuen. Cánovas del Castillok sistema berri bat diseinatu zuen: bi alderdiren txandakatze kontrolatua.</p>
+            <span class="cn-effect">✓ Emaitza: Berrezarkuntzak 50 urte iraun zuen (1874–1923/1931)</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="callout" style="border-color:var(--accent);background:var(--accent-tint);margin-top:1.5rem">
+        <div class="callout-title" style="color:var(--accent-ink)">🔑 Seiurtekoa ulertzeko gako nagusia</div>
+        Seiurtekoak erakutsi zuen <strong>demokrazia ezartzeko ez dela nahikoa konstituzio on bat idaztea</strong>: babes sozial zabala, erakundeen egonkortasuna eta elite ekonomikoen onarpena behar dira. Guzti hori falta zen. Hala ere, sufragio unibertsal maskulinoa, federalismoaren ideia eta errepublika bezalako kontzeptuak errotu ziren eta XX. mendera iritsi ziren.
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SEKZIO 5: Foruen abolizioaren ondorio-mapa (1876)
+         ================================================================ -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">5</span> Foruen abolizioaren ondorio-mapa (1876)</h2>
+      <p class="intro">1876ko uztaileko legeak Euskal Herriko foru historikoak ezabatu zituen. Eragin zuzenak eta zeharrekoak hamarkadetan zehar hedatu ziren eta gaur egungo errealitate politikoaren oinarriak ezarri zituen.</p>
+
+      <div class="cmap">
+        <div class="cmap-center">
+          <div class="cc-year">1876</div>
+          <div class="cc-event">Foruen Abolizioa</div>
+          <div class="cc-sub">Cánovas del Castilloren legea · Uztailaren 21a</div>
+        </div>
+
+        <div class="cmap-grid">
+          <div class="cmap-node">
+            <div class="cm-tag">Berehalako eragina</div>
+            <h4>Kontzertu Ekonomikoa (1878)</h4>
+            <p>Abolizioaren konpentsazio ekonomikoa. Euskal lurraldeek zerga-autonomia partziala mantendu zuten: kupo bat ordaintzen diote estatuari eta inbertsio-politika propioa egiten dute. Gaur egun ere indarrean.</p>
+          </div>
+
+          <div class="cmap-node">
+            <div class="cm-tag">Epe ertaineko eragina</div>
+            <h4>Abertzaletasun modernoaren sorrera</h4>
+            <p>Sabino Aranak foruak oinarri historiko gisa erabili zituen EAJ-PNV alderdia eraikitzeko (1895). Foruen galera = nazio galera bezala interpretatu zuen; euskara eta identitate kulturala nabarmendu.</p>
+          </div>
+
+          <div class="cmap-node">
+            <div class="cm-tag">Politika-eragina</div>
+            <h4>Karlismoa oinarri galtzen</h4>
+            <p>Karlismoak foruak defendatu zituen hiru gerra-aldian. Derrota eta abolizioa desilusioa sortu zuen. Zati bat abertzaletasunera igaro zen; beste zati bat tradizionalismoan geratu zen, indargabetuta.</p>
+          </div>
+
+          <div class="cmap-node">
+            <div class="cm-tag">Ekonomia</div>
+            <h4>Industrializazioa azkartzen</h4>
+            <p>Paradoxikoki, Kontzertu Ekonomikoak eta merkataritza-batasunaren ezarpenak Bizkaiko industrializazioa bultzatu zuen. Altzairu-industriak eta ontziolek hamarkadetan errota-puntua lortu zuten.</p>
+          </div>
+
+          <div class="cmap-node">
+            <div class="cm-tag">Kulturan</div>
+            <h4>Identitate eta kultura euskaldunaren berpiztea</h4>
+            <p>Foru-galera kulturaren eta hizkuntzaren aldekoei bultzada eman zien: lehen Euskal Festak, Euskaltzaindiaren aurrekariak, literatura euskaraz. Politika eta kultura estuki loturik.</p>
+          </div>
+
+          <div class="cmap-node">
+            <div class="cm-tag">Epe luzeko eragina</div>
+            <h4>Zentralismo-autonomia eztabaidaren iraupena</h4>
+            <p>1876ko tentsioak XX. mendean jarraitu zuen: II. Errepublika (Autonomia Estatutua 1936), Francoren zentralismoa (foruak berriro suntsitu), eta 1979ko Gernikako Estatutua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SINTESIA
+         ================================================================ -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">✓</span> Sintesia: 5 ideia giltzarri</h2>
+      <div class="callout" style="border-color:var(--accent); background: var(--accent-tint);">
+        <div class="callout-title" style="color:var(--accent-ink)">Gai honetako prozesu nagusien laburpena</div>
+        <ol style="margin: .7rem 0 0; padding-left: 1.3rem; line-height: 2;">
+          <li>Independentzia Gerrak <strong>bi ondorio paradoxiko</strong> izan zituen: nazionalismo espainola piztu zuen, eta aldi berean Antzinako Erregimena kolokan jarri zuen, liberalismoaren bidea irekiz.</li>
+          <li>XIX. mendea <strong>pendulu bat</strong> da: liberalismo-absolutismo arteko txandakatze etengabea, ez garapen lineal bat. Konstituzio bakoitzak aurreko korronte nagusiaren erreakzioa adierazten du.</li>
+          <li>Liberalismoaren barruko <strong>moderatuen vs. progresisten</strong> banaketak azaltzen du zergatik ezin izan ziren sistema demokratiko egonkor bat eraiki: eliteen interes partzialek lehentasun handiagoa zuten demokraziak baino.</li>
+          <li>Seiurteko Demokratikoaren porrota ez da kasualitate bat: <strong>egitura sozioekonomikoa</strong> (lurjabea, Eliza, armada) ez zegoen prest demokraziarako; eta oposizioa bera ez zen bateratua.</li>
+          <li>Foruen abolizioa ez da bukaera bat: <strong>abiapuntu bat</strong> da, Euskal Herrian oraindik ere eztabaidatzen diren galderak planteatu zituena: autonomia, identitate, zentralismoa eta kontzertu ekonomikoa.</li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a class="pager-btn prev" href="01-antzinako-erregimena.html">← 1. Gaia: eduki osoa</a>
+      <a class="pager-btn next" href="../index.html">Hasierara →</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="../index.html"><span class="logo">H</span><span>Historia BTX2</span></a>
+          <p>Espainiako Historia · 2. Batxilergoa</p>
+        </div>
+        <div class="footer-copy">
+          <p>© 2025 <strong>Luken San Sebastián Alkorta</strong> · La Salle Donostia</p>
+          <p><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.eu" target="_blank" rel="noopener">CC BY-SA 4.0</a> — Aske erabil dezakezu iturria aipatzen baduzu eta baldintza berdinetan partekatzen baduzu.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js?v=6"></script>
+</body>
+</html>
