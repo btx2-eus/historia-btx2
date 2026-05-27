@@ -50,6 +50,7 @@
       <div class="hero-meta">
         <span class="years-pill">📅 {{ tema.meta.years }}</span>
         {% if tema.meta.pdf %}<a class="dl-btn" href="../pdf/{{ tema.meta.pdf }}" download>⬇ Deskargatu PDFa</a>{% else %}<a class="dl-btn" href="../pdf/{{ site.apunteak_pdf }}" download>⬇ Apunteak (PDF osoa)</a>{% endif %}
+        {% if tema.meta.connections_url %}<a class="dl-btn" href="{{ tema.meta.connections_url }}" style="background:var(--accent);color:#fff">🗺️ Konexioak eta prozesuak</a>{% endif %}
       </div>
     </div>
   </section>

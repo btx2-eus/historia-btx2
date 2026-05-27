@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2. Gaia · Konexioak eta prozesuak · Historia BTX2</title>
+  <meta name="description" content="Berrezarkuntzaren sistema (1876-1930): kausa-ondorio kateak, alderdien konparaketa eta konexio-mapak, prozesu historikoak hobeto ulertzeko." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=6" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23f59e0b'/%3E%3Ctext x='50' y='72' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3E2%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root { --ca: var(--era-2-a); --cb: var(--era-2-b); --accent: #d97706; --accent-2: #eab308; --accent-ink: #92400e; --accent-tint: #fef3c7; }
+
+    /* --- Process chain (horizontal) --- */
+    .proc-chain { display: flex; align-items: stretch; gap: .55rem; overflow-x: auto; padding: 1rem .2rem 1.3rem; scroll-snap-type: x proximity; }
+    .proc-chain::-webkit-scrollbar { height: 8px; }
+    .proc-chain::-webkit-scrollbar-thumb { background: var(--line); border-radius: 999px; }
+    .proc-step {
+      flex: 0 0 220px; background: var(--bg-card); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 1rem 1.1rem; scroll-snap-align: start;
+      display: flex; flex-direction: column; gap: .35rem; box-shadow: var(--shadow-sm);
+      position: relative; transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+    .proc-step:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--accent); }
+    .proc-step .ps-year { font-family: var(--font-display); font-weight: 700; color: var(--accent); font-size: 1.4rem; line-height: 1; }
+    .proc-step .ps-title { font-family: var(--font-display); font-weight: 700; font-size: 1rem; line-height: 1.25; color: var(--ink); }
+    .proc-step .ps-desc { font-size: .85rem; color: var(--muted); line-height: 1.45; }
+    .proc-arrow { align-self: center; flex: 0 0 auto; color: var(--accent); font-size: 1.6rem; font-weight: 700; font-family: var(--font-display); }
+
+    /* --- Comparison (two columns) --- */
+    .comp { display: grid; grid-template-columns: 200px 1fr 1fr; gap: 0; margin: 1.5rem 0; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--line); }
+    .comp > div { padding: .85rem 1.1rem; border-bottom: 1px solid var(--line); }
+    .comp > div:nth-last-child(-n+3) { border-bottom: 0; }
+    .comp .comp-header { font-family: var(--font-display); font-weight: 700; color: #fff; font-size: 1rem; }
+    .comp .comp-h1 { background: linear-gradient(135deg, #d97706, #eab308); }
+    .comp .comp-h2 { background: linear-gradient(135deg, #1d4ed8, #2563eb); }
+    .comp .comp-h0 { background: var(--accent-ink); }
+    .comp .comp-label { font-family: var(--font-display); font-weight: 700; color: var(--accent-ink); background: var(--accent-tint); font-size: .92rem; }
+    .comp .comp-cell { background: var(--bg-card); font-size: .92rem; color: var(--ink-soft); line-height: 1.5; }
+    .comp .comp-cell.warn { background: #fffbeb; }
+
+    /* --- Cause tree (radial) --- */
+    .tree { margin: 1.4rem 0; }
+    .tree-root {
+      max-width: 380px; margin: 0 auto 0;
+      background: linear-gradient(135deg, var(--ca), var(--cb)); color: #fff;
+      padding: 1.1rem 1.4rem; border-radius: var(--radius); text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .tree-root .tr-year { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; line-height: 1; }
+    .tree-root .tr-event { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; margin-top: .3rem; }
+    .tree-trunk { width: 2px; height: 42px; background: var(--accent); margin: 0 auto; position: relative; }
+    .tree-trunk::after { content: "▼"; position: absolute; bottom: -2px; left: 50%; transform: translateX(-50%); color: var(--accent); font-size: .9rem; }
+    .tree-leaves {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem; margin-top: 0;
+    }
+    .tree-leaf {
+      background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 1rem 1.1rem; position: relative; box-shadow: var(--shadow-sm);
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+    .tree-leaf:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--accent); }
+    .tree-leaf::before {
+      content: ""; position: absolute; top: -20px; left: 50%; width: 2px; height: 20px; background: var(--accent); transform: translateX(-50%);
+    }
+    .tree-leaf h4 { font-family: var(--font-display); color: var(--accent-ink); font-size: 1rem; margin: 0 0 .35rem; }
+    .tree-leaf p { font-size: .88rem; color: var(--muted); margin: 0; line-height: 1.5; }
+
+    /* --- Vertical cause chain --- */
+    .cchain { display: flex; flex-direction: column; gap: 0; margin: 1.4rem 0; max-width: 760px; margin-inline: auto; }
+    .cchain-node {
+      background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 1.1rem 1.4rem; box-shadow: var(--shadow-sm);
+      display: grid; grid-template-columns: 88px 1fr; gap: 1.1rem; align-items: start;
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+    .cchain-node:hover { transform: translateX(4px); box-shadow: var(--shadow); border-color: var(--accent); }
+    .cchain-node .cn-year {
+      font-family: var(--font-display); font-weight: 700; font-size: 1.6rem;
+      color: #fff; background: linear-gradient(135deg, var(--ca), var(--cb));
+      padding: .55rem .35rem; border-radius: 12px; text-align: center; line-height: 1.1;
+    }
+    .cchain-node h4 { font-family: var(--font-display); font-size: 1.08rem; margin: 0 0 .35rem; color: var(--accent-ink); }
+    .cchain-node p { font-size: .92rem; color: var(--ink-soft); margin: 0 0 .35rem; line-height: 1.55; }
+    .cchain-node .cn-effect { background: var(--accent-tint); padding: .45rem .7rem; border-radius: 8px; font-size: .88rem; color: var(--accent-ink); font-weight: 600; margin-top: .3rem; display: inline-block; }
+    .cchain-arrow {
+      align-self: center; height: 28px; width: 2px; background: var(--accent);
+      margin-left: 44px; position: relative;
+    }
+    .cchain-arrow::after { content: "▼"; position: absolute; bottom: -3px; left: 50%; transform: translateX(-50%); color: var(--accent); font-size: .9rem; }
+
+    /* --- Concept map (central + radiating) --- */
+    .cmap { margin: 1.4rem 0; }
+    .cmap-center {
+      max-width: 320px; margin: 0 auto 1rem;
+      background: linear-gradient(135deg, var(--ca), var(--cb)); color: #fff;
+      padding: 1.2rem 1.4rem; border-radius: var(--radius); text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .cmap-center .cc-year { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; line-height: 1; }
+    .cmap-center .cc-event { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; margin-top: .3rem; }
+    .cmap-center .cc-sub { font-size: .82rem; opacity: .9; margin-top: .25rem; }
+    .cmap-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: .9rem;
+    }
+    .cmap-node {
+      background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 1rem 1.1rem; box-shadow: var(--shadow-sm);
+      border-left: 4px solid var(--accent);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .cmap-node:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+    .cmap-node h4 { font-family: var(--font-display); color: var(--accent-ink); font-size: .98rem; margin: 0 0 .35rem; }
+    .cmap-node p { font-size: .85rem; color: var(--muted); margin: 0; line-height: 1.5; }
+    .cmap-node .cm-tag {
+      display: inline-block; font-family: var(--font-display); font-weight: 700; font-size: .7rem;
+      text-transform: uppercase; letter-spacing: .08em; padding: .12rem .55rem;
+      border-radius: 999px; background: var(--accent-tint); color: var(--accent-ink); margin-bottom: .45rem;
+    }
+
+    /* Section headers */
+    .konexio-section { margin-bottom: 2.6rem; }
+    .konexio-section h2 {
+      font-size: clamp(1.4rem, 3.2vw, 1.8rem); margin-bottom: .5rem;
+      padding-bottom: .5rem; border-bottom: 3px solid var(--accent-tint);
+      display: flex; align-items: baseline; gap: .6rem;
+    }
+    .konexio-section h2 .ks-num {
+      font-size: .9rem; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, var(--ca), var(--cb));
+      padding: .15rem .65rem; border-radius: 8px;
+    }
+    .konexio-section > p.intro { color: var(--muted); margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Edukira saltatu</a>
+  <div class="progress-bar" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="../index.html"><span class="logo">H</span><span>Historia BTX2<small>Espainiako Historia · 2. Batxilergoa</small></span></a>
+      <button class="nav-toggle" aria-label="Menua" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="../index.html#denbora-lerroa">Denbora-lerroa</a>
+        <a href="../index.html#gaiak">Gaiak</a>
+        <a href="02-berrezarkuntza.html">2. Gaia</a>
+        <a class="cta" href="../index.html">← Hasiera</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="tema-hero" id="main" tabindex="-1">
+    <div class="container">
+      <div class="crumbs">
+        <a href="../index.html">Hasiera</a> <span>›</span>
+        <a href="../index.html#gaiak">Gaiak</a> <span>›</span>
+        <a href="02-berrezarkuntza.html">2. Gaia</a> <span>›</span>
+        <span>Konexioak eta prozesuak</span>
+      </div>
+      <div class="gaia-num">2. Gaia · 🗺️ Konexioak eta prozesuak</div>
+      <h1>Berrezarkuntzaren sistema, prozesuetan</h1>
+      <div class="hero-meta">
+        <span class="years-pill">📅 1876 – 1930</span>
+        <a class="dl-btn" href="02-berrezarkuntza.html">📖 Itzuli gaira</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container" style="padding-top: 2.5rem; padding-bottom: 4rem; max-width: 1080px;">
+
+    <p style="font-size:1.05rem; color: var(--ink-soft); margin-bottom: 2rem;">
+      Gai honetako <strong>kausa-ondorio kateak</strong>, <strong>alderdien konparaketak</strong> eta <strong>konexio-mapak</strong>. Bisualki antolatuta dago, prozesuak hobeto ulertzeko. EBAU/USaPeko B eta C galderetarako (<em>Sakontasuna</em>, <em>Testuinguratzea</em>) bereziki erabilgarria.
+    </p>
+
+    <!-- 1. Sistema kanobistaren sorrera -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">1</span> Sistema kanobistaren sorrera (1874–1901)</h2>
+      <p class="intro">Sistemaren oinarriak ezarri zireneko prozesu kronologikoa: nondik nora, urratsez urrats.</p>
+
+      <div class="proc-chain">
+        <div class="proc-step">
+          <span class="ps-year">1874</span>
+          <span class="ps-title">Sagunton kolpea</span>
+          <span class="ps-desc">Martínez Camposek kolpe baketsua. Lehen Errepublikaren amaiera.</span>
+        </div>
+        <div class="proc-arrow">→</div>
+        <div class="proc-step">
+          <span class="ps-year">1875</span>
+          <span class="ps-title">Borboien itzulera</span>
+          <span class="ps-desc">Alfonso XII.a errege. Cánovas del Castillok sistema diseinatzen du.</span>
+        </div>
+        <div class="proc-arrow">→</div>
+        <div class="proc-step">
+          <span class="ps-year">1876</span>
+          <span class="ps-title">1876ko Konstituzioa</span>
+          <span class="ps-desc">Subiranotasun partekatua, bi ganbera, erlijio katolikoa. III. Karlistaldia amaitzen da.</span>
+        </div>
+        <div class="proc-arrow">→</div>
+        <div class="proc-step">
+          <span class="ps-year">1876</span>
+          <span class="ps-title">Foruen abolizioa</span>
+          <span class="ps-desc">Lege bidez. Salbuespen partziala: 1878ko Kontzertu Ekonomikoa.</span>
+        </div>
+        <div class="proc-arrow">→</div>
+        <div class="proc-step">
+          <span class="ps-year">1879</span>
+          <span class="ps-title">PSOE sortzen da</span>
+          <span class="ps-desc">Pablo Iglesias. 1888an UGT. Langile mugimendua antolatua.</span>
+        </div>
+        <div class="proc-arrow">→</div>
+        <div class="proc-step">
+          <span class="ps-year">1890</span>
+          <span class="ps-title">Sufragio unibertsala (gizon)</span>
+          <span class="ps-desc">Sagastaren liberalek ezarria. Kazikismoak, ordea, indarrean dirau.</span>
+        </div>
+        <div class="proc-arrow">→</div>
+        <div class="proc-step">
+          <span class="ps-year">1895</span>
+          <span class="ps-title">EAJ-PNV</span>
+          <span class="ps-desc">Sabino Aranak Bilbon. Foruen galeraren erantzun politikoa.</span>
+        </div>
+        <div class="proc-arrow">→</div>
+        <div class="proc-step">
+          <span class="ps-year">1901</span>
+          <span class="ps-title">Lliga Regionalista</span>
+          <span class="ps-desc">Prat de la Riba, Cambó. Katalanismo politiko modernoa.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Bi alderdiak alderatuta -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">2</span> Bi alderdiak alderatuta: nondik desberdintzen ziren?</h2>
+      <p class="intro">Txandaketa-sistema funtzionatzen zen elkarren antzekoak zirelako funtsean. Hauek izan ziren benetako aldeak eta antzekotasunak.</p>
+
+      <div class="comp">
+        <div class="comp-header comp-h0"></div>
+        <div class="comp-header comp-h1">Alderdi Kontserbadorea</div>
+        <div class="comp-header comp-h2">Alderdi Liberala</div>
+
+        <div class="comp-label">Lider nagusia</div>
+        <div class="comp-cell">Antonio Cánovas del Castillo</div>
+        <div class="comp-cell">Práxedes Mateo Sagasta</div>
+
+        <div class="comp-label">Ideologia</div>
+        <div class="comp-cell">Liberal-kontserbadorea, zentralista, ordenaren defendatzaile.</div>
+        <div class="comp-cell">Liberal progresista moderatua, eskubide zibilak hobetzearen aldekoa.</div>
+
+        <div class="comp-label">Sufragioa</div>
+        <div class="comp-cell">Sufragio murriztuaren alde.</div>
+        <div class="comp-cell"><strong>1890ean</strong> gizonezkoen sufragio unibertsala ezarri zuen.</div>
+
+        <div class="comp-label">Elizarekin</div>
+        <div class="comp-cell">Estu loturik; tradizio katolikoa zaintzen du.</div>
+        <div class="comp-cell">Distantzia gehiago, baina katolizismoarekin haustu gabe.</div>
+
+        <div class="comp-label">Babes soziala</div>
+        <div class="comp-cell">Elite ekonomiko tradizionala, lurjabe handiak, klase ertain kontserbadorea, militar batzuk.</div>
+        <div class="comp-cell">Klase ertain liberala, burgesia ilustratua, profesionalak.</div>
+
+        <div class="comp-label comp-cell warn" style="background:#fffbeb">⚠️ Ados zeudena</div>
+        <div class="comp-cell warn" colspan="2" style="grid-column: span 2;"><strong>Funtsezko gauzetan ados:</strong> kazikismoa, sistema ekonomikoa, zentralismoa eta ordena soziala. Horregatik funtzionatu zuen «txandaketak»: ez zegoen benetako alternatibarik.</div>
+      </div>
+    </section>
+
+    <!-- 3. 98ko Hondamendiaren ondorioak (Tree) -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">3</span> 98ko Hondamendiaren ondorioak: kausa-arbola</h2>
+      <p class="intro">Gertakari bakar batek (1898ko porrota AEBen aurka) hainbat ondorio izan zituen, sistemaren oinarriak astindu eta XX. mendeko Espainiako gatazka asko ernamuindu zituztenak.</p>
+
+      <div class="tree">
+        <div class="tree-root">
+          <div class="tr-year">1898</div>
+          <div class="tr-event">98ko Hondamendia</div>
+          <div style="font-size:.85rem;opacity:.9;margin-top:.3rem">Kuba, Puerto Rico eta Filipinen galera (Parisko Ituna)</div>
+        </div>
+        <div class="tree-trunk"></div>
+        <div class="tree-leaves">
+          <div class="tree-leaf">
+            <h4>🧭 Identitate-krisia</h4>
+            <p>Inperio izatetik kolonia gabera. Nazioaren inguruko pentsamenduak krisi sakona bizi du.</p>
+          </div>
+          <div class="tree-leaf">
+            <h4>💰 Ekonomia-krisia</h4>
+            <p>Enpresari eta merkatariek merkatuak galdu zituzten (azukrea, tabakoa, merkataritza koloniala).</p>
+          </div>
+          <div class="tree-leaf">
+            <h4>🏛️ Sistema politikoaren krisia</h4>
+            <p>Errestaurazioaren zilegitasuna eta egitura kolokan. Eliteen ospea hondatu zen.</p>
+          </div>
+          <div class="tree-leaf">
+            <h4>📚 Erregenerazionismoa</h4>
+            <p>Joaquín Costa: «Europaizatzea eta desoligarkizatzea». Sistemaren kritika intelektuala.</p>
+          </div>
+          <div class="tree-leaf">
+            <h4>🌍 Abertzaletasunen sendotzea</h4>
+            <p>Estatu zentralaren ahultasuna baliatuz, euskal eta katalan nazionalismoa indartu egin zen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Sistemaren erorketaren katea -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">4</span> Sistemaren erorketa: kausa-katea (1898–1931)</h2>
+      <p class="intro">Sistemaren amaiera ez zen istripua izan: 30 urteko kateaketa logikoa zen, krisi bakoitzak hurrengoa zekarrelarik. Hauxe da Berrezarkuntzaren agonia urratsez urrats.</p>
+
+      <div class="cchain">
+        <div class="cchain-node">
+          <div class="cn-year">1898</div>
+          <div>
+            <h4>98ko Hondamendia</h4>
+            <p>Kuba, Puerto Rico eta Filipinen galera. Sistemaren zilegitasuna kolokan, kritika intelektualaren sorrera.</p>
+            <span class="cn-effect">→ Erregenerazionismoa eta abertzaletasunen indartzea</span>
+          </div>
+        </div>
+        <div class="cchain-arrow"></div>
+
+        <div class="cchain-node">
+          <div class="cn-year">1909</div>
+          <div>
+            <h4>Bartzelonako Aste Tragikoa</h4>
+            <p>Marokoko gerrarako soldaduen bidalketak protestak piztu zituen. Greba orokorra, elizen aurkako matxinada, errepresio odoltsua (Ferrer Guardia fusilatua).</p>
+            <span class="cn-effect">→ Sistemaren izaera errepresiboa agerian</span>
+          </div>
+        </div>
+        <div class="cchain-arrow"></div>
+
+        <div class="cchain-node">
+          <div class="cn-year">1917</div>
+          <div>
+            <h4>Krisi hirukoitza</h4>
+            <p>I. Mundu Gerraren ondorengo inflazio handia. <strong>Hiru krisi aldi berean</strong>: militarra (Defentsa Juntak), politikoa (Parlamentarioen Asanblada), soziala (UGT+CNT greba orokorra).</p>
+            <span class="cn-effect">→ Sistema bera salbatzeko ezin denik agerian</span>
+          </div>
+        </div>
+        <div class="cchain-arrow"></div>
+
+        <div class="cchain-node">
+          <div class="cn-year">1921</div>
+          <div>
+            <h4>Annualeko hondamendia</h4>
+            <p>Marokon, Abd-el-Krimen matxinadak 10.000 soldadu hil zituen. Expediente Picassok armadaren eta gobernuaren ustelkeria salatu zuen. Alfonso XIII.aren papera zalantzan.</p>
+            <span class="cn-effect">→ Militarismoaren gorakada, ezin estali krisia</span>
+          </div>
+        </div>
+        <div class="cchain-arrow"></div>
+
+        <div class="cchain-node">
+          <div class="cn-year">1923</div>
+          <div>
+            <h4>Primo de Riveraren kolpea</h4>
+            <p>Irailak 13, Bartzelonan. Alfonso XIII.aren onespenarekin. Lehen diktadura militar modernoa. <strong>Erregimena ezin zen jada sistema konstituzionalaren barruan eutsi</strong>.</p>
+            <span class="cn-effect">→ Autoritarismoaren normalizazioa; monarkia diktadurarekin identifikatuta</span>
+          </div>
+        </div>
+        <div class="cchain-arrow"></div>
+
+        <div class="cchain-node">
+          <div class="cn-year">1930</div>
+          <div>
+            <h4>Diktaduraren amaiera</h4>
+            <p>Primo de Riveraren dimisioa urtarrilean. 1929ko krisi ekonomikoak ahuldu zuen babes soziala. Errepublikar mugimendua indartuta. Alfonso XIII.a oso ahulduta.</p>
+            <span class="cn-effect">→ Monarkiaren bukaerako bidea ireki</span>
+          </div>
+        </div>
+        <div class="cchain-arrow"></div>
+
+        <div class="cchain-node" style="background: linear-gradient(135deg, #fef3c7, #fde68a); border-color: #f59e0b;">
+          <div class="cn-year">1931</div>
+          <div>
+            <h4>II. Errepublika</h4>
+            <p>Apirilaren 14an aldarrikatu zen. <strong>Berrezarkuntza sistema ez zen herriaren eskariz amaitu, bere inertziaren ondorioz kolapsatu zen baizik</strong>. Hortik aurrera, gai berri batera (Gaia 4) jauzi egiten dugu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Konexio-mapa: Foruen galera -->
+    <section class="konexio-section">
+      <h2><span class="ks-num">5</span> Foruen galeraren konexio-mapa (1876)</h2>
+      <p class="intro">Gertakari bakar batek nola elikatu zuen euskal historia garaikidearen ardatz oso bat: foruen abolizioa abiapuntu hartuta, ondorengo prozesu nagusiak.</p>
+
+      <div class="cmap">
+        <div class="cmap-center">
+          <div class="cc-year">1876</div>
+          <div class="cc-event">Foruen abolizioa</div>
+          <div class="cc-sub">III. Karlistaldiaren ondoren, Cánovasen erabakia</div>
+        </div>
+
+        <div class="cmap-grid">
+          <div class="cmap-node">
+            <span class="cm-tag">📜 Aurrekaria</span>
+            <h4>Karlismoa (Euskal Herrian)</h4>
+            <p>Foruen defentsa zen karlisten aldarri nagusietako bat. Galera horrek karlismoaren erantzun politiko berriak elikatu zituen.</p>
+          </div>
+          <div class="cmap-node">
+            <span class="cm-tag">🤝 Konpentsazioa</span>
+            <h4>Kontzertu Ekonomikoa (1878)</h4>
+            <p>Bizkaia, Gipuzkoa eta Arabarekin sinatua. Zerga-autonomia partziala. <strong>Gaur arte indarrean</strong>. Salbuespen instituzionala foruen galeraren ondoren.</p>
+          </div>
+          <div class="cmap-node">
+            <span class="cm-tag">🏭 Aldi berean</span>
+            <h4>Industrializazioa + immigrazioa</h4>
+            <p>Bizkaiko siderurgia eta meatzaritzak immigrazio masiboa erakarri zuten. Honek gizarte-eraldaketa azkarra eragin zuen, lehengo identitate katolikoa kolokan jarriz.</p>
+          </div>
+          <div class="cmap-node">
+            <span class="cm-tag">🌱 Erantzun politikoa</span>
+            <h4>EAJ-PNV (1895)</h4>
+            <p>Sabino Aranak Bilbon sortua. <strong>Foruen galera identitatearen aurkako traiziotzat hartuz</strong>, euskal nazionalismoaren oinarri politikoa eraiki zuen («Jaungoikoa eta Lagi-Zarra»).</p>
+          </div>
+          <div class="cmap-node">
+            <span class="cm-tag">⚙️ Gizarte-aldaketa</span>
+            <h4>Langile mugimendua euskal industrian</h4>
+            <p>Bilboko meatzaritzan eta siderurgian, PSOE/UGT (ondoren CNT) sendotuko ziren, immigrazioarekin batera. Sabino Aranaren proiektuaren beste mehatxua, klase-borrokarekin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sintesia -->
+    <section class="konexio-section" style="margin-top: 2.5rem;">
+      <h2><span class="ks-num">∑</span> Sintesia: zer gogoratu</h2>
+      <div style="background: linear-gradient(135deg, var(--accent-tint), #fff); border-left: 4px solid var(--accent); padding: 1.4rem 1.6rem; border-radius: var(--radius);">
+        <ol style="margin: 0; padding-left: 1.4rem; color: var(--ink-soft); line-height: 1.75;">
+          <li><strong>Sistema</strong> elite-akordio batean oinarritu zen, ez parte-hartze demokratikoan: <em>kazikismoa + txandaketa = egonkortasun artifiziala</em>.</li>
+          <li><strong>1898ko porrotak</strong> sistemaren oinarri morala apurtu zuen; hortik aurrera dena zen bide makalez behera.</li>
+          <li>Krisia <strong>katean</strong> etorri zen: 1898 → 1909 → 1917 → 1921 → 1923. <em>Krisi bakoitzak hurrengoa zekarren</em>.</li>
+          <li>Alfonso XIII.aren <strong>Primo de Riverarekiko identifikazioa</strong> erregimenaren tabako bihurtu zen: diktadura porrot egin zenean, monarkia ere kolokan geratu zen.</li>
+          <li>Foruen galera <strong>euskal politika garaikidearen abiapuntua</strong> da: hortik datoz EAJ, Kontzertu Ekonomikoa eta gaur arteko eztabaida instituzionalak.</li>
+        </ol>
+      </div>
+    </section>
+
+    <nav class="tema-pager" style="margin-top: 3rem;">
+      <a href="02-berrezarkuntza.html">← 2. Gaira itzuli</a>
+      <a href="../index.html">Hasierara →</a>
+    </nav>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="brand" href="../index.html"><span class="logo">H</span><span>Historia BTX2<small>Luken San Sebastián Alkorta</small></span></a>
+      <nav class="foot-links">
+        <a href="../index.html#denbora-lerroa">Denbora-lerroa</a>
+        <a href="../index.html#gaiak">Gaiak</a>
+        <a href="02-berrezarkuntza.html">2. Gaia</a>
+      </nav>
+      <div class="foot-bottom">
+        <span>2. Gaia · Konexioak eta prozesuak</span>
+        <span>© <span data-year>2026</span> · Luken San Sebastián Alkorta · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license" style="color:inherit;text-decoration:underline">CC BY-SA 4.0</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Gora itzuli">↑</button>
+  <script src="../assets/js/app.js?v=6"></script>
+</body>
+</html>
