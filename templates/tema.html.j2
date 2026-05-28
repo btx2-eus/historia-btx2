@@ -65,6 +65,7 @@
             {%- for s in tema.sections %}
             <a href="#{{ s.id }}">{{ s.number }} {{ s.toc_label | default(s.title, true) }}</a>
             {%- endfor %}
+            {% if tema.meta.aurkezpena_url %}<a href="#aurkezpena">🎞️ Aurkezpena</a>{% endif %}
             <a href="#iturriak">📜 Iturriak</a>
             <a href="#flashcardak">🃏 Flashcardak</a>
             <a href="#glosarioa">📖 Glosarioa</a>
@@ -107,6 +108,17 @@
           {{ s.body | safe }}
         </section>
         {%- endfor %}
+
+        {% if tema.meta.aurkezpena_url %}
+        <section id="aurkezpena" class="reveal aurkezpena-section">
+          <h2><span class="h-num">🎞️</span> Aurkezpena</h2>
+          <p>Gaiko edukiaren laburpen bisual eta pedagogikoa. Diapositibak aurrera eta atzera eraman ditzakezu, edo pantaila osoan ireki.</p>
+          <div class="iturri-actions">
+            <a class="btn btn-soft" href="{{ tema.meta.aurkezpena_url | replace('/preview', '/view') }}" target="_blank" rel="noopener">↗ Drive-n ireki</a>
+          </div>
+          <iframe class="aurkezpena-frame" src="{{ tema.meta.aurkezpena_url }}" title="{{ tema.meta.number }}. gaiko aurkezpena" loading="lazy" allowfullscreen></iframe>
+        </section>
+        {% endif %}
 
         <section id="iturriak" class="reveal iturri-section">
           <h2><span class="h-num">📜</span> Iturri historikoak</h2>

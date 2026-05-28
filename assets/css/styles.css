@@ -379,6 +379,12 @@ ul { padding-left: 1.1em; }
 .gloss-item dd { margin: 0; font-size: .9rem; color: var(--muted); }
 
 /* Iturri historikoak (embedded PDF) */
+.aurkezpena-section { margin-bottom: 2.8rem; scroll-margin-top: calc(var(--nav-h) + 20px); }
+.aurkezpena-frame {
+  width: 100%; height: 620px; border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow-sm); background: var(--bg-soft);
+}
+@media (max-width: 720px) { .aurkezpena-frame { height: 420px; } }
 .iturri-section { margin-bottom: 2.8rem; scroll-margin-top: calc(var(--nav-h) + 20px); }
 .iturri-actions { display: flex; gap: .6rem; flex-wrap: wrap; margin: 0.6rem 0 1rem; }
 .iturri-actions .btn { padding: .55rem 1.1rem; font-size: .92rem; }
