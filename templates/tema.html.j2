@@ -114,7 +114,7 @@
           <h2><span class="h-num">🎞️</span> Aurkezpena</h2>
           <p>Gaiko edukiaren laburpen bisual eta pedagogikoa. Diapositibak aurrera eta atzera eraman ditzakezu, edo pantaila osoan ireki.</p>
           <div class="iturri-actions">
-            <a class="btn btn-soft" href="{{ tema.meta.aurkezpena_url | replace('/preview', '/view') }}" target="_blank" rel="noopener">↗ Drive-n ireki</a>
+            <a class="btn btn-soft" href="{{ tema.meta.aurkezpena_link or (tema.meta.aurkezpena_url | replace('/preview', '/view')) }}" target="_blank" rel="noopener">↗ Pantaila osoan ireki</a>
           </div>
           <iframe class="aurkezpena-frame" src="{{ tema.meta.aurkezpena_url }}" title="{{ tema.meta.number }}. gaiko aurkezpena" loading="lazy" allowfullscreen></iframe>
         </section>
