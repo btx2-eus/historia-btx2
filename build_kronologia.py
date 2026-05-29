@@ -383,8 +383,8 @@ JOKOA = r"""<!DOCTYPE html>
       <button class="nav-toggle" aria-label="Menua" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="nav-links">
         <a href="index.html#denbora-lerroa">Denbora-lerroa</a>
-        <a href="kronologia.html">Kronologia</a>
-        <a href="jokoa.html">Jokoa</a>
+        <a href="index.html#gaiak">Gaiak</a>
+        <a href="index.html#tresnak">Tresnak</a>
         <a class="cta" href="index.html">← Hasiera</a>
       </nav>
     </div>
