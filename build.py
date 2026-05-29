@@ -63,6 +63,7 @@ def build_sitemap(site: dict, temas_meta: list):
     pages = [
         ("", "1.0"),
         ("kronologia.html", "0.9"),
+        ("jokoa.html", "0.8"),
         ("kontzeptu-entrenamendua.html", "0.7"),
         ("pau-egitura.html", "0.8"),
     ]

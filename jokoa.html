@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datak ordenatzeko jokoa · Historia BTX2</title>
+  <meta name="description" content="Datak ordenatzeko joko interaktiboa: aukeratu 5, 7, 10 edo 15 gertaera, ordenatu zaharrenetik berrienera eta programak zuzenduko du. EBAU/PAU errepasorako, euskaraz." />
+  <link rel="canonical" href="https://btx2-eus.github.io/historia-btx2/jokoa.html" />
+  <meta property="og:locale" content="eu_ES" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Historia BTX2" />
+  <meta property="og:title" content="Datak ordenatzeko jokoa · Historia BTX2" />
+  <meta property="og:description" content="Aukeratu 5, 7, 10 edo 15 gertaera eta ordenatu zaharrenetik berrienera. EBAU/PAU errepasorako." />
+  <meta property="og:url" content="https://btx2-eus.github.io/historia-btx2/jokoa.html" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=9" />
+  <link rel="stylesheet" href="assets/css/jokoa.css?v=9" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235b2be0'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EH%3C/text%3E%3C/svg%3E" />
+</head>
+<body class="jk-body">
+  <a class="skip-link" href="#main">Edukira saltatu</a>
+
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">H</span><span>Historia BTX2<small>Espainiako Historia · 2. Batxilergoa</small></span></a>
+      <button class="nav-toggle" aria-label="Menua" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="index.html#denbora-lerroa">Denbora-lerroa</a>
+        <a href="kronologia.html">Kronologia</a>
+        <a href="jokoa.html">Jokoa</a>
+        <a class="cta" href="index.html">← Hasiera</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="jk-hero" id="main" tabindex="-1">
+    <div class="container">
+      <span class="hero-eyebrow">🎯 Jokoa · EBAU/PAU errepasoa</span>
+      <h1>Ordenatu <span class="grad-text">datak</span></h1>
+      <p class="lead">Gertaerak nahastuta agertuko zaizkizu, izena bakarrik. Ordenatu <b>zaharrenetik (goian) berrienera (behean)</b> eta sakatu «Zuzendu». Urtea ez da agertuko zuzendu arte.</p>
+    </div>
+  </section>
+
+  <main class="jk-main">
+    <div class="container">
+
+      <div class="jk-setup" id="jk-setup">
+        <div class="jk-setup-row">
+          <span class="jk-setup-label">Zenbat data?</span>
+          <div class="jk-count-chips" id="jk-count-chips" role="group" aria-label="Data kopurua">
+            <button class="jk-count is-on" data-n="5" aria-pressed="true">5</button>
+            <button class="jk-count" data-n="7" aria-pressed="false">7</button>
+            <button class="jk-count" data-n="10" aria-pressed="false">10</button>
+            <button class="jk-count" data-n="15" aria-pressed="false">15</button>
+          </div>
+        </div>
+        <button class="btn btn-primary jk-new" id="jk-new">🎲 Joko berria</button>
+      </div>
+
+      <div class="jk-board" id="jk-board" hidden>
+        <div class="jk-axis" aria-hidden="true">
+          <span class="jk-axis-top">▲ Zaharrena</span>
+          <span class="jk-axis-line"></span>
+          <span class="jk-axis-bot">Berriena ▼</span>
+        </div>
+        <ol class="jk-list" id="jk-list"></ol>
+      </div>
+
+      <div class="jk-actions" id="jk-actions" hidden>
+        <button class="btn btn-primary" id="jk-check">✓ Zuzendu</button>
+        <button class="btn btn-soft" id="jk-shuffle">🔀 Berriz nahastu</button>
+        <button class="btn btn-soft" id="jk-again" hidden>🎲 Beste joko bat</button>
+      </div>
+
+      <div class="jk-result" id="jk-result" hidden aria-live="polite"></div>
+
+      <div class="jk-solution" id="jk-solution" hidden>
+        <h2>Ordena zuzena</h2>
+        <ol class="jk-sol-list" id="jk-sol-list"></ol>
+      </div>
+
+      <p class="jk-hint">💡 Arrastatu txartelak edo erabili ↑ ↓ botoiak ordenatzeko. 93 gertaeren artean (izenburuan urtea dutenak kanpoan utzita).</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">H</span><span>Historia BTX2<small>Luken San Sebastián Alkorta</small></span></a>
+      <nav class="foot-links">
+        <a href="index.html#denbora-lerroa">Denbora-lerroa</a>
+        <a href="kronologia.html">Kronologia</a>
+        <a href="jokoa.html">Jokoa</a>
+        <a href="index.html#gaiak">Gaiak</a>
+      </nav>
+      <div class="foot-bottom">
+        <span>Datak ordenatzeko jokoa · Historia BTX2</span>
+        <span>© <span data-year>2026</span> · Luken San Sebastián Alkorta · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script id="jk-data" type="application/json">{"pool":[{"id":1,"t":"Frantziarren inbasioa eta Independentzia Gerraren hasiera","y":1808,"e":"es"},{"id":2,"t":"Cádizeko Konstituzioa","y":1812,"e":"es"},{"id":56,"t":"Gasteizko gudua eta Donostiaren suntsiketa","y":1813,"e":"eh"},{"id":3,"t":"Fernando VII.aren itzulera eta absolutismoaren berrezarpena","y":1814,"e":"es"},{"id":86,"t":"Vienako Kongresua","y":1815,"e":"mu"},{"id":4,"t":"Riegoren pronuntziamendua eta Hirurteko Liberala","y":1820,"e":"es"},{"id":5,"t":"San Luisen Ehun Mila Semeen esku-hartzea","y":1823,"e":"es"},{"id":6,"t":"Fernando VII.aren heriotza eta Isabel II.aren erregealdirako bidea","y":1833,"e":"es"},{"id":57,"t":"Lehen Gerra Karlistaren hasiera euskal lurraldeetan","y":1833,"e":"eh"},{"id":7,"t":"Errege Estatutuaren onarpena","y":1834,"e":"es"},{"id":58,"t":"Bergarako Hitzarmena eta Foruen Legea","y":1839,"e":"eh"},{"id":59,"t":"Aduanak kostaldera eramatea","y":1841,"e":"eh"},{"id":87,"t":"Europako iraultzak","y":1848,"e":"mu"},{"id":10,"t":"Madozen desamortizazioa eta burdinbideen legea","y":1855,"e":"es"},{"id":88,"t":"Lehen Internazionalaren sorrera","y":1864,"e":"mu"},{"id":11,"t":"Iraultza Loriatsua","y":1868,"e":"es"},{"id":60,"t":"Hirugarren Gerra Karlistaren hasiera","y":1872,"e":"eh"},{"id":13,"t":"Lehen Errepublikaren aldarrikapena","y":1873,"e":"es"},{"id":14,"t":"Borboien Berrezarkuntza","y":1874,"e":"es"},{"id":61,"t":"Euskal foruen abolizioa","y":1876,"e":"eh"},{"id":62,"t":"Lehen Kontzertu Ekonomikoa","y":1878,"e":"eh"},{"id":16,"t":"PSOEren sorrera","y":1879,"e":"es"},{"id":63,"t":"Bizkaiko siderurgia modernoaren bultzada","y":1886,"e":"eh"},{"id":17,"t":"UGTren sorrera","y":1888,"e":"es"},{"id":64,"t":"Bizkaiko meatzarien greba handia","y":1890,"e":"eh"},{"id":65,"t":"EAJ-PNVren sorrera","y":1895,"e":"eh"},{"id":18,"t":"Kubako, Puerto Ricoko eta Filipinetako galera","y":1898,"e":"es"},{"id":19,"t":"Alfonso XIII.aren adin-nagusitasuna","y":1902,"e":"es"},{"id":66,"t":"Altos Hornos de Vizcayaren sorrera","y":1902,"e":"eh"},{"id":20,"t":"Bartzelonako Aste Tragikoa","y":1909,"e":"es"},{"id":21,"t":"CNTren sorrera","y":1910,"e":"es"},{"id":67,"t":"ELA-STVren sorrera","y":1911,"e":"eh"},{"id":89,"t":"Lehen Mundu Gerraren hasiera","y":1914,"e":"mu"},{"id":68,"t":"Bizkaiko greba eta krisi soziala","y":1917,"e":"eh"},{"id":90,"t":"Errusiako Iraultza","y":1917,"e":"mu"},{"id":23,"t":"Annualgo hondamendia","y":1921,"e":"es"},{"id":24,"t":"Primo de Riveraren diktadura","y":1923,"e":"es"},{"id":91,"t":"New Yorkeko burtsaren kraka eta Depresio Handia","y":1929,"e":"mu"},{"id":25,"t":"Donostiako Ituna","y":1930,"e":"es"},{"id":26,"t":"II. Errepublikaren aldarrikapena","y":1931,"e":"es"},{"id":69,"t":"Lizarrako Estatutu proiektua","y":1931,"e":"eh"},{"id":28,"t":"Biurteko erreformistaren erreforma nagusiak","y":1932,"e":"es"},{"id":29,"t":"Emakumeen lehen boto orokorra eta eskuinaren garaipena","y":1933,"e":"es"},{"id":92,"t":"Hitlerren boterera iritsiera","y":1933,"e":"mu"},{"id":30,"t":"Urriko Iraultza","y":1934,"e":"es"},{"id":31,"t":"Fronte Popularraren garaipena","y":1936,"e":"es"},{"id":32,"t":"Altxamendu militarra eta Gerra Zibilaren hasiera","y":1936,"e":"es"},{"id":70,"t":"Euskal Estatutua eta lehen Eusko Jaurlaritza","y":1936,"e":"eh"},{"id":71,"t":"Gernikako bonbardaketa","y":1937,"e":"eh"},{"id":72,"t":"Bilboren erorketa eta Santoñako Ituna","y":1937,"e":"eh"},{"id":33,"t":"Gerra Zibilaren amaiera eta frankismoaren garaipena","y":1939,"e":"es"},{"id":34,"t":"Erantzukizun Politikoen Legea","y":1939,"e":"es"},{"id":93,"t":"Bigarren Mundu Gerraren hasiera","y":1939,"e":"mu"},{"id":35,"t":"Autarkia eta errazionamenduaren finkapena","y":1940,"e":"es"},{"id":36,"t":"Gorte Espainiarren Legea","y":1942,"e":"es"},{"id":37,"t":"Espainiarren Forua","y":1945,"e":"es"},{"id":94,"t":"Bigarren Mundu Gerraren amaiera eta NBEren sorrera","y":1945,"e":"mu"},{"id":95,"t":"Gerra Hotzaren hasiera eta Marshall Planaren testuingurua","y":1947,"e":"mu"},{"id":73,"t":"Ekin taldearen sorrera","y":1952,"e":"eh"},{"id":38,"t":"AEBekin itunak eta Vatikanoarekin Konkordatua","y":1953,"e":"es"},{"id":39,"t":"Espainia NBEan sartzea","y":1955,"e":"es"},{"id":96,"t":"Erromako Ituna eta Europako integrazioaren hasiera","y":1957,"e":"mu"},{"id":40,"t":"Egonkortze Plana","y":1959,"e":"es"},{"id":74,"t":"ETAren sorrera","y":1959,"e":"eh"},{"id":41,"t":"Municheko bilkura edo 'kontubernioa'","y":1962,"e":"es"},{"id":42,"t":"Estatuaren Lege Organikoa","y":1966,"e":"es"},{"id":75,"t":"ETAren lehen hilketak","y":1968,"e":"eh"},{"id":43,"t":"Juan Carlos Francoren ondorengo izendatzea","y":1969,"e":"es"},{"id":76,"t":"Burgosko Prozesua","y":1970,"e":"eh"},{"id":44,"t":"Carrero Blancoren atentatua","y":1973,"e":"es"},{"id":97,"t":"Petrolioaren krisia","y":1973,"e":"mu"},{"id":45,"t":"Francoren heriotza","y":1975,"e":"es"},{"id":46,"t":"Erreforma Politikorako Legea","y":1976,"e":"es"},{"id":77,"t":"Gasteizko martxoaren 3ko sarraskia","y":1976,"e":"eh"},{"id":47,"t":"Lehen hauteskunde demokratikoak eta Amnistia Legea","y":1977,"e":"es"},{"id":78,"t":"Ikurrinaren legeztatzea","y":1977,"e":"eh"},{"id":79,"t":"Gernikako Estatutua","y":1979,"e":"eh"},{"id":80,"t":"Lehen Eusko Legebiltzarra eta Jaurlaritza demokratikoa","y":1980,"e":"eh"},{"id":49,"t":"23-F estatu-kolpe saiakera","y":1981,"e":"es"},{"id":50,"t":"PSOEren garaipen absolutua","y":1982,"e":"es"},{"id":81,"t":"GALen jardueraren hasiera","y":1983,"e":"eh"},{"id":51,"t":"Espainia Europako Erkidegoan sartzea eta NATOren erreferenduma","y":1986,"e":"es"},{"id":82,"t":"Ajuria Eneako Ituna","y":1988,"e":"eh"},{"id":98,"t":"Berlingo Harresiaren erorketa","y":1989,"e":"mu"},{"id":52,"t":"PPren garaipena eta alternantzia politikoa","y":1996,"e":"es"},{"id":83,"t":"Miguel Ángel Blancoren bahiketa eta hilketa","y":1997,"e":"eh"},{"id":53,"t":"Martxoaren 11ko atentatuak Madrilen","y":2004,"e":"es"},{"id":99,"t":"Finantza-krisi globala","y":2008,"e":"mu"},{"id":54,"t":"15-M mugimendua eta sistema politikoaren krisia","y":2011,"e":"es"},{"id":84,"t":"ETAk jarduera armatuaren amaiera iragartzea","y":2011,"e":"eh"},{"id":55,"t":"Kataluniako erreferenduma eta 155. artikulua","y":2017,"e":"es"},{"id":85,"t":"ETAren desegitea","y":2018,"e":"eh"},{"id":100,"t":"COVID-19 pandemiaren hasiera","y":2020,"e":"mu"}],"eremu":{"es":{"name":"Espainia","main":"#6d28d9","soft":"#ede9fe","ink":"#5b21b6"},"eh":{"name":"Euskal Herria","main":"#0e9f6e","soft":"#d1fae5","ink":"#065f46"},"mu":{"name":"Mundua","main":"#ea580c","soft":"#ffedd5","ink":"#9a3412"}}}</script>
+  <script src="assets/js/app.js?v=9"></script>
+  <script src="assets/js/jokoa.js?v=9"></script>
+</body>
+</html>

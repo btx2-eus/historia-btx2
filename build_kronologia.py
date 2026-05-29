@@ -25,8 +25,13 @@ except ImportError:
 ROOT = Path(__file__).parent
 XLSX = ROOT / "content" / "data" / "100_data_klabeak_1800_2020_Historia_BTX2.xlsx"
 OUT_HTML = ROOT / "kronologia.html"
+OUT_JOKOA = ROOT / "jokoa.html"
 OUT_JSON = ROOT / "assets" / "data" / "kronologia.json"
-CACHE_V = 8  # bumpea CSS/JS aldatzean
+CACHE_V = 9  # bumpea CSS/JS aldatzean
+
+# Izenburuan urtea agertzen duten datak jokotik kanpo (adib. "1812ko Konstituzioa").
+# Urtea euskal atzizkiari lotuta egon daiteke ("1837ko"), beraz \b ez da nahikoa.
+YEAR_IN_TITLE = re.compile(r"(?<!\d)(1[89]\d{2}|20\d{2})(?!\d)")
 
 # --- Denbora-lerroaren konfigurazioa --------------------------------------
 AXIS_MIN = 1808
@@ -188,6 +193,17 @@ def main():
     print(f"✓ kronologia.html  ({n} data-klabe · {counts['es']} Espainia / {counts['eh']} EH / {counts['mu']} Mundua)")
     print(f"✓ assets/data/kronologia.json")
 
+    # --- Jokoa: izenburuan urterik EZ duten datak (urtea ezin da agerian egon) ---
+    pool = [{"id": r["id"], "t": r["t"], "y": r["y"], "e": r["e"]}
+            for r in records if not YEAR_IN_TITLE.search(r["t"])]
+    jokoa_cfg = {
+        "pool": pool,
+        "eremu": config["eremu"],
+    }
+    jokoa_json = json.dumps(jokoa_cfg, ensure_ascii=False, separators=(",", ":"))
+    OUT_JOKOA.write_text(JOKOA.format(v=CACHE_V, data_json=jokoa_json, npool=len(pool), current_year=year), encoding="utf-8")
+    print(f"✓ jokoa.html  ({len(pool)} data jokorako; {n - len(pool)} baztertuta izenburuan urtea dutelako)")
+
 
 # --- HTML plantilla (str.format; {{ }} = literal giltza) -------------------
 PAGE = r"""<!DOCTYPE html>
@@ -331,6 +347,118 @@ PAGE = r"""<!DOCTYPE html>
   <script id="kx-data" type="application/json">{data_json}</script>
   <script src="assets/js/app.js?v={v}"></script>
   <script src="assets/js/kronologia.js?v={v}"></script>
+</body>
+</html>
+"""
+
+
+JOKOA = r"""<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datak ordenatzeko jokoa · Historia BTX2</title>
+  <meta name="description" content="Datak ordenatzeko joko interaktiboa: aukeratu 5, 7, 10 edo 15 gertaera, ordenatu zaharrenetik berrienera eta programak zuzenduko du. EBAU/PAU errepasorako, euskaraz." />
+  <link rel="canonical" href="https://btx2-eus.github.io/historia-btx2/jokoa.html" />
+  <meta property="og:locale" content="eu_ES" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Historia BTX2" />
+  <meta property="og:title" content="Datak ordenatzeko jokoa · Historia BTX2" />
+  <meta property="og:description" content="Aukeratu 5, 7, 10 edo 15 gertaera eta ordenatu zaharrenetik berrienera. EBAU/PAU errepasorako." />
+  <meta property="og:url" content="https://btx2-eus.github.io/historia-btx2/jokoa.html" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css?v={v}" />
+  <link rel="stylesheet" href="assets/css/jokoa.css?v={v}" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235b2be0'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EH%3C/text%3E%3C/svg%3E" />
+</head>
+<body class="jk-body">
+  <a class="skip-link" href="#main">Edukira saltatu</a>
+
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">H</span><span>Historia BTX2<small>Espainiako Historia · 2. Batxilergoa</small></span></a>
+      <button class="nav-toggle" aria-label="Menua" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="index.html#denbora-lerroa">Denbora-lerroa</a>
+        <a href="kronologia.html">Kronologia</a>
+        <a href="jokoa.html">Jokoa</a>
+        <a class="cta" href="index.html">← Hasiera</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="jk-hero" id="main" tabindex="-1">
+    <div class="container">
+      <span class="hero-eyebrow">🎯 Jokoa · EBAU/PAU errepasoa</span>
+      <h1>Ordenatu <span class="grad-text">datak</span></h1>
+      <p class="lead">Gertaerak nahastuta agertuko zaizkizu, izena bakarrik. Ordenatu <b>zaharrenetik (goian) berrienera (behean)</b> eta sakatu «Zuzendu». Urtea ez da agertuko zuzendu arte.</p>
+    </div>
+  </section>
+
+  <main class="jk-main">
+    <div class="container">
+
+      <div class="jk-setup" id="jk-setup">
+        <div class="jk-setup-row">
+          <span class="jk-setup-label">Zenbat data?</span>
+          <div class="jk-count-chips" id="jk-count-chips" role="group" aria-label="Data kopurua">
+            <button class="jk-count is-on" data-n="5" aria-pressed="true">5</button>
+            <button class="jk-count" data-n="7" aria-pressed="false">7</button>
+            <button class="jk-count" data-n="10" aria-pressed="false">10</button>
+            <button class="jk-count" data-n="15" aria-pressed="false">15</button>
+          </div>
+        </div>
+        <button class="btn btn-primary jk-new" id="jk-new">🎲 Joko berria</button>
+      </div>
+
+      <div class="jk-board" id="jk-board" hidden>
+        <div class="jk-axis" aria-hidden="true">
+          <span class="jk-axis-top">▲ Zaharrena</span>
+          <span class="jk-axis-line"></span>
+          <span class="jk-axis-bot">Berriena ▼</span>
+        </div>
+        <ol class="jk-list" id="jk-list"></ol>
+      </div>
+
+      <div class="jk-actions" id="jk-actions" hidden>
+        <button class="btn btn-primary" id="jk-check">✓ Zuzendu</button>
+        <button class="btn btn-soft" id="jk-shuffle">🔀 Berriz nahastu</button>
+        <button class="btn btn-soft" id="jk-again" hidden>🎲 Beste joko bat</button>
+      </div>
+
+      <div class="jk-result" id="jk-result" hidden aria-live="polite"></div>
+
+      <div class="jk-solution" id="jk-solution" hidden>
+        <h2>Ordena zuzena</h2>
+        <ol class="jk-sol-list" id="jk-sol-list"></ol>
+      </div>
+
+      <p class="jk-hint">💡 Arrastatu txartelak edo erabili ↑ ↓ botoiak ordenatzeko. {npool} gertaeren artean (izenburuan urtea dutenak kanpoan utzita).</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">H</span><span>Historia BTX2<small>Luken San Sebastián Alkorta</small></span></a>
+      <nav class="foot-links">
+        <a href="index.html#denbora-lerroa">Denbora-lerroa</a>
+        <a href="kronologia.html">Kronologia</a>
+        <a href="jokoa.html">Jokoa</a>
+        <a href="index.html#gaiak">Gaiak</a>
+      </nav>
+      <div class="foot-bottom">
+        <span>Datak ordenatzeko jokoa · Historia BTX2</span>
+        <span>© <span data-year>{current_year}</span> · Luken San Sebastián Alkorta · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script id="jk-data" type="application/json">{data_json}</script>
+  <script src="assets/js/app.js?v={v}"></script>
+  <script src="assets/js/jokoa.js?v={v}"></script>
 </body>
 </html>
 """

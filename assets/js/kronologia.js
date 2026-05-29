@@ -573,10 +573,18 @@
     state.pxy = 16;
     render();
     elScroll.scrollLeft = 0;
-    // Deep-link
+    // Deep-link: #id-N (data zehatza) edo #y1936 (urtea; bat ez badator, hurbilena)
     var m = location.hash.match(/^#id-(\d+)$/);
+    var my = location.hash.match(/^#y(\d{3,4})$/);
     if (m && recById[+m[1]]) {
       select(+m[1], true);
+    } else if (my) {
+      var yr = +my[1];
+      var hit = RECS.find(function (r) { return r.y === yr; });
+      if (!hit) {
+        hit = RECS.slice().sort(function (a, b) { return Math.abs(a.y - yr) - Math.abs(b.y - yr); })[0];
+      }
+      if (hit) select(hit.id, true);
     }
     var rt;
     window.addEventListener("resize", function () {

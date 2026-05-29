@@ -1,0 +1,141 @@
+/* =========================================================
+   Datak ordenatzeko jokoa — Historia BTX2
+   ========================================================= */
+
+.jk-body { background: var(--bg-soft); }
+
+/* ---------- Hero ---------- */
+.jk-hero {
+  position: relative; overflow: hidden; color: #fff;
+  padding: clamp(2.4rem, 6vw, 4rem) 0 clamp(2.2rem, 5vw, 3.4rem);
+  background: linear-gradient(120deg, #5b2be0 0%, #b5179e 55%, #ff5d73 100%);
+}
+.jk-hero::before {
+  content: ""; position: absolute; inset: 0; z-index: 0; opacity: .5;
+  background: radial-gradient(420px 320px at 88% -20%, rgba(255,255,255,.3), transparent 60%);
+}
+.jk-hero .container { position: relative; z-index: 1; }
+.jk-hero .hero-eyebrow {
+  display: inline-flex; align-items: center; gap: .5rem; padding: .4rem .9rem; border-radius: 999px;
+  background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.3);
+  font-weight: 600; font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 1.1rem;
+}
+.jk-hero h1 { font-size: clamp(2rem, 5.4vw, 3.6rem); margin-bottom: .8rem; }
+.jk-hero h1 .grad-text { background: linear-gradient(90deg, #ffd166, #ff8fab); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.jk-hero .lead { font-size: clamp(1rem, 2vw, 1.2rem); max-width: 60ch; color: rgba(255,255,255,.94); }
+.jk-hero .lead b { color: #fff; }
+
+/* ---------- Main ---------- */
+.jk-main { padding: clamp(1.6rem, 4vw, 2.6rem) 0 4rem; }
+.jk-main .container { max-width: 760px; }
+
+/* ---------- Setup ---------- */
+.jk-setup {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.4rem;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.1rem 1.3rem; box-shadow: var(--shadow-sm); margin-bottom: 1.6rem;
+}
+.jk-setup-row { display: flex; align-items: center; gap: .8rem; flex-wrap: wrap; }
+.jk-setup-label { font-family: var(--font-display); font-weight: 700; color: var(--ink); }
+.jk-count-chips { display: inline-flex; gap: .35rem; }
+.jk-count {
+  width: 46px; height: 46px; border-radius: 14px; border: 1.5px solid var(--line); background: #fff;
+  cursor: pointer; font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--ink-soft);
+  transition: .16s;
+}
+.jk-count:hover { border-color: var(--c-violet); color: var(--c-indigo); transform: translateY(-2px); }
+.jk-count.is-on { background: linear-gradient(135deg, var(--c-indigo), var(--c-violet)); color: #fff; border-color: transparent; box-shadow: var(--shadow-sm); }
+.jk-new { margin-left: auto; }
+
+/* ---------- Board ---------- */
+.jk-board { display: flex; gap: .8rem; align-items: stretch; margin-bottom: 1.4rem; }
+.jk-axis {
+  flex: 0 0 auto; width: 30px; display: flex; flex-direction: column; align-items: center; padding: .3rem 0;
+}
+.jk-axis-top, .jk-axis-bot {
+  font-family: var(--font-display); font-weight: 700; font-size: .62rem; letter-spacing: .04em;
+  color: var(--muted); writing-mode: vertical-rl; text-orientation: mixed; white-space: nowrap;
+}
+.jk-axis-top { transform: rotate(180deg); }
+.jk-axis-line { flex: 1; width: 5px; border-radius: 5px; margin: .5rem 0; background: linear-gradient(#ef4444, #f59e0b, #14b8a6, #3b82f6, #0891b2); }
+
+.jk-list { list-style: none; padding: 0; margin: 0; counter-reset: jk; flex: 1; display: flex; flex-direction: column; gap: .55rem; }
+.jk-item {
+  counter-increment: jk; position: relative; display: flex; align-items: center; gap: .7rem;
+  background: #fff; border: 1.5px solid var(--line); border-radius: var(--radius-sm);
+  padding: .7rem .8rem; box-shadow: var(--shadow-sm); cursor: grab;
+  transition: box-shadow .18s, border-color .18s, transform .12s, background .2s;
+}
+.jk-item:hover { border-color: color-mix(in srgb, var(--c-violet) 45%, transparent); }
+.jk-item.is-dragging { opacity: .55; cursor: grabbing; box-shadow: var(--shadow-lg); }
+.jk-item.jk-over { border-color: var(--c-violet); box-shadow: 0 0 0 3px color-mix(in srgb, var(--c-violet) 22%, transparent); }
+.jk-handle { flex: 0 0 auto; color: var(--muted); font-size: 1.1rem; line-height: 1; cursor: grab; user-select: none; }
+.jk-num {
+  flex: 0 0 auto; width: 28px; height: 28px; border-radius: 9px; display: grid; place-items: center;
+  background: var(--bg-soft); color: var(--accent-ink); font-family: var(--font-display); font-weight: 700; font-size: .9rem;
+}
+.jk-num::before { content: counter(jk); }
+.jk-eremu-dot { flex: 0 0 auto; width: 10px; height: 10px; border-radius: 50%; background: var(--ec, var(--muted)); opacity: 0; }
+.jk-name { flex: 1; font-weight: 600; color: var(--ink); line-height: 1.3; font-size: .98rem; }
+.jk-year {
+  flex: 0 0 auto; font-family: var(--font-display); font-weight: 700; font-size: .95rem;
+  padding: .2rem .55rem; border-radius: 999px; opacity: 0; transition: opacity .25s; min-width: 0;
+}
+.jk-moves { flex: 0 0 auto; display: flex; flex-direction: column; gap: .15rem; }
+.jk-moves button {
+  width: 26px; height: 20px; border: 1px solid var(--line); background: #fff; border-radius: 6px; cursor: pointer;
+  color: var(--ink-soft); font-size: .7rem; line-height: 1; padding: 0; transition: .14s;
+}
+.jk-moves button:hover:not(:disabled) { background: var(--accent-tint); color: var(--accent-ink); border-color: var(--c-violet); }
+.jk-moves button:disabled { opacity: .3; cursor: default; }
+
+/* Checked states */
+.jk-checked .jk-item { cursor: default; }
+.jk-checked .jk-handle, .jk-checked .jk-moves { display: none; }
+.jk-checked .jk-eremu-dot, .jk-checked .jk-year { opacity: 1; }
+.jk-item.correct { border-color: #16a34a; background: color-mix(in srgb, #16a34a 7%, #fff); }
+.jk-item.correct .jk-num { background: #16a34a; color: #fff; }
+.jk-item.correct .jk-year { background: #dcfce7; color: #15803d; }
+.jk-item.wrong { border-color: #ef4444; background: color-mix(in srgb, #ef4444 6%, #fff); }
+.jk-item.wrong .jk-num { background: #ef4444; color: #fff; }
+.jk-item.wrong .jk-year { background: #fee2e2; color: #b91c1c; }
+.jk-item .jk-mark { flex: 0 0 auto; font-size: 1rem; opacity: 0; }
+.jk-checked .jk-item.correct .jk-mark { opacity: 1; }
+.jk-checked .jk-item.wrong .jk-mark { opacity: 1; }
+
+/* ---------- Actions ---------- */
+.jk-actions { display: flex; flex-wrap: wrap; gap: .7rem; justify-content: center; margin-bottom: 1.4rem; }
+
+/* ---------- Result ---------- */
+.jk-result {
+  text-align: center; padding: 1.2rem 1.4rem; border-radius: var(--radius); margin-bottom: 1.4rem;
+  font-family: var(--font-display); box-shadow: var(--shadow-sm);
+}
+.jk-result .jk-score { font-size: 2rem; font-weight: 700; line-height: 1; }
+.jk-result .jk-msg { font-size: 1rem; margin-top: .4rem; font-family: var(--font-body); font-weight: 600; }
+.jk-result.perfect { background: linear-gradient(135deg, #16a34a, #14b8a6); color: #fff; }
+.jk-result.good { background: linear-gradient(135deg, #f59e0b, #fb7185); color: #fff; }
+.jk-result.low { background: var(--accent-tint); color: var(--accent-ink); }
+
+/* ---------- Solution ---------- */
+.jk-solution { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem; box-shadow: var(--shadow-sm); }
+.jk-solution h2 { font-size: 1.2rem; margin-bottom: .8rem; }
+.jk-sol-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: .4rem; }
+.jk-sol-list li { display: flex; align-items: baseline; gap: .7rem; padding: .35rem .2rem; border-bottom: 1px dashed var(--line); }
+.jk-sol-list li:last-child { border-bottom: 0; }
+.jk-sol-year { flex: 0 0 auto; font-family: var(--font-display); font-weight: 700; color: var(--accent-ink); min-width: 4ch; }
+.jk-sol-dot { flex: 0 0 auto; width: 9px; height: 9px; border-radius: 50%; align-self: center; }
+.jk-sol-name { color: var(--ink-soft); font-size: .95rem; }
+
+.jk-hint { text-align: center; color: var(--muted); font-size: .85rem; margin-top: 1.4rem; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 560px) {
+  .jk-new { margin-left: 0; width: 100%; }
+  .jk-name { font-size: .92rem; }
+  .jk-axis { width: 22px; }
+  .jk-item { padding: .6rem .65rem; gap: .5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .jk-item, .jk-year, .jk-count { transition: none !important; }
+}
