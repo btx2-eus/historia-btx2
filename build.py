@@ -62,6 +62,7 @@ def build_sitemap(site: dict, temas_meta: list):
     today = date.today().isoformat()
     pages = [
         ("", "1.0"),
+        ("kronologia.html", "0.9"),
         ("kontzeptu-entrenamendua.html", "0.7"),
         ("pau-egitura.html", "0.8"),
     ]

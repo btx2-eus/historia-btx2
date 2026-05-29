@@ -265,6 +265,24 @@ ul { padding-left: 1.1em; }
 .feature h3 { font-size: 1.12rem; margin-bottom: .4rem; }
 .feature p { color: var(--muted); font-size: .92rem; }
 
+/* Featured tool card (kronologia) */
+.feature-feat {
+  position: relative; grid-column: 1 / -1;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--c-indigo) 8%, #fff), color-mix(in srgb, var(--c-coral) 8%, #fff));
+  border-color: color-mix(in srgb, var(--c-indigo) 25%, transparent);
+}
+.feature-feat .ficon { background: linear-gradient(135deg, var(--c-indigo), var(--c-coral)); color: #fff; }
+.feature-feat h3 { color: var(--accent-ink); }
+@media (min-width: 760px) {
+  .feature-feat { display: flex; align-items: center; gap: 1.4rem; }
+  .feature-feat .ficon { margin-bottom: 0; flex: 0 0 auto; width: 64px; height: 64px; font-size: 1.9rem; }
+}
+
+/* CTA under the home timeline */
+.tl-cta { text-align: center; margin-top: 2rem; }
+.tl-cta .btn { white-space: normal; }
+.tl-cta p { color: var(--muted); font-size: .9rem; margin-top: .8rem; }
+
 /* =========================================================
    TEMA PAGE
    ========================================================= */
