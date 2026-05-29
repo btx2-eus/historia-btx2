@@ -27,7 +27,7 @@ XLSX = ROOT / "content" / "data" / "100_data_klabeak_1800_2020_Historia_BTX2.xls
 OUT_HTML = ROOT / "kronologia.html"
 OUT_JOKOA = ROOT / "jokoa.html"
 OUT_JSON = ROOT / "assets" / "data" / "kronologia.json"
-CACHE_V = 9  # bumpea CSS/JS aldatzean
+CACHE_V = 10  # bumpea CSS/JS aldatzean
 
 # Izenburuan urtea agertzen duten datak jokotik kanpo (adib. "1812ko Konstituzioa").
 # Urtea euskal atzizkiari lotuta egon daiteke ("1837ko"), beraz \b ez da nahikoa.

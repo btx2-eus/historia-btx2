@@ -281,9 +281,6 @@
       });
       html += "</div></div>";
     }
-    if (r.u) {
-      html += '<div class="kx-d-section"><a class="kx-d-source" href="' + esc(r.u) + '" target="_blank" rel="noopener">Iturri orientagarria ↗</a></div>';
-    }
     elDrawerBody.innerHTML = html;
 
     // Lotutako daten klikak
