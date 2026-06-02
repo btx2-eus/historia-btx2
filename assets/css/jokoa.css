@@ -36,7 +36,47 @@
   padding: 1.1rem 1.3rem; box-shadow: var(--shadow-sm); margin-bottom: 1.6rem;
 }
 .jk-setup-row { display: flex; align-items: center; gap: .8rem; flex-wrap: wrap; }
-.jk-setup-label { font-family: var(--font-display); font-weight: 700; color: var(--ink); }
+.jk-setup-range { align-items: flex-start; }
+.jk-setup-label { font-family: var(--font-display); font-weight: 700; color: var(--ink); padding-top: .15rem; }
+
+/* ---------- Tarte-hautatzailea (dual range) ---------- */
+.jk-range { flex: 1 1 320px; min-width: 240px; }
+.jk-range-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: .5rem; flex-wrap: wrap; }
+.jk-range-vals { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--ink); }
+.jk-range-vals b { color: var(--c-indigo); }
+.jk-avail { font-size: .82rem; font-weight: 600; color: var(--muted); }
+.jk-avail b { color: var(--ink); font-family: var(--font-display); }
+.jk-avail.jk-avail-low { color: var(--c-coral); }
+
+.jk-range-track { position: relative; height: 30px; }
+.jk-range-rail { position: absolute; top: 13px; left: 0; right: 0; height: 5px; border-radius: 5px; background: var(--line); }
+.jk-range-fill { position: absolute; top: 13px; height: 5px; border-radius: 5px; background: linear-gradient(90deg, var(--c-indigo), var(--c-violet)); }
+.jk-range-track input[type="range"] {
+  position: absolute; top: 0; left: 0; width: 100%; height: 30px; margin: 0;
+  -webkit-appearance: none; appearance: none; background: transparent; pointer-events: none;
+}
+.jk-range-track input[type="range"]::-webkit-slider-runnable-track { background: transparent; border: 0; }
+.jk-range-track input[type="range"]::-moz-range-track { background: transparent; border: 0; }
+.jk-range-track input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none; pointer-events: auto; cursor: grab;
+  width: 22px; height: 22px; margin-top: 4px; border-radius: 50%;
+  background: #fff; border: 3px solid var(--c-indigo); box-shadow: var(--shadow-sm);
+}
+.jk-range-track input[type="range"]::-webkit-slider-thumb:active { cursor: grabbing; }
+.jk-range-track input[type="range"]::-moz-range-thumb {
+  pointer-events: auto; cursor: grab; width: 22px; height: 22px; border-radius: 50%;
+  background: #fff; border: 3px solid var(--c-indigo); box-shadow: var(--shadow-sm);
+}
+.jk-range-track input:focus-visible::-webkit-slider-thumb { outline: 3px solid color-mix(in srgb, var(--c-violet) 55%, transparent); outline-offset: 2px; }
+
+.jk-presets { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .7rem; }
+.jk-presets button {
+  border: 1.5px solid var(--line); background: #fff; cursor: pointer;
+  padding: .3rem .7rem; border-radius: 999px; font-size: .78rem; font-weight: 600; color: var(--ink-soft);
+  font-family: var(--font-body); transition: .15s;
+}
+.jk-presets button:hover { border-color: var(--c-violet); color: var(--c-indigo); transform: translateY(-1px); }
+.jk-presets button.is-on { background: var(--accent-tint); border-color: var(--c-violet); color: var(--accent-ink); }
 .jk-count-chips { display: inline-flex; gap: .35rem; }
 .jk-count {
   width: 46px; height: 46px; border-radius: 14px; border: 1.5px solid var(--line); background: #fff;
@@ -45,7 +85,10 @@
 }
 .jk-count:hover { border-color: var(--c-violet); color: var(--c-indigo); transform: translateY(-2px); }
 .jk-count.is-on { background: linear-gradient(135deg, var(--c-indigo), var(--c-violet)); color: #fff; border-color: transparent; box-shadow: var(--shadow-sm); }
+.jk-count:disabled { opacity: .32; cursor: not-allowed; transform: none; border-style: dashed; }
+.jk-count:disabled:hover { border-color: var(--line); color: var(--ink-soft); transform: none; }
 .jk-new { margin-left: auto; }
+.jk-new:disabled { opacity: .5; cursor: not-allowed; filter: grayscale(.4); }
 
 /* ---------- Board ---------- */
 .jk-board { display: flex; gap: .8rem; align-items: stretch; margin-bottom: 1.4rem; }

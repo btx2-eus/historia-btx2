@@ -12,7 +12,10 @@
   var POOL = CFG.pool;            // [{id,t,y,e}]
   var EREMU = CFG.eremu;          // {es:{name,main,...}}
 
-  var state = { n: 5, set: [], checked: false };
+  var YMIN = POOL.reduce(function (m, p) { return Math.min(m, p.y); }, Infinity);
+  var YMAX = POOL.reduce(function (m, p) { return Math.max(m, p.y); }, -Infinity);
+
+  var state = { n: 5, rMin: YMIN, rMax: YMAX, set: [], checked: false };
 
   var elList = document.getElementById("jk-list");
   var elBoard = document.getElementById("jk-board");
@@ -24,6 +27,16 @@
   var btnShuffle = document.getElementById("jk-shuffle");
   var btnAgain = document.getElementById("jk-again");
   var btnNew = document.getElementById("jk-new");
+
+  // Tarte-hautatzailea
+  var elMin = document.getElementById("jk-min");
+  var elMax = document.getElementById("jk-max");
+  var elFill = document.getElementById("jk-range-fill");
+  var elRmin = document.getElementById("jk-rmin");
+  var elRmax = document.getElementById("jk-rmax");
+  var elAvail = document.getElementById("jk-avail");
+  var countChips = Array.prototype.slice.call(document.querySelectorAll(".jk-count"));
+  var presetBtns = Array.prototype.slice.call(document.querySelectorAll(".jk-presets button"));
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
@@ -46,9 +59,55 @@
     return true;
   }
 
+  /* ---------- Tartea ---------- */
+  function poolInRange() {
+    return POOL.filter(function (p) { return p.y >= state.rMin && p.y <= state.rMax; });
+  }
+
+  function updateRangeUI() {
+    elRmin.textContent = state.rMin;
+    elRmax.textContent = state.rMax;
+    var span = (YMAX - YMIN) || 1;
+    var l = (state.rMin - YMIN) / span * 100;
+    var r = (state.rMax - YMIN) / span * 100;
+    elFill.style.left = l + "%";
+    elFill.style.width = (r - l) + "%";
+    // Bi kontroladoreak elkar ez estaltzeko, ezkerrekoa gainean jarri eskuin-aldean dagoenean
+    elMin.style.zIndex = (state.rMin > (YMIN + YMAX) / 2) ? 5 : 3;
+
+    var avail = poolInRange().length;
+    elAvail.innerHTML = "Tarte honetan: <b>" + avail + "</b> data";
+    elAvail.classList.toggle("jk-avail-low", avail < 5);
+    updateCountChips(avail);
+
+    presetBtns.forEach(function (b) {
+      var p = b.dataset.r.split(",");
+      b.classList.toggle("is-on", +p[0] === state.rMin && +p[1] === state.rMax);
+    });
+
+    btnNew.disabled = avail < 2;
+    btnNew.title = avail < 2 ? "Tarte hau txikiegia da: aukeratu tarte zabalagoa" : "";
+  }
+
+  function updateCountChips(avail) {
+    countChips.forEach(function (c) { c.disabled = (+c.dataset.n > avail); });
+    var enabled = countChips.filter(function (c) { return !c.disabled; });
+    countChips.forEach(function (c) { c.classList.remove("is-on"); c.setAttribute("aria-pressed", "false"); });
+    if (enabled.length) {
+      var match = enabled.filter(function (c) { return +c.dataset.n === state.n; });
+      var target = match.length ? match[0] : enabled[enabled.length - 1];
+      target.classList.add("is-on"); target.setAttribute("aria-pressed", "true");
+      state.n = +target.dataset.n;
+    }
+    // Bat ere ez badago gaituta (avail < 5), state.n mantendu; newGame-k mugatuko du availera.
+  }
+
   /* ---------- Joko berria ---------- */
   function newGame() {
-    state.set = sample(POOL, state.n);
+    var inr = poolInRange();
+    var eff = Math.min(state.n, inr.length);
+    if (eff < 2) return;
+    state.set = sample(inr, eff);
     startRound(true);
   }
   function startRound(newSet) {
@@ -192,19 +251,48 @@
   }
 
   /* ---------- Kontrolak ---------- */
-  document.querySelectorAll(".jk-count").forEach(function (chip) {
+  countChips.forEach(function (chip) {
     chip.addEventListener("click", function () {
-      document.querySelectorAll(".jk-count").forEach(function (c) {
-        c.classList.remove("is-on"); c.setAttribute("aria-pressed", "false");
-      });
+      if (chip.disabled) return;
+      countChips.forEach(function (c) { c.classList.remove("is-on"); c.setAttribute("aria-pressed", "false"); });
       chip.classList.add("is-on"); chip.setAttribute("aria-pressed", "true");
       state.n = +chip.dataset.n;
       if (state.set.length) newGame(); // jada jokoan bagaude, berria sortu kopuru berriarekin
     });
   });
+
+  // Tarte-sliderrak
+  elMin.addEventListener("input", function () {
+    var v = +elMin.value;
+    if (v > +elMax.value) { v = +elMax.value; elMin.value = v; }
+    state.rMin = v; updateRangeUI();
+  });
+  elMax.addEventListener("input", function () {
+    var v = +elMax.value;
+    if (v < +elMin.value) { v = +elMin.value; elMax.value = v; }
+    state.rMax = v; updateRangeUI();
+  });
+
+  // Aurre-ezarpenak
+  presetBtns.forEach(function (b) {
+    b.addEventListener("click", function () {
+      var p = b.dataset.r.split(",");
+      state.rMin = Math.max(YMIN, +p[0]);
+      state.rMax = Math.min(YMAX, +p[1]);
+      elMin.value = state.rMin; elMax.value = state.rMax;
+      updateRangeUI();
+    });
+  });
+
   btnNew.addEventListener("click", newGame);
   btnCheck.addEventListener("click", check);
   btnShuffle.addEventListener("click", function () { startRound(false); });
   btnAgain.addEventListener("click", newGame);
+
+  // Hasieratu
+  elMin.min = elMax.min = YMIN;
+  elMin.max = elMax.max = YMAX;
+  elMin.value = YMIN; elMax.value = YMAX;
+  updateRangeUI();
 
 })();

@@ -27,7 +27,7 @@ XLSX = ROOT / "content" / "data" / "100_data_klabeak_1800_2020_Historia_BTX2.xls
 OUT_HTML = ROOT / "kronologia.html"
 OUT_JOKOA = ROOT / "jokoa.html"
 OUT_JSON = ROOT / "assets" / "data" / "kronologia.json"
-CACHE_V = 10  # bumpea CSS/JS aldatzean
+CACHE_V = 11  # bumpea CSS/JS aldatzean
 
 # Izenburuan urtea agertzen duten datak jokotik kanpo (adib. "1812ko Konstituzioa").
 # Urtea euskal atzizkiari lotuta egon daiteke ("1837ko"), beraz \b ez da nahikoa.
@@ -402,6 +402,28 @@ JOKOA = r"""<!DOCTYPE html>
     <div class="container">
 
       <div class="jk-setup" id="jk-setup">
+        <div class="jk-setup-row jk-setup-range">
+          <span class="jk-setup-label">Zer tarte?</span>
+          <div class="jk-range" id="jk-range">
+            <div class="jk-range-head">
+              <span class="jk-range-vals"><b id="jk-rmin">1808</b> – <b id="jk-rmax">2020</b></span>
+              <span class="jk-avail" id="jk-avail" aria-live="polite"></span>
+            </div>
+            <div class="jk-range-track" id="jk-range-track">
+              <div class="jk-range-rail"></div>
+              <div class="jk-range-fill" id="jk-range-fill"></div>
+              <input type="range" id="jk-min" min="1808" max="2020" step="1" value="1808" aria-label="Hasiera urtea" />
+              <input type="range" id="jk-max" min="1808" max="2020" step="1" value="2020" aria-label="Amaiera urtea" />
+            </div>
+            <div class="jk-presets" id="jk-presets" role="group" aria-label="Tarte azkarrak">
+              <button type="button" data-r="1808,2020">Dena</button>
+              <button type="button" data-r="1808,1874">1808–1874</button>
+              <button type="button" data-r="1875,1931">1875–1931</button>
+              <button type="button" data-r="1931,1975">1931–1975</button>
+              <button type="button" data-r="1975,2020">1975–2020</button>
+            </div>
+          </div>
+        </div>
         <div class="jk-setup-row">
           <span class="jk-setup-label">Zenbat data?</span>
           <div class="jk-count-chips" id="jk-count-chips" role="group" aria-label="Data kopurua">
@@ -410,8 +432,8 @@ JOKOA = r"""<!DOCTYPE html>
             <button class="jk-count" data-n="10" aria-pressed="false">10</button>
             <button class="jk-count" data-n="15" aria-pressed="false">15</button>
           </div>
+          <button class="btn btn-primary jk-new" id="jk-new">🎲 Joko berria</button>
         </div>
-        <button class="btn btn-primary jk-new" id="jk-new">🎲 Joko berria</button>
       </div>
 
       <div class="jk-board" id="jk-board" hidden>
