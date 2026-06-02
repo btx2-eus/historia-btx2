@@ -2,7 +2,7 @@
 """
 build_kronologia.py — Kronologia interaktiboaren eraikitzailea.
 
-100 data-klabeen Excel-etik (content/data/) abiatuta, denbora-lerro
+Data-klabeen Excel-etik (content/data/) abiatuta, denbora-lerro
 interaktiboa sortzen du: kronologia.html (datuak HTML barruan txertatuta,
 beraz GitHub Pages-en zein lokalean dabil, fetch-ik gabe).
 
@@ -211,18 +211,18 @@ PAGE = r"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kronologia interaktiboa · 100 data-klabe (1808–2020) | Historia BTX2</title>
-  <meta name="description" content="1808tik 2020ra arteko 100 data-klabe interaktiboak hiru eremutan (Espainia, Euskal Herria eta Mundua): iragazkiak, bilaketa, azalpen didaktikoak eta lotutako datak EBAU/PAU prestatzeko, euskaraz." />
+  <title>Kronologia interaktiboa · {n} data-klabe (1808–2020) | Historia BTX2</title>
+  <meta name="description" content="1808tik 2020ra arteko {n} data-klabe interaktiboak hiru eremutan (Espainia, Euskal Herria eta Mundua): iragazkiak, bilaketa, azalpen didaktikoak eta lotutako datak EBAU/PAU prestatzeko, euskaraz." />
   <link rel="canonical" href="https://btx2-eus.github.io/historia-btx2/kronologia.html" />
   <meta property="og:locale" content="eu_ES" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Historia BTX2" />
-  <meta property="og:title" content="Kronologia interaktiboa · 100 data-klabe (1808–2020)" />
-  <meta property="og:description" content="1808–2020 arteko 100 data-klabe interaktiboak hiru eremutan: Espainia, Euskal Herria eta Mundua. EBAU/PAU prestatzeko, euskaraz." />
+  <meta property="og:title" content="Kronologia interaktiboa · {n} data-klabe (1808–2020)" />
+  <meta property="og:description" content="1808–2020 arteko {n} data-klabe interaktiboak hiru eremutan: Espainia, Euskal Herria eta Mundua. EBAU/PAU prestatzeko, euskaraz." />
   <meta property="og:url" content="https://btx2-eus.github.io/historia-btx2/kronologia.html" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Kronologia interaktiboa · 100 data-klabe" />
-  <meta name="twitter:description" content="1808–2020 arteko 100 data-klabe interaktiboak hiru eremutan. EBAU/PAU prestatzeko, euskaraz." />
+  <meta name="twitter:title" content="Kronologia interaktiboa · {n} data-klabe" />
+  <meta name="twitter:description" content="1808–2020 arteko {n} data-klabe interaktiboak hiru eremutan. EBAU/PAU prestatzeko, euskaraz." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -249,8 +249,8 @@ PAGE = r"""<!DOCTYPE html>
   <section class="kx-hero" id="main" tabindex="-1">
     <div class="container">
       <span class="hero-eyebrow">★ Kronologia interaktiboa · EBAU/PAU</span>
-      <h1>100 data-klabe, <span class="grad-text">hiru begiradatan</span></h1>
-      <p class="lead">1808tik 2020ra arteko ehun data giltzarri, aldi berean hiru eremutan irakurrita: <b>Espainia</b>, <b>Euskal Herria</b> eta <b>Mundua</b>. Sakatu data batean azalpen didaktikoa, zergatia eta lotutako datak ikusteko.</p>
+      <h1>{n} data-klabe, <span class="grad-text">hiru begiradatan</span></h1>
+      <p class="lead">1808tik 2020ra arteko {n} data giltzarri, aldi berean hiru eremutan irakurrita: <b>Espainia</b>, <b>Euskal Herria</b> eta <b>Mundua</b>. Sakatu data batean azalpen didaktikoa, zergatia eta lotutako datak ikusteko.</p>
       <div class="kx-hero-stats">
         <div class="kx-stat"><strong>{n}</strong><span>data-klabe</span></div>
         <div class="kx-stat es"><strong>{es}</strong><span>Espainia</span></div>
@@ -338,7 +338,7 @@ PAGE = r"""<!DOCTYPE html>
         <a href="index.html#tresnak">Tresnak</a>
       </nav>
       <div class="foot-bottom">
-        <span>Kronologia interaktiboa · 100 data-klabe · 1808–2020</span>
+        <span>Kronologia interaktiboa · {n} data-klabe · 1808–2020</span>
         <span>© <span data-year>{current_year}</span> · Luken San Sebastián Alkorta · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a></span>
       </div>
     </div>
