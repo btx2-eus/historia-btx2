@@ -307,6 +307,7 @@ PAGE = r"""<!DOCTYPE html>
         </div>
         <div class="kx-empty" id="kx-empty" hidden>Ez da emaitzarik aurkitu. Saiatu iragazkiak aldatzen edo bilaketa garbitzen.</div>
         <p class="kx-hint">💡 Lerratu alboetara · sakatu data bat xehetasunetarako · erabili ← → teklak nabigatzeko</p>
+        <p class="kx-note">ℹ️ Gertaeren dentsitatea gai-zerrendari dagokio, ez munduko gertakarien garrantziari.</p>
       </div>
 
       <!-- Prozesu nagusiak -->

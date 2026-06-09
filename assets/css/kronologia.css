@@ -239,6 +239,7 @@
 /* Empty / hint */
 .kx-empty { padding: 2.5rem 1.5rem; text-align: center; color: var(--muted); font-style: italic; }
 .kx-hint { text-align: center; color: var(--muted); font-size: .85rem; margin-top: .8rem; }
+.kx-note { text-align: center; color: var(--muted); font-size: .8rem; margin-top: .35rem; font-style: italic; opacity: .85; }
 
 /* ---------- Detail drawer ---------- */
 .kx-drawer {
