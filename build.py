@@ -66,6 +66,8 @@ def build_sitemap(site: dict, temas_meta: list):
         ("jokoa.html", "0.8"),
         ("kontzeptu-entrenamendua.html", "0.7"),
         ("pau-egitura.html", "0.8"),
+        ("historia-azterketa-idatzi.html", "0.8"),
+        ("historia-uda/", "0.9"),
     ]
     for tema in temas_meta:
         pages.append((f"temas/{format_num(tema['num'])}-{tema['slug']}.html", "0.8"))
