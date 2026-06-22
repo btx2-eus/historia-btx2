@@ -26,7 +26,7 @@
     <section class="intro-panel" aria-labelledby="pageTitle">
       <div>
         <h1 id="pageTitle">Aukeratu 4 kontzeptu, lotu historikoki, eta idatzi azalpen koherentea.</h1>
-        <p>App honek kontzeptu historiko, politiko eta sozialak lantzen ditu, ez gertakari hutsak. Ez du IA bat simulatzen: zuzenketa <strong>arau bidezkoa</strong> da, eta feedback orientagarria ematen du.</p>
+        <p>App honek kontzeptu historiko, politiko eta sozialak lantzen ditu, ez gertakari hutsak. Ez du IA bat simulatzen: zuzenketa <strong>automatikoa eta orientagarria</strong> da, ez du irakaslearen irakurketa ordezkatzen.</p>
       </div>
       <div class="intro-stats" aria-label="Aurrerapen laburra">
         <span><strong id="statAttempts">0</strong> saiakera</span>
@@ -38,12 +38,10 @@
     <section class="mode-panel" aria-labelledby="modeTitle">
       <div>
         <h2 id="modeTitle">Modua</h2>
-        <p>Entrenamendua: 12 minutu eta 3 pista. Azterketa: 10 minutu, definiziorik eta pistarik gabe. Erronka: 12 minutu, gai desberdinetako kontzeptuak eta pista bakarra. PAU modua: 15 minutu, gehienez 350 hitz, eta lotura historikoa ardatz.</p>
+        <p>Entrenamendua: laguntzarekin trebatzeko (definizioak, pistak eta lotura-taula lagungarria). PAU modua: azterketa erreala — 15 minutu, gehienez 350 hitz, definiziorik eta pistarik gabe, zuzenean idatzi eta lotura historikoa ardatz.</p>
       </div>
       <div class="segmented" role="radiogroup" aria-label="Aukeratu modua">
         <button class="mode-button is-active" type="button" data-mode="training" role="radio" aria-checked="true">Entrenamendua</button>
-        <button class="mode-button" type="button" data-mode="exam" role="radio" aria-checked="false">Azterketa</button>
-        <button class="mode-button" type="button" data-mode="boss" role="radio" aria-checked="false">Erronka</button>
         <button class="mode-button" type="button" data-mode="pau" role="radio" aria-checked="false">PAU modua</button>
       </div>
     </section>
@@ -57,13 +55,13 @@
           </div>
           <button class="primary-button small" id="drawConcepts" type="button">Zozkatu</button>
         </div>
-        <p class="helper">Aukeratu 4. Zozketak lotura historiko minimoa duten kontzeptuak proposatzen ditu; Erronkan, gai bat baino gehiago nahasten dira baina zubi logiko batekin.</p>
+        <p class="helper">Aukeratu 4. Zozketak lotura historiko minimoa duten kontzeptuak proposatzen ditu, elkarrekin azalpen koherente bat eraikitzeko.</p>
         <div id="conceptCards" class="concept-grid" aria-live="polite"></div>
         <p class="selection-counter" id="selectionCounter">0/4 aukeratuta</p>
       </aside>
 
       <section class="main-panel" aria-labelledby="boardTitle">
-        <div class="panel connection-panel">
+        <div class="panel connection-panel" id="connectionPanel">
           <div class="panel-head">
             <div>
               <p class="eyebrow">2. Lotura</p>
@@ -121,7 +119,7 @@
         <div class="panel-head">
           <div>
             <p class="eyebrow">4. Feedbacka</p>
-            <h2 id="reviewTitle">Arau bidezko zuzenketa</h2>
+            <h2 id="reviewTitle">Zuzenketa</h2>
           </div>
         </div>
         <div id="resultBox" class="result-box empty">
