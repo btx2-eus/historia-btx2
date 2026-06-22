@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lau Kontzeptuen Erronka · Historia BTX2</title>
+  <meta name="description" content="EBAU/PAU probarako kontzeptu historikoak lotzen eta testu koherentea idazten trebatzeko app estatikoa." />
+  <link rel="canonical" href="https://btx2-eus.github.io/historia-btx2/lau-kontzeptuen-erronka.html" />
+  <link rel="stylesheet" href="assets/css/lau-kontzeptuen-erronka.css" />
+</head>
+<body>
+  <a class="skip-link" href="#app">Edukira saltatu</a>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Historia BTX2 hasierara">
+      <span class="brand-mark">H</span>
+      <span><strong>Lau Kontzeptuen Erronka</strong><small>Historia BTX2 · EBAU entrenamendua</small></span>
+    </a>
+    <div class="top-actions">
+      <button class="ghost-button" id="resetChallenge" type="button">Erronka berria</button>
+      <button class="danger-button" id="clearProgress" type="button">Aurrerapena garbitu</button>
+    </div>
+  </header>
+
+  <main id="app" class="app-shell">
+    <section class="intro-panel" aria-labelledby="pageTitle">
+      <div>
+        <h1 id="pageTitle">Aukeratu 4 kontzeptu, lotu historikoki, eta idatzi azalpen koherentea.</h1>
+        <p>App honek kontzeptu historiko, politiko eta sozialak lantzen ditu, ez gertakari hutsak. Ez du IA bat simulatzen: zuzenketa <strong>arau bidezkoa</strong> da, eta feedback orientagarria ematen du.</p>
+      </div>
+      <div class="intro-stats" aria-label="Aurrerapen laburra">
+        <span><strong id="statAttempts">0</strong> saiakera</span>
+        <span><strong id="statAverage">0</strong> batezbestekoa</span>
+        <span><strong id="statPracticed">0</strong> kontzeptu landuta</span>
+      </div>
+    </section>
+
+    <section class="mode-panel" aria-labelledby="modeTitle">
+      <div>
+        <h2 id="modeTitle">Modua</h2>
+        <p>Entrenamenduan pista mugatuak daude; azterketan, ez.</p>
+      </div>
+      <div class="segmented" role="radiogroup" aria-label="Aukeratu modua">
+        <button class="mode-button is-active" type="button" data-mode="training" role="radio" aria-checked="true">Entrenamendua</button>
+        <button class="mode-button" type="button" data-mode="exam" role="radio" aria-checked="false">Azterketa</button>
+        <button class="mode-button" type="button" data-mode="boss" role="radio" aria-checked="false">Jefe Finala</button>
+      </div>
+    </section>
+
+    <div class="workspace">
+      <aside class="panel draw-panel" aria-labelledby="drawTitle">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">1. Zozketa</p>
+            <h2 id="drawTitle">5 kontzeptu</h2>
+          </div>
+          <button class="primary-button small" id="drawConcepts" type="button">Zozkatu</button>
+        </div>
+        <p class="helper">Aukeratu 4. Ondoren, kokatu bakoitza azalpenaren funtzio historiko batean.</p>
+        <div id="conceptCards" class="concept-grid" aria-live="polite"></div>
+        <p class="selection-counter" id="selectionCounter">0/4 aukeratuta</p>
+      </aside>
+
+      <section class="main-panel" aria-labelledby="boardTitle">
+        <div class="panel connection-panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">2. Lotura</p>
+              <h2 id="boardTitle">Konexio-taula</h2>
+            </div>
+            <label class="model-picker">Eredua
+              <select id="modelSelect">
+                <option value="process">Kausa · Testuingurua · Prozesua · Ondorioa</option>
+                <option value="conflict">Aurrekaria · Gertaera · Gatazka · Ondorio politikoa</option>
+              </select>
+            </label>
+          </div>
+          <div id="connectionBoard" class="connection-board" aria-live="polite"></div>
+        </div>
+
+        <div class="panel writing-panel">
+          <div class="writing-top">
+            <div>
+              <p class="eyebrow">3. Idazketa</p>
+              <h2>Erantzuna</h2>
+            </div>
+            <div class="timer-box" aria-live="polite">
+              <span id="timerLabel">Denbora</span>
+              <strong id="timerDisplay">12:00</strong>
+            </div>
+          </div>
+          <div class="writing-actions">
+            <button class="secondary-button" id="startTimer" type="button">Idazten hasi</button>
+            <button class="ghost-button" id="pauseTimer" type="button">Pausatu</button>
+            <button class="ghost-button" id="hintButton" type="button">Pista</button>
+          </div>
+          <div id="hintBox" class="hint-box" hidden></div>
+          <label class="sr-only" for="answerText">Idatzi zure erantzuna</label>
+          <textarea id="answerText" rows="12" placeholder="Idatzi hemen azalpen historikoa. Helburua ez da lau definizio ematea, baizik eta kontzeptuak prozesu historiko baten barruan lotzea."></textarea>
+          <div class="editor-footer">
+            <span id="wordCount">0 hitz</span>
+            <span id="draftStatus">Zirriborroa lokalean gordeko da.</span>
+            <button class="primary-button" id="checkAnswer" type="button">Zuzendu</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel review-panel" aria-labelledby="reviewTitle">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">4. Feedbacka</p>
+            <h2 id="reviewTitle">Arau bidezko zuzenketa</h2>
+          </div>
+        </div>
+        <div id="resultBox" class="result-box empty">
+          <p>Zuzendu botoia sakatzean, hemen ikusiko duzu errubrika, puntuazioa eta hobetzeko aholkuak.</p>
+        </div>
+        <div class="progress-card">
+          <h3>Aurrerapena</h3>
+          <dl>
+            <div><dt>Azken puntuazioa</dt><dd id="lastScore">-</dd></div>
+            <div><dt>Kontzeptu sendoak</dt><dd id="masteredList">-</dd></div>
+            <div><dt>Nahastuak</dt><dd id="confusedList">-</dd></div>
+          </dl>
+        </div>
+        <details class="bank-details">
+          <summary>Bankua editatzeko oharra</summary>
+          <p>Kontzeptuak <code>assets/js/kontzeptu-bankua.js</code> fitxategian daude. Objektu berriak gehitu daitezke egitura bera mantenduz.</p>
+        </details>
+      </aside>
+    </div>
+  </main>
+
+  <template id="conceptCardTemplate">
+    <article class="concept-card">
+      <div class="concept-card-top">
+        <span class="difficulty"></span>
+        <span class="era"></span>
+      </div>
+      <h3></h3>
+      <p class="definition"></p>
+      <div class="tags"></div>
+      <button type="button" class="select-concept"></button>
+    </article>
+  </template>
+
+  <script src="assets/js/kontzeptu-bankua.js"></script>
+  <script src="assets/js/lau-kontzeptuen-erronka.js"></script>
+</body>
+</html>
