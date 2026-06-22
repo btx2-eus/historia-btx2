@@ -155,7 +155,107 @@
   }
 
   function pickChallenge() {
-    if (state.mode === "boss") return pickBossChallenge();
+    if (state.mode === "boss") return pickCoherentChallenge({ crossTopic: true });
+    return pickCoherentChallenge({ crossTopic: false });
+  }
+
+  function pickCoherentChallenge(options) {
+    var crossTopic = !!options.crossTopic;
+    var anchors = crossTopic
+      ? CONCEPTS.filter(function (concept) { return concept.gaiak.length > 1 || concept.loturak.length > 2; })
+      : CONCEPTS;
+    var best = [];
+
+    for (var attempt = 0; attempt < 24; attempt += 1) {
+      var anchor = sample(anchors.length ? anchors : CONCEPTS, 1)[0];
+      var challenge = crossTopic ? expandCrossTopicChallenge(anchor) : expandTopicChallenge(anchor);
+      if (challenge.length === 5 && challengeScore(challenge) > challengeScore(best)) best = challenge;
+      if (challenge.length === 5 && isCoherentChallenge(challenge, crossTopic)) return shuffle(challenge);
+    }
+
+    return best.length === 5 ? shuffle(best) : fallbackChallenge(crossTopic);
+  }
+
+  function expandTopicChallenge(anchor) {
+    var topic = sample(anchor.gaiak, 1)[0];
+    var topicPool = CONCEPTS.filter(function (concept) {
+      return concept.id !== anchor.id && concept.gaiak.indexOf(topic) !== -1;
+    });
+    return fillChallenge([anchor], topicPool, false);
+  }
+
+  function expandCrossTopicChallenge(anchor) {
+    return fillChallenge([anchor], CONCEPTS.filter(function (concept) {
+      return concept.id !== anchor.id;
+    }), true);
+  }
+
+  function fillChallenge(chosen, pool, crossTopic) {
+    while (chosen.length < 5) {
+      var ranked = pool
+        .filter(function (concept) { return chosen.map(prop("id")).indexOf(concept.id) === -1; })
+        .map(function (concept) {
+          return {
+            concept: concept,
+            score: conceptFitScore(concept, chosen, crossTopic)
+          };
+        })
+        .filter(function (item) { return item.score > 0; })
+        .sort(function (a, b) { return b.score - a.score || Math.random() - 0.5; });
+
+      if (!ranked.length) break;
+      chosen.push(ranked[0].concept);
+    }
+    return chosen;
+  }
+
+  function conceptFitScore(concept, chosen, crossTopic) {
+    var score = chosen.reduce(function (sum, other) {
+      return sum + pairScore(concept, other);
+    }, 0);
+
+    if (crossTopic) {
+      var usedHeads = chosen.map(primaryTopic);
+      var sameHeadCount = usedHeads.filter(function (topic) { return topic === primaryTopic(concept); }).length;
+      if (usedHeads.indexOf(primaryTopic(concept)) === -1) score += 8;
+      if (sameHeadCount >= 2) score -= 10;
+    }
+
+    return score;
+  }
+
+  function pairScore(a, b) {
+    var sharedTopics = a.gaiak.filter(function (topic) { return b.gaiak.indexOf(topic) !== -1; }).length;
+    var directLink = a.loturak.indexOf(b.id) !== -1 || b.loturak.indexOf(a.id) !== -1;
+    var distance = Math.abs((a.ordenHistorikoa || 0) - (b.ordenHistorikoa || 0));
+    var score = 0;
+
+    if (directLink) score += 8;
+    score += sharedTopics * 5;
+    if (primaryTopic(a) === primaryTopic(b)) score += 2;
+    if (distance <= 10) score += 2;
+    else if (distance <= 45) score += 1;
+    return score;
+  }
+
+  function isCoherentChallenge(challenge, crossTopic) {
+    if (challenge.length < 5) return false;
+    var minimumScore = crossTopic ? 34 : 46;
+    var topicHeads = unique(challenge.map(primaryTopic)).length;
+    return challengeScore(challenge) >= minimumScore && (!crossTopic || topicHeads >= 3);
+  }
+
+  function challengeScore(challenge) {
+    var score = 0;
+    for (var i = 0; i < challenge.length; i += 1) {
+      for (var j = i + 1; j < challenge.length; j += 1) {
+        score += pairScore(challenge[i], challenge[j]);
+      }
+    }
+    return score;
+  }
+
+  function fallbackChallenge(crossTopic) {
     var topics = unique(flatten(CONCEPTS.map(function (c) { return c.gaiak; })));
     var topic = sample(topics, 1)[0];
     var topicPool = CONCEPTS.filter(function (concept) {
@@ -168,23 +268,8 @@
     }), 5 - firstPass.length));
   }
 
-  function pickBossChallenge() {
-    var shuffled = shuffle(CONCEPTS);
-    var chosen = [];
-    var usedTopicHeads = [];
-    shuffled.forEach(function (concept) {
-      var topicHead = concept.gaiak[0];
-      if (chosen.length < 5 && usedTopicHeads.indexOf(topicHead) === -1) {
-        chosen.push(concept);
-        usedTopicHeads.push(topicHead);
-      }
-    });
-    if (chosen.length < 5) {
-      chosen = chosen.concat(shuffled.filter(function (concept) {
-        return chosen.map(prop("id")).indexOf(concept.id) === -1;
-      }).slice(0, 5 - chosen.length));
-    }
-    return chosen;
+  function primaryTopic(concept) {
+    return concept.gaiak[0] || "";
   }
 
   function renderAll() {
