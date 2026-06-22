@@ -14,7 +14,7 @@
   var MODE_LABELS = {
     training: "Entrenamendua",
     exam: "Azterketa",
-    boss: "Jefe Finala"
+    boss: "Erronka"
   };
 
   var MODELS = {
