@@ -7,15 +7,11 @@
 
   var MODE_SECONDS = {
     training: 12 * 60,
-    exam: 10 * 60,
-    boss: 12 * 60,
     pau: 15 * 60
   };
 
   var MODE_LABELS = {
     training: "Entrenamendua",
-    exam: "Azterketa",
-    boss: "Erronka",
     pau: "PAU modua"
   };
 
@@ -66,6 +62,7 @@
     conceptCards: document.getElementById("conceptCards"),
     selectionCounter: document.getElementById("selectionCounter"),
     modelSelect: document.getElementById("modelSelect"),
+    connectionPanel: document.getElementById("connectionPanel"),
     board: document.getElementById("connectionBoard"),
     answer: document.getElementById("answerText"),
     timerDisplay: document.getElementById("timerDisplay"),
@@ -97,6 +94,7 @@
     }
 
     var draftRestored = restoreDraft();
+    if (!MODE_SECONDS[state.mode]) state.mode = "training";
     bindEvents();
     if (!draftRestored) drawNewChallenge();
     renderAll();
@@ -160,7 +158,6 @@
   }
 
   function pickChallenge() {
-    if (state.mode === "boss") return pickCoherentChallenge({ crossTopic: true });
     return pickCoherentChallenge({ crossTopic: false });
   }
 
@@ -286,10 +283,20 @@
     renderProgress();
     updateHintState();
     renderPauGuide();
+    renderConnectionVisibility();
   }
 
   function renderPauGuide() {
     if (el.pauGuide) el.pauGuide.hidden = state.mode !== "pau";
+  }
+
+  // PAU moduan ez dago lotura-taularik: zuzenean idatzi behar da, azterketan bezala.
+  function renderConnectionVisibility() {
+    if (el.connectionPanel) el.connectionPanel.hidden = state.mode === "pau";
+  }
+
+  function boardRequired() {
+    return state.mode !== "pau";
   }
 
   function renderModeButtons() {
@@ -307,13 +314,17 @@
       var node = el.cardTemplate.content.firstElementChild.cloneNode(true);
       var selected = state.selected.indexOf(concept.id) !== -1;
       node.classList.toggle("is-selected", selected);
+      var hideDefinition = state.mode === "pau";
       node.querySelector(".difficulty").textContent = "Zailtasuna " + concept.zailtasuna + "/3";
-      node.querySelector(".era").textContent = state.mode === "exam" ? "Azterketa" : concept.garaia;
+      node.querySelector(".era").textContent = concept.garaia;
       node.querySelector("h3").textContent = concept.kontzeptua;
-      node.querySelector(".definition").textContent = state.mode === "exam"
-        ? "Azterketa modua: azalpena zure ezagutzatik eraiki."
-        : concept.definizioLaburra;
-      node.querySelector(".tags").innerHTML = (state.mode === "exam" ? [] : concept.gaiak.slice(0, 2)).map(function (tag) {
+      var definitionNode = node.querySelector(".definition");
+      if (hideDefinition) {
+        definitionNode.hidden = true;
+      } else {
+        definitionNode.textContent = concept.definizioLaburra;
+      }
+      node.querySelector(".tags").innerHTML = concept.gaiak.slice(0, 2).map(function (tag) {
         return '<span class="tag">' + esc(tag) + "</span>";
       }).join("");
       var button = node.querySelector(".select-concept");
@@ -410,7 +421,7 @@
       flashMessage("Lehenik aukeratu 4 kontzeptu.");
       return;
     }
-    if (!isBoardComplete()) {
+    if (boardRequired() && !isBoardComplete()) {
       flashMessage("Kokatu 4 kontzeptuak konexio-taulan.");
       return;
     }
@@ -440,13 +451,13 @@
   }
 
   function updateHintState() {
-    var limit = state.mode === "training" ? 3 : state.mode === "boss" ? 1 : 0;
+    var limit = state.mode === "training" ? 3 : 0;
     el.hintButton.disabled = limit === 0 || state.hintsUsed >= limit || state.selected.length === 0;
     el.hintButton.textContent = limit === 0 ? "Pistarik ez" : "Pista " + state.hintsUsed + "/" + limit;
   }
 
   function showHint() {
-    var limit = state.mode === "training" ? 3 : state.mode === "boss" ? 1 : 0;
+    var limit = state.mode === "training" ? 3 : 0;
     if (state.hintsUsed >= limit) return;
     var concept = byId(state.selected[state.hintsUsed % state.selected.length]) || byId(state.selected[0]);
     if (!concept) return;
@@ -464,7 +475,7 @@
       flashMessage("Zuzendu aurretik, aukeratu 4 kontzeptu.");
       return;
     }
-    if (!isBoardComplete()) {
+    if (boardRequired() && !isBoardComplete()) {
       flashMessage("Zuzendu aurretik, osatu konexio-taula.");
       return;
     }
@@ -498,14 +509,67 @@
     var temporalHits = TEMPORAL_MARKERS.filter(function (marker) {
       return normalized.indexOf(normalize(marker)) !== -1;
     });
-    var yearHits = normalized.match(/\b(18|19|20)\d{2}\b/g) || [];
+    // Euskal atzizkiak onartu (1977ko, 1936an...): ez eskatu hitz-mugarik atzean.
+    var yearHits = normalized.match(/(?<!\d)(18|19|20)\d{2}(?!\d)/g) || [];
     var listLike = looksLikeList(text);
     var sentenceCount = (text.match(/[.!?;]+/g) || []).length;
     var chronologicalOk = boardChronologyScore();
     var relationScore = relationScoreFor(selectedConcepts, connectorHits.length);
     var balanceScore = balanceScoreFor(conceptResults);
+    // PAU moduan testuan oinarritutako neurriak (taularik gabe).
+    var linkSentences = linkSentenceCount(text, selectedConcepts);
+    var textChronology = yearHits.length
+      ? (temporalHits.length ? 15 : 11)
+      : (temporalHits.length ? 8 : 0);
 
-    var rubric = [
+    var rubric = state.mode === "pau" ? [
+      {
+        key: "concepts",
+        label: "4 kontzeptuak agertzen dira",
+        max: 20,
+        score: usedCount * 5
+      },
+      {
+        key: "chronology",
+        label: "Testuinguru historikoa eta kronologia",
+        max: 15,
+        score: textChronology
+      },
+      {
+        key: "connectors",
+        label: "Konektore kausalak eta azalpenekoak daude",
+        max: 15,
+        score: connectorHits.length >= 3 ? 15 : connectorHits.length === 2 ? 12 : connectorHits.length === 1 ? 7 : 0
+      },
+      {
+        key: "explanation",
+        label: "Azalpena da, ez definizio-zerrenda",
+        max: 20,
+        score: listLike ? 0
+          : sentenceCount >= 4 && connectorHits.length >= 3 ? 20
+          : sentenceCount >= 3 && connectorHits.length >= 2 ? 14
+          : sentenceCount >= 2 ? 8 : 4
+      },
+      {
+        key: "relations",
+        label: "Kontzeptuak esaldietan lotzen dira (ez zerrendatu)",
+        max: 20,
+        score: listLike ? 0
+          : linkSentences >= 3 ? 20
+          : linkSentences === 2 ? 14
+          : linkSentences === 1 ? 8
+          : connectorHits.length >= 2 ? 4 : 0
+      },
+      {
+        key: "length",
+        label: "Luzera eta sintesia (≤ 350 hitz)",
+        max: 10,
+        score: (function () {
+          var base = words.length >= 120 ? 10 : words.length >= 70 ? 7 : words.length >= 40 ? 4 : words.length >= 20 ? 2 : 0;
+          return words.length > PAU_WORD_LIMIT ? Math.max(0, base - 5) : base;
+        })()
+      }
+    ] : [
       {
         key: "concepts",
         label: "4 kontzeptuak agertzen dira",
@@ -568,6 +632,7 @@
         listLike: listLike,
         words: words.length,
         relationScore: relationScore,
+        linkSentences: linkSentences,
         balanceScore: balanceScore,
         chronologicalOk: chronologicalOk
       }),
@@ -609,14 +674,14 @@
     if (info.words < 60) {
       messages.push("Testua laburregia da azalpen historiko sendo baterako. Gehitu testuingurua eta ondorioa.");
     }
-    messages.push("Oharra: zuzenketa hau arau bidezkoa da; ez du irakaslearen irakurketa ordezkatzen.");
+    messages.push("Oharra: zuzenketa hau orientagarria da; ez du irakaslearen irakurketa ordezkatzen.");
     return messages;
   }
 
   function buildPauFeedback(info) {
     var messages = [];
     var missing = info.conceptResults.filter(function (item) { return !item.mentioned; });
-    var wellConnected = !info.listLike && info.relationScore >= 7 && info.connectorHits.length >= 2;
+    var wellConnected = !info.listLike && info.linkSentences >= 2 && info.connectorHits.length >= 2;
 
     // 1. Kontzeptuak agertzen dira?
     if (!missing.length) {
@@ -647,7 +712,7 @@
       messages.push("➕ Erantzuna laburregia da: falta dira testuinguru labur bat eta ideia nagusia ixten duen amaiera-esaldi bat.");
     }
 
-    messages.push("Oharra: zuzenketa hau arau bidezkoa da; ez du irakaslearen irakurketa ordezkatzen.");
+    messages.push("Oharra: zuzenketa hau orientagarria da; ez du irakaslearen irakurketa ordezkatzen.");
     return messages;
   }
 
@@ -658,7 +723,7 @@
       '<div class="score-card">' +
       '<span class="score-pill ' + quality + '">' + esc(MODE_LABELS[state.mode]) + "</span>" +
       "<strong>" + assessment.score + "/100</strong>" +
-      "<p>Arau bidezko zuzenketa orientagarria.</p>" +
+      "<p>Zuzenketa orientagarria.</p>" +
       "</div>" +
       '<ul class="rubric-list">' +
       assessment.rubric.map(function (row) {
@@ -816,6 +881,22 @@
     var bulletLines = lines.filter(function (line) { return /^[-*0-9.)]+/.test(line); }).length;
     var colonLines = lines.filter(function (line) { return line.indexOf(":") !== -1 && line.length < 80; }).length;
     return bulletLines >= 2 || colonLines >= 3;
+  }
+
+  // Esaldi kopurua, non bi kontzeptu (edo gehiago) elkarrekin azaltzen diren:
+  // benetako lotura prosan (ez zerrendatzea) neurtzeko.
+  function linkSentenceCount(text, concepts) {
+    var sentences = String(text || "").split(/[.!?;\n]+/);
+    return sentences.reduce(function (count, sentence) {
+      var norm = normalize(sentence);
+      if (!norm) return count;
+      var present = concepts.filter(function (concept) {
+        return conceptAliases(concept).some(function (alias) {
+          return norm.indexOf(normalize(alias)) !== -1;
+        });
+      }).length;
+      return present >= 2 ? count + 1 : count;
+    }, 0);
   }
 
   function boardChronologyScore() {
