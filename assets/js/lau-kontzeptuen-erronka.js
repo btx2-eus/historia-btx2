@@ -8,14 +8,18 @@
   var MODE_SECONDS = {
     training: 12 * 60,
     exam: 10 * 60,
-    boss: 12 * 60
+    boss: 12 * 60,
+    pau: 15 * 60
   };
 
   var MODE_LABELS = {
     training: "Entrenamendua",
     exam: "Azterketa",
-    boss: "Erronka"
+    boss: "Erronka",
+    pau: "PAU modua"
   };
+
+  var PAU_WORD_LIMIT = 350;
 
   var MODELS = {
     process: [
@@ -70,6 +74,7 @@
     pauseTimer: document.getElementById("pauseTimer"),
     hintButton: document.getElementById("hintButton"),
     hintBox: document.getElementById("hintBox"),
+    pauGuide: document.getElementById("pauGuide"),
     wordCount: document.getElementById("wordCount"),
     draftStatus: document.getElementById("draftStatus"),
     checkAnswer: document.getElementById("checkAnswer"),
@@ -280,6 +285,11 @@
     renderWordCount();
     renderProgress();
     updateHintState();
+    renderPauGuide();
+  }
+
+  function renderPauGuide() {
+    if (el.pauGuide) el.pauGuide.hidden = state.mode !== "pau";
   }
 
   function renderModeButtons() {
@@ -550,7 +560,7 @@
     return {
       score: score,
       rubric: rubric,
-      feedback: buildFeedback({
+      feedback: (state.mode === "pau" ? buildPauFeedback : buildFeedback)({
         score: score,
         conceptResults: conceptResults,
         connectorHits: connectorHits,
@@ -599,6 +609,44 @@
     if (info.words < 60) {
       messages.push("Testua laburregia da azalpen historiko sendo baterako. Gehitu testuingurua eta ondorioa.");
     }
+    messages.push("Oharra: zuzenketa hau arau bidezkoa da; ez du irakaslearen irakurketa ordezkatzen.");
+    return messages;
+  }
+
+  function buildPauFeedback(info) {
+    var messages = [];
+    var missing = info.conceptResults.filter(function (item) { return !item.mentioned; });
+    var wellConnected = !info.listLike && info.relationScore >= 7 && info.connectorHits.length >= 2;
+
+    // 1. Kontzeptuak agertzen dira?
+    if (!missing.length) {
+      messages.push("✅ Kontzeptuak erabili dituzu.");
+    } else {
+      messages.push("⚠️ Lau kontzeptuetatik batzuk ez dira argi agertzen: " + missing.map(function (item) {
+        return item.concept.kontzeptua;
+      }).join(", ") + ". PAU erantzunean laurak txertatu behar dituzu.");
+    }
+
+    // 2. Definitu ala lotu? Hau da PAU moduaren gakoa.
+    if (wellConnected) {
+      messages.push("✅ Ez dituzu definitu bakarrik: kontzeptuen arteko lotura historikoa eraiki duzu.");
+    } else {
+      messages.push("⚠️ Baina ez da nahikoa definitzea: lotura historikoa azaldu behar da.");
+      messages.push("🔧 Hurrengo saiakeran, saiatu esaldi hauen egitura erabiltzen: «Testuinguru honetan… Horrek eragin zuen… Ondorioz… Horregatik…»");
+    }
+
+    // 3. Testuingurua eta kronologia.
+    if (!info.temporalHits.length || info.chronologicalOk < 4) {
+      messages.push("🕐 Gehitu testuinguru historikoa: garaia, data edo prozesuaren ordena argia.");
+    }
+
+    // 4. Amaiera-esaldia eta luzera.
+    if (info.words > PAU_WORD_LIMIT) {
+      messages.push("✂️ " + PAU_WORD_LIMIT + " hitzeko muga gainditu duzu (" + info.words + " hitz). PAU azterketan sintesia ezinbestekoa da: laburtu eta utzi funtsezkoa.");
+    } else if (info.words < 60) {
+      messages.push("➕ Erantzuna laburregia da: falta dira testuinguru labur bat eta ideia nagusia ixten duen amaiera-esaldi bat.");
+    }
+
     messages.push("Oharra: zuzenketa hau arau bidezkoa da; ez du irakaslearen irakurketa ordezkatzen.");
     return messages;
   }
@@ -725,7 +773,13 @@
 
   function renderWordCount() {
     var count = normalize(el.answer.value).split(/\s+/).filter(Boolean).length;
-    el.wordCount.textContent = count + " hitz";
+    if (state.mode === "pau") {
+      el.wordCount.textContent = count + " / " + PAU_WORD_LIMIT + " hitz";
+      el.wordCount.classList.toggle("is-over", count > PAU_WORD_LIMIT);
+    } else {
+      el.wordCount.textContent = count + " hitz";
+      el.wordCount.classList.remove("is-over");
+    }
   }
 
   function isBoardComplete() {
