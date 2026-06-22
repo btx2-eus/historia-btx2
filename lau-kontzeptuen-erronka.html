@@ -38,12 +38,13 @@
     <section class="mode-panel" aria-labelledby="modeTitle">
       <div>
         <h2 id="modeTitle">Modua</h2>
-        <p>Entrenamendua: 12 minutu eta 3 pista. Azterketa: 10 minutu, definiziorik eta pistarik gabe. Erronka: 12 minutu, gai desberdinetako kontzeptuak eta pista bakarra.</p>
+        <p>Entrenamendua: 12 minutu eta 3 pista. Azterketa: 10 minutu, definiziorik eta pistarik gabe. Erronka: 12 minutu, gai desberdinetako kontzeptuak eta pista bakarra. PAU modua: 15 minutu, gehienez 350 hitz, eta lotura historikoa ardatz.</p>
       </div>
       <div class="segmented" role="radiogroup" aria-label="Aukeratu modua">
         <button class="mode-button is-active" type="button" data-mode="training" role="radio" aria-checked="true">Entrenamendua</button>
         <button class="mode-button" type="button" data-mode="exam" role="radio" aria-checked="false">Azterketa</button>
         <button class="mode-button" type="button" data-mode="boss" role="radio" aria-checked="false">Erronka</button>
+        <button class="mode-button" type="button" data-mode="pau" role="radio" aria-checked="false">PAU modua</button>
       </div>
     </section>
 
@@ -95,6 +96,17 @@
             <button class="ghost-button" id="hintButton" type="button">Pista</button>
           </div>
           <div id="hintBox" class="hint-box" hidden></div>
+          <div id="pauGuide" class="pau-guide" hidden>
+            <p class="pau-consigna">Ez dituzu 4 kontzeptu definitu behar. 4 kontzeptu horiek erabiliz, azalpen historiko labur eta koherente bat idatzi behar duzu.</p>
+            <p class="pau-guide-title">Zure erantzunak izan behar du:</p>
+            <ul>
+              <li>testuinguru historiko laburra,</li>
+              <li>4 kontzeptuak ondo erabilita,</li>
+              <li>kontzeptuen arteko lotura argia,</li>
+              <li>kausa, prozesua edo ondorioa azaltzea,</li>
+              <li>amaiera-esaldi bat ideia nagusia ixteko.</li>
+            </ul>
+          </div>
           <label class="sr-only" for="answerText">Idatzi zure erantzuna</label>
           <textarea id="answerText" rows="12" placeholder="Idatzi hemen azalpen historikoa. Helburua ez da lau definizio ematea, baizik eta kontzeptuak prozesu historiko baten barruan lotzea."></textarea>
           <div class="editor-footer">

@@ -549,6 +549,42 @@ a {
   font-size: .93rem;
 }
 
+.pau-guide {
+  margin-bottom: .85rem;
+  padding: .9rem 1rem;
+  border: 1px solid var(--blue-soft);
+  border-left: 4px solid var(--blue);
+  border-radius: var(--radius);
+  background: var(--blue-soft);
+  color: var(--ink-soft);
+  font-size: .92rem;
+}
+
+.pau-consigna {
+  margin: 0 0 .6rem;
+  color: var(--ink);
+  font-weight: 850;
+}
+
+.pau-guide-title {
+  margin: 0 0 .35rem;
+  font-weight: 850;
+}
+
+.pau-guide ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.pau-guide li {
+  margin: .12rem 0;
+}
+
+#wordCount.is-over {
+  color: var(--red);
+  font-weight: 950;
+}
+
 textarea {
   width: 100%;
   min-height: 310px;
