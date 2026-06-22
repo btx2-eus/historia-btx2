@@ -65,6 +65,7 @@ def build_sitemap(site: dict, temas_meta: list):
         ("kronologia.html", "0.9"),
         ("jokoa.html", "0.8"),
         ("kontzeptu-entrenamendua.html", "0.7"),
+        ("lau-kontzeptuen-erronka.html", "0.8"),
         ("pau-egitura.html", "0.8"),
         ("historia-azterketa-idatzi.html", "0.8"),
         ("historia-uda/", "0.9"),
