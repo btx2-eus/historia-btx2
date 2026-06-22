@@ -1,27 +1,43 @@
 :root {
-  --bg: #f6f8fb;
+  /* Brand palette — webgune nagusiarekin koherentea (styles.css) */
+  --c-indigo: #5b2be0;
+  --c-violet: #8b5cf6;
+  --c-blue: #2563eb;
+  --c-cyan: #06b6d4;
+  --c-coral: #ff5d73;
+  --c-amber: #ffb020;
+
+  --bg: #f7f5ff;
   --surface: #ffffff;
-  --surface-strong: #fdfefe;
-  --ink: #17202a;
-  --ink-soft: #405062;
-  --muted: #6c7a89;
-  --line: #dce4ec;
-  --accent: #0f766e;
-  --accent-dark: #115e59;
-  --accent-soft: #dff6f2;
+  --surface-strong: #fbfaff;
+  --ink: #14122b;
+  --ink-soft: #3a3759;
+  --muted: #6b6890;
+  --line: #e9e6f5;
+  --accent: #6d28d9;
+  --accent-dark: #4c1d95;
+  --accent-soft: #f3eafe;
   --blue: #2563eb;
-  --blue-soft: #e7efff;
+  --blue-soft: #eae6ff;
   --amber: #b7791f;
   --amber-soft: #fff3d6;
-  --red: #b42318;
-  --red-soft: #fde8e5;
+  --red: #d11a4a;
+  --red-soft: #ffe4ec;
   --green: #15803d;
   --green-soft: #e7f7ed;
-  --shadow: 0 18px 44px rgba(28, 45, 64, .10);
-  --shadow-soft: 0 8px 22px rgba(28, 45, 64, .08);
-  --radius: 8px;
+  --shadow: 0 24px 60px -22px rgba(60, 30, 120, .35);
+  --shadow-soft: 0 2px 8px rgba(20, 18, 43, .06);
+  --radius: 16px;
+  --radius-sm: 10px;
   --maxw: 1480px;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Space Grotesk", "Trebuchet MS", system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
 }
 
 * { box-sizing: border-box; }
@@ -30,7 +46,7 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    linear-gradient(180deg, rgba(15, 118, 110, .08), transparent 360px),
+    linear-gradient(180deg, rgba(91, 43, 224, .08), transparent 360px),
     var(--bg);
   line-height: 1.5;
   overflow-x: hidden;
@@ -112,10 +128,12 @@ a {
   place-items: center;
   width: 40px;
   height: 40px;
-  border-radius: var(--radius);
-  background: linear-gradient(135deg, var(--accent), var(--blue));
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--c-indigo), var(--c-coral));
   color: #fff;
-  font-weight: 900;
+  font-family: var(--font-display);
+  font-weight: 700;
+  box-shadow: var(--shadow-soft);
 }
 
 .brand strong {
@@ -263,11 +281,16 @@ a {
 }
 
 .eyebrow {
-  margin: 0 0 .25rem;
-  color: var(--accent-dark);
-  font-size: .76rem;
-  font-weight: 900;
-  letter-spacing: .08em;
+  display: inline-block;
+  margin: 0 0 .4rem;
+  padding: .25rem .7rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .1em;
   text-transform: uppercase;
 }
 
@@ -279,23 +302,28 @@ a {
   min-width: 0;
   min-height: 42px;
   border: 1px solid transparent;
-  border-radius: var(--radius);
-  padding: .65rem .9rem;
-  font-weight: 850;
+  border-radius: 999px;
+  padding: .65rem 1.15rem;
+  font-family: var(--font-display);
+  font-weight: 700;
   white-space: normal;
-  transition: transform .15s ease, border-color .15s ease, background .15s ease, box-shadow .15s ease;
+  transition: transform .15s ease, border-color .15s ease, background .15s ease, box-shadow .15s ease, filter .2s ease;
 }
 
 .primary-button {
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--c-indigo), var(--c-coral));
   color: #fff;
-  box-shadow: 0 10px 22px rgba(15, 118, 110, .22);
+  box-shadow: var(--shadow);
+}
+
+.primary-button:hover {
+  filter: brightness(1.05);
 }
 
 .secondary-button {
-  background: var(--blue);
+  background: linear-gradient(135deg, var(--c-indigo), var(--c-violet));
   color: #fff;
-  box-shadow: 0 10px 22px rgba(37, 99, 235, .18);
+  box-shadow: 0 14px 30px -12px rgba(91, 43, 224, .5);
 }
 
 .ghost-button {
@@ -328,8 +356,8 @@ a {
   max-width: 100%;
   padding: .25rem;
   border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--bg);
+  border-radius: 999px;
+  background: var(--surface-strong);
 }
 
 .mode-button {
@@ -338,9 +366,9 @@ a {
 }
 
 .mode-button.is-active {
-  background: var(--ink);
+  background: linear-gradient(135deg, var(--c-indigo), var(--c-violet));
   color: #fff;
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 10px 22px -8px rgba(91, 43, 224, .55);
 }
 
 .concept-grid {
@@ -471,7 +499,7 @@ a {
 }
 
 .slot-card.is-filled {
-  border-color: rgba(15, 118, 110, .45);
+  border-color: rgba(109, 40, 217, .45);
 }
 
 .slot-number {
@@ -542,7 +570,7 @@ a {
 .hint-box {
   margin-bottom: .75rem;
   padding: .8rem;
-  border: 1px solid #b8e2dc;
+  border: 1px solid #d9c7f5;
   border-radius: var(--radius);
   background: var(--accent-soft);
   color: var(--accent-dark);
@@ -601,7 +629,7 @@ textarea:focus,
 select:focus,
 button:focus-visible,
 a:focus-visible {
-  outline: 3px solid rgba(15, 118, 110, .25);
+  outline: 3px solid rgba(109, 40, 217, .28);
   outline-offset: 2px;
 }
 
@@ -630,7 +658,7 @@ a:focus-visible {
 .score-card {
   padding: 1rem;
   border-radius: var(--radius);
-  background: linear-gradient(135deg, var(--accent-soft), #eff6ff);
+  background: linear-gradient(135deg, var(--accent-soft), #eae6ff);
 }
 
 .score-card strong {
