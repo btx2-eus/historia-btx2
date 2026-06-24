@@ -204,7 +204,32 @@
     { k: "Ongizate-estatua", t: ["Monarkia parlamentarioa"], d: "Herritarrei osasuna, hezkuntza, pentsioak, langabezia-babesa eta gizarte-zerbitzuak bermatzeko estatuak garatzen duen sistema." },
     { k: "Polizia-lankidetza", t: ["Monarkia parlamentarioa"], d: "Estatuen eta segurtasun-indarren arteko koordinazioa, terrorismoaren eta delinkuentzia antolatuaren aurka jarduteko." },
     { k: "Trantsizio ondorengo demokrazia", t: ["Monarkia parlamentarioa"], d: "Frankismoaren ondoren eraikitako sistema demokratikoaren lehen fase egonkortua, gobernu-egonkortasuna eta erronka berriak uztartuz." },
-    { k: "Zuzenbide-estatua", t: ["Monarkia parlamentarioa", "Trantsizioa"], d: "Botere publiko guztiak legearen menpe dauden sistema, eskubideak, epaileen kontrola eta berme juridikoak errespetatuz." }
+    { k: "Zuzenbide-estatua", t: ["Monarkia parlamentarioa", "Trantsizioa"], d: "Botere publiko guztiak legearen menpe dauden sistema, eskubideak, epaileen kontrola eta berme juridikoak errespetatuz." },
+
+    /* EBAU kontzeptu-hiztegi osagarria (historiaebaukontzeptuhistorikoak): geneukana osatuz, falta ziren kontzeptu garbiak.
+       Irizpide bera: pertsona-izenak, alderdi/sigla hutsak eta gertaera datatuak kanpoan. */
+    { k: "Absolutismoa", t: ["Antzinako Erregimenaren krisia"], d: "Monarkak botere osoa —legegilea, betearazlea eta judiziala— mugarik gabe bere eskuetan biltzen duen sistema politikoa, jainkozko legitimazioan oinarritua." },
+    { k: "Liberalismo ekonomikoa", t: ["Antzinako Erregimenaren krisia", "Berrezarkuntza"], d: "Estatuaren esku-hartzerik gabeko merkatu askearen, jabetza pribatuaren eta lehia librearen aldeko doktrina ekonomikoa." },
+    { k: "Kapitalismoa", t: ["Euskal industrializazioa", "Berrezarkuntza"], d: "Ekoizpen-bideen jabetza pribatuan, soldatapeko lanean eta irabazi-bilaketan oinarritutako sistema ekonomikoa." },
+    { k: "Protekzionismoa", t: ["Berrezarkuntza", "Euskal industrializazioa"], d: "Barneko ekoizpena kanpoko lehiatik babesteko arantzelak eta merkataritza-mugak ezartzen dituen politika ekonomikoa." },
+    { k: "Burgesia", t: ["Antzinako Erregimenaren krisia", "Euskal industrializazioa", "Berrezarkuntza"], d: "Industria, merkataritza eta kapitalaren jabe den gizarte-klasea, liberalismoaren eta industrializazioaren eragile nagusia." },
+    { k: "Klase soziala", t: ["Euskal industrializazioa", "Berrezarkuntza"], d: "Egoera ekonomiko, lanbide eta interes komunen arabera bereizten den gizarte-talde handia." },
+    { k: "Estatu-nazioa", t: ["Antzinako Erregimenaren krisia", "Euskal industrializazioa"], d: "Lurralde, herritar eta subiranotasun bateratuan oinarritutako estatu modernoa, nazio-nortasun komun batekin lotua." },
+    { k: "Parlamentarismoa", t: ["Berrezarkuntza", "Trantsizioa"], d: "Gobernua parlamentuaren konfiantzaren eta kontrolaren menpe dagoen sistema politikoa." },
+    { k: "Monarkia konstituzionala", t: ["Berrezarkuntza"], d: "Erregea estatuburua izaten jarraitzen duen baina haren boterea konstituzio batek mugatzen duen gobernu-eredua." },
+    { k: "Totalitarismoa", t: ["Gerra Zibila", "Frankismoa I"], d: "Estatuak bizitza politiko, sozial eta pribatu osoa kontrolatzen duen erregimena: alderdi bakarra, ideologia ofiziala eta askatasunik eza." },
+    { k: "Falangismoa", t: ["II. Errepublika", "Gerra Zibila", "Frankismoa I"], d: "Espainiako ideologia faxista, nazio-batasuna, estatu indartsua eta sindikalismo bertikala aldarrikatzen zituena, frankismoaren oinarri ideologikoetako bat.", a: ["Falange"] },
+    { k: "Feminismoa", t: ["II. Errepublika", "Monarkia parlamentarioa"], d: "Emakumeen eskubide-berdintasuna eta gizarte-, lan- eta politika-arloko parekidetasuna aldarrikatzen dituen mugimendu eta ideologia." },
+    { k: "Errepublikazaletasuna", t: ["Berrezarkuntza", "II. Errepublika"], d: "Monarkiaren ordez errepublika ezartzearen aldeko korronte politikoa, subiranotasun popularrean oinarritua.", a: ["errepublikanismoa"] },
+    { k: "Interbentzionismo ekonomikoa", t: ["II. Errepublika", "Frankismoa I"], d: "Estatuak ekonomian zuzenean esku hartzen duen eredua, ekoizpena, prezioak edo merkataritza arautuz." },
+    { k: "Gerra Hotza", t: ["Frankismoa I", "Frankismoa II"], d: "II. Mundu Gerraren ondoren AEBen eta SESBen blokeen arteko tentsio politiko, ideologiko eta militarra, gerra ireki batera iritsi gabe." },
+    { k: "Zentsura", t: ["Frankismoa I", "Frankismoa II"], d: "Botereak informazioa, prentsa, kultura edo adierazpen askea kontrolatu eta debekatzeko erabiltzen duen tresna." },
+    { k: "Memoria historikoa", t: ["Monarkia parlamentarioa"], d: "Iraganeko errepresioa, biktimak eta gertaerak aitortu, gogoratu eta erreparatzeko gizarte- eta politika-prozesua." },
+    { k: "Globalizazioa", t: ["Monarkia parlamentarioa"], d: "Ekonomia, kultura eta komunikazioak mundu mailan elkarlotzen eta integratzen dituen prozesua." },
+    { k: "Populismoa", t: ["Berrezarkuntza", "Monarkia parlamentarioa"], d: "Herria eliteen aurka jartzen duen diskurtso eta estrategia politikoa, lider karismatiko eta mobilizazio zuzenean oinarritua." },
+    { k: "Legitimitatea", t: ["Antzinako Erregimenaren krisia", "Trantsizioa"], d: "Botere politiko bat zilegi eta onargarritzat jotzeko oinarria, dinastikoa, legala edo demokratikoa izan daitekeena." },
+    { k: "Obrerismoa/Langile-mugimendua", t: ["Berrezarkuntza", "Euskal industrializazioa"], d: "Langile-klaseak bere lan- eta bizi-baldintzak hobetzeko antolatu zuen mugimendu soziala: sindikatuak, grebak eta alderdiak.", a: ["langile mugimendua", "obrerismoa"] },
+    { k: "Mobilizazioa", t: ["Gerra Zibila", "II. Errepublika"], d: "Gizarte- edo gerra-helburu baterako jendea, baliabideak edo indarrak antolatu eta abian jartzeko prozesua." }
   ];
 
   var STOPWORDS = [
