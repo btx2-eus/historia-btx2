@@ -3,9 +3,9 @@
 
    Irizpide pedagogikoa:
    - Banku honek kontzeptu historiko, politiko, sozial, ekonomiko eta instituzionalak lehenesten ditu.
-   - Ez dira hautagai gisa sartu pertsona-izenak, sigla/erakunde propio hutsak edo gertaera zehatz hutsak.
+   - Ez dira hautagai gisa sartu pertsona-izenak, alderdi/sigla/erakunde propio hutsak, ezta tratatu edo gertaera datatu hutsak ere.
    - Karlistadak bezalako prozesu-gatazkak mantendu dira, kontzeptu gisa lantzen direlako.
-   - Baionako, Cadizko, Moncloako edo antzeko izen propioz markatutako itemak ez dira lehen lerroko proposamenetan sartu.
+   - Prozesu eta inflexio-gune esanguratsuak (Independentzia Gerra, Cadizko Gorteak, Sexenio Demokratikoa, Kolonien galera...) kontzeptu gisa sartu dira, gertaera huts gisa baino gehiago lantzen direlako; Moncloa, Konkordatua edo antzeko tratatu/sigla zehatzak, ordea, kanpoan.
 */
 (function () {
   "use strict";
@@ -229,7 +229,16 @@
     { k: "Populismoa", t: ["Berrezarkuntza", "Monarkia parlamentarioa"], d: "Herria eliteen aurka jartzen duen diskurtso eta estrategia politikoa, lider karismatiko eta mobilizazio zuzenean oinarritua." },
     { k: "Legitimitatea", t: ["Antzinako Erregimenaren krisia", "Trantsizioa"], d: "Botere politiko bat zilegi eta onargarritzat jotzeko oinarria, dinastikoa, legala edo demokratikoa izan daitekeena." },
     { k: "Obrerismoa/Langile-mugimendua", t: ["Berrezarkuntza", "Euskal industrializazioa"], d: "Langile-klaseak bere lan- eta bizi-baldintzak hobetzeko antolatu zuen mugimendu soziala: sindikatuak, grebak eta alderdiak.", a: ["langile mugimendua", "obrerismoa"] },
-    { k: "Mobilizazioa", t: ["Gerra Zibila", "II. Errepublika"], d: "Gizarte- edo gerra-helburu baterako jendea, baliabideak edo indarrak antolatu eta abian jartzeko prozesua." }
+    { k: "Mobilizazioa", t: ["Gerra Zibila", "II. Errepublika"], d: "Gizarte- edo gerra-helburu baterako jendea, baliabideak edo indarrak antolatu eta abian jartzeko prozesua." },
+
+    /* Inflexio-gune eta prozesu esanguratsuak: gertaera huts gisa baino, prozesu historiko gisa lantzen direnak. */
+    { k: "Independentzia Gerra", t: ["Antzinako Erregimenaren krisia"], d: "Napoleonen okupazioaren aurkako gerra (1808-1814), gerrilla, foru-erresistentzia eta lehen prozesu liberala uztartu zituena Espainia garaikidearen abiapuntuan." },
+    { k: "Cadizko Gorteak", t: ["Antzinako Erregimenaren krisia"], d: "1810-1813ko gorte konstituziogileak, lehen aldiz subiranotasun nazionala eta liberalismoa ezarri zituztenak (1812ko Konstituzioa), Antzinako Erregimena gainditzeko prozesuan.", a: ["Gorte konstituziogileak"] },
+    { k: "Sexenio Demokratikoa", t: ["Antzinako Erregimenaren krisia"], d: "1868-1874ko aldi iraultzailea: monarkia eraistea, sufragio unibertsala eta lehen errepublika, demokrazia ezartzeko saiakera Berrezarkuntzaren aurretik.", a: ["sei urte demokratikoak"] },
+    { k: "Kolonien galera", t: ["Berrezarkuntza"], d: "1898ko azken kolonien (Kuba, Filipinak, Puerto Rico) galera, inperioaren amaiera eta Berrezarkuntzaren sistemaren krisi moral eta politikoa eragin zituena.", a: ["98ko Hondamendia", "98ko krisia", "Inperioaren amaiera"] },
+    { k: "98ko belaunaldia", t: ["Berrezarkuntza"], d: "Espainiaren atzerapena eta nortasuna gogoetagai hartu zituen idazle eta pentsalarien belaunaldia, 1898ko krisiaren ondoren erregenerazionismoarekin lotua." },
+    { k: "1917ko krisia", t: ["Berrezarkuntza", "Euskal industrializazioa"], d: "Berrezarkuntzaren sistema ahuldu zuen krisi hirukoitza: tentsio militarra (juntak), politikoa (parlamentu-batzarra) eta soziala (greba orokorra).", a: ["1917ko krisi hirukoitza"] },
+    { k: "1934ko Urriko Iraultza", t: ["II. Errepublika"], d: "1934ko urrian gertatutako altxamendu iraultzailea (batez ere Asturias eta Katalunian), Errepublikako polarizazioaren eta ezker-eskuin talkaren adierazle.", a: ["Urriko Iraultza", "1934ko iraultza"] }
   ];
 
   var STOPWORDS = [
