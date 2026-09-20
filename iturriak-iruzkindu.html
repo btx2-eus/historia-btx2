@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iturri historikoak nola iruzkindu · Historia BTX2</title>
+  <meta name="description" content="B atala pausoz pauso: iturria identifikatu, testuinguru zehatza eraiki eta eskatutako gaia garatu. Testuak, irudiak, grafikoak eta mapak, ereduzko erantzunekin." />
+  <link rel="canonical" href="https://btx2-eus.github.io/historia-btx2/iturriak-iruzkindu.html" />
+  <meta property="og:locale" content="eu_ES" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Historia BTX2" />
+  <meta property="og:title" content="Iturri historikoak nola iruzkindu · Historia BTX2" />
+  <meta property="og:description" content="B atala pausoz pauso: iturria identifikatu, testuinguru zehatza eraiki eta eskatutako gaia garatu. Ereduzko erantzunekin." />
+  <meta property="og:url" content="https://btx2-eus.github.io/historia-btx2/iturriak-iruzkindu.html" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=12" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235b2be0'/%3E%3Ctext x='50' y='72' font-size='56' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3E%3F%3C/text%3E%3C/svg%3E" />
+
+  <style>
+    /* ---------- Orri honetarako bakarrik: styles.css ez da ukitzen ---------- */
+
+    /* Iturri motaren fitxak */
+    .it-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+    .it-tabs button {
+      font-family: var(--font-display);
+      font-size: .9rem; font-weight: 600;
+      padding: 10px 18px; cursor: pointer;
+      border: 1px solid var(--line); border-radius: 999px;
+      background: var(--bg-card); color: var(--ink-soft);
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
+    }
+    .it-tabs button:hover { color: var(--accent-ink); border-color: var(--accent); transform: translateY(-1px); }
+    .it-tabs button[aria-selected="true"] {
+      background: linear-gradient(135deg, var(--c-indigo), var(--accent-2));
+      border-color: transparent; color: #fff; box-shadow: var(--shadow-sm);
+    }
+
+    .it-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      padding: 28px;
+    }
+    .it-panel > .it-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+    .it-panel h3 { font-size: 1.35rem; margin: 0; }
+    .it-panel .it-kind { font-size: .82rem; color: var(--muted); font-weight: 500; }
+    .it-panel > p.it-lead { color: var(--ink-soft); margin: 10px 0 22px; max-width: 70ch; }
+
+    .it-cols { display: grid; gap: 22px; }
+    @media (min-width: 820px) { .it-cols { grid-template-columns: 1fr 1fr; gap: 32px; } }
+    .it-cols h4 {
+      font-family: var(--font-display); font-size: .78rem; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase;
+      color: var(--muted); margin: 0 0 12px;
+    }
+    .it-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+    .it-list li { position: relative; padding-left: 26px; font-size: .95rem; color: var(--ink-soft); line-height: 1.55; }
+    .it-list li::before {
+      position: absolute; left: 0; top: 0;
+      font-weight: 700; color: var(--accent);
+    }
+    .it-list.good li::before { content: "✓"; }
+    .it-list.bad li::before { content: "✕"; color: var(--c-coral); }
+    .it-list strong { color: var(--ink); }
+
+    /* Iturri-txartela eta ereduzko erantzuna */
+    .src-card {
+      margin-top: 26px;
+      background: var(--bg-soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+    }
+    .src-card .src-ref {
+      display: inline-block; font-size: .75rem; font-weight: 600;
+      letter-spacing: .06em; text-transform: uppercase;
+      color: var(--accent-ink); background: var(--accent-tint);
+      border-radius: 999px; padding: 4px 12px; margin-bottom: 12px;
+    }
+    .src-card h4 { font-family: var(--font-display); font-size: 1.1rem; margin: 0 0 6px; color: var(--ink); }
+    .src-card .src-meta { font-size: .88rem; color: var(--muted); margin: 0 0 14px; }
+    .src-card .src-q { font-size: .95rem; color: var(--ink-soft); margin: 0 0 8px; padding-left: 16px; border-left: 3px solid var(--accent); }
+    .src-card .src-q b { color: var(--ink); }
+
+    details.model { margin-top: 18px; border-top: 1px dashed var(--line); padding-top: 16px; }
+    details.model > summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--font-display); font-size: .9rem; font-weight: 600; color: var(--accent-ink);
+    }
+    details.model > summary::-webkit-details-marker { display: none; }
+    details.model > summary::before {
+      content: "+"; display: inline-grid; place-items: center;
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--accent); color: #fff; font-size: .95rem; line-height: 1;
+    }
+    details.model[open] > summary::before { content: "−"; }
+    details.model .ans { margin-top: 16px; display: grid; gap: 16px; }
+    details.model .ans > div { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 16px 18px; }
+    details.model .ans h5 {
+      font-family: var(--font-display); font-size: .78rem; font-weight: 700;
+      letter-spacing: .07em; text-transform: uppercase; color: var(--accent-ink);
+      margin: 0 0 8px;
+    }
+    details.model .ans p { margin: 0; font-size: .95rem; line-height: 1.65; color: var(--ink-soft); }
+    details.model .ans p + p { margin-top: .7em; }
+
+    /* Grafikoa */
+    .it-chart { margin: 18px 0 6px; }
+    .it-chart svg { width: 100%; height: auto; display: block; }
+    .it-legend { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px; }
+    .it-legend span { display: inline-flex; align-items: center; gap: 7px; font-size: .84rem; color: var(--ink-soft); }
+    .it-legend i { width: 18px; height: 3px; border-radius: 2px; display: inline-block; }
+    .it-chart figcaption { font-size: .78rem; color: var(--muted); margin-top: 10px; }
+
+    /* Azken txekeoa */
+    .check-list { display: grid; gap: 10px; margin-top: 8px; }
+    .check-list label {
+      display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: start;
+      background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius-sm);
+      padding: 14px 16px; cursor: pointer; font-size: .95rem; color: var(--ink-soft);
+      transition: border-color .15s ease, box-shadow .15s ease;
+    }
+    .check-list label:hover { border-color: var(--accent); box-shadow: var(--shadow-sm); }
+    .check-list input { width: 17px; height: 17px; margin: 2px 0 0; accent-color: var(--accent); }
+    .check-list label:has(input:checked) { color: var(--muted); }
+    .check-list label:has(input:checked) span { text-decoration: line-through; text-decoration-color: var(--line); }
+    .check-meter { display: flex; align-items: center; gap: 14px; margin-top: 16px; font-size: .85rem; font-weight: 600; color: var(--ink-soft); }
+    .check-meter .track { flex: 1; height: 6px; border-radius: 999px; background: var(--line); overflow: hidden; }
+    .check-meter .track i { display: block; height: 100%; width: 0; border-radius: 999px; background: linear-gradient(90deg, var(--c-indigo), var(--accent-2)); transition: width .25s ease; }
+
+    /* Ohar-koadroa */
+    .it-note {
+      margin-top: 22px; background: var(--accent-tint); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 18px 22px;
+    }
+    .it-note strong { color: var(--accent-ink); }
+    .it-note p { margin: 0; color: var(--ink-soft); font-size: .95rem; line-height: 1.6; }
+    .it-note p + p { margin-top: .6em; }
+
+    @media (max-width: 640px) {
+      .it-panel { padding: 22px 18px; border-radius: var(--radius); }
+      .src-card { padding: 18px 16px; }
+      .it-tabs button { flex: 1 1 auto; text-align: center; }
+    }
+  </style>
+</head>
+
+<body class="exam-guide-page">
+  <a class="skip-link" href="#main">Edukira saltatu</a>
+  <div class="progress-bar" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">H</span><span>Historia BTX2<small>Espainiako Historia · 2. Batxilergoa</small></span></a>
+      <button class="nav-toggle" aria-label="Menua" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="index.html#denbora-lerroa">Denbora-lerroa</a>
+        <a href="index.html#gaiak">Gaiak</a>
+        <a href="index.html#tresnak">Tresnak</a>
+        <a class="cta" href="index.html">Hasiera</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <section class="exam-guide-hero">
+      <div class="container">
+        <div class="crumbs"><a href="index.html">Hasiera</a> <span>›</span> <a href="index.html#tresnak">Ikasteko lagungarriak</a> <span>›</span> <span>Iturrien iruzkina</span></div>
+        <span class="guide-tag">Historia BTX2 · B atala</span>
+        <h1>Iturri historikoak nola iruzkindu</h1>
+        <p>Iruzkintzea ez da iturria laburtzea, ezta dakizun guztia botatzea ere. Dokumentua lekukotasun gisa erabiltzea da: nork, noiz eta zergatik esan zuen ulertu, eta hortik prozesu historikoa azaldu.</p>
+        <div class="guide-actions">
+          <a class="btn btn-primary" href="#hiru-galderak">Hiru galderak</a>
+          <a class="btn btn-ghost" href="#motak">Iturri motak</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 1. HIRU GALDERAK ============ -->
+    <section class="section" id="hiru-galderak">
+      <div class="container">
+        <div class="guide-intro-grid">
+          <article class="formula-panel reveal">
+            <h2>B ataleko hiru lanak</h2>
+            <div class="formula-steps" aria-label="B ataleko hiru galderak">
+              <span>Identifikatu</span>
+              <span>Testuinguratu</span>
+              <span>Garatu</span>
+            </div>
+          </article>
+
+          <article class="minute-panel reveal" data-delay="1">
+            <h2>Lehen bost minutuak</h2>
+            <ol>
+              <li>Irakurri iturriaren oina: egilea, data eta jatorria hor daude.</li>
+              <li>Azpimarratu bi edo hiru ideia nagusi, gehiago ez.</li>
+              <li>Idatzi albo batean lau kontzeptu giltzarri eta bi data.</li>
+            </ol>
+          </article>
+        </div>
+
+        <div class="it-note reveal">
+          <p><strong>Hiru galdera, hiru erantzun bereizi.</strong> Ez dago iruzkin bakar eta jarraitu bat idatzi beharrik. Galdera bakoitza bere aldetik zuzentzen da, eta bakoitzak beste zerbait eskatzen du. Azterketaren egitura osoa eta puntuazioak <a href="pau-egitura.html">PAU azterketaren egitura</a> orrian dituzu.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. ZER ESKATZEN DU BAKOITZAK ============ -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Giltzak</span>
+          <h2>Zer eskatzen du galdera bakoitzak</h2>
+          <p>Hiru galderek ez dute gauza bera eskatzen. Puntu gehienak galdu ohi dira bigarrena hirugarrenean errepikatzeagatik.</p>
+        </div>
+
+        <div class="guide-card-grid">
+          <article class="guide-key-card reveal">
+            <span>1</span>
+            <h3>Iturria identifikatu</h3>
+            <p>Lehen ala bigarren mailakoa, zer formatu, nor den egilea, noiz, zer dioen eta zertarako. <strong>Deskribapen zehatza, ez azalpen historikoa.</strong> Hemen laburtasuna da bertutea.</p>
+          </article>
+          <article class="guide-key-card reveal" data-delay="1">
+            <span>2</span>
+            <h3>Testuinguru zehatza</h3>
+            <p>Iturriaren <strong>une historiko zehatza</strong>: zer gertatzen ari zen hilabete horietan eta zergatik sortu zen dokumentu hori orduan. Ez garai osoaren laburpena.</p>
+          </article>
+          <article class="guide-key-card reveal" data-delay="2">
+            <span>3</span>
+            <h3>Eskatutako gaia</h3>
+            <p>Iturriari lotutako alderdi bat: kausak, ondorioak, eragileen papera, bilakaera edo konparazioa. <strong>Testuingurua berriro kontatu gabe.</strong></p>
+          </article>
+        </div>
+
+        <div class="it-note reveal">
+          <p><strong>Akatsik garestiena.</strong> Bigarren galderan testuingurua idatzi eta hirugarrenean gauza bera beste hitz batzuekin errepikatzea. Bi erantzunek 1,5 puntu balio dute bakoitzak: errepikatuz gero, bat galtzen duzu.</p>
+          <p>Trikimailu praktikoa: hirugarrena idazten hasi aurretik, irakurri bigarrena eta galdetu <em>«zer gehitzen dut hemen han esan ez dudana?»</em>. Erantzunik ez badago, fokua aldatu behar duzu.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. ITURRI MOTAK ============ -->
+    <section class="section" id="motak">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Praktika</span>
+          <h2>Iturri motaren arabera</h2>
+          <p>Metodoa bera da lauetan, baina begiratzen dena aldatzen da. Aukeratu mota bat: zer aztertu, zein akats saihestu eta ereduzko erantzun oso bat.</p>
+        </div>
+
+        <div class="it-tabs reveal" role="tablist" aria-label="Iturri motak">
+          <button role="tab" id="t-testua" aria-controls="p-testua" aria-selected="true">📜 Testua</button>
+          <button role="tab" id="t-irudia" aria-controls="p-irudia" aria-selected="false">📷 Irudia</button>
+          <button role="tab" id="t-grafikoa" aria-controls="p-grafikoa" aria-selected="false">📊 Grafikoa</button>
+          <button role="tab" id="t-mapa" aria-controls="p-mapa" aria-selected="false">🗺️ Mapa</button>
+        </div>
+
+        <!-- ---------- TESTUA ---------- -->
+        <div class="it-panel reveal" role="tabpanel" id="p-testua" aria-labelledby="t-testua">
+          <div class="it-head">
+            <h3>Testu historikoa</h3>
+            <span class="it-kind">Legeak · manifestuak · hitzaldiak · prentsa · memoriak · itunak</span>
+          </div>
+          <p class="it-lead">Testu batek beti du alderdi bat. Zure lana ez da sinestea, ulertzea baizik: nork idatzi zuen, zeren aurka, eta zer lortu nahi zuen.</p>
+
+          <div class="it-cols">
+            <div>
+              <h4>Zer begiratu</h4>
+              <ul class="it-list good">
+                <li><strong>Mota juridikoa ala politikoa.</strong> Lege batek arautu egiten du; manifestu batek konbentzitu nahi du. Helburua ezberdina da, eta erregistroa ere bai.</li>
+                <li><strong>Egilea zehazki.</strong> «Gorteak» ez da nahikoa: zein Gorte, zein gehiengorekin, zein urtetan.</li>
+                <li><strong>Argitalpen-bidea.</strong> Aldizkari ofiziala, egunkari militantea edo eskuorri klandestinoa: hedapenak asmoa erakusten du.</li>
+                <li><strong>Hiztegi ideologikoa.</strong> «Nazioa», «herria», «foruak», «ordena»: garaiko eztabaidaren arrastoak dira.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Akats ohikoenak</h4>
+              <ul class="it-list bad">
+                <li>Artikuluak banan-banan parafraseatzea, interpretatu gabe.</li>
+                <li>Data osoa ez ematea, gertakariak hilabeteka doazenean.</li>
+                <li>Gaur egungo esanahia ematea garaiko hitzei: «liberala», «demokrazia».</li>
+                <li>Testuak dioena egia objektibotzat hartzea.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="src-card">
+            <span class="src-ref">Eredua · testua</span>
+            <h4>Euskadiko Autonomia Estatutua</h4>
+            <p class="src-meta">Gaceta de Madrid, 281. zenbakia, 1936ko urriaren 7a. Lehen mailako iturria.</p>
+            <p class="src-q"><b>1.</b> Identifikatu eta ezaugarritu iturria.</p>
+            <p class="src-q"><b>2.</b> Kokatu iturria bere une historiko zehatzean.</p>
+            <p class="src-q"><b>3.</b> Azaldu zer ondorio izan zituen Estatutuak euskal gizartearen banaketan.</p>
+
+            <details class="model">
+              <summary>Ikusi ereduzko erantzuna</summary>
+              <div class="ans">
+                <div>
+                  <h5>1 · Identifikazioa</h5>
+                  <p>Lehen mailako iturria da, izaera juridiko-politikokoa: autonomia-estatutu baten testua, hau da, lurralde bati autogobernua ematen dion lege organikoa. Egilea kolektiboa eta ofiziala da —Espainiako Gorte errepublikanoak, Fronte Popularraren gehiengoarekin—, eta Gaceta de Madriden argitaratu zen 1936ko urriaren 7an, gerra betean. Hartzailea bikoitza da: euskal erakundeak, zeinek testua aplikatu behar baitzuten, eta Estatuaren administrazioa. Eduki nagusia Euskadirentzako autonomia-erregimena ezartzea da, eta helburua, aldi berean, juridikoa eta politikoa: autogobernua abiaraztea eta EAJren atxikimendua Errepublikari lotzea.</p>
+                </div>
+                <div>
+                  <h5>2 · Testuinguru zehatza</h5>
+                  <p>Testua ez da 1931ko prozesu autonomikoaren ondorio lasaia, gerraren premiaren emaitza baizik. Uztailaren 18ko altxamenduak lurraldea zatitu zuen: Araba eta Nafarroa matxinatuen eskuetan geratu ziren berehala, eta Gipuzkoa irailean erori zen —Donostia irailaren 13an—. Beraz, Gorteek urriaren 1ean onartu zuten estatutua praktikan Bizkaian bakarrik aplika zitekeen. Urriaren 7an bertan, testua argitaratu zen egun berean, José Antonio Agirre lehendakari izendatu zuten Gernikan, eta batasun-gobernu bat eratu zen EAJ, PSOE, ANV, Ezker Errepublikanoa eta PCEren ordezkariekin. Aurrekariak 1931ko Lizarrako proiektua, 1932ko gestoren testua eta 1933ko plebiszitua izan ziren, Nafarroa 1932an prozesutik atera ondoren.</p>
+                </div>
+                <div>
+                  <h5>3 · Eskatutako gaia</h5>
+                  <p>Estatutuak euskal gizartearen zatiketa areagotu eta instituzionalizatu egin zuen. Alde batetik, Bizkaian benetako botere autonomoa sortu zuen: Eusko Jaurlaritzak ordena publikoa, ogasuna, justizia eta gizarte-zerbitzuak bereganatu zituen, eta bere indar armatua antolatu zuen, gudarosteak. Hilabete gutxitan estatu-egitura txiki bat eraiki zen gerra-egoeran.</p>
+                  <p>Bestetik, muga politiko bat marraztu zuen euskal gizartearen barruan. EAJ, katoliko eta kontserbadore izanik, Errepublikaren alde lerratu zen autogobernuaren truke, eta horrek talka egin zuen Araba eta Nafarroako karlismoarekin, altxamenduaren oinarri sozial nagusietakoa izan baitzen. Familia eta herri berean bi bandotan banatutako jendea egotea ez zen salbuespena.</p>
+                  <p>Azkenik, esperientzia laburra izan bazen ere —1937ko ekainaren 19an Bilbo erori zen—, erreferentzia politiko iraunkorra utzi zuen: erbesteko Jaurlaritzak 1936ko legitimitate hori aldarrikatu zuen 1979ra arte.</p>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- ---------- IRUDIA ---------- -->
+        <div class="it-panel reveal" role="tabpanel" id="p-irudia" aria-labelledby="t-irudia" hidden>
+          <div class="it-head">
+            <h3>Irudia</h3>
+            <span class="it-kind">Argazkiak · kartelak · karikaturak · margolanak</span>
+          </div>
+          <p class="it-lead">Irudi bat ez da leiho neutro bat iraganera. Norbaitek atera edo marraztu zuen, helburu batekin, eta enkoadraketak berak erabakia dakar: zer sartu eta zer utzi kanpoan.</p>
+
+          <div class="it-cols">
+            <div>
+              <h4>Zer begiratu</h4>
+              <ul class="it-list good">
+                <li><strong>Nork eta zertarako.</strong> Prentsa-argazkia, polizia-artxiboa, kartel militantea eta karikatura satirikoa lau gauza dira, ez bat.</li>
+                <li><strong>Irudiaren barruko testua.</strong> Pankartak, leloak, siglak: hor egon ohi da erantzunaren giltza.</li>
+                <li><strong>Ikurrak.</strong> Banderak, uniformeak, elizako jantziak, ikurriña. Ezer ez dago kasualitatez.</li>
+                <li><strong>Jendea eta espazioa.</strong> Zenbat, nolakoak, non: gizarte-oinarriaz zerbait esaten dute.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Akats ohikoenak</h4>
+              <ul class="it-list bad">
+                <li>Irudia deskribatzea besterik ez egitea: «jende asko dago kalean».</li>
+                <li>Ikusten ez dena asmatzea: kopuruak, izenak, esaldiak.</li>
+                <li>Argazkia frogatzat hartzea; propaganda-irudiak errealitatea eraikitzen du.</li>
+                <li>Kartel bat «lehen mailako iturria» dela esan eta kitto: zertarako egin zen ez azaltzea.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="src-card">
+            <span class="src-ref">Eredua · irudia</span>
+            <h4>Amnistiaren aldeko manifestazioa, Bartzelona</h4>
+            <p class="src-meta">Prentsa-argazkia, 1976ko otsailaren 8a. Lehen mailako iturria.</p>
+            <p class="src-q"><b>1.</b> Identifikatu eta ezaugarritu iturria.</p>
+            <p class="src-q"><b>2.</b> Kokatu iturria bere une historiko zehatzean.</p>
+            <p class="src-q"><b>3.</b> Azaldu zer garrantzi izan zuen amnistiak demokratizazio-prozesuan.</p>
+
+            <details class="model">
+              <summary>Ikusi ereduzko erantzuna</summary>
+              <div class="ans">
+                <div>
+                  <h5>1 · Identifikazioa</h5>
+                  <p>Lehen mailako iturri grafikoa da: prentsarako ateratako argazki bat, unean bertan eta lekuan bertan jasoa. Protagonistak manifestariak dira, ez agintari edo erakunde bat; horregatik, iturriak kaleko mobilizazioaren lekukotasuna ematen du, ez botere politikoarena. Data eta lekua —Bartzelona, 1976ko otsailaren 8a— funtsezkoak dira: Franco hil eta hiru hilabetera gaude, oraindik erregimenaren legedi murriztailearekin. Mezu nagusia amnistiaren aldarrikapena da, pankartetan irakur daitekeena. Hartzailea iritzi publikoa da, prentsaren bidez; helburua, aldarrikapena ikusgai egitea eta gobernuari presio egitea.</p>
+                </div>
+                <div>
+                  <h5>2 · Testuinguru zehatza</h5>
+                  <p>1976ko lehen hilabeteak Trantsizioaren unerik gatazkatsuenak izan ziren. Juan Carlos I.a errege zen azaroaz geroztik, baina gobernua Arias Navarrok zuzentzen zuen, hau da, frankismoaren barruko erreformismo mugatuak: alderdi politikoak legez kanpo zeuden oraindik eta manifestazioak debekatuta. Testuinguru horretan mobilizazio-olatu bat piztu zen, greba orokorrekin Madrilen eta Bartzelonan, eta martxoaren 3an Gasteizko hilketekin. Kaleak, beraz, legezko biderik ez zegoelako hartu zuen presio-tresna nagusiaren papera. Suárez uztailean izendatu ondoren hasi zen erreforma legez bideratzen, eta 1977ko ekainean egin ziren lehen hauteskunde demokratikoak.</p>
+                </div>
+                <div>
+                  <h5>3 · Eskatutako gaia</h5>
+                  <p>Amnistia ez zen eskaera sinboliko bat: prozesu osoaren aurrebaldintza izan zen. Preso politikoak kartzelan zeuden bitartean, oposizioak ez zuen erreforma sinesgarritzat hartuko, eta ezinezkoa zen alderdien arteko negoziazioa.</p>
+                  <p>Bidea mailakatua izan zen: 1976ko uztaileko indultu partziala, 1977ko martxoko zabalkuntza, eta, azkenik, 1977ko urriaren 15eko Amnistia Legea, jada Gorte demokratikoek onartua. Lege horrek preso politikoak askatu zituen, baina, aldi berean, frankismoko errepresio-delituak epaitzeko atea itxi zuen; horregatik da gaur egun eztabaidatua.</p>
+                  <p>Euskal Herrian auzia bereziki bizia izan zen —1977ko amnistiaren aldeko asteak— eta ez zen erabat itxi: kasu batzuk kanpoan geratu ziren eta indarkeria armatuak jarraitu zuen. Amnistiak demokratizazioa ahalbidetu zuen, beraz, ahazte-akordio baten prezioan.</p>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- ---------- GRAFIKOA ---------- -->
+        <div class="it-panel reveal" role="tabpanel" id="p-grafikoa" aria-labelledby="t-grafikoa" hidden>
+          <div class="it-head">
+            <h3>Grafikoa edo estatistika</h3>
+            <span class="it-kind">Serie ekonomikoak · demografia · hauteskunde-emaitzak · taulak</span>
+          </div>
+          <p class="it-lead">Grafiko batek ez du berez ezer azaltzen: joera bat erakusten du, eta zuk azaldu behar duzu zergatik. Datuak errepikatzea ez da iruzkintzea.</p>
+
+          <div class="it-cols">
+            <div>
+              <h4>Zer begiratu, ordena honetan</h4>
+              <ul class="it-list good">
+                <li><strong>Ardatzak eta unitatea.</strong> Ehunekoak ala balio absolutuak? Eskalak irakurketa aldatzen du.</li>
+                <li><strong>Denbora-tartea.</strong> Non hasten eta non amaitzen den ez da neutroa.</li>
+                <li><strong>Joera nagusia,</strong> esaldi bakarrean laburtuta.</li>
+                <li><strong>Inflexio-puntuak.</strong> Non aldatzen da norabidea? Data hori gertakari batekin lotu.</li>
+                <li><strong>Iturri mota.</strong> Grafiko gehienak <strong>bigarren mailakoak</strong> dira: geroago egindako elaborazioak, zentsuetan edo estatistika ofizialetan oinarrituta.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Akats ohikoenak</h4>
+              <ul class="it-list bad">
+                <li>Datu guztiak zerrendatzea: «1900ean %66, 1930ean %46...». Hori irakurtzea da, ez azaltzea.</li>
+                <li>Korrelazioa kausatzat hartzea azalpen historikorik gabe.</li>
+                <li>Ehunekoen jaitsiera hazkunde absolutuarekin nahastea.</li>
+                <li>Atzerapausoak isiltzea, eredu garbiagoa geratzeko.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="src-card">
+            <span class="src-ref">Eredua · grafikoa</span>
+            <h4>Landunen banaketa sektoreka, Espainia (%)</h4>
+            <p class="src-meta">Zentsuetan oinarritutako elaborazioa. Bigarren mailako iturria.</p>
+
+            <figure class="it-chart">
+              <svg viewBox="0 0 640 320" role="img" aria-label="1900etik 1970era lehen sektorea %66tik %29ra jaisten da; bigarrena %16tik %37ra eta hirugarrena %18tik %34ra igotzen dira, 1950 inguruan eten batekin.">
+                <line x1="46" y1="286" x2="624" y2="286" stroke="var(--line)" stroke-width="1.5" />
+                <line x1="46" y1="208.9" x2="624" y2="208.9" stroke="var(--line)" stroke-width="1" />
+                <line x1="46" y1="131.7" x2="624" y2="131.7" stroke="var(--line)" stroke-width="1" />
+                <line x1="46" y1="54.6" x2="624" y2="54.6" stroke="var(--line)" stroke-width="1" />
+                <g font-family="Inter, system-ui, sans-serif" font-size="11" fill="var(--muted)" text-anchor="end">
+                  <text x="38" y="290">0</text>
+                  <text x="38" y="213">20</text>
+                  <text x="38" y="136">40</text>
+                  <text x="38" y="58">60</text>
+                </g>
+                <g font-family="Inter, system-ui, sans-serif" font-size="11" fill="var(--muted)" text-anchor="middle">
+                  <text x="50" y="305" text-anchor="start">1900</text>
+                  <text x="292.6" y="305">1930</text>
+                  <text x="458.3" y="305">1950</text>
+                  <text x="541.1" y="305">1960</text>
+                  <text x="620" y="305" text-anchor="end">1970</text>
+                </g>
+                <polyline fill="none" stroke="var(--c-indigo)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
+                  points="46,31.4 292.6,108.6 458.3,100.9 541.1,131.7 624,174.1" />
+                <polyline fill="none" stroke="var(--c-amber)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
+                  points="46,224.3 292.6,185.7 458.3,189.6 541.1,162.6 624,143.3" />
+                <polyline fill="none" stroke="var(--c-cyan)" stroke-width="3" stroke-dasharray="6 5" stroke-linejoin="round" stroke-linecap="round"
+                  points="46,216.6 292.6,178 458.3,181.9 541.1,178 624,154.9" />
+                <circle cx="46" cy="31.4" r="4" fill="var(--c-indigo)" /><circle cx="624" cy="174.1" r="4" fill="var(--c-indigo)" />
+                <circle cx="46" cy="224.3" r="4" fill="var(--c-amber)" /><circle cx="624" cy="143.3" r="4" fill="var(--c-amber)" />
+                <circle cx="46" cy="216.6" r="4" fill="var(--c-cyan)" /><circle cx="624" cy="154.9" r="4" fill="var(--c-cyan)" />
+                <g font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="var(--ink-soft)">
+                  <text x="58" y="28">66</text>
+                  <text x="598" y="171" text-anchor="end">29</text>
+                  <text x="58" y="239">16</text>
+                  <text x="598" y="139" text-anchor="end">37</text>
+                  <text x="598" y="169" text-anchor="end">34</text>
+                </g>
+              </svg>
+              <div class="it-legend">
+                <span><i style="background:var(--c-indigo)"></i> Lehen sektorea</span>
+                <span><i style="background:var(--c-amber)"></i> Bigarren sektorea</span>
+                <span><i style="background:var(--c-cyan)"></i> Hirugarren sektorea</span>
+              </div>
+              <figcaption>Datu biribilduak, eskuliburuetako ordena-magnitudean. Praktikatzeko eredua da; azterketan iturriaren oina beti agertuko da.</figcaption>
+            </figure>
+
+            <p class="src-q"><b>3.</b> Azaldu zein prozesu historikok esplikatzen duten grafikoak erakusten duen bilakaera.</p>
+
+            <details class="model">
+              <summary>Ikusi ereduzko erantzuna</summary>
+              <div class="ans">
+                <div>
+                  <h5>3 · Eskatutako gaia</h5>
+                  <p>Grafikoak Espainiako lan-egituraren eraldaketa erakusten du: lehen sektoreak landunen bi heren inguru biltzetik heren bat baino gutxiago biltzera egiten du behera, eta industriak eta zerbitzuek haren lekua hartzen dute. Hiru etapa bereiz daitezke, eta bakoitza prozesu historiko jakin batek azaltzen du.</p>
+                  <p>1900-1930 artean jaitsiera nabarmena da, baina abiapuntu oso atzeratutik. Lehen Mundu Gerrako neutraltasunak esportazioak bultzatu zituen eta Primo de Riveraren obra publikoko politikak industria indartu zuen, nekazaritza-egitura —hegoaldeko latifundioa, iparraldeko minifundioa— ia ukitu gabe utzita.</p>
+                  <p>1930-1950 artean bilakaera eteten da eta lehen sektorea apur bat igotzen ere bada. Hori Gerra Zibilaren eta autarkiaren ondorioa da: nazioarteko merkataritzaren itxierak, arrazionamenduak eta interbentzionismoak atzerakada eragin zuten. Datu horrek erakusten du modernizazioa ez dela prozesu automatikoa.</p>
+                  <p>1950-1970 artean gertatzen da aldaketarik azkarrena. 1959ko Egonkortze Planak autarkia amaitu zuen, eta 60ko hamarkadako hazkundeak —atzerriko inbertsioa, turismoa eta emigranteen diruak— landa-eremutik hirirako exodo masiboa ekarri zuen. Euskal Herrian eta Katalunian prozesu horrek immigrazio-uholde bat ere esan nahi zuen, gizarte-egitura bera aldatu zuena.</p>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- ---------- MAPA ---------- -->
+        <div class="it-panel reveal" role="tabpanel" id="p-mapa" aria-labelledby="t-mapa" hidden>
+          <div class="it-head">
+            <h3>Mapa historikoa</h3>
+            <span class="it-kind">Fronteak · hauteskundeak · industria · lurralde-antolaketa</span>
+          </div>
+          <p class="it-lead">Mapa bat iruzkintzea ez da geografia-ariketa bat. Banaketa espaziala azaldu behar da: zergatik hor eta ez beste nonbait.</p>
+
+          <div class="it-cols">
+            <div>
+              <h4>Zer begiratu, ordena honetan</h4>
+              <ul class="it-list good">
+                <li><strong>Legenda eta data.</strong> Beti lehenengo. Mapa askok egun jakin bateko argazkia ematen dute, ez prozesu osoa.</li>
+                <li><strong>Eredu orokorra.</strong> Iparra eta hegoa, kostaldea eta barnealdea, hiria eta landa.</li>
+                <li><strong>Anomaliak.</strong> Ereduan sartzen ez diren guneak dira interesgarrienak.</li>
+                <li><strong>Iturri mota.</strong> Garaiko mapa militar bat lehen mailakoa da; eskola-liburuko mapa bat, bigarren mailakoa.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Akats ohikoenak</h4>
+              <ul class="it-list bad">
+                <li>Probintziak zerrendatzea azalpenik gabe.</li>
+                <li>Legenda ez irakurtzea eta koloreak alderantziz interpretatzea.</li>
+                <li>Salbuespenak isiltzea, eredua garbiago geratzeko.</li>
+                <li>Mapa estatiko gisa tratatzea: ondoren zer aldatu zen ez aipatzea.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="src-card">
+            <span class="src-ref">Eredua · mapa</span>
+            <h4>Espainiaren zatiketa 1936ko uztailaren amaieran</h4>
+            <p class="src-meta">Altxamenduaren arrakasta lurraldeka, uztailaren 18tik 25era. Bigarren mailako iturria.</p>
+            <p class="src-q"><b>3.</b> Azaldu mapak erakusten duen banaketa eta haren arrazoiak.</p>
+
+            <details class="model">
+              <summary>Ikusi ereduzko erantzuna</summary>
+              <div class="ans">
+                <div>
+                  <h5>3 · Eskatutako gaia</h5>
+                  <p>Mapak uztaileko estatu-kolpearen emaitza partziala erakusten du, eta hori bera da datu historiko nagusia: altxamenduak ez zuen Espainia osoa hartu, baina ezta porrot osoa egin ere, eta hortik sortu zen hiru urteko gerra. Matxinatuek Galizia, Gaztela Zaharra, Leon, Nafarroa, Araba, Aragoiko zati handi bat, Kanariak, Balearrak —Menorca izan ezik— eta Marokoko protektoratua kontrolatu zituzten, Andaluziako zubi-buru batzuekin batera. Errepublikak metropoli handiak eta eremu industrialak atxiki zituen: Madril, Bartzelona, Valentzia, Levante, Andaluzia gehiena eta Kantauri itsasertza, Bizkaia eta Gipuzkoa barne.</p>
+                  <p>Banaketak logika soziala du. Altxamenduak arrakasta izan zuen nekazaritza-eremu kontserbadore eta katolikoetan, jabetza txikia eta eliza-sare indartsua zeuden lekuetan; Nafarroa, karlismoaren gotorlekua, adibiderik argiena da. Porrot egin zuen, aldiz, langile-mugimendua antolatuta zegoen hiri eta industria-guneetan, non sindikatuek eta segurtasun-indar leialek kuartelei aurre egin baitzieten.</p>
+                  <p>Euskal Herriak eredu horren adierazgarririk onena eskaintzen du: Nafarroa eta Araba berehala geratu ziren matxinatuen esku, eta Bizkaia eta Gipuzkoa Errepublikaren aldean, EAJk autonomia-estatutuaren truke Errepublika babestu ondoren. Egoera ez zen finkoa izan: Gipuzkoa irailean erori zen eta iparraldeko frontea 1937ko udan itxi zen.</p>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. OHIKO ESALDIAK ============ -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Zuzenketa</span>
+          <h2>Esaldi hauek ez dute punturik ematen</h2>
+          <p>Iturrien iruzkinetan behin eta berriz errepikatzen diren esaldiak, eta zer idatzi haien ordez.</p>
+        </div>
+
+        <div class="bad-phrase-grid">
+          <article class="bad-phrase-card reveal">
+            <h3>“Testu hau lehen mailako iturri bat da.”</h3>
+            <p>Etiketa bat da, ez identifikazio bat. Horrek ez du bereizten lege bat manifestu batetik.</p>
+            <strong>Hobeto:</strong>
+            <span>Esan zer motatakoa den zehazki, nork idatzi zuen, non argitaratu zen eta zertarako.</span>
+          </article>
+          <article class="bad-phrase-card reveal" data-delay="1">
+            <h3>“Testuak dio Nazioa subiranoa dela.”</h3>
+            <p>Parafrasi hutsa da. Iturria errepikatzen duzu, baina ez duzu interpretatzen.</p>
+            <strong>Hobeto:</strong>
+            <span>Itzuli kontzeptura eta esan zeren aurka doan: subiranotasun nazionala erregearen subiranotasunaren aurka.</span>
+          </article>
+          <article class="bad-phrase-card reveal" data-delay="2">
+            <h3>“Garai hartan Espainia egoera txarrean zegoen.”</h3>
+            <p>Edozein hamarkadatarako balio du, eta horregatik ez du ezertarako balio.</p>
+            <strong>Hobeto:</strong>
+            <span>Zehaztu zer gertatzen ari zen hilabete horietan: zein gobernu, zein krisi, zein gatazka.</span>
+          </article>
+          <article class="bad-phrase-card reveal">
+            <h3>“Argazkian jende asko ageri da kalean.”</h3>
+            <p>Deskribapena da, ez analisia. Ikusten dena esatea ez da iruzkintzea.</p>
+            <strong>Hobeto:</strong>
+            <span>Azaldu zergatik ateratzen den jendea kalera data horretan, eta zer eskatzen duen.</span>
+          </article>
+          <article class="bad-phrase-card reveal" data-delay="1">
+            <h3>“Grafikoan ikusten den bezala, %66tik %29ra jaitsi zen.”</h3>
+            <p>Datua irakurri duzu, baina ez duzu azaldu. Zenbakiak berak ez du historiarik.</p>
+            <strong>Hobeto:</strong>
+            <span>Lotu inflexioak prozesuekin: autarkia, Egonkortze Plana, landa-hiri exodoa.</span>
+          </article>
+          <article class="bad-phrase-card reveal" data-delay="2">
+            <h3>“Lehen esan dudan bezala, testuinguruan...”</h3>
+            <p>Hirugarren galderan bigarrena errepikatzen ari zara. 1,5 puntu jokoan daude.</p>
+            <strong>Hobeto:</strong>
+            <span>Aldatu fokua: kausak, ondorioak, eragileak edo konparazioa, testuingurua berriz kontatu gabe.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. TXEKEOA ============ -->
+    <section class="section" id="txekeoa">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Azken pausoa</span>
+          <h2>Entregatu aurreko txekeoa</h2>
+          <p>Bi minutu. Erantzuna berrirakurri eta markatu betetzen duzuna.</p>
+        </div>
+
+        <div class="check-list reveal" id="check">
+          <label><input type="checkbox" id="k1" /><span>Identifikazioan iturri mota, egilea, data eta helburua daude.</span></label>
+          <label><input type="checkbox" id="k2" /><span>Iturriaren oinean zegoen informazio guztia erabili dut.</span></label>
+          <label><input type="checkbox" id="k3" /><span>Testuinguruak une zehatza azaltzen du, ez garai osoa.</span></label>
+          <label><input type="checkbox" id="k4" /><span>Hirugarren erantzunak ez du bigarrena errepikatzen.</span></label>
+          <label><input type="checkbox" id="k5" /><span>Gutxienez hiru data edo izen konkretu daude.</span></label>
+          <label><input type="checkbox" id="k6" /><span>Iturriko ideiak aipatu ditut, kopiatu gabe.</span></label>
+          <label><input type="checkbox" id="k7" /><span>Euskal Herriaren planoa agertzen da, gaiak hala eskatzen badu.</span></label>
+          <label><input type="checkbox" id="k8" /><span>Erantzun bakoitzak ondorio edo itxiera bat du.</span></label>
+          <label><input type="checkbox" id="k9" /><span>Ortografia berrikusi dut: puntu bat jokoan dago.</span></label>
+          <label><input type="checkbox" id="k10" /><span>C atalerako denbora geratzen zait.</span></label>
+        </div>
+
+        <div class="check-meter reveal">
+          <span id="score">0/10</span>
+          <span class="track"><i id="bar"></i></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="guide-closing reveal">
+          <h2>Iturriak ez du erantzuten. Zuk erantzuten duzu.</h2>
+          <p>Dokumentua abiapuntua da, ez helmuga. Identifikatu, kokatu une zehatzean eta garatu eskatzen zaizuna: hiru lan bereizi, hiru erantzun bereizi.</p>
+          <a class="btn btn-primary" href="pau-egitura.html">Azterketaren egitura ikusi</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">H</span><span>Historia BTX2<small>Luken San Sebastián Alkorta</small></span></a>
+      <nav class="foot-links">
+        <a href="index.html#denbora-lerroa">Denbora-lerroa</a>
+        <a href="kronologia.html">Kronologia</a>
+        <a href="jokoa.html">Jokoa</a>
+        <a href="index.html#gaiak">Gaiak</a>
+        <a href="index.html#tresnak">Tresnak</a>
+      </nav>
+      <div class="foot-bottom">
+        <span>Iturri historikoak nola iruzkindu</span>
+        <span>© <span data-year>2026</span> · Luken San Sebastián Alkorta · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Gora itzuli">↑</button>
+  <script src="assets/js/app.js?v=12"></script>
+  <script>
+    (function () {
+      var tabs = Array.prototype.slice.call(document.querySelectorAll('.it-tabs button'));
+      function select(id) {
+        tabs.forEach(function (t) {
+          var on = t.id === id;
+          t.setAttribute('aria-selected', on ? 'true' : 'false');
+          var panel = document.getElementById(t.getAttribute('aria-controls'));
+          if (panel) { panel.hidden = !on; }
+        });
+        try { localStorage.setItem('it-tab', id); } catch (e) { }
+      }
+      tabs.forEach(function (t) { t.addEventListener('click', function () { select(t.id); }); });
+      try {
+        var saved = localStorage.getItem('it-tab');
+        if (saved && document.getElementById(saved)) { select(saved); }
+      } catch (e) { }
+
+      var boxes = Array.prototype.slice.call(document.querySelectorAll('#check input'));
+      var score = document.getElementById('score');
+      var bar = document.getElementById('bar');
+      function render() {
+        var n = boxes.filter(function (b) { return b.checked; }).length;
+        score.textContent = n + '/' + boxes.length;
+        bar.style.width = (n / boxes.length * 100) + '%';
+        try { localStorage.setItem('it-check', JSON.stringify(boxes.map(function (b) { return b.checked; }))); } catch (e) { }
+      }
+      try {
+        var st = JSON.parse(localStorage.getItem('it-check') || '[]');
+        if (st.length === boxes.length) { boxes.forEach(function (b, i) { b.checked = !!st[i]; }); }
+      } catch (e) { }
+      boxes.forEach(function (b) { b.addEventListener('change', render); });
+      render();
+    })();
+  </script>
+</body>
+
+</html>
