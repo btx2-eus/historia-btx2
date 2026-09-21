@@ -122,7 +122,15 @@
 
         <section id="iturriak" class="reveal iturri-section">
           <h2><span class="h-num">📜</span> Iturri historikoak</h2>
-          {% if tema.meta.iturri_pdf %}
+          {% if tema.meta.iturri_url %}
+          {% set iturri_base = tema.meta.iturri_url.split('/embed')[0] %}
+          <p>Azterketako B galderan iruzkintzeko prestatutako iturri historikoak: testuak, irudiak, mapak eta estatistikak, garaiko gertaerak aztertzeko gida-galderekin.</p>
+          <div class="iturri-actions">
+            <a class="btn btn-soft" href="{{ tema.meta.iturri_link or tema.meta.iturri_url }}" target="_blank" rel="noopener">↗ Pantaila osoan ireki</a>
+            {% if tema.meta.iturri_download or 'docs.google.com/presentation' in tema.meta.iturri_url %}<a class="btn btn-soft" href="{{ tema.meta.iturri_download or (iturri_base ~ '/export/pdf') }}" target="_blank" rel="noopener">⬇ Deskargatu PDFa</a>{% endif %}
+          </div>
+          <iframe class="aurkezpena-frame" src="{{ tema.meta.iturri_url }}" title="{{ tema.meta.number }}. gaiko iturri historikoak" loading="lazy" allowfullscreen></iframe>
+          {% elif tema.meta.iturri_pdf %}
           <p>Azterketako B galderan iruzkintzeko prestatutako iturri historikoak: testuak, irudiak, mapak eta estatistikak, garaiko gertaerak aztertzeko gida-galderekin.</p>
           <div class="iturri-actions">
             <a class="btn btn-soft" href="../pdf/iturri/{{ tema.meta.iturri_pdf }}" target="_blank" rel="noopener">↗ Pantaila osoan ireki</a>
