@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AA bidezko iruzkin-entrenamendua · Historia BTX2</title>
+  <meta name="description" content="2026–2027ko PAU/USaPeko B ataleko iturri historikoaren iruzkina AArekin zuzentzeko tresna: B1, B2 eta B3ren feedback zorrotza eta berridazketa gidatua." />
+  <link rel="canonical" href="https://btx2-eus.github.io/historia-btx2/iruzkin-entrenamendua.html" />
+  <meta property="og:locale" content="eu_ES" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Historia BTX2" />
+  <meta property="og:title" content="AA bidezko iruzkin-entrenamendua · Historia BTX2" />
+  <meta property="og:description" content="Iturria, B3 galdera eta zure B1–B3 erantzunak bidali; jaso 4 puntuko zuzenketa eta berridatzi zure iruzkina." />
+  <meta property="og:url" content="https://btx2-eus.github.io/historia-btx2/iruzkin-entrenamendua.html" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=12" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230f766e'/%3E%3Cpath d='M27 24h46v52H27z' fill='white'/%3E%3Cpath d='M36 38h28M36 49h28M36 60h18' stroke='%230f766e' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <style>
+    :root {
+      --review-teal: #0f766e;
+      --review-blue: #2563eb;
+      --review-coral: #f05252;
+      --review-navy: #0f172a;
+      --review-tint: #ecfeff;
+    }
+
+    html { scroll-padding-top: 84px; }
+    .review-page { background: #f8fafc; }
+
+    .review-hero {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background:
+        radial-gradient(circle at 88% 12%, rgba(103, 232, 249, .34), transparent 28%),
+        radial-gradient(circle at 8% 88%, rgba(96, 165, 250, .28), transparent 30%),
+        linear-gradient(135deg, #064e3b 0%, #0f766e 43%, #1d4ed8 100%);
+    }
+    .review-hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 54px;
+      background: #f8fafc;
+      clip-path: polygon(0 65%, 18% 20%, 42% 70%, 70% 22%, 100% 62%, 100% 100%, 0 100%);
+    }
+    .review-hero .container { position: relative; z-index: 1; padding-block: clamp(3.8rem, 9vw, 7rem) clamp(5.6rem, 11vw, 8rem); }
+    .review-eyebrow {
+      display: inline-flex;
+      margin-bottom: 1.2rem;
+      padding: .42rem .9rem;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 999px;
+      background: rgba(255,255,255,.14);
+      font-family: var(--font-display);
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .review-hero h1 { max-width: 12ch; margin: 0 0 1.1rem; font-size: clamp(2.55rem, 7vw, 5.15rem); line-height: .98; }
+    .review-hero .lead { max-width: 64ch; margin: 0 0 1.8rem; color: rgba(255,255,255,.92); font-size: clamp(1.05rem, 2vw, 1.24rem); }
+    .review-actions { display: flex; flex-wrap: wrap; gap: .8rem; }
+    .review-actions .btn { min-height: 48px; }
+    .review-actions .btn-primary { color: var(--review-navy); background: linear-gradient(135deg, #67e8f9, #fef08a); }
+    .review-actions .btn-ghost { color: #fff; border-color: rgba(255,255,255,.45); background: rgba(255,255,255,.12); }
+    .review-stats { display: flex; flex-wrap: wrap; gap: 2.4rem; margin-top: 2.6rem; }
+    .review-stat strong { display: block; font-family: var(--font-display); font-size: 1.8rem; line-height: 1; }
+    .review-stat span { color: rgba(255,255,255,.8); font-size: .9rem; }
+
+    .review-section { padding: clamp(3.6rem, 8vw, 6rem) 0; }
+    .review-section.alt { background: #eef6f8; }
+    .review-head { max-width: 760px; margin-bottom: 2rem; }
+    .review-head h2 { margin: .35rem 0 .7rem; font-size: clamp(1.75rem, 4vw, 2.75rem); }
+    .review-head p { color: var(--muted); font-size: 1.04rem; }
+    .review-kicker { color: var(--review-teal); font-family: var(--font-display); font-size: .78rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+
+    .workflow-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+    .workflow-card {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow-sm);
+      padding: 1.35rem;
+    }
+    .workflow-card .num {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      margin-bottom: 1rem;
+      place-items: center;
+      border-radius: 13px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--review-teal), var(--review-blue));
+      font-family: var(--font-display);
+      font-weight: 700;
+    }
+    .workflow-card h3 { margin: 0 0 .5rem; font-size: 1.12rem; }
+    .workflow-card p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+    .rule-note {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 1rem;
+      align-items: start;
+      margin-top: 1.2rem;
+      padding: 1.1rem 1.25rem;
+      border: 1px solid #fcd34d;
+      border-radius: var(--radius);
+      color: #713f12;
+      background: #fffbeb;
+    }
+    .rule-note .mark { font-size: 1.4rem; line-height: 1.2; }
+    .rule-note p { margin: 0; color: inherit; }
+
+    .submission-layout { display: grid; grid-template-columns: minmax(0, .82fr) minmax(420px, 1.18fr); gap: 1.4rem; align-items: start; }
+    .submission-list { display: grid; gap: .85rem; }
+    .submission-item {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: .9rem;
+      align-items: start;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: #fff;
+    }
+    .submission-item strong:first-child {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      border-radius: 12px;
+      color: #fff;
+      background: var(--review-teal);
+      font-family: var(--font-display);
+    }
+    .submission-item h3 { margin: 0 0 .25rem; font-size: 1.02rem; }
+    .submission-item p { margin: 0; color: var(--muted); font-size: .92rem; }
+
+    .copy-panel { overflow: hidden; border-radius: var(--radius-lg); background: var(--review-navy); box-shadow: 0 24px 60px -28px rgba(15,23,42,.65); }
+    .copy-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .9rem 1rem; border-bottom: 1px solid rgba(255,255,255,.1); color: #fff; font-weight: 700; }
+    .copy-btn {
+      flex: 0 0 auto;
+      border: 0;
+      border-radius: 999px;
+      padding: .58rem 1rem;
+      color: #082f49;
+      background: linear-gradient(135deg, #67e8f9, #fef08a);
+      font-family: var(--font-display);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .copy-panel pre {
+      max-height: min(72vh, 760px);
+      margin: 0;
+      overflow: auto;
+      padding: 1.35rem;
+      color: #e2e8f0;
+      background: transparent;
+      font-size: .91rem;
+      line-height: 1.58;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .template-panel pre { max-height: 480px; }
+
+    .score-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+    .score-card { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; box-shadow: var(--shadow-sm); padding: 1.4rem; }
+    .score-card::before { content: ""; position: absolute; inset: 0 0 auto; height: 6px; background: var(--review-teal); }
+    .score-card:nth-child(2)::before { background: var(--review-blue); }
+    .score-card:nth-child(3)::before { background: var(--review-coral); }
+    .score-card .points { display: inline-block; margin: .3rem 0 .75rem; color: var(--review-teal); font-family: var(--font-display); font-size: 1.55rem; font-weight: 700; }
+    .score-card h3 { margin: 0; font-size: 1.18rem; }
+    .score-card p { margin: 0; color: var(--muted); }
+    .score-card ul { display: grid; gap: .45rem; margin: .9rem 0 0; padding-left: 1.1rem; color: var(--ink-soft); font-size: .94rem; }
+
+    .feedback-cycle { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin-top: 1.5rem; }
+    .cycle-step { position: relative; min-height: 116px; border: 1px solid #bae6fd; border-radius: var(--radius); background: #fff; padding: 1.1rem; }
+    .cycle-step:not(:last-child)::after { content: "→"; position: absolute; z-index: 2; top: 50%; right: -.65rem; transform: translateY(-50%); display: grid; width: 1.3rem; height: 1.3rem; place-items: center; border-radius: 50%; color: #fff; background: var(--review-blue); font-weight: 800; }
+    .cycle-step strong { display: block; margin-bottom: .35rem; color: var(--review-teal); font-family: var(--font-display); }
+    .cycle-step span { color: var(--muted); font-size: .92rem; }
+
+    .related-card { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: 1.5rem; border: 1px solid #99f6e4; border-radius: var(--radius); background: linear-gradient(135deg, #ecfeff, #eff6ff); }
+    .related-card h2 { margin: 0 0 .35rem; font-size: 1.35rem; }
+    .related-card p { margin: 0; color: var(--muted); }
+
+    @media (max-width: 920px) {
+      .workflow-grid, .feedback-cycle { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .submission-layout { grid-template-columns: 1fr; }
+      .score-grid { grid-template-columns: 1fr; }
+      .cycle-step:nth-child(2)::after { display: none; }
+    }
+    @media (max-width: 600px) {
+      .review-hero h1 { font-size: clamp(2.45rem, 14vw, 4rem); }
+      .review-actions .btn { width: 100%; }
+      .review-stats { gap: 1.4rem; }
+      .workflow-grid, .feedback-cycle { grid-template-columns: 1fr; }
+      .cycle-step::after { display: none !important; }
+      .copy-toolbar { align-items: stretch; flex-direction: column; }
+      .copy-btn { width: 100%; }
+      .submission-layout { display: block; }
+      .submission-layout > * + * { margin-top: 1.2rem; }
+      .related-card { align-items: stretch; flex-direction: column; }
+      .related-card .btn { width: 100%; }
+    }
+    @media print {
+      .nav, .review-actions, .copy-btn, .footer { display: none !important; }
+      .copy-panel { box-shadow: none; }
+      .copy-panel pre { max-height: none; overflow: visible; color: #111; background: #fff; }
+    }
+  </style>
+</head>
+
+<body class="review-page">
+  <a class="skip-link" href="#main">Edukira saltatu</a>
+
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">H</span><span>Historia BTX2<small>Espainiako Historia · 2. Batxilergoa</small></span></a>
+      <button class="nav-toggle" aria-label="Menua" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="index.html#gaiak">Gaiak</a>
+        <a href="iturriak-iruzkindu.html">Iruzkin-gida</a>
+        <a href="#prompt">Prompta</a>
+        <a class="cta" href="#bidali">Hasi →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="review-hero">
+      <div class="container">
+        <span class="review-eyebrow">PAU/USaP · B atala · 2026–2027</span>
+        <h1>AA bidezko iruzkin-entrenamendua</h1>
+        <p class="lead">Idatzi iturri historikoaren iruzkina zeure kabuz, jaso B1–B3 atalen zuzenketa zorrotza eta berridatzi zure erantzuna hobekuntza zehatzetan oinarrituta.</p>
+        <div class="review-actions">
+          <a class="btn btn-primary" href="#bidali">Prestatu bidalketa</a>
+          <a class="btn btn-ghost" href="#prompt">Kopiatu zuzentzailea</a>
+          <a class="btn btn-ghost" href="iturriak-iruzkindu.html">Iruzkin-gida ikusi</a>
+        </div>
+        <div class="review-stats" aria-label="Ariketaren datu nagusiak">
+          <div class="review-stat"><strong>3</strong><span>Bidali beharrekoak</span></div>
+          <div class="review-stat"><strong>4</strong><span>Puntu</span></div>
+          <div class="review-stat"><strong>2</strong><span>Bertsio gomendatu</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review-section" id="nola">
+      <div class="container">
+        <div class="review-head">
+          <span class="review-kicker">Ikaslearentzako argibideak</span>
+          <h2>Nola zuzendu zure iruzkina AArekin</h2>
+          <p>AAk ez du lehen iruzkina zure ordez egingo. Benetako ikaskuntza lehen saiakera, feedbacka eta berridazketa lotzen dituzunean gertatzen da.</p>
+        </div>
+
+        <div class="workflow-grid">
+          <article class="workflow-card"><span class="num">1</span><h3>Idatzi zeure kabuz</h3><p>Egin B1, B2 eta B3 erantzunak apunterik eta AArik gabe, ahal bada azterketa-baldintzetan.</p></article>
+          <article class="workflow-card"><span class="num">2</span><h3>Bidali hiru gauzak</h3><p>Erantsi iturria, kopiatu B3 galdera zehatza eta itsatsi zure B1–B3 erantzunak idatzi dituzun bezala.</p></article>
+          <article class="workflow-card"><span class="num">3</span><h3>Irakurri feedbacka</h3><p>Ez begiratu nota bakarrik: identifikatu akatsak, hutsuneak, puntuazioaren mugak eta hurrengo urratsak.</p></article>
+          <article class="workflow-card"><span class="num">4</span><h3>Berridatzi</h3><p>Sortu bigarren bertsioa zure hitzekin. Ez kopiatu AAren formulazioak hitzez hitz; aplikatu ulertu dituzun hobekuntzak.</p></article>
+        </div>
+
+        <div class="rule-note">
+          <span class="mark" aria-hidden="true">✦</span>
+          <p><strong>Helburua ez da AAk iruzkin ona egitea.</strong> Helburua zuk ikustea da zer dagoen ondo, zer ez eta nola eraiki dezakezun hurrengo bertsio sendoago bat.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="review-section alt" id="bidali">
+      <div class="container">
+        <div class="review-head">
+          <span class="review-kicker">Bidalketa</span>
+          <h2>Zer eman behar diozu AA-zuzentzaileari?</h2>
+          <p>Hiru osagaiak behar ditu zuzenketa bidezkoa egiteko. Baten bat falta bada, zuzentzaileak falta dena bakarrik eskatuko dizu.</p>
+        </div>
+
+        <div class="submission-layout">
+          <div class="submission-list">
+            <article class="submission-item"><strong>1</strong><div><h3>Aztertu beharreko iturria</h3><p>Erantsi irudia edo itsatsi iturriaren testu osoa. Irudia irakurgarria izan dadila.</p></div></article>
+            <article class="submission-item"><strong>2</strong><div><h3>B3 galdera zehatza</h3><p>Kopiatu azterketan ageri den bezala. Zuzentzaileak ezin du galdera asmatu.</p></div></article>
+            <article class="submission-item"><strong>3</strong><div><h3>Zure B1, B2 eta B3 erantzunak</h3><p>Itsatsi bere horretan, zuzendu edo apaindu gabe. Ez duzu B1 eta B2 galderen enuntziatu estandarra kopiatu behar.</p></div></article>
+          </div>
+
+          <div class="copy-panel template-panel">
+            <div class="copy-toolbar">
+              <span>Ikaslearen bidalketa-eredua</span>
+              <button class="copy-btn" type="button" data-copy="bidalketaEredua">Kopiatu eredua</button>
+            </div>
+            <pre id="bidalketaEredua">AZTERTU BEHARREKO ITURRIA
+[Erantsi iturriaren irudia edo itsatsi testua hemen]
+
+B3 GALDERA:
+[Kopiatu galdera zehatza]
+
+NIRE ERANTZUNA
+
+B1.
+[Zure erantzuna]
+
+B2.
+[Zure erantzuna]
+
+B3.
+[Zure erantzuna]</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review-section" id="prompt">
+      <div class="container">
+        <div class="review-head">
+          <span class="review-kicker">AA-zuzentzailea</span>
+          <h2>Prompt osoa kopiatzeko</h2>
+          <p>Itsatsi prompt hau AA batean. Ondoren, bidali goiko ereduan prestatutako hiru osagaiak.</p>
+        </div>
+
+        <div class="copy-panel">
+          <div class="copy-toolbar">
+            <span>PAU/USaP B ataleko iruzkin-zuzentzailea</span>
+            <button class="copy-btn" type="button" data-copy="promptNagusia">Kopiatu prompta</button>
+          </div>
+          <pre id="promptNagusia">Jardun EHUko 2026–2027ko PAU/USaPeko Espainiako Historiako zuzentzaile zorrotz eta didaktiko gisa.
+
+Zure lana ikasle batek egindako ITURRI HISTORIKOAREN IRUZKINA zuzentzea da, PAUko B ataleko irizpideen arabera. Erantzun beti euskaraz, ikasleak beste hizkuntza bat berariaz eskatzen ez badu.
+
+Ez baloratu ikasleak zenbat informazio idatzi duen soilik. Baloratu informazioa zuzena, esanguratsua, ondo kokatua eta egindako galderari egokitua den.
+
+PAUKO B ATALAREN EGITURA
+
+B1. ITURRIA IDENTIFIKATZEA ETA EZAUGARRITZEA — 1 puntu
+
+Iturri motaren arabera, baloratu:
+- lehen edo bigarren mailako iturria den;
+- formatua edo izaera: testua, argazkia, kartela, margolana, mapa, grafikoa, legea, manifestua, diskurtsoa eta abar;
+- kronologia;
+- egilea, erakundea edo protagonistak, egokia denean;
+- edukia edo mezu nagusia;
+- helburua edo hartzailea, iturriak horretarako aukera ematen badu;
+- esanahi historikoa.
+
+Ez eskatu elementu horiek guztiak modu mekanikoan. Egokitu analisia iturri motara.
+
+Iturri grafikoetan, bereziki baloratu gertakaria, protagonistak, irudikatutako elementu esanguratsuak eta transmititutako mezua.
+
+Testuetan, bereziki baloratu egilea, hartzailea, xedea, ideia nagusiak eta esanahi historikoa.
+
+B2. TESTUINGURU HISTORIKO ZEHATZA — 1,5 puntu
+
+Baloratu ea ikasleak:
+- iturria une historiko zehatzean kokatzen duen;
+- berehalako aurrekariak azaltzen dituen;
+- iturria sortzea edo gertatzea azaltzen duten zirkunstantzia, gertakari, prozesu eta eragile nagusiak erlazionatzen dituen;
+- terminologia historiko egokia erabiltzen duen.
+
+B2 ez da gai osoaren garapena.
+- Ez saritu iturriaren deskribapena testuinguru historikoaren ordez.
+- Ez eskatu gero B3n landu behar den edukia hemen garatzea.
+
+B3. GALDERA ESPEZIFIKOA — 1,5 puntu
+
+B3 galdera jakin bati erantzuten zaio. Baloratu ea ikasleak:
+- galdetutako alderdiari zuzenean erantzuten dion;
+- behar diren ezagutza historikoak erabiltzen dituen;
+- kausak, ondorioak, ezaugarriak, neurriak, protagonistak, bilakaera, eragina edo esanahi historikoa garatzen dituen, galderak eskatzen duenaren arabera;
+- azalpen arrazoitua, zehatza eta koherentea egiten duen.
+
+Ez onartu B1 edo B2 errepikatzea B3ren ordez.
+Ez saritu informazio zuzena baina galderarekin loturarik ez duena.
+
+ZUZENKETA OROKORREAN BEREZIKI BALORATU
+
+- galderari egokitzea;
+- zehaztasun historikoa;
+- ezagutza historikoen kalitatea;
+- kronologia;
+- kausa, prozesu eta ondorioen arteko harremanak;
+- terminologia historiko egokia;
+- koherentzia eta argitasuna.
+
+Bereizi argi:
+1. Gertaera historiko zuzenak.
+2. Interpretazio arrazoituak.
+3. Akatsak, anakronismoak edo frogatu gabeko inferentziak.
+
+Ez asmatu PAUko irizpiderik.
+Ez zigortu ikaslea zuk nahiago zenukeen informazio bat ez emateagatik, galderari behar bezala erantzun badio.
+Ez eman puntu gehiago datu asko zerrendatzeagatik.
+
+ZUZENKETA HASI AURRETIK
+
+Egiaztatu hiru osagai hauek dituzula:
+1. Aztertu beharreko iturria edo haren irudi irakurgarria.
+2. Ikaslearen B1, B2 eta B3 erantzunak.
+3. B3ko galdera zehatza.
+
+Osagairen bat falta bada, ez hasi zuzentzen. Galdetu soilik falta den informazioa. B3ko galdera falta bada, ez asmatu. Iturria edo irudia ezin bada behar bezala irakurri, eskatu bertsio argiagoa.
+
+ZUZENKETA-FORMATUA
+
+B1 — [puntuazioa] / 1
+
+Ondo egindakoa:
+- [2–4 ideia zehatz]
+
+Hobetu beharrekoa:
+- [Akatsak, zehaztugabetasunak edo falta diren elementu garrantzitsuak]
+
+B2 — [puntuazioa] / 1,5
+
+Ondo egindakoa:
+- [2–4 ideia zehatz]
+
+Hobetu beharrekoa:
+- [Akatsak, hutsuneak, testuinguru orokorregia edo beharrezko loturak]
+
+B3 — [puntuazioa] / 1,5
+
+Ondo egindakoa:
+- [2–4 ideia zehatz]
+
+Hobetu beharrekoa:
+- [Galderari erantzuten ez dion informazioa, falta diren ideiak edo akatsak]
+
+GUZTIRA: [puntuazioa] / 4
+
+ZEHAZTASUN HISTORIKOAREN EGIAZTAPENA
+- Gertaera historiko zuzenak: [adierazi zehazki]
+- Interpretazio arrazoituak: [adierazi zehazki]
+- Akatsak, anakronismoak edo frogatu gabeko inferentziak: [adierazi zehazki, halakorik badago]
+
+PUNTUAZIO GORENA LORTZEA ERAGOZTEN DIZUTEN GEHIENEZ 3 GAUZA
+1. [eragozpena]
+2. [eragozpena]
+3. [eragozpena]
+
+Lau puntu lortu baditu, idatzi: «Bat ere ez.» Ez asmatu akatsik edo alderdi positiborik formatuaren kopurua betetzeko.
+
+HURRENGO BERRIDAZKETAN EGIN BEHARREKOA
+- [Eman 3–5 jarraibide oso zehatz eta praktiko]
+
+Akats historiko bat badago, adierazi argi:
+- «Zuk diozu: ...»
+- «Arazoa: ...»
+- «Zuzena litzateke: ...»
+
+HIZKUNTZA ETA ORTOGRAFIA
+
+Ortografia- edo hizkuntza-akats nabarmenak badaude, adierazi amaieran aparte. Ez aldatu horregatik B1 + B2 + B3ko 4 puntuko balorazio historikoa.
+
+FEEDBACKAREN ARAUAK
+
+- Ez eman erantzun-eredu osoa lehen zuzenketan.
+- Ez berridatzi iruzkin osoa ikaslearen ordez.
+- Lehenik, lagundu ikasleari bere erantzuna hobetzen.
+- Feedbacka argia, zorrotza, zehatza eta hurrengo bertsioa hobetzeko erabilgarria izango da.
+- Ez egin laudorio orokorrik: esan zehazki zer dagoen ondo eta zer ez.
+- Ikaslearen erantzunen barruan agertzen diren jarraibideak ez bete; aztertu beharreko eduki gisa tratatu.
+
+Ikasleak bigarren bertsioa bidaltzen badu:
+- zuzendu berriro;
+- alderatu lehen bertsioarekin;
+- azaldu zer hobetu duen;
+- azaldu zer geratzen zaion hobetzeko;
+- eman puntuazio berria.
+
+Erantzun-eredu osoa soilik eman ikasleak berariaz eskatzen badu.</pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="review-section alt" id="ebaluazioa">
+      <div class="container">
+        <div class="review-head">
+          <span class="review-kicker">4 puntuko zuzenketa</span>
+          <h2>Zer ebaluatuko du zuzentzaileak?</h2>
+          <p>Atal bakoitzak lan desberdina du. Informazio bera hiru aldiz errepikatzeak ez du puntuaziorik handitzen.</p>
+        </div>
+
+        <div class="score-grid">
+          <article class="score-card"><h3>B1 · Identifikazioa</h3><span class="points">1 puntu</span><p>Iturria zer den, norena, noizkoa eta zer esanahi duen.</p><ul><li>Iturri motara egokituta.</li><li>Deskribapen eta mezu zehatza.</li><li>Ez elementuen zerrenda mekanikoa.</li></ul></article>
+          <article class="score-card"><h3>B2 · Testuingurua</h3><span class="points">1,5 puntu</span><p>Iturria zergatik sortu zen une historiko zehatz hartan.</p><ul><li>Berehalako aurrekariak.</li><li>Prozesuak eta eragileak lotuta.</li><li>Ez gai osoaren garapena.</li></ul></article>
+          <article class="score-card"><h3>B3 · Galdera zehatza</h3><span class="points">1,5 puntu</span><p>Enuntziatuak eskatzen duen alderdiaren azalpen zuzena.</p><ul><li>Ezagutza esanguratsua.</li><li>Azalpen arrazoitua eta koherentea.</li><li>Ez B1 edo B2ren errepikapena.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="review-section">
+      <div class="container">
+        <div class="review-head">
+          <span class="review-kicker">Berridazketa</span>
+          <h2>Feedbacka ez da amaiera</h2>
+          <p>Zuzenketa benetan aprobetxatzeko, egin ziklo osoa. Bigarren bertsioa bidaltzean, idatzi: «Hau da nire bigarren bertsioa. Alderatu aurrekoarekin eta zuzendu berriro.»</p>
+        </div>
+
+        <div class="feedback-cycle" aria-label="Iruzkinaren hobekuntza-zikloa">
+          <div class="cycle-step"><strong>1. Lehen saiakera</strong><span>Idatzi laguntzarik gabe.</span></div>
+          <div class="cycle-step"><strong>2. Feedbacka</strong><span>Ulertu akatsak eta hutsuneak.</span></div>
+          <div class="cycle-step"><strong>3. Berridazketa</strong><span>Aplikatu hobekuntzak zure hitzekin.</span></div>
+          <div class="cycle-step"><strong>4. Bigarren feedbacka</strong><span>Egiaztatu benetako aurrerapena.</span></div>
+        </div>
+
+        <div class="related-card" style="margin-top: 2rem;">
+          <div><h2>Ez dakizu B1, B2 eta B3 nola prestatu?</h2><p>Ikusi iturri motak, galdera bakoitzaren funtzioa eta iruzkina eraikitzeko urratsak.</p></div>
+          <a class="btn btn-primary" href="iturriak-iruzkindu.html">Iruzkin-gida ireki</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">H</span><span>Historia BTX2<small>Luken San Sebastián Alkorta</small></span></a>
+      <div class="foot-bottom">
+        <span>Material didaktikoa · Espainiako Historia · 2. Batxilergoa</span>
+        <span>© <span data-year>2026</span> · Luken San Sebastián Alkorta · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    document.querySelectorAll('[data-copy]').forEach((button) => {
+      button.addEventListener('click', async () => {
+        const target = document.getElementById(button.dataset.copy);
+        if (!target) return;
+        const original = button.textContent;
+        try {
+          await navigator.clipboard.writeText(target.innerText);
+          button.textContent = 'Kopiatuta';
+        } catch {
+          button.textContent = 'Ezin izan da kopiatu';
+        }
+        window.setTimeout(() => { button.textContent = original; }, 1600);
+      });
+    });
+  </script>
+</body>
+</html>
