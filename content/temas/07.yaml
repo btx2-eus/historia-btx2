@@ -6,6 +6,13 @@ meta:
   pdf: 07-frankismoa-ii.pdf
   iturri_pdf: 07-iturri.pdf
   connections_url: 07-frankismoa-ii-konexioak.html
+  usap:
+    kendua: "g7-2"
+    epigrafeak:
+      - { num: "7.1", title: "Garapen ekonomikoa eta gizarte-eraldaketak", target: g7-1 }
+      - { num: "7.2", title: "Erregimenaren finkapenari emandako erantzuna: babesa, indiferentzia eta oposizioa", target: g7-3 }
+      - { num: "7.3", title: "Frankismo berantiarraren krisia", target: g7-4 }
+      - { num: "7.4", title: "Errepresio politiko eta soziala", target: g7-5 }
 intro: |-
   Frankismoaren bigarren etapa (1959–1975) <span class="term" data-def="1959ko Egonkortze Planaren ondoren etorritako hazkunde ekonomiko azkarra: industrializazioa, atzerriko kapitala, turismoa eta kontsumoaren hedapena. Autoritarioa eta desorekatua izan zen.">desarrollismoaren</span> garaia izan zen: 1959ko Egonkortze Planaren ondoren, Espainia nazioarteko kapitalismoan txertatu zen, eta «mirari ekonomikoa» gertatu zen. Baina <strong>modernizazio ekonomikoa ez zen modernizazio politikoarekin etorri</strong>: frankismoak garapena legitimazio gisa erabili zuen, baina askatasunak ukatu eta errepresioz mantendu zuen ordena. <div class="callout">«Hazkundea bai, askatasunik gabe» — frankismoaren bigarren etaparen paradoxa nagusia.</div>
 timeline:

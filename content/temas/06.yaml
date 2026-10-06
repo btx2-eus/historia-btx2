@@ -6,6 +6,13 @@ meta:
   pdf: 06-frankismoa-i.pdf
   iturri_pdf: 06-iturri.pdf
   connections_url: 06-frankismoa-i-konexioak.html
+  usap:
+    kendua: "g6-4"
+    epigrafeak:
+      - { num: "6.1", title: "Francoren erregimenaren oinarri instituzional eta ideologikoak", target: g6-1 }
+      - { num: "6.2", title: "Gerraosteko gizartea (garaileak eta garaituak) eta gerraosteko errepresio politikoa", target: g6-2 }
+      - { num: "6.3", title: "Autarkia ekonomikoa. Gosearen eta eskasiaren hedapena", target: g6-3 }
+      - { num: "6.4", title: "Nazioarteko politika: isolamendutik integraziora", target: g6-5 }
 
 intro: |-
   1939ko apirilaren 1ean Gerra Zibila amaitu zenean, ez zen «normaltasuna» itzuli. Garaileek Estatu osoa bereganatu eta garaituen aurka gerra ideologiko, juridiko eta sozial bat abiatu zuten. <strong>Frankismoa</strong> ez zen «gerra ondorengo gobernu gogor» bat soilik; garaipen militarrean oinarritutako <span class="term" data-def="Boterea pertsona edo talde baten esku kontzentratzen duen sistema, askatasun politikoak eta oposizioa ezabatuz. Frankismoa pertsonalista, militarra, nazional-katolikoa, zentralista eta antikomunista izan zen.">diktadura</span> bat zen, gizartea «garbitu» eta berrantolatu nahi zuena Francoren aginte pertsonalistaren arabera.

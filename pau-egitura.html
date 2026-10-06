@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PAU Historia azterketaren egitura · Historia BTX2</title>
-  <meta name="description" content="2026–2027ko PAU/USaP Espainiako Historia azterketaren egitura: A, B eta C atalak, puntuazioa, hautazkotasuna eta zuzenketa-irizpideak." />
+  <title>USaP Historia azterketaren egitura · 2026–2027 · Historia BTX2</title>
+  <meta name="description" content="USaP 2027 Espainiako Historia azterketa, behin betiko dokumentuaren arabera: A, B eta C atalak, puntuazioa, zuzenketa-irizpide ofizialak, denbora, proba-eredua eta 2026–2027ko gai-zerrenda." />
   <link rel="canonical" href="https://btx2-eus.github.io/historia-btx2/pau-egitura.html" />
   <meta property="og:locale" content="eu_ES" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Historia BTX2" />
-  <meta property="og:title" content="PAU Historia azterketaren egitura · Historia BTX2" />
-  <meta property="og:description" content="2026–2027ko PAU/USaP Espainiako Historia azterketaren egitura: A, B eta C atalak, puntuazioa, hautazkotasuna eta zuzenketa-irizpideak." />
+  <meta property="og:title" content="USaP Historia azterketaren egitura · 2026–2027" />
+  <meta property="og:description" content="A, B eta C atalak, zuzenketa-irizpide ofizialak, proba-eredua eta 2026–2027ko gai-zerrenda, behin betiko dokumentuaren arabera." />
   <meta property="og:url" content="https://btx2-eus.github.io/historia-btx2/pau-egitura.html" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="PAU Historia azterketaren egitura · Historia BTX2" />
-  <meta name="twitter:description" content="2026–2027ko PAU/USaP Espainiako Historia azterketaren egitura: A, B eta C atalak, puntuazioa, hautazkotasuna eta zuzenketa-irizpideak." />
+  <meta name="twitter:title" content="USaP Historia azterketaren egitura · 2026–2027" />
+  <meta name="twitter:description" content="A, B eta C atalak, zuzenketa-irizpide ofizialak, proba-eredua eta 2026–2027ko gai-zerrenda, behin betiko dokumentuaren arabera." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=12" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d9488'/%3E%3Ctext x='50' y='70' font-size='44' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EPAU%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=13" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d9488'/%3E%3Ctext x='50' y='66' font-size='34' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EUSaP%3C/text%3E%3C/svg%3E" />
   <style>
     :root { --ca: #0d9488; --cb: #2563eb; --accent: #0d9488; --accent-2: #2563eb; --accent-ink: #115e59; --accent-tint: #ccfbf1; }
 
@@ -36,7 +36,11 @@
     .pau-hero .container { position: relative; z-index: 1; }
     .pau-hero .crumbs { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; font-size: .85rem; color: rgba(255,255,255,.85); margin-bottom: .8rem; }
     .pau-hero h1 { font-size: clamp(2rem, 5.2vw, 3.2rem); margin-bottom: .8rem; max-width: 22ch; overflow-wrap: anywhere; }
-    .pau-hero p.lead { font-size: clamp(1.02rem, 2vw, 1.2rem); max-width: 62ch; color: rgba(255,255,255,.92); }
+    .pau-hero p.lead { font-size: clamp(1.02rem, 2vw, 1.2rem); max-width: 64ch; color: rgba(255,255,255,.92); }
+    .pau-hero .hero-actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.4rem; }
+    .pau-hero .btn-ghost { border: 1.5px solid rgba(255,255,255,.5); background: rgba(255,255,255,.14); color: #fff; }
+    .pau-hero .btn-light { background: #fff; color: #115e59; }
+    .doc-chip { display: inline-flex; gap: .5rem; align-items: center; margin-bottom: 1rem; padding: .35rem .85rem; border-radius: 999px; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.3); font-size: .82rem; font-weight: 700; letter-spacing: .03em; }
 
     .pau-update {
       display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1rem;
@@ -49,8 +53,11 @@
       background: linear-gradient(135deg, #0d9488, #2563eb); color: #fff;
       font-family: var(--font-display); font-weight: 700; line-height: 1.05; text-align: center;
     }
-    .pau-update h2 { font-size: 1.45rem; margin-bottom: .55rem; color: var(--accent-ink); }
-    .pau-update ul { display: grid; gap: .35rem; color: var(--ink-soft); margin: 0; }
+    .pau-update h2 { font-size: 1.45rem; margin-bottom: .2rem; color: var(--accent-ink); }
+    .pau-update .upd-sub { color: var(--muted); font-size: .92rem; margin-bottom: .8rem; }
+    .upd-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: .8rem 1.4rem; }
+    .upd-grid h3 { font-size: .95rem; text-transform: uppercase; letter-spacing: .05em; color: var(--accent-ink); margin: 0 0 .3rem; }
+    .upd-grid ul { display: grid; gap: .3rem; color: var(--ink-soft); margin: 0; padding-left: 1.1rem; font-size: .95rem; }
 
     .pau-sections { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.4rem; align-items: start; margin: 1.6rem 0 1.2rem; }
     .pau-card {
@@ -78,6 +85,7 @@
     .pau-card ul { margin: .6rem 0 1.1rem 0; padding-left: 1.1rem; color: var(--ink-soft); }
     .pau-card ul li { margin-bottom: .35rem; line-height: 1.5; }
     .pau-card .pc-note { font-size: .9rem; color: var(--muted); margin-top: .7rem; padding-top: .8rem; border-top: 1px dashed var(--line); }
+    .new-pill { display: inline-block; margin-left: .3rem; font-size: .66rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; color: #92400e; background: #fef3c7; border-radius: 999px; padding: .05rem .45rem; vertical-align: middle; }
 
     .score-list {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -101,46 +109,111 @@
     .pau-ortografia .txt { color: #92400e; }
     .pau-ortografia strong { color: #78350f; }
 
-    .pau-evhead { text-align: center; margin: 0 auto 1.6rem; max-width: 740px; }
-    .pau-evhead h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); margin-bottom: .9rem; }
-    .pau-evhead p { color: var(--muted); }
+    /* Denbora eta luzera */
+    .time-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.4rem; align-items: start; }
+    .time-panel { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 1.3rem 1.5rem; }
+    .time-panel h3 { font-size: 1.15rem; margin-bottom: .8rem; }
+    .time-bar { display: flex; height: 46px; border-radius: 12px; overflow: hidden; margin-bottom: .8rem; font-family: var(--font-display); font-weight: 700; color: #fff; font-size: .9rem; }
+    .time-bar span { display: grid; place-items: center; min-width: 0; }
+    .time-legend { display: grid; gap: .35rem; color: var(--ink-soft); font-size: .95rem; list-style: none; padding: 0; margin: 0; }
+    .time-legend b { font-family: var(--font-display); color: var(--ink); }
 
-    .crit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.3rem; margin: 1.4rem 0 2rem; }
-    .crit {
-      background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
-      padding: 1.4rem 1.5rem; box-shadow: var(--shadow-sm);
-      transition: transform .2s, box-shadow .2s, border-color .2s;
-      position: relative; overflow: hidden;
-    }
-    .crit:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-    .crit::before {
-      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-      background: linear-gradient(90deg, var(--crit-a), var(--crit-b));
-    }
-    .crit-head { display: flex; gap: .9rem; align-items: center; margin-bottom: .8rem; }
+    /* Taulak */
+    .tbl-wrap { overflow-x: auto; margin: .8rem 0 1rem; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+    table.rub { width: 100%; border-collapse: collapse; font-size: .92rem; }
+    table.rub th, table.rub td { padding: .6rem .75rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+    table.rub thead th { background: var(--bg-soft); font-family: var(--font-display); color: var(--ink); white-space: nowrap; }
+    table.rub tr:last-child td { border-bottom: 0; }
+    table.rub td.pt, table.rub th.pt { white-space: nowrap; font-family: var(--font-display); font-weight: 700; color: var(--accent-ink); }
+    table.rub .lvl { font-family: var(--font-display); font-weight: 700; white-space: nowrap; }
+
+    .rubric-block { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 1.4rem 1.5rem; margin-bottom: 1.4rem; position: relative; overflow: hidden; }
+    .rubric-block::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--crit-a), var(--crit-b)); }
+    .rubric-block > header { display: flex; gap: .9rem; align-items: center; margin-bottom: .6rem; }
     .crit-num {
       width: 46px; height: 46px; border-radius: 50%;
       display: grid; place-items: center; color: #fff; font-family: var(--font-display);
       font-weight: 700; font-size: .95rem; flex: 0 0 auto;
       background: linear-gradient(135deg, var(--crit-a), var(--crit-b));
     }
-    .crit h3 { font-size: 1.15rem; margin: 0; color: var(--crit-a); }
-    .crit ul { margin: 0; color: var(--ink-soft); }
-    .crit li { margin-bottom: .45rem; line-height: 1.5; }
-    .crit .crit-icon { position: absolute; top: 1rem; right: 1rem; font-size: 1.6rem; opacity: .18; }
+    .rubric-block h3 { font-size: 1.2rem; margin: 0; color: var(--crit-a); }
+    .rubric-block h4 { font-size: 1rem; margin: 1.1rem 0 .3rem; color: var(--ink); }
+    .rubric-block p, .rubric-block li { color: var(--ink-soft); }
+    .rubric-block ul { padding-left: 1.1rem; margin: .3rem 0 .6rem; }
+    .rubric-block li { margin-bottom: .3rem; line-height: 1.5; }
+    .rule { margin: .7rem 0; padding: .7rem .9rem; border-radius: 12px; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-size: .94rem; }
+    .rule strong { color: #1e3a8a; }
+    .rule.warn { background: #fffbeb; border-color: #fde68a; color: #78350f; }
+    .rule.warn strong { color: #78350f; }
     .crit-a1 { --crit-a: #0d9488; --crit-b: #14b8a6; }
     .crit-a2 { --crit-a: #0f766e; --crit-b: #10b981; }
     .crit-b1 { --crit-a: #2563eb; --crit-b: #3b82f6; }
     .crit-b2 { --crit-a: #1d4ed8; --crit-b: #2563eb; }
     .crit-b3 { --crit-a: #4338ca; --crit-b: #6366f1; }
     .crit-c { --crit-a: #15803d; --crit-b: #059669; }
+    .crit-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .4rem 1.4rem; }
+    .examples { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .7rem; margin-top: .6rem; }
+    .examples div { border: 1px solid var(--line); border-radius: 12px; padding: .7rem .85rem; background: var(--bg-soft); font-size: .9rem; color: var(--ink-soft); }
+    .examples b { display: block; font-family: var(--font-display); color: var(--ink); margin-bottom: .2rem; }
+    .seq { font-family: var(--font-display); letter-spacing: .08em; }
+
+    .pau-evhead { text-align: center; margin: 0 auto 1.6rem; max-width: 760px; }
+    .pau-evhead h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); margin-bottom: .9rem; }
+    .pau-evhead p { color: var(--muted); }
+
+    /* Proba-eredua */
+    .model-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.2rem; }
+    .model-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 1.3rem 1.4rem; }
+    .model-card h3 { font-size: 1.1rem; margin-bottom: .5rem; }
+    .model-card .src { font-size: .88rem; color: var(--muted); margin-bottom: .5rem; }
+    .model-card ol, .model-card ul { padding-left: 1.2rem; color: var(--ink-soft); margin: .2rem 0 .6rem; }
+    .model-card li { margin-bottom: .35rem; line-height: 1.45; }
+    .chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: .4rem 0 .6rem; list-style: none; padding: 0; }
+    .chips li { background: var(--accent-tint); color: var(--accent-ink); border-radius: 999px; padding: .2rem .7rem; font-weight: 600; font-size: .88rem; margin: 0; }
+    details.sol { margin-top: .4rem; border-top: 1px dashed var(--line); padding-top: .5rem; }
+    details.sol summary { cursor: pointer; font-weight: 700; color: var(--accent-ink); }
+    details.sol ol { margin-top: .4rem; }
+
+    /* Gai-zerrenda */
+    .gz-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+    .gz-gaia { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.2rem; box-shadow: var(--shadow-sm); position: relative; overflow: hidden; }
+    .gz-gaia::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 4px; background: linear-gradient(90deg, var(--ca), var(--cb)); }
+    .gz-gaia h3 { font-size: 1rem; line-height: 1.3; margin: .2rem 0 .6rem; }
+    .gz-gaia h3 a:hover { color: var(--ca); }
+    .gz-n { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 8px; color: #fff; font-size: .82rem; background: linear-gradient(135deg, var(--ca), var(--cb)); margin-right: .2rem; vertical-align: 2px; }
+    .gz-y { color: var(--muted); font-weight: 600; font-size: .85rem; }
+    .gz-gaia ol { list-style: none; padding: 0; margin: 0; display: grid; gap: .35rem; }
+    .gz-gaia li { color: var(--ink-soft); font-size: .93rem; line-height: 1.4; }
+    .gz-gaia li a { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
+    .gz-gaia li a:hover { color: var(--ca); }
+    .gz-num { display: inline-block; min-width: 2.3rem; font-family: var(--font-display); font-weight: 700; font-size: .8rem; color: var(--ca); }
+    .gz-tag { margin-left: .3rem; font-size: .66rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: #065f46; background: #d1fae5; border-radius: 999px; padding: .1rem .45rem; vertical-align: 2px; white-space: nowrap; }
+    .gz-tag-off { color: #92400e; background: #fef3c7; }
+    .gz-off { background: #fffdf5; border-style: dashed; }
+    .gz-off li { color: var(--muted); }
+    .kendu-box { margin-top: 1.4rem; background: #fffbeb; border: 1px solid #fde68a; border-radius: var(--radius); padding: 1.2rem 1.4rem; }
+    .kendu-box h3 { font-size: 1.1rem; color: #92400e; margin-bottom: .4rem; }
+    .kendu-box p { color: #78350f; margin-bottom: .6rem; }
+    .kendu-box ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .35rem 1.2rem; }
+    .kendu-box li a { color: #78350f; text-decoration: underline; text-underline-offset: 3px; }
+    .kendu-box .gz-num { color: #92400e; }
+
+    /* Baliabideak */
+    .res-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .9rem; }
+    .res { display: block; background: var(--bg-card); border: 1px solid var(--line); border-radius: 14px; padding: .9rem 1rem; transition: transform .18s, box-shadow .18s; }
+    a.res:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+    .res strong { display: block; font-family: var(--font-display); color: var(--ink); margin-bottom: .15rem; }
+    .res span { color: var(--muted); font-size: .9rem; }
+
+    .doc-source { margin-top: 2rem; padding: 1rem 1.2rem; border-radius: var(--radius); background: var(--bg-soft); border: 1px solid var(--line); color: var(--muted); font-size: .92rem; }
 
     @media (max-width: 720px) {
-      .pau-sections, .crit-grid { grid-template-columns: 1fr; }
+      .pau-sections, .time-grid, .model-grid { grid-template-columns: 1fr; }
       .pau-update { grid-template-columns: 1fr; }
       .pau-card .pc-sub { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: start; }
-      .pau-card h3, .crit h3, .pau-update h2 { overflow-wrap: anywhere; }
+      .pau-card h3, .rubric-block h3, .pau-update h2 { overflow-wrap: anywhere; }
       .score-list { grid-template-columns: 1fr; }
+      .time-bar { font-size: .78rem; }
     }
   </style>
 </head>
@@ -153,9 +226,10 @@
       <a class="brand" href="index.html"><span class="logo">H</span><span>Historia BTX2<small>Espainiako Historia · 2. Batxilergoa</small></span></a>
       <button class="nav-toggle" aria-label="Menua" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="nav-links">
-        <a href="index.html#denbora-lerroa">Denbora-lerroa</a>
-        <a href="index.html#gaiak">Gaiak</a>
-        <a href="index.html#tresnak">Tresnak</a>
+        <a href="#atalak">Atalak</a>
+        <a href="#irizpideak">Irizpideak</a>
+        <a href="#eredua">Proba-eredua</a>
+        <a href="#gai-zerrenda">Gai-zerrenda</a>
         <a class="cta" href="index.html">← Hasiera</a>
       </nav>
     </div>
@@ -163,24 +237,50 @@
 
   <section class="pau-hero" id="main" tabindex="-1">
     <div class="container">
-      <div class="crumbs"><a href="index.html">Hasiera</a> <span>›</span> <a href="index.html#tresnak">Tresnak</a> <span>›</span> <span>PAU egitura</span></div>
-      <h1>PAU Historia azterketaren egitura</h1>
-      <p class="lead">Azterketa hiru ataletan banatzen da eta guztira 10 puntu lor daitezke. A atala derrigorrezkoa da; B atalean bi iturritatik bat aukeratu behar da; eta C atalean lau aukeretatik bat. Ortografia-akatsengatik gehienez puntu 1 kendu ahal izango da.</p>
+      <div class="crumbs"><a href="index.html">Hasiera</a> <span>›</span> <a href="index.html#tresnak">Tresnak</a> <span>›</span> <span>USaP egitura</span></div>
+      <span class="doc-chip">✔ Behin betiko dokumentua · 2026ko iraila</span>
+      <h1>USaP Historia azterketaren egitura</h1>
+      <p class="lead">Unibertsitatera Sartzeko Proba (USaP, lehengo PAU/EBAU) 2027: hiru atal, 10 puntu eta 90 minutu. A atala derrigorrezkoa da; B atalean bi iturritatik bat aukeratzen da; eta C atalean lau epigrafetatik bat. Ortografia-akatsengatik gehienez puntu 1 kendu daiteke.</p>
+      <div class="hero-actions">
+        <a class="btn btn-light" href="#gai-zerrenda">Gai-zerrenda 2026–27</a>
+        <a class="btn btn-ghost" href="#eredua">Proba-eredua</a>
+      </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="atalak">
     <div class="container">
       <div class="pau-update reveal">
         <div class="update-mark">26<br>27</div>
         <div>
-          <h2>2026–2027ko berrikuntzak</h2>
-          <ul>
-            <li>1etik 9ra bitarteko gaiak ebaluatuko dira.</li>
-            <li>9. gaia aurten sartuko da lehen aldiz.</li>
-            <li>Hamar epigrafe kendu dira gaitegitik.</li>
-            <li>10. gaia 2028–2029 ikasturtean sartuko da.</li>
-          </ul>
+          <h2>2026–2027ko doikuntzak</h2>
+          <p class="upd-sub">Behin betiko dokumentuak (Bilbo, 2026-09-25) irailaren 16ko bileraren ondoren hartutako erabakiak jasotzen ditu.</p>
+          <div class="upd-grid">
+            <div>
+              <h3>A atala</h3>
+              <ul>
+                <li>A1: gutxieneko luzera <strong>90 hitzera</strong> jaitsi da → <strong>90–130 hitz</strong>, ±10 hitzeko tolerantziarekin.</li>
+                <li>A1 eta A2ko errubrikak findu eta zehaztu dira.</li>
+                <li>A2: errege-erreginen ordinalak <strong>letraz</strong> idatziko dira (adib. <em>Fernando zazpigarrena</em>).</li>
+              </ul>
+            </div>
+            <div>
+              <h3>B atala</h3>
+              <ul>
+                <li>Iturri motak mugatuta: <strong>testuak, argazkiak, kartelak, mapak eta margolanak</strong>. Grafikoak eta taulak hurrengo ikasturteetan.</li>
+                <li>Galderak <strong>indarrean dauden epigrafeei</strong> lotuta egongo dira.</li>
+                <li>B1 berria (identifikatu eta ezaugarritu); B2 <strong>bideratua</strong>; B3 gai zehatza.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>C atala eta gai-zerrenda</h3>
+              <ul>
+                <li>Epigrafe bakoitzarekin batera <strong>gaiaren izenburua</strong> agertuko da.</li>
+                <li><strong>1.–9. gaiak</strong> ebaluatuko dira; 9. gaia lehen aldiz.</li>
+                <li><strong>Hamar epigrafe kendu</strong> dira. 10. gaia 2028–2029an sartuko da.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -198,81 +298,72 @@
           <div class="pc-body">
             <div class="pc-sub">
               <span class="pc-num">A1</span>
-              <h3>A1. Testu historiko koherentea — 2 puntu</h3>
+              <h3>Testu historiko koherentea — 2 puntu</h3>
             </div>
             <ul>
-              <li>Sei kontzeptu emango dira eta ikasleak lau erabili beharko ditu.</li>
-              <li>100 eta 130 hitz arteko testu historiko koherentea idatzi beharko du.</li>
-              <li>Kontzeptuak prozesu, arazo edo gai historiko berarekin lotuta egongo dira.</li>
-              <li>Kontzeptuak azalpen bakarrean integratu behar dira; ez dira banaka definitu edo zerrendatu behar.</li>
-              <li>Gertaeren, prozesuen, kausen, ondorioen eta aldaketa historikoen arteko loturak baloratuko dira.</li>
-              <li>Geziek edo konektore grafikoek lotura logiko edo kausalak iradokiko dituzte.</li>
+              <li>Sei kontzeptu emango dira eta horietatik <strong>lau</strong> erabili behar dira.</li>
+              <li><strong>90 eta 130 hitz</strong> arteko testu historiko koherentea (±10 hitzeko tolerantzia).</li>
+              <li>Erabilitako lau kontzeptuak testuan <strong>azpimarratu</strong> behar dira.</li>
+              <li>Kontzeptuak epigrafe desberdinetakoak izan daitezke, baina prozesu, arazo edo fenomeno komun baten inguruan lotu daitezke.</li>
+              <li>Ez da nahikoa kontzeptuak banaka definitzea edo zerrendatzea: bakoitzak funtzio historiko argia izan behar du arrazoibidean.</li>
+              <li>Loturak baloratzen dira: kausa-ondorioa, aurrekaria-ondorioa, jarraitutasuna-aldaketa, antzekotasuna-desberdintasuna, arazoa-erantzuna…</li>
+              <li>Lokailuak lagungarriak dira: <em>horren ondorioz, hala ere, horregatik, aldi berean, aitzitik…</em></li>
             </ul>
 
             <div class="pc-sub">
               <span class="pc-num">A2</span>
-              <h3>A2. Antolamendu kronologikoa — 1 puntu</h3>
+              <h3>Antolamendu kronologikoa — 1 puntu</h3>
             </div>
             <ul>
-              <li>Bost gertaera, prozesu historiko edo pertsonaia emango dira.</li>
-              <li>Zaharrenetik berrienera ordenatu behar dira.</li>
-              <li>Ez da data zehatzik idatzi behar.</li>
-              <li>Errege-erreginen ordinalak saihestuko dira.</li>
-            </ul>
-            <ul class="score-list" aria-label="A2 puntuazio-taula">
-              <li><strong>5 posizio zuzen:</strong> 1 puntu.</li>
-              <li><strong>4 posizio zuzen:</strong> 0,75 puntu.</li>
-              <li><strong>3 posizio zuzen:</strong> 0,50 puntu.</li>
-              <li><strong>2 posizio zuzen:</strong> 0,25 puntu.</li>
-              <li><strong>0–1 posizio zuzen:</strong> 0 puntu.</li>
+              <li>Bost gertaera, prozesu historiko edo pertsonaia, <strong>zaharrenetik berrienera</strong> ordenatzeko.</li>
+              <li>Ez da datarik idatzi behar: ordenatu besterik ez.</li>
+              <li>Errege-erreginen ordinalak <strong>letraz</strong> agertuko dira (dislexia duten ikasleei irakurketa errazteko).</li>
+              <li>Bi irizpiderekin zuzentzen da eta <strong>emaitzarik onena</strong> ematen zaio ikasleari (ikus <a href="#irizpideak">irizpideak</a>).</li>
             </ul>
           </div>
         </article>
 
         <article class="pau-card b reveal" data-delay="1">
           <header class="pc-head">
-            <h2>B atala · 4 puntu · Bi iturritatik bat aukeratu</h2>
+            <h2>B atala · 4 puntu · Bi iturritatik bat</h2>
           </header>
           <div class="pc-body">
             <ul>
-              <li>Bi iturri historiko eskainiko dira eta ikasleak bat aukeratu beharko du.</li>
-              <li>Aukeratutako iturriari buruzko hiru galderari erantzun beharko dio.</li>
-              <li>Iturriek identifikazioa errazteko informazio osagarria izango dute.</li>
-              <li>Testuak, argazkiak, kartelak, grafikoak, margolanak, mapak edo bestelako iturriak erabil daitezke.</li>
+              <li>Bi iturri eskainiko dira; bat aukeratu eta <strong>hiru galderari</strong> erantzun.</li>
+              <li>Iturriek identifikazioa eta kokapena errazteko informazio osagarria izango dute.</li>
+              <li><strong>2026–27an:</strong> testuak, argazkiak, kartelak, mapak eta margolanak. Grafikoak eta taulak ez dira oraindik agertuko.</li>
+              <li>Galderak indarrean dauden epigrafeei lotuta egongo dira; kendutako epigrafeen edukia testuinguru gisa soilik landu.</li>
             </ul>
 
             <div class="pc-sub">
               <span class="pc-num">B1</span>
-              <h3>B1. Iturria identifikatzea eta ezaugarritzea — 1 puntu</h3>
+              <h3>Iturria identifikatu eta ezaugarritu — 1 puntu <span class="new-pill">Berria</span></h3>
             </div>
             <ul>
-              <li>Lehen edo bigarren mailako iturria den.</li>
-              <li>Formatua edo izaera.</li>
-              <li>Egilea, protagonista edo erakunde arduraduna.</li>
-              <li>Kokapen kronologikoa.</li>
-              <li>Eduki edo mezu nagusia.</li>
-              <li>Helburua, hartzailea eta esanahi historikoa, iturriak horretarako aukera ematen duenean.</li>
+              <li><strong>Iturri mota:</strong> lehen ala bigarren mailakoa, eta dokumentu mota (legea, dekretua, manifestua, diskurtsoa, prentsa-artikulua, argazkia, kartela, mapa, margolana…).</li>
+              <li><strong>Egilea edo protagonista:</strong> nork sortu zuen edo nor agertzen den.</li>
+              <li><strong>Edukia edo mezua:</strong> ideia, aldarrikapen edo mezu nagusia.</li>
+              <li><strong>Esanahi historikoa:</strong> zer gertakari edo prozesurekin lotzen den eta zer garrantzi duen.</li>
             </ul>
 
             <div class="pc-sub">
               <span class="pc-num">B2</span>
-              <h3>B2. Testuinguru historiko zehatza — 1,5 puntu</h3>
+              <h3>Testuinguru historiko zehatza — 1,5 puntu</h3>
             </div>
             <ul>
-              <li>Iturria bere une historiko zehatzean kokatu behar da.</li>
-              <li>Iturriarekin zuzenean lotutako inguruabarrak, gertaerak, prozesuak eta eragileak azaldu behar dira.</li>
-              <li>Ez da aldi edo gai historiko osoa garatu behar.</li>
-              <li>Ez da nahikoa iturria deskribatzea.</li>
+              <li>Galdera <strong>bideratua</strong> da: enuntziatuak berak zehazten du zer alderdi azaldu behar diren.</li>
+              <li>Iturria bere une historiko zehatzean kokatu eta zuzenean lotutako inguruabar, gertaera, prozesu eta eragileak azaldu.</li>
+              <li>Ez da gai edo aldi osoa garatu behar: galderan zehaztutako elementuak, iturriarekin lotuta.</li>
             </ul>
 
             <div class="pc-sub">
               <span class="pc-num">B3</span>
-              <h3>B3. Iturriari lotutako gai espezifikoa — 1,5 puntu</h3>
+              <h3>Iturriari lotutako gai espezifikoa — 1,5 puntu</h3>
             </div>
             <ul>
-              <li>Iturriari lotutako alderdi zehatz bat garatu behar da.</li>
-              <li>Kausak, ondorioak, ezaugarriak, eragileen eginkizuna, neurriak, bilakaera, konparazioak, eragina edo esanahi historikoa eska daitezke.</li>
-              <li>B2ko testuingurua errepikatzea saihestu behar da.</li>
+              <li>Iturriari lotutako alderdi zehatz bat aztertu, ezagutza historiko zabalagoekin.</li>
+              <li>Kausak, ondorioak, ezaugarriak, eragileen eginkizuna, neurriak, helburuak, bilakaera, konparazioak, eragina edo garrantzia eska daitezke.</li>
+              <li>Ez deskribatu iturria eta ez errepikatu B2ko testuinguru hurbila.</li>
             </ul>
           </div>
         </article>
@@ -284,14 +375,15 @@
           <div class="pc-body">
             <div class="pc-sub">
               <span class="pc-num">C</span>
-              <h3>Epigrafearen garapena</h3>
+              <h3>Garapen-galdera</h3>
             </div>
             <ul>
-              <li>Lau epigrafe eskainiko dira eta ikasleak bat aukeratu beharko du.</li>
-              <li>Gai-zerrendako epigrafea modu arrazoituan eta kronologikoki ordenatuan garatu behar da.</li>
-              <li>Epigrafea dagokion gai historikoarekin lotu behar da.</li>
-              <li>Kausak, garapena, ondorioak, eragileak eta kontzeptu historiko garrantzitsuak erlazionatzea baloratuko da.</li>
+              <li>Lau epigrafe eskainiko dira eta bat aukeratu behar da.</li>
+              <li>Epigrafe bakoitzarekin batera <strong>dagokion gaiaren izenburua</strong> agertuko da.</li>
+              <li>Epigrafea modu <strong>arrazoituan eta kronologikoki ordenatuan</strong> garatu, gaiarekin lotuz.</li>
+              <li>Kausak, prozesuak, ondorioak eta eragileak erlazionatzea eta terminologia egokia baloratzen dira.</li>
             </ul>
+            <p class="pc-note">Epigrafe ofizialak: <a href="#gai-zerrenda">2026–2027ko gai-zerrenda</a>. Gai-orri bakoitzaren hasieran ere badituzu.</p>
           </div>
         </article>
       </div>
@@ -299,106 +391,461 @@
       <div class="pau-ortografia reveal">
         <div class="icon">✏️</div>
         <div class="txt">
-          <strong>Ortografia:</strong> akats bakoitzeko 0,1 puntu kenduko da, gehienez puntu 1 arte. Errepikatutako akats bera behin bakarrik zenbatuko da.
+          <strong>Ortografia:</strong> akats bakoitzeko 0,1 puntu kenduko da, gehienez puntu 1 arte. Errepikatutako akats bera behin bakarrik zenbatuko da. Ez ahaztu kodea azterketako orri bakoitzean jartzea.
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section alt">
+  <section class="section alt" id="denbora">
+    <div class="container">
+      <div class="pau-evhead reveal">
+        <span class="kicker">Antolaketa</span>
+        <h2>Denbora eta luzera</h2>
+        <p>Proba 90 minutukoa da. Derrigorrezko luzera bakarra A1ena da; gainerakoak orientabideak dira eta B eta C ataletan ez dira hitzak zenbatuko.</p>
+      </div>
+      <div class="time-grid">
+        <div class="time-panel reveal">
+          <h3>Gomendatutako denbora-banaketa</h3>
+          <div class="time-bar" role="img" aria-label="A atala 15 minutu, B atala 35, C atala 35 eta berrikuspena 5">
+            <span style="flex:15;background:#0d9488">A · 15′</span>
+            <span style="flex:35;background:#2563eb">B · 35′</span>
+            <span style="flex:35;background:#059669">C · 35′</span>
+            <span style="flex:5;background:#94a3b8">5′</span>
+          </div>
+          <ul class="time-legend">
+            <li><b>A atala:</b> 15 minutu inguru.</li>
+            <li><b>B atala:</b> 35 minutu inguru.</li>
+            <li><b>C atala:</b> 35 minutu inguru.</li>
+            <li><b>Irakurri, planifikatu eta berrikusi:</b> 5 minutu inguru.</li>
+          </ul>
+        </div>
+        <div class="time-panel reveal" data-delay="1">
+          <h3>Erantzunen luzera</h3>
+          <div class="tbl-wrap">
+            <table class="rub">
+              <thead><tr><th>Ariketa</th><th>Luzera</th><th>Izaera</th></tr></thead>
+              <tbody>
+                <tr><td>A1</td><td class="pt">90–130 hitz</td><td>Derrigorrezkoa (±10 tolerantzia)</td></tr>
+                <tr><td>B1</td><td class="pt">80–120 hitz inguru</td><td>Orientagarria</td></tr>
+                <tr><td>B2</td><td class="pt">140–190 hitz inguru</td><td>Orientagarria</td></tr>
+                <tr><td>B3</td><td class="pt">140–190 hitz inguru</td><td>Orientagarria</td></tr>
+                <tr><td>C</td><td class="pt">250–350 hitz inguru</td><td>Orientagarria</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="font-size:.92rem">Erantzun laburrago batek ere gehieneko puntuazioa lor dezake, galderari zehaztasunez erantzuten badio. Luzeagoak ez du berez gehiago ematen, informazioa errepikatzen badu edo galderatik aldentzen bada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="irizpideak">
     <div class="container">
       <div class="pau-evhead reveal">
         <span class="kicker">Zuzenketa</span>
-        <h2>Zuzenketa-irizpideak</h2>
-        <p>Atal bakoitzak bere ebaluazio-irizpideak ditu. Ez dira B1, B2, B3 eta C modu orokor berberarekin zuzendu behar.</p>
+        <h2>Zuzenketa-irizpide ofizialak</h2>
+        <p>Ariketa bakoitzak bere errubrika du. Maila orokorra dimentsioen arabera erabakitzen da, eta gero puntuazio zehatza maila horren tartearen barruan finkatzen da.</p>
       </div>
 
-      <div class="crit-grid">
-        <article class="crit crit-a1 reveal">
-          <div class="crit-icon">✍️</div>
-          <div class="crit-head">
-            <span class="crit-num">A1</span>
-            <h3>Kontzeptuen lotura eta testu koherentea</h3>
-          </div>
+      <!-- A1 -->
+      <article class="rubric-block crit-a1 reveal">
+        <header><span class="crit-num">A1</span><h3>Testu historiko koherentea · 2 puntu</h3></header>
+        <p>Maila guztietan lau dimentsio berak ebaluatzen dira:</p>
+        <div class="crit-cols">
           <ul>
-            <li>Kontzeptuen erabilera egokia eta zehatza.</li>
-            <li>Kontzeptuen arteko lotura logiko edo kausalak.</li>
-            <li>Ezagutza historikoa eta azalpen bakarrean integratzeko gaitasuna.</li>
-            <li>Koherentzia, egitura eta 100–130 hitzeko luzapena.</li>
+            <li><strong>Kontzeptuen erabilera:</strong> zuzen erabilitako kontzeptuen zuzentasuna eta kopurua.</li>
+            <li><strong>Kontzeptuen arteko lotura:</strong> azalpen-konexioak (kausak, ondorioak, prozesuak), ez elkarren ondoan jartzea.</li>
           </ul>
-        </article>
-
-        <article class="crit crit-a2 reveal" data-delay="1">
-          <div class="crit-icon">🕰️</div>
-          <div class="crit-head">
-            <span class="crit-num">A2</span>
-            <h3>Antolamendu kronologikoa</h3>
-          </div>
-          <ul class="score-list" aria-label="A2 zuzenketa-irizpideak">
-            <li><strong>5 posizio zuzen:</strong> 1 puntu.</li>
-            <li><strong>4 posizio zuzen:</strong> 0,75 puntu.</li>
-            <li><strong>3 posizio zuzen:</strong> 0,50 puntu.</li>
-            <li><strong>2 posizio zuzen:</strong> 0,25 puntu.</li>
-            <li><strong>0–1 posizio zuzen:</strong> 0 puntu.</li>
-          </ul>
-        </article>
-
-        <article class="crit crit-b1 reveal" data-delay="2">
-          <div class="crit-icon">🔎</div>
-          <div class="crit-head">
-            <span class="crit-num">B1</span>
-            <h3>Iturriaren identifikazioa eta karakterizazioa</h3>
-          </div>
           <ul>
-            <li>Iturri mota, formatua edo izaera zuzen zehaztea.</li>
-            <li>Egilea, protagonista edo erakunde arduraduna identifikatzea.</li>
-            <li>Kokapen kronologikoa eta eduki edo mezu nagusia azaltzea.</li>
-            <li>Helburua, hartzailea eta esanahi historikoa baloratzea, posible denean.</li>
+            <li><strong>Koherentzia eta ezagutza historikoa:</strong> antolaketa, testuingurua eta definizioetatik haratagoko ezagutza.</li>
+            <li><strong>Luzera:</strong> 90–130 hitz, ±10 hitzeko tolerantziarekin, zuzeneko zigorrik gabe.</li>
           </ul>
-        </article>
+        </div>
+        <p class="rule"><strong>Arau erabakigarria:</strong> gutxienez bi kontzepturen arteko erlazio espliziturik ez badago, erantzunak ezin du <strong>2. maila</strong> gainditu, gainerako dimentsioak ondo bete arren.</p>
+        <div class="tbl-wrap">
+          <table class="rub">
+            <thead><tr><th>Maila</th><th class="pt">Puntuak</th><th>Deskribapena</th></tr></thead>
+            <tbody>
+              <tr><td class="lvl">4. maila</td><td class="pt">1,6–2</td><td>4 kontzeptu zuzen, esanahia azalpenean txertatuta; erlazio esplizitu eta ondo garatuak (prozesuak, kausak, ondorioak); ezagutza garrantzitsua eta testuinguruan kokatua, kontzeptuetatik haratago; argi idatzia eta luzerara egokitua.</td></tr>
+              <tr><td class="lvl">3. maila</td><td class="pt">1,01–1,59</td><td>Kontzeptu gehienak ondo, zehaztasun-falta txikiekin; gutxienez bi erlazio esplizitu (hiru kontzeptu lotuz), garapen desberdinarekin; egitura koherentea, desoreka edo hutsune batzuekin; luzera doitua.</td></tr>
+              <tr><td class="lvl">2. maila</td><td class="pt">0,5–1</td><td>Kontzeptu batzuk zuzen, akats nabarmenekin; erlazio espliziturik ez, edo hain azalekoak non zerrenda baten baliokide diren; koherentzia- edo antolaketa-arazoak; luzeraren mugetatik kanpo.</td></tr>
+              <tr><td class="lvl">1. maila</td><td class="pt">0,1–0,49</td><td>Kontzeptuen erabilera okerra edo oso mugatua; harremanik ez; testu zatikatua eta akats nabarmenak, baina garapen-zantzuren batekin.</td></tr>
+              <tr><td class="lvl">0 maila</td><td class="pt">0</td><td>Definizio isolatuak soilik, erlaziorik gabe; edo zeregina ez betetzea (2 kontzeptu baino gutxiago, testu zuria edo garrantzirik gabea).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h4>Puntuazioa maila barruan</h4>
+        <p>Lau dimentsioetatik zenbat betetzen diren erabat:</p>
+        <div class="tbl-wrap">
+          <table class="rub">
+            <thead><tr><th>Erabat betetako dimentsioak</th><th class="pt">4. maila</th><th class="pt">3. maila</th><th class="pt">2. maila</th><th class="pt">1. maila</th></tr></thead>
+            <tbody>
+              <tr><td>4tik 4</td><td class="pt">2</td><td class="pt">1,59</td><td class="pt">1</td><td class="pt">0,49</td></tr>
+              <tr><td>4tik 3</td><td class="pt">1,8</td><td class="pt">1,3</td><td class="pt">0,75</td><td class="pt">0,25</td></tr>
+              <tr><td>4tik 2 edo gutxiago (mailaren minimoa betez)</td><td class="pt">1,6</td><td class="pt">1,01</td><td class="pt">0,5</td><td class="pt">0,1</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
 
-        <article class="crit crit-b2 reveal">
-          <div class="crit-icon">🌐</div>
-          <div class="crit-head">
-            <span class="crit-num">B2</span>
-            <h3>Testuinguru historiko zehatza</h3>
-          </div>
+      <!-- A2 -->
+      <article class="rubric-block crit-a2 reveal">
+        <header><span class="crit-num">A2</span><h3>Antolamendu kronologikoa · 1 puntu</h3></header>
+        <p>Bi irizpide kalkulatzen dira eta <strong>altuena</strong> hartzen da (ez dira inoiz batzen). Bigarren irizpideak ezin dio ikasleari kalte egin: puntuazioa berdindu edo hobetu baino ez du egiten.</p>
+        <div class="crit-cols">
           <ul>
-            <li>Iturria bere une historiko zehatzean kokatzea.</li>
-            <li>Iturriarekin zuzenean lotutako gertaerak, prozesuak eta eragileak azaltzea.</li>
-            <li>Aldi historiko osoa kontatu gabe galderaren fokua mantentzea.</li>
-            <li>Deskribapen hutsetik harago testuinguru historikoa eraikitzea.</li>
+            <li><strong>A irizpidea · posizio zehatza:</strong> zenbat elementu dauden sekuentzia zuzeneko posizio berean.</li>
           </ul>
-        </article>
+          <ul>
+            <li><strong>B irizpidea · ordena erlatiboa:</strong> ordena zuzenean eta etenik gabe jarraian dauden elementuen katerik luzeena (bai ikaslearen erantzunean, bai sekuentzia zuzenean segidan).</li>
+          </ul>
+        </div>
+        <ul class="score-list" aria-label="A2 puntuazio-taula">
+          <li><strong>5 zuzen:</strong> 1 puntu</li>
+          <li><strong>4 zuzen:</strong> 0,75 puntu</li>
+          <li><strong>3 zuzen:</strong> 0,50 puntu</li>
+          <li><strong>2 zuzen:</strong> 0,25 puntu</li>
+          <li><strong>0–1 zuzen:</strong> 0 puntu</li>
+        </ul>
+        <h4>Ebatzitako adibideak (sekuentzia zuzena: <span class="seq">A–B–C–D–E</span>)</h4>
+        <div class="examples">
+          <div><b>Ikaslea: <span class="seq">B–A–C–D–E</span></b>A irizpidea: 3 (C, D, E). B irizpidea: 3. → <strong>0,50</strong></div>
+          <div><b>Ikaslea: <span class="seq">A–C–B–D–E</span></b>A irizpidea: 3 (A, D, E). B irizpidea: 2 (D, E). → A irizpidea: <strong>0,50</strong></div>
+          <div><b>Ikaslea: <span class="seq">E–A–B–C–D</span></b>A irizpidea: 0. B irizpidea: 4 (A–B–C–D kate jarraitua). → <strong>0,75</strong></div>
+        </div>
+        <p style="margin-top:.8rem">Entrenatzeko: <a href="jokoa.html"><strong>Ordenatu datak</strong> jokoa</a> (5 datako moduan USaPeko A2 puntuazioa ematen du).</p>
+      </article>
 
-        <article class="crit crit-b3 reveal" data-delay="1">
-          <div class="crit-icon">🧩</div>
-          <div class="crit-head">
-            <span class="crit-num">B3</span>
-            <h3>Eskatutako alderdi espezifikoa</h3>
-          </div>
-          <ul>
-            <li>Iturriari lotutako alderdi zehatza garatzea.</li>
-            <li>Kausak, ondorioak, ezaugarriak, eragileak, neurriak edo bilakaera erlazionatzea.</li>
-            <li>Konparazioak, eragina edo esanahi historikoa azaltzea, eskatzen denean.</li>
-            <li>B2ko testuingurua ez errepikatzea.</li>
-          </ul>
-        </article>
+      <!-- B1 -->
+      <article class="rubric-block crit-b1 reveal">
+        <header><span class="crit-num">B1</span><h3>Iturria identifikatu eta ezaugarritu · 1 puntu</h3></header>
+        <p>Lau dimentsio ebaluatzen dira. Terminologia historikoaren zehaztasuna zeharkako irizpidea da, puntuazioa mailaren barruan doitzeko.</p>
+        <div class="tbl-wrap">
+          <table class="rub">
+            <thead><tr><th>Dimentsioa</th><th>4. maila · Bikaina</th></tr></thead>
+            <tbody>
+              <tr><td class="lvl">D1 · Iturri mota</td><td>Lehen edo bigarren mailakoa den zuzen identifikatzen du, eta dokumentu mota zehaztasunez adierazten du.</td></tr>
+              <tr><td class="lvl">D2 · Egilea edo protagonista</td><td>Egilea, erakundea, antolakundea edo protagonista zuzen identifikatzen du, kasuan kasu.</td></tr>
+              <tr><td class="lvl">D3 · Edukia edo mezua</td><td>Iturriak transmititzen duen ideia, informazio, aldarrikapen edo mezu nagusia argi eta zehatz azaltzen du.</td></tr>
+              <tr><td class="lvl">D4 · Esanahi historikoa</td><td>Iturria zer gertakari, prozesu edo testuingururekin lotzen den identifikatzen du, eta haren garrantzia labur eta zehatz adierazten du.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rule"><strong>Esleipen-araua:</strong> maila lau dimentsioetatik gutxienez <strong>hirutan</strong> lortutakoa da. Bi mailaren artean berdin banatuta badago, <strong>baxuena</strong> esleitzen da.</p>
+        <p class="rule warn"><strong>D1 oharra:</strong> lehen/bigarren mailako izaera argi identifika daitekeenean baino ez da baloratuko. Ez da zigortuko izaera anbiguoa denean ez adieraztea.</p>
+        <div class="tbl-wrap">
+          <table class="rub">
+            <thead><tr><th>Maila</th><th class="pt">Tartea</th><th class="pt">Gutxienekoa</th><th class="pt">Sendoa</th><th class="pt">Goikoa</th></tr></thead>
+            <tbody>
+              <tr><td class="lvl">4 · Bikaina</td><td class="pt">0,75–1</td><td class="pt">0,75</td><td class="pt">0,90</td><td class="pt">1,00</td></tr>
+              <tr><td class="lvl">3 · Egokia</td><td class="pt">0,50–0,75</td><td class="pt">0,50</td><td class="pt">0,60</td><td class="pt">0,70</td></tr>
+              <tr><td class="lvl">2 · Mugatua</td><td class="pt">0,25–0,50</td><td class="pt">0,25</td><td class="pt">0,40</td><td class="pt">0,45</td></tr>
+              <tr><td class="lvl">1 · Ez-nahikoa</td><td class="pt">0–0,25</td><td class="pt">0</td><td class="pt">0,10</td><td class="pt">0,20</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
 
-        <article class="crit crit-c reveal" data-delay="2">
-          <div class="crit-icon">🎯</div>
-          <div class="crit-head">
-            <span class="crit-num">C</span>
-            <h3>Epigrafearen garapen osoa</h3>
-          </div>
-          <ul>
-            <li>Epigrafea modu oso, arrazoitu eta kronologikoki ordenatuan garatzea.</li>
-            <li>Kausa-ondorio loturak eta prozesuen bilakaera azaltzea.</li>
-            <li>Kontzeptu historiko garrantzitsuak zehaztasunez erabiltzea.</li>
-            <li>Egitura argia mantentzea: hasiera, garapena eta itxiera.</li>
+      <!-- B2 -->
+      <article class="rubric-block crit-b2 reveal">
+        <header><span class="crit-num">B2</span><h3>Iturriaren testuinguru historiko zehatza · 1,5 puntu</h3></header>
+        <div class="tbl-wrap">
+          <table class="rub">
+            <thead><tr><th>Dimentsioa</th><th>4. maila · Bikaina</th></tr></thead>
+            <tbody>
+              <tr><td class="lvl">D1 · Kokapen historikoa</td><td>Iturria bere une historiko zehatzean kokatzen du: data edo aldia eta berehalako esparru historikoa.</td></tr>
+              <tr><td class="lvl">D2 · Adierazitako alderdien garapena</td><td>Galderan zehaztutako alderdi historiko guztiak modu oso, zehatz eta orekatuan azaltzen ditu.</td></tr>
+              <tr><td class="lvl">D3 · Iturriarekiko lotura historikoa</td><td>Iturria dagozkion gertaera, prozesu, inguruabar eta eragileekin argi eta arrazoituta lotzen du.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rule"><strong>Esleipen-araua:</strong> maila hiru dimentsioen <strong>tarteko maila</strong> da (bi dimentsio maila berean badaude, hori; hirurak desberdinak badira, tartekoa). <strong>4. maila lortzeko, D2an gutxienez 3. maila</strong> behar da.</p>
+        <p class="rule warn"><strong>Mugaketa:</strong> ez da gai edo aldi osoa garatzea eskatzen. Adierazitako alderdietatik kanpoko informazioak, zuzena izanda ere, ez du eskatutakoaren gabezia konpentsatzen.</p>
+        <div class="tbl-wrap">
+          <table class="rub">
+            <thead><tr><th>Maila</th><th class="pt">Tartea</th><th class="pt">Gutxienekoa</th><th class="pt">Sendoa</th><th class="pt">Goikoa</th></tr></thead>
+            <tbody>
+              <tr><td class="lvl">4 · Bikaina</td><td class="pt">1,25–1,50</td><td class="pt">1,25</td><td class="pt">1,40</td><td class="pt">1,50</td></tr>
+              <tr><td class="lvl">3 · Egokia</td><td class="pt">0,75–1,25</td><td class="pt">0,75</td><td class="pt">1,00</td><td class="pt">1,20</td></tr>
+              <tr><td class="lvl">2 · Mugatua</td><td class="pt">0,25–0,75</td><td class="pt">0,25</td><td class="pt">0,50</td><td class="pt">0,70</td></tr>
+              <tr><td class="lvl">1 · Ez-nahikoa</td><td class="pt">0–0,25</td><td class="pt">0</td><td class="pt">0,10</td><td class="pt">0,20</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- B3 -->
+      <article class="rubric-block crit-b3 reveal">
+        <header><span class="crit-num">B3</span><h3>Iturriarekin lotutako gai espezifikoa · 1,5 puntu</h3></header>
+        <div class="tbl-wrap">
+          <table class="rub">
+            <thead><tr><th>Dimentsioa</th><th>4. maila · Bikaina</th></tr></thead>
+            <tbody>
+              <tr><td class="lvl">D1 · Gaiarekiko egokitasuna eta iturriarekiko lotura</td><td>Planteatutako alderdi guztiei zehaztasunez erantzuten die, eta iturriarekin lotura argia eta egokia ezartzen du.</td></tr>
+              <tr><td class="lvl">D2 · Ezagutza eta garapen historikoa</td><td>Eskatutako alderdia ezagutza zehatz, nahiko eta esanguratsuen bidez garatzen du.</td></tr>
+              <tr><td class="lvl">D3 · Azalpena, koherentzia eta antolaketa</td><td>Azalpen arrazoitua, koherentea eta ondo antolatua eraikitzen du, gertakari, prozesu, eragile eta faktoreak erlazionatuz.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rule"><strong>Esleipen-araua:</strong> hiru dimentsioen tarteko maila. <strong>4. maila lortzeko, D1en eta D2an gutxienez 3. maila</strong> behar da.</p>
+        <p class="rule warn"><strong>Mugaketa:</strong> gaiaren azalpen orokor batek, zuzena izanda ere, ez du balorazio altua jasoko alderdi zehatzari erantzuten ez badio. Iturriaren deskribapena edo parafrasia ez da garapen historikotzat hartzen.</p>
+        <p>Puntuazio-tarteak B2koak berak dira (1,25–1,50 / 0,75–1,25 / 0,25–0,75 / 0–0,25).</p>
+        <h4>B ataleko puntuazioa maila barruan (B1, B2, B3)</h4>
+        <ul>
+          <li><strong>Gutxieneko balioa:</strong> deskriptoreak mailaren hasierako mailan betetzen direnean.</li>
+          <li><strong>Balio sendoa:</strong> modu sendoan betetzen direnean.</li>
+          <li><strong>Goiko tartea:</strong> hurrengo mailara argi hurbiltzen denean. 4. mailako gorena dimentsio guztiak erabat betetzen dituztenentzat da.</li>
+          <li>Terminologiak eta zehaztasunak puntuazioa doitzen dute, baina ez dute funtsezko edukien gabezia konpentsatzen.</li>
+        </ul>
+        <div class="tbl-wrap">
+          <table class="rub">
+            <thead><tr><th>Galdera</th><th>Eragiketa nagusia</th><th>Zer ebaluatzen da</th></tr></thead>
+            <tbody>
+              <tr><td class="lvl">B1</td><td>Identifikatu eta ezaugarritu</td><td>Zer iturri den, nork sortu zuen edo nor den protagonista, zer transmititzen duen eta zein den oinarrizko esanahi historikoa.</td></tr>
+              <tr><td class="lvl">B2</td><td>Testuinguruan zehatz kokatu</td><td>Zer unetan kokatzen den eta galderan berariaz adierazitako alderdiak nola azaltzen diren.</td></tr>
+              <tr><td class="lvl">B3</td><td>Gai espezifiko bat garatu</td><td>Iturriarekin lotutako alderdi zehatz bat ezagutza zabalagoen bidez nola aztertzen den.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- C -->
+      <article class="rubric-block crit-c reveal">
+        <header><span class="crit-num">C</span><h3>Garapen-galdera · 3 puntu</h3></header>
+        <div class="tbl-wrap">
+          <table class="rub">
+            <thead><tr><th>Dimentsioa</th><th>4. maila · Bikaina</th></tr></thead>
+            <tbody>
+              <tr><td class="lvl">D1 · Egokitasuna eta gaiarekiko lotura</td><td>Epigrafeari erabat erantzuten dio, eta dagokion gai historikoarekin lotura argia eta arrazoitua ezartzen du.</td></tr>
+              <tr><td class="lvl">D2 · Eduki historikoa eta garapena</td><td>Epigrafearen funtsezko edukiak modu oso, zehatz eta orekatuan garatzen ditu.</td></tr>
+              <tr><td class="lvl">D3 · Antolaketa kronologikoa eta azalpen historikoa</td><td>Sekuentzia kronologiko zehatza, eta gertaerak, prozesuak, kausak, ondorioak eta eragileak modu arrazoituan erlazionatzen ditu.</td></tr>
+              <tr><td class="lvl">D4 · Koherentzia, egitura eta terminologia</td><td>Azalpen koherente, kohesionatu eta ondo egituratua, terminologia historiko zehatzarekin.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rule"><strong>Esleipen-araua:</strong> maila lau dimentsioetatik gutxienez <strong>hirutan</strong> lortutakoa da. 2-2 berdinketan, <strong>D2ko</strong> maila nagusitzen da; D2k argitzen ez badu, D3 hartzen da kontuan.</p>
+        <p class="rule warn"><strong>Mugak:</strong> ezin da 4. maila lortu D2an gutxienez 3. maila lortu gabe. Epigrafeari erantzuten ez dion erantzunak ezin du <strong>2. maila</strong> gainditu, beste eduki zuzen batzuk izan arren. Hizkuntza-koherentziak eta terminologiak ez dute edukiaren gabezia konpentsatzen.</p>
+        <div class="tbl-wrap">
+          <table class="rub">
+            <thead><tr><th>Maila</th><th>Puntuazio posibleak (0,25eko tarteak)</th></tr></thead>
+            <tbody>
+              <tr><td class="lvl">4 · Bikaina</td><td class="pt">2,50 / 2,75 / 3,00</td></tr>
+              <tr><td class="lvl">3 · Egokia</td><td class="pt">1,75 / 2,00 / 2,25</td></tr>
+              <tr><td class="lvl">2 · Mugatua</td><td class="pt">0,75 / 1,00 / 1,25 / 1,50</td></tr>
+              <tr><td class="lvl">1 · Ez-nahikoa</td><td class="pt">0 / 0,25 / 0,50</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Maila barruan: puntuazio baxua deskriptoreak gutxieneko mailan betetzen direnean; erdikoa modu sendoan betetzen direnean; gorena oso sendo betetzen direnean eta hurrengo mailatik gertu dagoenean.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section alt" id="eredua">
+    <div class="container">
+      <div class="pau-evhead reveal">
+        <span class="kicker">Proba-eredua</span>
+        <h2>Azterketa-eredu ofiziala</h2>
+        <p>Dokumentu ofizialak eredu oso bat dakar, A eta B ataletako erantzun-adibideekin. Hemen galderak dituzu; erantzun garatuak dokumentu ofizialean daude (34.–41. orrialdeak): eskatu irakasleari.</p>
+      </div>
+      <div class="model-grid">
+        <article class="model-card reveal">
+          <h3>A1 · Sei kontzeptu (lau erabili)</h3>
+          <ul class="chips">
+            <li>1812ko Konstituzioa («La Pepa»)</li>
+            <li>Kadizko Gorteak</li>
+            <li>Karlismoa</li>
+            <li>Fernando VII.a (Fernando zazpigarrena)</li>
+            <li>Liberalismoa</li>
+            <li>Foru-auzia</li>
           </ul>
+          <h3 style="margin-top:1rem">A2 · Ordenatu zaharrenetik berrienera</h3>
+          <ul>
+            <li>1812ko Konstituzioa («La Pepa»)</li>
+            <li>Bizkaiko Labe Garaiak enpresaren fundazioa (AHV)</li>
+            <li>Alfontso XIII.aren erbestea (Alfontso hamahirugarrenaren erbestea)</li>
+            <li>15-M mugimenduaren sorrera</li>
+            <li>Primo de Riveraren estatu-kolpea</li>
+          </ul>
+          <details class="sol">
+            <summary>Ikusi ordena zuzena</summary>
+            <ol>
+              <li>1812ko Konstituzioa</li>
+              <li>Bizkaiko Labe Garaiak (AHV)</li>
+              <li>Primo de Riveraren estatu-kolpea</li>
+              <li>Alfontso hamahirugarrenaren erbestea</li>
+              <li>15-M mugimenduaren sorrera</li>
+            </ol>
+          </details>
+        </article>
+        <article class="model-card reveal" data-delay="1">
+          <h3>B · 1. aukera: testua</h3>
+          <p class="src">Bateratzeko Lege Dekretua (Salamanca, 1937ko apirilaren 19a; Estatuko Aldizkari Ofiziala, Burgos, apirilaren 20a): Falange eta Requeté-ak FET y de las JONSen bateratzen dira.</p>
+          <ol>
+            <li>Iturria identifikatu eta ezaugarritu (1 p.).</li>
+            <li>Kokatu iturria bere testuinguru zehatzean: Gerra Zibilaren hasieratik 1937ko apirilera arte matxinatuen eremuan botere militarra eta politikoa Francoren eskuetan bateratzeko prozesua, eta Falangearen eta karlismoaren egoera (1,5 p.).</li>
+            <li>Azaldu FET y de las JONSek diktadura frankistaren egitura politikoan bete zuen eginkizuna eta lehen urteetako bilakaera (1,5 p.).</li>
+          </ol>
+          <h3 style="margin-top:1rem">B · 2. aukera: argazkia</h3>
+          <p class="src">Alfontso XIII.a eta Miguel Primo de Rivera.</p>
+          <ol>
+            <li>Iturria identifikatu eta ezaugarritu (1 p.).</li>
+            <li>Kokatu iturria bere testuinguru hurbilean: 1923ko estatu-kolpea eragin zuen krisi politikoa eta Alfontso XIII.aren jarrera diktadura ezartzean (1,5 p.).</li>
+            <li>Azaldu diktadurak Alfontso XIII.aren monarkiari ekarri zizkion ondorio politikoak (1,5 p.).</li>
+          </ol>
+        </article>
+        <article class="model-card reveal" data-delay="2">
+          <h3>C · Epigrafe hauetako bat garatu</h3>
+          <ol>
+            <li><a href="temas/01-antzinako-erregimena.html#g1-5">Foru-auzia</a> <span class="src">(1. gaia · 1808–1876)</span></li>
+            <li><a href="temas/05-gerra-zibila.html#g5-5">Erretagoardiako indarkeria</a> <span class="src">(5. gaia · 1936–1939)</span></li>
+            <li><a href="temas/06-frankismoa-i.html#g6-1">Francoren erregimenaren oinarri instituzional eta ideologikoak</a> <span class="src">(6. gaia · 1939–1959)</span></li>
+            <li><a href="temas/09-monarkia-parlamentarioa.html#g9-5">Espainia Europa eraikitzeko prozesuan</a> <span class="src">(9. gaia · 1982–1996)</span></li>
+          </ol>
+          <p class="src">Ikus nola agertzen den gaiaren izenburua epigrafearekin batera: horrek erantzuna gai historiko zabalagoan kokatzeko balio du.</p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="section" id="gai-zerrenda">
+    <div class="container">
+      <div class="pau-evhead reveal">
+        <span class="kicker">Gaitegia</span>
+        <h2>Gai-zerrenda 2026–2027</h2>
+        <p>1.–9. gaiak ebaluatuko dira, gai bakoitzeko lau epigraferekin (8. gaian, bost). C ataleko epigrafeak hauek dira, eta B ataleko galderak hauei lotuta egongo dira. Sakatu epigrafe bat gai-orriko atalera joateko.</p>
+      </div>
+      <div class="gz-grid">
+        <article class="gz-gaia" style="--ca:var(--era-1-a);--cb:var(--era-1-b)">
+          <h3><a href="temas/01-antzinako-erregimena.html"><span class="gz-n">1</span> Antzinako Erregimenaren krisia eta Estatu liberalaren eraikuntza <span class="gz-y">(1808–1876)</span></a></h3>
+          <ol>
+            <li><span class="gz-num">1.1</span> <a href="temas/01-antzinako-erregimena.html#g1-1">Independentzia Gerra eta Jose I.aren gobernua: frantsestuak</a></li>
+            <li><span class="gz-num">1.2</span> <a href="temas/01-antzinako-erregimena.html#g1-2">Cadizeko Gorteen lan iraultzailea eta 1812ko Konstituzioa</a></li>
+            <li><span class="gz-num">1.3</span> <a href="temas/01-antzinako-erregimena.html#g1-4">Seiurteko demokratikoa</a></li>
+            <li><span class="gz-num">1.4</span> <a href="temas/01-antzinako-erregimena.html#g1-5">Foru-auzia</a></li>
+          </ol>
+        </article>
+        <article class="gz-gaia" style="--ca:var(--era-2-a);--cb:var(--era-2-b)">
+          <h3><a href="temas/02-berrezarkuntza.html"><span class="gz-n">2</span> Berrezarkuntzaren sistema <span class="gz-y">(1875–1930)</span></a></h3>
+          <ol>
+            <li><span class="gz-num">2.1</span> <a href="temas/02-berrezarkuntza.html#g2-1">Sistema politikoaren oinarriak, indarrak eta oposizioa</a></li>
+            <li><span class="gz-num">2.2</span> <a href="temas/02-berrezarkuntza.html#g2-3">Ekonomia eta gizartea Espainian. Auzi soziala</a></li>
+            <li><span class="gz-num">2.3</span> <a href="temas/02-berrezarkuntza.html#g2-4">Berrezarkuntza sistemaren azken krisia</a></li>
+            <li><span class="gz-num">2.4</span> <a href="temas/02-berrezarkuntza.html#g2-5">Primo de Riveraren Estatu kolpea eta haren diktadura</a></li>
+          </ol>
+        </article>
+        <article class="gz-gaia" style="--ca:var(--era-3-a);--cb:var(--era-3-b)">
+          <h3><a href="temas/03-euskal-industrializazioa.html"><span class="gz-n">3</span> Euskal Herriko industrializazioa eta gizarte pluralaren sorrera <span class="gz-y">(1875–1930)</span></a></h3>
+          <ol>
+            <li><span class="gz-num">3.1</span> <a href="temas/03-euskal-industrializazioa.html#g3-2">Industrializazioa Euskal Herrian: eszenatoki bereiziak</a></li>
+            <li><span class="gz-num">3.2</span> <a href="temas/03-euskal-industrializazioa.html#g3-3">Euskal aniztasun politikoa Errestaurazioan: politika eta lurralde triangelua</a></li>
+            <li><span class="gz-num">3.3</span> <a href="temas/03-euskal-industrializazioa.html#g3-4">Langile-mugimendua eta gizarte-gatazkak</a></li>
+            <li><span class="gz-num">3.4</span> <a href="temas/03-euskal-industrializazioa.html#g3-5">Lehen nazionalismo politiko eta sindikala</a></li>
+          </ol>
+        </article>
+        <article class="gz-gaia" style="--ca:var(--era-4-a);--cb:var(--era-4-b)">
+          <h3><a href="temas/04-bigarren-errepublika.html"><span class="gz-n">4</span> II. Errepublika <span class="gz-y">(1931–1936)</span></a></h3>
+          <ol>
+            <li><span class="gz-num">4.1</span> <a href="temas/04-bigarren-errepublika.html#g4-1">Monarkiaren behin betiko krisia</a></li>
+            <li><span class="gz-num">4.2</span> <a href="temas/04-bigarren-errepublika.html#g4-2">Biurteko errepublikar-sozialista eta haren erreformak</a></li>
+            <li><span class="gz-num">4.3</span> <a href="temas/04-bigarren-errepublika.html#g4-4">Biurteko erradikal-cedista edo kontrarreformatzailea</a></li>
+            <li><span class="gz-num">4.4</span> <a href="temas/04-bigarren-errepublika.html#g4-5">Fronte Popularraren etapa</a></li>
+          </ol>
+        </article>
+        <article class="gz-gaia" style="--ca:var(--era-5-a);--cb:var(--era-5-b)">
+          <h3><a href="temas/05-gerra-zibila.html"><span class="gz-n">5</span> Gerra Zibila <span class="gz-y">(1936–1939)</span></a></h3>
+          <ol>
+            <li><span class="gz-num">5.1</span> <a href="temas/05-gerra-zibila.html#g5-1">Altxamendu militarra eta gobernuaren erantzuna</a></li>
+            <li><span class="gz-num">5.2</span> <a href="temas/05-gerra-zibila.html#g5-2">Nazioarteko testuingurua</a></li>
+            <li><span class="gz-num">5.3</span> <a href="temas/05-gerra-zibila.html#g5-4">Gerraren bilakaera</a></li>
+            <li><span class="gz-num">5.4</span> <a href="temas/05-gerra-zibila.html#g5-5">Erretagoardiako indarkeria</a></li>
+          </ol>
+        </article>
+        <article class="gz-gaia" style="--ca:var(--era-6-a);--cb:var(--era-6-b)">
+          <h3><a href="temas/06-frankismoa-i.html"><span class="gz-n">6</span> Diktadura frankista I: Gerraostea eta autarkia <span class="gz-y">(1939–1959)</span></a></h3>
+          <ol>
+            <li><span class="gz-num">6.1</span> <a href="temas/06-frankismoa-i.html#g6-1">Francoren erregimenaren oinarri instituzional eta ideologikoak</a></li>
+            <li><span class="gz-num">6.2</span> <a href="temas/06-frankismoa-i.html#g6-2">Gerraosteko gizartea (garaileak eta garaituak) eta gerraosteko errepresio politikoa</a></li>
+            <li><span class="gz-num">6.3</span> <a href="temas/06-frankismoa-i.html#g6-3">Autarkia ekonomikoa. Gosearen eta eskasiaren hedapena</a></li>
+            <li><span class="gz-num">6.4</span> <a href="temas/06-frankismoa-i.html#g6-5">Nazioarteko politika: isolamendutik integraziora</a></li>
+          </ol>
+        </article>
+        <article class="gz-gaia" style="--ca:var(--era-7-a);--cb:var(--era-7-b)">
+          <h3><a href="temas/07-frankismoa-ii.html"><span class="gz-n">7</span> Diktadura frankista II: Desarrollismo industriala <span class="gz-y">(1959–1975)</span></a></h3>
+          <ol>
+            <li><span class="gz-num">7.1</span> <a href="temas/07-frankismoa-ii.html#g7-1">Garapen ekonomikoa eta gizarte-eraldaketak</a></li>
+            <li><span class="gz-num">7.2</span> <a href="temas/07-frankismoa-ii.html#g7-3">Erregimenaren finkapenari emandako erantzuna: babesa, indiferentzia eta oposizioa</a></li>
+            <li><span class="gz-num">7.3</span> <a href="temas/07-frankismoa-ii.html#g7-4">Frankismo berantiarraren krisia</a></li>
+            <li><span class="gz-num">7.4</span> <a href="temas/07-frankismoa-ii.html#g7-5">Errepresio politiko eta soziala</a></li>
+          </ol>
+        </article>
+        <article class="gz-gaia" style="--ca:var(--era-8-a);--cb:var(--era-8-b)">
+          <h3><a href="temas/08-trantsizioa.html"><span class="gz-n">8</span> Trantsizioa <span class="gz-y">(1975–1982)</span></a></h3>
+          <ol>
+            <li><span class="gz-num">8.1</span> <a href="temas/08-trantsizioa.html#g8-1">Erreforma politikoa eta oposizioa</a></li>
+            <li><span class="gz-num">8.2</span> <a href="temas/08-trantsizioa.html#g8-3">1978ko Konstituzioa eta 1979ko Gernikako Estatutua</a></li>
+            <li><span class="gz-num">8.3</span> <a href="temas/08-trantsizioa.html#g8-4">Berunezko urteak: terrorismoa eta biolentzia politikoa</a></li>
+            <li><span class="gz-num">8.4</span> <a href="temas/08-trantsizioa.html#g8-5">Krisi ekonomikoa eta gizarte-gatazkak. Langile-mugimendua eta mugimendu sozialak</a></li>
+            <li><span class="gz-num">8.5</span> <a href="temas/08-trantsizioa.html#g8-6">1981eko estatu-kolpe saiakera</a></li>
+          </ol>
+        </article>
+        <article class="gz-gaia" style="--ca:var(--era-9-a);--cb:var(--era-9-b)">
+          <h3><a href="temas/09-monarkia-parlamentarioa.html"><span class="gz-n">9</span> Monarkia parlamentarioaren sendotzea <span class="gz-y">(1982–1996)</span></a> <span class="gz-tag">Berria</span></h3>
+          <ol>
+            <li><span class="gz-num">9.1</span> <a href="temas/09-monarkia-parlamentarioa.html#g9-2">Industria-birmoldaketa Euskal Autonomia Erkidegoan</a></li>
+            <li><span class="gz-num">9.2</span> <a href="temas/09-monarkia-parlamentarioa.html#g9-3">Biolentzia terroristaren jarraipena</a></li>
+            <li><span class="gz-num">9.3</span> <a href="temas/09-monarkia-parlamentarioa.html#g9-4">Indar polizialak, erakundeak eta gizartea terrorismoaren aurrean</a></li>
+            <li><span class="gz-num">9.4</span> <a href="temas/09-monarkia-parlamentarioa.html#g9-5">Espainia Europa eraikitzeko prozesuan</a></li>
+          </ol>
+        </article>
+        <article class="gz-gaia gz-off" style="--ca:var(--era-10-a);--cb:var(--era-10-b)">
+          <h3><a href="temas/10-xxi-mendea.html"><span class="gz-n">10</span> XXI. mendea <span class="gz-y">(1997–2011)</span></a> <span class="gz-tag gz-tag-off">2028–2029 ikasturtetik</span></h3>
+          <ol>
+            <li><span class="gz-num">10.1</span> ETAren garapena eta amaiera</li>
+            <li><span class="gz-num">10.2</span> Dinamika politikoa eta soziala. Erakundeak, alderdi politikoak eta eztabaida nagusiak</li>
+            <li><span class="gz-num">10.3</span> 2008ko krisi ekonomiko eta soziala eta 2011ko 15M mugimendua</li>
+            <li><span class="gz-num">10.4</span> Demografia eta gizarte-aldaketak</li>
+          </ol>
+        </article>
+      </div>
+      <div class="kendu-box reveal">
+        <h3>Web honetan bai, gai-zerrendan ez</h3>
+        <p>Atal hauek apunteetan eta webgunean daude, baina 2026–2027ko gai-zerrendatik kanpo geratu dira. Ez dira C atalean galdetuko; prozesu historikoak ulertzeko behar den neurrian landu, testuinguru gisa (gai-orrietan «testuingurua» etiketarekin markatuta daude).</p>
+        <ul>
+          <li><a href="temas/01-antzinako-erregimena.html#g1-3"><span class="gz-num">1.3</span> Liberalismoaren garaipena: Estatuaren egituraren eraikuntza</a></li>
+          <li><a href="temas/02-berrezarkuntza.html#g2-2"><span class="gz-num">2.2</span> Politika koloniala eta 98ko Hondamendia</a></li>
+          <li><a href="temas/03-euskal-industrializazioa.html#g3-1"><span class="gz-num">3.1</span> Industrializazioaren testuingurua Espainian</a></li>
+          <li><a href="temas/04-bigarren-errepublika.html#g4-3"><span class="gz-num">4.3</span> 1931ko Konstituzioa</a></li>
+          <li><a href="temas/05-gerra-zibila.html#g5-3"><span class="gz-num">5.3</span> Euskal Estatutua</a></li>
+          <li><a href="temas/06-frankismoa-i.html#g6-4"><span class="gz-num">6.4</span> Oposizioa eta erresistentzia</a></li>
+          <li><a href="temas/07-frankismoa-ii.html#g7-2"><span class="gz-num">7.2</span> Eliteak eta euskarri instituzionala</a></li>
+          <li><a href="temas/08-trantsizioa.html#g8-2"><span class="gz-num">8.2</span> Hauteskunde orokorrak eta autonomikoak</a></li>
+          <li><a href="temas/09-monarkia-parlamentarioa.html#g9-1"><span class="gz-num">9.1</span> Modernizazio sozioekonomikoaren prozesua</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="baliabideak">
+    <div class="container">
+      <div class="pau-evhead reveal">
+        <span class="kicker">Baliabideak</span>
+        <h2>Online hezkuntza-baliabideak</h2>
+        <p>Dokumentu ofizialak gomendatutako baliabideak, iturriak lantzeko eta testuinguruak sakontzeko.</p>
+      </div>
+      <div class="res-grid">
+        <a class="res" href="https://vscw.ca/eu/node" target="_blank" rel="noopener"><strong>Gerra Zibilaren Museo Birtuala</strong><span>Gerraren ikuspegi historiko, bisual eta hezitzailea.</span></a>
+        <div class="res"><strong><a href="https://www.memorialvt.com/eu/lekukotzen-bideoa/" target="_blank" rel="noopener">Terrorismoaren Biktimen Memoriala</a></strong><span>Biktimen testigantzak eta <a href="https://www.memorialvt.com/educacion/" target="_blank" rel="noopener" style="text-decoration:underline">unitate didaktikoak</a>.</span></div>
+        <div class="res"><strong>Gogora · Memoriaren ikus-entzunezko funtsa</strong><span>Terrorismoaren eta indarkeriaren biktimen testigantzak. Sarbidea erabiltzaile eta pasahitzarekin: eskatu irakasleari.</span></div>
+        <a class="res" href="https://bilbaobizkaiapeoplesmuseum.com" target="_blank" rel="noopener"><strong>Bilbao Bizkaia People’s Museum</strong><span>Herri-klaseek gizartearen aurrerabideari egindako ekarpena.</span></a>
+        <a class="res" href="https://archivodelatransicion.es" target="_blank" rel="noopener"><strong>Trantsizioaren artxiboa</strong><span>Erakunde politikoak, gizarte-mugimenduak eta haustura demokratikoaren aldeko borroka.</span></a>
+        <a class="res" href="https://meatzaldea.eus" target="_blank" rel="noopener"><strong>Euskal Herriko Meatzaritzaren Museoa</strong><span>Meatzaritzaren eta industrializazioaren historia, Bizkaiko meatzaldean.</span></a>
+        <a class="res" href="https://kutxateka.eus/index.php/Front/Index/lang/es_ES" target="_blank" rel="noopener"><strong>Kutxateka</strong><span>Gipuzkoako XIX. eta XX. mendeetako milioi bat argazki baino gehiago.</span></a>
+        <a class="res" href="https://photo.araba.eus/s/photoaraba/page/home" target="_blank" rel="noopener"><strong>Photo Araba</strong><span>Arabako Artxiboaren argazki-ondarea.</span></a>
+        <a class="res" href="https://archinet.sanchoelsabio.eus/opac/?lang=es" target="_blank" rel="noopener"><strong>Sancho el Sabio Fundazioa</strong><span>Argazki-artxiboa.</span></a>
+      </div>
+      <p class="doc-source"><strong>Iturria:</strong> <em>Espainiako Historia. Unibertsitatera Sartzeko Proba, USaP 2027. Azterketa eredu berria – behin betiko dokumentua</em> (EHU · Eusko Jaurlaritza, 2026ko iraila). Koordinatzaileak: Raul Duandikoetxea eta Erik Zubiaga. Orri honek dokumentu horren laburpen didaktikoa egiten du; zalantzarik izanez gero, dokumentu ofiziala da erreferentzia.</p>
     </div>
   </section>
 
@@ -412,13 +859,13 @@
         <a href="index.html">Hasiera</a>
       </nav>
       <div class="foot-bottom">
-        <span>PAU Historia azterketaren egitura · 2026–2027</span>
+        <span>USaP Historia azterketaren egitura · 2026–2027</span>
         <span>© <span data-year>2026</span> · Luken San Sebastián Alkorta · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license" style="color:inherit;text-decoration:underline">CC BY-SA 4.0</a></span>
       </div>
     </div>
   </footer>
 
   <button class="to-top" aria-label="Gora itzuli">↑</button>
-  <script src="assets/js/app.js?v=12"></script>
+  <script src="assets/js/app.js?v=13"></script>
 </body>
 </html>

@@ -7,6 +7,13 @@ meta:
   iturri_url: https://docs.google.com/presentation/d/1pvtjHG_n85SoXrCLQ5YLjjDAbNCWRT8vxehCD7lWE1o/embed?start=false&loop=false&delayms=3000
   connections_url: 01-antzinako-erregimena-konexioak.html
   aurkezpena_url: https://drive.google.com/file/d/1-aLoXqAh0xBq5eD0rONyniupervwwnN6/preview
+  usap:
+    kendua: "g1-3"
+    epigrafeak:
+      - { num: "1.1", title: "Independentzia Gerra eta Jose I.aren gobernua: frantsestuak", target: g1-1 }
+      - { num: "1.2", title: "Cadizeko Gorteen lan iraultzailea eta 1812ko Konstituzioa", target: g1-2 }
+      - { num: "1.3", title: "Seiurteko demokratikoa", target: g1-4 }
+      - { num: "1.4", title: "Foru-auzia", target: g1-5 }
 intro: |-
   XVIII. mendearen bigarren erdian, mundua aldatuko zuten ideia berriak sortu ziren. <span class="term" data-def="Arrazoia, hezkuntza eta askatasuna defendatzen zituen XVIII. mendeko mugimendua. Liberalismoaren oinarri ideologikoa.">Ilustrazioak</span> arrazoia, hezkuntza eta askatasuna jarri zituen gizartearen oinarri gisa, eta <span class="term" data-def="Gizarte estamentala, monarkia absolutua eta nekazaritzan oinarritutako ekonomia. XVIII. mende bukaeran krisian sartu zen.">Antzinako Erregimena</span> —monarkia absolutua, gizarte estamentala eta nekazaritza-ekonomia— zalantzan jarri zen. AEBen independentzia (1776) eta <span class="term" data-def="Frantzian absolutismoaren eta pribilegioen aurkako iraultza (1789). Liberalismoaren, berdintasunaren eta subiranotasun nazionalaren oinarriak zabaldu zituen.">Frantziako Iraultzak</span> (1789) modernitate politikoaren bidea ireki zuten, eta burgesia gizarte-klase berri gisa sendotzen hasi zen.
 timeline:

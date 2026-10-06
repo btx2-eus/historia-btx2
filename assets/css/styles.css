@@ -353,6 +353,54 @@ ul { padding-left: 1.1em; }
 }
 .callout .callout-title { font-family: var(--font-display); font-weight: 700; color: var(--accent-ink); margin-bottom: .3rem; }
 
+/* USaP 2026–27: gai-zerrenda ofiziala gai-orrietan */
+.usap-box {
+  margin: 0 0 2.6rem; padding: 1.25rem 1.4rem 1.1rem; border-radius: var(--radius);
+  background: var(--bg-card); border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+  box-shadow: var(--shadow-sm); position: relative; overflow: hidden;
+}
+.usap-box::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--ca), var(--cb)); }
+.usap-head { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: .8rem; }
+.usap-mark {
+  flex: 0 0 auto; width: 56px; height: 56px; border-radius: 14px; display: grid; place-items: center; text-align: center;
+  background: linear-gradient(135deg, var(--ca), var(--cb)); color: #fff;
+  font-family: var(--font-display); font-weight: 700; font-size: .78rem; line-height: 1.1;
+}
+.tema-content .usap-box h2 { font-size: 1.15rem; margin: 0 0 .3rem; padding: 0; border: 0; display: block; color: var(--accent-ink); }
+.tema-content .usap-head p { margin: 0; font-size: .93rem; color: var(--muted); }
+.tema-content .usap-list { list-style: none; padding: 0; margin: 0 0 .7rem; display: grid; gap: .4rem; }
+.tema-content .usap-list li { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; gap: .55rem; color: var(--ink-soft); line-height: 1.45; }
+.usap-web { white-space: nowrap; }
+.usap-num {
+  flex: 0 0 auto; min-width: 2.6rem; text-align: center; font-family: var(--font-display); font-weight: 700; font-size: .82rem;
+  color: var(--accent-ink); background: var(--accent-tint); border-radius: 7px; padding: .1rem .45rem;
+}
+.usap-list a { color: var(--ink); font-weight: 600; text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent); text-underline-offset: 3px; }
+.usap-list a:hover { color: var(--accent-ink); }
+.usap-web { font-size: .76rem; color: var(--muted); background: var(--bg-soft); border: 1px solid var(--line); border-radius: 999px; padding: .05rem .5rem; }
+.tema-content .usap-out { margin: .2rem 0 .7rem; padding: .7rem .9rem; border-radius: var(--radius-sm); background: #fffbeb; border: 1px solid #fde68a; color: #78350f; font-size: .92rem; }
+.usap-out a { color: #78350f; font-weight: 700; text-decoration: underline; }
+.usap-more { display: inline-block; font-size: .88rem; font-weight: 700; color: var(--accent-ink); }
+.usap-more:hover { text-decoration: underline; }
+.usap-box-off { border-color: #fcd34d; background: #fffdf5; }
+.usap-box-off .usap-list .usap-t { color: var(--muted); }
+
+.tema-content section.sec-out h2 .h-num { background: #a8a29e; }
+.out-note { margin: 0 0 1.2rem; padding: .85rem 1rem; border-radius: var(--radius-sm); background: #fffbeb; border: 1px dashed #f59e0b; }
+.out-tag { display: inline-block; margin-bottom: .35rem; font-size: .72rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; color: #92400e; background: #fef3c7; border-radius: 999px; padding: .15rem .6rem; }
+.tema-content .out-note p { margin: 0; font-size: .93rem; color: #78350f; }
+.toc a.toc-out { color: var(--muted); }
+.toc-tag { font-size: .66rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: #92400e; background: #fef3c7; border-radius: 999px; padding: .05rem .4rem; white-space: nowrap; }
+
+/* Hasierako txartelak: USaP egoera */
+.tema-card .usap-badge {
+  align-self: flex-start; margin: 0 1.4rem .9rem; font-size: .7rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--ca); background: color-mix(in srgb, var(--ca) 10%, #fff); border: 1px solid color-mix(in srgb, var(--ca) 35%, transparent);
+  border-radius: 999px; padding: .2rem .65rem;
+}
+.tema-card.usap-off .usap-badge { color: #92400e; background: #fef3c7; border-color: #fcd34d; }
+@media (max-width: 560px) { .usap-head { flex-direction: column; } }
+
 /* Per-tema interactive timeline (inserted in content area) */
 .tema-tl-section {
   margin: 0 0 2.6rem;

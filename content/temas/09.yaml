@@ -5,6 +5,14 @@ meta:
   years: 1982 – 1996
   pdf: 09-monarkia-parlamentarioa.pdf
   connections_url: 09-monarkia-parlamentarioa-konexioak.html
+  usap:
+    kendua: "g9-1"
+    berria: true
+    epigrafeak:
+      - { num: "9.1", title: "Industria-birmoldaketa Euskal Autonomia Erkidegoan", target: g9-2 }
+      - { num: "9.2", title: "Biolentzia terroristaren jarraipena", target: g9-3 }
+      - { num: "9.3", title: "Indar polizialak, erakundeak eta gizartea terrorismoaren aurrean", target: g9-4 }
+      - { num: "9.4", title: "Espainia Europa eraikitzeko prozesuan", target: g9-5 }
 intro: |-
   1982–1996 aldian Espainiako <span class="term" data-def="Erregea estatu-buru den sistema, baina botere politikoa parlamentuaren eta gobernu demokratikoaren bidez gauzatzen da. Aldi honetan sendotu zen.">monarkia parlamentarioa</span> sendotu zen, baina sendotze hori ez zen garbia, lasaia edo lineala izan: <strong>modernizazio gatazkatsua</strong> izan zen. 1982ko PSOEren garaipen zabalak egonkortasuna ekarri zuen; aurrerapenak (EEEan sartzea 1986, ongizate-estatua, 1992ko ekitaldiak) eta itzalak (industria-krisia, terrorismoa, GAL, ustelkeria) batera gertatu ziren. 1996ko alternantziak demokraziaren heldutasuna erakutsi zuen. <div class="callout">Ideia nagusia: Espainia modernizatu egin zen, baina modernizazio hori ez zen guztiontzat berdina izan. Aukera, mugikortasun soziala eta Europarekiko hurbiltzea batzuentzat; lanpostuaren galera, auzoaren gainbehera eta ziurgabetasuna beste batzuentzat.</div>
 timeline:

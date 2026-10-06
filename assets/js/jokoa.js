@@ -207,6 +207,26 @@
     return closest;
   }
 
+  /* ---------- USaP A2 irizpideak (2026–27ko behin betiko dokumentua) ----------
+     A irizpidea: posizio zehatzean dauden elementuak.
+     B irizpidea: ikaslearen erantzunean segidan eta ordena zuzenean dauden elementuen katerik luzeena.
+     Azken puntuazioa: bietatik altuena (ez dira batzen). */
+  function usapA2(years) {
+    var idx = years.map(function (y, i) { return { y: y, i: i }; });
+    idx.sort(function (a, b) { return a.y - b.y || a.i - b.i; });
+    var rank = [];
+    idx.forEach(function (o, r) { rank[o.i] = r; });
+    var pos = 0, chain = years.length ? 1 : 0, run = 1;
+    rank.forEach(function (r, i) {
+      if (r === i) pos++;
+      if (i > 0) { run = (r === rank[i - 1] + 1) ? run + 1 : 1; if (run > chain) chain = run; }
+    });
+    var table = { 5: 1, 4: 0.75, 3: 0.5, 2: 0.25 };
+    var best = Math.max(pos, chain);
+    return { pos: pos, chain: chain, points: table[best] || 0 };
+  }
+  function fmtPt(x) { return String(x).replace(".", ","); }
+
   /* ---------- Zuzendu ---------- */
   function check() {
     var items = Array.prototype.slice.call(elList.querySelectorAll(".jk-item"));
@@ -231,7 +251,13 @@
     var msg = score === n ? "Bikain! Ordena guztiz zuzena 🎉"
       : pct >= 0.6 ? "Ondo! Ia-ia hor zaude 💪"
       : "Saiatu berriro, errepasatu datak 📚";
-    elResult.innerHTML = '<div class="jk-score">Zuzen: ' + score + " / " + n + "</div><div class=\"jk-msg\">" + msg + "</div>";
+    var usap = usapA2(years);
+    var usapHtml = n === 5
+      ? '<div class="jk-usap">USaP A2 puntuazioa: <b>' + fmtPt(usap.points) + " / 1</b>" +
+        "<span>A irizpidea (posizio zehatza): " + usap.pos + " · B irizpidea (ordena erlatiboa): " + usap.chain +
+        " → " + (usap.chain > usap.pos ? "B" : "A") + " irizpidea aplikatzen da</span></div>"
+      : '<div class="jk-usap"><span>Ordena erlatiboa: ' + usap.chain + " elementu jarraian, ordena zuzenean. USaPeko A2 puntuazioa ikusteko, jokatu 5 datarekin.</span></div>";
+    elResult.innerHTML = '<div class="jk-score">Zuzen: ' + score + " / " + n + "</div><div class=\"jk-msg\">" + msg + "</div>" + usapHtml;
 
     // Ordena zuzena erakutsi
     elSolList.innerHTML = "";

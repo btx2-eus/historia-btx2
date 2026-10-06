@@ -6,6 +6,14 @@ meta:
   pdf: 08-trantsizioa.pdf
   iturri_pdf: 08-iturri.pdf
   connections_url: 08-trantsizioa-konexioak.html
+  usap:
+    kendua: "g8-2"
+    epigrafeak:
+      - { num: "8.1", title: "Erreforma politikoa eta oposizioa", target: g8-1 }
+      - { num: "8.2", title: "1978ko Konstituzioa eta 1979ko Gernikako Estatutua", target: g8-3 }
+      - { num: "8.3", title: "Berunezko urteak: terrorismoa eta biolentzia politikoa", target: g8-4 }
+      - { num: "8.4", title: "Krisi ekonomikoa eta gizarte-gatazkak. Langile-mugimendua eta mugimendu sozialak", target: g8-5 }
+      - { num: "8.5", title: "1981eko estatu-kolpe saiakera", target: g8-6 }
 intro: |-
   1975ean Franco hil zenean, diktadura amaitu zen, baina haren botere-egitura, beldur kulturala eta interes-sareak ez ziren berez desegin. Trantsizioa ez zen ate bat irekitzea izan, «korridore estu bat zeharkatzea» baizik: askatasuna negoziatzen zen bitartean, <strong>kolpe-beldurra ere negoziatzen zen</strong>. Aurrerapauso erraldoia (alderdiak legalizatu, hauteskundeak, Konstituzioa, autonomiak) eta jarraitutasuna (aparatu frankistak egokitu egin ziren) batera gertatu ziren. <div class="callout">Trantsizioa gaur egungo Espainiako oinarrizko eztabaida askoren jatorria da: monarkiaren papera, botereen jarraitutasuna, memoria eta zigorgabetasunaren auzia, eta lurralde-eredua.</div>
 timeline:

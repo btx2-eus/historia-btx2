@@ -182,3 +182,8 @@
 @media (prefers-reduced-motion: reduce) {
   .jk-item, .jk-year, .jk-count { transition: none !important; }
 }
+
+/* USaP A2 puntuazioa (2026–27) */
+.jk-usap { margin-top: .7rem; padding-top: .65rem; border-top: 1px dashed color-mix(in srgb, currentColor 45%, transparent); font-weight: 700; }
+.jk-usap b { font-family: var(--font-display, inherit); font-size: 1.1em; }
+.jk-usap span { display: block; margin-top: .2rem; font-weight: 500; font-size: .88rem; opacity: .85; }

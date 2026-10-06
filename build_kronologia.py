@@ -27,7 +27,7 @@ XLSX = ROOT / "content" / "data" / "100_data_klabeak_1800_2020_Historia_BTX2.xls
 OUT_HTML = ROOT / "kronologia.html"
 OUT_JOKOA = ROOT / "jokoa.html"
 OUT_JSON = ROOT / "assets" / "data" / "kronologia.json"
-CACHE_V = 11  # bumpea CSS/JS aldatzean
+CACHE_V = 12  # bumpea CSS/JS aldatzean
 
 # Izenburuan urtea agertzen duten datak jokotik kanpo (adib. "1812ko Konstituzioa").
 # Urtea euskal atzizkiari lotuta egon daiteke ("1837ko"), beraz \b ez da nahikoa.
@@ -428,7 +428,7 @@ JOKOA = r"""<!DOCTYPE html>
         <div class="jk-setup-row">
           <span class="jk-setup-label">Zenbat data?</span>
           <div class="jk-count-chips" id="jk-count-chips" role="group" aria-label="Data kopurua">
-            <button class="jk-count is-on" data-n="5" aria-pressed="true">5</button>
+            <button class="jk-count is-on" data-n="5" aria-pressed="true" title="USaPeko A2 ariketa bezala: 5 elementu">5 · A2</button>
             <button class="jk-count" data-n="7" aria-pressed="false">7</button>
             <button class="jk-count" data-n="10" aria-pressed="false">10</button>
             <button class="jk-count" data-n="15" aria-pressed="false">15</button>

@@ -8,6 +8,13 @@ meta:
   connections_url: 05-gerra-zibila-konexioak.html
   aurkezpena_url: https://docs.google.com/presentation/d/1pCVin6Gsd-jEFHHTfaCkwBY92YiWvapiNu9sQTT49z8/embed?start=false&loop=false&delayms=3000
   aurkezpena_link: https://docs.google.com/presentation/d/1pCVin6Gsd-jEFHHTfaCkwBY92YiWvapiNu9sQTT49z8/edit
+  usap:
+    kendua: "g5-3"
+    epigrafeak:
+      - { num: "5.1", title: "Altxamendu militarra eta gobernuaren erantzuna", target: g5-1 }
+      - { num: "5.2", title: "Nazioarteko testuingurua", target: g5-2 }
+      - { num: "5.3", title: "Gerraren bilakaera", target: g5-4 }
+      - { num: "5.4", title: "Erretagoardiako indarkeria", target: g5-5 }
 
 intro: |-
   <strong>Gerra Zibila</strong> XX. mendeko Espainiako gatazka politiko eta sozialik sakonena izan zen. Ez zen bat-bateko talka: Errestaurazioaren amaieratik eta <span class="term" data-def="II. Errepublikan (1931-1936) ezkerra eta eskuina gero eta urrunago kokatu ziren, akordioa ezinezko bihurtuz. Gerra Zibilaren funtsezko aurrekari politikoa.">II. Errepublikako polarizaziotik</span> zetorren estatuaren narriadura, eta 1936ko uztailaren 17–18ko altxamendu militarrak porrot partziala jasan ondoren, herrialdea bi bandotan zatitu zuen eta gatazka zibil eta internazionalizatuan bihurtu zen.

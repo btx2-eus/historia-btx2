@@ -4,6 +4,14 @@ meta:
   title: XXI. mendea
   years: 1996 – 2011
   source_note: "Gai honen jatorrizko apunterik ez zegoen Drive karpetan. Atal hau ezagutza historiko orokorrean oinarrituta idatzi da, gainerako gaien egitura bera erabiliz. \nBerrikusi eta zure materialarekin osatu/ordeztu\n, beste gaietan bezala."
+  usap:
+    ebaluazioa: "2028–2029"
+    urteak: "1997–2011"
+    epigrafeak:
+      - { num: "10.1", title: "ETAren garapena eta amaiera" }
+      - { num: "10.2", title: "Dinamika politikoa eta soziala. Erakundeak, alderdi politikoak eta eztabaida nagusiak" }
+      - { num: "10.3", title: "2008ko krisi ekonomiko eta soziala eta 2011ko 15M mugimendua" }
+      - { num: "10.4", title: "Demografia eta gizarte-aldaketak" }
 intro: |-
   XXI. mendearen lehen hamarbost urteek (1996–2011) Espainiako demokrazia helduaren bi ziklo erakusten dituzte: <strong>Aznarren PPren gobernuak</strong> (1996–2004) eta <strong>Zapateroren PSOEren gobernuak</strong> (2004–2011). Aldi honetan, alternantzia politikoa normalizatu zen, Espainia <span class="term" data-def="Europar Batasuneko txanpon bakarra. Espainian 2002an ezarri zen, pezeta ordezkatuz.">euroan</span> sartu zen (2002), eta erreforma sozial sakonak gauzatu ziren; baina terrorismoak, lurralde-auziak eta <strong>2008ko krisi ekonomikoak</strong> garaia markatu zuten.
 timeline:
