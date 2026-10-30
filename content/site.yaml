@@ -1,6 +1,6 @@
 # Site-wide configuration. Used by build.py to render index.html and tema pages.
 site:
-  title: "Espainiako Historia 2. Batxilergoa | EBAU materialak euskaraz"
+  title: "Espainia eta Euskal Herriko Historia 2. Batxilergoa | EBAU materialak euskaraz"
   description: "Espainiako Historia ikasteko 2. Batxilergorako webgunea: 10 gaiak, apunteak PDFan, denbora-lerroa, glosarioa eta USaP (PAU/EBAU) prestatzeko tresnak euskaraz."
   base_url: "https://btx2-eus.github.io/historia-btx2"
   locale: "eu_ES"
