@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ulermen-galderak · Historia BTX2</title>
+  <meta name="description" content="Galdera labur eta gakoak: kausak, ondorioak eta prozesu historikoak ulertu dituzun egiaztatzeko. Idatzi zeure hitzekin, jaso IA-tutorearen feedbacka eta berridatzi." />
+  <link rel="canonical" href="https://btx2-eus.github.io/historia-btx2/ulermen-galderak.html" />
+  <meta property="og:locale" content="eu_ES" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Historia BTX2" />
+  <meta property="og:title" content="Ulermen-galderak · Historia BTX2" />
+  <meta property="og:description" content="Ulertu duzu ala buruz ikasi duzu? Galdera laburrak, IA-tutorea eta berridazketa gidatua." />
+  <meta property="og:url" content="https://btx2-eus.github.io/historia-btx2/ulermen-galderak.html" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=12" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235b2be0'/%3E%3Ccircle cx='50' cy='44' r='20' fill='none' stroke='white' stroke-width='8'/%3E%3Cpath d='M50 70v8' stroke='white' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <style>
+    html { scroll-padding-top: 84px; }
+    .ul-page { background: var(--bg-soft); }
+
+    .ul-hero {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background:
+        radial-gradient(circle at 86% 14%, rgba(255, 176, 32, .34), transparent 28%),
+        radial-gradient(circle at 10% 86%, rgba(255, 93, 115, .3), transparent 30%),
+        linear-gradient(135deg, #2e1065 0%, var(--c-indigo) 48%, var(--accent-2) 100%);
+    }
+    .ul-hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 54px;
+      background: var(--bg-soft);
+      clip-path: polygon(0 65%, 18% 20%, 42% 70%, 70% 22%, 100% 62%, 100% 100%, 0 100%);
+    }
+    .ul-hero .container { position: relative; z-index: 1; padding-block: clamp(3.8rem, 9vw, 6.5rem) clamp(5.4rem, 11vw, 7.6rem); }
+    .ul-eyebrow {
+      display: inline-flex;
+      margin-bottom: 1.2rem;
+      padding: .42rem .9rem;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 999px;
+      background: rgba(255,255,255,.14);
+      font-family: var(--font-display);
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .ul-hero h1 { max-width: 14ch; margin: 0 0 1.1rem; font-size: clamp(2.55rem, 7vw, 5rem); line-height: .98; }
+    .ul-hero .lead { max-width: 62ch; margin: 0 0 1.8rem; color: rgba(255,255,255,.92); font-size: clamp(1.05rem, 2vw, 1.22rem); }
+    .ul-actions { display: flex; flex-wrap: wrap; gap: .8rem; }
+    .ul-actions .btn { min-height: 48px; }
+    .ul-actions .btn-primary { color: var(--ink); background: linear-gradient(135deg, #fde68a, #fdba74); }
+    .ul-stats { display: flex; flex-wrap: wrap; gap: 2.4rem; margin-top: 2.6rem; }
+    .ul-stat strong { display: block; font-family: var(--font-display); font-size: 1.8rem; line-height: 1; }
+    .ul-stat span { color: rgba(255,255,255,.8); font-size: .9rem; }
+
+    .ul-section { padding: clamp(3.4rem, 7vw, 5.4rem) 0; }
+    .ul-section.alt { background: #fff; }
+    .ul-head { max-width: 760px; margin-bottom: 1.8rem; }
+    .ul-head h2 { margin: .35rem 0 .7rem; font-size: clamp(1.75rem, 4vw, 2.6rem); }
+    .ul-head p { margin: 0; color: var(--muted); font-size: 1.04rem; }
+    .ul-kicker { color: var(--accent); font-family: var(--font-display); font-size: .78rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+
+    .ul-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+    .ul-step { min-width: 0; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; box-shadow: var(--shadow-sm); padding: 1.3rem; }
+    .ul-step .num {
+      display: grid; width: 44px; height: 44px; margin-bottom: 1rem; place-items: center;
+      border-radius: 13px; color: #fff; background: linear-gradient(135deg, var(--c-indigo), var(--c-coral));
+      font-family: var(--font-display); font-weight: 700;
+    }
+    .ul-step h3 { margin: 0 0 .45rem; font-size: 1.1rem; }
+    .ul-step p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+    .ul-levels { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin-top: 1.4rem; }
+    .ul-level { border-radius: var(--radius-sm); padding: .95rem 1rem; background: #fff; border: 1px solid var(--line); }
+    .ul-level strong { display: block; font-family: var(--font-display); margin-bottom: .25rem; }
+    .ul-level span { color: var(--muted); font-size: .88rem; }
+    .ul-level[data-l="0"] strong { color: #b91c1c; }
+    .ul-level[data-l="1"] strong { color: #c2410c; }
+    .ul-level[data-l="2"] strong { color: #1d4ed8; }
+    .ul-level[data-l="3"] strong { color: #047857; }
+
+    .ul-filters { display: grid; gap: .8rem; margin-bottom: 1.3rem; }
+    .ul-filter-row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+    .ul-filter-row > span { min-width: 6.5rem; color: var(--muted); font-size: .86rem; font-weight: 600; }
+    .ul-chip {
+      border: 1.5px solid var(--line); border-radius: 999px; padding: .42rem .9rem;
+      color: var(--ink-soft); background: #fff; font: 600 .9rem var(--font-body); cursor: pointer;
+    }
+    .ul-chip:hover { border-color: var(--c-violet); }
+    .ul-chip[aria-pressed="true"] { color: #fff; border-color: transparent; background: linear-gradient(135deg, var(--c-indigo), var(--c-violet)); }
+    .ul-chip:disabled { opacity: .45; cursor: not-allowed; }
+    .ul-random { margin-left: auto; }
+
+    .ul-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; }
+    .ul-card {
+      display: grid; gap: .6rem; align-content: start; min-width: 0; text-align: left;
+      border: 1.5px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.15rem;
+      background: #fff; color: var(--ink); font: inherit; cursor: pointer; box-shadow: var(--shadow-sm);
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    .ul-card:hover { transform: translateY(-2px); border-color: var(--c-violet); }
+    .ul-card.is-active { border-color: var(--c-indigo); box-shadow: 0 0 0 3px var(--accent-tint); }
+    .ul-card p { margin: 0; font-size: .97rem; line-height: 1.45; }
+    .ul-tags { display: flex; flex-wrap: wrap; gap: .35rem; }
+    .ul-tag { border-radius: 999px; padding: .18rem .6rem; font-size: .76rem; font-weight: 700; color: var(--accent-ink); background: var(--accent-tint); }
+    .ul-tag.mota { color: #7c2d12; background: #ffedd5; }
+    .ul-tag.done { color: #065f46; background: #d1fae5; }
+    .ul-empty { color: var(--muted); }
+
+    .ul-work { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 1.4rem; align-items: start; }
+    .ul-panel { border: 1px solid var(--line); border-radius: var(--radius-lg); background: #fff; box-shadow: var(--shadow-sm); padding: clamp(1.2rem, 3vw, 1.8rem); min-width: 0; }
+    .ul-question { margin: .7rem 0 .4rem; font-family: var(--font-display); font-size: clamp(1.2rem, 2.4vw, 1.5rem); line-height: 1.3; }
+    .ul-review { display: inline-block; margin-bottom: 1rem; color: var(--accent); font-size: .9rem; font-weight: 600; }
+    .ul-textarea {
+      width: 100%; min-height: 220px; resize: vertical; border: 1.5px solid var(--line); border-radius: var(--radius);
+      padding: 1rem; font: 1rem/1.6 var(--font-body); color: var(--ink); background: var(--bg-soft);
+    }
+    .ul-textarea:focus { outline: none; border-color: var(--c-violet); box-shadow: 0 0 0 3px var(--accent-tint); background: #fff; }
+    .ul-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; margin: .55rem 0 1.1rem; color: var(--muted); font-size: .88rem; }
+    .ul-count.ok { color: #047857; font-weight: 700; }
+    .ul-count.over { color: #c2410c; font-weight: 700; }
+    .ul-notice { margin: 0 0 1rem; padding: .7rem .9rem; border-radius: var(--radius-sm); color: #713f12; background: #fffbeb; border: 1px solid #fcd34d; font-size: .92rem; }
+    .ul-buttons { display: flex; flex-wrap: wrap; gap: .7rem; }
+    .ul-buttons .btn { min-height: 46px; }
+    .ul-buttons .btn:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+    .ul-status { margin-top: 1rem; }
+    .ul-status:empty { display: none; }
+    .ul-status .box { padding: 1rem 1.1rem; border-radius: var(--radius); background: #ecfdf5; border: 1px solid #a7f3d0; color: #064e3b; }
+    .ul-status ol { margin: .5rem 0 0; padding-left: 1.2rem; }
+    .ul-status li + li { margin-top: .25rem; }
+
+    .ul-side h3 { margin: 0 0 .6rem; font-size: 1.1rem; }
+    .ul-side p { margin: 0 0 .8rem; color: var(--muted); font-size: .94rem; }
+    .ul-self { display: grid; gap: .5rem; margin: .8rem 0; padding: 0; list-style: none; }
+    .ul-self label { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .6rem; align-items: start; padding: .6rem .7rem; border-radius: var(--radius-sm); background: var(--bg-soft); font-size: .93rem; cursor: pointer; }
+    .ul-self input { margin-top: .2rem; accent-color: var(--c-indigo); }
+    .ul-self-title { margin: 1rem 0 .2rem; font-family: var(--font-display); font-size: .95rem; }
+    .ul-result { margin-top: 1rem; padding: 1rem; border-radius: var(--radius); background: var(--accent-tint); color: var(--accent-ink); }
+    .ul-result strong { font-family: var(--font-display); font-size: 1.15rem; }
+    .ul-locked { padding: 1rem; border-radius: var(--radius); border: 1.5px dashed var(--line); color: var(--muted); font-size: .93rem; }
+
+    .ul-prompt { margin-top: 1.2rem; }
+    .ul-prompt summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+    .ul-prompt pre {
+      max-height: 420px; overflow: auto; margin: .7rem 0 0; padding: 1.1rem; border-radius: var(--radius);
+      color: #e2e8f0; background: var(--ink); font-size: .84rem; line-height: 1.55; white-space: pre-wrap; word-break: break-word;
+    }
+
+    @media (max-width: 960px) {
+      .ul-steps, .ul-levels { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .ul-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .ul-work { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .ul-hero h1 { font-size: clamp(2.4rem, 13vw, 3.8rem); }
+      .ul-actions .btn, .ul-buttons .btn { width: 100%; }
+      .ul-stats { gap: 1.4rem; }
+      .ul-steps, .ul-levels, .ul-grid { grid-template-columns: 1fr; }
+      .ul-filter-row > span { min-width: 100%; }
+      .ul-random { margin-left: 0; }
+    }
+  </style>
+</head>
+
+<body class="ul-page">
+  <a class="skip-link" href="#main">Edukira saltatu</a>
+
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">H</span><span>Historia BTX2<small>Espainiako Historia · 2. Batxilergoa</small></span></a>
+      <button class="nav-toggle" aria-label="Menua" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="index.html#gaiak">Gaiak</a>
+        <a href="#nola">Nola</a>
+        <a href="#galderak">Galderak</a>
+        <a class="cta" href="#galderak">Hasi →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="ul-hero">
+      <div class="container">
+        <span class="ul-eyebrow">Ulermena · Galdera laburrak</span>
+        <h1>Ulertu duzu ala buruz ikasi duzu?</h1>
+        <p class="lead">Galdera hauek ez dira datuak errepikatzeko: kausak, ondorioak eta prozesuak ulertu dituzun egiaztatzeko dira. Idatzi zeure hitzekin, jaso IA-tutorearen feedbacka eta berridatzi, ulertu arte.</p>
+        <div class="ul-actions">
+          <a class="btn btn-primary" href="#galderak">Aukeratu galdera bat</a>
+          <a class="btn btn-ghost" href="#nola">Nola funtzionatzen du?</a>
+        </div>
+        <div class="ul-stats" aria-label="Ariketaren datu nagusiak">
+          <div class="ul-stat"><strong data-stat="galderak">–</strong><span>Galdera</span></div>
+          <div class="ul-stat"><strong>50–100</strong><span>Hitz erantzun bakoitzeko</span></div>
+          <div class="ul-stat"><strong>3</strong><span>Saiakera gomendatu</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ul-section" id="nola">
+      <div class="container">
+        <div class="ul-head">
+          <span class="ul-kicker">Ikaslearentzako argibideak</span>
+          <h2>Nola landu galdera bat</h2>
+          <p>IA-tutoreak ez dizu erantzuna emango: galderen bidez lagunduko dizu falta zaizuna aurkitzen. Ideia gakoak hirugarren saiakeraren ondoren bakarrik erakutsiko ditu.</p>
+        </div>
+        <div class="ul-steps">
+          <article class="ul-step"><span class="num">1</span><h3>Aukeratu galdera</h3><p>Iragazi gaiaren eta epigrafe ofizialaren arabera, edo utzi zoriari aukeratzen.</p></article>
+          <article class="ul-step"><span class="num">2</span><h3>Idatzi zeure kabuz</h3><p>50–100 hitz, apunterik eta IArik gabe. Ez zerrendatu: azaldu zergatik eta nola.</p></article>
+          <article class="ul-step"><span class="num">3</span><h3>Kopiatu prompta</h3><p>Itsatsi txat berri batean (Gemini, ChatGPT, Copilot…). Maila eta pentsatzeko galdera bat jasoko dituzu.</p></article>
+          <article class="ul-step"><span class="num">4</span><h3>Berridatzi</h3><p>Idatzi bertsio berria txat berean. Tutoreak aurrekoarekin alderatuko du.</p></article>
+        </div>
+        <div class="ul-levels" aria-label="Ulermen-mailak" id="mailak"></div>
+      </div>
+    </section>
+
+    <section class="ul-section alt" id="galderak">
+      <div class="container">
+        <div class="ul-head">
+          <span class="ul-kicker">Galdera-bankua</span>
+          <h2>Aukeratu galdera bat</h2>
+          <p>Galdera bakoitza USaP 2026–27ko epigrafe ofizial bati lotuta dago. Gai gehiago laster.</p>
+        </div>
+        <div class="ul-filters">
+          <div class="ul-filter-row" id="gaiFiltroa"><span>Gaia</span></div>
+          <div class="ul-filter-row" id="epiFiltroa"><span>Epigrafea</span></div>
+          <div class="ul-filter-row" id="motaFiltroa"><span>Mota</span><button class="ul-chip ul-random" type="button" id="ausaz">🎲 Ausazko galdera</button></div>
+        </div>
+        <div class="ul-grid" id="zerrenda" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="ul-section" id="erantzun" hidden>
+      <div class="container">
+        <div class="ul-work">
+          <div class="ul-panel">
+            <div class="ul-tags" id="galderaTags"></div>
+            <h2 class="ul-question" id="galderaTestua"></h2>
+            <a class="ul-review" id="errepasoa" href="#">Errepasatu atala ↗</a>
+            <label for="erantzuna" class="ul-kicker" style="display:block;margin-bottom:.5rem;">Zure erantzuna</label>
+            <textarea class="ul-textarea" id="erantzuna" placeholder="Idatzi hemen zure erantzuna zeure hitzekin…"></textarea>
+            <div class="ul-meta">
+              <span class="ul-count" id="kontagailua">0 hitz</span>
+              <span>Helburua: 50–100 hitz · zirriborroa nabigatzaile honetan gordetzen da</span>
+            </div>
+            <p class="ul-notice" id="itsatsiOharra" hidden>Testua itsatsi duzu. Ariketa zure ulermena neurtzeko da: zeure hitzekin idatzi baduzu bakarrik izango du balioa feedbackak.</p>
+            <div class="ul-buttons">
+              <button class="btn btn-primary" type="button" id="kopiatu" disabled>Kopiatu prompta IArako</button>
+              <button class="btn btn-soft" type="button" id="autoBotoia" disabled>IArik gabe: autozuzenketa</button>
+            </div>
+            <div class="ul-status" id="egoera" aria-live="polite"></div>
+            <details class="ul-prompt">
+              <summary>Ikusi IAri bidaliko zaion prompta</summary>
+              <pre id="promptAurrebista"></pre>
+            </details>
+          </div>
+
+          <aside class="ul-panel ul-side" id="autozuzenketa">
+            <h3>Autozuzenketa</h3>
+            <div class="ul-locked" id="autoBlokeoa">Idatzi lehenik zure erantzuna (gutxienez 20 hitz). Gero, IArik ez baduzu, hemen alderatu ahal izango duzu ideia gakoekin.</div>
+            <div id="autoEdukia" hidden>
+              <p>Irakurri zure erantzuna eta markatu benetan azaldu duzuna, ez aipatu duzuna soilik.</p>
+              <p class="ul-self-title">Ideia gakoak</p>
+              <ul class="ul-self" id="autoIdeiak"></ul>
+              <p class="ul-self-title">Erlazio gakoa</p>
+              <ul class="ul-self" id="autoErlazioa"></ul>
+              <p class="ul-self-title">Akats hauetakoren bat egin duzu?</p>
+              <ul class="ul-self" id="autoAkatsak"></ul>
+              <div class="ul-result" id="autoEmaitza" aria-live="polite"></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">H</span><span>Historia BTX2<small>Luken San Sebastián Alkorta</small></span></a>
+      <div class="foot-bottom">
+        <span>Material didaktikoa · Espainiako Historia · 2. Batxilergoa</span>
+        <span>© <span data-year>2026</span> · Luken San Sebastián Alkorta · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/ulermen-bankua.js?v=1"></script>
+  <script src="assets/js/ulermen-galderak.js?v=1"></script>
+</body>
+</html>

@@ -70,6 +70,7 @@ def build_sitemap(site: dict, temas_meta: list):
         ("historia-azterketa-idatzi.html", "0.8"),
         ("iturriak-iruzkindu.html", "0.8"),
         ("iruzkin-entrenamendua.html", "0.8"),
+        ("ulermen-galderak.html", "0.8"),
         ("historia-uda/", "0.9"),
     ]
     for tema in temas_meta:
