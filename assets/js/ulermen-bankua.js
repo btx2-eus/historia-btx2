@@ -1543,6 +1543,296 @@ window.ULERMEN_BANKUA = {
           ]
         }
       ]
+    },
+    {
+      num: 9,
+      izenburua: "Monarkia parlamentarioaren sendotzea",
+      urteak: "1982–1996",
+      orria: "temas/09-monarkia-parlamentarioa.html",
+      epigrafeak: [
+        { num: "9.1", izenburua: "Industria-birmoldaketa Euskal Autonomia Erkidegoan", atala: "g9-2" },
+        { num: "9.2", izenburua: "Biolentzia terroristaren jarraipena", atala: "g9-3" },
+        { num: "9.3", izenburua: "Indar polizialak, erakundeak eta gizartea terrorismoaren aurrean", atala: "g9-4" },
+        { num: "9.4", izenburua: "Espainia Europa eraikitzeko prozesuan", atala: "g9-5" }
+      ],
+      galderak: [
+        {
+          id: "9.1-a",
+          epigrafea: "9.1",
+          mota: "kausa",
+          galdera: "Zergatik sartu zen krisian euskal industria astuna, eta zergatik jo zen industria-birmoldaketara?",
+          ideiak: [
+            "Euskal industriaren oinarria siderurgia, ontzigintza, meatzaritza eta metalurgia zen, batez ere Bizkaian eta Ezkerraldean.",
+            "1970eko hamarkadatik krisian sartu zen: petrolio-krisiak, nazioarteko lehia, teknologia zaharkitua eta produktibitate baxua.",
+            "Espainia EEEan sartzeak sektore zaharren babesa murriztera behartu zuen.",
+            "Birmoldaketaren helburua sektore ez-lehiakorrak itxi eta berrantolatzea zen: ekonomikoki beharrezkoa agian, sozialki kolpe izugarria."
+          ],
+          erlazioa: "Barneko ahuleziek (teknologia, produktibitatea) eta kanpoko lehiak industria ez-lehiakor bihurtu zuten, eta merkatu europarrean sartzeak babesa kendu zionez, birmoldaketa saihestezina bihurtu zen.",
+          akatsak: [
+            "Krisia 1990eko hamarkadan hasi zela esatea (1970eko hamarkadatik zetorren).",
+            "Birmoldaketa Eusko Jaurlaritzaren erabaki hutsa izan zela esatea, kanpoko presioak aipatu gabe.",
+            "Kausak zerrendatzea, birmoldaketarekin lotu gabe."
+          ],
+          pistak: [
+            "Zein sektoretan oinarritzen zen Bizkaiko industria?",
+            "Zer gertatzen zaio industria zaharkitu bati merkatua irekitzen denean?",
+            "Zer eskatzen zuen Europan sartzeak babestutako sektoreei buruz?"
+          ]
+        },
+        {
+          id: "9.1-b",
+          epigrafea: "9.1",
+          mota: "ondorioa",
+          galdera: "Zer ondorio sozial izan zituen industria-birmoldaketak Euskal Herrian? Zergatik izan zen hain gatazkatsua?",
+          ideiak: [
+            "Industria ez zen lantegi multzo bat soilik: langile-auzoak, sindikatu-kultura, familia-ereduak eta identitate kolektiboa zituen gizarte-egitura bat zen.",
+            "Euskalduna ontziolaren gatazka sinbolo bihurtu zen; Altos Hornos de Vizcayaren gainbehera, siderurgiaren amaieraren ikur.",
+            "Sindikatuek (ELA, UGT, CCOO, LAB) mobilizazio ugari bultzatu zituzten: grebak, itxialdiak, errepide-mozketak.",
+            "Desindustrializazioaren paisaia: langabezia, auzoen degradazioa, heroina eta gazteen bazterketa."
+          ],
+          erlazioa: "Lantegiak gizarte oso baten oinarria zirenez, haien itxierak ez zuen lanpostuak bakarrik suntsitu: auzoak, bizimodua eta identitatea kolpatu zituen, eta horregatik izan zen erresistentzia hain gogorra.",
+          akatsak: [
+            "Langileek soldata hobeak bakarrik eskatzen zituztela esatea.",
+            "Birmoldaketak ez zuela eragin sozialik izan esatea.",
+            "Ondorioak zerrendatzea, industria-kulturaren garrantzia azaldu gabe."
+          ],
+          pistak: [
+            "Zer defendatzen zuten Euskaldunako langileek, lanpostuaz gain?",
+            "Zer gertatu zen fabrika itxi zen auzoetan?",
+            "Zergatik nahasten dira gatazka hauetan ekonomia, politika eta identitatea?"
+          ]
+        },
+        {
+          id: "9.1-c",
+          epigrafea: "9.1",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Guggenheimek Bilbo eraldatu zuen bat-batean; “Bilbo efektuak” ez du zerikusirik industria-birmoldaketarekin.» Zer dago gaizki? Azaldu zuzen.",
+          ideiak: [
+            "Eusko Jaurlaritzak, Kontzertu Ekonomikoaren ahalmen fiskalarekin, industria-politika aktiboak bultzatu zituen.",
+            "Laguntzak, berrindustrializazio-programak, teknologia-parkeak eta Mondragon Korporazioa: industria berrituago baterako egokitzapena.",
+            "Guggenheim 1997an inauguratu zen: 1980ko hamarkadako krisiak eta berroneratzeko borondateak jarri zituzten oinarriak.",
+            "Kostua ez zen guztientzat berdina izan: prestakuntza gutxiagoko langileek zailtasun handiagoak izan zituzten sektore berrietara egokitzeko."
+          ],
+          erlazioa: "Berroneratzea ez zen magia izan: krisiaren eta urte luzeetako industria-politikaren emaitza izan zen, eta haren prezioa ez zuten guztiek berdin ordaindu.",
+          akatsak: [
+            "Guggenheim 1980ko hamarkadan inauguratu zela esatea (1997an izan zen).",
+            "Berroneratzeak birmoldaketaren kostu sozialak ezabatu zituela esatea.",
+            "Baieztapena zuzentzea, Eusko Jaurlaritzaren politikak aipatu gabe."
+          ],
+          pistak: [
+            "Zer tresna ekonomiko zuen Eusko Jaurlaritzak beste autonomia batzuek ez bezala?",
+            "Zer egin zen 1980ko eta 1990eko hamarkadetan, Guggenheim iritsi aurretik?",
+            "Langile guztiek lortu al zuten lana sektore berrietan?"
+          ]
+        },
+        {
+          id: "9.2-a",
+          epigrafea: "9.2",
+          mota: "kausa",
+          galdera: "Zergatik jarraitu zuen ETAk indarkeriarekin demokrazia, autogobernua eta amnistia iritsi ondoren?",
+          ideiak: [
+            "ETA militarrak ez zuen marko demokratiko-autonomikoa onartu: Konstituzioa eta Gernikako Estatutua ez zituen benetako hausturatzat jotzen.",
+            "Marko horrek ez zituen bermatzen independentzia, autodeterminazioa edo proiektu sozialista-iraultzailea.",
+            "Estrategia: Estatua presionatu, gizartea beldurtu eta negoziazio politikoa behartu.",
+            "1980ko hamarkadatik ETAren indarkeria ezin da diktaduraren aurkako borroka gisa azaldu: demokraziaren, autogobernuaren eta herritarren askatasunaren aurka jardun zuen."
+          ],
+          erlazioa: "ETAk marko demokratiko berria zilegitzat jo ez zuenez, indarkeriarekin jarraitu zuen; baina testuingurua aldatu zenez, indarkeria hori demokraziaren eta herritarren aurkakoa bihurtu zen.",
+          akatsak: [
+            "ETAren 80ko hamarkadako indarkeria frankismoaren aurkako borroka bera zela esatea.",
+            "ETAk euskal gizarte osoa ordezkatzen zuela esatea.",
+            "ETAren arrazoiak azaltzea, testuinguru demokratikoa aipatu gabe."
+          ],
+          pistak: [
+            "Zer zegoen 1980an, 1970ean ez zegoena?",
+            "Zergatik ez zituen ETAk Konstituzioa eta Estatutua onartzen?",
+            "Indarkeria bera diktadura batean ala demokrazia batean: zer aldatzen da?"
+          ]
+        },
+        {
+          id: "9.2-b",
+          epigrafea: "9.2",
+          mota: "aldaketa",
+          galdera: "Zer erakusten dute Yoyesen hilketak (1986), Hipercorreko bonbak (1987) eta Gregorio Ordóñezen hilketak (1995) ETAren indarkeriaren bilakaerari buruz?",
+          ideiak: [
+            "Yoyes (1986): ETAko kide ohi baten hilketa, disidentzia zigortzeko; mezua: «ez dago irteerarik».",
+            "Hipercor (Bartzelona, 1987): merkataritza-gune batean 21 hildako; zibilen aurkako terrorismo masiboa. Urte berean Zaragozako kuartela (11 hildako, haurrak barne).",
+            "Gregorio Ordóñez (1995): Donostiako PPko buruzagia; politikarien aurkako jazarpena sistematiko bihurtzen ari zen.",
+            "Tartean, Aljeriako elkarrizketek (1989) porrot egin zuten: armak uztea vs. helburu politikoak lortzea."
+          ],
+          erlazioa: "ETAren helburuak zabaldu egin ziren (kide ohiak, zibilak, politikariak), gizarte osoa beldurtzeko; baina bilakaera horrek ETAren zilegitasun soziala gero eta gehiago higatu zuen.",
+          akatsak: [
+            "ETAk segurtasun-indarrak bakarrik hartzen zituela helburutzat esatea.",
+            "Hipercorreko atentatua GALek egin zuela esatea.",
+            "Hiru gertakariak deskribatzea, bilakaera bat azaldu gabe."
+          ],
+          pistak: [
+            "Nor zen Yoyes, eta zer mezu bidali zion ETAk bere kideei?",
+            "Hipercorreko biktimak: nor ziren?",
+            "Helburuen zerrendak zabaltzen badira, zer gertatzen da gizartearen beldurrarekin eta ETAren babesarekin?"
+          ]
+        },
+        {
+          id: "9.2-c",
+          epigrafea: "9.2",
+          mota: "kontzeptua",
+          galdera: "Zer izan zen GAL, eta zergatik esaten da «gerra zikina» Estatuaren beraren kontraesana izan zela?",
+          ideiak: [
+            "GAL (1983–1987): 27 pertsona hil zituen, batez ere Ipar Euskal Herrian.",
+            "Lasa eta Zabalaren bahiketa, tortura eta hilketa; Segundo Mareyren bahiketa.",
+            "Segurtasun-aparatuaren sektoreekin eta Barne Ministerioaren egitura ilunekin lotuta zegoen; auzitegiek Rafael Vera eta José Barrionuevo zigortu zituzten.",
+            "Terrorismoaren aurkako borrokaren zilegitasun morala kaltetu zuen, eta 1990eko hamarkadako gobernu sozialistaren krisia sakondu."
+          ],
+          erlazioa: "ETAk zuzenbide-estatua kanpotik kolpatzen zuen; GALek, berriz, Estatuaren barrutik urratu zituen haren printzipioak: horregatik da kontraesana, demokraziak bere burua defendatzeko bere oinarriak suntsitzen zituelako.",
+          akatsak: [
+            "GAL ETAren adar bat zela esatea.",
+            "GAL eskuin muturreko talde independente bat izan zela esatea, Estatuaren aparatuekin loturarik gabe.",
+            "Inor ez zela zigortu esatea (Vera eta Barrionuevo zigortu zituzten)."
+          ],
+          pistak: [
+            "Nork antolatu eta finantzatu zuen GAL?",
+            "Zer printzipio urratzen ditu Estatu batek epaiketarik gabe hiltzen duenean?",
+            "Nola eragin zion GALek PSOEren gobernuari 1990eko hamarkadan?"
+          ]
+        },
+        {
+          id: "9.3-a",
+          epigrafea: "9.3",
+          mota: "kontzeptua",
+          galdera: "Zer izan zen Ajuria Eneko Ituna (1988), eta zergatik izan zen garrantzitsua terrorismoaren aurrean?",
+          ideiak: [
+            "1988an sinatu zuten EAJk, PSE-PSOEk, APk, CDSk, EEk eta beste indar batzuek.",
+            "Helburua: ETA politikoki isolatzea eta indarkeriari zilegitasun oro kentzea.",
+            "Alderdi demokratikoen batasuna bermatu nahi zuen, ideologia desberdinak izan arren.",
+            "Herri Batasunak uko egin zion: euskal politikaren zatiketa sakona agerian geratu zen."
+          ],
+          erlazioa: "Alderdi demokratiko guztiek indarkeriaren aurka bat egiteak ETA politikoki isolatu zuen: indarkeria ez zen inoren izenean egiten, eta haren zilegitasuna ahuldu zen.",
+          akatsak: [
+            "Ajuria Eneko Ituna Gobernuaren eta ETAren arteko akordioa izan zela esatea.",
+            "Herri Batasunak ituna sinatu zuela esatea.",
+            "Sinatzaileak zerrendatzea, itunaren helburua azaldu gabe."
+          ],
+          pistak: [
+            "Zein alderdik sinatu zuten, eta zein ez?",
+            "Zer esan nahi du indarkeria bat «politikoki isolatzeak»?",
+            "Zergatik da garrantzitsua alderdi aurkariek gai batean bat egitea?"
+          ]
+        },
+        {
+          id: "9.3-b",
+          epigrafea: "9.3",
+          mota: "kausa",
+          galdera: "Zergatik ahuldu zen ETAren zilegitasun soziala eta politikoa 1980ko eta 1990eko hamarkadetan?",
+          ideiak: [
+            "Maila poliziala: Ertzaintzaren garapena (segurtasuna euskal erakundeen esku) eta Espainia-Frantzia lankidetza, ETAren Ipar Euskal Herriko atzeguardia ahuldu zuena.",
+            "Maila instituzionala: Ajuria Eneko Ituna (1988), alderdi demokratikoen batasuna.",
+            "Maila soziala: Gesto por la Paz bezalako mobilizazioak (atentatu bakoitzaren ondoren isilaldiak) eta biktimen aitortza.",
+            "ETAren beraren ekintzek (Hipercor, Zaragoza, politikarien hilketak) babesa higatu zuten."
+          ],
+          erlazioa: "Hiru mailek (poliziala, instituzionala eta soziala) elkarri eragin zioten: ETA isolatu eta haren ekintzak zilegitasunik gabe utzi zituzten, euskal herritarren ordez hitz egiteko eskubiderik ez zuela erakutsiz.",
+          akatsak: [
+            "Polizia-ekintzak bakarrik ahuldu zuela ETA esatea.",
+            "GALek ETAren zilegitasuna ahuldu zuela esatea (kontrakoa: zuzenbide-estatuaren zilegitasuna kaltetu zuen).",
+            "Mailak zerrendatzea, elkarren arteko harremana azaldu gabe."
+          ],
+          pistak: [
+            "Zer egiten zuen Gesto por la Pazek atentatu bakoitzaren ondoren?",
+            "Zergatik zen garrantzitsua Frantziaren lankidetza?",
+            "Zer gertatzen zaio talde armatu bati gizarteak eta alderdiek bizkarra ematen diotenean?"
+          ]
+        },
+        {
+          id: "9.3-c",
+          epigrafea: "9.3",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Terrorismoari aurre egiteko edozein bide da zilegi, eraginkorra bada.» Zergatik da baieztapen hori okerra demokrazia batean? Azaldu zuzen, adibideekin.",
+          ideiak: [
+            "GALen «gerra zikinak» erakutsi zuen Estatuak bere printzipioak urratzen zituela: bahiketak, torturak, epaiketarik gabeko hilketak.",
+            "Horrek terrorismoaren aurkako borrokaren zilegitasun morala kaltetu zuen, eta arduradun politikoak zigortu zituzten.",
+            "Bide zilegiak ere egon ziren: polizia-lankidetza, Ajuria Eneko Ituna eta mobilizazio sozialak.",
+            "Demokraziaren benetako froga ez zen ETA ahultzea bakarrik, indarkeriari aurre egitean zuzenbide-estatuaren printzipioak mantentzea baizik."
+          ],
+          erlazioa: "Demokrazia batek bere printzipioak urratzen baditu bere burua defendatzeko, defendatu nahi duena bera suntsitzen du: zilegitasuna galtzen du, eta terrorismoaren aurkako borroka ahultzen da.",
+          akatsak: [
+            "GAL eraginkorra izan zelako justifikatuta zegoela esatea.",
+            "Baieztapena ukatzea, adibiderik eman gabe.",
+            "Bide zilegirik ez zegoela esatea."
+          ],
+          pistak: [
+            "Zer egin zuen GALek, eta zer gertatu zitzaien haren arduradunei?",
+            "Zer bereizten du demokrazia bat talde terrorista batetik?",
+            "Zein bide erabili ziren printzipioak urratu gabe?"
+          ]
+        },
+        {
+          id: "9.4-a",
+          epigrafea: "9.4",
+          mota: "ondorioa",
+          galdera: "Zer ekarri zion Espainiari 1986an Europako Ekonomia Erkidegoan sartzeak? Zergatik esaten da aukera eta presioa izan zela?",
+          ideiak: [
+            "1986ko urtarrilaren 1ean Espainia eta Portugal EEEan sartu ziren; Felipe Gonzálezen gobernuaren helburu estrategikoa zen.",
+            "Aukerak: Europako merkatu zabala, azpiegiturak finantzatzeko funts europarrak eta legitimitate demokratikoa.",
+            "Presioak: lehiakortasun handiagoa, industria-birmoldaketaren azkartzea, diziplina ekonomikoa, nekazaritzaren eta arrantzaren egokitzapena.",
+            "Demokraziaren zilegitasuna indartu zen barruan eta kanpoan: Espainia Europako proiektuaren parte bihurtu zen."
+          ],
+          erlazioa: "Europan sartzeak modernizazioa eta legitimazio demokratikoa ekarri zituen, baina lehiak eta diziplinak birmoldaketa azkartu zuten: integrazioaren onurak eta kostuak ez ziren berdin banatu.",
+          akatsak: [
+            "Espainia 1992an edo 1996an sartu zela esatea (1986an sartu zen).",
+            "Sarrerak onurak bakarrik ekarri zituela esatea, kostu sozialik gabe.",
+            "EEE eta NATO nahastea."
+          ],
+          pistak: [
+            "Zer eman zion Europak Espainiari errepideak eta azpiegiturak eraikitzeko?",
+            "Zer gertatu zen euskal industria astunarekin merkatua ireki zenean?",
+            "Zergatik zen garrantzitsua demokrazia gazte batentzat Europako klubean sartzea?"
+          ]
+        },
+        {
+          id: "9.4-b",
+          epigrafea: "9.4",
+          mota: "aldaketa",
+          galdera: "PSOEk «OTAN, de entrada no» esaten zuen oposizioan, baina 1986an NATOn jarraitzearen alde egin zuen. Zergatik aldatu zuen jarrera, eta zer emaitza izan zuen erreferendumak?",
+          ideiak: [
+            "Espainia 1982an sartu zen NATOn, UCDren gobernuarekin; PSOE oso kritikoa zen oposizioan.",
+            "Gobernura iritsi ondoren, Felipe Gonzálezek jarrera aldatu zuen: Mendebaldeko blokean fidagarri agertu behar zen.",
+            "1986ko erreferendumean baldintzak planteatu ziren: egitura militar integratuan ez sartzea, arma nuklearrik ez, AEBen presentzia murriztea.",
+            "Espainian «bai» nagusitu zen, baina Euskal Herrian eta Katalunian «ez»."
+          ],
+          erlazioa: "Oposiziotik gobernura igarotzean, PSOEk Mendebaldeko aliantzako kide fidagarri izatea lehenetsi zuen; baldintzekin aurkeztu zuen aldaketa, baina emaitzak lurraldeen arteko desberdintasunak erakutsi zituen.",
+          akatsak: [
+            "PSOEk sartu zuela Espainia NATOn esatea (UCDk sartu zuen 1982an).",
+            "Erreferendumean «ez» irabazi zuela esatea Espainia osoan.",
+            "Aldaketa deskribatzea, haren arrazoia azaldu gabe."
+          ],
+          pistak: [
+            "Noiz eta zein gobernurekin sartu zen Espainia NATOn?",
+            "Gobernuan egotea eta oposizioan egotea: zer aldatzen da nazioarteko harremanetan?",
+            "Zer emaitza izan zuen erreferendumak Euskal Herrian?"
+          ]
+        },
+        {
+          id: "9.4-c",
+          epigrafea: "9.4",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «1992ko ekitaldiek erakutsi zuten Espainia herrialde moderno bat zela, arazo ekonomiko eta sozialik gabe.» Zer dago gaizki? Azaldu zuzen.",
+          ideiak: [
+            "1992an Bartzelonako Olinpiar Jokoek, Sevillako Expoak eta Madril-Sevilla AVEak Espainia moderno eta europar baten irudia proiektatu zuten.",
+            "Maastrichteko Itunak (1992) diziplina ekonomikoa eskatu zuen: defizita kontrolatu eta inflazioa mugatu.",
+            "1993ko krisi ekonomikoak (langabezia %24 inguru) itzalak agerian utzi zituen; industria-birmoldaketa eta heroina ere bai.",
+            "Ustelkeria-eskandaluek PSOE higatu zuten; 1993an gehiengo osoa galdu zuen, eta 1996an PPk irabazi zuen (alternantzia)."
+          ],
+          erlazioa: "1992ko irudi distiratsuak modernizazio erreala erakusten zuen, baina ez osoa: modernizazio hori ez zen guztientzat berdina izan, eta krisiak eta gizarte-desorekak berehala agertu ziren.",
+          akatsak: [
+            "1992ko ekitaldiek ez zutela ezer aldatu esatea (azpiegiturak eta nazioarteko irudia hobetu zituzten).",
+            "1996an PSOEk irabazi zuela esatea (PPk irabazi zuen).",
+            "Baieztapena zuzentzea, 1993ko krisia aipatu gabe."
+          ],
+          pistak: [
+            "Zer gertatu zen langabeziarekin 1993an?",
+            "Zer eskatzen zion Maastrichteko Itunak Espainiari?",
+            "Zer gertatu zen 1996ko hauteskundeetan, eta zergatik da garrantzitsua demokraziarentzat?"
+          ]
+        }
+      ]
     }
   ]
 };
