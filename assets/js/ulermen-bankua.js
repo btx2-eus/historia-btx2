@@ -894,6 +894,295 @@ window.ULERMEN_BANKUA = {
           ]
         }
       ]
+    },
+    {
+      num: 7,
+      izenburua: "Frankismoa II: desarrollismoa",
+      urteak: "1959–1975",
+      orria: "temas/07-frankismoa-ii.html",
+      epigrafeak: [
+        { num: "7.1", izenburua: "Garapen ekonomikoa eta gizarte-eraldaketak", atala: "g7-1" },
+        { num: "7.2", izenburua: "Erregimenaren finkapenari emandako erantzuna: babesa, indiferentzia eta oposizioa", atala: "g7-3" },
+        { num: "7.3", izenburua: "Frankismo berantiarraren krisia", atala: "g7-4" },
+        { num: "7.4", izenburua: "Errepresio politiko eta soziala", atala: "g7-5" }
+      ],
+      galderak: [
+        {
+          id: "7.1-a",
+          epigrafea: "7.1",
+          mota: "kausa",
+          galdera: "Zerk azaltzen du 1960ko hamarkadako «mirari ekonomikoa»?",
+          ideiak: [
+            "1959ko Egonkortze Planak autarkia amaitu zuen: inflazioa kontrolatu eta ekonomia kanpora ireki (teknokratak).",
+            "Atzerriko kapitalak eta teknologiak industria-adar berriak eta enpresa handiak ekarri zituzten.",
+            "Turismoaren boom-a eta emigranteen diru-bidalketak dibisa-iturri erabakigarriak izan ziren; barne-migrazioak lan-eskua eraman zuen industria-guneetara.",
+            "Estatuak ere bultzatu zuen: INIren enpresak (SEAT, Endesa…), azpiegiturak eta Garapen Planak."
+          ],
+          erlazioa: "Irekierak kanpoko baliabideak (kapitala, turistak, dibisak) ekarri zituenez, autarkian falta zitzaizkion faktoreak lortu zituen ekonomiak, eta hazkunde azkarra posible bihurtu zen.",
+          akatsak: [
+            "Hazkundea autarkiaren arrakastaren ondorioa izan zela esatea (autarkia uztearen ondorioa da).",
+            "Faktore bakar bat (turismoa, adibidez) aipatzea kausa oso gisa.",
+            "Faktoreak zerrendatzea, 1959ko irekierarekin lotu gabe."
+          ],
+          pistak: [
+            "Zer aldatu zen 1959an, eta zer ate ireki zuen horrek?",
+            "Dibisak behar ziren makinak eta petrolioa erosteko: nondik etorri ziren?",
+            "Zer egin zuten Europara lanera joandako milaka espainiarrek beren soldatekin?"
+          ]
+        },
+        {
+          id: "7.1-b",
+          epigrafea: "7.1",
+          mota: "ondorioa",
+          galdera: "Zer gizarte-eraldaketa ekarri zuen desarrollismoak, eta zergatik bihurtu zen hori arazo erregimenarentzat?",
+          ideiak: [
+            "Urbanizazio azkarra eta migrazio masiboa: landa-eremuetatik industria-guneetara; auzo periferikoak, planifikazio eskasarekin.",
+            "Lan-munduaren eraldaketa: soldata-lana hedatu zen; langile masa eta klase ertain berriak.",
+            "Kontsumo-gizartea: autoa, telebista, oporrak; hezkuntza hedatu zen.",
+            "Kontraesanak: lurralde-desorekak, lan-segurtasun eskasa, sindikatu askerik eta greba-eskubiderik ez."
+          ],
+          erlazioa: "Gizartea urbanoago, heziago eta konektatuago bihurtu ahala, askatasun-nahia eta gatazka soziala hazi ziren: erregimena sendotu zuen hazkundeak berak elikatu zuen haren krisia.",
+          akatsak: [
+            "Aldaketak guztiei berdin eta desorekarik gabe iritsi zitzaizkiela esatea.",
+            "Hazkundearekin batera sindikatu askeak onartu zirela esatea.",
+            "Eraldaketak zerrendatzea, erregimenarekiko ondoriorik azaldu gabe."
+          ],
+          pistak: [
+            "Nora joan zen landa-eremuko jendea, eta nolako auzoetan bizi izan zen?",
+            "Langile asko fabrika berean biltzean, zer errazten da?",
+            "Erregimenak hazkundea erabili zuen legitimatzeko. Zer gertatzen da jendeak askatasun gehiago nahi badu?"
+          ]
+        },
+        {
+          id: "7.1-c",
+          epigrafea: "7.1",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Desarrollismoak Espainia modernizatu zuen, eta horregatik frankismoa demokratizatu egin zen 60ko hamarkadan.» Zer dago gaizki? Azaldu zuzen.",
+          ideiak: [
+            "Modernizazioa ekonomikoa izan zen, ez politikoa: «hazkundea bai, askatasunik gabe».",
+            "Alderdi bakarra, Sindikatu Bertikala eta greba-eskubiderik eza mantendu ziren.",
+            "Errepresioa ez zen desagertu: sofistikatu egin zen (TOP 1963, salbuespen-egoerak).",
+            "Erregimenak hazkundea legitimazio-tresna gisa erabili zuen, askatasunak ukatzen jarraituz."
+          ],
+          erlazioa: "Modernizazio ekonomikoak ez zuen demokratizaziorik ekarri; aitzitik, sortutako gizarte berriak erregimenaren aurkako tentsioak elikatu zituen, eta erregimenak errepresioz erantzun zuen.",
+          akatsak: [
+            "Baieztapena zuzentzea, baina desarrollismoak ezer aldatu ez zuela esatea (ekonomia eta gizartea errotik aldatu ziren).",
+            "Alderdi politikoak 60ko hamarkadan legeztatu zirela esatea."
+          ],
+          pistak: [
+            "Zer aldatu zen 60ko hamarkadan: ekonomia, politika, ala biak?",
+            "Langileek greba egin zezaketen? Sindikatu askeak zeuden?",
+            "Zer organo sortu zen 1963an delitu politikoak epaitzeko?"
+          ]
+        },
+        {
+          id: "7.2-a",
+          epigrafea: "7.2",
+          mota: "kontzeptua",
+          galdera: "Zer esan nahi du gizarteak frankismoari «babesa, indiferentzia eta oposizioa» eman ziola? Zergatik laguntzen du horrek erregimenaren iraupena ulertzen?",
+          ideiak: [
+            "Babesa: garaileen Espainia (militarrak, administrazioa, jabeak), antikomunismoa eta «ordena»; batzuen babesa pragmatikoa zen, hobekuntza materialengatik.",
+            "Indiferentzia edo egokitzapena: gizartearen zati handia ez zen frankista militantea, ezta oposiziokoa ere; gerraren trauma, beldurra, nekea eta eguneroko hobekuntza.",
+            "Oposizioa: anitza eta gero eta zabalagoa (langileak, ikasleak, alderdi klandestinoak, nazionalismoak, Elizaren zati bat).",
+            "Hiru jarrerak batera existitu ziren, eta pertsona batek denboran zehar jarreraz alda zezakeen."
+          ],
+          erlazioa: "Erregimenaren egonkortasuna ez zen poliziaren ondorio hutsa: babes aktiboari gizartearen zati handiaren egokitzapena gehitu zitzaion, eta horrek oposizioa gutxiengoan mantendu zuen urte askotan.",
+          akatsak: [
+            "Espainiar guztiak frankistak edo antifrankistak zirela esatea, erdiko jarrerarik gabe.",
+            "Erregimenak errepresioagatik bakarrik iraun zuela esatea.",
+            "Hiru jarrerak definitzea, iraupenarekin lotu gabe."
+          ],
+          pistak: [
+            "Gerra bizi izan zuen pertsona batek, zergatik nahiago izango zuen politikan ez sartzea?",
+            "60ko hamarkadan bizimodua hobetzen ari bazen, nola eragiten zion horrek jendearen jarrerari?",
+            "Erregimena polizia bakarrik bada eusten, zer gertatzen da gizartearen zati handi bat aurka jartzen denean?"
+          ]
+        },
+        {
+          id: "7.2-b",
+          epigrafea: "7.2",
+          mota: "kausa",
+          galdera: "Zergatik hazi zen frankismoaren aurkako oposizioa 60ko hamarkadan, hazkunde ekonomikoaren garaian?",
+          ideiak: [
+            "Industrializazioak langile masa handiak sortu zituen; CCOOk fabriketako ordezkaritza «legala» aprobetxatu eta grebak antolatu zituen.",
+            "Hezkuntzaren hedapenarekin unibertsitatea erregimenaren aurkako espazio bihurtu zen (asanbladak, manifestazioak, grebak).",
+            "Nazionalismo periferikoak (Euskal Herria, Katalunia) identitatearen eta hizkuntzaren zapalkuntzaren aurka.",
+            "Elizaren zati bat (langile-pastorala, apaiz gazteak) eskubide sozialen alde jarri zen; gerra bizi ez zuen belaunaldi berri bat agertu zen."
+          ],
+          erlazioa: "Hazkunde ekonomikoak berak sortu zituen oposizioaren subjektu berriak (langileak, ikasleak): gizartea modernizatu zen, baina sistema politikoa itxita jarraitzen zuen.",
+          akatsak: [
+            "Oposizioa erbesteko alderdietan bakarrik zegoela esatea.",
+            "Elizak, oso-osorik, erregimena babesten jarraitu zuela esatea 60ko hamarkadan.",
+            "Oposizio-taldeak zerrendatzea, garapen ekonomikoarekin lotu gabe."
+          ],
+          pistak: [
+            "Nork osatzen zuen CCOO, eta non antolatzen zen?",
+            "Zer gertatu zen unibertsitateko ikasle-kopuruarekin?",
+            "Hazkunde ekonomikoa eta oposizioaren hazkundea: kontraesana dira, ala bata bestearen kausa?"
+          ]
+        },
+        {
+          id: "7.2-c",
+          epigrafea: "7.2",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «ETA izan zen frankismoaren aurkako oposizio nagusia.» Zergatik da baieztapen hori okerra? Azaldu zuzen.",
+          ideiak: [
+            "ETA 1959an sortu zen, EAJren jarrera moderatuarekin etsitako gazte nazionalistek bultzatuta; 60ko hamarkadan bide armatua hautatu zuen (1968an lehen hilketa).",
+            "Oposizioa askoz zabalagoa zen: langile-mugimendua (CCOO), ikasleak, PCE, PSOE, nazionalismo periferikoak, Elizaren zati bat.",
+            "Langile-mugimendua eta PCE izan ziren oposizio antolatu eta masiboena.",
+            "ETAren eragina bikoitza izan zen: erregimenaren errepresioa gogortu (Burgosko Prozesua, 1970) eta nazioartean deslegitimatu (Carrero Blancoren hilketa, 1973)."
+          ],
+          erlazioa: "ETAk oposizioaren zati bat ordezkatzen zuen, ez osoa; haren ekintzek eragin handia izan zuten (errepresioa eta deslegitimazioa), baina oposizio masiboa langile- eta ikasle-mugimenduak izan ziren.",
+          akatsak: [
+            "ETA 1970eko hamarkadan sortu zela esatea (1959an sortu zen).",
+            "ETAren eragina ukatzea, haren ekintzen ondorioak aipatu gabe.",
+            "Baieztapena zuzentzea, beste oposizio-talderik aipatu gabe."
+          ],
+          pistak: [
+            "Zein mugimenduk antolatzen zituen grebak fabriketan?",
+            "Noiz eta zergatik sortu zen ETA?",
+            "Zer ondorio izan zuen Burgosko Prozesuak nazioartean?"
+          ]
+        },
+        {
+          id: "7.3-a",
+          epigrafea: "7.3",
+          mota: "kausa",
+          galdera: "Zergatik sartu zen frankismoa krisi sakonean 1973 eta 1975 artean?",
+          ideiak: [
+            "Krisi ekonomikoa: 1973ko petrolio-krisiak inflazioa eta kostuak igo zituen; «ongizatearen promesa» higatu eta grebak ugaritu ziren.",
+            "Krisi politikoa: Franco zahartzen ari zen; Carrero Blancoren hilketak (1973) jarraipena kolokan jarri zuen, eta «bunkerra» eta aperturistak zatitu ziren.",
+            "Arias Navarroren «irekiera» (otsailaren 12ko espiritua) oso mugatua izan zen eta frustrazioa sortu zuen.",
+            "Krisi sozial eta nazioartekoa: oposizio antolatuagoa, indarkeria politikoa, Portugaleko Krabelinen Iraultza (1974) eta Greziako demokratizazioa; Europan «anomalia» zen."
+          ],
+          erlazioa: "Hiru krisiak batera iritsi ziren: erregimenak bere legitimazio nagusia (hazkundea) galdu zuen, liderra agortzen ari zen, eta gizarteak eta Europak aldaketa posible zela erakusten zuten.",
+          akatsak: [
+            "Krisia Francoren heriotzarekin hasi zela esatea (lehenago hasi zen).",
+            "Kausa bakarra (petrolioa, adibidez) aipatzea.",
+            "Arias Navarroren irekierak benetako pluralismoa ekarri zuela esatea."
+          ],
+          pistak: [
+            "Erregimenak hazkunde ekonomikoarekin legitimatzen bazuen bere burua, zer gertatu zen 1973an?",
+            "Nor zen Carrero Blanco, eta zer zekarren haren heriotzak?",
+            "Zer gertatu zen 1974an Portugalen, eta zergatik zen garrantzitsua Espainiarentzat?"
+          ]
+        },
+        {
+          id: "7.3-b",
+          epigrafea: "7.3",
+          mota: "ondorioa",
+          galdera: "Zergatik izan zen Carrero Blancoren hilketa (1973ko abendua) kolpe handia «Franco gabeko frankismoa» prestatzeko planarentzat?",
+          ideiak: [
+            "Francok jarraipena prestatu zuen: 1969an Juan Carlos ondorengo izendatu zuen («a título de Rey»).",
+            "Carrero Blanco Francoren konfiantzazko gizona zen, eta 1973an Gobernuko Presidente izendatu zuten.",
+            "Plana: monarkiaren forma (Juan Carlos), baina edukia frankista; Carrero zen horren bermea.",
+            "ETAk hil zuenean, erregimena barrutik zatitu zen («bunkerra» vs. aperturistak), eta Arias Navarrok ordezkatu zuen."
+          ],
+          erlazioa: "Carrero zen Franco hil ondoren erregimenaren jarraipena bermatu behar zuen pieza; hura desagertzean, jarraipen-planak bere zutabe nagusia galdu zuen eta barne-zatiketak ageriko bihurtu ziren.",
+          akatsak: [
+            "Carrero Blanco Francoren ondorengo izendatua zela esatea (Juan Carlos zen).",
+            "Hilketa Francoren heriotzaren ondoren gertatu zela esatea.",
+            "Hilketa deskribatzea, jarraipen-planarekin lotu gabe."
+          ],
+          pistak: [
+            "Nor izan behar zen Estatuko burua Franco hil ondoren, eta nor gobernuburua?",
+            "Zergatik zen Carrero hain garrantzitsua Francorentzat?",
+            "Haren heriotzaren ondoren, nola banatu ziren erregimenaren barruko taldeak?"
+          ]
+        },
+        {
+          id: "7.3-c",
+          epigrafea: "7.3",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Francok Juan Carlos ondorengo aukeratu zuen, Espainiara demokrazia ekar zezan.» Zer dago gaizki? Azaldu zuzen.",
+          ideiak: [
+            "1969an Francok Juan Carlos izendatu zuen «a título de Rey», Don Juan (haren aita, oinordeko «naturalagoa») baztertuta.",
+            "Juan Carlos erregimenaren barruan hezia zen, eta «kontrolagarriagoa» iruditzen zitzaion Francori.",
+            "Helburua jarraipena zen: monarkia frankista, «lotuta» utzitako instituzioekin.",
+            "Hala ere, Trantsizioan jarraipenerako sortutako tresna (monarkia) aldaketarako bide bihurtu zen."
+          ],
+          erlazioa: "Francoren asmoa (frankismoaren jarraipena) eta gertatu zena (Trantsizioa) bereizi behar dira: jarraipenerako sortutako monarkia aldaketarako tresna bihurtu zen ondoren.",
+          akatsak: [
+            "Juan Carlos Don Juanen aita zela esatea (semea zen).",
+            "Juan Carlos 1975 baino lehen errege zela esatea (1975eko azaroaren 22an proklamatu zuten).",
+            "Baieztapena zuzentzea, baina gero gertatutako Trantsizioa ukatzea."
+          ],
+          pistak: [
+            "Zergatik ez zuen Francok Don Juan aukeratu?",
+            "Zer espero zuen Francok bere ondorengoarengandik?",
+            "Asmoa eta emaitza: beti bat datoz historian?"
+          ]
+        },
+        {
+          id: "7.4-a",
+          epigrafea: "7.4",
+          mota: "aldaketa",
+          galdera: "Nola aldatu zen errepresioa 1959–1975ean, oposizioa hazi ahala? Zer jarraitu zuen berdin?",
+          ideiak: [
+            "Errepresioa ez zen desagertu: sofistikatu egin zen eta legalitate-itxuraz jantzi.",
+            "Tresna juridikoak: Ordena Publikoaren Legea (1959), Tribunal de Orden Público (TOP, 1963), Prentsa Legea (1966, zentsura berrantolatua).",
+            "Aparatua: Brigada Político-Social, espetxeak, isunak, lanpostu-galerak eta salbuespen-egoerak (1969an estatu osoan; Euskal Herrian behin baino gehiagotan).",
+            "Azken urteetan gogortu egin zen: Burgosko Prozesua (1970), Terrorismoaren Prebentziorako Dekretua eta fusilamenduak (1975)."
+          ],
+          erlazioa: "Oposizioa hazi ahala, errepresioak forma aldatu zuen (legezkoago eta sofistikatuago), baina helburua bera zen: disidentzia isilaraztea; eta krisia sakondu zenean, berriz gogortu zen.",
+          akatsak: [
+            "60ko hamarkadan errepresioa amaitu zela esatea.",
+            "TOP auzitegi demokratiko arrunta zela esatea (delitu politikoetarako organo berezia zen).",
+            "Tresnak zerrendatzea, aldaketa (sofistikazioa) azaldu gabe."
+          ],
+          pistak: [
+            "Gerraostean nola zigortzen ziren aurkariak, eta nola 60ko hamarkadan?",
+            "Zer zen TOP, eta zergatik zen garrantzitsua «legez» epaitzea?",
+            "Zer gertatu zen errepresioarekin 1974–1975ean?"
+          ]
+        },
+        {
+          id: "7.4-b",
+          epigrafea: "7.4",
+          mota: "kontzeptua",
+          galdera: "Zer esan nahi du frankismoaren errepresioa politikoa ez ezik «soziala» ere izan zela? Jarri adibide bat.",
+          ideiak: [
+            "Frankismoak gizarte-eredu bat inposatu zuen: familia patriarkala, moral katolikoa eta genero-rol zorrotzak (nazional-katolizismoa).",
+            "Eredu horretatik kanpo zeudenak kontrolatu eta zigortu ziren, politikan aritu ez arren.",
+            "Adibidea: 1970eko Peligrosidad y Rehabilitación Social Legeak homosexualak, prostituzioarekin lotutako emakumeak eta eskaleak «arriskutsutzat» jo eta zigortu zituen.",
+            "Emakumeen mugak moral- eta lege-murrizketen bidez mantendu ziren."
+          ],
+          erlazioa: "Errepresioa ez zen oposizio politikoaren aurka bakarrik: erregimenaren gizarte-eredu nazional-katolikotik kanpo zegoen oro kontrolatzeko tresna zen.",
+          akatsak: [
+            "Errepresio soziala gerraostean bakarrik egon zela esatea (1970eko legea frankismo berantiarrekoa da).",
+            "Errepresio soziala eta politikoa gauza bera direla esatea, bereizi gabe.",
+            "Adibidea ematea, nazional-katolizismoarekin lotu gabe."
+          ],
+          pistak: [
+            "Nor zigortu zezakeen erregimenak inoiz politikan aritu ez bazen ere?",
+            "Zer zen «normala» frankismoarentzat familia eta moralari dagokienez?",
+            "Zer jokabide jo zituen «arriskutsutzat» 1970eko legeak?"
+          ]
+        },
+        {
+          id: "7.4-c",
+          epigrafea: "7.4",
+          mota: "ondorioa",
+          galdera: "Zer ondorio izan zuen azken frankismoaren errepresioaren gogortzeak (1974–1975)?",
+          ideiak: [
+            "1974an Puig Antich anarkista gaztea «garrote vil»en bidez exekutatu zuten.",
+            "1975eko Terrorismoaren Prebentziorako Dekretuak neurri oso zorrotzak ezarri zituen.",
+            "1975eko irailaren 27ko bost fusilamenduek (ETAko 2, FRAPeko 3) nazioarteko gaitzespen zabala eta protestak eragin zituzten.",
+            "Erregimenaren deslegitimazioa, barnean eta nazioartean, azkartu egin zen; Franco handik bi hilabetera hil zen (1975eko azaroaren 20a)."
+          ],
+          erlazioa: "Errepresioak indarra erakutsi nahi zuen, baina kontrako efektua izan zuen: erregimena are gehiago deslegitimatu eta isolatu zuen, haren amaiera iristear zegoenean.",
+          akatsak: [
+            "Fusilamenduek erregimena indartu zutela esatea, ondorioak aipatu gabe.",
+            "1975eko fusilatuak ETAko kideak bakarrik zirela esatea (FRAPekoak ere bai).",
+            "Frankismoa erreforma adostu baten bidez amaitu zela esatea (Francoren heriotzarekin amaitu zen)."
+          ],
+          pistak: [
+            "Nola erreakzionatu zuen Europak 1975eko irailaren fusilamenduen aurrean?",
+            "Errepresio gogorrak erregimena indartzen du beti, ala ahuldu ere egin dezake?",
+            "Zer gertatu zen bi hilabete geroago?"
+          ]
+        }
+      ]
     }
   ]
 };
