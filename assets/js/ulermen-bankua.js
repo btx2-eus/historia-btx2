@@ -604,6 +604,296 @@ window.ULERMEN_BANKUA = {
           ]
         }
       ]
+    },
+    {
+      num: 6,
+      izenburua: "Frankismoa I: gerraostea eta autarkia",
+      urteak: "1939–1959",
+      orria: "temas/06-frankismoa-i.html",
+      epigrafeak: [
+        { num: "6.1", izenburua: "Francoren erregimenaren oinarri instituzional eta ideologikoak", atala: "g6-1" },
+        { num: "6.2", izenburua: "Gerraosteko gizartea (garaileak eta garaituak) eta gerraosteko errepresio politikoa", atala: "g6-2" },
+        { num: "6.3", izenburua: "Autarkia ekonomikoa. Gosearen eta eskasiaren hedapena", atala: "g6-3" },
+        { num: "6.4", izenburua: "Nazioarteko politika: isolamendutik integraziora", atala: "g6-5" }
+      ],
+      galderak: [
+        {
+          id: "6.1-a",
+          epigrafea: "6.1",
+          mota: "kontzeptua",
+          galdera: "Zer esan nahi du frankismoa «diktadura pertsonalista» edo kaudillismoa zela? Zer ondorio zuen horrek erakundeentzat?",
+          ideiak: [
+            "Botere guztia Francoren esku zegoen: Estatuko burua, armadaren agintari gorena eta gobernuaren norabidea markatzen zuena.",
+            "Subiranotasuna ez zegoen herritarren edo ordezkaritza-organo libre baten esku.",
+            "Alderdi bakarra zegoen (Mugimendu Nazionala, FET y de las JONS); pluralismo politikoa debekatuta zegoen.",
+            "Erakundeek (Gorteak, «demokrazia organikoa») ez zuten Franco kontrolatzen; Ondorengotza Legeak (1947) biziarteko Estatuko buru izendatu zuen."
+          ],
+          erlazioa: "Boterea pertsona bakarrean kontzentratzen zenez, erakundeak haren mende zeuden eta ez zuten boterea mugatzen; erregimena Francoren figurari lotuta zegoen.",
+          akatsak: [
+            "Francok boterea Gorteekin edo gobernuarekin partekatzen zuela esatea.",
+            "Mugimendu Nazionala hainbat alderdiren artean bat zela esatea (alderdi bakarra zen).",
+            "Kontzeptua definitzea, baina erakundeen ondoriorik azaldu gabe."
+          ],
+          pistak: [
+            "Zein kargu zituen Francok aldi berean?",
+            "Gorteek Franco kontrolatu edo kargutik kendu zezaketen?",
+            "Zer ezarri zuen 1947ko Ondorengotza Legeak Francoren karguari buruz?"
+          ]
+        },
+        {
+          id: "6.1-b",
+          epigrafea: "6.1",
+          mota: "kausa",
+          galdera: "Zergatik izan zen Eliza Katolikoa frankismoaren zutabe nagusietako bat? Zer irabazi zuen alde bakoitzak?",
+          ideiak: [
+            "Elizaren hierarkiak altxamendua babestu zuen, eta gerra «Gurutzada» gisa aurkeztu zuen.",
+            "Elizak erregimenari legitimazio morala eman zion.",
+            "Trukean, erregimenak hezkuntza, moral publikoa eta gizarte-kontrola eman zizkion Elizari.",
+            "Nazional-katolizismoa: Espainiaren identitatea katolikotasunarekin identifikatu zen; 1953ko Konkordatuak aliantza berretsi zuen."
+          ],
+          erlazioa: "Elkarren arteko aliantza zen: Elizak erregimena legitimatzen zuen, eta erregimenak Elizari gizartean botere eta pribilegioak ematen zizkion.",
+          akatsak: [
+            "Eliza osoak, salbuespenik gabe, frankismoa babestu zuela esatea (Euskadin, adibidez, frankistek apaiz katolikoak fusilatu zituzten).",
+            "Elizari zer eman zion erregimenak azaldu gabe, aliantzaren alde bakarra aipatzea.",
+            "Konkordatua 1939an sinatu zela esatea (1953an izan zen)."
+          ],
+          pistak: [
+            "Nola aurkeztu zuen Elizaren hierarkiak Gerra Zibila?",
+            "Zer eremutan eman zion erregimenak Elizari boterea?",
+            "Zergatik behar zuen diktadura batek legitimazio «morala»?"
+          ]
+        },
+        {
+          id: "6.1-c",
+          epigrafea: "6.1",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Funtsezko Legeek eskubideak eta ordezkaritza bermatzen zituzten; beraz, frankismoa ez zen benetako diktadura bat izan.» Zer dago gaizki? Azaldu zuzen.",
+          ideiak: [
+            "Funtsezko Legeak ez ziren konstituzio demokratiko bat: Lanaren Forua (1938), Gorteak Eratzeko Legea (1942), Espainolen Forua (1945), Ondorengotza Legea (1947), Mugimenduaren Printzipioak (1958).",
+            "Gorteen ordezkaritza «korporatiboa» zen (familia, udala, sindikatua): ez zegoen sufragio unibertsal librerik ez alderdirik.",
+            "Espainolen Foruak aitortutako «eskubideak» Estatuaren interesaren mende zeuden.",
+            "Legeen helburua erregimenari itxura legala ematea zen, batez ere 1945etik aurrera nazioartean."
+          ],
+          erlazioa: "Legeek erregimenari itxura legala eman zioten, baina ez zuten Francoren boterea mugatzen: lege izateak ez du demokrazia bermatzen.",
+          akatsak: [
+            "Baieztapena ukatzea, baina Funtsezko Legerik aipatu gabe.",
+            "Frankismoak konstituzio bat izan zuela esatea.",
+            "«Demokrazia organikoa» demokrazia mota baliokidetzat hartzea."
+          ],
+          pistak: [
+            "Nola aukeratzen ziren Gorteetako kideak? Alderdirik zegoen?",
+            "Espainolen Foruko eskubideak: noiz murriztu zitezkeen?",
+            "Zergatik nahi izango zuen diktadura batek, 1945ean bereziki, «legala» dirudien itxura?"
+          ]
+        },
+        {
+          id: "6.2-a",
+          epigrafea: "6.2",
+          mota: "kontzeptua",
+          galdera: "Zer esan nahi du gerraostean Espainia «garaileen» eta «garaituen» artean banatu zela? Nola nabaritzen zen eguneroko bizitzan?",
+          ideiak: [
+            "Gerraren amaierak ez zuen adiskidetzerik ekarri: erregimenak zatiketa mantendu zuen.",
+            "Garaituak «anti-Espainia» gisa tratatu zituen: errepublikanoak, sozialistak, komunistak, anarkistak, nazionalistak eta susmagarri oro.",
+            "Banaketak ondorio zuzenak zituen: enplegua, babesa eta aukerak garaileentzat; jazarpena, depurazioa eta baztertzea garaituentzat.",
+            "Zigorrak identitateagatik, loturengatik edo «aurrekariengatik» etor zitezkeen; beldurra eta isiltasuna biziraupen-baldintza bihurtu ziren."
+          ],
+          erlazioa: "Garaipena adiskidetzerako ez, menderatzeko erabili zelako, gerraren zatiketa gizartearen egitura iraunkor bihurtu zen eta kontrol sozialerako tresna izan zen.",
+          akatsak: [
+            "Gerraostean bi aldeak berdin tratatu zituztela esatea.",
+            "Garaituak oposizio politiko antolatua bakarrik zirela esatea (susmagarri oro ere jazarri zuten).",
+            "Banaketa deskribatzea, eguneroko ondoriorik eman gabe."
+          ],
+          pistak: [
+            "Errepublikaren alde egon zen irakasle batek zer aukera zuen 1940an bere lana mantentzeko?",
+            "Zigortzeko, nahikoa al zen zerbait egitea, ala nor zinen ere kontatzen zuen?",
+            "Zergatik bihurtu zen isiltasuna biziraupen-estrategia?"
+          ]
+        },
+        {
+          id: "6.2-b",
+          epigrafea: "6.2",
+          mota: "kausa",
+          galdera: "Gerra irabazita zegoen. Zergatik jarraitu zuen frankismoak errepresio zabal batekin gerraostean? Zer tresna erabili zituen?",
+          ideiak: [
+            "Errepresioaren funtzioak: zigortzea, beldurra zabaltzea, depurazio politikoa eta gizartea ideologikoki berrantolatzea.",
+            "Justizia militarra eta epaiketa azkarrak; espetxeak eta lan behartuak.",
+            "Erantzukizun Politikoen Legea (1939): iraganeko jarrerak zigortu eta ondasunak konfiskatu; Masoneria eta Komunismoaren Aurkako Legea (1940).",
+            "Salaketa-kultura: auzokideen zelatatzea eta autozentsura."
+          ],
+          erlazioa: "Errepresioa ez zen gerraren mendeku hutsa: erregimen berria eraikitzeko eta edozein oposizio ezinezko bihurtzeko tresna zen; beldurrak bermatzen zuen kontrola.",
+          akatsak: [
+            "Errepresioa 1939an amaitu zela esatea.",
+            "Erantzukizun Politikoen Legeak gerraosteko ekintzak bakarrik zigortzen zituela esatea (iraganeko jarrerak ere zigortzen zituen).",
+            "Tresnak zerrendatzea, haien funtzioa azaldu gabe."
+          ],
+          pistak: [
+            "Errepresioak zigortu besterik ez zuen egiten, ala beste zerbait ere lortzen zuen gainerako gizartean?",
+            "Zer zigortzen zuen 1939ko Erantzukizun Politikoen Legeak, eta noizko jarrerak?",
+            "Zergatik da eraginkorra salaketa-kultura poliziarik ez dagoen tokian ere?"
+          ]
+        },
+        {
+          id: "6.2-c",
+          epigrafea: "6.2",
+          mota: "ondorioa",
+          galdera: "Zer ondorio izan zituen frankismoaren errepresioak Euskal Herrian dimentsio kultural eta nazionalean?",
+          ideiak: [
+            "Euskararen erabilera publikoa gogor mugatu zen: administrazioan, eskolan eta espazio ofizialean gaztelania ezarri zen.",
+            "Euskara familia-eremura eta erabilera pribatura murriztu zen.",
+            "Sinbolo abertzaleak debekatu eta erakunde autonomikoak desegin ziren; Eusko Jaurlaritza erbestera joan zen.",
+            "Abertzaletasuna separatismoarekin eta traizioarekin lotu zen."
+          ],
+          erlazioa: "Frankismoaren zentralismoa ez zen administrazio-antolaketa hutsa: «Espainia bakarra» inposatzeko eta nazio-identitate alternatiboak ahultzeko politika kulturala zen.",
+          akatsak: [
+            "Euskara legez erabat debekatuta zegoela esatea etxean ere (eremu publikotik baztertu zen, eta pribatura murriztu).",
+            "Euskal Estatutuak frankismoan indarrean jarraitu zuela esatea.",
+            "Ondorioak zerrendatzea, zentralismoaren helburuarekin lotu gabe."
+          ],
+          pistak: [
+            "Non ezin zen euskara erabili, eta non iraun zuen?",
+            "Zer gertatu zen 1936ko Estatutuarekin eta Eusko Jaurlaritzarekin?",
+            "Zergatik ikusten zuen frankismoak arrisku gisa euskal identitatea?"
+          ]
+        },
+        {
+          id: "6.3-a",
+          epigrafea: "6.3",
+          mota: "kausa",
+          galdera: "Zergatik hautatu zuen frankismoak autarkia 1939tik aurrera?",
+          ideiak: [
+            "Gerraren suntsipena: azpiegiturak, nekazaritza, industria eta garraioa kaltetuta.",
+            "Nazioarteko isolamendua, bereziki 1945etik aurrera.",
+            "Nazionalismo ekonomikoa: Espainiak «bere kabuz» bizi behar zuela, kanpoko mendekotasunik gabe.",
+            "Diktadurak ekonomia kontrolatu nahi zuen, gizartea kontrolatu nahi zuen bezala: prezioak, ekoizpena, inportazioak eta banaketa."
+          ],
+          erlazioa: "Autarkia egoeraren eta ideologiaren batura izan zen: suntsipenak eta isolamenduak kanpora begiratzea zailtzen zuten, eta ideologiak itxiera hori bertute gisa aurkeztu zuen.",
+          akatsak: [
+            "Autarkia nazioarteko isolamenduaren ondorio hutsa izan zela esatea (ideologia ere bazegoen, eta 1939an hasi zen, isolamendua baino lehen).",
+            "Autarkiak merkatu librea esan nahi zuela esatea (Estatuaren kontrol zorrotza zen).",
+            "Kausak zerrendatzea, elkarren artean lotu gabe."
+          ],
+          pistak: [
+            "Zer egoeratan zegoen ekonomia 1939an?",
+            "Autarkia isolamenduaren ondorio hutsa bada, zergatik hasi zen 1939an, isolamendua 1945ean hasi bazen?",
+            "Zer ideia zegoen «Espainiak bere kabuz bizi behar du» esaldiaren atzean?"
+          ]
+        },
+        {
+          id: "6.3-b",
+          epigrafea: "6.3",
+          mota: "ondorioa",
+          galdera: "Zer ondorio sozial izan zituzten errazionamenduak eta estraperloak 1940ko hamarkadan («gosearen urteak»)?",
+          ideiak: [
+            "Errazionamendu-txartelekin banatzen ziren oinarrizko elikagaiak (ogia, olioa, azukrea), 1952ra arte.",
+            "Eskasiak estraperloa (merkatu beltza) sortu zuen, prezio altuekin.",
+            "Dirua, kontaktuak edo boterearekiko hurbiltasuna zutenek aukera gehiago zituzten: pribilegioak, klientelismoa eta aberasteak.",
+            "Gehiengoarentzat: elikadura urria, gaixotasunak, pobrezia eta etxebizitza-arazoak."
+          ],
+          erlazioa: "Eskasiak ez zion guztiei berdin eragin: kontrolak sortutako merkatu beltzak desberdintasuna eta mendekotasuna areagotu zituen, eta janaria kontrol sozialeko tresna bihurtu zen.",
+          akatsak: [
+            "Errazionamenduak guztiei hornidura nahikoa bermatu ziela esatea.",
+            "Estraperloa Estatuak antolatutako merkatu ofiziala zela esatea.",
+            "Gosea gerraren ondorio hutsa izan zela esatea, autarkiaren politikak aipatu gabe."
+          ],
+          pistak: [
+            "Txartelak guztiei gutxieneko bat bermatzen bazien, zergatik pasatu zuten jende askok gosea?",
+            "Nork irabazi zuen estraperloarekin, eta nork galdu?",
+            "Nola bihur daiteke janaria jendea kontrolatzeko tresna?"
+          ]
+        },
+        {
+          id: "6.3-c",
+          epigrafea: "6.3",
+          mota: "aldaketa",
+          galdera: "Zergatik utzi zion frankismoak autarkiari 1959an, eta zer aldatu zuen Egonkortze Planak? Zer ez zen aldatu?",
+          ideiak: [
+            "Autarkiak porrot egin zuen: ekoizpen urria, inflazioa, dibisa falta eta teknologia zaharkitua (INI, lehiarik gabe).",
+            "1950etik Gerra Hotzak kanpo-laguntza eta kredituak ekarri zituen, eta erregimenaren barruan autarkia modernizazioaren oztopotzat ikusi zen.",
+            "Egonkortze Plana (1959): gastu publikoa kontrolatu, inflazioa murriztu, kanpo-inbertsioa erraztu eta merkataritza ireki.",
+            "Ekonomia ireki zen (1960ko desarrollismoa), baina erregimen politikoa diktadura izaten jarraitu zuen."
+          ],
+          erlazioa: "Autarkiaren porrot ekonomikoak behartu zuen aldaketa, ez demokratizazio-nahiak: ekonomia liberalizatu zen, politika ez.",
+          akatsak: [
+            "Egonkortze Plana demokratizazio-neurria izan zela esatea.",
+            "Autarkia arrakastatsua izan zela esatea, INIri esker.",
+            "Plana 1953an onartu zela esatea (1959an izan zen)."
+          ],
+          pistak: [
+            "Zer arazo zeuden ekonomian 1950eko hamarkadaren amaieran?",
+            "Plana aldaketa ekonomikoa ala politikoa izan zen? Zer jarraitu zuen berdin?",
+            "Zer etorri zen 1960ko hamarkadan plan horren ondorioz?"
+          ]
+        },
+        {
+          id: "6.4-a",
+          epigrafea: "6.4",
+          mota: "aldaketa",
+          galdera: "Zergatik pasa zen frankismoa nazioarteko isolamendutik (1945–1950) integraziora (1950–1959)?",
+          ideiak: [
+            "1945ean Ardatza garaitu zenean, frankismoa faxismoarekin lotuegia ikusten zen; 1946an NBEk gaitzetsi zuen eta enbaxadoreak erretiratu ziren.",
+            "Gerra Hotzarekin Mendebaldearen lehentasuna Sobietar Batasunaren hedapena geldiaraztea bihurtu zen.",
+            "Frankismoak bi «txanpon» zituen: antikomunismoa eta Espainiaren kokapen geografiko estrategikoa.",
+            "1953an Konkordatua eta Madrilgo Itunak (AEB) sinatu ziren; 1955ean Espainia NBEan onartu zuten."
+          ],
+          erlazioa: "Erregimena ez zen demokratizatu: nazioarteko testuingurua aldatu zen, eta Gerra Hotzak frankismoaren antikomunismoa Mendebaldearentzat baliagarri bihurtu zuen.",
+          akatsak: [
+            "Integrazioa erregimenaren demokratizazioaren ondorioa izan zela esatea.",
+            "Espainia 1945ean NBEan sartu zela esatea (1955ean onartu zuten).",
+            "Aldaketa deskribatzea, Gerra Hotzarekin lotu gabe."
+          ],
+          pistak: [
+            "Zergatik zen frankismoa «toxikoa» 1945ean garaileentzat?",
+            "1950ean, nor zen Mendebaldearen etsai nagusia, eta zer pentsatzen zuen frankismoak etsai horri buruz?",
+            "Frankismoa aldatu zen, ala aldatu zena bestea izan zen?"
+          ]
+        },
+        {
+          id: "6.4-b",
+          epigrafea: "6.4",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «II. Mundu Gerran Espainia neutrala izan zen beti, eta horregatik ez zuen inolako arazorik izan 1945ean.» Zer dago gaizki? Azaldu zuzen.",
+          ideiak: [
+            "Frankismoa Alemania naziaren eta Italia faxistaren laguntza erabakigarriarekin jaio zen 1939an.",
+            "Gerran ez zen formalki sartu, baina ez zen neutraltasun argia izan: «ez-beligerantzia» eta Ardatzarekiko hurbiltasuna.",
+            "Dibisio Urdina Alemaniaren alde borrokatu zen Sobietar Batasunaren aurka.",
+            "Gerraren norabidea aldatu ahala, erregimenak tonu faxista apaldu zuen; hala ere, 1945ean Ardatzarekin lotuta ikusi zuten eta isolamendua etorri zen."
+          ],
+          erlazioa: "Gerran zehar Ardatzarekin izandako hurbiltasunagatik, Aliatuen garaipenak frankismoa isolamendura eraman zuen 1945etik aurrera.",
+          akatsak: [
+            "Espainia Ardatzaren aldeko gerrako kide formala izan zela esatea.",
+            "Dibisio Urdina Aliatuen alde borrokatu zela esatea.",
+            "Baieztapena zuzentzea, baina 1945eko isolamenduarekin lotu gabe."
+          ],
+          pistak: [
+            "Zein potentziak lagundu zioten Francori Gerra Zibilean?",
+            "Zer zen Dibisio Urdina eta noren aurka borrokatu zen?",
+            "Gerra Ardatzak galdu zuenean, zer gertatu zen Espainiaren nazioarteko harremanekin?"
+          ]
+        },
+        {
+          id: "6.4-c",
+          epigrafea: "6.4",
+          mota: "kontzeptua",
+          galdera: "Zer izan ziren 1953ko Madrilgo Itunak eta zergatik izan ziren hain garrantzitsuak frankismoarentzat?",
+          ideiak: [
+            "AEBekin sinatutako akordioak (1953), Gerra Hotzaren testuinguruan.",
+            "Espainiak base militarrak eskaini zizkien AEBei.",
+            "Trukean, laguntza ekonomikoa eta militarra eta irekitze diplomatikoa jaso zituen.",
+            "Urte berean Vatikanoarekin Konkordatua sinatu zen, eta 1955ean Espainia NBEan onartu zuten."
+          ],
+          erlazioa: "Base militarren truke, Mendebaldeko potentzia nagusiak erregimena onartu zuen: horrek isolamendua hautsi eta diktadurari iraupena eman zion, demokratizatu beharrik gabe.",
+          akatsak: [
+            "Itunak Sobietar Batasunarekin edo Europako demokraziekin sinatu zirela esatea.",
+            "Itunen ondorioz Espainia NATOn sartu zela esatea (frankismoan ez zen sartu).",
+            "Itunak deskribatzea, erregimenaren iraupenarekin lotu gabe."
+          ],
+          pistak: [
+            "Zer eman zuen Espainiak, eta zer jaso zuen trukean?",
+            "Zergatik interesatzen zitzaien AEBei Espainia 1953an?",
+            "Zer esan nahi zuen munduko potentzia nagusiak diktadura batekin akordioak sinatzeak?"
+          ]
+        }
+      ]
     }
   ]
 };
