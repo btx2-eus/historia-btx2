@@ -4,7 +4,7 @@
  * Gai berri bat gehitzeko: gehitu objektu bat `gaiak` zerrendan, egitura berarekin.
  */
 window.ULERMEN_BANKUA = {
-  bertsioa: "2026-10-31",
+  bertsioa: "2026-11-02",
 
   motak: {
     kausa: { izena: "Kausak", galdera: "Zergatik gertatu zen?" },
@@ -312,6 +312,295 @@ window.ULERMEN_BANKUA = {
             "Noiz hasi ziren militarrak kolpea prestatzen? Hilketaren aurretik ala ondoren?",
             "Zer arazo sakon zeuden 1931tik metatuta?",
             "Zer da «detonante» bat, eta nola bereizten da «kausa» batetik?"
+          ]
+        }
+      ]
+    },
+    {
+      num: 5,
+      izenburua: "Gerra Zibila",
+      urteak: "1936–1939",
+      orria: "temas/05-gerra-zibila.html",
+      epigrafeak: [
+        { num: "5.1", izenburua: "Altxamendu militarra eta gobernuaren erantzuna", atala: "g5-1" },
+        { num: "5.2", izenburua: "Nazioarteko testuingurua", atala: "g5-2" },
+        { num: "5.3", izenburua: "Gerraren bilakaera", atala: "g5-4" },
+        { num: "5.4", izenburua: "Erretagoardiako indarkeria", atala: "g5-5" }
+      ],
+      galderak: [
+        {
+          id: "5.1-a",
+          epigrafea: "5.1",
+          mota: "kausa",
+          galdera: "Zergatik bihurtu zen 1936ko uztaileko estatu-kolpea hiru urteko gerra zibil?",
+          ideiak: [
+            "Altxamenduak porrot partziala izan zuen: matxinatuek ez zituzten hiri nagusiak kontrolatu (Madril, Bartzelona, Valentzia, Bilbo).",
+            "Armada eta segurtasun-indarrak zatitu egin ziren: batzuk matxinatu, beste batzuk Errepublikari leial.",
+            "Errepublikaren eremuan langile-erakundeek eta miliziek kolpeari aurre egin zioten.",
+            "Matxinatuek Afrikako armada (eta laster Alemaniaren eta Italiaren laguntza) zuten; Errepublikak hiriak, industria eta baliabideak."
+          ],
+          erlazioa: "Kolpeak ez zuen ez garaipena ez porrot osoa lortu: herrialdea bitan zatitu zen, eta bi eremuek borrokan jarraitzeko indarra zutenez, kolpe azkarra gerra luze bihurtu zen.",
+          akatsak: [
+            "Kolpea eta gerra gauza bera direla esatea (gerra kolpearen porrot partzialaren ondorioa da).",
+            "Matxinatuek hasieratik lurralde gehiena eta hiri nagusiak hartu zituztela esatea.",
+            "Gerraren hasiera Calvo Soteloren hilketan jartzea, kolpearen emaitza azaldu gabe."
+          ],
+          pistak: [
+            "Zer hiri garrantzitsu geratu ziren matxinatuen eskuetatik kanpo 1936ko uztailaren amaieran?",
+            "Kolpe batek bi egunetan irabazten edo galtzen badu, zer gertatzen da? Eta ez bata ez bestea gertatzen bada?",
+            "Bi eremuetako bakoitzak zer baliabide zituen borrokan jarraitzeko?"
+          ]
+        },
+        {
+          id: "5.1-b",
+          epigrafea: "5.1",
+          mota: "aldaketa",
+          galdera: "Nola aldatu zen boterearen antolaketa Errepublikaren eremuan Giral gobernutik Largo Caballeroren gobernura (1936)?",
+          ideiak: [
+            "Kolpeak Estatuaren egiturak kolokan utzi zituen: armada eta polizia zatituta, gobernuak ezin zuen ordena bermatu.",
+            "Giral gobernuak (uztaila–iraila) herritarrei armak eman zizkien; botere-hutsunean komiteek eta miliziek boterea hartu zuten.",
+            "1936ko irailean Largo Caballeroren gobernu antifaxista sortu zen, langile-erakundeak barne hartuta (PSOE, PCE, UGT, eta azaroan CNT).",
+            "Helburua: boterea berriro zentralizatzea, miliziak Armada Popularrean integratzea eta industria gerrara egokitzea."
+          ],
+          erlazioa: "Estatuaren kolapsoak boterea zatitu zuenez, gerra irabazteko gobernuak langile-erakundeak gobernura ekarri eta boterea berriro bildu behar izan zuen.",
+          akatsak: [
+            "Errepublikaren eremuan hasieratik aginte bateratu eta sendoa zegoela esatea.",
+            "Armada Popularra gerraren hasieratik zegoela esatea (miliziak militarizatuz sortu zen).",
+            "Largo Caballero gobernuko buru zela altxamendua gertatu zenean esatea."
+          ],
+          pistak: [
+            "Kolpearen ondoren, nork zuen benetan indarra kaleetan: gobernuak ala komiteek eta miliziek?",
+            "Zergatik da zaila gerra bat irabaztea milizia askok bakoitzak bere aldetik borrokatzen badu?",
+            "Zein erakunde sartu ziren Largo Caballeroren gobernuan, eta zergatik zen hori berria?"
+          ]
+        },
+        {
+          id: "5.1-c",
+          epigrafea: "5.1",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Francok bakarrik antolatu zuen altxamendua eta hasieratik izan zen matxinatuen buruzagia.» Zer dago gaizki? Azaldu zuzen.",
+          ideiak: [
+            "Konspirazioaren koordinatzaile nagusia Emilio Mola izan zen, Nafarroatik.",
+            "Konspirazioaren burua Sanjurjo izan behar zen (1936ko uztailean hegazkin-istripuz hil zen).",
+            "Konspirazioan jeneral askok (Queipo de Llano, Goded, Cabanellas…) eta monarkikoek parte hartu zuten.",
+            "Franco Afrikako armadaren buru izan zen hasieran, eta 1936ko urrian lortu zuen aginte gorena: Estatuko Buru eta Jeneralisimo."
+          ],
+          erlazioa: "Kolpea talde-konspirazio bat izan zen; Franco gerran zehar bihurtu zen buruzagi, Afrikako armadaren pisuagatik eta matxinatuek aginte bakarra behar zutelako.",
+          akatsak: [
+            "Baieztapena zuzentzea baina Mola altxamenduaren buruzagi bakartzat jotzea.",
+            "Franco 1939an bakarrik izendatu zutela esatea (1936ko urrian izan zen)."
+          ],
+          pistak: [
+            "Nork koordinatu zuen konspirazioa Nafarroatik?",
+            "Zer gertatu zitzaion Sanjurjori altxamenduaren lehen egunetan?",
+            "Noiz eta zer kargu lortu zuen Francok?"
+          ]
+        },
+        {
+          id: "5.2-a",
+          epigrafea: "5.2",
+          mota: "kausa",
+          galdera: "Ez-Interbentzio politikak bi aldeei laguntza debekatzen zien. Zergatik kaltetu zuen, praktikan, batez ere Errepublika?",
+          ideiak: [
+            "Britainia Handiak eta Frantziak proposatu zuten (1936), gerra Europara hedatzeko beldurrez eta, Britainian, iraultzaren beldurrez.",
+            "Errepublika gobernu legitimoa zen, baina demokrazietatik armarik ezin erosi zuen.",
+            "Alemaniak eta Italiak akordioa sinatu zuten, baina sistematikoki urratu zuten, matxinatuei laguntza bidaliz.",
+            "Ondorioz, Errepublika ia isolatuta geratu zen, eta URSSen laguntzaren mende."
+          ],
+          erlazioa: "Neutraltasun formal batek desoreka sortu zuen: araua bete zutenek Errepublikari laguntza ukatu zioten, eta urratu zutenek matxinatuak armatu zituzten.",
+          akatsak: [
+            "Ez-Interbentzioa Alemaniak edo Italiak proposatu zutela esatea.",
+            "Politika horrek bi aldeei berdin eragin ziela esatea.",
+            "AEBak edo URSS Ez-Interbentzioaren sustatzaile nagusiak izan zirela esatea."
+          ],
+          pistak: [
+            "Nork bete zuen benetan Ez-Interbentzioaren araua, eta nork ez?",
+            "Errepublika gobernu legitimoa bazen, zer eskubide galdu zuen politika horrekin?",
+            "Zergatik ez zuten Britainia Handiak eta Frantziak Errepublika lagundu nahi?"
+          ]
+        },
+        {
+          id: "5.2-b",
+          epigrafea: "5.2",
+          mota: "kontzeptua",
+          galdera: "Zergatik esaten da Gerra Zibila II. Mundu Gerraren «entsegu-zelaia» edo atari izan zela?",
+          ideiak: [
+            "Faxismoaren eta antifaxismoaren arteko lehen talka handia izan zen: Alemania eta Italia matxinatuen alde; URSS eta Brigada Internazionalak Errepublikaren alde.",
+            "Alemaniak eta Italiak arma eta taktika berriak probatu zituzten (Condor Legioa, Aviazione Legionaria).",
+            "Zibilen aurkako bonbardaketa estrategikoak (Durango, Gernika) gerra modernoaren aurrekari izan ziren.",
+            "Demokrazia liberalen pasibotasuna agerian geratu zen, eta potentzia faxistak ausartu egin ziren."
+          ],
+          erlazioa: "Geroago Europan talka egingo zuten bloke ideologikoak eta gerra-metodoak Espainian elkartu eta probatu zirelako da «atari»: II. Mundu Gerran errepikatuko zena aurreratu zuen.",
+          akatsak: [
+            "Espainiak II. Mundu Gerran bando batean parte hartu zuela esatea.",
+            "Gerra Zibila II. Mundu Gerraren parte izan zela esatea (aurrekaria da, ez zati bat).",
+            "Kontzeptua definitzea, baina adibide konkreturik eman gabe."
+          ],
+          pistak: [
+            "Zer ideologia egon ziren aurrez aurre Espainian, eta non egongo ziren aurrez aurre 1939tik aurrera?",
+            "Zer probatu zuen Condor Legioak Gernikan?",
+            "Nola jokatu zuten Britainia Handiak eta Frantziak, eta zer ikasi zuten horretatik Hitlerrek eta Mussolinik?"
+          ]
+        },
+        {
+          id: "5.2-c",
+          epigrafea: "5.2",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Bi aldeek kanpoko laguntza bera jaso zuten, beraz nazioarteko laguntzak ez zuen gerraren emaitza erabaki.» Zergatik da okerra? Azaldu zuzen.",
+          ideiak: [
+            "Matxinatuek Alemaniaren eta Italiaren laguntza militar zuzena, jarraitua eta handia jaso zuten (hegazkinak, tropak, armak).",
+            "Errepublikak URSSen laguntza jaso zuen, baina urre-erreserbarekin ordaindu zuen, eta Moskuren interesen mende zegoen.",
+            "Brigada Internazionalak boluntarioak ziren, ez armada erregular bat.",
+            "Ez-Interbentzioak Errepublika isolatu zuen; laguntzaren desoreka erabakigarria izan zen emaitzarako."
+          ],
+          erlazioa: "Laguntza ez zen berdina ez kopuruz ez izaeraz: matxinatuen laguntza handiagoa eta segurua zen, eta Errepublikarena mugatua eta garestia; desoreka horrek gerraren bilakaera matxinatuen alde makurtu zuen.",
+          akatsak: [
+            "Brigada Internazionalak URSSen armada zirela esatea.",
+            "Errepublikak laguntzarik batere ez zuela jaso esatea.",
+            "Desoreka aipatzea, baina gerraren emaitzarekin lotu gabe."
+          ],
+          pistak: [
+            "Nola ordaindu zuen Errepublikak laguntza sobietarra?",
+            "Zer ziren Brigada Internazionalak: armada bat ala boluntarioak?",
+            "Laguntza baten «kopurua» ez ezik, zer gehiago da garrantzitsua (iraupena, segurtasuna, baldintzak)?"
+          ]
+        },
+        {
+          id: "5.3-a",
+          epigrafea: "5.3",
+          mota: "ondorioa",
+          galdera: "Zer ondorio izan zuen Madrilen erresistentziak (1936ko azaroa) gerraren bilakaeran?",
+          ideiak: [
+            "Matxinatuen helburu nagusia Madril azkar hartzea zen, gerra laburra izan zedin.",
+            "Madrilek ez zuen amore eman: Defentsa Batzordea, miliziak eta herritarren mobilizazioa, Brigada Internazionalak eta lehen arma sobietarrak («¡No pasarán!»).",
+            "Gobernua Valentziara lekualdatu zen, baina hiriak erresistitu zuen.",
+            "Gerra azkarraren plana porrot egin zuen: gerra luze eta higatzaile bihurtu zen, eta Francok erasoaren ardatza Iparraldera aldatu zuen (1937)."
+          ],
+          erlazioa: "Madril hartu ez zutelako, gerra azkarraren aukera desagertu zen; horren ondorioz, gerra luze bihurtu zen eta Francok estrategia aldatu zuen, Iparraldeari erasoz.",
+          akatsak: [
+            "Matxinatuek 1936an Madril hartu zutela esatea (1939ko martxoan erori zen).",
+            "Gobernua Madrilen geratu zela esatea (Valentziara joan zen).",
+            "Erresistentzia deskribatzea, baina gerraren iraupenarekin edo estrategia-aldaketarekin lotu gabe."
+          ],
+          pistak: [
+            "Zer espero zuten matxinatuek Madril hartuz gero?",
+            "Madril hartu ez zutenean, zer aldatu behar izan zuen Francok?",
+            "Zein izan zen hurrengo fronte nagusia 1937an, eta zergatik?"
+          ]
+        },
+        {
+          id: "5.3-b",
+          epigrafea: "5.3",
+          mota: "kausa",
+          galdera: "Zergatik eraman zuen Francok 1937an erasoaren ardatza Iparraldera, eta zergatik izan zen Bilboren erorketa hain garrantzitsua?",
+          ideiak: [
+            "Madril hartzeko saiakerak porrot egin ondoren, Francok beste helburu bat behar zuen.",
+            "Iparraldea isolatuta zegoen: Gipuzkoa 1936ko irailean erori zen (Irun, Donostia), eta Frantziarekiko muga itxi zen.",
+            "Bizkaiak industria (siderurgia, ontzigintza), meategiak eta portuak zituen, eta Euzko Jaurlaritzaren egoitza zen.",
+            "Durango eta Gernikako bonbardaketen ondoren, Burdin Hesia hautsi eta Bilbo 1937ko ekainaren 19an erori zen; urrian Iparraldeko frontea desagertu zen."
+          ],
+          erlazioa: "Iparraldea Errepublikaren eremu ahulena (isolatua) eta baliotsuena (industria) zelako hautatu zuen Francok; Bilbo hartzeak gerra-industria matxinatuen eskuetara pasatu eta indar-oreka haien alde makurtu zuen.",
+          akatsak: [
+            "Gernika frankisten hegazkinek bakarrik bonbardatu zutela esatea (Condor Legioa eta Aviazione Legionaria izan ziren).",
+            "Bilbo Gernikaren aurretik erori zela esatea.",
+            "Industria aipatu gabe, arrazoi politikoak bakarrik ematea."
+          ],
+          pistak: [
+            "Zer zuen Bizkaiak beste eskualde batzuek ez zutena?",
+            "Gipuzkoa erori ondoren, nola geratu zen Iparraldea gainerako Errepublikarekiko?",
+            "Bilbo galtzean, zer galdu zuen Errepublikak eta zer irabazi zuten matxinatuek?"
+          ]
+        },
+        {
+          id: "5.3-c",
+          epigrafea: "5.3",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Errepublikak gerra galdu zuen bere barne-liskarrengatik.» Zergatik da azalpen hori partziala? Azaldu zuzen.",
+          ideiak: [
+            "Barne-liskarrak egon ziren: 1937ko maiatzeko Bartzelonako gertakariak (komunistak, anarkistak, POUM), Largo Caballeroren erorketa eta Negrínen gobernua.",
+            "Kanpoko desoreka: Alemaniaren eta Italiaren laguntza vs. Ez-Interbentzioa eta URSSen laguntza mugatua.",
+            "Matxinatuek aginte bakarra zuten (Franco); Errepublikak hasierako Estatuaren kolapsoa gainditu behar izan zuen.",
+            "Iparraldearen eta haren industriaren galera (1937) eta Ebroko porrota (1938), azken indar militarra agortu zuena."
+          ],
+          erlazioa: "Porrotak kausa anitz eta elkarri lotuak izan zituen: barne-zatiketak kanpoko isolamenduarekin eta galera militarrekin batera eragin zuen; bakarra hautatzea azalpen partziala da.",
+          akatsak: [
+            "Baieztapena zuzentzea baina beste kausa bakar bat ordezko gisa jartzea.",
+            "Errepublikan barne-liskarrik ez zela egon esatea.",
+            "Ebroko gudua gerraren azken gertakaria izan zela esatea (ondoren Katalunia erori zen, eta Madril 1939ko martxoan)."
+          ],
+          pistak: [
+            "Barne-liskarrik ez balego, Errepublikak matxinatuek adina arma eta hegazkin izango al zituen?",
+            "Zer galdu zuen Errepublikak 1937an Iparraldean?",
+            "Zer gertatu zen Ebroko guduaren ondoren?"
+          ]
+        },
+        {
+          id: "5.4-a",
+          epigrafea: "5.4",
+          mota: "kontzeptua",
+          galdera: "Bi aldeetan egon zen indarkeria erretagoardian. Zertan desberdintzen ziren «terrore zuria» eta «terrore gorria»?",
+          ideiak: [
+            "Terrore zuria (matxinatuen eremua): planifikatua eta sistematikoa; Molaren aginduek beldurra estrategia gisa erabiltzea agintzen zuten.",
+            "Terrore zuriak aurkari politikoak, sindikalistak, irakasleak eta alkateak jazarri zituen, eta gerraostean luzatu zen (130.000–150.000 biktima inguru).",
+            "Terrore gorria (errepublikar eremua): Estatuaren kolapsoaren ondorioa; milizia eta komiteek eskuindarrak eta elizgizonak jazarri zituzten, batez ere 1936an (Paracuellos).",
+            "Errepublikako gobernuek indarkeria hori kontrolatzea bilatu zuten, eta 1937tik aurrera nabarmen gutxitu zen (50.000–60.000 biktima inguru)."
+          ],
+          erlazioa: "Aldea ez da kopurua bakarrik, logika baizik: matxinatuen errepresioa estatu berria eraikitzeko tresna planifikatua zen; errepublikarra, berriz, Estatuaren kolapsoaren ondorio, eta gobernuak geldiarazi nahi izan zuen.",
+          akatsak: [
+            "Alde batean bakarrik egon zela indarkeria esatea.",
+            "Bi indarkeriak berdinak izan zirela esatea, logika eta iraupena bereizi gabe.",
+            "Errepublikako gobernuek terrore gorria antolatu edo agindu zutela esatea."
+          ],
+          pistak: [
+            "Nork agindu zuen indarkeria alde bakoitzean: gobernuak, armadak ala komiteek?",
+            "Noiz izan zen indarkeria handiena errepublikar eremuan, eta zergatik gutxitu zen gero?",
+            "Zer gertatu zen matxinatuen errepresioarekin 1939an gerra amaitu ondoren?"
+          ]
+        },
+        {
+          id: "5.4-b",
+          epigrafea: "5.4",
+          mota: "kontzeptua",
+          galdera: "Zer esan nahi du «Euskal Oasia» kontzeptuak, eta zergatik izan zen Euskadi berezia errepublikar eremuaren barruan?",
+          ideiak: [
+            "Errepublikaren aldeko euskal eremuan Euzko Jaurlaritzak (Agirre, 1936ko urria) ordena publikoa hobeto mantendu zuen (Ertzaintza).",
+            "Elizaren aurkako indarkeria oso mugatua izan zen, eta erlijio-askatasuna errespetatu zen.",
+            "Arrazoiak: EAJren izaera katolikoa, gobernu autonomoaren sendotasuna eta alderdien arteko oreka.",
+            "«Oasia» ez da indarkeriarik ez zegoela esatea; eta frankistek euskal lurraldeak hartu zituztenean, errepresio gogorra ezarri zuten (euskal apaizak ere fusilatu zituzten)."
+          ],
+          erlazioa: "Euskadin, gobernu autonomo sendo eta katoliko batek Estatuaren kolapsoa saihestu zuelako, beste eremu errepublikanoetako indarkeria iraultzaile eta antiklerikala askoz txikiagoa izan zen.",
+          akatsak: [
+            "Euskadin inolako indarkeriarik ez zela egon esatea.",
+            "Euskal Oasia frankisten eremuari buruzkoa dela esatea.",
+            "Euskadi osoa (Nafarroa barne) Errepublikaren alde zegoela esatea (Nafarroa matxinatuen eskuetan geratu zen)."
+          ],
+          pistak: [
+            "Errepublikaren beste eremu batzuetan, zergatik izan zen indarkeria handia lehen hilabeteetan? Gertatu al zen hori Euskadin?",
+            "Zer alderdi zen EAJ erlijioari dagokionez, eta zer ondorio izan zuen horrek?",
+            "«Oasia» hitzak indarkeriarik ez zegoela esan nahi du, ala gutxiago zegoela?"
+          ]
+        },
+        {
+          id: "5.4-c",
+          epigrafea: "5.4",
+          mota: "ondorioa",
+          galdera: "Zergatik esaten da 1939an gerra amaitu zela, baina ez zela bakea iritsi? Zer ondorio izan zituen gerrak eta errepresioak?",
+          ideiak: [
+            "Giza galerak izugarriak izan ziren: ~500.000 hildako (frontea, erretagoardia, bonbardaketak, gosea, gerraosteko fusilamenduak).",
+            "Erbestea: ~450.000 errefuxiatu Frantziara 1939an; askok erbeste luzea bizi izan zuten (Mexiko, URSS, Latinoamerika). «Gerraren haurrak» atzerrira bidali zituzten.",
+            "Gerraostean errepresioak jarraitu zuen: espetxeak, fusilamenduak, depurazioak, lan behartuak, gosea eta beldurra.",
+            "Frankismoak ez zuen adiskidetzerik bilatu: garaipena errepresioaren bidez sendotu zuen, eta galtzaileak gizartetik baztertu zituen."
+          ],
+          erlazioa: "Garaipen militarrak ez zuen adiskidetzerik ekarri: errepresioa erregimen berriaren oinarri bihurtu zenez, gerraren indarkeria eta haren ondorioak diktadura luzean iraun zuten.",
+          akatsak: [
+            "1939an errepresioa amaitu zela esatea.",
+            "Errefuxiatu guztiak berehala itzuli zirela esatea.",
+            "Ondorioak zerrendatzea, baina frankismoaren izaerarekin lotu gabe."
+          ],
+          pistak: [
+            "1939ko apirilaren 1aren ondoren, zer gertatu zen galtzaileekin?",
+            "Zer bilatu zuen frankismoak: adiskidetzea ala garaipena sendotzea?",
+            "Zenbat jende joan zen erbestera, eta nora?"
           ]
         }
       ]
