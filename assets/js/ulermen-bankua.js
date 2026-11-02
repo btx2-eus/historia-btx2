@@ -1183,6 +1183,366 @@ window.ULERMEN_BANKUA = {
           ]
         }
       ]
+    },
+    {
+      num: 8,
+      izenburua: "Trantsizioa",
+      urteak: "1975–1982",
+      orria: "temas/08-trantsizioa.html",
+      epigrafeak: [
+        { num: "8.1", izenburua: "Erreforma politikoa eta oposizioa", atala: "g8-1" },
+        { num: "8.2", izenburua: "1978ko Konstituzioa eta 1979ko Gernikako Estatutua", atala: "g8-3" },
+        { num: "8.3", izenburua: "Berunezko urteak: terrorismoa eta biolentzia politikoa", atala: "g8-4" },
+        { num: "8.4", izenburua: "Krisi ekonomikoa eta gizarte-gatazkak. Langile-mugimendua eta mugimendu sozialak", atala: "g8-5" },
+        { num: "8.5", izenburua: "1981eko estatu-kolpe saiakera", atala: "g8-6" }
+      ],
+      galderak: [
+        {
+          id: "8.1-a",
+          epigrafea: "8.1",
+          mota: "aldaketa",
+          galdera: "Nola igaro zen Espainia diktaduratik demokraziara Erreforma Politikoaren Legearen bidez (1976)? Zergatik da paradoxa bat?",
+          ideiak: [
+            "Franco hil ondoren (1975) instituzio frankistak bere horretan zeuden; erregeak Adolfo Suárez izendatu zuen gobernuburu 1976ko uztailean.",
+            "Suárezek Erreforma Politikoaren Legea aurkeztu zuen, eta Gorte frankistek berek onartu zuten (1976ko azaroa).",
+            "Legeak parlamentu demokratikorako eta hauteskunde libreetarako bidea ireki zuen; 1976ko abenduko erreferendumak berretsi zuen.",
+            "Abantaila: estatu-aparatuari ez zitzaion haustura iraultzaile bat adierazi; kostua: prozesua jarraitutasunaren logikak markatu zuen."
+          ],
+          erlazioa: "Diktaduraren legalitatea bera erabili zen demokraziara iristeko («legetik legera»): horrek kolpe-arriskua murriztu zuen, baina aparatu zaharraren jarraitutasuna ere ekarri zuen.",
+          akatsak: [
+            "Erreforma Politikoaren Legea 1978ko Konstituzioa dela esatea.",
+            "Gorte demokratikoek onartu zutela esatea (Gorte frankistek onartu zuten).",
+            "Franco hiltzean diktadura automatikoki desegin zela esatea."
+          ],
+          pistak: [
+            "Zein Gortek onartu zuten legea: frankistek ala demokratikoek?",
+            "Zer bide ireki zuen legeak?",
+            "Zer irabazten da sistema zaharraren legeak erabiliz, eta zer galtzen da?"
+          ]
+        },
+        {
+          id: "8.1-b",
+          epigrafea: "8.1",
+          mota: "kausa",
+          galdera: "Zergatik esaten da Trantsizioko erreforma «goitik» diseinatu zela, baina «behetik» bultzatu?",
+          ideiak: [
+            "Frankismoaren barruan «bunkerra» (immobilista) eta erreformistak lehian zeuden; Arias Navarroren bidea motela eta errepresiboa izan zen.",
+            "Oposizioak (PSOE, PCE, CCOO, UGT, nazionalismo periferikoak) kalean presionatu zuen: grebak eta manifestazioak askatasun politikoen, amnistiaren eta hauteskunde libreen alde.",
+            "Gorte-prokuradore askok «irtenbide kontrolatua» hobetsi zuten, kolapsoa saihesteko.",
+            "Oposizioak, kolpe-beldurrez, negoziazioa onartu zuen «haustura demokratiko osoaren» ordez; PCEren legalizazioa (1977ko apirila) mugarri arriskutsua izan zen."
+          ],
+          erlazioa: "Behetiko presioak erreforma saihestezina bihurtu zuen, eta goitik kontrolatuz egin zen kolpea saihesteko: bi aldeek elkarri eragin zioten, eta emaitza erreforma hitzartua izan zen.",
+          akatsak: [
+            "Trantsizioa erregeak eta Suárezek bakarrik egin zutela esatea, gizartearen presioa aipatu gabe.",
+            "Oposizioak haustura iraultzailea lortu zuela esatea.",
+            "Suárez oposizioko liderra zela esatea (frankismoaren aparatuan hezia zen)."
+          ],
+          pistak: [
+            "Zer gertatzen zen kalean 1976an?",
+            "Zergatik nahiago izango zuten frankista batzuek beren burua erreformatu, dena galtzeko arriskua hartu baino?",
+            "Zergatik ez zuen oposizioak haustura osoa exijitu? Zer beldur zegoen?"
+          ]
+        },
+        {
+          id: "8.1-c",
+          epigrafea: "8.1",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «1977ko Amnistia Legeak preso politikoak askatu zituen, eta frankismoaren errepresioaren arduradunak epaitzeko bidea ireki zuen.» Zer dago gaizki? Azaldu zuzen.",
+          ideiak: [
+            "Amnistia Legea (1977ko urria) oposizioaren aldarrikapen nagusietako bat zen.",
+            "Preso politikoak askatu eta erbesteratuen itzulera erraztu zuen.",
+            "Aldi berean, frankismoaren errepresioko erantzukizunak eta aparatuen jarduna ez ziren epaitu: bigarren planoan geratu ziren.",
+            "«Aurrera egiteko» logikak egonkortasuna lehenetsi zuen iraganaren kontu-eskaeraren gainetik."
+          ],
+          erlazioa: "Amnistiak bi aldeei eragin zien: preso politikoak askatu zituen, baina frankismoaren errepresioaren arduradunak ere zigorrik gabe utzi zituen; egonkortasunaren prezioa izan zen.",
+          akatsak: [
+            "Amnistia ETAko kideentzat bakarrik izan zela esatea.",
+            "Amnistia Legea frankismoan onartu zela esatea (1977ko Gorte demokratikoek onartu zuten).",
+            "Baieztapena zuzentzea, oposizioak amnistia eskatzen zuela aipatu gabe."
+          ],
+          pistak: [
+            "Nork eskatzen zuen amnistia, eta zergatik?",
+            "Amnistia batek zigorra kentzen badio talde bati, beste talde batzuei ere ken diezaieke?",
+            "Zergatik nahiago izan zen iragana ez berrikustea 1977an?"
+          ]
+        },
+        {
+          id: "8.2-a",
+          epigrafea: "8.2",
+          mota: "kontzeptua",
+          galdera: "Zergatik esaten da 1978ko Konstituzioa «kontsentsuko» konstituzioa izan zela? Zer irabazi eta zer onartu behar izan zuten alde bakoitzak?",
+          ideiak: [
+            "1977ko hauteskundeen ondoren alderdi nagusiek (UCD, PSOE, PCE…) adostu zuten; 1978ko abenduaren 6ko erreferendumean berretsi zen.",
+            "Espainia «estatu sozial eta demokratiko» gisa definitu zen, eskubide eta askatasunen sistema zabalarekin.",
+            "Monarkia parlamentarioa: ezkerrak onartu behar izan zuen; aparatu zaharraren erreakzioa leuntzeko «euste-pieza» zen.",
+            "Autonomien estatua: zentralismo frankista gainditu, estatuaren batasuna mantenduz."
+          ],
+          erlazioa: "Oreka-dokumentua zen: alde bakoitzak zerbait irabazi eta zerbait onartu zuen (ezkerrak monarkia, eskuinak eskubideak eta autonomiak), eta elkarrekiko amore emate horrek sistema berria egonkortu zuen.",
+          akatsak: [
+            "Konstituzioa alderdi bakar batek idatzi zuela esatea.",
+            "Monarkia erreferendum bereizi batean bozkatu zela esatea (Konstituzioaren pakete osoan sartu zen).",
+            "Konstituzioaren edukia zerrendatzea, kontsentsuaren logika azaldu gabe."
+          ],
+          pistak: [
+            "Zer onartu behar izan zuten PSOEk eta PCEk, errepublikanoak izan arren?",
+            "Zer onartu behar izan zuten frankismotik zetozenek?",
+            "Zergatik da egonkorragoa denek zerbait irabazten duten akordio bat?"
+          ]
+        },
+        {
+          id: "8.2-b",
+          epigrafea: "8.2",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «1978ko Konstituzioa Euskal Herrian ere babes zabalarekin onartu zen, Espainiako gainerako lurraldeetan bezala.» Zergatik da okerra? Azaldu zuzen.",
+          ideiak: [
+            "Espainia osoan babes handia izan zuen 1978ko abenduaren 6ko erreferendumean.",
+            "Euskal Herrian EAJk abstentziora deitu zuen, eta ezker abertzaleak ez zuen Konstituzioa berea bezala ikusi.",
+            "Boto baliodunen artean baietza nagusitu zen, baina abstentzioa oso handia izan zen eta pisu politiko handia izan zuen.",
+            "Espainian Konstituzioa «itxiera» gisa bizi izan zen; Euskal Herrian, ez modu berean."
+          ],
+          erlazioa: "Abstentzio handiak erakusten du Euskal Herrian Konstituzioak ez zuela gainerako lurraldeetako legitimitate bera lortu: horregatik izan zen hain garrantzitsua gero Gernikako Estatutua.",
+          akatsak: [
+            "Euskal Herrian Konstituzioa ezezkoarekin baztertu zela esatea (baliodunen artean baietza nagusitu zen).",
+            "EAJk Konstituzioaren alde bozkatzeko deitu zuela esatea.",
+            "Abstentzioa aipatzea, haren esanahi politikoa azaldu gabe."
+          ],
+          pistak: [
+            "Zer deitu zuen EAJk erreferendumean?",
+            "Baietza nagusitu bazen, zer da hain esanguratsua?",
+            "Zer gertatu zen urtebete geroago Gernikako Estatutuarekin?"
+          ]
+        },
+        {
+          id: "8.2-c",
+          epigrafea: "8.2",
+          mota: "ondorioa",
+          galdera: "Zer ekarri zuen 1979ko Gernikako Estatutuak, eta zer harreman du 1978ko Konstituzioarekin?",
+          ideiak: [
+            "Testuinguru gogorrean negoziatu zen (ETAren indarkeria eta estatuaren biolentzia); aurreautonomia-organo gisa Euskal Kontseilu Nagusia sortu zen.",
+            "1979ko urriaren 25eko erreferendumean onartu zen, boto baliodunen artean gehiengo oso zabalarekin.",
+            "Eusko Legebiltzarra eta Eusko Jaurlaritza sortu ziren (1980, Garaikoetxea lehendakari); Kontzertu Ekonomikoa eta Ertzaintzaren bidea.",
+            "Konstituzioak markoa ezarri zuen; Estatutuak autogobernuaren edukia zehaztu zuen marko horren barruan."
+          ],
+          erlazioa: "Konstituzioak autonomiarako atea ireki zuen eta Estatutuak edukiz bete: autogobernua promesa izatetik errealitate izatera pasa zen, eta gatazka nagusiak arauen barruan kokatu ziren (desagertu gabe).",
+          akatsak: [
+            "Nafarroa Gernikako Estatutuan sartu zela esatea (Araba, Bizkaia eta Gipuzkoa bakarrik).",
+            "Estatutua Konstituzioaren aurretik onartu zela esatea.",
+            "Gernikako Estatutua 1936koarekin nahastea."
+          ],
+          pistak: [
+            "Zein erakunde sortu zituen Estatutuak?",
+            "Konstituzioak zer ematen du, eta Estatutuak zer?",
+            "Nor izan zen lehen lehendakaria, eta noiz?"
+          ]
+        },
+        {
+          id: "8.3-a",
+          epigrafea: "8.3",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Trantsizioa adostasunaren garai baketsua izan zen.» Zergatik da irudi hori partziala? Azaldu zuzen.",
+          ideiak: [
+            "ETAk jarduera armatu jarraitua izan zuen (1980an ia 100 hildako, inoizko gehien); GRAPOk ere jardun zuen.",
+            "Eskuin muturreko indarkeria: Montejurra (1976) eta Atochako sarraskia (1977ko urtarrila).",
+            "Estatu-indarkeria: Gasteizko martxoaren 3a (1976, bost langile hil), 1978ko Sanferminak.",
+            "Indarkeriak prozesu demokratikoa etengabe baldintzatu zuen; ez zen «albo-gertaera» bat."
+          ],
+          erlazioa: "Adostasuna egon zen, baina indarkeria iturri anitzetakoa eta etengabea izan zen; hain zuzen, indarkeria horrek egin zuen kontsentsua hain beharrezko.",
+          akatsak: [
+            "Indarkeria ETAk bakarrik eragin zuela esatea.",
+            "Trantsizioan indarkeriarik ez zela egon esatea, edo indarkeria anekdotikoa izan zela.",
+            "Indarkeria-motak zerrendatzea, prozesu politikoarekin lotu gabe."
+          ],
+          pistak: [
+            "Zenbat iturritako indarkeria egon zen: ezker muturra, eskuin muturra, estatua?",
+            "Zer gertatu zen Atochan 1977an, eta Gasteizen 1976an?",
+            "Zergatik bultzatzen du indarkeriak alderdiak akordioak egitera?"
+          ]
+        },
+        {
+          id: "8.3-b",
+          epigrafea: "8.3",
+          mota: "kausa",
+          galdera: "Zergatik esaten da Trantsizioan aparatuen jarraitutasuna egon zela segurtasun-arloan? Jarri adibide bat.",
+          ideiak: [
+            "Demokrazia frankismotik zetozen aparatuekin (polizia, epaileak, armada) eraiki zen, haustura egin gabe.",
+            "Aparatuek ez zuten bat-batean kultura demokratikoa barneratu: errepresio-logikek iraun zuten.",
+            "Gasteizko martxoaren 3ko gertakariak (1976): langile greban bost hildako; 1978ko Sanferminetan tiroz hildako bat eta zauritu ugari.",
+            "Manifestazioetan karga gogorrak eta eskubideen urraketa-salaketak egon ziren."
+          ],
+          erlazioa: "Erreforma hitzartuak aparatu zaharrak bere horretan utzi zituenez, haien praktika errepresiboek iraun zuten demokrazia eraikitzen ari zen bitartean.",
+          akatsak: [
+            "Gasteizko martxoaren 3ko hildakoak ETAren atentatu batean hil zirela esatea (poliziaren esku-hartzean hil ziren, langile greba batean).",
+            "1977an polizia guztiz berritu zela esatea.",
+            "Adibideak ematea, erreformaren izaerarekin (jarraitutasuna) lotu gabe."
+          ],
+          pistak: [
+            "Erreforma hitzartu batean, zer gertatzen da poliziarekin eta epaileekin?",
+            "Zer gertatu zen Gasteizen 1976ko martxoaren 3an?",
+            "Zergatik ez da nahikoa lege berri bat jokabide zaharrak aldatzeko?"
+          ]
+        },
+        {
+          id: "8.3-c",
+          epigrafea: "8.3",
+          mota: "ondorioa",
+          galdera: "Zer ondorio politiko izan zituen indarkeriak («berunezko urteak») Trantsizioaren bilakaeran?",
+          ideiak: [
+            "Alderdi nagusiek kontsentsuaren bidea indartu zuten, prozesua lehertzeko arriskua erreala zelako.",
+            "Atochako sarraskiaren ondoren PCEren erantzun publiko kontrolatuak haren integrazioa erraztu zuen.",
+            "Egonkortasuna eta segurtasuna lehen lerrora ekarri ziren; gai batzuk konpondu gabe geratu ziren.",
+            "1979tik aurrera, indarkeria eta krisia batera, desenkantoa hedatu zen gizartean."
+          ],
+          erlazioa: "Indarkeriak prozesua lehertzeko mehatxua sortu zuenez, alderdiak kontsentsura bultzatu zituen; baina prezioa egonkortasuna lehenestea eta gai batzuk konpondu gabe uztea izan zen.",
+          akatsak: [
+            "Indarkeriak Trantsizioa gelditu zuela esatea.",
+            "Indarkeriak eraginik izan ez zuela esatea prozesu politikoan.",
+            "Ondorioak zerrendatzea, kontsentsuarekin lotu gabe."
+          ],
+          pistak: [
+            "Zer egin zuen PCEk Atochako hilketen ondoren, eta zer ondorio izan zuen?",
+            "Indarkeria handia dagoenean, zer lehenesten dute alderdiek?",
+            "Zergatik zabaldu zen «desenkantoa» 1979tik aurrera?"
+          ]
+        },
+        {
+          id: "8.4-a",
+          epigrafea: "8.4",
+          mota: "kausa",
+          galdera: "Zergatik jo zuen krisi ekonomikoak hain gogor Espainia Trantsizioan?",
+          ideiak: [
+            "1973ko eta 1979ko petrolio-krisiek energia garestitu eta ekoizpen-kostuak igo zituzten.",
+            "Espainiak energia-mendekotasun handia zuen.",
+            "Egitura ekonomikoa ahula zen: industria tradizional astuna, produktibitate-arazoak eta finantza-sistema egokitu gabea.",
+            "Ondorioak: inflazioa, langabezia, enpresen itxierak; gizarteak aldi berean eskubide gehiago eskatzen zituen."
+          ],
+          erlazioa: "Kanpoko kolpe bat (petrolioa) barneko ahulezia egiturazkoekin eta aldaketa politikoarekin batera iritsi zen: askatasunak irabazten ziren unean, ekonomiak ez zuen laguntzen.",
+          akatsak: [
+            "Krisia Trantsizioak berak sortu zuela esatea.",
+            "Petrolio-krisi bakarra egon zela esatea (1973 eta 1979).",
+            "Kausak zerrendatzea, garai politikoarekin lotu gabe."
+          ],
+          pistak: [
+            "Zer gertatu zen petrolioaren prezioarekin 1973an eta 1979an?",
+            "Zergatik eragin zion Espainiari beste herrialde batzuei baino gehiago?",
+            "Zer eskatzen zuen gizarteak une berean?"
+          ]
+        },
+        {
+          id: "8.4-b",
+          epigrafea: "8.4",
+          mota: "kontzeptua",
+          galdera: "Zer izan ziren Moncloako Itunak (1977) eta zergatik esaten da «kontsentsuaren prezioa» izan zirela?",
+          ideiak: [
+            "1977ko urrian Suárezen gobernuak eta alderdi nagusiek (PSOE, PCE…) sinatutako akordioak.",
+            "Helburua: inflazioa jaistea, ekonomia egonkortzea eta gatazka soziala bideratzea.",
+            "Neurriak gogorrak izan ziren langileentzat: soldata-hazkundea mugatu eta diziplina ekonomikoa.",
+            "Kalkulu politikoa: gatazka soziala lehertzen bazen, Trantsizioa bera arriskuan egongo zen."
+          ],
+          erlazioa: "Demokrazia babesteko egonkortasun ekonomikoa behar zen: horregatik onartu zituzten ezkerreko alderdiek langileentzat gogorrak ziren neurriak; kontsentsuaren prezioa gizartearen zati batek ordaindu zuen.",
+          akatsak: [
+            "Moncloako Itunak sindikatuek bakarrik sinatu zituztela esatea.",
+            "Itunak akordio ekonomiko hutsak izan zirela esatea, esanahi politikorik gabe.",
+            "Itunek soldatak igo zituztela esatea (hazkundea mugatu zuten)."
+          ],
+          pistak: [
+            "Nork sinatu zituen itunak, eta zergatik da harrigarria ezkerreko alderdiak egotea?",
+            "Zer gertatu zen soldatekin?",
+            "Zergatik zen arriskutsua 1977an greba-olatu handi bat?"
+          ]
+        },
+        {
+          id: "8.4-c",
+          epigrafea: "8.4",
+          mota: "ondorioa",
+          galdera: "Zer ekarpen egin zuten langile-mugimenduak eta mugimendu sozial berriek Trantsizioan? Zergatik esaten da demokrazia «kalean ere» egin zela?",
+          ideiak: [
+            "Langile-mugimendua (CCOO, UGT) subjektu nagusia izan zen: grebak, negoziazioak eta lantokietako antolakuntza.",
+            "Auzo-elkarteek etxebizitza, hirigintza, garraio eta osasun-zerbitzuen alde presionatu zuten.",
+            "Emakumeen mugimenduak berdintasun juridiko eta soziala aldarrikatu zuen (familia-zuzenbidea, lan-eskubideak).",
+            "Mugimendu ekologistak industrializazioaren ondorioak eta energia-eredua zalantzan jarri zituen."
+          ],
+          erlazioa: "Mugimenduek demokrazia hauteskundeetatik harago zabaldu zuten: behetiko presioak eskubide eta bizi-baldintzak aldarrikatu zituen, eta instituzioetako politikarekin batera demokrazia sakondu zuen.",
+          akatsak: [
+            "Demokrazia hauteskundeetara eta Konstituziora mugatu zela esatea.",
+            "Mugimendu sozialak frankismoan legezkoak zirela esatea.",
+            "Mugimenduak zerrendatzea, haien ekarpena azaldu gabe."
+          ],
+          pistak: [
+            "Zer aldarrikatzen zuten auzo-elkarteek?",
+            "Demokrazia lau urtean behin botoa ematea bakarrik da?",
+            "Zer eskatzen zuen emakumeen mugimenduak?"
+          ]
+        },
+        {
+          id: "8.5-a",
+          epigrafea: "8.5",
+          mota: "kausa",
+          galdera: "Zer egoerak egin zuen posible 1981eko otsailaren 23ko kolpe-saiakera?",
+          ideiak: [
+            "1979tik gobernagarritasuna ahuldu zen: UCD barrutik zatitzen ari zen eta Suárez bakartuta zegoen.",
+            "Gizartean desenkantoa zegoen: krisi ekonomikoa, langabezia eta ETAren indarkeria.",
+            "Armadako sektore batzuek frankismoko «ordena» eta «batasun» diskurtsoa zuten, eta demokraziaren eta autonomien aurka zeuden.",
+            "1981eko urtarrilean Suárezek dimisioa eman zuen; kolpea Calvo-Soteloren inbestidura-saioan gertatu zen."
+          ],
+          erlazioa: "Ahultasun pilatuak (gobernu zatitua, krisia, indarkeria) kolpisten sektoreei aukera bat ikusarazi zien: demokrazia ahul ikusten zutenez, «larrialdi» gisa esku hartzea justifika zezaketela uste zuten.",
+          akatsak: [
+            "Kolpea Suárezen inbestidura-saioan gertatu zela esatea (Calvo-Sotelorenean izan zen).",
+            "Kolpea 1975ean edo 1977an gertatu zela esatea.",
+            "Testuingurua deskribatzea, kolpistek ikusitako «aukerarekin» lotu gabe."
+          ],
+          pistak: [
+            "Zer gertatzen ari zen UCDren barruan 1980–1981ean?",
+            "Zer pentsatzen zuten armadako sektore batzuek autonomiez eta ETAz?",
+            "Zer saio egiten ari zen Kongresuan otsailaren 23an?"
+          ]
+        },
+        {
+          id: "8.5-b",
+          epigrafea: "8.5",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «23-F Tejero teniente koronelaren ekintza isolatu bat izan zen.» Zer dago gaizki? Azaldu zuzen.",
+          ideiak: [
+            "Tejerok (Guardia Zibila) eta gizon armatu talde batek Kongresua hartu zuten inbestidura-saioan.",
+            "Alfonso Armada jenerala, erregearengandik hurbilekoa, «salbazio nazionaleko» gobernu bat proposatzen saiatu zen, kolpeari konstituzionaltasun-itxura emanez.",
+            "Milans del Bosch jeneralak tankeak atera zituen Valentziako kaleetara.",
+            "Arrakasta izateko, kolpeak armadaren kate komandoaren babesa behar zuen."
+          ],
+          erlazioa: "Tejeroren ekintza ikusgarriena izan zen, baina proiektu zabalago baten pieza zen: Kongresuaren bahiketa, irtenbide politiko bat (Armada) eta indar militarra (Milans) batera artikulatu nahi ziren.",
+          akatsak: [
+            "Tejero armadako jenerala zela esatea (Guardia Zibileko teniente koronela zen).",
+            "Kolpeak frankismora itzultzea bakarrik zuela helburu esatea, «larrialdi» irtenbidea aipatu gabe.",
+            "Baieztapena zuzentzea, beste eragilerik aipatu gabe."
+          ],
+          pistak: [
+            "Nor zen Alfonso Armada, eta zer gobernu mota proposatu zuen?",
+            "Zer gertatu zen Valentzian gau hartan?",
+            "Gizon talde batek parlamentu bat har dezake, baina zer behar du kolpe batek benetan irabazteko?"
+          ]
+        },
+        {
+          id: "8.5-c",
+          epigrafea: "8.5",
+          mota: "ondorioa",
+          galdera: "Zer ondorio izan zituen 23-Fek, eta zergatik jotzen da 1982ko hauteskundeak Trantsizioaren itxieratzat?",
+          ideiak: [
+            "Kolpeak porrot egin zuen: erregea telebistan agertu zen konstituzio-ordena babesteko, eta armadaren goi-aginte askok ez zuten bat egin.",
+            "Demokraziaren hauskortasuna agerian geratu zen: Trantsizioa ez zen «atzeraezina».",
+            "Monarkiaren papera indartu zen, konstituzioaren bermatzaile gisa (eztabaida historiografikoak gaur arte jarraitzen du).",
+            "1982an PSOEk irabazi zuen: oposiziotik gobernura hauteskunde bidez igarotzea, alternantzia normalizatua."
+          ],
+          erlazioa: "Kolpearen porrotak demokrazia sendotu zuen, eta 1982ko alternantzia horren egiaztapen handiena izan zen: Gerra Zibilaz geroztik lehen aldiz oposizioak gobernua hartu zuen botoen bidez, kolperik gabe.",
+          akatsak: [
+            "Kolpeak gobernua aldatu zuela esatea.",
+            "1982an UCDk irabazi zuela esatea (PSOEk irabazi zuen).",
+            "Ondorioak zerrendatzea, 1982ko alternantziarekin lotu gabe."
+          ],
+          pistak: [
+            "Zer egin zuen erregeak otsailaren 23ko gauean?",
+            "Zer ikasi zuen gizarteak demokraziaren segurtasunari buruz?",
+            "Zergatik da garrantzitsua oposizioak hauteskundeak irabaztea eta gobernua hartzea?"
+          ]
+        }
+      ]
     }
   ]
 };
