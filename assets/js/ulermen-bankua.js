@@ -231,7 +231,7 @@ window.ULERMEN_BANKUA = {
           galdera: "Ikasle batek idatzi du: «Seiurtekoak porrot egin zuen Amadeo I.a errege txarra zelako.» Zergatik da azalpen hori okerra? Azaldu zuzen.",
           ideiak: [
             "Amadeo I.ak (1871) ez zuen erro historikorik ez babes sozial sendorik, eta bere babesle nagusia, Prim, hil egin zuten.",
-            "Arazo egiturazkoak zeuden: karlistada berria (1872–1876), Kubako gerra (1868tik) eta oposizio politiko etengabea.",
+            "Arazo egiturazkoak zeuden: III. Karlistada (1872–1876), Kubako gerra (1868tik) eta oposizio politiko etengabea.",
             "Lehen Errepublikak (1873) arazo berberak eta gehiago izan zituen: errepublikanoen zatiketa, kantonalismoa eta lau presidente urtebetean.",
             "1874an Martínez Camposen pronuntziamenduak Alfonso XII.a errege izendatu zuen: Berrezarkuntza hasi zen."
           ],
