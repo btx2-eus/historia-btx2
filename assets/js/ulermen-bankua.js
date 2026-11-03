@@ -939,9 +939,9 @@ window.ULERMEN_BANKUA = {
           mota: "kontzeptua",
           galdera: "Zer izan zen Donostiako Ituna (1930) eta zergatik izan zen erabakigarria Errepublikaren etorrerarako?",
           ideiak: [
-            "1930eko abuztuan Donostian sinatutako akordioa: errepublikanoak (Alcalá-Zamora, Maura, Lerroux, Azaña…), sozialistak (Prieto, De los Ríos, banakako gisa) eta ezker katalanista (Carrasco i Formiguera).",
-            "Helburua: monarkia amaitu eta errepublika demokratiko bat ezartzea; Kataluniaren autonomia aintzat hartzea.",
-            "«Errepublika Aldarrikatzeko Batzordea» sortu zuen, 1931ko apirilean behin-behineko gobernua izango zena.",
+            "1930eko abuztuan Donostian egindako bilera eta akordioa (testu sinaturik gabe): errepublikanoak (Alcalá-Zamora, Maura, Lerroux, Azaña…), sozialistak (Prieto, De los Ríos, banakako gisa) eta ezker katalanista (Carrasco i Formiguera).",
+            "Helburua: monarkia amaitu eta errepublika demokratiko bat ezartzea (behar izanez gero altxamendu militar eta greba orokorraren bidez); Kataluniaren autonomia aintzat hartzea.",
+            "Ondoren (1930eko urria, PSOE eta UGT batuta) «Batzorde Iraultzailea» sortu zen, 1931ko apirilean behin-behineko gobernua izango zena.",
             "Oposizio zatitua lehen aldiz helburu komun baten inguruan batu zen."
           ],
           erlazioa: "Itunak oposizioa batu eta gobernu alternatibo bat prestatu zuen; horregatik, monarkia erori zenean, boterea hartzeko prest zegoen talde bat zegoen.",
