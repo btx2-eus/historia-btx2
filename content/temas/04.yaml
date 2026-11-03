@@ -24,7 +24,7 @@ timeline:
 - year: '1930'
   label: Donostiako Ituna
   target: g4-1
-  desc: Donostiako Ituna eta Jaca-ko altxamendua.
+  desc: Donostiako Ituna eta Jacako altxamendua.
 - year: 1931·04
   label: Errepublika
   target: g4-1
@@ -62,13 +62,13 @@ timeline:
   target: g4-5
   desc: Calvo Soteloren hilketa.
 - year: 1936·07·17
-  label: Estatu kolpea
+  label: Estatu-kolpea
   target: g4-5
-  desc: 'Estatu kolpea: Gerra Zibilaren hasiera.'
+  desc: 'Estatu-kolpea: Gerra Zibilaren hasiera.'
 
 keydates:
 - year: '1930'
-  text: Donostiako Ituna; Jaca-ko altxamendua.
+  text: Donostiako Ituna; Jacako altxamendua.
 - year: '1931'
   text: 'Apirilak 14: Errepublika. Abenduak 9: Konstituzioa.'
 - year: '1932'
@@ -82,17 +82,17 @@ keydates:
 - year: 1936·02
   text: Fronte Popularraren garaipena.
 - year: 1936·07
-  text: Calvo Soteloren hilketa eta estatu kolpea (uztailak 17).
+  text: Calvo Soteloren hilketa eta estatu-kolpea (uztailak 17).
 
 sections:
 - id: g4-1
   number: '4.1'
   title: Monarkiaren behin betiko krisia
   body: |-
-    <p>XX. mendearen lehen hamarkadan Espainiako <span class="term" data-def="Estatua errege batek zuzentzen duen sistema politikoa, non boterea oinordetza bidez transmititzen den.">monarkia</span> liberalak, Alfonso XIII.a buru zuela, haustura sozial eta politiko sakon bati egin behar izan zion aurre. 1898ko Porrotaren ondoren modernizazio-nahia piztu zen arren, sistema politikoaren ustelkeriak eta bipartidismo itxiak eragotzi zuten benetako erreforma. <strong>1929ko krisi ekonomikoa</strong>ren eta diktaduraren porrotaren ondoren, oposizioa helburu komun batean bildu zen: errepublika demokratiko bat ezartzea.</p>
+    <p>XX. mendearen lehen herenean Espainiako <span class="term" data-def="Estatua errege batek zuzentzen duen sistema politikoa, non boterea oinordetza bidez transmititzen den.">monarkia</span> liberalak, Alfonso XIII.a buru zuela, haustura sozial eta politiko sakon bati egin behar izan zion aurre. 1898ko Porrotaren ondoren modernizazio-nahia piztu zen arren, sistema politikoaren ustelkeriak eta bipartidismo itxiak eragotzi zuten benetako erreforma. <strong>1929ko krisi ekonomikoa</strong>ren eta diktaduraren porrotaren ondoren, oposizioa helburu komun batean bildu zen: errepublika demokratiko bat ezartzea.</p>
 
     <h3><span class="h-num">4.1.1</span> Primo de Riveraren diktadura eta bere porrota (1923–1930)</h3>
-    <p>1923an, testuinguru horretan, <strong>Miguel Primo de Riverak estatu kolpea</strong> eman zuen, Alfonso XIII.aren onespenarekin. <span class="term" data-def="Armadaren buruzagi batek botere politikoa hartzen duen erregimena, legea alde batera utzita. Espainian 1923-1930 artean iraun zuen.">Diktadura</span> hark ordena eta egonkortasuna ekartzea agindu zuen, baina bere oinarriak ahulak ziren: militarismoa, autoritarismoa eta zentralismoa, garai berrietako behar sozial eta ekonomikoen aurrean guztiz zaharkituak.</p>
+    <p>1923an, testuinguru horretan, <strong>Miguel Primo de Riverak estatu-kolpea</strong> eman zuen, Alfonso XIII.aren onespenarekin. <span class="term" data-def="Armadaren buruzagi batek botere politikoa hartzen duen erregimena, legea alde batera utzita. Espainian 1923-1930 artean iraun zuen.">Diktadura</span> hark ordena eta egonkortasuna ekartzea agindu zuen, baina bere oinarriak ahulak ziren: militarismoa, autoritarismoa eta zentralismoa, garai berrietako behar sozial eta ekonomikoen aurrean guztiz zaharkituak.</p>
     <ul>
       <li><strong>Ezaugarriak:</strong> Konstituzioaren etetea, alderdi politikoen debekua, prentsa zentsura eta erregio autonomien murrizketa.</li>
       <li><strong>Porrotaren arrazoiak:</strong> 1929ko Depresio Handiaren ondorioak Espainian ere nabari ziren; ekonomia ahuldu, langabezia hazi eta diktaduraren aurkako gizarte-mobilizazioa areagotu zen. 1930ean Primo de Riverak dimititu zuen, osasun txarraz eta oinarri politikorik gabe.</li>
@@ -107,9 +107,9 @@ sections:
       <li><strong>Sozialistak:</strong> Indalecio Prieto eta Fernando de los Ríos, banakako gisa; PSOE eta UGT ofizialki 1930eko urrian batu ziren itunera.</li>
       <li><strong>Kataluniako ezker nazionalistak:</strong> Manuel Carrasco i Formiguera (Acció Catalana), Matías Mallol eta Jaume Aiguader, autonomia aldarrikapenaren ikuspegitik.</li>
     </ul>
-    <p>Itunaren bidez «Errepublika Aldarrikatzeko Batzordea» sortu zuten, gerora II. Errepublikako lehen gobernuaren oinarria izango zena. Haien helburua ez zen iraultza soziala, erregimen politikoaren aldaketa baketsu baina guztizkoa baizik: monarkia liberal zaharkituaren ordez <span class="term" data-def="Estatu-forma non estatuburua ez den erregea eta boterea ez den oinordetzaz transmititzen. Espainian bi alditan ezarri zen: 1873-74 (I.) eta 1931-39 (II.).">errepublika demokratiko eta aurrerakoia</span> ezartzea.</p>
+    <p>1930eko urrian, PSOE eta UGT batu ondoren, «Batzorde Iraultzailea» sortu zuten, gerora II. Errepublikako lehen gobernuaren oinarria izango zena. Haien helburua ez zen iraultza soziala, erregimen politikoaren aldaketa osoa baizik, behar izanez gero altxamendu militar eta greba orokorraren bidez: monarkia liberal zaharkituaren ordez <span class="term" data-def="Estatu-forma non estatuburua ez den erregea eta boterea ez den oinordetzaz transmititzen. Espainian bi alditan ezarri zen: 1873-74 (I.) eta 1931-39 (II.).">errepublika demokratiko eta aurrerakoia</span> ezartzea.</p>
     <p>Itunaren edukia: monarkiaren amaiera adostea; errepublika konstituzional baten oinarriak prestatzea (askatasun publikoetan, hezkuntzan eta gizarte-erreformetan oinarritua); eta autonomien auzia aintzat hartzea, bereziki Kataluniaren kasuan, Espainiako batasun demokratikoaren barruan.</p>
-    <p>Itunaren ondoren, 1930eko abenduan <strong>Jaca-ko altxamendu errepublikarra</strong> piztu zen —porrot egin bazuen ere, sinbolikoki indartsua izan zen—, eta herriaren aldaketa-nahia gero eta nabariagoa bihurtu zen.</p>
+    <p>Itunaren ondoren, 1930eko abenduan <strong>Jacako altxamendu errepublikarra</strong> piztu zen —porrot egin bazuen ere, sinbolikoki indartsua izan zen—, eta herriaren aldaketa-nahia gero eta nabariagoa bihurtu zen.</p>
 
     <h3><span class="h-num">4.1.3</span> 1931ko udal hauteskundeak eta Errepublikaren aldarrikapena</h3>
     <p><strong>1931ko apirilaren 12ko udal hauteskundeek</strong> herriaren benetako aldaketa-nahia gorpuztu zuten: errepublikanoek eta sozialistek garaipen argia lortu zuten hiri nagusienetan. Hauteskundeetako emaitzak ikusi eta Alfonso XIII.ak erbestea aukeratu zuen.</p>
@@ -128,11 +128,11 @@ sections:
     <h3><span class="h-num">4.2.2</span> Manuel Azañaren erreforma programaren ardatzak</h3>
     <p><strong>Manuel Azaña</strong> buru, gobernuak gizartearen oinarrizko egiturak berritzeko erreforma multzo zabala jarri zuen martxan. Bost ardatz nagusitan labur daiteke:</p>
     <ul>
-      <li><strong>1. <span class="term" data-def="Lur-jabetzaren banaketa aldatzeko politika. Latifundioak mugatu eta nekazariei lurra ematea. Aplikazioa motela eta mugatua izan zen, desilusioa eraginez.">Erreforma agrarioa</span>:</strong> Andaluziako eta Extremadurako nekazaritza arazoa konpontzeko, 1932ko Lur Erreformaren Legeak jabetza handiak desjabetzeko eta nekazariei banatzeko idatzi zen. Burokrazia, baliabide eskasia eta lur-jabeen erresistentzia zirela eta, aplikazioa oso motela eta mugatua izan zen. Desilusioa eta tentsioa handiak eragin zituen gobernuaren aurka.</li>
+      <li><strong>1. <span class="term" data-def="Lur-jabetzaren banaketa aldatzeko politika. Latifundioak mugatu eta nekazariei lurra ematea. Aplikazioa motela eta mugatua izan zen, desilusioa eraginez.">Erreforma agrarioa</span>:</strong> Andaluziako eta Extremadurako nekazaritza arazoa konpontzeko, 1932ko Nekazaritza Erreformarako Legea jabetza handiak desjabetzeko eta nekazariei banatzeko onartu zen. Burokrazia, baliabide eskasia eta lur-jabeen erresistentzia zirela eta, aplikazioa oso motela eta mugatua izan zen. Desilusioa eta tentsioa handiak eragin zituen gobernuaren aurka.</li>
       <li><strong>2. Erreforma militarra:</strong> Azañak armada murriztu, ofizialen soberakina kendu eta militarrek Errepublikarekiko leialtasun zin egitea eskatu zuen. <span class="term" data-def="Espainiako armadako goi-mailako hezkuntzarako erakundea. Azañak 1931n itxi zuen, militarren haserrea piztuz.">Akademia Militar Nagusia</span> itxi zuen (Franco bertako zuzendaria zen) eta armada zibilen menpe jarri. Neurri horiek militar kontserbadoreen haserrea piztu zuten.</li>
-      <li><strong>3. Hezkuntza erreforma:</strong> Hezkuntza Errepublikaren oinarri nagusietakoa izan zen. Bi urtetan <strong>13.000 eskola publiko</strong> ireki ziren eta irakasleen prestakuntza hobetu. <span class="term" data-def="Estatuak erlijio jakin batekin identifikatu behar ez duela dioen printzipioa. Hezkuntza erlijioaren kontrolpetik ateraz.">Eskola laiko, doako eta unibertsal</span> bat sortu nahi zen. Horrek, ordea, Elizaren aurkako tentsio ideologikoak areagotu zituen.</li>
+      <li><strong>3. Hezkuntza erreforma:</strong> Hezkuntza Errepublikaren oinarri nagusietakoa izan zen. Bi urtetan <strong>10.000 eskola publiko inguru</strong> ireki ziren (27.000ko plan baten barruan) eta irakasleen prestakuntza hobetu. <span class="term" data-def="Estatuak erlijio jakin batekin identifikatu behar ez duela dioen printzipioa. Hezkuntza erlijioaren kontrolpetik ateraz.">Eskola laiko, doako eta unibertsal</span> bat sortu nahi zen. Horrek, ordea, Elizaren aurkako tentsio ideologikoak areagotu zituen.</li>
       <li><strong>4. Gizarte- eta lan-erreformak:</strong> Lan baldintzak hobetu, lanaldiak mugatu eta langileen eskubideak indartu ziren. UGTk gobernuan eragina izan zuen, baina CNT anarkistaren oposizio erradikala gero eta handiagoa zen.</li>
-      <li><strong>5. Elizaren eta Estatuaren gatazka:</strong> Eliza eta Estatuaren bereizketak Elizaren kontrako jarrera gisa ikusi zuen hierarkia Katolikoak. 1931 eta 1932an eliza eta komentuen aurkako indarkeria zabaldu egin zen, eta ezinbestean, zatiketa ideologikoa areagotu zuen.</li>
+      <li><strong>5. Elizaren eta Estatuaren gatazka:</strong> Hierarkia katolikoak Elizaren eta Estatuaren arteko bereizketa Elizaren aurkako neurritzat hartu zuen. 1931 eta 1932an eliza eta komentuen aurkako indarkeria zabaldu egin zen, eta ezinbestean, zatiketa ideologikoa areagotu zuen.</li>
     </ul>
     <p>Erreforma horiez gain, 1932an <strong>Kataluniako Estatutua</strong> onartu zen: Konstituzioak ahalbidetutako lehen autonomia politikoa.</p>
 
@@ -142,23 +142,23 @@ sections:
       <li><strong>Erresistentzia handiak:</strong> Lur-jabe handiek, Elizak, militar kontserbadoreek eta eskuineko alderdi berriek (CEDA, 1933an sortua) erabateko oposizioa egin zioten erreforma programari.</li>
       <li><strong>Ezkerraren zatiketa:</strong> Sozialistek eta errepublikanoek erreforma erritmoari buruzko desadostasunak zituzten; ezker erradikalak (CNT, FAI) gobernua «burgesa» zela salatu zuen.</li>
       <li><strong>Krisi ekonomikoaren testuingurua:</strong> 1929ko <span class="term" data-def="1929an Wall Streeten hasitako krisi ekonomiko mundiala, langabezia eta miseria zabaldu zituena. Espainian ere eragin zuen, nekazari eta langileen egoera okertuz.">Depresio Handiaren</span> ondorioak nabarmen zeuden; nekazarien eta langileen egoera ez zen aski hobetu eta hasierako itxaropenaren kontraste handiak desilusioa zabaldu zuen.</li>
-      <li><strong>Gatazka sozial eta politikoen gorakada:</strong> grebak, lurren okupazioak eta matxinadak ugaritu ziren, bereziki 1933ko urtarrilean, <span class="term" data-def="1933ko urtarrilean Cádizko herri honetan nekazari anarkistek lurren banaketa eskatu zuten; Guardia Zibilak eta Guardia de Asaltok errepresio bortitza erabili zuten: 25 nekazari inguru hil ziren. Azañaren gobernuaren deslegitimazioaren ikur."><strong>Casas Viejas</strong></span>-eko gertakari tragikoan. Nekazari anarkistek lurren banaketa eskatu zuten; Guardia Zibilak eta Guardia de Asaltok errepresio bortitza erabili zuten: 25 nekazari inguru hil ziren (eta 3 guardia). Sarraskiak eta barne-zatiketak Azañaren dimisioa ekarri zuten.</li>
+      <li><strong>Gatazka sozial eta politikoen gorakada:</strong> grebak, lurren okupazioak eta matxinadak ugaritu ziren, bereziki 1933ko urtarrilean, <span class="term" data-def="1933ko urtarrilean Cádizko herri honetan nekazari anarkistak altxatu ziren, CNTren altxamendu iraultzaile baten barruan; Guardia Zibilak eta Guardia de Asaltok errepresio bortitza erabili zuten: 25 hildako (22 herritar eta 3 guardia). Azañaren gobernuaren deslegitimazioaren ikur."><strong>Casas Viejas</strong></span>eko gertakari tragikoan. Nekazari anarkistak altxatu ziren, CNTren altxamendu iraultzaile baten barruan; Guardia Zibilak eta Guardia de Asaltok errepresio bortitza erabili zuten: 25 hildako izan ziren: 22 herritar (asko atxilotu ondoren fusilatuak) eta 3 guardia. Sarraskiak eta barne-zatiketek gobernua ahuldu zuten, eta 1933ko irailean Azañaren gobernua erori zen.</li>
       <li><strong>Polarizazio ideologikoa:</strong> Ezker eta eskuinaren arteko elkarrizketa ia ezinezkoa bihurtu zen; Errepublikaren aldeko hasierako batasun hura apurtu zen.</li>
     </ul>
     <h3><span class="h-num">4.2.4</span> 1933ko hauteskundeak eta biurteko amaiera</h3>
     <p>1933ko <strong>azaroko hauteskundeak</strong> Espainiako historian garrantzitsuak ziren bi arrazoi nagusirengatik: <span class="term" data-def="Herritar heldu guztiek botoa ematea. Emakumeen botoa 1931an onartu eta 1933an aplikatu zen lehen aldiz.">emakumeek lehen aldiz bozkatu zuten</span> hauteskunde orokorretan, eta emaitzak guztiz irauli ziren. Eskuineko indarrek — <span class="term" data-def="Confederación Española de Derechas Autónomas. José María Gil Roblesek zuzendutako eskuin katoliko nagusia 1933tik aurrera.">CEDA</span> (Gil-Robles buru) eta Alderdi Erradikalak (Lerroux) — garaipen argia lortu zuten; ezkerraren porrota sakona izan zen: nekazarien desilusioa, ezkerraren zatiketa eta CNTren abstentzioa erabakigarriak izan ziren.</p>
-    <p>Horrela amaitu zen biurteko errepublikar-sozialista. Lehen biurtekoak eraldaketa handia ekarri zuen — 13.000 eskola, sufragio unibertsala, Kataluniako Estatutua, lan-eskubideak —, baina tentsio sozial eta ideologikoek, interes talde boteretsuen erresistentziak eta krisi ekonomikoak egonkortasuna ezinezko egin zuten. Espainiaren modernizazio demokratikoaren lehen benetako saiakera handia zen, baina garaiak ez zion arnasa eman.</p>
+    <p>Horrela amaitu zen biurteko errepublikar-sozialista. Lehen biurtekoak eraldaketa handia ekarri zuen — 10.000 eskola inguru, sufragio unibertsala, Kataluniako Estatutua, lan-eskubideak —, baina tentsio sozial eta ideologikoek, interes talde boteretsuen erresistentziak eta krisi ekonomikoak egonkortasuna ezinezko egin zuten. Espainiaren modernizazio demokratikoaren lehen benetako saiakera handia zen, baina garaiak ez zion arnasa eman.</p>
 
 - id: g4-3
   number: '4.3'
   title: 1931ko Konstituzioa
   body: |-
-    <p>1931ko ekaineko hauteskunde konstituziogileetan errepublikanoek eta sozialistek gehiengo handia lortu zuten. <span class="term" data-def="Konstituzio berri bat idazteko bereziki hautatutako biltzarra. 1931an eratu zen, Manuel Azaña eta Niceto Alcalá-Zamora buru.">Asanblada Konstituziogilea</span> eratu zen eta <strong>1931ko abenduaren 9an</strong> Espainiako historiako lehen Konstituzio demokratiko eta laikoa onartu zen. Helburua Espainia Estatu moderno, demokratiko eta sozial bihurtuko zuen legea idaztea zen, Antzinako Erregimenaren hondar instituzionalak gaindituz.</p>
+    <p>1931ko ekaineko hauteskunde konstituziogileetan errepublikanoek eta sozialistek gehiengo handia lortu zuten. <span class="term" data-def="Konstituzio berri bat idazteko bereziki hautatutako biltzarra. 1931an eratu zen, Manuel Azaña eta Niceto Alcalá-Zamora buru.">Asanblada Konstituziogilea</span> eratu zen eta <strong>1931ko abenduaren 9an</strong> Espainiako historiako lehen Konstituzio laikoa, emakumeei botoa eman ziena, onartu zen. Helburua Espainia Estatu moderno, demokratiko eta sozial bihurtuko zuen legea idaztea zen, Antzinako Erregimenaren hondar instituzionalak gaindituz.</p>
 
     <h3><span class="h-num">4.3.1</span> Oinarrizko ezaugarriak</h3>
     <p>1931ko Konstituzioa Espainiako historiako testu demokratiko, sozial eta laiko aurrerakoienetakoa izan zen. Sei ardatz nagusitan laburbildu daiteke:</p>
     <ul>
-      <li><strong>1. Errepublika demokratikoa eta parlamentarioa:</strong> Espainia «lanaren eta justizia sozialaren Errepublika» zela aldarrikatzen zuen; <span class="term" data-def="Botere politikoaren azken iturria herritarren borondatea dela dioen printzipioa. Erregearen edo Jainkoaren eskutik ez, herriaren borondatetik datorren zilegitasuna.">subiranotasuna</span> herriarengan jarrita. Gobernua Gorteen aurrean arduraduna zen eta Errepublikako presidentea Gorteek eta beste horrenbeste hautesle-ordezkarik (compromisarios) batera hautatzen zuten, sei urterako.</li>
+      <li><strong>1. Errepublika demokratikoa eta parlamentarioa:</strong> Espainia «klase guztietako langileen Errepublika demokratikoa» zela aldarrikatzen zuen; <span class="term" data-def="Botere politikoaren azken iturria herritarren borondatea dela dioen printzipioa. Erregearen edo Jainkoaren eskutik ez, herriaren borondatetik datorren zilegitasuna.">subiranotasuna</span> herriarengan jarrita. Gobernua Gorteen aurrean arduraduna zen eta Errepublikako presidentea Gorteek eta beste horrenbeste hautesle-ordezkarik (compromisarios) batera hautatzen zuten, sei urterako.</li>
       <li><strong>2. Botereen banaketa eta ordezkaritza:</strong> Legebiltzarra ganbera bakarrekoa zen (Gorteak), herritar guztien boto bidez aukeratua. Botere judiziala independentea zen.</li>
       <li><strong>3. Eskubide eta askatasun zabalak:</strong> adierazpen, prentsa, elkarte eta erlijio askatasuna; gizonen eta emakumeen berdintasuna legearen aurrean; <span class="term" data-def="Herritar heldu guztiek botoa ematea. Emakumeen botoa 1931an onartu eta 1933an aplikatu zen lehen aldiz.">sufragio unibertsala</span> emakumeentzat ere; lanerako, hezkuntzarako eta pentsio duinerako eskubide sozialak.</li>
       <li><strong>4. Estatu laikoa:</strong> Eliza eta Estatuaren arteko banaketa ezarri zen eta jesuiten ordena desegin. Erlijio-irakaskuntza ez zen derrigorrezkoa izan eta estatuko eskolak laiko eta publikoak izatera pasatu ziren.</li>
@@ -173,17 +173,17 @@ sections:
       <li><strong>Monarkiko eta eskuin tradizionalistaren oposizioa:</strong> Errepublika eta Konstituzioa monarkiaren erorketaren sinbolo ziren. Monarkiko kontserbadoreek eta karlistek erregimena legez kanpokoa zela aldarrikatu zuten. <strong>1932ko Sanjurjada</strong> —Guardia Zibilaren generalaren kolpe-saiakera— etorkizuneko altxamenduaren aurrekaria izan zen; porrot egin bazuen ere, 1936ko kolperako bidea ireki zuen.</li>
       <li><strong>Elite ekonomikoen oposizioa:</strong> Lur-jabe handiak, enpresaburuak eta industrialariak beldur ziren erreforma agrariotik eta estatuaren esku-hartze handiagoaren ondorioetatik. Kapitalaren ihesa eta inbertsioen paralizazioa gertatu ziren zenbait eremutan; klase altuen babesa Errepublikatik CEDArantz desplazatu zen.</li>
       <li><strong>Ezker muturraren eta anarkisten oposizioa:</strong> CNT eta FAI erakundeek Konstituzioa «burgesa» eta «itzurikeriazkoa» zela salatu zuten: uste zuten erreformak goitik zetozela, ez herritik, eta sistema kapitalista ez zela desegin. Greba orokorrak eta matxinadak sustatu zituzten.</li>
-      <li><strong>Armadaren eta militar kontserbadoreen jarrera:</strong> Azañaren erreforma militarrak oso gaizki hartu zituzten ofizial askok. Militar askok ikusten zuten Konstituzioa «Espainia zatitzen» ari zela (autonomia eta sekularizazioaren bidez). Ofizial askok (Mola, Franco, Sanjurjo, Queipo de Llano…) jada garai hartan konfiantza galdua zuten sistema errepublikarrean.</li>
+      <li><strong>Armadaren eta militar kontserbadoreen jarrera:</strong> Azañaren erreforma militarrak oso gaizki hartu zituzten ofizial askok. Militar askok ikusten zuten Konstituzioa «Espainia zatitzen» ari zela (autonomia eta sekularizazioaren bidez). Ofizial askok jada garai hartan konfiantza galdua zuten sistema errepublikarrean.</li>
     </ul>
     <h3><span class="h-num">4.3.3</span> Konstituzioaren paradoxa: testu aurrerakoia, adostasun gabea</h3>
     <p>1931ko Konstituzioa aurrerakoia eta demokratikoa zen, baina bi muturreko indarrek erasotuta. <strong>Eskuinak</strong> ordena sozialaren, erlijioaren eta monarkiaren aurkako eraso gisa hartu zuen; hori ez zen aldarrikapen hutsa: konspirazio militarrak hasi ziren, 1932ko <span class="term" data-def="1932ko abuztuaren 10eko altxamendua, Sanjurjo jeneralak (Guardia Zibileko zuzendari nagusi ohiak) gidatua, Sevillan. Porrot egin zuen: Sanjurjo atxilotu eta heriotzara kondenatu zuten, baina zigorra bizi arteko espetxera aldatu zitzaion; 1934an amnistiatu eta Portugalera joan zen. 1936ko kolpearen aurrekari zuzena.">Sanjurjada</span>rekin (porrot egin zuen; Sanjurjo heriotzara kondenatu zuten, zigorra bizi arteko espetxera aldatu zitzaion eta 1934ko amnistiaren ondoren Portugalera joan zen), hurrengo altxamenduen oinarriak jarriz. <strong>Ezker iraultzaileak</strong>, berriz, «gutxiegi» eta «burgesa» zela kritikatu zuen: sistema kapitalista ez zela desegin eta erreformak goitik zetozela.</p>
-    <div class="callout"><div class="callout-title">Ondorioa</div>1931ko Konstituzioak ez zuen huts egin bere edukiagatik —demokratikoa eta aurrerakoia zen—, baizik eta gizartean ez zuelako adostasun nahikorik sortu. Eskuinak mehatxutzat hartu zuen; ezker erradikalak «gutxiegi» zela pentsatu zuen. Inor guztiz konbentzitu gabe, demokraziaren oinarriak ahuldu eta Errepublikaren egonkortasuna kolokan jarri zituen.</div>
+    <div class="callout"><div class="callout-title">Ondorioa</div>Historialari askoren ustez, 1931ko Konstituzioak ez zuen huts egin bere edukiagatik —demokratikoa eta aurrerakoia zen—, baizik eta gizartean ez zuelako adostasun nahikorik sortu. Eskuinak mehatxutzat hartu zuen; ezker erradikalak «gutxiegi» zela pentsatu zuen. Inor guztiz konbentzitu gabe, demokraziaren oinarriak ahuldu eta Errepublikaren egonkortasuna kolokan jarri zituen.</div>
 
 - id: g4-4
   number: '4.4'
   title: Biurteko erradikal-cedista (1933–1936)
   body: |-
-    <p>1933rako, Azañaren gobernua krisian zegoen: erreformek ez zuten espero zen emaitzarik eman, Casas Viejas-eko sarraskiak iritzi publikoa bere aurka jarri eta gizartea gero eta zatituago zegoen. Giro horretan, hauteskunde berriek boterea eskuinaren esku utzi zuten.</p>
+    <p>1933rako, Azañaren gobernua krisian zegoen: erreformek ez zuten espero zen emaitzarik eman, Casas Viejaseko sarraskiak iritzi publikoa bere aurka jarri eta gizartea gero eta zatituago zegoen. Giro horretan, hauteskunde berriek boterea eskuinaren esku utzi zuten.</p>
 
     <h3><span class="h-num">4.4.1</span> 1933ko hauteskundeak eta botere aldaketa</h3>
     <p>1933ko hauteskunde orokorrak Espainiako historian lehen aldiz emakumeek bozkatu zuten hauteskundeak izan ziren, eta emaitzak guztiz irauli ziren. <span class="term" data-def="Confederación Española de Derechas Autónomas. José María Gil Roblesek zuzendutako eskuin katoliko nagusia 1933tik aurrera.">CEDA</span>k eta Alderdi Erradikalak (Alejandro Lerroux) garaipen argia lortu zuten; ezkerrak porrot sakona jasan zuen, nekazarien desilusioa, ezkerraren zatiketa eta CNTren abstentzioa zirela eta.</p>
@@ -192,16 +192,16 @@ sections:
     <h3><span class="h-num">4.4.2</span> Politika kontrarreformatzaileak</h3>
     <p><span class="term" data-def="Aurretik egindako erreformak geldiarazi, mugatu edo desegiteko politika. 1933tik aurrera, lehen biurtekoko erreformak eten ziren.">Kontrarreforma</span> hiru ardatz nagusitan islatu zen:</p>
     <ul>
-      <li><strong>Erreforma agrarioaren geldiaraztea:</strong> Lurren banaketa prozesua guztiz gelditu zen eta desjabetutako lurrak jabetza pribatura itzuli ziren. Lur-jabe handiek berriro hartu zuten kontrol ekonomiko eta politikoa; nekazarien artean sumindura eta frustrazioa handitu ziren.</li>
-      <li><strong>Armada eta Elizaren posizioaren berreskurapena:</strong> Azañaren erreforma militarrak bertan behera utzi zituzten eta militar kontserbadoreei berriro protagonismoa eman. Gobernuak Elizari eskubideak itzuli zizkion: ikastetxe erlijiosoak berriro ireki ziren, erlijio-irakaskuntza hezkuntza publikoan zabaldu eta eskola publiko laikoaren eredua ahuldu egin zen.</li>
+      <li><strong>Erreforma agrarioaren geldiaraztea:</strong> Lurren banaketa prozesua ia gelditu zen (1935eko legeak atzera bota zuen) eta desjabetutako lurrak jabetza pribatura itzuli ziren. Lur-jabe handiek berriro hartu zuten kontrol ekonomiko eta politikoa; nekazarien artean sumindura eta frustrazioa handitu ziren.</li>
+      <li><strong>Armada eta Elizaren posizioaren berreskurapena:</strong> Azañaren erreforma militarrak bertan behera utzi zituzten eta militar kontserbadoreei berriro protagonismoa eman. Gobernuak Elizari eskubideak itzuli zizkion: erlijiosoen ikastetxeak ixteko neurria ez zen aplikatu, erlijio-irakaskuntza hezkuntza publikoan zabaldu eta eskola publiko laikoaren eredua ahuldu egin zen.</li>
       <li><strong>Hezkuntza eta gizarte-politiken atzerakada:</strong> Eskola publikoen hedapena eten eta aurrekontu publikoak murriztu ziren. Lan arloan, sindikatuen eragina desagertu zen administraziotik eta gobernuak jarrera gogorra hartu zuen langile mugimenduen aurrean. CNTren eta UGTren grebak errepresioz zapaldu ziren.</li>
     </ul>
 
     <h3><span class="h-num">4.4.3</span> 1934ko Urriko Iraultza: Asturias eta Katalunia</h3>
-    <p>Eskuineko gobernuaren politikek ezkerraren eta langile klasearen mobilizazio orokorra eragin zuten. Tentsioa areagotu egin zen <strong>1934ko urrian CEDAren ministroak</strong> sartu zirenean. Sozialistek uste zuten horrek Errepublikaren izaera demokratikoa arriskuan jartzen zuela, eta <span class="term" data-def="1934ko urrian CEDAren gobernuan sartzearen aurkako altxamendua. Asturiasen meatzariek lurraldea hartu zuten; Francok gogor zapaldu zuen. Katalunian Companysek aldarrikapen laburra egin zuen.">Urriko Iraultza</span> deitu zuten:</p>
+    <p>Eskuineko gobernuaren politikek ezkerraren eta langile klasearen mobilizazio orokorra eragin zuten. Tentsioa areagotu egin zen <strong>1934ko urrian CEDAren ministroak</strong> sartu zirenean. Sozialistek uste zuten horrek Errepublikaren izaera demokratikoa arriskuan jartzen zuela, eta <span class="term" data-def="1934ko urrian CEDAren gobernuan sartzearen aurkako altxamendua. Asturiasen meatzariek lurraldea hartu zuten; Armadak gogor zapaldu zuen. Katalunian Companysek aldarrikapen laburra egin zuen.">Urriko Iraultza</span> deitu zuten:</p>
     <ul>
-      <li><strong>Asturias:</strong> Meatzariek eta langileek lurralde osoa hartu zuten bi astez, sozialisten eta anarkisten batasunean. Gobernuak armada bidali zuen, <strong>Francisco Franco</strong> buru, eta milaka hildako eta preso izan ziren (~1.500 hildako, milaka atxilotu).</li>
-      <li><strong>Katalunia:</strong> Lluís Companysek «Kataluniako Estatua» aldarrikatu zuen «Errepublika Federalaren barruan», baina berehala zapaldua izan zen; Generalitatea desegin eta buruzagiak atxilotu zituzten.</li>
+      <li><strong>Asturias:</strong> Meatzariek eta langileek lurralde osoa hartu zuten bi astez, sozialisten eta anarkisten batasunean. Gobernuak armada bidali zuen (<strong>López Ochoa</strong> buru; Francok Madrildik koordinatu zuen), eta milaka hildako eta preso izan ziren (~1.500 hildako, milaka atxilotu).</li>
+      <li><strong>Katalunia:</strong> Lluís Companysek «Kataluniako Estatua» aldarrikatu zuen «Errepublika Federalaren barruan», baina berehala zapaldua izan zen; Kataluniako autonomia eten eta buruzagiak atxilotu zituzten.</li>
     </ul>
     <p>Ondorioak sakonak izan ziren politikoki: <strong>Errepublikaren izaera demokratikoa kolokan jarri zen</strong>, indarkeria eta polarizazioa areagotu eta bi bandoen arteko haustura sakondu zen. Iraultza zapaldu izanak milaka preso politiko utzi zituen — haien askatasuna 1936ko Fronte Popularraren programa nagusi bihurtuko zen.</p>
     <h3><span class="h-num">4.4.4</span> Ustelkeria-aferak eta Fronte Popularraren garaipena</h3>
@@ -224,7 +224,7 @@ sections:
     <p>Haien programa: 1931ko Konstituzioaren printzipioak berreskuratzea; 1934ko matxinadako preso politikoak askatzea; eta erreforma sozialak eta autonomia-estatutuak berraktibatzea. <strong>Otsailaren 16ko hauteskundeetan</strong> Fronte Popularrak garaipena lortu zuen, botoen %48 inguru eskuratuz; hauteskunde-sistemak gehiengoa saritzen zuenez, eserlekuetan alde handiagoa lortu zuen. Eskuina ez zen porrota onartzera iritsi, eta lehen unetik bertatik hasi zen hauteskundeak iruzurtzat aurkezten.</p>
 
     <h3><span class="h-num">4.5.2</span> Gobernuaren lehen neurriak eta krisi instituzionala</h3>
-    <p>Gobernu berriak moderazioaren eta legezkotasunaren aldeko jarrera erakutsi nahi izan zuen: preso politiko guztiak amnistiatu zituen (batez ere 1934ko Urriko Iraultzan parte hartu zutenak). Azañak gobernua hartu eta berehala lur-erreforma, hezkuntza laikoa eta autonomia-prozesuak berriro abian jarri zituen: Kataluniako Generalitatea berrezarri zen eta Euskal Estatutua berriro eztabaidatzen hasi ziren. Baina ezkerreko sektore erradikalek lurren okupazioak eta grebak hasi zituzten bere kabuz, eta lur-jabe eta industrialari handiek presio ekonomiko eta boikot soziala egin zuten gobernua ahultzeko asmoz.</p>
+    <p>Gobernu berriak moderazioaren eta legezkotasunaren aldeko jarrera erakutsi nahi izan zuen: preso politiko guztiak amnistiatu zituen (batez ere 1934ko Urriko Iraultzan parte hartu zutenak). Azañak errepublikanoz osatutako gobernua hartu eta berehala lur-erreforma, hezkuntza laikoa eta autonomia-prozesuak berriro abian jarri zituen: Kataluniako Generalitatea berrezarri zen eta Euskal Estatutua berriro eztabaidatzen hasi ziren. Baina ezkerreko sektore erradikalek lurren okupazioak eta grebak hasi zituzten bere kabuz, eta lur-jabe eta industrialari handiek presio ekonomiko eta boikot soziala egin zuten gobernua ahultzeko asmoz.</p>
     <p>Krisi instituzionala ere areagotu zen: <strong>Alcalá-Zamoraren kargugabetzea</strong> (1936ko apirilean, Gorteek presidentetza kendu zioten), eta Azañak presidentetza hartu ondoren, <strong>Santiago Casares Quiroga</strong> izendatu zen gobernuburu. Baina hark ez zuen ez autoritaterik ez babesik egoera kontrolatzeko, eta militarren konspirazioa azkartu zen.</p>
     <h3><span class="h-num">4.5.3</span> Indarkeria politikoa eta gizartearen polarizazioa</h3>
     <p>1936ko udaberrian, Espainia <span class="term" data-def="Helburu politikoak lortzeko erabiltzen den indarkeria: kale-borroka, atentatuak, errepresioa. 1936ko udaberrian eguneroko bihurtu zen.">indarkeria politikoaren</span> eszenatoki bihurtu zen. Bi aldeen artean tiroketa, atentatu eta hilketa politikoak ugaritu ziren:</p>
@@ -235,7 +235,7 @@ sections:
     <p>Hilketek eta atentatuek eguneroko normaltasuna hautsi zuten; herritarren artean segurtasunik eza eta beldurra nagusitu zen. Tentsio horren ondorioz, eskuinak gobernua «anarkian hondoratzen» ari zela zabaldu zuen eta militarrek konspirazioa areagotu zuten.</p>
 
     <h3><span class="h-num">4.5.4</span> Konspirazio militarra eta 1936ko uztaileko estatu-kolpea</h3>
-    <p>Eskuina ez zen berriro hauteskunde bidez boterea eskuratzeko gai izango zela sinesten. CEDAko buruzagia, Gil Robles, jarrera legalistatik urrundu zen; monarkikoak eta karlistak, berriz, matxinada armatua prestatzen hasi ziren. Armadan, ofizial kontserbadore eta monarkiko asko batzen hasi ziren sekretupean:</p>
+    <p>Eskuineko sektore batzuek ez zuten uste hauteskundeen bidez berriro boterea eskuratuko zutenik. CEDAko buruzagia, Gil Robles, jarrera legalistatik urrundu zen; monarkikoak eta karlistak, berriz, matxinada armatua prestatzen hasi ziren. Armadan, ofizial kontserbadore eta monarkiko asko batzen hasi ziren sekretupean:</p>
     <ul>
       <li><strong>Emilio Mola</strong> izan zen kolpearen koordinatzaile nagusia Nafarroatik.</li>
       <li><strong>Francisco Franco</strong>, Kanarietako jeneral komandantea; uztailaren 19an Marokora hegan egin eta Afrikako armadaren agintea hartu zuen.</li>
@@ -332,4 +332,4 @@ glossary:
     Herritar heldu guztiek botoa emateko eskubidea izatea, sexua, klase soziala edo aberastasuna kontuan hartu gabe. II. Errepublikan emakumeen boto eskubidea aitortu zen eta 1933ko hauteskundeetan lehen aldiz aplikatu.
 - term: Urriko Iraultza (1934)
   def: |-
-    CEDA gobernuan sartzearen aurkako altxamendua. Asturiasen meatzariek eta langileek lurraldea hartu zuten bi astez; Francok gogor zapaldu zuen (~1.500 hildako).
+    CEDA gobernuan sartzearen aurkako altxamendua. Asturiasen meatzariek eta langileek lurraldea hartu zuten bi astez; Armadak gogor zapaldu zuen (~1.500 hildako).
