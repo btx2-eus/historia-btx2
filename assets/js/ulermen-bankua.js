@@ -30,6 +30,295 @@ window.ULERMEN_BANKUA = {
 
   gaiak: [
     {
+      num: 1,
+      izenburua: "Antzinako Erregimenaren krisia eta Estatu liberala",
+      urteak: "1808–1876",
+      orria: "temas/01-antzinako-erregimena.html",
+      epigrafeak: [
+        { num: "1.1", izenburua: "Independentzia Gerra eta Jose I.aren gobernua: frantsestuak", atala: "g1-1" },
+        { num: "1.2", izenburua: "Cadizeko Gorteen lan iraultzailea eta 1812ko Konstituzioa", atala: "g1-2" },
+        { num: "1.3", izenburua: "Seiurteko demokratikoa", atala: "g1-4" },
+        { num: "1.4", izenburua: "Foru-auzia", atala: "g1-5" }
+      ],
+      galderak: [
+        {
+          id: "1.1-a",
+          epigrafea: "1.1",
+          mota: "kausa",
+          galdera: "Nola baliatu zuen Napoleonek Espainiako monarkiaren krisia 1808an Espainia menderatzeko?",
+          ideiak: [
+            "Monarkia ahul zegoen: Karlos IV.ak ez zuen herritarren konfiantzarik, eta Godoy gatazka politikoen erdian zegoen.",
+            "Fontainebleauko Itunak (1807) frantses tropei Espainian sartzeko aukera eman zien, Portugal inbaditzeko aitzakiarekin.",
+            "Aranjuezeko matxinadak (1808ko martxoa) Karlos IV.a abdikatzera behartu zuen, Fernando VII.aren mesedetan: errege-familia zatituta zegoen.",
+            "Baionan Napoleonek biak abdikatzera behartu zituen, eta bere anaia Jose Bonaparte izendatu zuen errege."
+          ],
+          erlazioa: "Errege-familiaren barne-gatazkak monarkia ahuldu zuenez, Napoleonek bitartekari gisa jardun eta bi erregeen abdikazioak lortu zituen; horrek botere-hutsune bat sortu zuen, eta herriaren altxamendua eta gerra ekarri zituen.",
+          akatsak: [
+            "Fernando VII.ak Napoleonen aurka borrokatu zuela Baionan esatea (abdikatu egin zuen).",
+            "Jose Bonaparte Espainiako errege-familiakoa zela esatea.",
+            "Gertakariak kronologikoki kontatzea, haien arteko kausa-loturarik azaldu gabe."
+          ],
+          pistak: [
+            "Zer gertatu zen Karlos IV.aren eta haren semearen artean Aranjuezen?",
+            "Zer aitzakiarekin sartu ziren frantses tropak Espainian 1807an?",
+            "Bi erregeek abdikatu ondoren, nor geratu zen boterean, eta nola erantzun zuen herriak?"
+          ]
+        },
+        {
+          id: "1.1-b",
+          epigrafea: "1.1",
+          mota: "kontzeptua",
+          galdera: "Zergatik ez zen Baionako Estatutua (1808) benetako konstituzio bat? Nor ziren frantsestuak eta zer dilema bizi izan zuten?",
+          ideiak: [
+            "Napoleonek aldarrikatu zuen 1808ko ekainean: inposatutako agiria zen, eta ez zuen subiranotasun nazionalik aitortzen.",
+            "Zenbait ideia liberal jasotzen zituen (inprenta-askatasuna, zergen berdintasuna, habeas corpus-a), baina ia ez ziren praktikara eraman.",
+            "Frantsestuak Jose I.aren gobernuan parte hartu zuten espainiar ilustratu eta burokratak ziren; Espainia modernizatzeko aukera ikusi zuten.",
+            "Gerra amaitzean askok traidoretzat hartu zituzten."
+          ],
+          erlazioa: "Erreforma batzuk bazituen ere, inbaditzaileak inposatu zuenez, ez zuen legitimitaterik; horregatik bizi izan zuten frantsestuek dilema: modernizazioa babestea ala inbaditzailearen aurka egotea.",
+          akatsak: [
+            "Baionako Estatutua Espainiako lehen konstituzio liberala dela esatea (1812koa da).",
+            "Frantsestuak frantziarrak zirela esatea (espainiarrak ziren).",
+            "Frantsestuak absolutistak zirela esatea (ilustratuak eta erreformistak ziren)."
+          ],
+          pistak: [
+            "Nork idatzi eta aldarrikatu zuen Estatutua, eta nork ez zuen parte hartu?",
+            "Zer behar du konstituzio batek benetan konstituzioa izateko: nork du subiranotasuna?",
+            "Zergatik lagunduko zion espainiar ilustratu batek errege frantziar bati?"
+          ]
+        },
+        {
+          id: "1.1-c",
+          epigrafea: "1.1",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Independentzia Gerra Espainiaren eta Frantziaren arteko gerra bat izan zen, besterik ez.» Zergatik da azalpen hori partziala? Azaldu zuzen.",
+          ideiak: [
+            "Kanpoko inbasioaren aurkako gerra izan zen (Bailen 1808, Arapiles, Gasteiz 1813), Britainia Handiaren laguntzarekin (Wellington) eta gerrillekin.",
+            "Botere-hutsunean Junta probintzialak eta Junta Zentral Gorena sortu ziren, eta Cadizko Gorteek Estatu liberalaren oinarriak jarri zituzten.",
+            "Espainiar batzuk (frantsestuak) Jose I.aren alde egon ziren: barne-zatiketa ere bazegoen.",
+            "Ondorioz, Antzinako Erregimena kolokan geratu zen, liberalismoa zabaldu zen eta liberalen eta absolutisten arteko lehia hasi zen."
+          ],
+          erlazioa: "Gerra kanpoko inbasioaren aurkakoa izan zen, baina aldi berean iraultza politiko bat abiarazi zuen: botere-hutsuneak Antzinako Erregimena zalantzan jarri eta Estatu liberalaren eraikuntza martxan jarri zuen.",
+          akatsak: [
+            "Baieztapena zuzentzea, baina gerrako kanpo-dimentsioa ukatzea.",
+            "Gerra 1808an amaitu zela esatea (1814ra arte iraun zuen).",
+            "Ondorio politikoak aipatzea, gerran gertatutakoarekin lotu gabe."
+          ],
+          pistak: [
+            "Errege gabe geratu zenean, nork hartu zuen boterea, eta zer sortu zuten?",
+            "Espainiar guztiak egon ziren Fernando VII.aren alde?",
+            "Zer gertakari politiko garrantzitsu gertatu zen Cadizen gerra bitartean?"
+          ]
+        },
+        {
+          id: "1.2-a",
+          epigrafea: "1.2",
+          mota: "kausa",
+          galdera: "Zergatik izan zuten Cadizko Gorteek (1810–1813) izaera hain liberala?",
+          ideiak: [
+            "Fernando VII.a Frantzian preso zegoen: errege gabe, Gorteek subiranotasunaren ordezkaritza hartu zuten.",
+            "Cadiz okupatu gabeko hiri nagusia zen, eta izaera liberala zuen.",
+            "Gorteetan hiru joera zeuden (liberalak, moderatuak, absolutistak), baina liberalak nagusitu ziren.",
+            "Gerra-egoerak erritmo bizian lan egitea ahalbidetu zuen; Amerikako probintziek ere ordezkaritza izan zuten."
+          ],
+          erlazioa: "Errege gabeko botere-hutsuneak eta hiri liberal batean bildu izanak liberalei aukera eman zieten subiranotasuna nazioan jartzeko eta Antzinako Erregimenaren aurkako legeak onartzeko.",
+          akatsak: [
+            "Fernando VII.ak Cadizko Gorteak deitu zituela esatea (Junta Zentral Gorenak deitu zituen).",
+            "Gorteetako diputatu guztiak liberalak zirela esatea.",
+            "Gorteak Madrilen bildu zirela esatea."
+          ],
+          pistak: [
+            "Non zegoen erregea 1810ean?",
+            "Zergatik izan zen Cadiz hiri berezia gerra bitartean?",
+            "Erregerik ez dagoenean, nork du boterea? Zer ideia berri dago hor?"
+          ]
+        },
+        {
+          id: "1.2-b",
+          epigrafea: "1.2",
+          mota: "kontzeptua",
+          galdera: "Zergatik da 1812ko Konstituzioa («La Pepa») Antzinako Erregimenarekiko haustura bat?",
+          ideiak: [
+            "Subiranotasun nazionala: boterea herriarena da, ez erregearena.",
+            "Botere-banaketa: legegilea (Gorteak), betearazlea (erregea) eta judiziala (epaileak); monarkia konstituzionala, erregearen boterea mugatuta.",
+            "Gizonezkoen sufragio unibertsala (zeharkakoa) eta eskubide zibilak: inprenta-askatasuna, legearen aurreko berdintasuna, jabetza pribatua.",
+            "Inkisizioa desegin zen, nahiz eta erlijio katolikoa ofiziala izan."
+          ],
+          erlazioa: "Boterearen jatorria erregetik naziora pasatzean eta legearen aurreko berdintasuna aitortzean, Antzinako Erregimenaren bi oinarriak (monarkia absolutua eta gizarte estamentala) apurtu zituen.",
+          akatsak: [
+            "1812ko Konstituzioak erlijio-askatasuna ezarri zuela esatea (katolikoa zen erlijio ofiziala).",
+            "Erregea kendu eta errepublika ezarri zuela esatea (monarkia konstituzionala zen).",
+            "Ezaugarriak zerrendatzea, Antzinako Erregimenarekin alderatu gabe."
+          ],
+          pistak: [
+            "Antzinako Erregimenean, noren esku zegoen subiranotasuna? Eta 1812an?",
+            "Zer gertatzen zaio gizarte estamental bati legearen aurreko berdintasuna aitortzen denean?",
+            "Zer erakunde desegin zen, eta zergatik zen garrantzitsua?"
+          ]
+        },
+        {
+          id: "1.2-c",
+          epigrafea: "1.2",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «1812ko Konstituzioarekin Espainia estatu liberal bihurtu zen behin betiko.» Zer dago gaizki? Azaldu zuzen.",
+          ideiak: [
+            "Gorteen legeen aplikazioa mugatua izan zen, lurraldearen zati handia frantsesen esku zegoelako.",
+            "1814an Fernando VII.a itzuli zenean, Konstituzioa indargabetu eta absolutismoa berrezarri zuen.",
+            "Konstituzioa berriz indarrean egon zen Hirurteko Liberalean (1820–1823), baina absolutismoa itzuli zen.",
+            "Hala ere, mugarri historikoa izan zen: Estatu liberal baten lehen oinarriak ezarri zituen eta ondorengo belaunaldietan eragin sakona izan zuen."
+          ],
+          erlazioa: "Konstituzioa eredu eta mugarri bihurtu zen, baina ez zen praktikan errotu: absolutismoaren eta liberalismoaren arteko gatazka mende osoan luzatu zen.",
+          akatsak: [
+            "Baieztapena zuzentzea, baina Konstituzioak garrantzirik izan ez zuela esatea.",
+            "Fernando VII.ak Konstituzioa onartu eta 1814tik betetzen jarraitu zuela esatea."
+          ],
+          pistak: [
+            "Zer egin zuen Fernando VII.ak 1814an itzuli zenean?",
+            "Non aplika zitezkeen Gorteen legeak gerra bitartean?",
+            "Konstituzio bat indarrik gabe egonda ere, zergatik izan daiteke garrantzitsua etorkizunerako?"
+          ]
+        },
+        {
+          id: "1.3-a",
+          epigrafea: "1.3",
+          mota: "kausa",
+          galdera: "Zergatik piztu zen 1868ko «La Gloriosa» iraultza, eta zergatik ez zen dinastia-aldaketa hutsa izan?",
+          ideiak: [
+            "Isabel II.aren erregimen moderatuak sufragio zentsitarioa zuen: herritarren gehiengoa politikatik kanpo zegoen.",
+            "Ustelkeria eta klientelismoa ohikoak ziren, eta erreginaren inguruko faboritismoak monarkiaren prestigioa higatu zuen.",
+            "Progresistak, demokratak, errepublikanoak eta militar liberalak bat egin zuten sistema berri baten alde.",
+            "1868ko irailean Prim eta Serrano jeneralen altxamenduak arrakasta izan zuen; Isabel II.a erbestera joan zen."
+          ],
+          erlazioa: "Sistemak gehiengoa baztertu eta bere zilegitasuna higatu zuenez, oposizio zatitua bateratu egin zen: iraultzak ez zuen errege bat bakarrik kendu, sistema moderatu osoaren porrota agerian utzi zuen.",
+          akatsak: [
+            "1868ko iraultza herri-altxamendu hutsa izan zela esatea (altxamendu militarra izan zen, oposizio zibilarekin batera).",
+            "Iraultzak berehala errepublika ezarri zuela esatea (lehenik monarkia demokratikoa bilatu zen).",
+            "Kausak zerrendatzea, oposizioaren batasunarekin lotu gabe."
+          ],
+          pistak: [
+            "Nork bozkatzen zuen Isabel II.aren garaian?",
+            "Zein talde bildu ziren erreginaren aurka?",
+            "Iraultzaren ondoren, sistema bera mantendu zen ala beste bat eraiki nahi izan zen?"
+          ]
+        },
+        {
+          id: "1.3-b",
+          epigrafea: "1.3",
+          mota: "aldaketa",
+          galdera: "Zer aldatu zuen 1869ko Konstituzioak Isabel II.aren garaiko sistema moderatuarekin alderatuta?",
+          ideiak: [
+            "Subiranotasun nazionala modu argian aitortu zuen (1845eko subiranotasun partekatuaren aurrean).",
+            "Gizonezkoen sufragio unibertsal zuzena ezarri zuen, sufragio zentsitarioaren ordez.",
+            "Eskubide zibil zabalak aitortu zituen: adierazpen-, inprenta-, biltzeko eta erlijio-askatasuna.",
+            "Monarkia mantendu zuen, baina demokratikoa; askatasunak ez zuen egonkortasunik bermatu, indarren arteko lehia handia zelako."
+          ],
+          erlazioa: "Sistema elitista eta murriztaile batetik parte-hartze zabaleko sistema batera igaro zen: irekitze demokratikoaren gailurra izan zen, nahiz eta pluralismoak zatiketa ere agerian utzi.",
+          akatsak: [
+            "1869ko Konstituzioak errepublika ezarri zuela esatea.",
+            "Emakumeek ere bozkatzeko eskubidea lortu zutela esatea.",
+            "Ezaugarriak zerrendatzea, aurreko sistemarekin alderatu gabe."
+          ],
+          pistak: [
+            "Zenbat jendek bozka zezakeen 1845ean, eta zenbatek 1869an?",
+            "Zer askatasun berri agertzen da erlijioari dagokionez?",
+            "Askatasun gehiagok egonkortasun handiagoa dakar beti?"
+          ]
+        },
+        {
+          id: "1.3-c",
+          epigrafea: "1.3",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Seiurtekoak porrot egin zuen Amadeo I.a errege txarra zelako.» Zergatik da azalpen hori okerra? Azaldu zuzen.",
+          ideiak: [
+            "Amadeo I.ak (1871) ez zuen erro historikorik ez babes sozial sendorik, eta bere babesle nagusia, Prim, hil egin zuten.",
+            "Arazo egiturazkoak zeuden: karlistada berria (1872–1876), Kubako gerra (1868tik) eta oposizio politiko etengabea.",
+            "Lehen Errepublikak (1873) arazo berberak eta gehiago izan zituen: errepublikanoen zatiketa, kantonalismoa eta lau presidente urtebetean.",
+            "1874an Martínez Camposen pronuntziamenduak Alfonso XII.a errege izendatu zuen: Berrezarkuntza hasi zen."
+          ],
+          erlazioa: "Porrota ez zen pertsona baten errua: arazo berberek (karlistada, Kuba, zatiketa politikoa, militarren esku-hartzea) bi erregimenak suntsitu zituzten, Estatu liberalaren oinarri ahula agerian utziz.",
+          akatsak: [
+            "Lehen Errepublika Amadeo baino lehen izan zela esatea.",
+            "Errepublika estatu-kolpe batek aldarrikatu zuela esatea (Gorteek aldarrikatu zuten Amadeoren abdikazioaren ondoren).",
+            "Baieztapena zuzentzea, Lehen Errepublikaren porrota aipatu gabe."
+          ],
+          pistak: [
+            "Errege bat aldatzen bada eta arazoek jarraitzen badute, non dago arazoa?",
+            "Zer gatazka zeuden aldi berean 1872–1874an?",
+            "Nola amaitu zen Seiurtekoa, eta nork amaitu zuen?"
+          ]
+        },
+        {
+          id: "1.4-a",
+          epigrafea: "1.4",
+          mota: "kontzeptua",
+          galdera: "Zer ziren foruak, eta zergatik ikusten zituzten modu hain desberdinean liberal zentralistek eta euskal gizartearen zati handi batek?",
+          ideiak: [
+            "Erdi Aroko jatorria zuten lege, ohitura eta erakunde propioak ziren (Batzar Nagusiak, Diputazioak).",
+            "Zerga-araubide berezia, soldadutza-baldintza propioak eta justizia- eta administrazio-antolaketa berezia ematen zituzten.",
+            "Liberal zentralistentzat Antzinako Erregimeneko pribilegio zaharkituak ziren, estatuaren batasun juridikoaren oztopo.",
+            "Euskal Herrian eta Nafarroan autogobernu historikoaren, tokiko askatasunen eta nortasun kolektiboaren adierazpena ziren."
+          ],
+          erlazioa: "Estatu liberalak uniformetasuna behar zuela uste zuenez, foruak pribilegiotzat jo zituen; euskal gizartearentzat, berriz, autogobernua ziren: ikuspegi horien talkak sortu zuen foru-auzia.",
+          akatsak: [
+            "Foruak XIX. mendean sortu zirela esatea (Erdi Aroko jatorria zuten).",
+            "Foruak zerga-salbuespen hutsa zirela esatea, erakunde politikoak aipatu gabe.",
+            "Ikuspegi bakarra azaltzea, talka azaldu gabe."
+          ],
+          pistak: [
+            "Zein erakundek hartzen zituzten erabakiak foru-sisteman?",
+            "Zergatik zen arazo bat estatu liberal batentzat lurralde bakoitzak bere legeak izatea?",
+            "Pribilegioa ala autogobernua: nork erabiltzen zuen hitz bakoitza, eta zergatik?"
+          ]
+        },
+        {
+          id: "1.4-b",
+          epigrafea: "1.4",
+          mota: "aldaketa",
+          galdera: "Nola aldatu zen foru-erregimena 1839tik 1878ra? Zer lotura dute aldaketa horiek karlistadekin?",
+          ideiak: [
+            "Lehen Karlistadan foruen defentsa karlisten aldarrikapen nagusietako bat izan zen; liberalek irabazi zuten.",
+            "1839ko legeak foruak berresten zituela zirudien, baina Konstituzioaren barruan moldatzeko atea irekita utzi zuen; 1841eko Lege Hitzartuak Nafarroako foru-sistema nabarmen murriztu zuen.",
+            "III. Karlistadaren ondoren (1876), Cánovasen gobernuak foruak abolitu zituen: Batzar Nagusiak eta foru-diputazioak desegin edo hutsaldu ziren.",
+            "1878ko Kontzertu Ekonomikoak (Bizkaia, Gipuzkoa, Araba) zerga-bilketa propioa mantendu zuen, kupo baten truke; Nafarroak Hitzarmen Ekonomikoa izan zuen."
+          ],
+          erlazioa: "Karlistada bakoitzaren porrotaren ondoren foruak gehiago murriztu ziren, 1876ko abolizioa arte; hala ere, 1878ko Kontzertuak foru-oinordetza bat utzi zuen zerga-arloan, gaur arte iraun duena.",
+          akatsak: [
+            "Foruak 1839an abolitu zirela esatea.",
+            "1876ko abolizioaren ondoren autogobernu-arrastorik geratu ez zela esatea (Kontzertu Ekonomikoa geratu zen).",
+            "Datak zerrendatzea, karlistadekin lotu gabe."
+          ],
+          pistak: [
+            "Zein alderdirekin lotu zen foruen defentsa karlistadetan, eta nork irabazi zituen gerrak?",
+            "Zer gertatu zen foruekin gerra bakoitzaren ondoren?",
+            "Zer mantendu zen 1878an, eta zergatik da garrantzitsua gaur egun?"
+          ]
+        },
+        {
+          id: "1.4-c",
+          epigrafea: "1.4",
+          mota: "ondorioa",
+          galdera: "Zer erreakzio politiko sortu zituen 1876ko foruen abolizioak Euskal Herrian?",
+          ideiak: [
+            "Abolizioa ez zen neurri administratibo huts gisa bizi: tokiko askatasunen eta autogobernuaren aurkako eraso gisa baizik.",
+            "Tradizionalismoa indartu zen: foruen defentsa Elizaren eta monarkia tradizionalaren defentsarekin lotu zen.",
+            "Euskal nazionalismoaren lehen oinarriak: foruen galera asimilazio-saiakera gisa irakurri zen, eta Sabino Aranak euskal nazioaren ideia artikulatu zuen.",
+            "Beste sektore batzuek foru-auzia autogobernu modernoaren aldeko aldarrikapen gisa berrinterpretatu zuten."
+          ],
+          erlazioa: "Abiapuntu beretik (autogobernuaren galera) hiru erantzun desberdin sortu ziren —tradizionalismoa, nazionalismoa eta autonomismoa—, eta horiek finkatu zuten ondorengo hamarkadetako euskal politika.",
+          akatsak: [
+            "Euskal nazionalismoa abolizioa baino lehen sortu zela esatea.",
+            "Erreakzio bakarra egon zela esatea.",
+            "Erreakzioak zerrendatzea, abolizioarekin lotu gabe."
+          ],
+          pistak: [
+            "Nork defendatzen zituen foruak karlistadetan, eta zer lotu zuten haiekin?",
+            "Zer ideia berri artikulatu zuen Sabino Aranak foruen galeratik abiatuta?",
+            "Galera bera: zergatik sor ditzake erantzun desberdinak?"
+          ]
+        }
+      ]
+    },
+    {
       num: 4,
       izenburua: "II. Errepublika",
       urteak: "1931–1936",
