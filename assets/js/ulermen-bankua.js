@@ -609,6 +609,296 @@ window.ULERMEN_BANKUA = {
       ]
     },
     {
+      num: 3,
+      izenburua: "Euskal industrializazioa eta gizarte plurala",
+      urteak: "1875–1930",
+      orria: "temas/03-euskal-industrializazioa.html",
+      epigrafeak: [
+        { num: "3.1", izenburua: "Industrializazioa Euskal Herrian: eszenatoki bereiziak", atala: "g3-2" },
+        { num: "3.2", izenburua: "Euskal aniztasun politikoa Errestaurazioan: politika eta lurralde triangelua", atala: "g3-3" },
+        { num: "3.3", izenburua: "Langile-mugimendua eta gizarte-gatazkak", atala: "g3-4" },
+        { num: "3.4", izenburua: "Lehen nazionalismo politiko eta sindikala", atala: "g3-5" }
+      ],
+      galderak: [
+        {
+          id: "3.1-a",
+          epigrafea: "3.1",
+          mota: "kausa",
+          galdera: "Zergatik industrializatu zen Bizkaia hain azkar 1876tik aurrera?",
+          ideiak: [
+            "Meatzaldeko (Somorrostro) burdin-mea silizio gutxikoa zen, Bessemer prozesurako egokia, eta Erresuma Batura esportatu zen.",
+            "III. Karlistadaren ondoko egonkortasunak eta kapital atzerritarrak (Orconera, kapital britainiarra) lehen jauzia bizkortu zuten.",
+            "Siderurgia garatu zen itsasadarrean: labe garaiak, eta 1902an Altos Hornos de Vizcaya (AHV); ontzigintza ere bai (Euskalduna, La Naval).",
+            "Finantza-sare propioa sortu zen (Banco de Bilbao, Banco de Vizcaya, Bilboko Burtsa), eta itsasadarra eta trenbideak modernizatu ziren."
+          ],
+          erlazioa: "Burdin-mearen esportazioak kapitala metatu zuen, eta kapital hori siderurgian, ontzigintzan eta bankuetan inbertitu zen: meatik ontzira arteko kate osoa sortu zen Bizkaian.",
+          akatsak: [
+            "Bizkaiko industria ehungintzan oinarritu zela esatea (hori Katalunia da).",
+            "Euskal Herri osoa Bizkaiaren eredu berean industrializatu zela esatea.",
+            "Faktoreak zerrendatzea, haien arteko katea (mea → kapitala → siderurgia) azaldu gabe."
+          ],
+          pistak: [
+            "Zer zuen Bizkaiko burdinak Britainiako industriarentzat hain baliotsua izateko?",
+            "Mea saltzetik lortutako diruarekin, zer egin zen?",
+            "Zergatik behar zuen industria astunak bankuak?"
+          ]
+        },
+        {
+          id: "3.1-b",
+          epigrafea: "3.1",
+          mota: "kontzeptua",
+          galdera: "Zergatik esaten da Euskal Herriko industrializazioa «eszenatoki bereizietan» garatu zela? Alderatu Bizkaia eta Gipuzkoa.",
+          ideiak: [
+            "Bizkaia: industria astuna burdinaren inguruan (meategiak, siderurgia, ontzigintza); enpresa handiak eta kapital handia.",
+            "Gipuzkoa: enpresa txiki eta ertain espezializatuen sare trinkoa: armagintza (Eibar), makina-erreminta, papergintza (Tolosa), tren-materiala (Beasain).",
+            "Gipuzkoan hidroelektrizitateak industria sakabanatua ahalbidetu zuen haranetan; familia-enpresak eta langile kualifikatuak.",
+            "Araban eta Nafarroan industrializazioa motelagoa izan zen: logistika (Gasteiz, tren-gurutzea) eta agroindustria (Tuterako kontserbak)."
+          ],
+          erlazioa: "Lurralde bakoitzaren baliabideek (burdina eta portua Bizkaian, ibaiak eta energia Gipuzkoan, nekazaritza Nafarroan) eredu desberdinak sortu zituzten: triangelu osagarri bat, ez industrializazio bakar bat.",
+          akatsak: [
+            "Gipuzkoak Bizkaiaren pareko siderurgia erraldoia zuela esatea.",
+            "Nafarroa eta Araba Bizkaia bezain industrializatuak zirela esatea.",
+            "Lurraldeak deskribatzea, aldeen zergatia azaldu gabe."
+          ],
+          pistak: [
+            "Zer baliabide natural zuen Bizkaiak, eta zer Gipuzkoak?",
+            "Zer behar du fabrika erraldoi batek, eta zer tailer espezializatu batek?",
+            "Zer funtzio zuen Gasteizek, fabrikarik handienak ez bazituen?"
+          ]
+        },
+        {
+          id: "3.1-c",
+          epigrafea: "3.1",
+          mota: "ondorioa",
+          galdera: "Zer ondorio demografiko eta sozial izan zituen industrializazioak Bizkaian?",
+          ideiak: [
+            "Biztanleria jauzi handia: Bizkaia 189.000 biztanletik 311.000ra (1877–1900).",
+            "Immigrazio masiboa: 1900ean Bizkaiko biztanleen %37 kanpoan jaioak ziren; Meatzaldeko udalerriak lau aldiz handitu ziren.",
+            "Espazio sozial banatuak: Bilboko Zabalgunea (burgesia, bankuak) eta Ezkerraldeko langile-auzo trinkoak (Barakaldo, Sestao, Portugalete).",
+            "Hiri-hazkunde planifikatu gabea, zerbitzu eskasak eta ingurumen-kalteak (meatze-mozteak, itsasadarraren kutsadura)."
+          ],
+          erlazioa: "Industriak immigrazio masiboa erakarri zuenez, gizartea azkar eta modu desorekatuan hazi zen; horrek gizarte plural eta zatitua sortu zuen, eta langile-mugimenduaren zein nazionalismoaren oinarria izan zen.",
+          akatsak: [
+            "Biztanleriaren hazkundea batez ere jaiotza-tasaren ondorioa izan zela esatea (immigrazioa izan zen gakoa).",
+            "Langileak eta burgesia auzo berean bizi zirela esatea.",
+            "Datuak ematea, ondorio sozial edo politikoekin lotu gabe."
+          ],
+          pistak: [
+            "Nondik etorri zen Bizkaiko biztanleria berria?",
+            "Non bizi ziren langileak, eta non burgesia?",
+            "Gizarte azkar eta desorekatu batean, zer gatazka sor daitezke?"
+          ]
+        },
+        {
+          id: "3.2-a",
+          epigrafea: "3.2",
+          mota: "kausa",
+          galdera: "Zergatik izan zuen kazikismoak indar desberdina Euskal Herriko lurraldeetan Errestaurazioan?",
+          ideiak: [
+            "1876ko foru-abolizioaren ondoren, 1878ko Kontzertu Ekonomikoak autonomia fiskala eman zuen (Diputazioek zergak bildu, kupoa Madrili), baina ez autonomia politikorik.",
+            "Diputazioek zerga-bilketa eta kontratazio publikoa kontrolatzen zituzten: tokiko botere-egitura propioa sortu zen.",
+            "Bilbon eta hiri industrialetan, langile-mobilizazioek eta sindikatuek kazikismoa ahuldu zuten, batez ere 1900etik aurrera.",
+            "Landa-eremuetan eta hiri ertainetan (Araba, Nafarroa, Gipuzkoako herri batzuk) kazikismoa indartsuagoa zen, familia- eta klientela-sareei lotuta."
+          ],
+          erlazioa: "Gizarte industrial eta mobilizatuetan botoa kontrolatzea zailagoa zen, eta kazikismoa ahuldu egin zen; landa-gizarte tradizionaletan, berriz, sare klientelarrek iraun zuten.",
+          akatsak: [
+            "Kontzertu Ekonomikoak autonomia politikoa eman zuela esatea.",
+            "Kazikismoa Euskal Herrian existitu ez zela esatea.",
+            "Lurralde-aldeak deskribatzea, gizarte-egiturarekin lotu gabe."
+          ],
+          pistak: [
+            "Zer eman zuen Kontzertuak, eta zer ez?",
+            "Zergatik da zailagoa kazike batentzat milaka langile sindikatudun dituen hiri bat kontrolatzea?",
+            "Non zeuden sare familiar eta klientelar indartsuenak?"
+          ]
+        },
+        {
+          id: "3.2-b",
+          epigrafea: "3.2",
+          mota: "kontzeptua",
+          galdera: "Zer esan nahi du Euskal Herriko politika ez zela «Madrilgo turnismoaren kopia hutsa»? Azaldu lurralde-triangelua.",
+          ideiak: [
+            "Bost indar lehiatzen ziren: alderdi dinastikoak, karlismoa, errepublikanismoa, sozialismoa eta abertzaletasuna.",
+            "Bizkaia: sozialismoa (PSOE-UGT, Prieto) langile-auzoetan, eta EAJ burgesia txiki eta ertain katolikoaren artean.",
+            "Gipuzkoa: banaketa orekatuagoa; alderdi dinastikoak herri ertainetan, abertzaletasuna hazten, karlismoa landa-eremuan.",
+            "Araba eta Nafarroa: karlismoa eta integrismoa nagusi landa-eremuetan; hiriburuetan joera liberal-errepublikanoa."
+          ],
+          erlazioa: "Eredu ekonomiko eta sozial bakoitzak mapa politiko desberdina sortu zuen: industria astunak sozialismoa eta abertzaletasuna, ETE-en gizarteak aniztasun orekatua, eta nekazaritza-gizarteak tradizionalismoa.",
+          akatsak: [
+            "Euskal Herri osoa abertzalea zela Errestaurazioan esatea.",
+            "Karlismoa 1876an desagertu zela esatea (mugimendu politiko gisa iraun zuen).",
+            "Indarrak zerrendatzea, lurraldearen gizarte-egiturarekin lotu gabe."
+          ],
+          pistak: [
+            "Zein indar zen nagusi Ezkerraldeko langile-auzoetan, eta zein Bizkaiko burgesia txikiaren artean?",
+            "Zergatik iraun zuen karlismoak Nafarroan eta Araban?",
+            "Zer lotura dago ekonomia motaren eta botoaren artean?"
+          ]
+        },
+        {
+          id: "3.2-c",
+          epigrafea: "3.2",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Primo de Riveraren diktaduran (1923–1930) euskal indar politikoak desagertu egin ziren.» Zer dago gaizki? Azaldu zuzen.",
+          ideiak: [
+            "Diktadurak alderdien jarduera suspenditu, Gorteak desegin eta hauteskundeak bertan behera utzi zituen.",
+            "Indar politikoek sareak mantendu zituzten beste elkarte batzuen bidez: batzokiak kultura-elkarte gisa, Casa del Pueblo-ak hezkuntza-zentro gisa.",
+            "Autonomia politikoaren defentsa intelektuala ere bultzatu zen.",
+            "1930ean diktadura erori zenean mobilizazioa berehala berpiztu zen; 1931ko apirileko udal-hauteskundeetan errepublikar eta sozialistek emaitza onak lortu zituzten euskal hiriburuetan."
+          ],
+          erlazioa: "Alderdiek jarduera publikoa galdu zuten, baina sare sozial eta kulturalek iraun zuten; horri esker berpiztu zen mobilizazioa hain azkar diktadura erori zenean.",
+          akatsak: [
+            "Diktadurak alderdiak legez onartu zituela esatea.",
+            "EAJk Donostiako Ituna (1930) sinatu zuela esatea (ez zuen sinatu).",
+            "Baieztapena zuzentzea, sare sozialak aipatu gabe."
+          ],
+          pistak: [
+            "Alderdi bat debekatuta badago, nola mantendu daiteke bizirik?",
+            "Zer ziren batzokiak eta Casa del Pueblo-ak?",
+            "Zer gertatu zen 1930–1931n?"
+          ]
+        },
+        {
+          id: "3.3-a",
+          epigrafea: "3.3",
+          mota: "kausa",
+          galdera: "Zergatik antolatu ziren euskal langileak sindikatuetan eta grebetan? Zer baldintza zituzten?",
+          ideiak: [
+            "Lanaldiak 10–12 ordukoak ziren, astean 6 egunez (1919ko 8 orduko lanaldia arte); meatzean eta siderurgian arriskua eta istripuak ohikoak ziren.",
+            "Emakumeek gizonen soldataren %50–60 inguru jasotzen zuten; adingabeek ere lan egiten zuten; kontratuak egunekoak edo sasoikoak ziren.",
+            "Etxebizitza kaskarra: Ezkerraldeko langile-auzo pilatuak, Meatzaldeko barrakoiak, tuberkulosia eta kolera.",
+            "Lantegietako diziplina zorrotza, zerrenda beltzak eta paternalismoaren kontrol soziala; erantzun gisa, mutualitateak, sindikatuak eta grebak (1890eko meatzarien greba handia)."
+          ],
+          erlazioa: "Banakako langile batek ez zuen negoziatzeko indarrik baldintza horien aurrean; antolaketa kolektiboa (sindikatuak, grebak, elkartasun-sareak) bihurtu zen baldintzak hobetzeko bide bakarra.",
+          akatsak: [
+            "8 orduko lanaldia XIX. mendean lortu zela esatea (1919an lortu zen).",
+            "Emakumeek eta gizonek soldata bera jasotzen zutela esatea.",
+            "Baldintzak deskribatzea, antolaketarekin lotu gabe."
+          ],
+          pistak: [
+            "Zer gertatzen zen langile batek kexatzen bazen eta zerrenda beltz batean sartzen bazuten?",
+            "Nolakoak ziren Ezkerraldeko etxebizitzak?",
+            "Zer lortu zuten 1890eko meatzarien grebek?"
+          ]
+        },
+        {
+          id: "3.3-b",
+          epigrafea: "3.3",
+          mota: "kontzeptua",
+          galdera: "Zertan desberdintzen ziren UGT, CNT eta ELA-STV sindikatuen jarduera-ereduak Euskal Herrian?",
+          ideiak: [
+            "UGT (1888): Bizkaian indartsuena; itun kolektiboak eta greba antolatuak (eskaera-zerrendak, negoziazio-batzordeak); Casa del Pueblo-ak; Prietoren lidergoa.",
+            "CNT (1910): akzio zuzena (grebak, boikotak, piketeak); asanblada bidezko antolaketa; Pasaian eta Eibarren indartsu.",
+            "ELA-STV (1911): katoliko-abertzalea; bitartekaritza, mutualismoa eta negoziazio baketsua; Rerum Novarum doktrinan oinarritua.",
+            "Diktaduran UGTk eta ELAk Batzorde Paritarioetan parte hartu zuten; CNTk baztertu egin zituen eta klandestinitatera joan zen."
+          ],
+          erlazioa: "Ideologia bakoitzak estrategia bat zekarren: sozialismoak negoziazio antolatua, anarkismoak Estatuaren aurkako akzio zuzena, eta katolizismo sozialak elkartasuna klase-borrokaren ordez.",
+          akatsak: [
+            "ELA-STV sindikatu anarkista zela esatea.",
+            "CNTk Batzorde Paritarioetan parte hartu zuela esatea.",
+            "Sindikatuak zerrendatzea, haien estrategiak alderatu gabe."
+          ],
+          pistak: [
+            "Nola egiten zuen greba bat UGTk, eta nola CNTk?",
+            "Zer zen Rerum Novarum, eta zer proposatzen zuen?",
+            "Zergatik ez zuen CNTk Estatuarekin mahai berean eseri nahi?"
+          ]
+        },
+        {
+          id: "3.3-c",
+          epigrafea: "3.3",
+          mota: "aldaketa",
+          galdera: "Nola erantzun zioten Estatuak eta patronalak langile-gatazkei 1890etik 1930era? Zer aldatu zen denboraz?",
+          ideiak: [
+            "Errepresioa: greba handietan salbuespen-egoera, Guardia Zibila lantegietan, bilerak debekatu eta prentsa zentsuratu (1903, 1917).",
+            "Patronalak lockout-a eta zerrenda beltzak erabili zituen antolatzaileak baztertzeko.",
+            "Gatazken presioz, legedi soziala pixkanaka: Lan-Istripuen Legea (1900), lan-ikuskaritza (1903), 8 orduko lanaldia (1919).",
+            "Paternalismo enpresariala (ekonomatoak, kolonia-etxebizitzak) eta, diktaduran, korporatibismoa (Batzorde Paritarioak, 1926)."
+          ],
+          erlazioa: "Hasieran errepresioa izan zen erantzun nagusia, baina grebek eragindako presioak legedi soziala ere ekarri zuen: errepresioa eta erreforma batera ibili ziren, eta diktadurak gatazka kontrolpean integratu nahi izan zuen.",
+          akatsak: [
+            "Estatuak hasieratik langileen eskaerak onartu zituela esatea.",
+            "Errepresioa bakarrik egon zela esatea, legedi soziala aipatu gabe.",
+            "Neurriak zerrendatzea, denboran izandako aldaketa azaldu gabe."
+          ],
+          pistak: [
+            "Zer egiten zuten gobernadore zibilek greba handi batean?",
+            "Zer lege sozial onartu ziren 1900–1919 artean, eta zergatik orduan?",
+            "Zer proposatu zuen Primo de Riverak langileen eta enpresarien arteko gatazkarako?"
+          ]
+        },
+        {
+          id: "3.4-a",
+          epigrafea: "3.4",
+          mota: "kontzeptua",
+          galdera: "Zein ziren Sabino Aranaren pentsamenduaren ardatz nagusiak, eta zer testuingurutan sortu ziren?",
+          ideiak: [
+            "Testuingurua: foru-galera (1876), industrializazioa eta immigrazio masiboa, gizarte-aldaketa azkarra.",
+            "Euskaldunak «beste nazio bat» ziren: hizkuntza, arraza, ohitura, fede eta foru-tradizio propioak.",
+            "Katolizismoa nazioaren oinarria («Jaungoikoa eta Lagi-Zarra»); liberalismoa, laikotasuna eta immigrazioa mehatxutzat jo zituen.",
+            "Euzkadi terminoa, ikurrina (1894) eta EAJ-PNV (1895, Bilbo) sortu zituen; helburua independentzia zen."
+          ],
+          erlazioa: "Industrializazioak, immigrazioak eta foru-galerak euskal gizarte tradizionala eraldatzen ari zirenez, Aranak nazio katoliko eta tradizional baten defentsa proposatu zuen aldaketa horien aurkako erantzun gisa.",
+          akatsak: [
+            "Arana liberala edo laikoa zela esatea.",
+            "EAJ II. Errepublikan sortu zela esatea (1895ean sortu zen).",
+            "Ardatzak zerrendatzea, testuinguruarekin (industrializazioa, immigrazioa) lotu gabe."
+          ],
+          pistak: [
+            "Zer aldaketa ikusten zituen Aranak Bilbon 1890ean?",
+            "Zer esan nahi zuen «Jaungoikoa eta Lagi-Zarra» lemak?",
+            "Nola ikusten zituen Aranak etorkinak eta burgesia industrial liberala?"
+          ]
+        },
+        {
+          id: "3.4-b",
+          epigrafea: "3.4",
+          mota: "aldaketa",
+          galdera: "Nola aldatu zen euskal nazionalismoa Sabino Arana hil zenetik (1903) 1930era?",
+          ideiak: [
+            "1895–1903: Aranaren diskurtso erradikal eta erromantikoa, talde mugatuetan.",
+            "1903tik aurrera, pragmatismoa: independentzia atzeratu eta foru-berreskuratzea eta autonomia lehenetsi; burgesia katoliko ertainean eta langile katoliko-abertzaleen artean errotu zen.",
+            "Sindikalismo propioa sortu zen: ELA-STV (1911).",
+            "1921ean zatiketa: Comunión Nacionalista Vasca (moderatua) eta Aberri (independentista); 1930ean berriz batu ziren EAJn."
+          ],
+          erlazioa: "Gizartean hazteko eta instituzioetan eragiteko, nazionalismoak erradikaltasuna moderatu zuen; baina independentziaren eta autonomiaren arteko tentsioak iraun zuen, eta zatiketa ekarri zuen.",
+          akatsak: [
+            "Nazionalismoa Aranarekin batera desagertu zela esatea.",
+            "1921eko zatiketa betiko izan zela esatea (1930ean batu ziren).",
+            "Faseak zerrendatzea, moderazioaren arrazoia azaldu gabe."
+          ],
+          pistak: [
+            "Zer egin zuten Aranaren jarraitzaile «errealistek»?",
+            "Zertan ez zeuden ados CNV eta Aberri?",
+            "Mugimendu batek hazi nahi badu, zer egin ohi du bere hasierako erradikaltasunarekin?"
+          ]
+        },
+        {
+          id: "3.4-c",
+          epigrafea: "3.4",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Abertzaleek eta sozialistek helburu berak zituzten, biak baitzeuden Errestaurazioaren sistemaren aurka.» Zer dago gaizki? Azaldu zuzen.",
+          ideiak: [
+            "Biak sistemaren kritikoak ziren, baina nazioa vs. klasea: abertzaleek euskal nazioa lehenesten zuten; sozialistek klase-batasuna.",
+            "Konfesionaltasuna vs. sekularizazioa: EAJrentzat fede katolikoa nortasunaren oinarria zen; PSOEk Eliza Estatuaren tresnatzat zuen.",
+            "Euskal estatu propioa vs. Estatu demokratiko sozializatua; herri-defentsa vs. internazionalismoa.",
+            "PSOErentzat abertzaletasuna burgesiaren tresna zen; sozialismoaren oinarria langile etorkinak ziren, Aranak mehatxutzat zituenak."
+          ],
+          erlazioa: "Errestaurazioaren aurka egoteak ez zituen batzen: ardatz nagusi guztietan (nazioa, erlijioa, Estatua, immigrazioa) kontrajarriak ziren, eta tentsio horrek gizarte plural eta gatazkatsua markatu zuen.",
+          akatsak: [
+            "Abertzaleek eta sozialistek alderdi bakarra osatu zutela esatea.",
+            "Haien artean inolako tentsiorik ez zegoela esatea.",
+            "Desberdintasunak zerrendatzea, baieztapenaren akatsa zuzenean azaldu gabe."
+          ],
+          pistak: [
+            "Zer zen garrantzitsuagoa abertzale batentzat: nazioa ala klasea? Eta sozialista batentzat?",
+            "Nola ikusten zuen bakoitzak Eliza?",
+            "Ezkerraldeko langile etorkin batek, zein alderdirekin bat egingo zuen ziurrenik, eta zergatik?"
+          ]
+        }
+      ]
+    },
+    {
       num: 4,
       izenburua: "II. Errepublika",
       urteak: "1931–1936",
