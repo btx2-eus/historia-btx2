@@ -319,6 +319,296 @@ window.ULERMEN_BANKUA = {
       ]
     },
     {
+      num: 2,
+      izenburua: "Berrezarkuntzaren sistema",
+      urteak: "1875–1930",
+      orria: "temas/02-berrezarkuntza.html",
+      epigrafeak: [
+        { num: "2.1", izenburua: "Sistema politikoaren oinarriak, indarrak eta oposizioa", atala: "g2-1" },
+        { num: "2.2", izenburua: "Ekonomia eta gizartea Espainian. Auzi soziala", atala: "g2-3" },
+        { num: "2.3", izenburua: "Berrezarkuntza sistemaren azken krisia", atala: "g2-4" },
+        { num: "2.4", izenburua: "Primo de Riveraren Estatu kolpea eta haren diktadura", atala: "g2-5" }
+      ],
+      galderak: [
+        {
+          id: "2.1-a",
+          epigrafea: "2.1",
+          mota: "kontzeptua",
+          galdera: "Zer zen txandaketa (turnismoa), eta zergatik ezin zen funtzionatu kazikismorik gabe?",
+          ideiak: [
+            "Bi alderdi nagusik, Kontserbadoreak (Cánovas) eta Liberalak (Sagasta), gobernua modu aurreikusgarrian txandakatzen zuten; funtsezko gaietan ados zeuden.",
+            "Gobernua krisian sartzean, erregeak beste alderdiari ematen zion gobernatzeko aukera.",
+            "Gobernu berriak hauteskundeak «antolatzen» zituen: emaitzak aldez aurretik adosten ziren («encasillado»).",
+            "Gobernadore zibilek eta tokiko kazikeek (lur-jabeak, fabrikariak, abokatuak…) botoa kontrolatzen zuten, erabakitakoa atera zedin."
+          ],
+          erlazioa: "Hauteskundeek ez zuten gobernua erabakitzen: gobernuak erabakitzen zituen hauteskundeak. Kazikismoari esker, emaitza beti zen txandaketak behar zuena.",
+          akatsak: [
+            "Hauteskundeek benetan erabakitzen zutela zein alderdik gobernatu esatea.",
+            "Bi alderdien programak guztiz kontrajarriak zirela esatea.",
+            "Kazikea hautetsitako kargu ofizial bat zela esatea (tokiko boteretsua zen)."
+          ],
+          pistak: [
+            "Nork erabakitzen zuen zein alderdik gobernatu: herritarrek ala erregeak?",
+            "Zer zen «encasillado»-a?",
+            "Herri txiki batean, nork kontrola zezakeen jendearen botoa, eta nola?"
+          ]
+        },
+        {
+          id: "2.1-b",
+          epigrafea: "2.1",
+          mota: "kausa",
+          galdera: "Zergatik hazi zen Berrezarkuntzaren sistemaren kanpoan geratutako oposizioa? Nortzuk ziren?",
+          ideiak: [
+            "Sistema itxia eta oligarkikoa zen: sektore zabalak ordezkaritza politikorik gabe geratzen ziren.",
+            "Errepublikanoak (hirietan) eta karlistak (Euskal Herrian eta Nafarroan indartsu) sistemaren aurka zeuden.",
+            "Langile-mugimendua: PSOE (1879) eta UGT (1888) parlamentu-bidetik; anarkismoa eta CNT (1910) ekintza zuzenetik.",
+            "Nazionalismo periferikoak: EAJ (Sabino Arana, 1895) eta Lliga Regionalista (1901); 98aren ondoren erregenerazionismoa (Costa)."
+          ],
+          erlazioa: "Sistemak parte-hartzea mugatzen zuen bitartean, modernizazioak talde berriak sortzen zituen (langileak, nazionalistak); sisteman lekurik ez zutenez, kanpotik antolatu ziren eta aurka jarri ziren.",
+          akatsak: [
+            "PSOE eta CNT ideologia berekoak zirela esatea (sozialismoa vs. anarkismoa).",
+            "EAJ Bartzelonan sortu zela esatea (Bilbon sortu zen, 1895ean).",
+            "Oposizio-taldeak zerrendatzea, sistemaren itxierarekin lotu gabe."
+          ],
+          pistak: [
+            "Langile batek, sistemaren barruan, nola defenda zitzakeen bere interesak?",
+            "Zer desberdintasun zegoen PSOEren eta anarkisten estrategien artean?",
+            "Zergatik indartu ziren nazionalismoak foruen abolizioaren eta industrializazioaren ondoren?"
+          ]
+        },
+        {
+          id: "2.1-c",
+          epigrafea: "2.1",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «1890ean gizonezkoen sufragio unibertsala ezarri zenez, Berrezarkuntza demokrazia bihurtu zen.» Zer dago gaizki? Azaldu zuzen.",
+          ideiak: [
+            "1890ean Sagastaren gobernuak gizonezkoen sufragio unibertsala ezarri zuen, bai.",
+            "Baina kazikismoak eta encasillado-ak hauteskundeak manipulatzen jarraitu zuten: emaitzak aldez aurretik erabakita zeuden.",
+            "1876ko Konstituzioak subiranotasun partekatua ezarri zuen: erregeak ahalmen handia zuen (gobernuak izendatu, Gorteak desegin, betoa).",
+            "Senatua hein batean izendapen bidezkoa edo oinordekoa zen; emakumeak politikatik kanpo zeuden."
+          ],
+          erlazioa: "Boto-eskubidea izateak ez du demokrazia bermatzen botoa librea ez bada: kazikismoak sufragio unibertsala hutsaldu zuen, eta sistemak oligarkikoa izaten jarraitu zuen.",
+          akatsak: [
+            "Sufragio unibertsala 1876ko Konstituzioarekin ezarri zela esatea.",
+            "Emakumeek 1890etik bozkatzen zutela esatea.",
+            "Baieztapena zuzentzea, kazikismoa aipatu gabe."
+          ],
+          pistak: [
+            "Botoa ematea eta botoa librea izatea: berdinak dira?",
+            "Zer ahalmen zituen erregeak 1876ko Konstituzioaren arabera?",
+            "Zer gertatzen zen kazike batek botoa kontrolatzen zuen herrietan?"
+          ]
+        },
+        {
+          id: "2.2-a",
+          epigrafea: "2.2",
+          mota: "kontzeptua",
+          galdera: "Zer zen «Auzi Soziala», eta nola erantzun zioten langile-mugimenduaren bi korronteek?",
+          ideiak: [
+            "Industrializazioak (Katalunia, Euskal Herria) langile-klase berri bat sortu zuen: proletalgoa.",
+            "Lan-baldintzak gogorrak ziren: lanaldi luzeak, soldata txikiak, segurtasunik eta asegururik ez; langile-auzo pobreak eta pilatuak.",
+            "Sozialismoa (PSOE, UGT): erreforma sozialak eta parlamentu-bidea (sufragio unibertsala, lanaldi-murrizketa).",
+            "Anarkismoa (CNT): ekintza zuzena (grebak, boikotak, batzuetan indarkeria); landa-eremuan ere gatazkak (Andaluzia, Extremadura)."
+          ],
+          erlazioa: "Industrializazioak aberastasuna sortu zuen, baina ez zuen banatu: langileen bizi-baldintzek antolaketa eta gatazka eragin zituzten, eta sistemak errepresioz erantzun zuen, ez erreformaz.",
+          akatsak: [
+            "Auzi Soziala nekazarien arazoa bakarrik zela esatea.",
+            "Anarkistek parlamentuan parte hartzea defendatzen zutela esatea.",
+            "Lan-baldintzak deskribatzea, langileen antolaketarekin lotu gabe."
+          ],
+          pistak: [
+            "Nolakoa zen langile baten egun bat 1900ean?",
+            "Zer bide proposatzen zuen PSOEk, eta zer anarkistek?",
+            "Zergatik ez zion sistemak arazoari erreformekin erantzun?"
+          ]
+        },
+        {
+          id: "2.2-b",
+          epigrafea: "2.2",
+          mota: "kausa",
+          galdera: "Zergatik piztu zen 1909ko Bartzelonako Aste Tragikoa, eta zer erakutsi zuen sistemari buruz?",
+          ideiak: [
+            "Espainiako armada Rifeko gerran (Maroko) ari zen, eta gobernuak soldadu gehiago bidali behar izan zituen.",
+            "Bartzelonako familia xumeetako gazteak bidali zituzten; aberatsen semeek dirua ordainduz salbuetsi zitezkeen.",
+            "Bidegabekeria horrek greba orokorra eragin zuen (uztailaren 26a), eta protesta elizaren aurkako matxinada bihurtu zen.",
+            "Gobernuak gogor zapaldu zuen: 100 hildako baino gehiago, milaka atxilotu, eta Ferrer Guardia fusilatu zuten, nazioarteko protestekin."
+          ],
+          erlazioa: "Klase-bidegabekeria batek (pobreak gerrara, aberatsak salbu) haserre soziala piztu zuen, eta errepresioak agerian utzi zuen sistemak ez zuela gizarte-arazoei erantzuteko beste tresnarik.",
+          akatsak: [
+            "Aste Tragikoa Madrilen gertatu zela esatea.",
+            "Gerra Kuban zela esatea 1909an (Marokon zen; Kuba 1898an galdu zen).",
+            "Gertakariak kontatzea, haien kausa soziala azaldu gabe."
+          ],
+          pistak: [
+            "Nora bidaltzen zituzten soldaduak 1909an?",
+            "Nork joan behar zuen gerrara, eta nor salba zitekeen?",
+            "Zer gertatu zen Ferrer Guardiarekin, eta zergatik izan zuen nazioarteko oihartzuna?"
+          ]
+        },
+        {
+          id: "2.2-c",
+          epigrafea: "2.2",
+          mota: "ondorioa",
+          galdera: "Zergatik esaten da Berrezarkuntzako modernizazio ekonomikoa «mugatua eta desorekatua» izan zela? Zer ondorio sozial izan zituen?",
+          ideiak: [
+            "Industrializazioa Katalunian (ehungintza) eta Euskal Herrian (siderurgia, burdingintza) garatu zen; trenbideak eta merkatu nazionala zabaldu ziren.",
+            "Gainerako lurralde gehienetan nekazaritza atzeratuak jarraitu zuen, latifundioekin (Andaluzia, Extremadura, Gaztela).",
+            "Aberastasuna ez zen banatu: langile eta nekazari asko pobrezian bizi ziren.",
+            "Pobreziak migrazio handiak eragin zituen, hirietara eta atzerrira, eta gatazka sozialak landa-eremuan ere bai."
+          ],
+          erlazioa: "Garapena lurralde eta klase batzuetara mugatu zenez, desberdintasunak handitu ziren, eta horrek Auzi Soziala eta migrazioak elikatu zituen.",
+          akatsak: [
+            "Espainia osoa garai berean industrializatu zela esatea.",
+            "Industrializazioak pobrezia desagerrarazi zuela esatea.",
+            "Lurraldeak zerrendatzea, ondorio sozialekin lotu gabe."
+          ],
+          pistak: [
+            "Zein bi lurralde industrializatu ziren batez ere, eta zein sektoretan?",
+            "Zer gertatzen zen Andaluziako jornalariekin?",
+            "Garapena dagoen lekura eta ez dagoen lekura: nora mugitzen da jendea?"
+          ]
+        },
+        {
+          id: "2.3-a",
+          epigrafea: "2.3",
+          mota: "kausa",
+          galdera: "Zergatik sartu zen Berrezarkuntzaren sistema krisian XX. mendearen hasieran?",
+          ideiak: [
+            "1898ko porrot kolonialak (Kuba, Puerto Rico, Filipinak) sistemaren eta eliteen legitimitatea kolpatu zuen; erregenerazionismoa sortu zen.",
+            "Gizarte-aldaketak: industria-garapena, langileriaren gorakada eta Auzi Sozialaren larritasuna.",
+            "Kataluniako eta Euskal Herriko nazionalismoak indartu ziren.",
+            "Txandaketa gero eta artifizialagoa eta baztertzaileagoa zen, eta ustelkeria nabarmentzen ari zen."
+          ],
+          erlazioa: "Sistema eliteen akordio itxi baterako diseinatu zen; gizartea aldatu ahala (langileak, nazionalistak, iritzi publikoa), ez zuen talde berriak integratu, eta legitimitatea galdu zuen.",
+          akatsak: [
+            "Krisia 1923an hasi zela esatea (1898tik zetorren).",
+            "Kausa bakarra (98ko hondamendia, adibidez) aipatzea.",
+            "Kausak zerrendatzea, sistemaren itxierarekin lotu gabe."
+          ],
+          pistak: [
+            "Zer galdu zuen Espainiak 1898an, eta nola eragin zion horrek sistemaren irudiari?",
+            "Zer talde berri zeuden 1900ean, 1875ean ez zeudenak?",
+            "Zergatik da arriskutsua sistema batentzat gizarteko talde handiak kanpoan uztea?"
+          ]
+        },
+        {
+          id: "2.3-b",
+          epigrafea: "2.3",
+          mota: "kontzeptua",
+          galdera: "Zer izan zen 1917ko «krisi hirukoitza», eta zergatik izan zen inflexio-puntua?",
+          ideiak: [
+            "Testuingurua: Lehen Mundu Gerran Espainia neutrala izan zen, baina inflazioak eta prezioen igoerak bizi-baldintzak okertu zituzten.",
+            "Krisi militarra: ofizialek Defentsa Juntak sortu zituzten beren interesak defendatzeko; Alfonso XIII.ak babestu zituen.",
+            "Krisi politikoa: Bartzelonan Parlamentarioen Asanbladak erreforma sakonak eta benetako ordezkaritza eskatu zituen; gobernuak debekatu egin zuen.",
+            "Krisi soziala: UGTk eta CNTk greba orokorra deitu zuten abuztuan; armadak gogor zapaldu zuen."
+          ],
+          erlazioa: "Hiru krisiak aldi berean lehertu ziren, eta sistemak ez zien erreformarekin erantzun, armadarekin baizik: horrek armada arbitro politiko bihurtu zuen eta 1923ko kolpearen bidea prestatu zuen.",
+          akatsak: [
+            "Espainiak Lehen Mundu Gerran parte hartu zuela esatea (neutrala izan zen).",
+            "Hiru krisiak elkarrekin koordinatuta zeudela esatea, helburu bera zutela.",
+            "Krisiak zerrendatzea, sistemaren erantzunarekin (errepresioa) lotu gabe."
+          ],
+          pistak: [
+            "Espainia gerran ez bazen sartu, nola eragin zion gerrak?",
+            "Zer ziren Defentsa Juntak, eta nork babestu zituen?",
+            "Nola erantzun zion gobernuak abuztuko grebari, eta zer esan nahi du horrek?"
+          ]
+        },
+        {
+          id: "2.3-c",
+          epigrafea: "2.3",
+          mota: "ondorioa",
+          galdera: "Zer ondorio izan zituen Annualeko hondamendiak (1921) Berrezarkuntzaren sistemarentzat?",
+          ideiak: [
+            "1898aren ondoren, Maroko armadaren eta herrialdearen ospea mantentzeko azken esparrua zen.",
+            "1921ean Abd-el-Krimen matxinadak 10.000 soldadu espainiar inguruko heriotza eragin zuen Annualen.",
+            "Gobernuak eta armadak elkarri egotzi zioten errua; «Expediente Picasso»-k ustelkeria eta arduragabekeria salatu zituen.",
+            "Alfonso XIII.aren papera ere zalantzan jarri zen; militarismoa indartu zen, eta 1923an Primo de Riveraren kolpea etorri zen."
+          ],
+          erlazioa: "Annualek erantzukizun politiko eta militarrak agerian jarri zituen, erregearenak barne; sistemak ezin zuen hondamendia kudeatu, eta estatu-kolpea bihurtu zen ihesbidea.",
+          akatsak: [
+            "Annual Kuban gertatu zela esatea.",
+            "Annualen ondoren berehala Errepublika etorri zela esatea (lehenik diktadura etorri zen, 1923an).",
+            "Hondamendia deskribatzea, ondorio politikorik azaldu gabe."
+          ],
+          pistak: [
+            "Zergatik zen hain garrantzitsua Maroko 1898aren ondoren?",
+            "Zer salatu zuen Expediente Picassok?",
+            "Erantzukizunak ikertzen badira, nor egon zitekeen arriskuan?"
+          ]
+        },
+        {
+          id: "2.4-a",
+          epigrafea: "2.4",
+          mota: "kausa",
+          galdera: "Zergatik eman zuen Primo de Riverak estatu-kolpea 1923an, eta zergatik ez zuen ia inork aurka egin?",
+          ideiak: [
+            "1923rako sistema agortuta zegoen: kazikismoa deslegitimatuta, gatazka sozial bortitzak eta armadaren haserrea Annualen ondoren.",
+            "1923ko irailaren 13an Bartzelonan eman zuen kolpea, Alfonso XIII.aren babesarekin.",
+            "Madrilgo gobernuak erresistentziarik gabe eman zion boterea; alderdi tradizionalak eta langile-mugimendua ahulduta zeuden.",
+            "Gizartearen zati batek erakargarri ikusi zuen bere diskurtsoa: ordena, ustelkeriaren aurkako borroka eta «Espainia konpontzea»."
+          ],
+          erlazioa: "Kolpea ez zen sistemaren aurkako erresistentzia izan, haren porrotaren adierazlea baizik: sistema agortuta eta erregea alde zegoenez, ia inork ez zuen defendatu.",
+          akatsak: [
+            "Alfonso XIII.ak kolpearen aurka egin zuela esatea.",
+            "Kolpea Madrilen eman zela esatea (Bartzelonan eman zuen).",
+            "Kausak zerrendatzea, erresistentziarik ezarekin lotu gabe."
+          ],
+          pistak: [
+            "Nork babestu zuen kolpea, eta nork ez zuen ezer egin?",
+            "Zer arazo zeuden 1923an, eta zer agintzen zuen Primo de Riverak?",
+            "Sistema bat jendeak defendatzen ez badu, zer gertatzen da kolpe baten aurrean?"
+          ]
+        },
+        {
+          id: "2.4-b",
+          epigrafea: "2.4",
+          mota: "aldaketa",
+          galdera: "Nola aldatu zen Primo de Riveraren diktadura Direktorio Militarretik (1923–1925) Direktorio Zibilera (1925–1930)? Zer ez zen aldatu?",
+          ideiak: [
+            "Hasieran «bitarteko irtenbide» gisa aurkeztu zen: Gorteak desegin, Konstituzioa bertan behera utzi eta militarrez osatutako gobernua ezarri zuen.",
+            "1925ean Alhucemasko lehorreratzearekin Rifeko gerra amaitu zen, eta Primo de Riveraren ospea handitu zen.",
+            "Direktorio Zibilarekin gobernua zibil bihurtu zen: obra publikoak, monopolioak (CAMPSA), korporatibismoa eta Unión Patriótica.",
+            "Autoritarismoak jarraitu zuen: alderdiak deuseztatu, prentsa murriztu eta katalan eta euskal adierazpenak jazarri."
+          ],
+          erlazioa: "Behin-behineko irtenbide militar bat erregimen iraunkor bihurtu nahi izan zen: gobernua zibildu zen, baina ez demokratizatu.",
+          akatsak: [
+            "Direktorio Zibilarekin demokrazia itzuli zela esatea.",
+            "Unión Patriótica alderdi demokratiko bat zela esatea.",
+            "Bi faseak deskribatzea, jarraitu zuen autoritarismoa aipatu gabe."
+          ],
+          pistak: [
+            "Zer agindu zuen Primo de Riverak hasieran: denbora gutxirako ala betirako?",
+            "Zer gertatu zen Marokon 1925ean, eta nola lagundu zion horrek?",
+            "Gobernu batean militarren ordez zibilak egoteak demokrazia esan nahi du?"
+          ]
+        },
+        {
+          id: "2.4-c",
+          epigrafea: "2.4",
+          mota: "akatsa",
+          galdera: "Ikasle batek idatzi du: «Primo de Riveraren diktadura erregimen faxista bat izan zen, Mussoliniren Italiaren berdina.» Zergatik da baieztapen hori zehaztugabea? Azaldu zuzen.",
+          ideiak: [
+            "Espainiako lehen diktadura militar modernoa izan zen, erregearen babesarekin.",
+            "Ez zuen ideologia sistematikorik; Unión Patriótica ez zen benetako alderdi ideologiko bat, estatua babesteko tresna baizik.",
+            "Faxismoaren zenbait ezaugarri eta inspirazio bazituen: autoritarismoa, korporatibismoa (enpresari eta langileak egitura berean), nazionalismo zentralista.",
+            "Ez zuen mugimendu masibo eta mobilizatzailerik sortu, eta haren babes soziala higatu egin zen."
+          ],
+          erlazioa: "Diktadura militar autoritarioa izan zen faxismoaren zenbait elementurekin, baina ideologia sistematikorik eta masa-mugimendurik gabe: horregatik ez da faxismotzat jotzen.",
+          akatsak: [
+            "Primo de Riverak monarkia kendu zuela esatea.",
+            "Diktadurak faxismoarekin inolako antzik ez zuela esatea.",
+            "Baieztapena zuzentzea, faxismoarekiko antzekotasunak eta desberdintasunak bereizi gabe."
+          ],
+          pistak: [
+            "Zer behar du erregimen batek faxista izateko: ideologia bat, masa-mugimendu bat?",
+            "Zer zen Unión Patriótica, eta nolako indarra izan zuen?",
+            "Zer hartu zuen Primo de Riverak Italiatik, eta zer ez?"
+          ]
+        }
+      ]
+    },
+    {
       num: 4,
       izenburua: "II. Errepublika",
       urteak: "1931–1936",
